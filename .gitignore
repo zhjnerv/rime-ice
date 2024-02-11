@@ -7,10 +7,10 @@ sync/
 *.userdb/
 installation.yaml
 user.yaml
-*.custom.yaml
+# *.custom.yaml 将配置文件同步到git远程仓库
 !others/**/*.custom.yaml
 
-custom_phrase_double.txt
+# custom_phrase_double.txt 将自建词库同步到远程仓库
 others/script/scel2txt/out/*
 others/script/scel2txt/scel/*
 cn_dicts/temp.txt
