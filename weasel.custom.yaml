@@ -2,7 +2,7 @@ customization:
   distribution_code_name: Weasel
   distribution_version: 0.15.0.0
   generator: "Weasel::UIStyleSettings"
-  modified_time: "Thu Dec 14 10:15:08 2023"
+  modified_time: "Sun Feb 11 15:54:29 2024"
   rime_version: 1.8.5
 patch:
   "app_options/CDRAFT_M.exe":
@@ -13,21 +13,7 @@ patch:
     ascii_mode: true
   "app_options/cmd.exe":
     ascii_mode: true
-  "sytle/vertical_text": true
-  "style/horizontal": false #候选字竖向排列 false为竖排
+  "style/color_scheme": youtube
+  "style/horizontal": false
   "style/inline_preedit": true
-  # "style/color_scheme": google
-  # "style/font_face": "LXGW Bright GB"
-  # "style/font_point": 20
-  # "style/inline_preedit": false
-  # "style/label_font_face": Helvetica
-  # "style/label_font_point": 18
-  # "style/layout/border": 10
-  # "style/layout/border_width": 10
-  # "style/layout/candidate_spacing": 6
-  # "style/layout/hilite_padding": 3
-  # "style/layout/hilite_spacing": 3
-  # "style/layout/margin_x": 10
-  # "style/layout/margin_y": 3
-  # "style/layout/round_corner": 5
-  # "style/layout/spacing": 6
+  "sytle/vertical_text": true
