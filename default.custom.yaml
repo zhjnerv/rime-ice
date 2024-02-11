@@ -1,0 +1,47 @@
+patch:
+  # 方案列表
+  schema_list:
+    # 可以直接删除或注释不需要的方案，对应的 *.schema.yaml 方案文件也可以直接删除
+    # 除了 t9，它依赖于 rime_ice，用九宫格别删 rime_ice.schema.yaml
+    - schema: rime_ice               # 雾凇拼音（全拼）
+    - schema: t9                     # 雾凇拼音（九宫格）
+    - schema: double_pinyin          # 自然码双拼
+
+
+
+  # 菜单
+  menu:
+    page_size: 9  # 候选词个数
+    # alternative_select_labels: [ ①, ②, ③, ④, ⑤, ⑥, ⑦, ⑧, ⑨, ⑩ ]  # 修改候选项标签
+    # alternative_select_keys: ASDFGHJKL  # 如编码字符占用数字键，则需另设选字键
+
+
+  # 方案选单相关
+  switcher:
+    caption: 「方案选单」
+    hotkeys:
+      - Control+grave
+      # - Alt+grave
+      - Control+Shift+grave
+    save_options:  # 开关记忆（方案中的 switches），从方案选单（而非快捷键）切换时会记住的选项，需要记忆的开关不能设定 reset
+      - ascii_punct
+      - traditionalization
+      - emoji
+      - full_shape
+    fold_options: true            # 呼出时是否折叠，多方案时建议折叠 true ，一个方案建议展开 false
+    abbreviate_options: true      # 折叠时是否缩写选项
+    option_list_separator: ' / '  # 折叠时的选项分隔符
+
+
+  "style/horizontal": true  # true 横向 | false 竖向 #设置候选字竖排
+  ###################################################################################
+
+
+  # 下面的 punctuator recognizer key_binder 写了一些所有方案通用的配置项。
+  # 写在 default.yaml 里，方便多个方案引用，就是不用每个方案都写一遍了。
+
+
+
+
+
+
