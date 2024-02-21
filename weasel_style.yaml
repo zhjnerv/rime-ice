@@ -113,7 +113,7 @@ preset_color_schemes:
     # 翻页
     nextpage_color:
     prevpage_color:
-
+  
 
 # 为特定的应用单独设定选项
 app_options:
