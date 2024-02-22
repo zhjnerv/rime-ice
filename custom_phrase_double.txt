@@ -20,8 +20,7 @@
 #
 # 此行之后不能写注释
 
-Hugo	hugo
-Nuget	nuget
+
 ptd	ptd
 
 
