@@ -26,5 +26,20 @@ patch:
     label_font_face: "LXGW Wenkai Mono"
     label_font_point: 23
     label_format: "%s."
-    layout: {align_type: bottom, border: 5, candidate_spacing: 8, corner_radius: 15, hilite_padding: 6, hilite_spacing: 7, margin_x: 11, margin_y: 11, min_width: 1, round_corner: 10, shadow_offset_x: 6, shadow_offset_y: 6, shadow_radius: 6, spacing: 12}
+    layout:
+      align_type: bottom
+      border: 3
+      candidate_spacing: 5
+      corner_radius: 8
+      hilite_padding: 4
+      hilite_spacing: 5
+      margin_x: 8
+      margin_y: 8
+      min_width: 100
+      round_corner: 8
+      shadow_offset_x: 4
+      shadow_offset_y: 4
+      shadow_radius: 4
+      spacing: 8
+    
   "style/color_scheme": Catppuccin
