@@ -29,5 +29,6 @@ ptz ptz
 cqy cqy
 Dataview	dataview
 QuickAdd	quickadd
-
+zhjwork@gmail.com	zhjwork
+zhjwork	zhj
 
