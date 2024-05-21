@@ -1,4 +1,5 @@
 patch:
+  config_version: '2024-05-21'
   # 方案列表
   schema_list:
     # 可以直接删除或注释不需要的方案，对应的 *.schema.yaml 方案文件也可以直接删除
@@ -11,7 +12,7 @@ patch:
 
   # 菜单
   menu:
-    page_size: 9  # 候选词个数
+    page_size: 9 # 候选词个数
     # alternative_select_labels: [ ①, ②, ③, ④, ⑤, ⑥, ⑦, ⑧, ⑨, ⑩ ]  # 修改候选项标签
     # alternative_select_keys: ASDFGHJKL  # 如编码字符占用数字键，则需另设选字键
 
@@ -22,7 +23,7 @@ patch:
     hotkeys:
       - Control+grave
       # - Alt+grave
-      - Control+Shift+grave
+      # - Control+Shift+grave
     save_options:  # 开关记忆（方案中的 switches），从方案选单（而非快捷键）切换时会记住的选项，需要记忆的开关不能设定 reset
       - ascii_punct
       - traditionalization
@@ -38,6 +39,7 @@ patch:
 
   # 下面的 punctuator recognizer key_binder 写了一些所有方案通用的配置项。
   # 写在 default.yaml 里，方便多个方案引用，就是不用每个方案都写一遍了。
+
 
 
   punctuator:
@@ -233,15 +235,13 @@ patch:
         - '[]'
         - '「」'
         - '【】'
-        - 〔
-        - ［
+        - '［'
       ']':
         - ']'
         - 」
         - 】
         - 〕
         - ］
-
       '{':
         - '{}'
         - '『』'
