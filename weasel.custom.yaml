@@ -13,49 +13,6 @@ patch:
     ascii_mode: true
   "app_options/cmd.exe":
     ascii_mode: true
-  "preset_color_schemes/Catppuccin":
-      name: Catppuccin
-      author: "zhjwork"
-      back_color: "0x3A2724"
-      border_color: "0x3A2724"
-      candidate_text_color: "0xF5D3CA"
-      comment_text_color: "0x9FD4EE"
-      hilited_back_color: "0x261918"
-      hilited_candidate_back_color: "0x644D49"
-      hilited_candidate_text_color: "0xD6DBF4"
-      hilited_comment_text_color: "0x9FD4EE"
-      hilited_label_color: "0xCBADA5"
-      hilited_text_color: "0xF2AB89"
-      label_color: "0xA28780"
-      name: Catppuccin
-      shadow_color: "0xAA000000"
-      text_color: "0xF5D3CA"
-  "style/+":
-    color_scheme: Catppuccin
-    comment_font_face: "LXGW Wenkai Mono"
-    comment_font_point: 22
-    font_face: "Noto Emoji, LXGW Wenkai Mono"
-    font_point: 26
-    horizontal: false
-    inline_preedit: false
-    label_font_face: "LXGW Wenkai Mono"
-    label_font_point: 23
-    label_format: "%s."
-    layout:
-      align_type: bottom
-      border: 3
-      candidate_spacing: 5
-      corner_radius: 8
-      hilite_padding: 4
-      hilite_spacing: 5
-      margin_x: 8
-      margin_y: 8
-      min_width: 100
-      round_corner: 8
-      shadow_offset_x: 4
-      shadow_offset_y: 4
-      shadow_radius: 4
-      spacing: 8
     
   # 原有文件 "style/color_scheme": Catppuccin
 
@@ -73,7 +30,7 @@ patch:
     hilited_comment_text_color: 0x999999 # 注解文字高亮
     candidate_text_color: 0x525252 # 其他候选项文字颜色
     comment_text_color: 0x999999 # 其他候选项注解文字
-    label_color: 0xcac9c8 # 预选栏编号颜色
+    label_color: 0x787878 # 预选栏编号颜色
     hilited_label_color: 0xFFFFFF #高亮候选区编号颜色
 # 第二套配置皮肤
   "preset_color_schemes/Macos Light":
@@ -131,7 +88,7 @@ patch:
       comment_text_color: 0x888888
   style:
     color_scheme: microsoft_sim
-    label_format: "%s"
+    label_format: "%s."
     font_face: "微软雅黑"
     font_point: 14
     horizontal: true
@@ -152,10 +109,11 @@ patch:
 
 # 候选字的字体
 #  "style/font_face": "HarmonyOS Sans SC Medium"
-  "style/font_face": "MiSans"
+  #"style/font_face": "MiSans"
+  "style/font_face": "Noto Emoji, LXGW Wenkai Mono"
 #  "style/font_face": "Microsoft YaHei"
 # 候选字的字体大小
-  "style/font_point": 13
+  "style/font_point": 23
 # 候选字横排 true / 纵排 false
   "style/horizontal": false
 # 候选窗不显示内选区 (即拼音区)
@@ -185,8 +143,52 @@ patch:
 # 显示托盘图标
   "style/display_tray_icon": true
 # 候选序号格式
-  "style/label_format": "%s"
+  "style/label_format": "%s."
 # 候选序号大小
-  "style/label_font_point": 11
+  "style/label_font_point": 23
 # 序号和候选字之间的间隔
   "style/layout/hilite_spacing": 4
+
+
+  "preset_color_schemes/Catppuccin":
+      name: Catppuccin
+      author: "zhjwork"
+      back_color: "0x3A2724"
+      border_color: "0x3A2724"
+      candidate_text_color: "0xF5D3CA"
+      comment_text_color: "0x9FD4EE"
+      hilited_back_color: "0x261918"
+      hilited_candidate_back_color: "0x644D49"
+      hilited_candidate_text_color: "0xD6DBF4"
+      hilited_comment_text_color: "0x9FD4EE"
+      hilited_label_color: "0xCBADA5"
+      hilited_text_color: "0xF2AB89"
+      label_color: "0xA28780"
+      name: Catppuccin
+      shadow_color: "0xAA000000"
+      text_color: "0xF5D3CA"
+  "style/+":
+    color_scheme: Catppuccin
+    comment_font_face: "LXGW Wenkai Mono"
+    comment_font_point: 22
+    font_point: 26
+    horizontal: false
+    inline_preedit: false
+    label_font_face: "LXGW Wenkai Mono"
+    label_font_point: 23
+    label_format: "%s."
+    layout:
+      align_type: bottom
+      border: 3
+      candidate_spacing: 5
+      corner_radius: 8
+      hilite_padding: 4
+      hilite_spacing: 5
+      margin_x: 8
+      margin_y: 8
+      min_width: 100
+      round_corner: 8
+      shadow_offset_x: 4
+      shadow_offset_y: 4
+      shadow_radius: 4
+      spacing: 8
