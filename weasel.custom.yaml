@@ -16,7 +16,7 @@ patch:
     
   # 原有文件 "style/color_scheme": Catppuccin
 
-  "style/color_scheme": WeChat-keyboard # 网上下载的皮肤配置文件
+  "style/color_scheme": Macos Light # 网上下载的皮肤配置文件
   "preset_color_schemes/WeChat-keyboard":
     name: WeChat-keyboard # 配色取自微信键盘
     author: zsakvo
