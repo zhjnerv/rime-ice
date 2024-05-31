@@ -31,4 +31,5 @@ Dataview	dataview
 QuickAdd	quickadd
 zhjwork@gmail.com	zhjwork
 zhjwork	zhj
+qqdk2019.net	qqdk
 
