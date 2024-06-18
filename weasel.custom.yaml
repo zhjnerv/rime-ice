@@ -17,7 +17,7 @@ patch:
   # 全局样式配置
   style:
     color_scheme: Catppuccin Frappe             
-    color_scheme_dark: catppuccin_macchiato 
+    color_scheme_dark: catppuccin_macchiato
     comment_font_face: "LXGW Wenkai Mono"
     comment_font_point: 22
     font_face: "Noto Emoji, LXGW Wenkai Mono"
