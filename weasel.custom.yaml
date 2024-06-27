@@ -14,6 +14,10 @@ patch:
     ascii_mode: true
   "app_options/cmd.exe":
     ascii_mode: true
+  "app_options/XTerminal-win-x64-portable.exe":
+    ascii_mode: true
+  "app_options/Photoshop.exe":
+    ascii_mode: true
   # 全局样式配置
   style:
     color_scheme: Catppuccin Frappe             
