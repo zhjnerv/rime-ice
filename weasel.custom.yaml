@@ -29,7 +29,7 @@ patch:
     horizontal: false
     inline_preedit: false
     layout:
-      align_type: bottom
+      align_type: center
       border: 3
       max_width: 400    # 候选框最大宽度，horizontal 布局如宽超此尺寸则换行显示候选，设置为 0 不启用此功能
       min_width: 60
