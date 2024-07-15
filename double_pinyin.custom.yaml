@@ -1,8 +1,9 @@
 patch:
   translator/preedit_format: {} # 实际上是清空了原有的 preedit_format 定义，实现了直接字母显示代码框
   date_translator:
-  date: rq       # 日期： 2022-11-29
-  time: sj       # 时间： 18:13
-  week: xq       # 星期： 星期二
-  datetime: dt   # ISO 8601： 2022-11-29T18:13:11+08:00
-  timestamp: ts  # 时间戳： 1669716794
+    date: rq       # 日期： 2022-11-29
+    time: sj       # 时间： 18:13
+    week: xq       # 星期： 星期二
+    datetime: dt   # ISO 8601： 2022-11-29T18:13:11+08:00
+    timestamp: ts  # 时间戳： 1669716794
+  # engine/processors/@before 0: lua_processor@*pair_symbols_processor
