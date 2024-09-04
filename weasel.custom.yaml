@@ -2,7 +2,7 @@ customization:
   distribution_code_name: Weasel
   distribution_version: 0.16.1
   generator: "Weasel::UIStyleSettings"
-  modified_time: "Wed Jul 10 16:00:23 2024"
+  modified_time: "Tue Aug 27 12:43:35 2024"
   rime_version: 1.11.2
 patch:
   "app_options/CDRAFT_M.exe":
@@ -41,4 +41,4 @@ patch:
     label_font_point: 23
     label_format: "%s."
     layout: {align_type: center, border: 3, candidate_spacing: 5, corner_radius: 8, hilite_padding: 4, hilite_padding_x: 6, hilite_padding_y: 2, hilite_spacing: 7, margin_x: 23, margin_y: 8, max_width: 400, min_width: 60, round_corner: 8, shadow_offset_x: 4, shadow_offset_y: 4, shadow_radius: 4, spacing: 13}
-  "style/color_scheme": "WeChat-keyboard"
+  "style/color_scheme": "OpenAI design"
