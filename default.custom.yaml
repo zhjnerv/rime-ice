@@ -2,10 +2,10 @@ customization:
   distribution_code_name: Weasel
   distribution_version: 0.16.1
   generator: "Rime::SwitcherSettings"
-  modified_time: "Wed Jul 10 16:00:16 2024"
+  modified_time: "00:15:08 2024-10-23"
   rime_version: 1.11.2
 patch:
-  config_version: "2024-05-21"
+  config_version: "2024-10-23"
   menu:
     page_size: 9
   punctuator:
