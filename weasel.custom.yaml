@@ -2,7 +2,7 @@ customization:
   distribution_code_name: Weasel
   distribution_version: 0.16.3
   generator: "Weasel::UIStyleSettings"
-  modified_time: "Fri Oct 18 13:05:03 2024"
+  modified_time: "Fri Oct 18 00:08:55 2024"
   rime_version: 1.11.2
 patch:
   "app_options/CDRAFT_M.exe":
@@ -28,7 +28,7 @@ patch:
     catppuccin_mocha: {back_color: 0x1B1111, border_color: 0x251818, candidate_text_color: 0xF4D6CD, comment_text_color: 0x705B58, hilited_back_color: 0xF7A6CB, hilited_candidate_label_color: 0x443231, hilited_candidate_text_color: 0x2E1E1E, hilited_comment_text_color: 0x443231, hilited_text_color: 0x705B58, label_color: 0xC8ADA6, name: "Catppuccin Mocha", shadow_color: 0xAA000000, text_color: 0xDEC2BA}
     microsoft_sim: {author: plutotree, back_color: 0xF4F4F4, border_color: 0xDCDCDC, candidate_text_color: 0x000000, comment_text_color: 0x888888, hilited_back_color: 0xFFD8A6, hilited_candidate_back_color: 0xFFD8A6, hilited_candidate_text_color: 0x000000, hilited_text_color: 0xF4F4F4, name: "仿微软输入法", shadow_color: 0xAA000000, text_color: 0x000000}
   style:
-    color_scheme: "OpenAI design"
+    color_scheme: "WeChat-keyboard"
     color_scheme_dark: "OpenAI design"
     comment_font_face: "LXGW Wenkai Mono"
     comment_font_point: 22
