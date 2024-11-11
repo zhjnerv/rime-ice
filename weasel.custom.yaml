@@ -2,7 +2,7 @@ customization:
   distribution_code_name: Weasel
   distribution_version: 0.16.3
   generator: "Weasel::UIStyleSettings"
-  modified_time: "Fri Oct 18 00:08:55 2024"
+  modified_time: "Thu Nov  7 14:51:11 2024"
   rime_version: 1.11.2
 patch:
   "app_options/CDRAFT_M.exe":
@@ -29,7 +29,7 @@ patch:
     microsoft_sim: {author: plutotree, back_color: 0xF4F4F4, border_color: 0xDCDCDC, candidate_text_color: 0x000000, comment_text_color: 0x888888, hilited_back_color: 0xFFD8A6, hilited_candidate_back_color: 0xFFD8A6, hilited_candidate_text_color: 0x000000, hilited_text_color: 0xF4F4F4, name: "仿微软输入法", shadow_color: 0xAA000000, text_color: 0x000000}
   style:
     color_scheme: "WeChat-keyboard"
-    color_scheme_dark: "OpenAI design"
+    color_scheme_dark: "Macos Light"
     comment_font_face: "LXGW Wenkai Mono"
     comment_font_point: 22
     display_tray_icon: true
@@ -41,4 +41,4 @@ patch:
     label_font_point: 23
     label_format: "%s."
     layout: {align_type: center, border: 3, candidate_spacing: 5, corner_radius: 8, hilite_padding: 4, hilite_padding_x: 6, hilite_padding_y: 2, hilite_spacing: 7, margin_x: 23, margin_y: 8, max_width: 400, min_width: 60, round_corner: 8, shadow_offset_x: 4, shadow_offset_y: 4, shadow_radius: 4, spacing: 13}
-  "style/color_scheme": "WeChat-keyboard"
+  "style/color_scheme": "Macos Light"
