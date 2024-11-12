@@ -34,4 +34,7 @@ zhjwork	zhj
 qqdk2019.net	qqdk
 Omnivore	omni	2
 330103198301210755	vbhkj	2
+NPN	npn	2
+wallabage	wallabage	2
+
 
