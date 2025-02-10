@@ -30,14 +30,14 @@ patch:
   style:
     color_scheme: "dark_temple"
     color_scheme_dark: "dark_temple"
-    comment_font_face: "LXGW Wenkai Mono"
+    comment_font_face: "霞鹜文楷等宽 GB"
     comment_font_point: 16
     display_tray_icon: true
-    font_face: "Noto Emoji, LXGW Wenkai Mono"
+    font_face: "霞鹜文楷等宽 GB, Noto Emoji"
     font_point: 18
     horizontal: true
     inline_preedit: false
-    label_font_face: "LXGW Wenkai Mono"
+    label_font_face: "霞鹜文楷等宽 GB"
     label_font_point: 17
     label_format: "%s."
     layout: {align_type: center, border: 1, candidate_spacing: 3, corner_radius: 5, hilite_padding: 2, hilite_padding_x: 3, hilite_padding_y: 2, hilite_spacing: 3, margin_x: 12, margin_y: 6, max_width: 1600, min_width: 60, round_corner: 4, shadow_offset_x: 2, shadow_offset_y: 2, shadow_radius: 4, spacing: 9}
