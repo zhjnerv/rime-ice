@@ -17,7 +17,11 @@ patch:
   #  ascii_icon: "icons/ying.ico"
   #下面这个可以改变tips上屏的按键
   key_binder/tips_key: "period"   #修改时候去default找，默认是句号
+  #下面这个是开启自动调频
+  translator/enable_user_dict: true
+
   #下面这个是修改快符的映射，按自己需求来
+
   quick_symbol_text:
     q: "‰"
     w: "？"
