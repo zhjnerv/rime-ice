@@ -19,6 +19,9 @@ patch:
   key_binder/tips_key: "period"   #修改时候去default找，默认是句号
   #下面这个是开启自动调频
   translator/enable_user_dict: true
+  #以下是使用rime的用户词典
+  user_dict_set/user_dict: rime
+  add_user_dict/user_dict: rime
 
   #下面这个是修改快符的映射，按自己需求来
 
