@@ -18,6 +18,7 @@ patch:
     - {schema: liangfen}
     - {schema: melt_eng}
     - {schema: radical_pinyin}
+    - {schema: wanxiang}
   switcher:
     abbreviate_options: true
     caption: "「方案选单」"

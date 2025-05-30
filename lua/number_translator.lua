@@ -119,12 +119,15 @@ local function number_translatorFunc(num)
         table.insert(result,
             { number2cnChar(numberPart.int, 0, { "万", "亿" }, { "〇", "一", "十", "点" }) .. number2zh(numberPart.dec, 0),
                 "〔数字小写〕" })
-        table.insert(result,
-            { number2cnChar(numberPart.int, 1, { "萬", "億" }, { "〇", "一", "十", "点" }) .. number2zh(numberPart.dec, 1),
-                "〔数字大写〕" })
+        -- table.insert(result,
+        --     { number2cnChar(numberPart.int, 1, { "萬", "億" }, { "〇", "一", "十", "点" }) .. number2zh(numberPart.dec, 1),
+        --         "〔数字大写〕" })
+        local upperRaw = number2cnChar(numberPart.int, 1, { "萬", "億" }, { "〇", "一", "十", "点" })
+        local upper = upperRaw:gsub("^拾", "壹拾") .. number2zh(numberPart.dec, 1)
+        table.insert(result, { upper, "〔数字大写〕" })
     else
         table.insert(result, { number2cnChar(numberPart.int, 0, { "万", "亿" }, { "〇", "一", "十", "" }), "〔数字小写〕" })
-        table.insert(result, { number2cnChar(numberPart.int, 1, { "萬", "億" }, { "零", "壹", "拾", "" }), "〔数字大写〕" })
+        table.insert(result, { number2cnChar(numberPart.int, 1, { "萬", "億" }, { "零", "壹", "拾", "" }):gsub("^拾", "壹拾"), "〔数字大写〕" })
     end
     table.insert(result,
         { number2cnChar(numberPart.int, 0) ..
@@ -140,6 +143,7 @@ local function number_translatorFunc(num)
     else
         table.insert(result, { number2cnCharInt .. number2cnCharDec , "〔金额大写〕"})
     end
+    local result = {result[1], result[4], result[2], result[3]}
     return result
 end
 
