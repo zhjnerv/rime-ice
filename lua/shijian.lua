@@ -2109,7 +2109,7 @@ local function translator(input, seg, env)
         local date_variants = {
             {os.date("%Y-%m-%d"), num_year},
             {os.date("%Y/%m/%d"), num_year},
-            {os.date("%Y%m%d"), num_year},
+            {os.date("%Y.%m.%d"), num_year},
             {os.date("%Y年%m月%d日"), num_year},
             {string.gsub(os.date("%m/%d/%Y"), "([^%d])0+", "%1"), num_year},
             {CnDate_translator(os.date("%Y%m%d")), num_year},
