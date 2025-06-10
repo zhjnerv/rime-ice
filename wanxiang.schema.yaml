@@ -41,13 +41,12 @@ switches:
   - name: ascii_punct                  # 中英标点
     states: [ ¥, $ ]
   - options: [ s2s, s2t, s2hk, s2tw ]  # 简繁转换开关组，可以在一个空选项和多个实际“- simplifier@s2hk”引入的项目之前切换，这是一个开关组，你可以将其中任意一个s2s等设置为toggle快捷键，多次按下将轮询
-    reset: 0
+#    reset: 0
     states: [ 简体, 通繁, 港繁, 臺繁 ]
   - name: full_shape                   #全角、半角字符输出
     states: [ 半, 全 ]
   - name: emoji                        #候选出现emoji滤镜，会显示在相应的候选后面，万象侧重于tips提示，避免候选被占用，因此默认为reset: 0，归属opencc emoji滤镜
     states: [ 🙃, 😄 ]
-    reset: 0
   - name: chinese_english              #候选进入翻译模式滤镜，会显示在相应的候选后面，万象侧重于tips提示，避免候选被占用，快捷键配套ctrl+e,归属opencc 翻译滤镜
     states: [ 译, 翻 ]
   - name: tone_display                 #开启后在输入编码的位置实时转换为带声调全拼，不开启则采用系统配置，快捷键配套ctrl+s,影响的是preedit_format,归属：super_preedit.lua
@@ -58,13 +57,10 @@ switches:
     states: [ 分, 拆 ]
   - name: charset_filter               #字符集过滤，默认开启8105通规显示，即小字集，可通过开关实时开启全字集，快捷键配套ctrl+g,归属：chars_filter.lua
     states: [ 小, 大 ]
-    reset: 0
   - name: super_tips                   #开启后在输入编码后面的提示区显示实时的提示数据，受tips数据库影响，表情、翻译、车牌、符号等对应关系数据，并可实现句号上屏，不开启则默认，影响的是segment.prompt参数，归属：super_tips.lua
     states: [ off, tips ]
-    reset: 1
   - name: prediction                   #开启后输入上屏后继续弹出预测数据候选展示例如输入：你在 ，预测候选： 哪里 干嘛 吗 做等等，predictor配置区可设置详细参数，归属：predict内置插件
     states: [ 测, 预 ]
-    reset: 0
   - name: search_single_char          #多体现在编码重合但候选有单字或者多字的情况`引导的辅码查词时是否单字优先，全拼常见，类似于特定编码情况下、反查状态下的调序能力。归属：search.lua
     abbrev: [词, 单]
     states: [正常, 单字]
@@ -81,6 +77,7 @@ engine:
     - lua_processor@*quick_symbol_text     #快符引导以及重复上屏，配合quick_symbol_text顶层配置清单定义扩展按键
     - lua_processor@*super_tips*S          #超级提示模块：表情、简码、翻译、化学式、等等靠你想象
     - lua_processor@*limit_repeated        #用于限制最大候选长度以及最大重复输入声母编码长度，避免性能异常
+    - lua_processor@*backspace_limit       #防止连续 Backspace 在编码为空时删除已上屏内容
     - lua_processor@*userdb_sync_delete    #危险操作：通过输入 /del 触发,用于清理自定义同步目录下txt用户词典里被标记c<0的词条，操作步骤：必须先同步、再执行/del、再去部署刷新状态、再去同步回收词典，完成动作。
     - ascii_composer                       #处理英文模式及中英文切换
     - recognizer                           #与 matcher 搭配，处理符合特定规则的输入码，如网址、反查等 tags
@@ -131,6 +128,7 @@ engine:
     - lua_filter@*search@wanxiang_radical           #部件拆字辅码放在简繁转换之后
     - lua_filter@*super_tips*M                      #超级提示模块：表情、简码、翻译、化学式、等等靠你想象
     - lua_filter@*super_comment                     #超级注释模块，支持错词提示、辅助码显示，部件组字读音注释，支持个性化配置和关闭相应的功能，详情搜索super_comment进行详细配置
+    - lua_filter@*text_formatting                   #给自定义用户词扩展一个换行:\n, 制表符：\t, 回车符：\r, 空格：\s
     - uniquifier                                    #去重
 
 predictor:
@@ -154,6 +152,14 @@ predictor:
 #大写N日期：N20250315
 #节日：ojr 或者 /jr
 #问候模板：/day 或者 oday
+#生日信息：/sr或者osr
+birthday_reminder:  #日期格式：必须是4位数字，格式为MMDD（月份和日期），例如：1月27日 → 0127 ，#备注格式：在日期后添加逗号，然后添加任意文本作为备注，例如："0501,我的好朋友"，也可以无备注
+  solar_birthdays:  # 公历生日, 姓名: "日期,备注" or 姓名: "日期"
+    小明: "0501,准备礼物"
+    大明: "0405"
+  lunar_birthdays:  # 农历生日, 姓名: "日期,备注" or 姓名: "日期"
+    小明: "0114"
+    小红: "0815,农历中秋"
 
 #快符lua，lua中有预设，26个字母、10个数字，你可以在这里配置替换默认的值，键可以是一个或多个，值可以是任意字符这里不齐全默认配置将生效
 quick_symbol_text:
@@ -379,6 +385,8 @@ key_binder:
     - { when: composing, accept: Control+5, send_sequence: '{Home}{Shift+Right}{Shift+Right}{Shift+Right}{Shift+Right}{Shift+Right}' }
     - { when: composing, accept: Control+6, send_sequence: '{Home}{Shift+Right}{Shift+Right}{Shift+Right}{Shift+Right}{Shift+Right}{Shift+Right}' }
     - { when: composing, accept: Control+7, send_sequence: '{Home}{Shift+Right}{Shift+Right}{Shift+Right}{Shift+Right}{Shift+Right}{Shift+Right}{Shift+Right}' }
+#当输入编码后发现没有词，则通过双击``进入造词模式而且不需要删除编码，这个功能与``直接引导相呼应相配合
+    - { match: "^.*`$", accept: "`", send_sequence: '{BackSpace}{Home}{`}{`}{End}' }
 #通过按下/发送/+1节约一个按键，不冲突的时候可以开启
     #- { match: "[a-z]{1,4}", accept: "/",  send_sequence: "/1" }
 
@@ -1508,7 +1516,7 @@ octagram:
       collocation_penalty: -10          #默认-12 对常见搭配词组施加的惩罚值。较高的负值会降低这些搭配被选中的概率，防止过于频繁地出现某些固定搭配。
       non_collocation_penalty: -12      #默认-12 对非搭配词组施加的惩罚值。较高的负值会降低非搭配词组被选中的概率，避免不合逻辑或不常见的词组组合。
       weak_collocation_penalty: -24     #默认-24 对弱搭配词组施加的惩罚值。保持默认值通常是为了有效过滤掉不太常见但仍然合理的词组组合。
-      rear_penalty: -30                 #默认-18 对词组中后续词语的位置施加的惩罚值。较高的负值会降低某些词语在句子后部出现的概率，防止句子结构不自然。
+      rear_penalty: -18                 #默认-18 对词组中后续词语的位置施加的惩罚值。较高的负值会降低某些词语在句子后部出现的概率，防止句子结构不自然。
     translator/contextual_suggestions: false
     translator/max_homophones: 5
     translator/max_homographs: 5

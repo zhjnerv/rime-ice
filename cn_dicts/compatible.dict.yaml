@@ -7,17 +7,18 @@ name: compatible
 version: "LTS"
 sort: by_weight
 ...
+丁丁	zhēng;aa zhēng;aa	402
 没看着	méi;du kàn;ou,uo zháo;yo	142
 下不了	xià;ab,ad bù;ad,ax liǎo;aa,vu	221
 有多重	yǒu;ou,uo duō;xx chóng;pa,ql	250
 多重	duō;xx zhòng;pa,ql	631
 不干	bù;ad,ax gān;aa	569
-大夫	dà;ad fū;ad,er	
+大夫	dà;ad fū;ad,er
 薄膜	bó;cc,cp mó;om	595
-没过了	mò;du guò;zc le;aa,vu	
-没过我	mò;du guò;zc wǒ;pd,pp	
-没过线	mò;du guò;zc xiàn;sj	
-没过	mò;du guò;zc	
+没过了	mò;du guò;zc le;aa,vu
+没过我	mò;du guò;zc wǒ;pd,pp
+没过线	mò;du guò;zc xiàn;sj
+没过	mò;du guò;zc
 摩挲	mó;mu,um suō;uu	467
 公差	gōng;sb,bs chā;yg	480
 好高	hào;nz gāo;wk	491
@@ -154,7 +155,7 @@ sort: by_weight
 长细纹	zhǎng;pd xì;st wén;sw	250
 长羽毛	cháng;pd yǔ;xx máo;pg	252
 长羽毛	zhǎng;pd yǔ;xx máo;pg	252
-区队长	qū;ki duì;er zhǎng;pd	
+区队长	qū;ki duì;er zhǎng;pd
 重活	chóng;pa,ql huó;du	120
 重天	chóng;pa,ql tiān;ad	497
 穿着	chuān;xy,by zhe;yo	742
