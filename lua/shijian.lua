@@ -2217,14 +2217,13 @@ local function translator(input, seg, env)
     local context = engine.context
 
     -- **日期候选项**
-    if (input == "/rq" or input == "orq") then
+    if (input == "/rq" or input == "rq") then
         local num_year = os.date("%j/") .. IsLeap(os.date("%Y"))
         local date_variants = {
             {os.date("%Y-%m-%d"), num_year},
-            {os.date("%Y/%m/%d"), num_year},
-            {os.date("%Y.%m.%d"), num_year},
-            {os.date("%Y年%m月%d日"), num_year},
             {string.gsub(os.date("%m/%d/%Y"), "([^%d])0+", "%1"), num_year},
+            {os.date("%Y%m%d"), num_year},
+            {os.date("%Y年%m月%d日"), num_year},
             {CnDate_translator(os.date("%Y%m%d")), num_year},
             {lunarJzl(os.date("%Y%m%d%H")), " "},
             {Date2LunarDate(os.date("%Y%m%d")) .. JQtest(os.date("%Y%m%d")), ""},
@@ -2233,13 +2232,13 @@ local function translator(input, seg, env)
         generate_candidates("date", seg, date_variants)
 
     -- **时间候选项**
-    elseif (input == "/sj" or input == "osj" or input == "ouj") then
+    elseif (input == "/sj" or input == "sj" or input == "uj") then
         local time_discrpt = GetLunarSichen(os.date("%H"), 1)
         local time_variants = {
             {os.date("%H:%M"), time_discrpt},
-            {format_Time() .. os.date("%I:%M"), time_discrpt},
-            {os.date("%H:%M:%S"), time_discrpt},
-            {string.gsub(os.date("%H点%M分%S秒"), "^0", ""), time_discrpt}
+            {string.gsub(os.date("%H点%M分%S秒"), "^0", ""), time_discrpt},
+            {os.date("%H%M%S"), time_discrpt}
+            
         }
         generate_candidates("time", seg, time_variants)
     -- **农历候选项**
