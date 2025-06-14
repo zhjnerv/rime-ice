@@ -7228,6 +7228,7 @@ sort: by_weight
 𪓼	diān;md,dm	1
 𪖚	diān;bv	1
 𫁥	diàn;	1
+𣵦	diàn;	1
 掉	diào;fv	758
 调	diào;yv	743
 雕	diāo;vv	633
@@ -10911,11 +10912,10 @@ sort: by_weight
 𬒔	gèng;uk	1
 暅	gèng;oh	1
 𬒔	gěng;uk	1
-怾	gi;	1
-公	gōng;sb,bs	853
 工	gōng;aa	842
+共	gòng;bc,cb	836
+公	gōng;sb,bs	803
 供	gōng;rg	782
-共	gòng;bc,cb	776
 功	gōng;gl,lg	775
 攻	gōng;gw,wg	718
 宫	gōng;bl	702
@@ -12972,11 +12972,11 @@ sort: by_weight
 䓳	hěn;ch	1
 𦚣	hén;og	1
 𬣳	hěn;yg	1
-衡	héng;xd,xi	688
-恒	héng;xg	661
+哼	hēng;kh	688
+衡	héng;xd,xi	661
 横	héng;mh	660
+恒	héng;xg	651
 亨	hēng;wl,lk	590
-哼	hēng;kh	567
 横	hèng;mh	487
 桁	héng;mx	400
 蘅	héng;ch	370
@@ -22143,6 +22143,7 @@ sort: by_weight
 岭	lǐng;ul	622
 铃	líng;jl	617
 玲	líng;wl	608
+〇	líng;aa	600
 菱	líng;cl,cw	568
 聆	líng;el	529
 苓	líng;cl	517
@@ -22221,7 +22222,6 @@ sort: by_weight
 袊	lǐng;yl	23
 鹷	líng;ll	23
 刢	líng;dl	23
-〇	líng;aa	1
 𫐉	líng;	1
 𨱋	líng;	1
 𫠂	líng;	1
@@ -26438,8 +26438,8 @@ sort: by_weight
 𪈼	niǎo;nn	1
 𪉓	niǎo;	1
 𫠓	niǎo;	1
-涅	niè;dn,dt	584
 捏	niē;fn,ft	576
+涅	niè;dn,dt	570
 聂	niè;eu	536
 镍	niè;jm,jn	504
 孽	niè;cz,zx	496
@@ -36942,9 +36942,10 @@ sort: by_weight
 𩠹	tuán;ud	1
 𪈋	tuán;wn,nw	1
 𪏖	tuān;he	1
-推	tuī;fv	800
-退	tuì;zg	718
+退	tuì;zg	800
+推	tuī;fv	718
 腿	tuǐ;ot	686
+忒	tuī;xy,yx	522
 颓	tuí;yt	510
 蜕	tuì;id	504
 褪	tuì;yt	503
@@ -36963,7 +36964,6 @@ sort: by_weight
 頺	tuí;yx	105
 侻	tuì;rd	101
 娧	tuì;nd	92
-忒	tuī;xy,yx	92
 骽	tuǐ;gt	82
 駾	tuì;md	60
 蘈	tuí;ct	60
@@ -49543,6 +49543,7 @@ sort: by_weight
 𫟻	zhōu;	1
 祝	zhù;ux	866
 住	zhù;rv	845
+朱	zhū;pw	840
 主	zhǔ;dw	839
 煮	zhǔ;hv	833
 注	zhù;dv	801
@@ -49553,7 +49554,6 @@ sort: by_weight
 猪	zhū;qv	688
 珠	zhū;wv	678
 诸	zhū;yv	665
-朱	zhū;pw	664
 驻	zhù;mv	658
 竹	zhú;gg	650
 柱	zhù;mv	642
@@ -51038,6 +51038,7 @@ sort: by_weight
 𫝷	zuò;	1
 呒	ḿ;kw	1
 呣	ḿ;km	1
+怾	无;	1
 莻	无;	1
 朰	无;	1
 乲	无;	1
@@ -62523,7 +62524,6 @@ sort: by_weight
 𣵣	无;	1
 𣵧	无;	1
 𣵤	无;	1
-𣵦	无;	1
 𣵥	无;	1
 𣵫	无;	1
 𣵩	无;	1

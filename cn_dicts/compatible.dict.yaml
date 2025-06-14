@@ -7,18 +7,22 @@ name: compatible
 version: "LTS"
 sort: by_weight
 ...
+办不了	bàn;lb bù;ad,ax le;aa,vu	230
+报不了	bào;fy bù;ad,ax le;aa,vu	180
+软弹	ruǎn;iq tán;gd	
+露出	lù;yl chū;ck,aa	
 丁丁	zhēng;aa zhēng;aa	402
 没看着	méi;du kàn;ou,uo zháo;yo	142
 下不了	xià;ab,ad bù;ad,ax liǎo;aa,vu	221
 有多重	yǒu;ou,uo duō;xx chóng;pa,ql	250
 多重	duō;xx zhòng;pa,ql	631
 不干	bù;ad,ax gān;aa	569
-大夫	dà;ad fū;ad,er
+大夫	dà;ad fū;ad,er	
 薄膜	bó;cc,cp mó;om	595
-没过了	mò;du guò;zc le;aa,vu
-没过我	mò;du guò;zc wǒ;pd,pp
-没过线	mò;du guò;zc xiàn;sj
-没过	mò;du guò;zc
+没过了	mò;du guò;zc le;aa,vu	
+没过我	mò;du guò;zc wǒ;pd,pp	
+没过线	mò;du guò;zc xiàn;sj	
+没过	mò;du guò;zc	
 摩挲	mó;mu,um suō;uu	467
 公差	gōng;sb,bs chā;yg	480
 好高	hào;nz gāo;wk	491
@@ -155,7 +159,7 @@ sort: by_weight
 长细纹	zhǎng;pd xì;st wén;sw	250
 长羽毛	cháng;pd yǔ;xx máo;pg	252
 长羽毛	zhǎng;pd yǔ;xx máo;pg	252
-区队长	qū;ki duì;er zhǎng;pd
+区队长	qū;ki duì;er zhǎng;pd	
 重活	chóng;pa,ql huó;du	120
 重天	chóng;pa,ql tiān;ad	497
 穿着	chuān;xy,by zhe;yo	742
@@ -2235,7 +2239,7 @@ sort: by_weight
 熟客	shóu;hu kè;bg	533
 熟烂	shóu;hu làn;hl	480
 熟了	shóu;hu le;aa,vu	597
-熟练	shóu;hu liàn;sd,sj	679
+熟练	shóu;hu liàn;sd,sj	279
 熟脸	shóu;hu liǎn;oa,oq	359
 熟料	shóu;hu liào;md	454
 熟路	shóu;hu lù;zg	317
@@ -2251,7 +2255,6 @@ sort: by_weight
 熟识	shóu;hu shí;yv	527
 熟时	shóu;hu shí;oc	455
 熟手	shóu;hu shǒu;pa,ub	440
-熟睡	shóu;hu shuì;oi	504
 熟水	shóu;hu shuǐ;ad,uv	281
 熟铁	shóu;hu tiě;ju	373
 熟透	shóu;hu tòu;zx	602
@@ -2273,7 +2276,7 @@ sort: by_weight
 我熟	wǒ;pd,pp shóu;hu	337
 娴熟	xián;nx shóu;hu	561
 相熟	xiāng;mo shóu;hu	481
-眼熟	yǎn;og shóu;hu	533
+眼熟	yǎn;og shóu;hu	482
 一熟	yì;aa shóu;hu	316
 用熟	yòng;kf shóu;hu	354
 圆熟	yuán;ky shóu;hu	329
