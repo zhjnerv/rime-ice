@@ -1,25 +1,40 @@
---万象家族lua,超级提示,表情\化学式\方程式\简码等等直接上屏,不占用候选位置
---采用leveldb数据库,支持大数据遍历,支持多种类型混合,多种拼音编码混合,维护简单
---支持候选匹配和编码匹配两种
---https://github.com/amzxyz/rime_wanxiang_pro
---https://github.com/amzxyz/rime_wanxiang
+-- 万象家族lua,超级提示,表情\化学式\方程式\简码等等直接上屏,不占用候选位置
+-- 采用leveldb数据库,支持大数据遍历,支持多种类型混合,多种拼音编码混合,维护简单
+-- 支持候选匹配和编码匹配两种
+-- https://github.com/amzxyz/rime_wanxiang_pro
+-- https://github.com/amzxyz/rime_wanxiang
 --     - lua_processor@*super_tips*S              手机电脑有着不同的逻辑,除了编码匹配之外,电脑支持光标高亮匹配检索,手机只支持首选候选匹配
---     - lua_filter@*super_tips*M                  
+--     - lua_filter@*super_tips*M
 --     key_binder/tips_key: "slash"  #上屏按键配置
-local is_mobile_device = require("wanxiang")
-local _db_pool = _db_pool or {}  -- 数据库池
+local wanxiang = require("wanxiang")
+local _db_pool = {} -- 数据库池
 -- 获取或创建 LevelDb 实例，避免重复打开
 local function wrapLevelDb(dbname, mode)
     _db_pool[dbname] = _db_pool[dbname] or LevelDb(dbname)
     local db = _db_pool[dbname]
-    if db and not db:loaded() then
-        if mode then
-            db:open()  -- 读写模式
-        else
-            db:open_read_only()  -- 只读模式
+
+    local function close()
+        if db:loaded() then
+            collectgarbage()
+            db:close()
         end
     end
-    return db
+
+    if db then
+        if not db:loaded() then
+            if mode then
+                db:open()
+            else -- 只读模式
+                db:open_read_only()
+            end
+        elseif mode then
+            -- 仅在首次打开读写模式返回 db 实例
+            -- 其他情况返回 nil，避免多个实例同时写
+            return nil, close
+        end
+    end
+
+    return db, close
 end
 
 local M = {}
@@ -27,19 +42,116 @@ local S = {}
 
 local function ensure_dir_exist(dir)
     -- 获取系统路径分隔符
-    local sep = package.config:sub(1,1)
+    local sep = package.config:sub(1, 1)
 
-    dir = dir:gsub([["]], [[\"]])  -- 处理双引号
+    dir = dir:gsub([["]], [[\"]]) -- 处理双引号
 
     if sep == "/" then
-        local cmd = 'mkdir -p "'..dir..'" 2>/dev/null'
-    local success = os.execute(cmd)
+        local cmd = 'mkdir -p "' .. dir .. '" 2>/dev/null'
+        os.execute(cmd)
     end
+end
+
+local function sync_tips_db_from_file(db, path)
+    local file = io.open(path, "r")
+    if not file then return end
+
+    for line in file:lines() do
+        local value, key = line:match("([^\t]+)\t([^\t]+)")
+        if value and key then
+            db:update(key, value)
+        end
+    end
+
+    file:close()
+end
+
+-- 获取文件内容哈希值，使用 FNV-1a 哈希算法
+local function calculate_file_hash(filepath)
+    local file = io.open(filepath, "rb")
+    if not file then return nil end
+
+    -- FNV-1a 哈希参数（32位）
+    local FNV_OFFSET_BASIS = 0x811C9DC5
+    local FNV_PRIME = 0x01000193
+
+    local hash = FNV_OFFSET_BASIS
+
+    -- 分块读取文件（提高大文件处理效率）
+    while true do
+        local chunk = file:read(4096) -- 4KB 块大小
+        if not chunk then break end
+
+        -- 处理每个字节
+        for i = 1, #chunk do
+            local byte = string.byte(chunk, i)
+            hash = hash ~ byte       -- XOR 操作
+            hash = hash * FNV_PRIME  -- 乘法操作
+            hash = hash & 0xFFFFFFFF -- 确保32位
+        end
+    end
+
+    file:close()
+    return string.format("%08x", hash) -- 返回16进制字符串
+end
+
+local function file_exists(name)
+    local f = io.open(name, "r")
+    if f ~= nil then
+        io.close(f)
+        return true
+    else
+        return false
+    end
+end
+
+-- 清空整个 db
+local function empty_tips_db(db)
+    local da = db:query("")
+    for key, _ in da:iter() do
+        db:erase(key)
+    end
+    da = nil
+end
+
+local function get_preset_file_path()
+    local preset_path = "/lua/tips/tips_show.txt"
+    local preset_path_user = rime_api.get_user_data_dir() .. preset_path
+    local preset_path_shared = rime_api.get_shared_data_dir() .. preset_path
+
+    if file_exists(preset_path_user) then
+        return preset_path_user
+    end
+    return preset_path_shared
+end
+
+local function init_tips_userdb()
+    local db, close_db = wrapLevelDb('lua/tips', true)
+    if not db then return end
+
+    local hash_key = "__TIPS_FILE_HASH"
+    local hash_in_db = db:fetch(hash_key)
+
+    local preset_file_path = get_preset_file_path()
+    local user_override_path = rime_api.get_user_data_dir() .. "/lua/tips/tips_user.txt"
+    local file_hash = string.format("%s|%s",
+        calculate_file_hash(preset_file_path),
+        calculate_file_hash(user_override_path))
+
+    if hash_in_db == file_hash then
+        close_db()
+        return
+    end
+
+    empty_tips_db(db)
+    db:update(hash_key, file_hash)
+    sync_tips_db_from_file(db, preset_file_path)
+    sync_tips_db_from_file(db, user_override_path)
+    close_db()
 end
 
 -- 初始化词典（写模式，把 txt 加载进 db）
 function M.init(env)
-    local config = env.engine.schema.config
     local dist = rime_api.get_distribution_code_name() or ""
     local user_lua_dir = rime_api.get_user_data_dir() .. "/lua"
     if dist ~= "hamster" and dist ~= "Weasel" then
@@ -47,59 +159,9 @@ function M.init(env)
         ensure_dir_exist(user_lua_dir .. "/tips")
     end
 
-    local db = wrapLevelDb('lua/tips', true)
-    local user_path = rime_api.get_user_data_dir() .. "/lua/tips/tips_show.txt"
-    local shared_path = rime_api.get_shared_data_dir() .. "/lua/tips/tips_show.txt"
-    local path = nil
-
-    local f = io.open(user_path, "r")
-    if f then 
-        f:close()
-        path = user_path 
-    else
-        f = io.open(shared_path, "r")
-        if f then
-            f:close()
-            path = shared_path
-        end
-    end
-    if not path then
-        db:close()
-        return
-    end
-
-    local file = io.open(path, "r")
-    if not file then 
-        db:close()
-        return 
-    end
-    for line in file:lines() do
-        if not line:match("^#") then
-            local value, key = line:match("([^\t]+)\t([^\t]+)")
-            if value and key then
-                db:update(key, value)
-            end
-        end
-    end
-    file:close()
-
-    -- 加载用户覆盖文件
-    local user_override_path = rime_api.get_user_data_dir() .. "/lua/tips/tips_user.txt"
-    local override_file = io.open(user_override_path, "r")
-    if override_file then
-        for line in override_file:lines() do
-            if not line:match("^#") then
-                local value, key = line:match("([^\t]+)\t([^\t]+)")
-                if value and key then
-                    db:update(key, value)  -- 高优先级覆盖
-                end
-            end
-        end
-        override_file:close()
-    end
-
-    collectgarbage()
-    db:close()
+    local start = os.clock()
+    init_tips_userdb()
+    log.info(string.format("[wanxiang/super_tips]: init_tips_userdb 共耗时 %s 秒", os.clock() - start))
 end
 
 -- 滤镜：设置提示内容
@@ -108,18 +170,24 @@ function M.func(input, env)
     if not segment then
         return 2
     end
-    env.settings = { super_tips = env.engine.context:get_option("super_tips") } or true
+    env.settings = {
+        super_tips = env.engine.context:get_option("super_tips")
+    } or true
     local is_super_tips = env.settings.super_tips
     local db = wrapLevelDb("lua/tips", false)
+    if not db then return end
+
     -- 手机设备：读取数据库并输出候选
-    if is_mobile_device.is_mobile_device() then
+    if wanxiang.is_mobile_device() then
         local input_text = env.engine.context.input or ""
         local stick_phrase = db:fetch(input_text)
 
         -- 收集候选
         local first_cand, candidates = nil, {}
         for cand in input:iter() do
-            if not first_cand then first_cand = cand end
+            if not first_cand then
+                first_cand = cand
+            end
             table.insert(candidates, cand)
         end
         local first_cand_match = first_cand and db:fetch(first_cand.text)
@@ -153,6 +221,7 @@ function S.init(env)
     S.tips_key = config:get_string("key_binder/tips_key")
     local db = wrapLevelDb("lua/tips", false)
 end
+
 function S.func(key, env)
     local context = env.engine.context
     local segment = context.composition:back()
@@ -164,12 +233,16 @@ function S.func(key, env)
         return 2
     end
     local db = wrapLevelDb("lua/tips", false)
-    env.settings = { super_tips = context:get_option("super_tips") }
+    if not db then return end
+
+    env.settings = {
+        super_tips = context:get_option("super_tips")
+    }
     local is_super_tips = env.settings.super_tips
     local tipspc
     local tipsph
     -- 电脑设备：直接处理按键事件并使用数据库
-    if not is_mobile_device.is_mobile_device() then
+    if not wanxiang.is_mobile_device() then
         local input_text = context.input or ""
         local stick_phrase = db:fetch(input_text)
         local selected_cand = context:get_selected_candidate()
@@ -188,14 +261,12 @@ function S.func(key, env)
         tipsph = segment.prompt
     end
     -- 检查是否触发提示上屏
-    if (context:is_composing() or context:has_menu())
-        and S.tips_key
-        and is_super_tips
-        and ((tipspc and tipspc ~= "") or (tipsph and tipsph ~= "")) then
+    if (context:is_composing() or context:has_menu()) and S.tips_key and is_super_tips and
+        ((tipspc and tipspc ~= "") or (tipsph and tipsph ~= "")) then
         local trigger = key:repr() == S.tips_key
-        local text = selected_cand and selected_cand.text or input_text
         if trigger then
-            local formatted = (tipspc and (tipspc:match(".+：(.*)") or tipspc:match(".+:(.*)") or tips)) or (tipsph and (tipsph:match("〔.+：(.*)〕") or tipsph:match("〔.+:(.*)〕"))) or ""
+            local formatted = (tipspc and (tipspc:match(".+：(.*)") or tipspc:match(".+:(.*)") or tips)) or
+                (tipsph and (tipsph:match("〔.+：(.*)〕") or tipsph:match("〔.+:(.*)〕"))) or ""
             env.engine:commit_text(formatted)
             context:clear()
             return 1
@@ -203,4 +274,8 @@ function S.func(key, env)
     end
     return 2
 end
-return { M = M, S = S }
+
+return {
+    M = M,
+    S = S
+}

@@ -8,13 +8,13 @@ config_version: '2024-08-05'
 
 # 方案列表
 schema_list:
-  - schema: wanxiang          # 自然码双拼
+  - schema: wanxiang_pro
 
 
 # 菜单
 menu:
-  page_size: 6  # 候选词个数，不得超过6个7890代表声调
-  #alternative_select_labels: [ ⒈, ⒉, ⒊, ⒋, ⒌, ⒍, ⒎, ⒏, ⒐, ⒑, ⒒, ⒓, ⒔, ⒕, ⒖, ⒗, ⒘, ⒙, ⒚, ⒛ ]  # 修改候选项标签
+  page_size: 6  # 候选词个数，不得超过6个，7890代表声调
+  alternative_select_labels: [ ⒈, ⒉, ⒊, ⒋, ⒌, ⒍, ⒎, ⒏, ⒐, ⒑, ⒒, ⒓, ⒔, ⒕, ⒖, ⒗, ⒘, ⒙, ⒚, ⒛ ]  # 修改候选项标签
   # alternative_select_keys: ASDFGHJKL  # 如编码字符占用数字键，则需另设选字键
 
 
@@ -85,6 +85,7 @@ key_binder:
   # Lua 配置: 以词定字（上屏当前词句的第一个或最后一个字），和中括号翻页有冲突
   select_first_character: "bracketleft"  # 左中括号 [
   select_last_character: "bracketright"  # 右中括号 ]
+
   bindings:
     # Tab / Shift+Tab 切换光标至下/上一个拼音
     #- { when: composing, accept: Shift+Tab, send: Shift+Left }
@@ -92,7 +93,7 @@ key_binder:
     # Tab / Shift+Tab 翻页
     # - { when: has_menu, accept: Shift+Tab, send: Page_Up }
     # - { when: has_menu, accept: Tab, send: Page_Down }
-
+    
     # numbered_mode_switch:
     # - { when: always, select: .next, accept: Control+Shift+1 }                  # 在最近的两个方案之间切换
     # - { when: always, select: .next, accept: Control+Shift+exclam }             # 在最近的两个方案之间切换
@@ -109,7 +110,7 @@ key_binder:
     # - { when: composing, accept: Control+a, send: Home }
     # - { when: composing, accept: Control+e, send: End }
     # - { when: composing, accept: Control+d, send: Delete }
-    #- { when: composing, accept: Control+k, send: Shift+Delete } 不要开jk都占用了
+    #- { when: composing, accept: Control+k, send: Shift+Delete }
     # - { when: composing, accept: Control+h, send: BackSpace }
     # - { when: composing, accept: Control+g, send: Escape }
     # - { when: composing, accept: Control+bracketleft, send: Escape }
@@ -140,7 +141,7 @@ key_binder:
     - {accept: KP_Add,      send: plus,     when: composing}
     - {accept: KP_Subtract, send: minus,    when: composing}
     - {accept: KP_Divide,   send: slash,    when: composing}
-
+    - {accept: KP_Enter, send: Return, when: composing}
 
 # 按键速查
 # https://github.com/LEOYoon-Tsaw/Rime_collections/blob/master/Rime_description.md
