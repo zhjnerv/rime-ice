@@ -10,7 +10,7 @@ set_cn_en:                     #中英混输
 super_comment:                 # 超级注释模块，子项配置 true 开启，false 关闭
   candidate_length: 1          # 候选词辅助码提醒的生效长度，0为关闭  但同时清空其它，应当使用上面开关来处理
   corrector_type: "{comment}"  # 换一种显示类型，比如"({comment})" 
-  comment_type: fuzhu          # 可以选择注释里显示辅助码或者是声调全拼：fuzhu , tone
+  fuzhu_type: fuzhu          # 分包这是一个固定搭配，声调可以使用开关控制
 __include: octagram            #启用语言模型
 #__include: set_chord_composer  #启用并击处理，不懂得不要开启就是了
 ########################以下是方案配置######################################################
@@ -40,9 +40,6 @@ switches:
     states: [ 中, 英 ]
   - name: ascii_punct                  # 中英标点
     states: [ ¥, $ ]
-  - options: [ s2s, s2t, s2hk, s2tw ]  # 简繁转换开关组，可以在一个空选项和多个实际“- simplifier@s2hk”引入的项目之前切换，这是一个开关组，你可以将其中任意一个s2s等设置为toggle快捷键，多次按下将轮询
-#    reset: 0
-    states: [ 简体, 通繁, 港繁, 臺繁 ]
   - name: full_shape                   #全角、半角字符输出
     states: [ 半, 全 ]
   - name: emoji                        #候选出现emoji滤镜，会显示在相应的候选后面，万象侧重于tips提示，避免候选被占用，因此默认为reset: 0，归属opencc emoji滤镜
@@ -51,8 +48,6 @@ switches:
     states: [ 译, 翻 ]
   - name: tone_display                 #开启后在输入编码的位置实时转换为带声调全拼，不开启则采用系统配置，快捷键配套ctrl+s,影响的是preedit_format,归属：super_preedit.lua
     states: [ 调, 声 ]
-  - name: comment_hint                 #开启后在候选的注释里面实时显示辅助码或者全拼声调，不开启则采用系统配置，影响的是comment_format，快捷键配套ctrl+a,归属：super_comment.lua
-    states: [ 助, 辅 ]
   - name: chaifen_switch               #开启后在候选的注释里面实时显示辅助码的拆分提醒优先级高于普通辅助提醒，不开启则采用系统配置，快捷键配套ctrl+c,影响的是comment_format，归属：super_comment.lua
     states: [ 分, 拆 ]
   - name: charset_filter               #字符集过滤，默认开启8105通规显示，即小字集，可通过开关实时开启全字集，快捷键配套ctrl+g,归属：chars_filter.lua
@@ -60,6 +55,10 @@ switches:
   - name: super_tips                   #开启后在输入编码后面的提示区显示实时的提示数据，受tips数据库影响，表情、翻译、车牌、符号等对应关系数据，并可实现句号上屏，不开启则默认，影响的是segment.prompt参数，归属：super_tips.lua
     states: [ off, tips ]
     reset: 1
+  - options: [ comment_off, fuzhu_hint, tone_hint ]  #开启后在候选的注释里面实时显示辅助码或者全拼声调，不开启则采用系统配置，影响的是comment_format，快捷键配套ctrl+a,归属：super_comment.lua
+    states: [ 注关, 辅开, 调开 ]
+  - options: [ s2s, s2t, s2hk, s2tw ]  # 简繁转换开关组，可以在一个空选项和多个实际“- simplifier@s2hk”引入的项目之前切换，这是一个开关组，你可以将其中任意一个s2s等设置为toggle快捷键，多次按下将轮询
+    states: [ 简体, 通繁, 港繁, 臺繁 ]
   - name: prediction                   #开启后输入上屏后继续弹出预测数据候选展示例如输入：你在 ，预测候选： 哪里 干嘛 吗 做等等，predictor配置区可设置详细参数，归属：predict内置插件
     states: [ 测, 预 ]
   - name: search_single_char          #多体现在编码重合但候选有单字或者多字的情况`引导的辅码查词时是否单字优先，全拼常见，类似于特定编码情况下、反查状态下的调序能力。归属：search.lua
@@ -370,7 +369,7 @@ key_binder:
 #使用快捷键Control+c拆分显示
     - { when: has_menu, accept: "Control+c", toggle: chaifen_switch }
 #使用快捷键Control+a开启和关闭辅助码显示
-    - { when: has_menu, accept: "Control+a", toggle: comment_hint }
+    - { when: has_menu, accept: "Control+a", toggle: fuzhu_hint }
 #通过快捷键Control+s使得输入码显示音调
     - { when: has_menu, accept: "Control+s", toggle: tone_display }
 #通过快捷键Control+t开启超级tips

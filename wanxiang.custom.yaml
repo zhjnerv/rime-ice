@@ -1,4 +1,5 @@
 patch:
+  # sehcema/name: 万象拼音
   speller/algebra:
     __patch:
       - wanxiang.schema:/自然码            # 可选输入方案名称：自然码, 自然龙, 小鹤双拼, 搜狗双拼, 微软双拼, 智能ABC, 紫光双拼, 国标双拼
@@ -8,14 +9,15 @@ patch:
   #通过下面的设置可以让你自己的文件引入而与仓库custom_phrase.txt不同，以后可以大胆覆盖更新
   custom_phrase/user_dict: custom_phrase_double    # 改成什么就需要手动创建 xxxxxx.txt 文件在用户目录，这个文件主要用于置顶，编码为自定义编码的词汇
   # translator/packs/+:
-  #  - userxx                                  #导入根目录下名称为userxx.dict.yaml的自定义固定词典，编码要与固定词库一致（或者不写编码），形如姓名、专有名词公司名称等等
+  #   - userxx                                  #导入根目录下名称为userxx.dict.yaml的自定义固定词典，编码要与固定词库一致（或者不写编码），形如姓名、专有名词公司名称等等
     #下面是候选数量，未来7890分别代表1234声，请候选长度不要大于6避免冲突
   menu/page_size: 6
   #生日信息：/sr或者osr，在这里定义全局替换构建你的生日查询数据库
   birthday_reminder:  #日期格式：必须是4位数字，格式为MMDD（月份和日期），例如：1月27日 → 0127 ，#备注格式：在日期后添加逗号，然后添加任意文本作为备注，例如："0501,我的好朋友"，也可以无备注
     solar_birthdays:  # 公历生日, 姓名: "日期,备注" or 姓名: "日期"
-      周豪靖: "0121,自己生日"
-      大明: "0405"
+      周豪靖: "0121,准备礼物"
+      周子悦: "0920"
+      周子轶: "1230"
     lunar_birthdays:  # 农历生日, 姓名: "日期,备注" or 姓名: "日期"
       小明: "0114"
       小红: "0815,农历中秋"
@@ -23,12 +25,8 @@ patch:
   #schema/+:
   #  icon: "icons/zhong.ico"
   #  ascii_icon: "icons/ying.ico"
-  # 下面这个可以改变tips上屏的按键
+  #下面这个可以改变tips上屏的按键
   key_binder/tips_key: "period"   #修改时候去default找，默认是句号
-  # 下面这个是开启自动调频
-  # translator/enable_user_dict: true
-
-
   #下面这个是修改快符的映射，按自己需求来
   quick_symbol_text:
     q: "‰"

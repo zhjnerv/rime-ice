@@ -2,6 +2,18 @@
 #@/db_name	cn_en.txt
 #@/db_type	tabledb
 #@/tick	0
+方块A	fangkuaia
+方块J	fangkuaij
+方块Q	fangkuaiq
+方块K	fangkuaik
+梅花A	meihuaa
+梅花J	meihuaj
+梅花Q	meihuaq
+梅花K	meihuak
+黑桃A	heitaoa
+黑桃J	heitaoj
+黑桃Q	heitaoq
+黑桃K	heitaok
 AAA级	AAAji	0
 AA吧	AAba	0
 AA制	AAzhi	0

@@ -20,18 +20,14 @@ local function wrapLevelDb(dbname, mode)
         end
     end
 
-    if db then
-        if not db:loaded() then
-            if mode then
-                db:open()
-            else -- 只读模式
-                db:open_read_only()
-            end
-        elseif mode then
-            -- 仅在首次打开读写模式返回 db 实例
-            -- 其他情况返回 nil，避免多个实例同时写
-            return nil, close
+    if db and not db:loaded() then
+        if mode then
+            db:open()
+        else -- 只读模式
+            db:open_read_only()
         end
+    elseif db and db:loaded() and mode then
+        log.warning(string.format("[super_tips] DB 已在写模式下打开，同时写存在风险"))
     end
 
     return db, close
@@ -66,7 +62,7 @@ local function sync_tips_db_from_file(db, path)
     file:close()
 end
 
--- 获取文件内容哈希值，使用 FNV-1a 哈希算法
+-- 获取文件内容哈希值，使用 FNV-1a 哈希算法（增强兼容性，避免位运算依赖）
 local function calculate_file_hash(filepath)
     local file = io.open(filepath, "rb")
     if not file then return nil end
@@ -75,24 +71,71 @@ local function calculate_file_hash(filepath)
     local FNV_OFFSET_BASIS = 0x811C9DC5
     local FNV_PRIME = 0x01000193
 
-    local hash = FNV_OFFSET_BASIS
-
-    -- 分块读取文件（提高大文件处理效率）
-    while true do
-        local chunk = file:read(4096) -- 4KB 块大小
-        if not chunk then break end
-
-        -- 处理每个字节
-        for i = 1, #chunk do
-            local byte = string.byte(chunk, i)
-            hash = hash ~ byte       -- XOR 操作
-            hash = hash * FNV_PRIME  -- 乘法操作
-            hash = hash & 0xFFFFFFFF -- 确保32位
+    local bit_xor = function(a, b)
+        local p, c = 1, 0
+        while a > 0 and b > 0 do
+            local ra, rb = a % 2, b % 2
+            if ra ~= rb then c = c + p end
+            a, b, p = (a - ra) / 2, (b - rb) / 2, p * 2
         end
+        if a < b then a = b end
+        while a > 0 do
+            local ra = a % 2
+            if ra > 0 then c = c + p end
+            a, p = (a - ra) / 2, p * 2
+        end
+        return c
+    end
+
+    local bit_and = function(a, b)
+        local p, c = 1, 0
+        while a > 0 and b > 0 do
+            local ra, rb = a % 2, b % 2
+            if ra + rb > 1 then c = c + p end
+            a, b, p = (a - ra) / 2, (b - rb) / 2, p * 2
+        end
+        return c
+    end
+
+    local function hash_compt()
+        local hash = FNV_OFFSET_BASIS
+        while true do
+            local chunk = file:read(4096)
+            if not chunk then break end
+            for i = 1, #chunk do
+                local byte = string.byte(chunk, i)
+                hash = bit_xor(hash, byte)
+                hash = (hash * FNV_PRIME) % 0x100000000
+                hash = bit_and(hash, 0xFFFFFFFF)
+            end
+        end
+        return hash
+    end
+
+    local function hash_native()
+        local hash = FNV_OFFSET_BASIS
+        while true do
+            local chunk = file:read(4096)
+            if not chunk then break end
+            for i = 1, #chunk do
+                local byte = string.byte(chunk, i)
+                hash = hash ~ byte
+                hash = hash * FNV_PRIME
+                hash = hash & 0xFFFFFFFF
+            end
+        end
+        return hash
+    end
+
+    local r, hash = pcall(hash_native)
+    if not r then
+        file:seek("set", 0)
+        hash = hash_compt()
+        log.info("[super_tips]：不支持位运算符，使用兼容 hash")
     end
 
     file:close()
-    return string.format("%08x", hash) -- 返回16进制字符串
+    return string.format("%08x", hash)
 end
 
 local function file_exists(name)
@@ -151,7 +194,7 @@ local function init_tips_userdb()
 end
 
 -- 初始化词典（写模式，把 txt 加载进 db）
-function M.init(env)
+function M.init()
     local dist = rime_api.get_distribution_code_name() or ""
     local user_lua_dir = rime_api.get_user_data_dir() .. "/lua"
     if dist ~= "hamster" and dist ~= "Weasel" then
@@ -219,7 +262,6 @@ end
 function S.init(env)
     local config = env.engine.schema.config
     S.tips_key = config:get_string("key_binder/tips_key")
-    local db = wrapLevelDb("lua/tips", false)
 end
 
 function S.func(key, env)

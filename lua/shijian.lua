@@ -2290,10 +2290,14 @@ local function translator(input, seg, env)
     -- **日期候选项**
     if (command == "rq") then
         local num_year = "〔" .. os.date("%j/") .. IsLeap(os.date("%Y")) .. "〕"
-        local date_variants = { { os.date("%Y-%m-%d"), num_year }, { os.date("%Y/%m/%d"), num_year },
-            { os.date("%Y.%m.%d"), num_year }, { os.date("%Y年%m月%d日"), num_year },
-            { string.gsub(os.date("%m/%d/%Y"), "([^%d])0+", "%1"), num_year },
-            { CnDate_translator(os.date("%Y%m%d")),                num_year }, { lunarJzl(os.date("%Y%m%d%H")), " " },
+        local date_variants = {
+            { os.date("%Y年%m月%d日"), num_year }, --同一个日期首选看到差值即可
+            { os.date("%Y.%m.%d"), "" }, 
+            { os.date("%Y-%m-%d"), "" },
+            { os.date("%Y/%m/%d"), "" },
+            { os.date("%m月%d日"), "" },
+            { string.gsub(os.date("%m/%d/%Y"), "([^%d])0+", "%1"), "" },
+            { CnDate_translator(os.date("%Y%m%d")), num_year }, { lunarJzl(os.date("%Y%m%d%H")), " " },
             { Date2LunarDate(os.date("%Y%m%d")) .. JQtest(os.date("%Y%m%d")),        "" },
             { Date2LunarDate(os.date("%Y%m%d")) .. GetLunarSichen(os.date("%H"), 1), "" } }
         generate_candidates("date", seg, date_variants)
@@ -2303,9 +2307,10 @@ local function translator(input, seg, env)
     -- **时间候选项**
     if (command == "sj" or command == "uj") then
         local time_discrpt = "〔" .. GetLunarSichen(os.date("%H"), 1) .. "〕"
-        local time_variants = { { os.date("%H:%M"), time_discrpt }, { format_Time() .. os.date("%I:%M"), time_discrpt },
-            { os.date("%H:%M:%S"), time_discrpt },
-            { string.gsub(os.date("%H点%M分%S秒"), "^0", ""), time_discrpt } }
+        local time_variants = { { os.date("%H:%M"), time_discrpt },  --同一个时间首选看到时辰即可
+            { format_Time() .. os.date("%I:%M"), "" },
+            { os.date("%H:%M:%S"), "" },
+            { string.gsub(os.date("%H点%M分%S秒"), "^0", ""), "" } }
         generate_candidates("time", seg, time_variants)
         return
     end
@@ -2324,8 +2329,9 @@ local function translator(input, seg, env)
         local _, weekno = iso_week_number(now.year, now.month, now.day)
         local num_weekday = "〔第 " .. weekno .. " 周〕"
 
-        local week_variants = { { chinese_weekday(os.date("%w")), num_weekday },
-            { chinese_weekday2(os.date("%w")), num_weekday } }
+        local week_variants = { 
+            { chinese_weekday2(os.date("%w")), num_weekday },
+            { chinese_weekday(os.date("%w")), num_weekday } }
         generate_candidates("xq", seg, week_variants)
         return
     end
