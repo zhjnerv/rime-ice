@@ -22,3 +22,5 @@ rime_console
 rime_deployer
 rime_patch
 wanxiang-lts-zh-hans.gram
+# 不知道是什么文件,但是会根据打字情况实时变化
+lua/input_stats.lua
