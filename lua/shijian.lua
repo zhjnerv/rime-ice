@@ -2292,8 +2292,8 @@ local function translator(input, seg, env)
         local num_year = "〔" .. os.date("%j/") .. IsLeap(os.date("%Y")) .. "〕"
         local date_variants = {
             { os.date("%Y年%m月%d日"), num_year }, --同一个日期首选看到差值即可
-            { os.date("%Y-%m-%d"), "" }, 
-            { os.date("%Y%m%d"), "" },
+            { os.date("%Y.%m.%d"), "" }, 
+            { os.date("%Y-%m-%d"), "" },
             { os.date("%Y/%m/%d"), "" },
             { os.date("%m月%d日"), "" },
             { string.gsub(os.date("%m/%d/%Y"), "([^%d])0+", "%1"), "" },
