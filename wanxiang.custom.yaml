@@ -27,6 +27,9 @@ patch:
   #  ascii_icon: "icons/ying.ico"
   #下面这个可以改变tips上屏的按键
   key_binder/tips_key: "period"   #修改时候去default找，默认是句号
+  # 然后, 将它替换为指向您新脚本的 "lua_translator@myshijian"。
+  engine/translators/@3: 
+    lua_translator@*myshijian
   #下面这个是修改快符的映射，按自己需求来
   quick_symbol_text:
     q: "‰"
