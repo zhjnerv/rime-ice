@@ -1074,8 +1074,6 @@ sort: by_weight
 金平	jīn;ra,pa píng;aa,gb	427
 锦屏	jǐn;jb,jj píng;ub	410
 金沙	jīn;ra,pa shā;du	566
-金山	jīn;ra,pa shān;aa	651
-津市	jīn;dy shì;wj	723
 金水	jīn;ra,pa shuǐ;ad,uv	496
 金塔	jīn;ra,pa tǎ;td,th	431
 金台	jīn;ra,pa tái;sk	391
@@ -3716,6 +3714,7 @@ sort: by_weight
 崇左市	chóng;uz zuǒ;gu,ug shì;wj	214
 绸缎庄	chóu;sv duàn;sd zhuāng;gt	31
 褚家村	chǔ;yv jiā;bu cūn;mc	31
+䢺江镇	chū;ei jiāng;dg zhèn;jv	1
 褚兰镇	chǔ;yv lán;bs,qe zhèn;jv	171
 楚雄市	chǔ;mp,pl xióng;vh,vs shì;wj	188
 滁州市	chú;di zhōu;id,da shì;wj	231
@@ -9484,7 +9483,7 @@ sort: by_weight
 义乌市	yì;di,id wū;pa shì;wj	350
 伊吾县	yī;ry wú;wk,kw xiàn;sq,qs	162
 一乡镇	yī;aa xiāng;ap,vp zhèn;jv	100
-一小镇	yī;aa xiǎo;ad zhèn;jv	100
+一小镇	yì;aa xiǎo;ad zhèn;jv	100
 宜兴市	yí;bq xīng;ba,db shì;wj	268
 宜秀区	yí;bq xiù;hn qū;ki	146
 益阳市	yì;mb yáng;eo shì;wj	364
@@ -13561,7 +13560,6 @@ sort: by_weight
 稠树塘镇	chóu;hv shù;md táng;tt zhèn;jv	58
 臭水沟村	chòu;zq shuǐ;ad,uv gōu;dg cūn;mc	1
 臭水井村	chòu;zq shuǐ;ad,uv jǐng;aa,ep cūn;mc	1
-出阝江镇	chū;ck,aa fù;er,ga jiāng;dg zhèn;jv	1
 处归凌庄	chù;wb guī;ax,dx líng;dl,dw zhuāng;gt	58
 褚家湾村	chǔ;yv jiā;bu wān;dw cūn;mc	1
 褚家庄村	chǔ;yv jiā;bu zhuāng;gt cūn;mc	1
@@ -23274,7 +23272,7 @@ sort: by_weight
 克圩孜乡	kè;eg,ux wéi;ty zī;wz,zw xiāng;ap,vp	1
 科希马县	kē;hd xī;ju,ib,ij mǎ;aa,vh xiàn;sq,qs	58
 柯岩鲁镇	kē;mk yán;uu lǔ;yo zhèn;jv	105
-克一河镇	kè;eg,ux yī;aa hé;dk zhèn;jv	142
+克一河镇	kè;eg,ux yì;aa hé;dk zhèn;jv	142
 可邑小镇	kě;dk yì;kb xiǎo;ad zhèn;jv	149
 克音河乡	kè;eg,ux yīn;lo hé;dk xiāng;ap,vp	213
 可苑新村	kě;dk yuàn;ce,cy xīn;jq cūn;mc	77
@@ -23465,7 +23463,7 @@ sort: by_weight
 拉西瓦镇	lā;fl xī;aa wǎ;ad zhèn;jv	149
 拉腰子村	lā;fl yāo;oy zi;aa,vh cūn;mc	1
 拉依喀乡	lā;fl yī;ry kā;kk xiāng;ap,vp	77
-拉一木乡	lā;fl yī;aa mù;ad xiāng;ap,vp	77
+拉一木乡	lā;fl yí;aa mù;ad xiāng;ap,vp	77
 砬子沟村	lá;ul zǐ;aa,vh gōu;dg cūn;mc	58
 砬子河村	lá;ul zǐ;aa,vh hé;dk cūn;mc	1
 腊子口乡	là;ox zǐ;aa,vh kǒu;aa xiāng;ap,vp	1
@@ -23553,7 +23551,7 @@ sort: by_weight
 兰溪口村	lán;bs,qe xī;dx kǒu;aa cūn;mc	142
 兰翔新村	lán;bs,qe xiáng;yy xīn;jq cūn;mc	35
 兰尧科村	lán;bs,qe yáo;gw,wg kē;hd cūn;mc	1
-兰一山庄	lán;bs,qe yī;aa shān;aa zhuāng;gt	1
+兰一山庄	lán;bs,qe yì;aa shān;aa zhuāng;gt	1
 揽月山庄	lǎn;fl yuè;oy,pa,yt shān;aa zhuāng;gt	35
 兰寨子村	lán;bs,qe zhài;mb,bm zi;aa,vh cūn;mc	1
 兰州湾村	lán;bs,qe zhōu;id,da wān;dw cūn;mc	1
@@ -25951,7 +25949,7 @@ sort: by_weight
 罗阳新村	luó;sx yáng;eo xīn;jq cūn;mc	58
 罗阳一村	luó;sx yáng;eo yī;aa cūn;mc	1
 罗依溪镇	luó;sx yī;ry xī;dx zhèn;jv	156
-罗一新村	luó;sx yī;aa xīn;jq cūn;mc	77
+罗一新村	luó;sx yì;aa xīn;jq cūn;mc	77
 洛峪沟村	luò;dg yù;ug gōu;dg cūn;mc	1
 洛峪街村	luò;dg yù;ug jiē;xg,xi cūn;mc	1
 罗峪口镇	luó;sx yù;ug kǒu;aa zhèn;jv	35
@@ -36706,7 +36704,7 @@ sort: by_weight
 乌药山村	wū;pa yào;cy shān;aa cūn;mc	92
 武夷茶庄	wǔ;vy,yv yí;ad,dg chá;cm zhuāng;gt	1
 五一村村	wǔ;aa yī;aa cūn;mc cūn;mc	92
-五一东村	wǔ;aa yì;aa dōng;ad,qx cūn;mc	199
+五一东村	wǔ;aa yī;aa dōng;ad,qx cūn;mc	199
 无疫情村	wú;ag,ay,ee yì;bu qíng;xq cūn;mc	315
 武夷山市	wǔ;vy,yv yí;ad,dg shān;aa shì;wj	442
 武夷山镇	wǔ;vy,yv yí;ad,dg shān;aa zhèn;jv	125
@@ -41286,7 +41284,7 @@ sort: by_weight
 宜船湾村	yí;bq chuán;vk wān;dw cūn;mc	1
 宜川五村	yí;bq chuān;pa wǔ;aa cūn;mc	35
 宜川新村	yí;bq chuān;pa xīn;jq cūn;mc	233
-一簇烟村	yī;aa cù;vz yān;hy cūn;mc	8
+一簇烟村	yí;aa cù;vz yān;hy cūn;mc	8
 怡翠山庄	yí;xt cuì;yz shān;aa zhuāng;gt	156
 伊达宗村	yī;ry dá;zd zōng;bu cūn;mc	1
 伊代尼乡	yī;ry dài;ry ní;ub xiāng;ap,vp	1
@@ -41295,10 +41293,10 @@ sort: by_weight
 异地他乡	yì;cs,sc dì;ty tā;ry xiāng;ap,vp	409
 义东沟村	yì;di,id dōng;ad,qx gōu;dg cūn;mc	1
 一斗泉乡	yì;aa dǒu;du quán;bu,ub xiāng;ap,vp	1
-一渡河村	yī;aa dù;dd hé;dk cūn;mc	1
+一渡河村	yí;aa dù;dd hé;dk cūn;mc	1
 义渡口乡	yì;di,id dù;dd kǒu;aa xiāng;ap,vp	1
 义渡坪村	yì;di,id dù;dd píng;tp cūn;mc	77
-一渡水镇	yī;aa dù;dd shuǐ;ad,uv zhèn;jv	225
+一渡水镇	yí;aa dù;dd shuǐ;ad,uv zhèn;jv	225
 一都孙村	yī;aa dū;ev sūn;zx cūn;mc	142
 伊顿小镇	yī;ry dùn;yt xiǎo;ad zhèn;jv	105
 伊尔施镇	yī;ry ěr;dx,xd shī;fy zhèn;jv	105
@@ -41405,7 +41403,7 @@ sort: by_weight
 宜牧地乡	yí;bq mù;nw dì;ty xiāng;ap,vp	77
 驿南府村	yì;mf nán;ua,uy fǔ;gf cūn;mc	1
 颐年山庄	yí;yi nián;ra,pa shān;aa zhuāng;gt	1
-一诺面庄	yī;aa nuò;yr miàn;aa zhuāng;gt	1
+一诺面庄	yí;aa nuò;yr miàn;aa zhuāng;gt	1
 一品亦庄	yī;aa pǐn;kk yì;wb,wy,dd zhuāng;gt	1
 一平浪镇	yī;aa píng;aa,gb làng;dl zhèn;jv	213
 伊平屋村	yī;ry píng;aa,gb wū;uv cūn;mc	199
@@ -41416,7 +41414,7 @@ sort: by_weight
 义桥西村	yì;di,id qiáo;mq xī;aa cūn;mc	1
 宜青桥村	yí;bq qīng;of,fo qiáo;mq cūn;mc	1
 怡情山庄	yí;xt qíng;xq shān;aa zhuāng;gt	1
-一清新村	yī;aa qīng;dq xīn;jq cūn;mc	77
+一清新村	yì;aa qīng;dq xīn;jq cūn;mc	77
 逸泉山庄	yì;zt quán;bu,ub shān;aa zhuāng;gt	210
 彝人古镇	yí;ac,cs,jc,vc rén;pd gǔ;uk zhèn;jv	367
 伊塞帕镇	yī;ry sāi;tb,bt pà;jb zhèn;jv	35
