@@ -2245,25 +2245,97 @@ local function generate_candidates(input, seg, candidates)
     end
 end
 
+-- 判断指定年月日是否合法
+local function DateExists(year, month, day)
+    local days
+    if IsLeap(year) > 365 then
+        days = { 31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 }
+    else
+        days = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 }
+    end
+    return month >= 1 and month <= 12 and day >= 1 and day <= days[month]
+end
+
+-- 设置 segment 提示
+local function set_prompt_if_invalid(context, msg)
+    local segment = context.composition:back()
+    if segment then
+        segment.prompt = msg
+    end
+end
+
+---@param input string
+---@param seg Segment
+---@param env Env
 local function translator(input, seg, env)
     local engine = env.engine
     local context = engine.context
-    local config = engine.schema.config
+    local config  = engine.schema.config
+    local segment = env.engine.context.composition:back()   
 
-    -- **N日期**
-    if string.sub(input, 1, 1) == "N" then
-        local n = string.sub(input, 2)
-        if not (string.match(n, "^(20)%d%d+$") == nil and string.match(n, "^(19)%d%d+$") == nil) then
-            local lunar = QueryLunarInfo(n)
-            if #lunar > 0 then
-                for i = 1, #lunar do
-                    local candidate = Candidate(input, seg.start, seg._end, lunar[i][1], lunar[i][2])
-                    candidate.quality = 1000000
-                    yield(candidate)
+    if input:sub(1, 1) == "N" then
+        --- 设置手动排序的排序编码，以启用手动排序支持
+        env.engine.context:set_property("sequence_adjustment_code", "N")
+
+        local n = input:sub(2)
+        local yr = os.date("%Y")
+        segment.tags = segment.tags + Set({ "Ndate" })
+
+        -- N0101–N1231（仅月日）
+        if #n == 4 and n:match("^%d%d%d%d$") then
+            local mm = tonumber(n:sub(1, 2))
+            local dd = tonumber(n:sub(3, 4))
+            if mm and dd and mm >= 1 and mm <= 12 and dd >= 1 and dd <= 31 then
+                if not DateExists(yr, mm, dd) then
+                    set_prompt_if_invalid(context, "〔日期不存在〕")
+                    return
                 end
+                local mm_str = string.format("%02d", mm)
+                local dd_str = string.format("%02d", dd)
+                local date_str = yr .. mm_str .. dd_str .. "01"
+                local lunar = QueryLunarInfo(date_str)
+                if #lunar > 0 then
+                    local comment = string.format("〔%s〕", yr)
+                    local candidates = {
+                        { string.format("%d月%d日", mm, dd), comment }, --第一个候选标记一下年份
+                        { string.format("%02d月%02d日", mm, dd), "" }
+                    }
+                    local lunar_full = lunar[2][1]
+                    local lunar_md = lunar_full:gsub(".*%)", "")
+                    if lunar_md == lunar_full then
+                        local lunar_md = lunar_full:gsub("^.-年", ""):gsub("^.-%)", "")
+                    end
+                    table.insert(candidates, { lunar_md, "" })
+
+                    local gz_full = lunar[3][1]
+                    local gz_md = gz_full:gsub("^.-年", "")
+                    table.insert(candidates, { gz_md, "" })
+
+                    generate_candidates(input, seg, candidates)
+                end
+                return
             end
         end
-        return
+
+        -- N2025 或 N20250101 等
+        if n:match("^(20)%d%d") or n:match("^(19)%d%d") then
+            if #n >= 8 then
+                local yyyy = tonumber(n:sub(1, 4))
+                local mm = tonumber(n:sub(5, 6))
+                local dd = tonumber(n:sub(7, 8))
+                if not DateExists(yyyy, mm, dd) then
+                    set_prompt_if_invalid(context, "〔日期不存在〕")
+                    return
+                end
+            end
+            local lunar = QueryLunarInfo(n)
+            local candidates = {}
+            for i = 1, #lunar do
+                table.insert(candidates, { lunar[i][1], lunar[i][2] })
+            end
+            generate_candidates(input, seg, candidates)
+            return
+        end
     end
 
     -- 以下为需要通过 shijian_keys 触发的功能
@@ -2289,25 +2361,44 @@ local function translator(input, seg, env)
         return
     end
 
+    segment.tags = segment.tags + Set({ "shijian" })
+
     -- **日期候选项**
     if (command == "rq") then
-        local num_year = "〔" .. os.date("%j/") .. IsLeap(os.date("%Y")) .. "〕"
+        --- 设置手动排序的排序编码，以启用手动排序支持
+        env.engine.context:set_property("sequence_adjustment_code", "/rq")
+
+        local today = os.date("*t")       -- 当前时间表
+        local ymd = os.date("%Y%m%d")     -- 年月日
+        local ymdh = os.date("%Y%m%d%H")  -- 年月日时
+        local num_year = string.format("〔%03d/%d〕", today.yday, IsLeap(today.year))  -- 年内第几天/总天数
+        local m = today.month
+        local d = today.day
+
         local date_variants = {
-            { os.date("%Y年%m月%d日"), num_year }, --同一个日期首选看到差值即可
-            { os.date("%Y.%m.%d"), "" }, 
+            -- 常规格式（带前导零）
+            { os.date("%Y年%m月%d日"), num_year },
+            { os.date("%Y.%m.%d"), "" },
             { os.date("%Y-%m-%d"), "" },
             { os.date("%Y/%m/%d"), "" },
-            { os.date("%m月%d日"), "" },
-            { string.gsub(os.date("%m/%d/%Y"), "([^%d])0+", "%1"), "" },
-            { CnDate_translator(os.date("%Y%m%d")), num_year }, { lunarJzl(os.date("%Y%m%d%H")), " " },
-            { Date2LunarDate(os.date("%Y%m%d")) .. JQtest(os.date("%Y%m%d")),        "" },
-            { Date2LunarDate(os.date("%Y%m%d")) .. GetLunarSichen(os.date("%H"), 1), "" } }
+            -- 不带前导零的格式
+            { string.format("%d年%d月%d日", today.year, m, d), "" },
+            { string.format("%d月%d日", m, d), "" },
+            -- 农历相关
+            { CnDate_translator(ymd), num_year },
+            { lunarJzl(ymdh), "" },
+            { Date2LunarDate(ymd) .. JQtest(ymd), "" },
+            { Date2LunarDate(ymd) .. GetLunarSichen(os.date("%H"), 1), "" }
+        }
         generate_candidates("date", seg, date_variants)
         return
     end
 
     -- **时间候选项**
     if (command == "sj" or command == "uj") then
+        --- 设置手动排序的排序编码，以启用手动排序支持
+        env.engine.context:set_property("sequence_adjustment_code", "/sj")
+
         local time_discrpt = "〔" .. GetLunarSichen(os.date("%H"), 1) .. "〕"
         local time_variants = { { os.date("%H:%M"), time_discrpt },  --同一个时间首选看到时辰即可
             { format_Time() .. os.date("%I:%M"), "" },
@@ -2319,6 +2410,9 @@ local function translator(input, seg, env)
 
     -- **农历候选项**
     if (command == "nl") then
+        --- 设置手动排序的排序编码，以启用手动排序支持
+        env.engine.context:set_property("sequence_adjustment_code", "/nl")
+
         local lunar_variants = { { Date2LunarDate(os.date("%Y%m%d")) .. JQtest(os.date("%Y%m%d")), "" },
             { lunarJzl(os.date("%Y%m%d%H")),                                         "" },
             { Date2LunarDate(os.date("%Y%m%d")) .. GetLunarSichen(os.date("%H"), 1), "" } }
@@ -2327,6 +2421,9 @@ local function translator(input, seg, env)
     end
 
     if (command == "xq") then
+        --- 设置手动排序的排序编码，以启用手动排序支持
+        env.engine.context:set_property("sequence_adjustment_code", "/xq")
+
         local now = os.date("*t")
         local _, weekno = iso_week_number(now.year, now.month, now.day)
         local num_weekday = "〔第 " .. weekno .. " 周〕"
@@ -2340,6 +2437,9 @@ local function translator(input, seg, env)
 
     -- **第几周**
     if (command == "ww") then
+        --- 设置手动排序的排序编码，以启用手动排序支持
+        env.engine.context:set_property("sequence_adjustment_code", "/ww")
+
         local now = os.date("*t")
         local _, weekno = iso_week_number(now.year, now.month, now.day)
         local weekno_str = tostring(weekno)
@@ -2351,6 +2451,9 @@ local function translator(input, seg, env)
 
     -- **节气候选项**
     if (command == "jq") then
+        --- 设置手动排序的排序编码，以启用手动排序支持
+        env.engine.context:set_property("sequence_adjustment_code", "/jq")
+
         local jqs = GetNowTimeJq(os.date("%Y%m%d", os.time() - 3600 * 24 * 15))
         local jq_variants = {}
         for _, jq in ipairs(jqs) do
@@ -2362,6 +2465,9 @@ local function translator(input, seg, env)
 
     -- **时间戳**
     if (command == "tt") then
+        --- 设置手动排序的排序编码，以启用手动排序支持
+        env.engine.context:set_property("sequence_adjustment_code", "/tt")
+
         local current_time = os.time()
         local timestamp_variants = { { string.format('%d', current_time), "〔时间戳〕" } }
         generate_candidates("time", seg, timestamp_variants)
@@ -2370,6 +2476,9 @@ local function translator(input, seg, env)
 
     -- **日期+时间**
     if (command == "rs") then
+        --- 设置手动排序的排序编码，以启用手动排序支持
+        env.engine.context:set_property("sequence_adjustment_code", "/rs")
+
         local current_time = os.time()
         local time_variants = { { os.date('%Y-%m-%d %H:%M:%S', current_time), "〔年-月-日 时:分:秒〕" },
             { os.date('%Y-%m-%dT%H:%M:%S+08:00', current_time), "〔年-月-日T时:分:秒+时区〕" },
@@ -2380,6 +2489,9 @@ local function translator(input, seg, env)
 
     -- **节日查询**
     if (command == "jr") then
+        --- 设置手动排序的排序编码，以启用手动排序支持
+        env.engine.context:set_property("sequence_adjustment_code", "/jr")
+
         local upcoming_holidays = get_upcoming_holidays() -- 获取所有即将到来的节日
         local candidates = {}
         -- 格式化输出节日信息
@@ -2403,6 +2515,9 @@ local function translator(input, seg, env)
 
     -- **生日提醒**
     if (command == "sr" or command == "ur") then
+        --- 设置手动排序的排序编码，以启用手动排序支持
+        env.engine.context:set_property("sequence_adjustment_code", "/sr")
+
         -- 从用户配置文件中读取生日设置
         local birthday_settings = {
             solar = {},
@@ -2640,5 +2755,7 @@ local function translator(input, seg, env)
         generate_candidates("day_summary", seg, candidates)
         return
     end
+    -- 取消tag 
+    segment.tags = segment.tags - Set({ "shijian" })
 end
 return translator
