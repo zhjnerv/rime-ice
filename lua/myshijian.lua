@@ -310,7 +310,7 @@ local GXC_e = { 0.016708634, -0.000042037, -0.0000001267 }                      
 local GXC_p = { 102.93735 / RAD, 1.71946 / RAD, 0.00046 / RAD }                                                         -- 近点
 local GXC_l = { 280.4664567 / RAD, 36000.76982779 / RAD, 0.0003032028 / RAD, 1 / 49931000 / RAD, -1 / 153000000 / RAD } -- 太平黄经
 local GXC_k = 20.49552 /
-rad                                                                                                                     -- 光行差常数
+    rad                                                                                                                 -- 光行差常数
 function addGxc(t, zb)                                                                                                  -- 恒星周年光行差计算(黄道坐标中)
     local t1 = t / 36525
     local t2 = t1 * t1
@@ -1961,8 +1961,10 @@ local solar_holidays = {
     ["高考第二天"] = "0608",
     ["高考第三天"] = "0609",
     ["建党节"] = "0701",
+    ["七七事变"] = "0707",
     ["建军节"] = "0801",
     ["教师节"] = "0910",
+    ["国家公祭日"] = "0918",
     ["国庆节"] = "1001",
     -- 国际通用节日
     ["平安夜"] = "1224",
@@ -2268,21 +2270,21 @@ end
 ---@param seg Segment
 ---@param env Env
 local function translator(input, seg, env)
-    local engine = env.engine
+    local engine  = env.engine
     local context = engine.context
     local config  = engine.schema.config
-    local segment = env.engine.context.composition:back()   
+    local segment = context.composition:back()
 
     if input:sub(1, 1) == "N" then
-        --- 设置手动排序的排序编码，以启用手动排序支持
-        env.engine.context:set_property("sequence_adjustment_code", "N")
-
         local n = input:sub(2)
         local yr = os.date("%Y")
         segment.tags = segment.tags + Set({ "Ndate" })
 
         -- N0101–N1231（仅月日）
         if #n == 4 and n:match("^%d%d%d%d$") then
+            --- 设置手动排序的排序编码，以启用手动排序支持
+            context:set_property("sequence_adjustment_code", "Nmmdd")
+
             local mm = tonumber(n:sub(1, 2))
             local dd = tonumber(n:sub(3, 4))
             if mm and dd and mm >= 1 and mm <= 12 and dd >= 1 and dd <= 31 then
@@ -2319,6 +2321,9 @@ local function translator(input, seg, env)
 
         -- N2025 或 N20250101 等
         if n:match("^(20)%d%d") or n:match("^(19)%d%d") then
+            --- 设置手动排序的排序编码，以启用手动排序支持
+            context:set_property("sequence_adjustment_code", "N")
+
             if #n >= 8 then
                 local yyyy = tonumber(n:sub(1, 4))
                 local mm = tonumber(n:sub(5, 6))
@@ -2366,12 +2371,12 @@ local function translator(input, seg, env)
     -- **日期候选项**
     if (command == "rq") then
         --- 设置手动排序的排序编码，以启用手动排序支持
-        env.engine.context:set_property("sequence_adjustment_code", "/rq")
+        context:set_property("sequence_adjustment_code", "/rq")
 
-        local today = os.date("*t")       -- 当前时间表
-        local ymd = os.date("%Y%m%d")     -- 年月日
-        local ymdh = os.date("%Y%m%d%H")  -- 年月日时
-        local num_year = string.format("〔%03d/%d〕", today.yday, IsLeap(today.year))  -- 年内第几天/总天数
+        local today = os.date("*t") -- 当前时间表
+        local ymd = os.date("%Y%m%d") -- 年月日
+        local ymdh = os.date("%Y%m%d%H") -- 年月日时
+        local num_year = string.format("〔%03d/%d〕", today.yday, IsLeap(today.year)) -- 年内第几天/总天数
         local m = today.month
         local d = today.day
 
@@ -2397,10 +2402,10 @@ local function translator(input, seg, env)
     -- **时间候选项**
     if (command == "sj" or command == "uj") then
         --- 设置手动排序的排序编码，以启用手动排序支持
-        env.engine.context:set_property("sequence_adjustment_code", "/sj")
+        context:set_property("sequence_adjustment_code", "/sj")
 
         local time_discrpt = "〔" .. GetLunarSichen(os.date("%H"), 1) .. "〕"
-        local time_variants = { { os.date("%H:%M"), time_discrpt },  --同一个时间首选看到时辰即可
+        local time_variants = { { os.date("%H:%M"), time_discrpt }, --同一个时间首选看到时辰即可
             { format_Time() .. os.date("%I:%M"), "" },
             { os.date("%H:%M:%S"), "" },
             { os.date("%H%M%S"), "" },
@@ -2412,7 +2417,7 @@ local function translator(input, seg, env)
     -- **农历候选项**
     if (command == "nl") then
         --- 设置手动排序的排序编码，以启用手动排序支持
-        env.engine.context:set_property("sequence_adjustment_code", "/nl")
+        context:set_property("sequence_adjustment_code", "/nl")
 
         local lunar_variants = { { Date2LunarDate(os.date("%Y%m%d")) .. JQtest(os.date("%Y%m%d")), "" },
             { lunarJzl(os.date("%Y%m%d%H")),                                         "" },
@@ -2423,15 +2428,15 @@ local function translator(input, seg, env)
 
     if (command == "xq") then
         --- 设置手动排序的排序编码，以启用手动排序支持
-        env.engine.context:set_property("sequence_adjustment_code", "/xq")
+        context:set_property("sequence_adjustment_code", "/xq")
 
         local now = os.date("*t")
         local _, weekno = iso_week_number(now.year, now.month, now.day)
         local num_weekday = "〔第 " .. weekno .. " 周〕"
 
-        local week_variants = { 
+        local week_variants = {
             { chinese_weekday2(os.date("%w")), num_weekday },
-            { chinese_weekday(os.date("%w")), num_weekday } }
+            { chinese_weekday(os.date("%w")),  num_weekday } }
         generate_candidates("xq", seg, week_variants)
         return
     end
@@ -2439,7 +2444,7 @@ local function translator(input, seg, env)
     -- **第几周**
     if (command == "ww") then
         --- 设置手动排序的排序编码，以启用手动排序支持
-        env.engine.context:set_property("sequence_adjustment_code", "/ww")
+        context:set_property("sequence_adjustment_code", "/ww")
 
         local now = os.date("*t")
         local _, weekno = iso_week_number(now.year, now.month, now.day)
@@ -2453,7 +2458,7 @@ local function translator(input, seg, env)
     -- **节气候选项**
     if (command == "jq") then
         --- 设置手动排序的排序编码，以启用手动排序支持
-        env.engine.context:set_property("sequence_adjustment_code", "/jq")
+        context:set_property("sequence_adjustment_code", "/jq")
 
         local jqs = GetNowTimeJq(os.date("%Y%m%d", os.time() - 3600 * 24 * 15))
         local jq_variants = {}
@@ -2467,7 +2472,7 @@ local function translator(input, seg, env)
     -- **时间戳**
     if (command == "tt") then
         --- 设置手动排序的排序编码，以启用手动排序支持
-        env.engine.context:set_property("sequence_adjustment_code", "/tt")
+        context:set_property("sequence_adjustment_code", "/tt")
 
         local current_time = os.time()
         local timestamp_variants = { { string.format('%d', current_time), "〔时间戳〕" } }
@@ -2478,7 +2483,7 @@ local function translator(input, seg, env)
     -- **日期+时间**
     if (command == "rs") then
         --- 设置手动排序的排序编码，以启用手动排序支持
-        env.engine.context:set_property("sequence_adjustment_code", "/rs")
+        context:set_property("sequence_adjustment_code", "/rs")
 
         local current_time = os.time()
         local time_variants = { { os.date('%Y-%m-%d %H:%M:%S', current_time), "〔年-月-日 时:分:秒〕" },
@@ -2491,7 +2496,7 @@ local function translator(input, seg, env)
     -- **节日查询**
     if (command == "jr") then
         --- 设置手动排序的排序编码，以启用手动排序支持
-        env.engine.context:set_property("sequence_adjustment_code", "/jr")
+        context:set_property("sequence_adjustment_code", "/jr")
 
         local upcoming_holidays = get_upcoming_holidays() -- 获取所有即将到来的节日
         local candidates = {}
@@ -2517,7 +2522,7 @@ local function translator(input, seg, env)
     -- **生日提醒**
     if (command == "sr" or command == "ur") then
         --- 设置手动排序的排序编码，以启用手动排序支持
-        env.engine.context:set_property("sequence_adjustment_code", "/sr")
+        context:set_property("sequence_adjustment_code", "/sr")
 
         -- 从用户配置文件中读取生日设置
         local birthday_settings = {
@@ -2735,14 +2740,14 @@ local function translator(input, seg, env)
         local line = generate_line(14) -- 控制符号线的宽度为 50
         -- 生成最终信息字符串
         local summary = string.format("※嗨，我是万象小助手，%s\n", greeting) .. line .. "\n" ..
-            string.format("☉今天是：%s %s\n", zero_holiday or "", zero_jieqi or "") ..
-            string.format("☉%d年%d月%d日 %s\n", year, month, day, week_day_str) ..
-            string.format("☉农历：%s\n", lunar_info_str) .. line .. "\n" ..
-            string.format("◉%d进度：\n", year) .. string.format("◈%s\n", progress_bar) ..
-            string.format("◈本年第[ %d ]周，本月第[ %d ]周\n", week_of_year, week_of_month) ..
-            string.format("◈距 %d 年： [ %d ]天\n", next_year, diff_days_next_year) ..
-            string.format("◈今年已过[ %d ]天\n", day_of_year - 1) ..
-            string.format("◈今天是第[ %d ]天\n", day_of_year) .. line .. "\n" ..
+            string.format("☉ 今天是：%s %s\n", zero_holiday or "", zero_jieqi or "") ..
+            string.format("☉ %d年%d月%d日 %s\n", year, month, day, week_day_str) ..
+            string.format("☉ 农历：%s\n", lunar_info_str) .. line .. "\n" ..
+            string.format("◉ %d进度：\n", year) .. string.format("◈%s\n", progress_bar) ..
+            string.format("◈ 本年第[ %d ]周，本月第[ %d ]周\n", week_of_year, week_of_month) ..
+            string.format("◈ 距 %d 年： [ %d ]天\n", next_year, diff_days_next_year) ..
+            string.format("◈ 今年已过[ %d ]天\n", day_of_year - 1) ..
+            string.format("◈ 今天是第[ %d ]天\n", day_of_year) .. line .. "\n" ..
             string.format("◉ 倒数日：\n") ..
             string.format("◈ %s %s < [ %d ]天\n", holiday_data[1][1], holiday_data[1][2],
                 holiday_data[1][3]) ..
@@ -2756,7 +2761,7 @@ local function translator(input, seg, env)
         generate_candidates("day_summary", seg, candidates)
         return
     end
-    -- 取消tag 
+    -- 取消tag
     segment.tags = segment.tags - Set({ "shijian" })
 end
 return translator
