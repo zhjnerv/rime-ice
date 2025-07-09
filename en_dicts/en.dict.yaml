@@ -14,7 +14,7 @@
 # 转化应当大写的单词
 ---
 name: en
-version: "2024-12-27"
+version: "LTS"
 sort: by_weight
 ...
 # +_+

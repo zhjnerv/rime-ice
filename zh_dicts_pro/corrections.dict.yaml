@@ -4,7 +4,7 @@
 #错音错字对照表
 ---
 name: corrections
-version: "2025-01-01"
+version: "LTS"
 sort: by_weight
 ...
 株木琅玛	zhū;mv mù;ad láng;wl mǎ;wm	12	(有声)
@@ -43,7 +43,7 @@ sort: by_weight
 珲春	hui;wj chun;of,fo	462	hún chūn
 甪直	yong;py zhi;aa,uq	436	lù zhí
 五厍	wu;aa ku;ii	358	wú shè
-台州	tái;sk zhōu;id,da	593	tāi zhōu
+台州	tái;sk zhōu;id,da	400	tāi zhōu
 膻中	shan;od zhong;aa,ka	364	膻(dàn)中
 渑池	yin;dd,dm chi;dy	400	miǎn chí
 渑池	sheng;dd,dm chi;dy	400	miǎn chí

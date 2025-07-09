@@ -2,7 +2,7 @@
 # encoding: utf-8
 
 # 要比共享目錄同名文件版本號更大方可生效
-config_version: '2024-06-11'
+config_version: 'LTS'
 
 # options: last | default | _custom_
 # last: the last used latin keyboard layout

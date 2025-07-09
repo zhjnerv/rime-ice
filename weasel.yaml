@@ -1,7 +1,7 @@
 # Weasel settings
 # encoding: utf-8
 
-config_version: "2024-04-16"
+config_version: "LTS"
 
 # [app_options]
 # 针对特定应用的设置

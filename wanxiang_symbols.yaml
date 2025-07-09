@@ -2,7 +2,7 @@
 # encoding: utf-8
 #
 # copy from /Library/Input Methods/Squirrel.app/Contents/SharedSupport/symbols.yaml
-# version: 2023-04-11
+# version: LTS
 symbol_table:
   full_shape:
     ' ' : { commit: '　' }
@@ -311,7 +311,6 @@ symbol_table:
   #韩文+圈v弧
     '/hwq': [ ㉠, ㉡, ㉢, ㉣, ㉤, ㉥, ㉦, ㉧, ㉨, ㉩, ㉪, ㉫, ㉬, ㉭, ㉮, ㉯, ㉰, ㉱, ㉲, ㉳, ㉴, ㉵, ㉶, ㉷, ㉸, ㉹, ㉺, ㉻, ㉼, ㉽, ㉾, ㉿ ]
     '/hwh': [ ㈀, ㈁, ㈂, ㈃, ㈄, ㈅, ㈆, ㈇, ㈈, ㈉, ㈊, ㈋, ㈌, ㈍, ㈎, ㈏, ㈐, ㈑, ㈒, ㈓, ㈔, ㈕, ㈖, ㈗, ㈘, ㈙, ㈚, ㈛, ㈜, ㈝, ㈞ ]
-  
     # 中文标点符号表，来自 https://www.w3.org/TR/clreq/#tables_of_chinese_punctuation_marks
     # 将点号、非夹、夹注、行间四个类别放在不同的列表中
     '/dh': [。, ．, ，, 、, ：, ；, ！, ‼, ？, ⁇]

@@ -1,7 +1,7 @@
 -- librime-lua 官方类型提示
 -- ⚠️ 仅用于类型提升，请勿直接 require 使用
 -- from https://github.com/hchunhui/librime-lua/blob/master/contrib/librime.lua
--- Last Change: 2025-06-18
+-- Last Change: LTS
 ---@meta rime
 
 --- 全局对象
