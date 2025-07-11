@@ -2165,7 +2165,7 @@ function get_birthday_reminders(custom_settings)
 
         -- 添加到生日列表
         table.insert(birthday_list,
-            { birthday_info, string.format("〔< %d 天 (公历生日)〕", days_left), days_left })
+            { birthday_info, string.format("〔< %d 天〕", days_left), days_left })
     end
 
     -- 计算农历生日倒计时
@@ -2222,7 +2222,7 @@ function get_birthday_reminders(custom_settings)
 
         -- 添加到生日列表
         table.insert(birthday_list,
-            { birthday_info, string.format("〔 < %d 天 (农历生日)〕", days_left), days_left })
+            { birthday_info, string.format("〔 < %d 天〕", days_left), days_left })
     end
 
     -- 按天数排序
@@ -2288,18 +2288,21 @@ local function translator(input, seg, env)
             local mm = tonumber(n:sub(1, 2))
             local dd = tonumber(n:sub(3, 4))
             if mm and dd and mm >= 1 and mm <= 12 and dd >= 1 and dd <= 31 then
+                local display_year = " 〔" .. yr .. "年" .. "〕"
+
                 if not DateExists(yr, mm, dd) then
-                    set_prompt_if_invalid(context, "〔日期不存在〕")
+                    set_prompt_if_invalid(context, " 〔日期不存在〕")
                     return
                 end
+                -- 如果日期存在，则设置为 display_year
+                set_prompt_if_invalid(context, display_year)
                 local mm_str = string.format("%02d", mm)
                 local dd_str = string.format("%02d", dd)
                 local date_str = yr .. mm_str .. dd_str .. "01"
                 local lunar = QueryLunarInfo(date_str)
                 if #lunar > 0 then
-                    local comment = string.format("〔%s〕", yr)
                     local candidates = {
-                        { string.format("%d月%d日", mm, dd), comment }, --第一个候选标记一下年份
+                        { string.format("%d月%d日", mm, dd), "" }, --第一个候选标记一下年份
                         { string.format("%02d月%02d日", mm, dd), "" }
                     }
                     local lunar_full = lunar[2][1]
@@ -2329,7 +2332,7 @@ local function translator(input, seg, env)
                 local mm = tonumber(n:sub(5, 6))
                 local dd = tonumber(n:sub(7, 8))
                 if not DateExists(yyyy, mm, dd) then
-                    set_prompt_if_invalid(context, "〔日期不存在〕")
+                    set_prompt_if_invalid(context, " 〔日期不存在〕")
                     return
                 end
             end
@@ -2376,26 +2379,28 @@ local function translator(input, seg, env)
         local today = os.date("*t") -- 当前时间表
         local ymd = os.date("%Y%m%d") -- 年月日
         local ymdh = os.date("%Y%m%d%H") -- 年月日时
-        local num_year = string.format("〔%03d/%d〕", today.yday, IsLeap(today.year)) -- 年内第几天/总天数
+        local num_year = string.format(" 〔%03d/%d〕", today.yday, IsLeap(today.year)) -- 年内第几天/总天数
         local m = today.month
         local d = today.day
 
         local date_variants = {
             -- 常规格式（带前导零）
-            { os.date("%Y年%m月%d日"), num_year },
+            { os.date("%Y年%m月%d日"), "" },
             { os.date("%Y.%m.%d"), "" },
             { os.date("%Y-%m-%d"), "" },
             { os.date("%Y/%m/%d"), "" },
+            { os.date("%Y%m%d"), "" },
             -- 不带前导零的格式
             { string.format("%d年%d月%d日", today.year, m, d), "" },
             { string.format("%d月%d日", m, d), "" },
             -- 农历相关
-            { CnDate_translator(ymd), num_year },
+            { CnDate_translator(ymd), "" },
             { lunarJzl(ymdh), "" },
             { Date2LunarDate(ymd) .. JQtest(ymd), "" },
             { Date2LunarDate(ymd) .. GetLunarSichen(os.date("%H"), 1), "" }
         }
         generate_candidates("date", seg, date_variants)
+        set_prompt_if_invalid(context, num_year)
         return
     end
 
@@ -2404,12 +2409,13 @@ local function translator(input, seg, env)
         --- 设置手动排序的排序编码，以启用手动排序支持
         context:set_property("sequence_adjustment_code", "/sj")
 
-        local time_discrpt = "〔" .. GetLunarSichen(os.date("%H"), 1) .. "〕"
-        local time_variants = { { os.date("%H:%M"), time_discrpt }, --同一个时间首选看到时辰即可
+        local time_discrpt = " 〔" .. GetLunarSichen(os.date("%H"), 1) .. "〕"
+        local time_variants = { { os.date("%H:%M"), "" }, --同一个时间首选看到时辰即可
             { format_Time() .. os.date("%I:%M"), "" },
             { os.date("%H:%M:%S"), "" },
             { string.gsub(os.date("%H点%M分%S秒"), "^0", ""), "" } }
         generate_candidates("time", seg, time_variants)
+        set_prompt_if_invalid(context, time_discrpt)
         return
     end
 
@@ -2418,10 +2424,16 @@ local function translator(input, seg, env)
         --- 设置手动排序的排序编码，以启用手动排序支持
         context:set_property("sequence_adjustment_code", "/nl")
 
-        local lunar_variants = { { Date2LunarDate(os.date("%Y%m%d")) .. JQtest(os.date("%Y%m%d")), "" },
-            { lunarJzl(os.date("%Y%m%d%H")),                                         "" },
-            { Date2LunarDate(os.date("%Y%m%d")) .. GetLunarSichen(os.date("%H"), 1), "" } }
+        local yr = os.date("%Y")
+        local year = "〔" .. yr .. "年" .. "〕"  -- 构造提示字符串
+
+        local lunar_variants = {
+            { Date2LunarDate(os.date("%Y%m%d")) .. JQtest(os.date("%Y%m%d")), "" },
+            { lunarJzl(os.date("%Y%m%d%H")), "" },
+            { Date2LunarDate(os.date("%Y%m%d")) .. GetLunarSichen(os.date("%H"), 1), "" }
+        }
         generate_candidates("date", seg, lunar_variants)
+        set_prompt_if_invalid(context, year)  -- 显示“〔2025年〕”风格的提示
         return
     end
 
