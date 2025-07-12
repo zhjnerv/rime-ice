@@ -1752,19 +1752,34 @@ local function QueryLunarInfo(date)
         LunarGz = lunarJzl(str)
         DateTime = LunarDate2Date(str, 0)
         dateRQ = string.sub(str, 1, 4) .. "年" .. string.sub(str, 5, 6) .. "月" .. string.sub(str, 7, 8) .. "日"
+
         if LunarGz ~= nil then
-            result =
-            { { dateRQ, "〔公历〕" }, { LunarDate, "〔公历⇉农历〕" }, { LunarGz, "〔公历⇉干支〕" } }
+            local y = tonumber(string.sub(str,1,4))
+            local m = tonumber(string.sub(str,5,6))
+            local d = tonumber(string.sub(str,7,8))
+        
+            result = {
+                -- ===== 公历格式 =====
+                { dateRQ, "" },
+                { string.sub(str,1,4) .. "." .. string.sub(str,5,6) .. "." .. string.sub(str,7,8), "" },
+                { string.sub(str,1,4) .. "-" .. string.sub(str,5,6) .. "-" .. string.sub(str,7,8), "" },
+                { string.sub(str,1,4) .. "/" .. string.sub(str,5,6) .. "/" .. string.sub(str,7,8), "" },
+                { string.format("%d年%d月%d日", y, m, d), "" },
+                { string.format("%d月%d日", m, d), "" },
+                -- ===== 公历⇉农历 =====
+                { LunarDate, "" },
+                -- ===== 公历⇉干支 =====
+                { LunarGz, "" }
+            }
             if tonumber(string.sub(str, 7, 8)) < 31 then
-                table.insert(result, { DateTime, "〔农历⇉公历〕" })
-                local leapDate = { LunarDate2Date(str, 1) .. "（闰）", "〔农历⇉公历〕" }
+                table.insert(result, { DateTime, "" })
+                local leapDate = { LunarDate2Date(str, 1) .. "（闰）", "〔农历⇉公历〕" } --查询同一农历月份的闰月对应的公历日期
                 if string.match(leapDate[1], "^(%d+)") ~= nil then
                     table.insert(result, leapDate)
                 end
             end
         end
     end
-
     return result
 end
 --[[ ---------------测试----------------
@@ -2302,17 +2317,17 @@ local function translator(input, seg, env)
                 local lunar = QueryLunarInfo(date_str)
                 if #lunar > 0 then
                     local candidates = {
-                        { string.format("%d月%d日", mm, dd), "" }, --第一个候选标记一下年份
+                        { string.format("%d月%d日", mm, dd), "" },
                         { string.format("%02d月%02d日", mm, dd), "" }
                     }
-                    local lunar_full = lunar[2][1]
+                    local lunar_full = lunar[7][1]
                     local lunar_md = lunar_full:gsub(".*%)", "")
                     if lunar_md == lunar_full then
                         local lunar_md = lunar_full:gsub("^.-年", ""):gsub("^.-%)", "")
                     end
                     table.insert(candidates, { lunar_md, "" })
 
-                    local gz_full = lunar[3][1]
+                    local gz_full = lunar[8][1]
                     local gz_md = gz_full:gsub("^.-年", "")
                     table.insert(candidates, { gz_md, "" })
 
