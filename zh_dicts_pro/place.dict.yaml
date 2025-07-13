@@ -1565,8 +1565,7 @@ sort: by_weight
 民雄	mín;ag,kq,vg xióng;vh,vs	446
 民乐	mín;ag,kq,vg yuè;pd,px	522
 明光	míng;oo guāng;ea,xw	446
-名间	míng;xk jiān;mo,om	440
-名山	míng;xk shān;aa	558
+名间	míng;xk jiān;mo,om	340
 明山	míng;oo shān;aa	383
 明水	míng;oo shuǐ;ad,uv	421
 明溪	míng;oo xī;dx	353
@@ -3815,6 +3814,7 @@ sort: by_weight
 大同市	dà;ad tóng;kk shì;wj	450
 大同乡	dà;ad tóng;kk xiāng;ap,vp	387
 大洼区	dà;ad wā;dg qū;ki	156
+大王镇	dà;ad wáng;aa zhèn;jv	304
 大武口	dà;ad wǔ;vy,yv kǒu;aa	315
 大悟县	dà;ad wù;xw xiàn;sq,qs	226
 大武乡	dà;ad wǔ;vy,yv xiāng;ap,vp	1
@@ -3845,7 +3845,6 @@ sort: by_weight
 大城镇	dài;ad chéng;ti zhèn;jv	300
 大黄堡	dài;ad huáng;ad,cb bǎo;tb	175
 岱山县	dài;ud shān;aa xiàn;sq,qs	170
-大王镇	dài;ad wáng;aa zhèn;jv	304
 岱岳区	dài;ud yuè;uq,qu qū;ki	174
 丹巴县	dān;pd bā;ag,kg,vg xiàn;sq,qs	188
 丹北镇	dān;pd běi;ap,bj zhèn;jv	100
@@ -14569,8 +14568,17 @@ sort: by_weight
 大湾沟村	dà;ad wān;dw gōu;dg cūn;mc	1
 大湾罗乡	dà;ad wān;dw luó;sx xiāng;ap,vp	58
 大湾子村	dà;ad wān;dw zi;aa,vh cūn;mc	57
+大王店镇	dà;ad wáng;aa diàn;gv zhèn;jv	225
+大王府村	dà;ad wáng;aa fǔ;gf cūn;mc	1
+大王古庄	dà;ad wáng;aa gǔ;uk zhuāng;gt	168
+大王集村	dà;ad wáng;aa jí;mv,vm cūn;mc	1
+大王里村	dà;ad wáng;aa lǐ;aa,tt cūn;mc	1
 大旺务村	dà;ad wàng;ow wù;wl cūn;mc	300
+大王寨乡	dà;ad wáng;aa zhài;mb,bm xiāng;ap,vp	1
+大王庄村	dà;ad wáng;aa zhuāng;gt cūn;mc	173
 大旺庄村	dà;ad wàng;ow zhuāng;gt cūn;mc	35
+大王庄乡	dà;ad wáng;aa zhuāng;gt xiāng;ap,vp	116
+大王庄镇	dà;ad wáng;aa zhuāng;gt zhèn;jv	199
 大圩古镇	dà;ad wéi;ty gǔ;uk zhèn;jv	363
 大魏家村	dà;ad wèi;gw jiā;bu cūn;mc	1
 大围山镇	dà;ad wéi;kw shān;aa zhèn;jv	299
@@ -14820,15 +14828,6 @@ sort: by_weight
 埭头蔡村	dài;tl tóu;dd cài;cj cūn;mc	1
 代瓦尼乡	dài;ry wǎ;ad ní;ub xiāng;ap,vp	1
 代王城镇	dài;ry wáng;aa chéng;ti zhèn;jv	142
-大王店镇	dài;ad wáng;aa diàn;gv zhèn;jv	225
-大王府村	dài;ad wáng;aa fǔ;gf cūn;mc	1
-大王古庄	dài;ad wáng;aa gǔ;uk zhuāng;gt	168
-大王集村	dài;ad wáng;aa jí;mv,vm cūn;mc	1
-大王里村	dài;ad wáng;aa lǐ;aa,tt cūn;mc	1
-大王寨乡	dài;ad wáng;aa zhài;mb,bm xiāng;ap,vp	1
-大王庄村	dài;ad wáng;aa zhuāng;gt cūn;mc	173
-大王庄乡	dài;ad wáng;aa zhuāng;gt xiāng;ap,vp	116
-大王庄镇	dài;ad wáng;aa zhuāng;gt zhèn;jv	199
 岱武岔村	dài;ud wǔ;vy,yv chà;uf cūn;mc	1
 岱峡河村	dài;ud xiá;uj hé;dk cūn;mc	1
 呆鹰岭镇	dāi;km yīng;gn,nv lǐng;ul zhèn;jv	156

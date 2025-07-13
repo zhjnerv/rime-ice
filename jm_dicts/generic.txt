@@ -2,7 +2,7 @@
 #@/db_name	jm_dicts/generic
 #@/db_type	tabledb
 #@/rime_version	1.13.1
-#@/tick	1
+#@/tick	2
 啊	a	999
 按	a	998
 阿	aa	999
@@ -3504,7 +3504,7 @@
 梏	gum	999
 姑	gun	999
 股	guo	999
-股票	gup	999
+股票	gup	1000
 股权	guq	999
 估	gur	999
 罟	gus	999
