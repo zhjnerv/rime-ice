@@ -228,18 +228,36 @@ local function init_tips_userdb()
     tips_db.close() -- 主动关闭数据库，后续只需要只读方式打开
 end
 
+---@class Env
+---@field current_tip string | nil 当前 tips 值
+---@field last_prompt string 最后一次设置的 prompt 值
+---@field tips_update_connection any update notifier
+
+---tips prompt 处理
+---@param context Context
+---@param env Env
 local function update_tips_prompt(context, env)
     local segment = context.composition:back()
     if segment == nil then return end
 
-    ---@type string | nil 存放 db 中查到的 tips 值
-    env.current_tip = context.input and tips_db.fetch(context.input)
+    ---@param key string
+    ---@param fallback_key? string
+    ---@return string | nil
+    local function get_tip(key, fallback_key)
+        if not key or key == "" then return nil end
 
-    -- 如果 context.input 没有匹配的 tips，则使用候选词查找
-    if env.current_tip == nil or env.current_tip == "" then
-        local candidate = context:get_selected_candidate()
-        env.current_tip = candidate and tips_db.fetch(candidate.text)
+        if not fallback_key then return tips_db.fetch(key) end
+
+        local tip = tips_db.fetch(key)
+        return (tip and #tip > 0)
+            and tip
+            or tips_db.fetch(fallback_key)
     end
+
+    local cand = context:get_selected_candidate() or {}
+    env.current_tip = segment.selected_index == 0
+        and get_tip(context.input, cand.text)
+        or get_tip(cand.text)
 
     if env.current_tip ~= nil and env.current_tip ~= "" then
         -- 有 tips 则直接设置 prompt
@@ -251,11 +269,6 @@ local function update_tips_prompt(context, env)
         env.last_prompt = segment.prompt
     end
 end
-
----@class Env
----@field current_tip string | nil
----@field last_prompt string
----@field tips_update_connection any
 
 local P = {}
 
