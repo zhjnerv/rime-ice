@@ -7,7 +7,9 @@ name: compatible
 version: "LTS"
 sort: by_weight
 ...
-大王	dài;ad wang;aa	
+没收	méi;du shōu;wj,jw	407
+暴晒	pù;ou shài;ox	
+大王	dài;ad wang;aa	430
 教会	jiāo;wx huì;ry	702
 爱教	ài;vy jiāo;wx	352
 不教	bù;ad,ax jiāo;wx	491
@@ -2218,7 +2220,7 @@ sort: by_weight
 练熟	liàn;sd,sj shóu;hu	395
 两熟	liǎng;ad shóu;hu	302
 蛮熟	mán;iy,yi shóu;hu	294
-没熟	méi;du shóu;hu	490
+没熟	méi;du shóu;hu	410
 面熟	miàn;aa shóu;hu	400
 摸熟	mō;fm shóu;hu	312
 轻熟	qīng;ig shóu;hu	419
