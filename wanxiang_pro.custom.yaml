@@ -31,8 +31,9 @@ patch:
   # 然后, 将它替换为指向您新脚本的 "lua_translator@myshijian"。
   # engine/translators/@3: 
   #   lua_translator@*myshijian
-  punctuator: #修改符号表的名称，默认是wanxiang_symbols_zhj
-    __include: wanxiang_symbols_zhj:/symbol_table
+  punctuator: 
+    __include: wanxiang_symbols_zhj:/symbol_table #修改符号表的名称，默认是wanxiang_symbols_zhj
+    digit_separators: ":." #修改数字后的标点符号状态.
   #下面这个是修改快符的映射，按自己需求来
   quick_symbol_text:
     q: "‰"
