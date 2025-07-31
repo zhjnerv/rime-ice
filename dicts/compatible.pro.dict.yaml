@@ -4222,7 +4222,7 @@ sort: by_weight
 黄凤凰	huáng;ad,cb fèng;jy huáng;jh	1
 接住豆	jiē;fq zhù;rv dòu;aa,aq	1
 九重天	jiǔ;py chóng;pa,ql tiān;ad	560
-两个八	liǎng;ad gè;ra,pa bā;pd	644
+两个八	liǎng;ad gè;ra,pa bā;pd	1
 两个白	liǎng;ad gè;ra,pa bái;pa,po	1
 两个百	liǎng;ad gè;ra,pa bǎi;ab	1
 两个貝	liǎng;ad gè;ra,pa bèi;ad,ob	1
@@ -4243,7 +4243,7 @@ sort: by_weight
 两个巛	liǎng;ad gè;ra,pa chuān;aa,vv	1
 两个串	liǎng;ad gè;ra,pa chuàn;aa,vv	1
 两个朿	liǎng;ad gè;ra,pa cì;ad,mk	1
-两个大	liǎng;ad gè;ra,pa dà;ad	656
+两个大	liǎng;ad gè;ra,pa dà;ad	1
 两个歹	liǎng;ad gè;ra,pa dǎi;ad,ax	1
 两个呆	liǎng;ad gè;ra,pa dāi;km	1
 两个東	liǎng;ad gè;ra,pa dōng;ad,mo	1
@@ -4318,7 +4318,7 @@ sort: by_weight
 两个區	liǎng;ad gè;ra,pa qū;kp	1
 两个犬	liǎng;ad gè;ra,pa quǎn;dd,ad	1
 两个夋	liǎng;ad gè;ra,pa qūn;sw,wb	1
-两个人	liǎng;ad gè;ra,pa rén;pd	661
+两个人	liǎng;ad gè;ra,pa rén;pd	1
 两个日	liǎng;ad gè;ra,pa rì;aa,or,ri	1
 两个入	liǎng;ad gè;ra,pa rù;pd	1
 两个卅	liǎng;ad gè;ra,pa sà;aa,ia	1
@@ -4376,7 +4376,7 @@ sort: by_weight
 两个余	liǎng;ad gè;ra,pa yú;rb,rd,rh	1
 两个予	liǎng;ad gè;ra,pa yǔ;sa,aa	1
 两个禺	liǎng;ad gè;ra,pa yú;ad,od	1
-两个月	liǎng;ad gè;ra,pa yuè;oy,pa,yt	660
+两个月	liǎng;ad gè;ra,pa yuè;oy,pa,yt	1
 两个曰	liǎng;ad gè;ra,pa yuē;aa,oy,yt	1
 两个真	liǎng;ad gè;ra,pa zhēn;uj	1
 两个止	liǎng;ad gè;ra,pa zhǐ;aa	1
@@ -4427,11 +4427,11 @@ sort: by_weight
 三个加	sān;aa gè;ra,pa jiā;lk,kl	1
 三个介	sān;aa gè;ra,pa jiè;ra,rd	1
 三个金	sān;aa gè;ra,pa jīn;ra,pa	1
-三个九	sān;aa gè;ra,pa jiǔ;py	635
+三个九	sān;aa gè;ra,pa jiǔ;py	1
 三个可	sān;aa gè;ra,pa kě;dk	1
 三个客	sān;aa gè;ra,pa kè;bg	1
 三个空	sān;aa gè;ra,pa kōng;xg,bg	1
-三个口	sān;aa gè;ra,pa kǒu;aa	639
+三个口	sān;aa gè;ra,pa kǒu;aa	1
 三个老	sān;aa gè;ra,pa lǎo;bl,lb	1
 三个了	sān;aa gè;ra,pa le;aa,vu	1
 三个雷	sān;aa gè;ra,pa léi;yt	1
@@ -4467,7 +4467,7 @@ sort: by_weight
 三个犬	sān;aa gè;ra,pa quǎn;dd,ad	1
 三个全	sān;aa gè;ra,pa quán;rw	1
 三个𡿨	sān;aa gè;ra,pa quǎn;	1
-三个人	sān;aa gè;ra,pa rén;pd	659
+三个人	sān;aa gè;ra,pa rén;pd	1
 三个日	sān;aa gè;ra,pa rì;aa,or,ri	1
 三个若	sān;aa gè;ra,pa ruò;cy	1
 三个山	sān;aa gè;ra,pa shān;aa	1
@@ -4476,8 +4476,8 @@ sort: by_weight
 三个舍	sān;aa gè;ra,pa shě;ru	1
 三个申	sān;aa gè;ra,pa shēn;aa,oa	1
 三个生	sān;aa gè;ra,pa shēng;na	1
-三个市	sān;aa gè;ra,pa shì;wj	635
-三个十	sān;aa gè;ra,pa shí;aa	624
+三个市	sān;aa gè;ra,pa shì;wj	1
+三个十	sān;aa gè;ra,pa shí;aa	1
 三个士	sān;aa gè;ra,pa shì;aa	1
 三个石	sān;aa gè;ra,pa shí;kp,aa,ak,pk	1
 三个手	sān;aa gè;ra,pa shǒu;pa,ub	1
@@ -4515,7 +4515,7 @@ sort: by_weight
 三个玉	sān;aa gè;ra,pa yù;ad,wd	1
 三个原	sān;aa gè;ra,pa yuán;ix	1
 三个厡	sān;aa gè;ra,pa yuán;iq	1
-三个月	sān;aa gè;ra,pa yuè;oy,pa,yt	660
+三个月	sān;aa gè;ra,pa yuè;oy,pa,yt	1
 三个雲	sān;aa gè;ra,pa yún;yy	1
 三个爪	sān;aa gè;ra,pa zhǎo;pd	1
 三个止	sān;aa gè;ra,pa zhǐ;aa	1
@@ -4561,7 +4561,7 @@ sort: by_weight
 四个且	sì;aa,ke gè;ra,pa qiě;aa	1
 四个囚	sì;aa,ke gè;ra,pa qiú;kr	1
 四个泉	sì;aa,ke gè;ra,pa quán;bu,ub	1
-四个人	sì;aa,ke gè;ra,pa rén;pd	658
+四个人	sì;aa,ke gè;ra,pa rén;pd	1
 四个日	sì;aa,ke gè;ra,pa rì;aa,or,ri	1
 四个石	sì;aa,ke gè;ra,pa shí;kp,aa,ak,pk	1
 四个水	sì;aa,ke gè;ra,pa shuǐ;ad,uv	1
@@ -4577,7 +4577,7 @@ sort: by_weight
 四个乂	sì;aa,ke gè;ra,pa yì;pd,yi	1
 四个又	sì;aa,ke gè;ra,pa yòu;vd,ad	1
 四个魚	sì;aa,ke gè;ra,pa yú;dh	1
-四个月	sì;aa,ke gè;ra,pa yuè;oy,pa,yt	658
+四个月	sì;aa,ke gè;ra,pa yuè;oy,pa,yt	1
 四个雲	sì;aa,ke gè;ra,pa yún;yy	1
 四个竹	sì;aa,ke gè;ra,pa zhú;gg	1
 四是四	sì;aa,ke shì;op,ov sì;aa,ke	1
@@ -4585,24 +4585,24 @@ sort: by_weight
 提锡壶	tí;fu xī;jy hú;uy	1
 听物理	tīng;kj wù;nw lǐ;wl	1
 腿说嘴	tuǐ;ot shuō;yd zuǐ;kj,kz	1
-为一名	wéi;dd yì;aa míng;xk	684
-为一名	wèi;dd yì;aa míng;xk	584
+为一名	wéi;dd yì;aa míng;xk	1
+为一名	wèi;dd yì;aa míng;xk	1
 星映灯	xīng;ou yìng;oy dēng;hd	1
 杨家羊	yáng;my jiā;bu yáng;da	1
 硬石头	yìng;ug shí;kp,aa,ak,pk tou;dd	1
 游西湖	yóu;dz xī;aa hú;dh	1
-越长越	yuè;zy cháng;pd yuè;zy	315
-越长大	yuè;zy zhǎng;pd dà;ad	321
-越长越	yuè;zy zhǎng;pd yuè;zy	265
+越长越	yuè;zy cháng;pd yuè;zy	1
+越长大	yuè;zy zhǎng;pd dà;ad	1
+越长越	yuè;zy zhǎng;pd yuè;zy	1
 这是蚕	zhè;zw shì;op,ov cán;it,ti	1
 紫瓷盘	zǐ;sc cí;wc pán;mv,vm	1
 紫葡萄	zǐ;sc pú;cp táo;cf,ct	1
 嘴不黑	zuǐ;kj,kz bù;ad,ax hēi;ad,ha	1
 嘴说腿	zuǐ;kj,kz shuō;yd tuǐ;ot	1
 白白的鹅	bái;pa,po bái;pa,po de;bu é;nw	1
-便不便宜	biàn;rg bú;ad,ax biàn;rg yí;bq	376
-便宜行事	biàn;rg yí;bq xíng;xd,xi shì;aa	281
-便宜之内	biàn;rg yí;bq zhī;dd nèi;ad,kr	110
+便不便宜	biàn;rg bú;ad,ax biàn;rg yí;bq	1
+便宜行事	biàn;rg yí;bq xíng;xd,xi shì;aa	1
+便宜之内	biàn;rg yí;bq zhī;dd nèi;ad,kr	1
 不剥桔子	bù;ad,ax bō;dl jú;mj zi;aa,vh	1
 不吃桔子	bù;ad,ax chī;kq jú;mj zi;aa,vh	1
 不是字纸	bú;ad,ax shì;op,ov zì;bz zhǐ;su	1
@@ -4621,8 +4621,8 @@ sort: by_weight
 勿理物理	wù;gp lǐ;wl wù;nw lǐ;wl	1
 惜乎锡壶	xī;xx hū;pa xī;jy hú;uy	1
 小直摇头	xiǎo;ad zhí;aa,uq yáo;ff tóu;dd	1
-越长越好	yuè;zy cháng;pd yuè;zy hǎo;nz	230
-越长越快	yuè;zy zhǎng;pd yuè;zy kuài;xd,xg	204
+越长越好	yuè;zy cháng;pd yuè;zy hǎo;nz	1
+越长越快	yuè;zy zhǎng;pd yuè;zy kuài;xd,xg	1
 安心唱爱歌	ān;bn xīn;dd chàng;ki ài;vy gē;qg	1
 昂首吸飞蛾	áng;oe shǒu;qz xī;kj fēi;yd é;iw	1
 遨游真快活	áo;za,zw yóu;dz zhēn;uj kuài;xd,xg huó;du	1
