@@ -13898,16 +13898,16 @@ sort: by_weight
 幻	huàn;yg	670
 唤	huàn;kh	601
 焕	huàn;hh	553
+涣	huàn;dh	547
 桓	huán;mg	526
 痪	huàn;bh	509
 歡	huān;qv	503
+浣	huàn;dw	500
 嬛	huán;nh,ny	491
 宦	huàn;bi	488
 寰	huán;bh,by	478
 環	huán;wh,wy	471
-浣	huàn;dw	462
 奂	huàn;dd	453
-涣	huàn;dh	442
 換	huàn;fh	425
 鬟	huán;ih,iy	424
 獾	huān;qv,qg	406
@@ -19125,9 +19125,6 @@ sort: by_weight
 𨌶	kēng;im	1
 𨍑	kēng;iy	1
 𫟥	kēng;	1
-迲	keop;	1
-唟	keos;	1
-厼	keum;	1
 空	kōng;xg,bg	782
 控	kòng;fk	760
 恐	kǒng;xg	687
@@ -31905,7 +31902,6 @@ sort: by_weight
 𩨞	sǎ;gj	1
 𫂿	sà;	1
 挲	sā;uu	1
-栍	saeng;	1
 塞	sāi;tb,bt	779
 赛	sài;bb	685
 塞	sài;tb,bt	532
@@ -32223,7 +32219,6 @@ sort: by_weight
 鬙	sēng;ic	92
 䒏	sēng;sc	1
 𡬙	sèng;bz	1
-縇	seon;	1
 啥	shá;ku	728
 杀	shā;mi,im	723
 沙	shā;du	686
@@ -51042,6 +51037,11 @@ sort: by_weight
 𫝷	zuò;	1
 呒	ḿ;kw	1
 呣	ḿ;km	1
+迲	无;	1
+唟	无;	1
+厼	无;	1
+栍	无;	1
+縇	无;	1
 怾	无;	1
 莻	无;	1
 朰	无;	1
