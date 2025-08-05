@@ -27,7 +27,7 @@ $InputSchemaType = "7";
 
 ############# 自动更新配置项，配置好后将 AutoUpdate 设置为 true 即可 #############
 
-$UpdateToolsVersion = "v4.2.1";
+$UpdateToolsVersion = "v4.2.2";
 if ($UpdateToolsVersion.StartsWith("DEFAULT")) {
     Write-Host "您下载的是非发行版脚本，请勿直接使用，请去 releases 页面下载最新版本：https://github.com/expoli/rime-wanxiang-update-tools/releases" -ForegroundColor Yellow;
 } else {
