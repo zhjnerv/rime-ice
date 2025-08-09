@@ -3784,6 +3784,7 @@ sort: by_weight
 大湖乡	dà;ad hú;dh xiāng;ap,vp	1
 大湖镇	dà;ad hú;dh zhèn;jv	178
 大皇堡	dà;ad huáng;bw bǎo;tb	251
+大黄堡	dà;ad huáng;ad,cb bǎo;tb	175
 大甲区	dà;ad jiǎ;aa,oa qū;ki	1
 大甲镇	dà;ad jiǎ;aa,oa zhèn;jv	297
 大朗镇	dà;ad lǎng;ol zhèn;jv	399
@@ -3843,7 +3844,6 @@ sort: by_weight
 大城县	dài;ad chéng;ti xiàn;sq,qs	174
 大城乡	dài;ad chéng;ti xiāng;ap,vp	1
 大城镇	dài;ad chéng;ti zhèn;jv	300
-大黄堡	dài;ad huáng;ad,cb bǎo;tb	175
 岱山县	dài;ud shān;aa xiàn;sq,qs	170
 岱岳区	dài;ud yuè;uq,qu qū;ki	174
 丹巴县	dān;pd bā;ag,kg,vg xiàn;sq,qs	188
@@ -14215,8 +14215,14 @@ sort: by_weight
 大槐树村	dà;ad huái;mg shù;md cūn;mc	187
 大槐树镇	dà;ad huái;mg shù;md zhèn;jv	225
 大唤起乡	dà;ad huàn;kh qǐ;zj xiāng;ap,vp	35
+大黄堡乡	dà;ad huáng;ad,cb bǎo;tb xiāng;ap,vp	1
 大荒地村	dà;ad huāng;ci dì;ty cūn;mc	285
 大荒沟村	dà;ad huāng;ci gōu;dg cūn;mc	116
+大黄沟乡	dà;ad huáng;ad,cb gōu;dg xiāng;ap,vp	105
+大黄集镇	dà;ad huáng;ad,cb jí;mv,vm zhèn;jv	35
+大黄巍乡	dà;ad huáng;ad,cb wēi;uw xiāng;ap,vp	156
+大黄冶村	dà;ad huáng;ad,cb yě;dt cūn;mc	1
+大黄庄镇	dà;ad huáng;ad,cb zhuāng;gt zhèn;jv	35
 大灰厂村	dà;ad huī;hu,uh chǎng;ap cūn;mc	105
 大汲店村	dà;ad jí;dj diàn;gv cūn;mc	207
 大箕铺镇	dà;ad jī;vq pù;jf zhèn;jv	282
@@ -14786,13 +14792,7 @@ sort: by_weight
 岱格庄村	dài;ud gé;mg zhuāng;gt cūn;mc	1
 代官屯村	dài;ry guān;bg,bk tún;ag cūn;mc	77
 带湖山庄	dài;jb hú;dh shān;aa zhuāng;gt	1
-大黄堡乡	dài;ad huáng;ad,cb bǎo;tb xiāng;ap,vp	1
-大黄沟乡	dài;ad huáng;ad,cb gōu;dg xiāng;ap,vp	105
-大黄集镇	dài;ad huáng;ad,cb jí;mv,vm zhèn;jv	35
 代黄口村	dài;ry huáng;ad,cb kǒu;aa cūn;mc	1
-大黄巍乡	dài;ad huáng;ad,cb wēi;uw xiāng;ap,vp	156
-大黄冶村	dài;ad huáng;ad,cb yě;dt cūn;mc	1
-大黄庄镇	dài;ad huáng;ad,cb zhuāng;gt zhèn;jv	35
 代家坝镇	dài;ry jiā;bu bà;tb zhèn;jv	187
 戴家场村	dài;gg,gy jiā;bu chǎng;ty cūn;mc	1
 戴家场镇	dài;gg,gy jiā;bu chǎng;ty zhèn;jv	162
@@ -24401,7 +24401,7 @@ sort: by_weight
 莲花洞村	lián;cl huā;ch dòng;dt cūn;mc	1
 莲花沟村	lián;cl huā;ch gōu;dg cūn;mc	1
 莲花口村	lián;cl huā;ch kǒu;aa cūn;mc	1
-莲花泡村	lián;cl huā;ch pào;db cūn;mc	1
+莲花泡村	lián;cl huā;ch pāo;db cūn;mc	1
 莲花盆村	lián;cl huā;ch pén;mf cūn;mc	1
 莲花寺村	lián;cl huā;ch sì;ct,tc cūn;mc	58
 莲花寺镇	lián;cl huā;ch sì;ct,tc zhèn;jv	105
@@ -42387,7 +42387,7 @@ sort: by_weight
 月家庄村	yuè;oy,pa,yt jiā;bu zhuāng;gt cūn;mc	1
 岳家庄乡	yuè;uq,qu jiā;bu zhuāng;gt xiāng;ap,vp	77
 月亮沟村	yuè;oy,pa,yt liàng;wj,jb gōu;dg cūn;mc	1
-月亮泡镇	yuè;oy,pa,yt liàng;wj,jb pào;db zhèn;jv	116
+月亮泡镇	yuè;oy,pa,yt liàng;wj,jb pāo;db zhèn;jv	116
 月亮坡村	yuè;oy,pa,yt liàng;wj,jb pō;tp cūn;mc	125
 月亮湾村	yuè;oy,pa,yt liàng;wj,jb wān;dw cūn;mc	116
 月亮峡村	yuè;oy,pa,yt liàng;wj,jb xiá;uj cūn;mc	1
