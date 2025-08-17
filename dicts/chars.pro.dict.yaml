@@ -7538,7 +7538,6 @@ sort: by_weight
 㝎	dìng;bv	1
 奵	dīng;nd	1
 掟	dìng;fd	1
-町	dīng;td	1
 甼	dīng;td	1
 艼	dǐng;cd	1
 釘	dìng;jd	1
@@ -7573,6 +7572,7 @@ sort: by_weight
 𩾚	dīng;dn,nd	1
 𪔂	dǐng;	1
 𫂫	dìng;	1
+町	dīng;td	1
 丢	diū;pq,ps	647
 丟	diū;pq	343
 铥	diū;jd	285
@@ -36425,6 +36425,7 @@ sort: by_weight
 蝏	tíng;it	439
 廳	tīng;gt,gx	423
 铤	tǐng;jt	408
+町	tǐng;td	377
 庁	tīng;gd	363
 葶	tíng;ct	335
 珽	tǐng;wt	334
@@ -36470,7 +36471,6 @@ sort: by_weight
 忊	tìng;xd	1
 梃	tìng;mt	1
 濎	tìng;dd	1
-町	tǐng;td	1
 鋌	tǐng;jt	1
 閮	tǐng;mt	1
 㓅	tīng;	1
