@@ -4736,8 +4736,8 @@ sort: by_weight
 呼兰区	hū;kh lán;bs,qe qū;ki	198
 湖里区	hú;dh lǐ;aa,tt qū;ki	274
 虎林市	hǔ;hj lín;mm shì;wj	145
-葫芦堡	hú;ch lú;ch bǎo;tb	126
-葫芦岛	hú;ch lú;ch dǎo;nu,un	236
+葫芦堡	hú;ch lu;ch bǎo;tb	126
+葫芦岛	hú;ch lu;ch dǎo;nu,un	236
 虎门镇	hǔ;hj mén;dg zhèn;jv	416
 湖南省	hú;dh nán;ua,uy shěng;ou	337
 湖内区	hú;dh nèi;ad,kr qū;ki	1
@@ -20654,27 +20654,27 @@ sort: by_weight
 虎龙斗村	hǔ;hj lóng;ad dòu;du cūn;mc	1
 护龙山庄	hù;fh lóng;ad shān;aa zhuāng;gt	183
 胡娄集村	hú;og lóu;mn,nm jí;mv,vm cūn;mc	1
-葫芦庵村	hú;ch lú;ch ān;gd,gy cūn;mc	1
-葫芦岔村	hú;ch lú;ch chà;uf cūn;mc	1
-葫芦旦村	hú;ch lú;ch dàn;oa cūn;mc	1
-葫芦岛市	hú;ch lú;ch dǎo;nu,un shì;wj	455
-葫芦垡村	hú;ch lú;ch fá;tf cūn;mc	1
-葫芦沟村	hú;ch lú;ch gōu;dg cūn;mc	1
-葫芦口村	hú;ch lú;ch kǒu;aa cūn;mc	1
-葫芦门村	hú;ch lú;ch mén;dg cūn;mc	1
-葫芦棚村	hú;ch lú;ch péng;mp cūn;mc	1
-葫芦寺村	hú;ch lú;ch sì;ct,tc cūn;mc	1
-葫芦汤村	hú;ch lú;ch tāng;dy cūn;mc	35
-葫芦塘村	hú;ch lú;ch táng;tt cūn;mc	1
-葫芦套村	hú;ch lú;ch tào;di cūn;mc	173
-葫芦套乡	hú;ch lú;ch tào;di xiāng;ap,vp	1
-葫芦头村	hú;ch lú;ch tóu;dd cūn;mc	1
-葫芦细村	hú;ch lú;ch xì;st cūn;mc	1
+葫芦庵村	hú;ch lu;ch ān;gd,gy cūn;mc	1
+葫芦岔村	hú;ch lu;ch chà;uf cūn;mc	1
+葫芦旦村	hú;ch lu;ch dàn;oa cūn;mc	1
+葫芦岛市	hú;ch lu;ch dǎo;nu,un shì;wj	455
+葫芦垡村	hú;ch lu;ch fá;tf cūn;mc	1
+葫芦沟村	hú;ch lu;ch gōu;dg cūn;mc	1
+葫芦口村	hú;ch lu;ch kǒu;aa cūn;mc	1
+葫芦门村	hú;ch lu;ch mén;dg cūn;mc	1
+葫芦棚村	hú;ch lu;ch péng;mp cūn;mc	1
+葫芦寺村	hú;ch lu;ch sì;ct,tc cūn;mc	1
+葫芦汤村	hú;ch lu;ch tāng;dy cūn;mc	35
+葫芦塘村	hú;ch lu;ch táng;tt cūn;mc	1
+葫芦套村	hú;ch lu;ch tào;di cūn;mc	173
+葫芦套乡	hú;ch lu;ch tào;di xiāng;ap,vp	1
+葫芦头村	hú;ch lu;ch tóu;dd cūn;mc	1
+葫芦细村	hú;ch lu;ch xì;st cūn;mc	1
 虎路线村	hǔ;hj lù;zg xiàn;sj cūn;mc	1
 护路辛庄	hù;fh lù;zg xīn;lu zhuāng;gt	1
 胡鲁营村	hú;og lǔ;yo yíng;cl cūn;mc	1
-葫芦峪村	hú;ch lú;ch yù;ug cūn;mc	168
-葫芦庄村	hú;ch lú;ch zhuāng;gt cūn;mc	1
+葫芦峪村	hú;ch lu;ch yù;ug cūn;mc	168
+葫芦庄村	hú;ch lu;ch zhuāng;gt cūn;mc	1
 呼伦贝尔	hū;kh lún;rl bèi;ad,kr ěr;dx,xd	580
 呼玛二村	hū;kh mǎ;wm èr;aa cūn;mc	35
 葫麻梁村	hú;ch má;gl liáng;mb cūn;mc	1
@@ -31453,7 +31453,7 @@ sort: by_weight
 上虹新村	shàng;aa,ba hóng;ig xīn;jq cūn;mc	134
 上红兴村	shàng;aa,ba hóng;sg xīng;ba,db cūn;mc	1
 商户地乡	shāng;wk,lk,dk hù;dp,du dì;ty xiāng;ap,vp	58
-上葫芦村	shàng;aa,ba hú;ch lú;ch cūn;mc	92
+上葫芦村	shàng;aa,ba hú;ch lu;ch cūn;mc	92
 上花岔乡	shàng;aa,ba huā;ch chà;uf xiāng;ap,vp	116
 上花园村	shàng;aa,ba huā;ch yuán;ky cūn;mc	34
 尚黄桥村	shàng;xk huáng;ad,cb qiáo;mq cūn;mc	1
@@ -34955,7 +34955,7 @@ sort: by_weight
 土河沟村	tǔ;aa hé;dk gōu;dg cūn;mc	1
 土红坳村	tǔ;aa hóng;sg ào;ty cūn;mc	1
 吐呼鲁村	tǔ;kt hū;kh lǔ;yo cūn;mc	1
-吐葫芦乡	tǔ;kt hú;ch lú;ch xiāng;ap,vp	58
+吐葫芦乡	tǔ;kt hú;ch lu;ch xiāng;ap,vp	58
 图呼其乡	tú;kd hū;kh qí;ba,ad,hb xiāng;ap,vp	58
 土基街村	tǔ;aa jī;tq,qt jiē;xg,xi cūn;mc	1
 涂家坝村	tú;dy jiā;bu bà;tb cūn;mc	1
@@ -37194,7 +37194,7 @@ sort: by_weight
 西湖浃村	xī;aa hú;dh jiā;dj cūn;mc	1
 西湖景村	xī;aa hú;dh jǐng;oj cūn;mc	1
 西胡林村	xī;aa hú;og lín;mm cūn;mc	156
-西葫芦村	xī;aa hú;ch lú;ch cūn;mc	1
+西葫芦村	xī;aa hú;ch lu;ch cūn;mc	1
 西湖社村	xī;aa hú;dh shè;ut,tu cūn;mc	1
 西湖头村	xī;aa hú;dh tóu;dd cūn;mc	1
 溪湖小镇	xī;dx hú;dh xiǎo;ad zhèn;jv	77
