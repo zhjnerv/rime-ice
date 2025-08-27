@@ -7,6 +7,7 @@ name: compatible
 version: "LTS"
 sort: by_weight
 ...
+密钥	mì;ub,bu yuè;jo	482
 糖色	táng;mt shǎi;db	348
 又得	yòu;vd,ad děi;xc	421
 拂过	bì;ff guò;zc	476
@@ -4317,7 +4318,6 @@ sort: by_weight
 哥哥说	gē;kd,kk,dk ge;kd,kk,dk shuō;yd	1
 搁下醋	gē;fg xià;ab,ad cù;yx	1
 红凤凰	hóng;sg fèng;jy huáng;jh	1
-红凤凰	hóng;sg fèng;jy huáng;jh	1
 花凤凰	huā;ch fèng;jy huáng;jh	1
 花鸟叫	huā;ch niǎo;na,pa jiào;kj	1
 黄凤凰	huáng;ad,cb fèng;jy huáng;jh	1
@@ -4335,8 +4335,6 @@ sort: by_weight
 两个昌	liǎng;ad gè;ra,pa chāng;oo	1
 两个巢	liǎng;ad gè;ra,pa cháo;ig	1
 两个屮	liǎng;ad gè;ra,pa chè;aa,ck	1
-两个屮	liǎng;ad gè;ra,pa chè;aa,ck	1
-两个車	liǎng;ad gè;ra,pa chē;aa	1
 两个車	liǎng;ad gè;ra,pa chē;aa	1
 两个臣	liǎng;ad gè;ra,pa chén;aa,ka	1
 两个齒	liǎng;ad gè;ra,pa chǐ;vk	1
@@ -4436,7 +4434,6 @@ sort: by_weight
 两个束	liǎng;ad gè;ra,pa shù;ad,mk	1
 两个水	liǎng;ad gè;ra,pa shuǐ;ad,uv	1
 两个厶	liǎng;ad gè;ra,pa sī;ad,si,vd	1
-两个厶	liǎng;ad gè;ra,pa sī;ad,si,vd	1
 两个田	liǎng;ad gè;ra,pa tián;aa	1
 两个天	liǎng;ad gè;ra,pa tiān;ad	1
 两个土	liǎng;ad gè;ra,pa tǔ;aa	1
@@ -4500,7 +4497,6 @@ sort: by_weight
 三个百	sān;aa gè;ra,pa bǎi;ab	1
 三个宝	sān;aa gè;ra,pa bǎo;by	1
 三个贝	sān;aa gè;ra,pa bèi;ad,kr	1
-三个屮	sān;aa gè;ra,pa chè;aa,ck	1
 三个屮	sān;aa gè;ra,pa chè;aa,ck	1
 三个車	sān;aa gè;ra,pa chē;aa	1
 三个虫	sān;aa gè;ra,pa chóng;ad,vd	1
@@ -4586,11 +4582,9 @@ sort: by_weight
 三个水	sān;aa gè;ra,pa shuǐ;ad,uv	1
 三个朔	sān;aa gè;ra,pa shuò;on	1
 三个厶	sān;aa gè;ra,pa sī;ad,si,vd	1
-三个厶	sān;aa gè;ra,pa sī;ad,si,vd	1
 三个太	sān;aa gè;ra,pa tài;dd	1
 三个田	sān;aa gè;ra,pa tián;aa	1
 三个天	sān;aa gè;ra,pa tiān;ad	1
-三个𠧪	sān;aa gè;ra,pa tiáo;br	1
 三个𠧪	sān;aa gè;ra,pa tiáo;br	1
 三个土	sān;aa gè;ra,pa tǔ;aa	1
 三个兔	sān;aa gè;ra,pa tù;dd	1
@@ -4627,7 +4621,6 @@ sort: by_weight
 三个𣥚	sān;aa gè;ra,pa zhì;	1
 三个至	sān;aa gè;ra,pa zhì;tv,vt	1
 三个丶	sān;aa gè;ra,pa zhǔ;dd,dm	1
-三个丶	sān;aa gè;ra,pa zhǔ;dd,dm	1
 三个竹	sān;aa gè;ra,pa zhú;gg	1
 三个隹	sān;aa gè;ra,pa zhuī;pa,rv	1
 三个子	sān;aa gè;ra,pa zi;aa,vh	1
@@ -4635,13 +4628,11 @@ sort: by_weight
 十和四	shí;aa hé;hk sì;aa,ke	1
 十是十	shí;aa shì;op,ov shí;aa	1
 史肖石	shǐ;ad,ki xiào;ox,xo shí;kp,aa,ak,pk	1
-史肖石	shǐ;ad,ki xiào;ox,xo shí;kp,aa,ak,pk	1
-石小四	shí;kp,aa,ak,pk xiǎo;ad sì;aa,ke	1
 石小四	shí;kp,aa,ak,pk xiǎo;ad sì;aa,ke	1
 手指头	shǒu;pa,ub zhǐ;fv tou;dd	1
 四个匕	sì;aa,ke gè;ra,pa bǐ;pg	1
 四个屮	sì;aa,ke gè;ra,pa chè;aa,ck	1
-四个屮	sì;aa,ke gè;ra,pa chè;aa,ck	1
+四个车	sì;aa,ke gè;ra,pa chè;aa	1
 四个車	sì;aa,ke gè;ra,pa chē;aa	1
 四个春	sì;aa,ke gè;ra,pa chūn;of,fo	1
 四个朿	sì;aa,ke gè;ra,pa cì;ad,mk	1
@@ -4666,7 +4657,6 @@ sort: by_weight
 四个日	sì;aa,ke gè;ra,pa rì;aa,or,ri	1
 四个石	sì;aa,ke gè;ra,pa shí;kp,aa,ak,pk	1
 四个水	sì;aa,ke gè;ra,pa shuǐ;ad,uv	1
-四个厶	sì;aa,ke gè;ra,pa sī;ad,si,vd	1
 四个厶	sì;aa,ke gè;ra,pa sī;ad,si,vd	1
 四个天	sì;aa,ke gè;ra,pa tiān;ad	1
 四个田	sì;aa,ke gè;ra,pa tián;aa	1
