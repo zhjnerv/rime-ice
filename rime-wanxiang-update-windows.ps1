@@ -32,15 +32,15 @@ $InputSchemaType = "6";
 
 $Debug = $false;
 
-$UpdateToolsVersion = "v5.0.1";
+$UpdateToolsVersion = "v6.0.0-rc2";
 if ($UpdateToolsVersion.StartsWith("DEFAULT")) {
-    Write-Host "您下载的是非发行版脚本，请勿直接使用，请去 releases 页面下载最新版本：https://github.com/expoli/rime-wanxiang-update-tools/releases" -ForegroundColor Yellow;
+    Write-Host "您下载的是非发行版脚本，请勿直接使用，请去 releases 页面下载最新版本：https://github.com/rimeinn/rime-wanxiang-update-tools/releases" -ForegroundColor Yellow;
 } else {
     Write-Host "当前更新工具版本：$UpdateToolsVersion" -ForegroundColor Yellow;
 }
 
 # 设置仓库所有者和名称
-$UpdateToolsOwner = "expoli"
+$UpdateToolsOwner = "rimeinn"
 $UpdateToolsRepo = "rime-wanxiang-update-tools"
 # 定义临时文件路径
 $tempSchemaZip = Join-Path $env:TEMP "wanxiang_schema_temp.zip"
@@ -295,11 +295,12 @@ function Invoke-FileUtf8 {
 function Get-CnbReleaseInfo {
     param(
         [string]$owner,
-        [string]$repo
+        [string]$repo,
+        [string]$query
     )
 
     # https://cnb.cool/amzxyz/rime-wanxiang/-/releases?page=1&page_size=20&query=
-    $apiUrl = "https://cnb.cool/$owner/$repo/-/releases?page=1&page_size=100&query="
+    $apiUrl = "https://cnb.cool/$owner/$repo/-/releases?page=1&page_size=100&query=$query"
 
     try {
         Write-Host "正在从 CNB 页面获取信息: $apiUrl" -ForegroundColor Cyan
@@ -320,7 +321,7 @@ function Get-CnbReleaseInfo {
         }
     }
     catch {
-        Write-Error "错误：下载或解析CNB页面失败: $pageUrl"
+        Write-Error "错误：下载或解析CNB页面失败: $apiUrl"
         Write-Error $_.Exception.Message
         Exit-Tip 1
     }
@@ -355,13 +356,13 @@ function Get-GithubReleaseInfo {
         else {
             Write-Error "API请求失败 [$statusCode]：$_"
         }
-        Exit-Tip 1
+        return $null
     }
 
     # 检查是否有可下载资源
     if ($response.assets.Count -eq 0) {
         Write-Error "该版本没有可下载资源"
-        Exit-Tip 1
+        return $null
     }
     return $response
 }
@@ -370,46 +371,63 @@ function Get-ReleaseInfo {
     param(
         [string]$owner,
         [string]$repo,
-        [bool]$updateToolFlag = $false
+        [bool]$updateToolFlag = $false,
+        [string]$query
     )
     # 构建API请求URL
     if ($updateToolFlag) {
-        return Get-GithubReleaseInfo -owner $owner -repo $repo
+        Write-Host "正在尝试获取更新工具自身版本信息..." -ForegroundColor Cyan
+        $result = Get-GithubReleaseInfo -owner $owner -repo $repo
+        if ($null -eq $result) {
+            Write-Host "获取更新工具版本信息失败，将跳过自身更新检查。" -ForegroundColor Cyan
+            return @() # 如果自身更新信息获取失败，返回空数组，不终止脚本
+        }
+        return $result
     }
     if ($UseCnbMirrorSource){
-        return Get-CnbReleaseInfo -owner $owner -repo $repo
+        return Get-CnbReleaseInfo -owner $owner -repo $repo -query $query
     } else {
-        return Get-GithubReleaseInfo -owner $owner -repo $repo
+        $result = Get-GithubReleaseInfo -owner $owner -repo $repo
+        if ($null -eq $result) {
+            Write-Error "错误：无法获取仓库 '$owner/$repo' 的发布版本信息。" -ForegroundColor Cyan
+            Exit-Tip 1 # 对于非自身更新的 GitHub 资源获取失败，仍旧退出脚本
+        }
+        return $result
     }
 }
 
 $UpdateTollsResponse = Get-ReleaseInfo -owner $UpdateToolsOwner -repo $UpdateToolsRepo -updateToolFlag $true
-
-# 检查是否有新版本,如果获取的版本信息比现在的版本信息(UpdateToolsVersion)新，则提示用户更新
-# 版本格式:v3.4.0,v3.4.1,v3.4.1-rc1,不比较 rc 版本,
-# UpdateToolsVersion
-if ($UpdateTollsResponse.Count -eq 0) {
-    Write-Host "没有找到更新工具的版本信息，请检查网络连接或仓库是否存在" -ForegroundColor Red
-    Exit-Tip 1
+# 检测是否需要跳过自身更新检查
+$SkipSelfUpdateCheck = $false
+if ($null -eq $UpdateTollsResponse -or $UpdateTollsResponse.Count -eq 0) {
+    $SkipSelfUpdateCheck = $true
+    $UpdateTollsResponse = @() 
 }
 
-$StableUpdateToolsReleases = $UpdateTollsResponse
-if ($StableUpdateToolsReleases.Count -eq 0) {
-    Write-Host "没有找到稳定版的更新工具版本信息" -ForegroundColor Yellow
-} else {
-    $LatestUpdateToolsRelease = $StableUpdateToolsReleases | Select-Object -First 1
-    if ($LatestUpdateToolsRelease.tag_name -ne $UpdateToolsVersion) {
-        Write-Host "发现新版本的更新工具: $($LatestUpdateToolsRelease.tag_name)" -ForegroundColor Yellow
-        Write-Host "如需更新,请访问 https://github.com/expoli/rime-wanxiang-update-tools/releases 下载最新版本" -ForegroundColor Yellow
-        Write-Host "当前版本: $UpdateToolsVersion" -ForegroundColor Yellow
-        Write-Host "更新日志: $($LatestUpdateToolsRelease.body)" -ForegroundColor Yellow
+# 检查是否有新版本,如果获取的版本信息比现在的版本信息(UpdateToolsVersion)新，则提示用户更新
+# 版本格式:v3.4.0,v3.4.1,v3.4.1-rc1,不比较 rc 版本
+if (-not $SkipSelfUpdateCheck) {
+    $StableUpdateToolsReleases = $UpdateTollsResponse 
+    
+    if ($StableUpdateToolsReleases.Count -eq 0) {
+        Write-Host "没有找到稳定版的更新工具版本信息，跳过自身更新检查。" -ForegroundColor Yellow
+    } else {
+        $LatestUpdateToolsRelease = $StableUpdateToolsReleases | Select-Object -First 1
+        if ($LatestUpdateToolsRelease.tag_name -ne $UpdateToolsVersion) {
+            Write-Host "发现新版本的更新工具: $($LatestUpdateToolsRelease.tag_name)" -ForegroundColor Yellow
+            Write-Host "如需更新,请访问 https://github.com/rimeinn/rime-wanxiang-update-tools/releases 下载最新版本" -ForegroundColor Yellow
+            Write-Host "当前版本: $UpdateToolsVersion" -ForegroundColor Yellow
+            Write-Host "更新日志: $($LatestUpdateToolsRelease.body)" -ForegroundColor Yellow
+        } else {
+            Write-Host "脚本工具已是最新版本：$UpdateToolsVersion" -ForegroundColor Green
+        }
     }
 }
 
 # 获取最新的版本信息
 $SchemaResponse = Get-ReleaseInfo -owner $SchemaOwner -repo $SchemaRepo
 if ($UseCnbMirrorSource) {
-    $GramResponse = $SchemaResponse
+    $GramResponse = Get-ReleaseInfo -owner $SchemaOwner -repo $SchemaRepo -query "model"
 } else {
     $GramResponse = Get-ReleaseInfo -owner $SchemaOwner -repo $GramRepo
 }
@@ -489,9 +507,9 @@ if (-not $Debug) {
     if ($AutoUpdate) {
         Write-Host "自动更新模式，将自动下载最新的版本" -ForegroundColor Green
         Write-Host "你配置的方案号为：$InputSchemaType" -ForegroundColor Green
-        # 方案号只支持0-7
-        if ($InputSchemaType -lt 0 -or $InputSchemaType -gt 7) {
-            Write-Error "错误：方案号只能是0-7"
+        # 方案号只支持0-6
+        if ($InputSchemaType -lt 0 -or $InputSchemaType -gt 6) {
+            Write-Error "错误：方案号只能是0-6"
             Exit-Tip 1
         }
         $InputAllUpdate = "0"
@@ -512,7 +530,7 @@ if (-not $Debug) {
         }
     }
 } else {
-    $InputSchemaType = "7"
+    $InputSchemaType = "6"
     $InputSchemaDown = "0"
     $InputGramModel = "0"
     $InputDictDown = "0"
