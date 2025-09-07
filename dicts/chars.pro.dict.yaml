@@ -23623,6 +23623,9 @@ sort: by_weight
 𧑀	lüè;ii	1
 𧕌	lüè;lk	1
 𪅅	lüè;nl,ln	1
+呣	m̀;km	1
+呒	ḿ;kw	1
+呣	ḿ;km	1
 吗	ma;km	866
 马	mǎ;aa,vh	769
 码	mǎ;um	744
@@ -25610,7 +25613,6 @@ sort: by_weight
 𫠏	mù;	1
 𬭁	mǔ;jm	1
 𬰃	mù;	1
-呣	m̀;km	1
 嗯	ǹ;ke	898
 嗯	ń;ke	13
 嗯	ň;ke	1
@@ -26590,7 +26592,8 @@ sort: by_weight
 𪘎	niè;iy	1
 𪵉	niē;	1
 𬛸	niē;	1
-𪘅	niè;	1您	nín
+𪘅	niè;	1
+您	nín;xn	753
 拰	nǐn;fr	216
 囜	nín;ks	82
 恁	nín;xr	1
@@ -31271,6 +31274,7 @@ sort: by_weight
 杒	rèn;mr	50
 梕	rèn;mr	38
 躵	rěn;ur	38
+恁	rèn;xr	1
 𫟃	rén;	1
 𡰥	rén;ue	1
 菍	rěn;cn	1
@@ -51034,5 +51038,3 @@ sort: by_weight
 𪱢	zuò;	1
 𫝶	zuò;	1
 𫝷	zuò;	1
-呒	ḿ;kw	1
-呣	ḿ;km	1
