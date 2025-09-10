@@ -33192,7 +33192,8 @@ sort: by_weight
 是	shì;op,ov	975
 十	shí;aa	968
 时	shí;oc	965
-拾	shí;fh	961
+事	shì;aa	961
+拾	shí;fh	955
 使	shǐ;rl	952
 市	shì;wj	941
 式	shì;gy,yg	910
@@ -33202,7 +33203,6 @@ sort: by_weight
 诗	shī;ys	845
 世	shì;ca,cv,aa	832
 实	shí;bt	812
-事	shì;aa	810
 师	shī;ab,aj,db,dj	791
 食	shí;rl,pd	789
 试	shì;yu	789
@@ -37722,10 +37722,10 @@ sort: by_weight
 𪴸	wǎng;	1
 为	wèi;dd	870
 为	wéi;dd	847
+未	wèi;ex,ad	833
 位	wèi;rl	825
 味	wèi;kw	802
 微	wēi;xw	778
-未	wèi;ex,ad	776
 维	wéi;sv	772
 围	wéi;kw	745
 委	wěi;hn	745
@@ -47563,8 +47563,8 @@ sort: by_weight
 𪭪	zhā;	1
 𫎘	zhá;	1
 𫛠	zhá;	1
-债	zhài;rz	707
-摘	zhāi;fd,fg	657
+摘	zhāi;fd,fg	707
+债	zhài;rz	668
 窄	zhǎi;xv,bv	653
 宅	zhái;bq,bt	644
 寨	zhài;mb,bm	615
