@@ -40,7 +40,7 @@ if ($help -or $args -contains '-h' -or $args -contains '--help') {
     }
     Write-Host "Rime 万象 PowerShell 更新工具 - 命令行参数说明" -ForegroundColor Cyan
     Write-Host "---------------------------------------------"
-    Write-Host "-schemaType <编号>    方案类型编号，0-6 (如 6 表示自然码)"
+    Write-Host "-schemaType <编号>   方案类型编号，0-6 (如 6 表示自然码)"
     Write-Host "-noSchema            不更新方案"
     Write-Host "-noDict              不更新词库"
     Write-Host "-noModel             不更新模型"
@@ -163,7 +163,7 @@ if ($PSBoundParameters.ContainsKey('cliTargetFolder') -and $cliTargetFolder) {
     }
 }
 
-$UpdateToolsVersion = "v6.1.1";
+$UpdateToolsVersion = "v6.1.4-rc0";
 if ($UpdateToolsVersion.StartsWith("DEFAULT")) {
     Write-Host "您下载的是非发行版脚本，请勿直接使用，请去 releases 页面下载最新版本：https://github.com/rimeinn/rime-wanxiang-update-tools/releases" -ForegroundColor Yellow;
 } else {
@@ -406,7 +406,37 @@ function Stop-WeaselServer {
         Write-Host "警告：未找到Weasel服务端可执行程序，请确保已正确安装小狼毫输入法" -ForegroundColor Yellow
         Exit-Tip 1
     } elseif (-not $SkipStopWeasel) {
-        Start-Process -FilePath (Join-Path $rimeInstallDir $rimeServerExecutable) -ArgumentList '/q'
+        # 优先尝试按进程名强制结束（来自 get-rime.ps1 的 KillWeaselServer 逻辑）
+        $processName = 'WeaselServer'
+        try {
+            $proc = Get-Process -Name $processName -ErrorAction SilentlyContinue
+        } catch {
+            $proc = $null
+        }
+        if ($proc) {
+            while ($proc) {
+                try {
+                    Stop-Process -Name $processName -Force -ErrorAction SilentlyContinue
+                } catch {
+                    # 忽略停止错误，继续尝试
+                }
+                Start-Sleep -Seconds 0.5
+                try {
+                    $proc = Get-Process -Name $processName -ErrorAction SilentlyContinue
+                } catch {
+                    $proc = $null
+                }
+            }
+            Write-Host "$processName has been killed" -ForegroundColor Green
+        } else {
+            # 如果没有找到运行中的进程，尝试通过可执行文件的 /q 参数触发优雅停止（保留原行为作为兜底）
+            try {
+                Start-Process -FilePath (Join-Path $rimeInstallDir $rimeServerExecutable) -ArgumentList '/q' -ErrorAction SilentlyContinue | Out-Null
+                Write-Host "尝试使用可执行文件的 /q 参数触发停止（若支持）" -ForegroundColor Yellow
+            } catch {
+                Write-Host "无法触发可执行文件停止：$($_.Exception.Message)" -ForegroundColor Yellow
+            }
+        }
     }
 }
 
@@ -470,21 +500,27 @@ $tempSchemaZip = Join-Path $WanxiangTempDir "wanxiang_schema_temp.zip"
 $tempDictZip = Join-Path $WanxiangTempDir "wanxiang_dict_temp.zip"
 $tempGram = Join-Path $WanxiangTempDir "wanxiang-lts-zh-hans.gram"
 
-# 将解压目录也放在用户临时目录下的子目录，保持与 zip 存放在同一工作目录
-$SchemaExtractPath = Join-Path $WanxiangTempDir "wanxiang_schema_extract"
-$DictExtractPath = Join-Path $WanxiangTempDir "wanxiang_dict_extract"
+# 仅为需要的更新项创建对应的解压目录
+$SchemaExtractPath = $null
+$DictExtractPath = $null
+$extractDirs = @()
+if ($IsUpdateSchemaDown) {
+    $SchemaExtractPath = Join-Path $WanxiangTempDir "wanxiang_schema_extract"
+    $extractDirs += $SchemaExtractPath
+}
+if ($IsUpdateDictDown) {
+    $DictExtractPath = Join-Path $WanxiangTempDir "wanxiang_dict_extract"
+    $extractDirs += $DictExtractPath
+}
 
-# 确保解压目录存在；如果无法创建则回退到系统临时目录
-foreach ($d in @($SchemaExtractPath, $DictExtractPath)) {
+foreach ($d in $extractDirs) {
     if (-not (Test-Path $d)) {
         try {
             New-Item -Path $d -ItemType Directory -Force | Out-Null
         }
         catch {
-            Write-Host "警告：无法创建解压目录 $d，将回退到系统临时目录" -ForegroundColor Yellow
-            $SchemaExtractPath = Join-Path $BaseTempPath "wanxiang_schema_extract"
-            $DictExtractPath = Join-Path $BaseTempPath "wanxiang_dict_extract"
-            break
+            Write-Host "错误：无法创建解压目录 $d, $($_.Exception.Message)" -ForegroundColor Red
+            Exit-Tip 1
         }
     }
 }
@@ -566,19 +602,19 @@ function Get-CnbReleaseInfo {
             $releaseData = $jsonDataFormat.releases
             Write-Host "成功获取 CNB release 版本信息" -ForegroundColor Green
             if ($jsonDataFormat.release_count -eq 0) {
-                Write-Error "CNB release 版本没有可下载资源"
-                Exit-Tip 1
+                Write-Warning "CNB release 版本没有可下载资源"
+                return $null
             }
             return $releaseData
         } else {
-            Write-Error "错误：在页面中未找到 'release' 数据。"
-            Exit-Tip 1
+            Write-Warning "警告：在 CNB 页面中未找到 'releases' 数据。"
+            return $null
         }
     }
     catch {
-        Write-Error "错误：下载或解析CNB页面失败: $apiUrl"
-        Write-Error $_.Exception.Message
-        Exit-Tip 1
+        Write-Warning "错误：下载或解析CNB页面失败: $apiUrl"
+        Write-Warning $_.Exception.Message
+        return $null
     }
 }
 
@@ -629,45 +665,46 @@ function Get-ReleaseInfo {
         [bool]$updateToolFlag = $false,
         [string]$query
     )
-    # 构建API请求URL
-    if ($updateToolFlag) {
-        Write-Host "正在尝试获取更新工具自身版本信息..." -ForegroundColor Cyan
-        $result = Get-GithubReleaseInfo -owner $owner -repo $repo
-        if ($null -eq $result) {
-            Write-Host "获取更新工具版本信息失败，将跳过自身更新检查。" -ForegroundColor Cyan
-            return @() # 如果自身更新信息获取失败，返回空数组，不终止脚本
+    # 优先尝试 CNB（若启用），若 CNB 无数据或失败，则回退到 GitHub
+    if ($UseCnbMirrorSource) {
+        $cnbResult = Get-CnbReleaseInfo -owner $owner -repo $repo -query $query
+        if ($cnbResult) {
+            return $cnbResult
+        } else {
+            Write-Host "CNB 未返回有效数据，尝试回退到 GitHub 获取发布信息..." -ForegroundColor Yellow
+            $ghResult = Get-GithubReleaseInfo -owner $owner -repo $repo
+            if ($ghResult) {
+                return $ghResult
+            } else {
+                Write-Warning "无法从 CNB 或 GitHub 获取到 '$owner/$repo' 的发布信息。"
+                return $null
+            }
         }
-        return $result
-    }
-    if ($UseCnbMirrorSource){
-        return Get-CnbReleaseInfo -owner $owner -repo $repo -query $query
     } else {
         $result = Get-GithubReleaseInfo -owner $owner -repo $repo
         if ($null -eq $result) {
-            Write-Error "错误：无法获取仓库 '$owner/$repo' 的发布版本信息。" -ForegroundColor Cyan
-            Exit-Tip 1 # 对于非自身更新的 GitHub 资源获取失败，仍旧退出脚本
+            Write-Warning "无法获取仓库 '$owner/$repo' 的发布版本信息。"
+            return $null
         }
         return $result
     }
 }
 
-$UpdateTollsResponse = Get-ReleaseInfo -owner $UpdateToolsOwner -repo $UpdateToolsRepo -updateToolFlag $true
+$UpdateToolsResponse = Get-GithubReleaseInfo -owner $UpdateToolsOwner -repo $UpdateToolsRepo
 # 检测是否需要跳过自身更新检查
 $SkipSelfUpdateCheck = $false
-if ($null -eq $UpdateTollsResponse -or $UpdateTollsResponse.Count -eq 0) {
+if ($null -eq $UpdateToolsResponse -or $UpdateToolsResponse.Count -eq 0) {
     $SkipSelfUpdateCheck = $true
-    $UpdateTollsResponse = @() 
+    $UpdateToolsResponse = @() 
 }
 
 # 检查是否有新版本,如果获取的版本信息比现在的版本信息(UpdateToolsVersion)新，则提示用户更新
-# 版本格式:v3.4.0,v3.4.1,v3.4.1-rc1,不比较 rc 版本
+# 版本格式:v3.4.0,v3.4.1,v3.4.1-rc1
 if (-not $SkipSelfUpdateCheck) {
-    $StableUpdateToolsReleases = $UpdateTollsResponse 
-    
-    if ($StableUpdateToolsReleases.Count -eq 0) {
-        Write-Host "没有找到稳定版的更新工具版本信息，跳过自身更新检查。" -ForegroundColor Yellow
+    if ($UpdateToolsResponse.Count -eq 0) {
+        Write-Host "没有找到更新工具版本信息，跳过自身更新检查。" -ForegroundColor Yellow
     } else {
-        $LatestUpdateToolsRelease = $StableUpdateToolsReleases | Select-Object -First 1
+        $LatestUpdateToolsRelease = $UpdateToolsResponse | Select-Object -First 1
         if ($LatestUpdateToolsRelease.tag_name -ne $UpdateToolsVersion) {
             Write-Host "发现新版本的更新工具: $($LatestUpdateToolsRelease.tag_name)" -ForegroundColor Yellow
             Write-Host "如需更新,请访问 https://github.com/rimeinn/rime-wanxiang-update-tools/releases 下载最新版本" -ForegroundColor Yellow
@@ -1302,6 +1339,19 @@ if ($InputGramModel -eq "0") {
     } else {
         Write-Host "模型不存在，需要更新" -ForegroundColor Red
         Update-GramModel
+    }
+}
+
+foreach ($d in $extractDirs) {
+    if (Test-Path $d) {
+        try {
+            Remove-Item -Path $d -Recurse -Force
+            Write-Host "已删除临时解压目录 $d" -ForegroundColor Green
+        }
+        catch {
+            Write-Host "错误：无法删除临时解压目录 $d" -ForegroundColor Red
+            Exit-Tip 1
+        }
     }
 }
 
