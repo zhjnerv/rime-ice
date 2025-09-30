@@ -2,23 +2,17 @@
 
 ### 🐛 Bug修复
 
-- [[`e2b0c4a`](https://cnb.cool/amzxyz/rime-wanxiang/-/commit/e2b0c4ab13e4c7c8bb7ca9257372268fc08380fa)] **-** 自动化变更 (wanxiang 15:44)
+- [[`5e12b93`](https://cnb.cool/amzxyz/rime-wanxiang/-/commit/5e12b93fea70541b16b42f316756428704ad17fa)] **-** 优化一些细节 (wanxiang 19:42)
 
 
 ### 🏡 杂项
 
-- [[`9ebcff0`](https://cnb.cool/amzxyz/rime-wanxiang/-/commit/9ebcff01dd6c8f6e37bade77ccffba21d9eeb530)] **-** 变更版本 (wanxiang 09-27 16:52)
+- [[`af9c06f`](https://cnb.cool/amzxyz/rime-wanxiang/-/commit/af9c06ff42d6980f043c67dbfe29be42a5c45273)] **-** 变更版本 (wanxiang 14:37)
 
 
 ### 📚 词库更新
 
-- [[`9735dd5`](https://cnb.cool/amzxyz/rime-wanxiang/-/commit/9735dd5a1bf6f1bcd79b8c44bf1ab89a0cfe9b3b)] **-** 词库调整 (wanxiang 18:26)
-- [[`b39f023`](https://cnb.cool/amzxyz/rime-wanxiang/-/commit/b39f023472c328a2584ee69e7125a089c2543714)] **-** 词库调整 (wanxiang 09-27 17:29)
-
-
-### Others
-
-- [[`a93541c`](https://cnb.cool/amzxyz/rime-wanxiang/-/commit/a93541c90aba246544d0d5ddf3058596ecd0cf15)] **-** 去掉仓库双版本，release发布Pro版本 (wanxiang 10:00)
+- [[`5a61c24`](https://cnb.cool/amzxyz/rime-wanxiang/-/commit/5a61c248945588afd0752a398d3298906db87159)] **-** 词库调整 (wanxiang 17:07)
 
 ## 🚀 下载引导
 
@@ -26,17 +20,17 @@
 
 ✨**适用类型：** 支持全拼、各种双拼
 
-✨**下载地址：** [rime-wanxiang-base.zip](https://cnb.cool/amzxyz/rime-wanxiang/-/releases/download/v12.6.13/rime-wanxiang-base.zip)
+✨**下载地址：** [rime-wanxiang-base.zip](https://cnb.cool/amzxyz/rime-wanxiang/-/releases/download/v13.0.1/rime-wanxiang-base.zip)
 
 ### 2. 双拼辅助码增强版输入方案
 
 ✨**适用类型：** 支持各种双拼+辅助码的自由组合
-   - **自然码辅助版本：** [rime-wanxiang-zrm-fuzhu.zip](https://cnb.cool/amzxyz/rime-wanxiang/-/releases/download/v12.6.13/rime-wanxiang-zrm-fuzhu.zip)
-   - **虎码首末辅助版本：** [rime-wanxiang-tiger-fuzhu.zip](https://cnb.cool/amzxyz/rime-wanxiang/-/releases/download/v12.6.13/rime-wanxiang-tiger-fuzhu.zip)
-   - **墨奇辅助版本：** [rime-wanxiang-moqi-fuzhu.zip](https://cnb.cool/amzxyz/rime-wanxiang/-/releases/download/v12.6.13/rime-wanxiang-moqi-fuzhu.zip)
-   - **小鹤辅助版本：** [rime-wanxiang-flypy-fuzhu.zip](https://cnb.cool/amzxyz/rime-wanxiang/-/releases/download/v12.6.13/rime-wanxiang-flypy-fuzhu.zip)
-   - **五笔前2辅助版本：** [rime-wanxiang-wubi-fuzhu.zip](https://cnb.cool/amzxyz/rime-wanxiang/-/releases/download/v12.6.13/rime-wanxiang-wubi-fuzhu.zip)
-   - **汉心辅助版本：** [rime-wanxiang-hanxin-fuzhu.zip](https://cnb.cool/amzxyz/rime-wanxiang/-/releases/download/v12.6.13/rime-wanxiang-hanxin-fuzhu.zip)
+   - **自然码辅助版本：** [rime-wanxiang-zrm-fuzhu.zip](https://cnb.cool/amzxyz/rime-wanxiang/-/releases/download/v13.0.1/rime-wanxiang-zrm-fuzhu.zip)
+   - **虎码首末辅助版本：** [rime-wanxiang-tiger-fuzhu.zip](https://cnb.cool/amzxyz/rime-wanxiang/-/releases/download/v13.0.1/rime-wanxiang-tiger-fuzhu.zip)
+   - **墨奇辅助版本：** [rime-wanxiang-moqi-fuzhu.zip](https://cnb.cool/amzxyz/rime-wanxiang/-/releases/download/v13.0.1/rime-wanxiang-moqi-fuzhu.zip)
+   - **小鹤辅助版本：** [rime-wanxiang-flypy-fuzhu.zip](https://cnb.cool/amzxyz/rime-wanxiang/-/releases/download/v13.0.1/rime-wanxiang-flypy-fuzhu.zip)
+   - **五笔前2辅助版本：** [rime-wanxiang-wubi-fuzhu.zip](https://cnb.cool/amzxyz/rime-wanxiang/-/releases/download/v13.0.1/rime-wanxiang-wubi-fuzhu.zip)
+   - **汉心辅助版本：** [rime-wanxiang-hanxin-fuzhu.zip](https://cnb.cool/amzxyz/rime-wanxiang/-/releases/download/v13.0.1/rime-wanxiang-hanxin-fuzhu.zip)
 
 ### 3. 语法模型
 
