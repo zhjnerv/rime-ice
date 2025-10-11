@@ -1,0 +1,31 @@
+.DS_Store
+**/.idea/
+.vscode/
+dist/
+
+build/
+sync/
+*.userdb/
+installation.yaml
+user.yaml
+# *.custom.yaml 将配置文件同步到git远程仓库
+!others/**/*.custom.yaml
+
+# custom_phrase_double.txt 将自建词库同步到远程仓库
+others/script/scel2txt/out/*
+others/script/scel2txt/scel/*
+cn_dicts/temp.txt
+
+*private*
+
+rime_console
+rime_deployer
+rime_patch
+wanxiang-lts-zh-hans.gram
+# 不知道是什么文件,但是会根据打字情况实时变化
+lua/input_stats.lua
+
+zc.userdb.old/
+
+# 临时文件目录，不与云端同步
+wanxiang_temp/
