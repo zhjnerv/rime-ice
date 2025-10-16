@@ -3027,8 +3027,8 @@ sort: by_weight
 潭头镇	tán;dt tóu;dd zhèn;jv	293
 潭子区	tán;dt zǐ;aa,vh qū;ki	1
 唐家堡	táng;gk jiā;bu bǎo;tb	340
-塘厦镇	táng;tt shà;ix zhèn;jv	404
 汤旺县	tāng;dy wàng;ow xiàn;sq,qs	1
+塘厦镇	táng;tt xià;ix zhèn;jv	404
 汤峪镇	tāng;dy yù;ug zhèn;jv	336
 陶北村	táo;ef,et běi;ap,bj cūn;mc	219
 陶厂镇	táo;ef,et chǎng;ap zhèn;jv	127
@@ -3231,7 +3231,6 @@ sort: by_weight
 王渠村	wáng;aa qú;mj cūn;mc	69
 王曲乡	wáng;aa qǔ;aa,oa xiāng;ap,vp	181
 王圈村	wáng;aa quān;kj cūn;mc	127
-望厦村	wàng;wo shà;ix cūn;mc	234
 王沙村	wáng;aa shā;du cūn;mc	69
 王山村	wáng;aa shān;aa cūn;mc	112
 王石村	wáng;aa shí;kp,aa,ak,pk cūn;mc	1
@@ -3264,6 +3263,7 @@ sort: by_weight
 王屋镇	wáng;aa wū;uv zhèn;jv	163
 王武庄	wáng;aa wǔ;vy,yv zhuāng;gt	210
 王西村	wáng;aa xī;aa cūn;mc	52
+望厦村	wàng;wo xià;ix cūn;mc	234
 王仙镇	wáng;aa xiān;ru zhèn;jv	145
 王巷村	wáng;aa xiàng;sg,gs cūn;mc	139
 王相村	wáng;aa xiāng;mo cūn;mc	52
@@ -16808,7 +16808,6 @@ sort: by_weight
 江热夏乡	jiāng;dg rè;hv xià;wz,aw xiāng;ap,vp	92
 江日堂乡	jiāng;dg rì;aa,or,ri táng;tk,dt,xt xiāng;ap,vp	116
 蒋三鸡庄	jiǎng;cj sān;aa jī;ny,yn zhuāng;gt	35
-江厦街道	jiāng;dg shà;ix jiē;xg,xi dào;zu	10
 江山底村	jiāng;dg shān;aa dǐ;gd cūn;mc	1
 姜山头村	jiāng;ny,yn shān;aa tóu;dd cūn;mc	1
 蒋山镇村	jiǎng;cj shān;aa zhèn;jv cūn;mc	1
@@ -16837,6 +16836,7 @@ sort: by_weight
 江西营村	jiāng;dg xī;aa yíng;cl cūn;mc	35
 江西俞村	jiāng;dg xī;aa yú;rd,ry cūn;mc	58
 将熙泽村	jiāng;dc,jc,pc xī;hs zé;df cūn;mc	1
+江厦街道	jiāng;dg xià;ix jiē;xg,xi dào;zu	10
 降香坪村	jiàng;ef,ej xiāng;ho píng;tp cūn;mc	1
 蒋巷镇村	jiǎng;cj xiàng;sg,gs zhèn;jv cūn;mc	1
 蒋辛屯镇	jiǎng;cj xīn;lu tún;ag zhèn;jv	173
@@ -17238,7 +17238,6 @@ sort: by_weight
 金沙夼村	jīn;ra,pa shā;du kuǎng;di cūn;mc	1
 金厦山庄	jīn;ra,pa shà;ix shān;aa zhuāng;gt	1
 金沙滩镇	jīn;ra,pa shā;du tān;dn zhèn;jv	183
-锦厦新村	jǐn;jb,jj shà;ix xīn;jq cūn;mc	1
 金沙新村	jīn;ra,pa shā;du xīn;jq cūn;mc	1
 金山堡村	jīn;ra,pa shān;aa bǎo;tb cūn;mc	105
 金山店镇	jīn;ra,pa shān;aa diàn;gv zhèn;jv	207
@@ -17289,6 +17288,7 @@ sort: by_weight
 锦溪古镇	jǐn;jb,jj xī;dx gǔ;uk zhèn;jv	387
 金溪山庄	jīn;ra,pa xī;dx shān;aa zhuāng;gt	203
 金霞街道	jīn;ra,pa xiá;yj,yy jiē;xg,xi dào;zu	10
+锦厦新村	jǐn;jb,jj xià;ix xīn;jq cūn;mc	1
 进鲜港村	jìn;zj xiān;yy gǎng;dx cūn;mc	1
 金线沟村	jīn;ra,pa xiàn;sj gōu;dg cūn;mc	1
 金乡街道	jīn;ra,pa xiāng;ap,vp jiē;xg,xi dào;zu	10
@@ -25877,9 +25877,7 @@ sort: by_weight
 沙樊头村	shā;du fán;dm tóu;dd cūn;mc	1
 沙凤新村	shā;du fèng;jy xīn;jq cūn;mc	1
 沙岗店村	shā;du gǎng;ug diàn;gv cūn;mc	1
-厦港街道	shà;ix gǎng;dx jiē;xg,xi dào;zu	10
 沙港头村	shā;du gǎng;dx tóu;dd cūn;mc	1
-厦港新村	shà;ix gǎng;dx xīn;jq cūn;mc	134
 沙岗子村	shā;du gǎng;ug zǐ;aa,vh cūn;mc	77
 沙圪垯村	shā;du gē;tq da;td cūn;mc	1
 沙圪堵镇	shā;du gē;tq dǔ;tv zhèn;jv	183
@@ -30726,7 +30724,6 @@ sort: by_weight
 王沙埠村	wáng;aa shā;du bù;tf,tu cūn;mc	1
 王沙沟村	wáng;aa shā;du gōu;dg cūn;mc	1
 王沙湾村	wáng;aa shā;du wān;dw cūn;mc	1
-望厦新村	wàng;wo shà;ix xīn;jq cūn;mc	1
 王山底村	wáng;aa shān;aa dǐ;gd cūn;mc	77
 王山沟村	wáng;aa shān;aa gōu;dg cūn;mc	1
 王芟河村	wáng;aa shān;cu hé;dk cūn;mc	1
@@ -30803,6 +30800,7 @@ sort: by_weight
 王西沟村	wáng;aa xī;aa gōu;dg cūn;mc	1
 王西章乡	wáng;aa xī;aa zhāng;lz xiāng;ap,vp	35
 王喜庄村	wáng;aa xǐ;uk zhuāng;gt cūn;mc	1
+望厦新村	wàng;wo xià;ix xīn;jq cūn;mc	1
 王仙庄村	wáng;aa xiān;ru zhuāng;gt cūn;mc	1
 王香铺村	wáng;aa xiāng;ho pù;jf cūn;mc	1
 王辛店村	wáng;aa xīn;lu diàn;gv cūn;mc	1
@@ -33336,6 +33334,8 @@ sort: by_weight
 下房子村	xià;ab,ad fáng;hf zi;aa,vh cūn;mc	92
 下符桥镇	xià;ab,ad fú;vf qiáo;mq zhèn;jv	116
 下甘沟村	xià;ab,ad gān;aa,ca gōu;dg cūn;mc	1
+厦港街道	xià;ix gǎng;dx jiē;xg,xi dào;zu	10
+厦港新村	xià;ix gǎng;dx xīn;jq cūn;mc	134
 夏各庄村	xià;wz,aw gè;wk zhuāng;gt cūn;mc	92
 夏各庄镇	xià;wz,aw gè;wk zhuāng;gt zhèn;jv	173
 夏格庄镇	xià;wz,aw gé;mg zhuāng;gt zhèn;jv	116
