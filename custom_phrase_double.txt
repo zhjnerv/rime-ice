@@ -25,8 +25,8 @@ ptd	ptd
 13173678927	dmh	1
 浙江省杭州市余杭区五常街道文一西路998号1幢601A室 周豪靖 13173678927	div	1
 浙江省杭州市拱墅区小河路188号6幢3单元1402室 神经元 13173678927	div	2
-ptz ptz
-cqy cqy
+ptz	ptz
+cqy	cqy
 Dataview	dataview
 QuickAdd	quickadd
 zhjwork@gmail.com	zhjwork
@@ -37,5 +37,6 @@ Omnivore	omni	2
 NPN	npn	2
 vikunja	viku	2
 aistudio	ai	3
-
+DAS	das	2
+OA	oa	1
 
