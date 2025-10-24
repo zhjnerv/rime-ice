@@ -7,6 +7,10 @@ name: compatible
 version: "LTS"
 sort: by_weight
 ...
+糁馆	sá;mc guǎn;ug	88
+糁面	sá;mc miàn;aa	83
+糁粥	sá;mc zhōu;gg,mg	94
+糁汤	sá;mc tāng;dy	67
 吃子	chī;kq zǐ;aa,vh	411
 教授	jiāo;wx shòu;fu	609
 褪去	tùn;yt qù;ts	340
@@ -18,6 +22,10 @@ sort: by_weight
 支着	zhī;uy zhāo;yo	341
 一朝	yì;aa cháo;ou,uo	310
 特勒	tè;ns lēi;lg,gl	310
+玉米糁粥	yù;ad,wd mǐ;dd sá;mc zhōu;gg,mg
+玉米糁汤	yù;ad,wd mǐ;dd sá;mc tāng;dy
+玉米糁面	yù;ad,wd mǐ;dd sá;mc miàn;aa
+玉米糁饼	yù;ad,wd mǐ;dd sá;mc bǐng;ub
 将进酒	jiāng;dc,jc,pc jìn;zj jiǔ;dy	169
 调了吧	tiáo;yv le;aa,vu ba;kb	170
 他调了	tā;ry tiáo;yv le;aa,vu	190
@@ -2879,6 +2887,7 @@ sort: by_weight
 也不熟	yě;gg bù;ad,ax shóu;hu	230
 也熟了	yě;gg shóu;hu le;aa,vu	80
 也熟悉	yě;gg shóu;hu xī;xm,xb	160
+烫熟	tàng;ht shóu;hu	462
 已成熟	yǐ;vg,ag chéng;gg,wg shóu;hu	190
 一锅熟	yì;aa guō;jg,jn shóu;hu	100
 异熟果	yì;cs,sc shóu;hu guǒ;ad,tm	130
