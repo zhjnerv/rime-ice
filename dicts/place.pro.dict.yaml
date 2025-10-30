@@ -396,8 +396,8 @@ sort: by_weight
 陈家村	chén;ed jiā;bu cūn;mc	327
 陈家店	chén;ed jiā;bu diàn;gv	159
 陈家渡	chén;ed jiā;bu dù;dd	103
-陈家岗	chén;ed jiā;bu gǎng;ug	150
 陈家港	chén;ed jiā;bu gǎng;dx	270
+陈家岗	chén;ed jiā;bu gǎng;ug	150
 陈家阁	chén;ed jiā;bu gé;mg	272
 陈家口	chén;ed jiā;bu kǒu;aa	150
 陈家楼	chén;ed jiā;bu lóu;ml	155
@@ -1427,11 +1427,11 @@ sort: by_weight
 姜家村	jiāng;ny,yn jiā;bu cūn;mc	247
 蒋家村	jiǎng;cj jiā;bu cūn;mc	236
 江家村	jiāng;dg jiā;bu cūn;mc	188
-姜家坪	jiāng;ny,yn jiā;bu píng;tp	191
 蒋家坪	jiǎng;cj jiā;bu píng;tp	213
+姜家坪	jiāng;ny,yn jiā;bu píng;tp	191
 蒋家桥	jiǎng;cj jiā;bu qiáo;mq	302
-蒋家山	jiǎng;cj jiā;bu shān;aa	120
 姜家山	jiāng;ny,yn jiā;bu shān;aa	181
+蒋家山	jiǎng;cj jiā;bu shān;aa	120
 姜家屯	jiāng;ny,yn jiā;bu tún;ag	145
 姜家湾	jiāng;ny,yn jiā;bu wān;dw	222
 蒋家巷	jiǎng;cj jiā;bu xiàng;sg,gs	82
@@ -2479,6 +2479,8 @@ sort: by_weight
 马架村	mǎ;aa,vh jià;mj cūn;mc	69
 马家渡	mǎ;aa,vh jiā;bu dù;dd	175
 马家河	mǎ;aa,vh jiā;bu hé;dk	325
+马家集	mǎ;aa,vh jiā;bu jí;mv,vm	100
+马家街	mǎ;aa,vh jiā;bu jiē;xg,xi	100
 马家口	mǎ;aa,vh jiā;bu kǒu;aa	145
 马家楼	mǎ;aa,vh jiā;bu lóu;ml	263
 马家庙	mǎ;aa,vh jiā;bu miào;gy	94
@@ -2489,13 +2491,14 @@ sort: by_weight
 马家湾	mǎ;aa,vh jiā;bu wān;dw	322
 马家溪	mǎ;aa,vh jiā;bu xī;dx	133
 马家乡	mǎ;aa,vh jiā;bu xiāng;ap,vp	275
-玛家乡	mǎ;wm jiā;bu xiāng;ap,vp	1
 马家巷	mǎ;aa,vh jiā;bu xiàng;sg,gs	269
+玛家乡	mǎ;wm jiā;bu xiāng;ap,vp	1
 马家堰	mǎ;aa,vh jiā;bu yàn;tn,ty	150
 马家峪	mǎ;aa,vh jiā;bu yù;ug	94
 马家镇	mǎ;aa,vh jiā;bu zhèn;jv	213
 马甲镇	mǎ;aa,vh jiǎ;aa,oa zhèn;jv	204
 马家庄	mǎ;aa,vh jiā;bu zhuāng;gt	342
+马尖山	mǎ;aa,vh jiān;xd shān;aa	100
 马涧镇	mǎ;aa,vh jiàn;dj zhèn;jv	127
 马剑镇	mǎ;aa,vh jiàn;da,dq zhèn;jv	127
 马江村	mǎ;aa,vh jiāng;dg cūn;mc	1
@@ -2512,6 +2515,9 @@ sort: by_weight
 马圈村	mǎ;aa,vh juàn;kj cūn;mc	185
 马郡村	mǎ;aa,vh jùn;ej cūn;mc	94
 马军村	mǎ;aa,vh jūn;bi cūn;mc	1
+马军营	mǎ;aa,vh jūn;bi yíng;cl	100
+马卡区	mǎ;aa,vh kǎ;bx,ub qū;ki	100
+马卡省	mǎ;aa,vh kǎ;bx,ub shěng;ou	100
 马克村	mǎ;aa,vh kè;eg,ux cūn;mc	155
 马坑村	mǎ;aa,vh kēng;tk cūn;mc	145
 马坑乡	mǎ;aa,vh kēng;tk xiāng;ap,vp	127
@@ -2559,6 +2565,8 @@ sort: by_weight
 马南村	mǎ;aa,vh nán;ua,uy cūn;mc	82
 马脑村	mǎ;aa,vh nǎo;ox cūn;mc	31
 马棚村	mǎ;aa,vh péng;mp cūn;mc	1
+马屁股	mǎ;aa,vh pì;ub gu;ou	100
+马屁拍	mǎ;aa,vh pì;ub pāi;fb	100
 马坪村	mǎ;aa,vh píng;tp cūn;mc	181
 马坪乡	mǎ;aa,vh píng;tp xiāng;ap,vp	208
 马坪镇	mǎ;aa,vh píng;tp zhèn;jv	188
@@ -3397,8 +3405,8 @@ sort: by_weight
 王集镇	wáng;aa jí;mv,vm zhèn;jv	302
 王家坝	wáng;aa jiā;bu bà;tb	290
 王家堡	wáng;aa jiā;bu bǎo;tb	267
-王家场	wáng;aa jiā;bu chǎng;ty	159
 王家厂	wáng;aa jiā;bu chǎng;ap	167
+王家场	wáng;aa jiā;bu chǎng;ty	159
 王家村	wáng;aa jiā;bu cūn;mc	360
 王家店	wáng;aa jiā;bu diàn;gv	280
 王家渡	wáng;aa jiā;bu dù;dd	356
@@ -3426,8 +3434,8 @@ sort: by_weight
 王家洼	wáng;aa jiā;bu wā;dg	175
 王家湾	wáng;aa jiā;bu wān;dw	222
 王家屋	wáng;aa jiā;bu wū;uv	1
-王家乡	wáng;aa jiā;bu xiāng;ap,vp	237
 王家巷	wáng;aa jiā;bu xiàng;sg,gs	298
+王家乡	wáng;aa jiā;bu xiāng;ap,vp	237
 王家营	wáng;aa jiā;bu yíng;cl	347
 王家峪	wáng;aa jiā;bu yù;ug	278
 王家院	wáng;aa jiā;bu yuàn;ew	120
@@ -3874,8 +3882,8 @@ sort: by_weight
 徐集乡	xú;xy jí;mv,vm xiāng;ap,vp	159
 徐集镇	xú;xy jí;mv,vm zhèn;jv	159
 徐继庄	xú;xy jì;sa,sv zhuāng;gt	167
-许家坝	xǔ;yw jiā;bu bà;tb	231
 徐家坝	xú;xy jiā;bu bà;tb	270
+许家坝	xǔ;yw jiā;bu bà;tb	231
 徐家浜	xú;xy jiā;bu bāng;db	185
 徐家堡	xú;xy jiā;bu bǎo;tb	163
 徐家埠	xú;xy jiā;bu bù;tf,tu	178
@@ -3893,13 +3901,13 @@ sort: by_weight
 徐家楼	xú;xy jiā;bu lóu;ml	249
 徐家棚	xú;xy jiā;bu péng;mp	345
 徐家坪	xú;xy jiā;bu píng;tp	199
-许家桥	xǔ;yw jiā;bu qiáo;mq	139
 徐家桥	xú;xy jiā;bu qiáo;mq	219
-徐家山	xú;xy jiā;bu shān;aa	206
+许家桥	xǔ;yw jiā;bu qiáo;mq	139
 许家山	xǔ;yw jiā;bu shān;aa	243
+徐家山	xú;xy jiā;bu shān;aa	206
 许家洼	xǔ;yw jiā;bu wā;dg	139
-许家湾	xǔ;yw jiā;bu wān;dw	94
 徐家湾	xú;xy jiā;bu wān;dw	304
+许家湾	xǔ;yw jiā;bu wān;dw	94
 许家崖	xǔ;yw jiā;bu yá;uy	255
 许家窑	xǔ;yw jiā;bu yáo;xf,bf	233
 徐家院	xú;xy jiā;bu yuàn;ew	1
@@ -4057,8 +4065,8 @@ sort: by_weight
 杨家屯	yáng;my jiā;bu tún;ag	171
 杨家湾	yáng;my jiā;bu wān;dw	368
 杨家溪	yáng;my jiā;bu xī;dx	342
-杨家乡	yáng;my jiā;bu xiāng;ap,vp	196
 杨家巷	yáng;my jiā;bu xiàng;sg,gs	215
+杨家乡	yáng;my jiā;bu xiāng;ap,vp	196
 杨家峪	yáng;my jiā;bu yù;ug	313
 杨家院	yáng;my jiā;bu yuàn;ew	120
 杨家寨	yáng;my jiā;bu zhài;mb,bm	289
@@ -4334,8 +4342,8 @@ sort: by_weight
 张家店	zhāng;gi jiā;bu diàn;gv	237
 张家墩	zhāng;gi jiā;bu dūn;td	213
 张家畈	zhāng;gi jiā;bu fàn;tf	196
-张家房	zhāng;gi jiā;bu fáng;hf	1
 张家坊	zhāng;gi jiā;bu fāng;tf	145
+张家房	zhāng;gi jiā;bu fáng;hf	1
 张家坟	zhāng;gi jiā;bu fén;tw	282
 张家河	zhāng;gi jiā;bu hé;dk	221
 张家湖	zhāng;gi jiā;bu hú;dh	103
@@ -4355,8 +4363,8 @@ sort: by_weight
 张家屯	zhāng;gi jiā;bu tún;ag	191
 张家洼	zhāng;gi jiā;bu wā;dg	226
 张家溪	zhāng;gi jiā;bu xī;dx	193
-张家乡	zhāng;gi jiā;bu xiāng;ap,vp	226
 张家巷	zhāng;gi jiā;bu xiàng;sg,gs	300
+张家乡	zhāng;gi jiā;bu xiāng;ap,vp	226
 张家窑	zhāng;gi jiā;bu yáo;xf,bf	163
 张家营	zhāng;gi jiā;bu yíng;cl	181
 张家院	zhāng;gi jiā;bu yuàn;ew	127
@@ -4568,8 +4576,8 @@ sort: by_weight
 郑家口	zhèng;eg jiā;bu kǒu;aa	82
 郑家台	zhèng;eg jiā;bu tái;sk	112
 郑家屯	zhèng;eg jiā;bu tún;ag	359
-郑家屋	zhèng;eg jiā;bu wū;uv	1
 郑家坞	zhèng;eg jiā;bu wù;tw	228
+郑家屋	zhèng;eg jiā;bu wū;uv	1
 郑家镇	zhèng;eg jiā;bu zhèn;jv	191
 郑家庄	zhèng;eg jiā;bu zhuāng;gt	312
 郑楼村	zhèng;eg lóu;ml cūn;mc	82
@@ -4670,8 +4678,8 @@ sort: by_weight
 周家山	zhōu;kj,kk jiā;bu shān;aa	215
 周家台	zhōu;kj,kk jiā;bu tái;sk	145
 周家湾	zhōu;kj,kk jiā;bu wān;dw	208
-周家乡	zhōu;kj,kk jiā;bu xiāng;ap,vp	191
 周家巷	zhōu;kj,kk jiā;bu xiàng;sg,gs	255
+周家乡	zhōu;kj,kk jiā;bu xiāng;ap,vp	191
 周家营	zhōu;kj,kk jiā;bu yíng;cl	215
 周家院	zhōu;kj,kk jiā;bu yuàn;ew	52
 周家寨	zhōu;kj,kk jiā;bu zhài;mb,bm	133
@@ -12619,7 +12627,7 @@ sort: by_weight
 钢山街道	gāng;jg shān;aa jiē;xg,xi dào;zu	10
 岗上积镇	gǎng;ug shàng;aa,ba jī;hv zhèn;jv	125
 岗石岭村	gǎng;ug shí;kp,aa,ak,pk lǐng;ul cūn;mc	1
-杠树台村	gāng;mg shù;md tái;sk cūn;mc	1
+杠树台村	gàng;mg shù;md tái;sk cūn;mc	1
 杠头沟村	gàng;mg tóu;dd gōu;dg cūn;mc	1
 岗头桥村	gǎng;ug tóu;dd qiáo;mq cūn;mc	1
 缸窑岭镇	gāng;fg yáo;xf,bf lǐng;ul zhèn;jv	58
@@ -25178,11 +25186,11 @@ sort: by_weight
 青岗槽村	qīng;of,fo gǎng;ug cáo;mc cūn;mc	1
 青岗集乡	qīng;of,fo gǎng;ug jí;mv,vm xiāng;ap,vp	35
 青岗集镇	qīng;of,fo gǎng;ug jí;mv,vm zhèn;jv	35
-青杠林村	qīng;of,fo gāng;mg lín;mm cūn;mc	58
+青杠林村	qīng;of,fo gàng;mg lín;mm cūn;mc	58
 青岗岭乡	qīng;of,fo gǎng;ug lǐng;ul xiāng;ap,vp	1
-青杠坪村	qīng;of,fo gāng;mg píng;tp cūn;mc	149
+青杠坪村	qīng;of,fo gàng;mg píng;tp cūn;mc	149
 青岗坪村	qīng;of,fo gǎng;ug píng;tp cūn;mc	35
-青杠树村	qīng;of,fo gāng;mg shù;md cūn;mc	230
+青杠树村	qīng;of,fo gàng;mg shù;md cūn;mc	230
 青岗树村	qīng;of,fo gǎng;ug shù;md cūn;mc	1
 青格劳村	qīng;of,fo gé;mg láo;cl,lb cūn;mc	1
 请各乡镇	qǐng;yq gè;wk xiāng;ap,vp zhèn;jv	77
@@ -36036,7 +36044,7 @@ sort: by_weight
 杨家坟村	yáng;my jiā;bu fén;tw cūn;mc	1
 杨家港村	yáng;my jiā;bu gǎng;dx cūn;mc	1
 杨家岗村	yáng;my jiā;bu gǎng;ug cūn;mc	1
-杨家杠村	yáng;my jiā;bu gāng;mg cūn;mc	1
+杨家杠村	yáng;my jiā;bu gàng;mg cūn;mc	1
 杨家沟村	yáng;my jiā;bu gōu;dg cūn;mc	255
 杨家沟乡	yáng;my jiā;bu gōu;dg xiāng;ap,vp	1
 杨家沟镇	yáng;my jiā;bu gōu;dg zhèn;jv	142
