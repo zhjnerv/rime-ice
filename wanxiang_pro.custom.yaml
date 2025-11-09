@@ -9,7 +9,7 @@ patch:
   #通过下面的设置可以让你自己的文件引入而与仓库custom_phrase.txt不同，防止更新时被仓库文件覆盖
   custom_phrase/user_dict: custom_phrase_double    # 这里改成什么就需要手动创建同名的 custom_phrasexx.txt 文件在用户目录，这个文件主要用于置顶，编码为自定义编码的词汇
   translator/packs/+:
-    - useuserzhj                                  #导入根目录下名称为userxx.dict.yaml的自定义固定词典，编码要与固定词库一致，编码权重都不要少，形如姓名、专有名词公司名称等等
+    - userzhj                            #导入根目录下名称为userxx.dict.yaml的自定义固定词典，编码要与固定词库一致，编码权重都不要少，形如姓名、专有名词公司名称等等
     #下面是候选数量，未来7890分别代表1234声，请候选长度不要大于6避免冲突
   menu/page_size: 6
   #下面是超级注释相关
@@ -18,24 +18,60 @@ patch:
     corrector_type: "〔comment〕"  # 错音措字，随意更换左右括号，比如"〔comment〕" 不加括号为无括号，comment占位不能动
     chaifen: "〔chaifen〕"         # 拆分显示，随意更换左右括号，比如"〔chaifen〕" 不加括号为无括号，chaifen占位不能动
   #下面用于对/rq和N20250101这样的日期候选自定义（顺序、类型、候选个数）由你完全掌控，前面是对于公历后面默认携带农历
-  #Y=年，m=月，d=日，数字前面带0如02月09日；y代表后两位年如15年，nj代表不带0的 如2月9日
+  # 通用日期时间格式化函数（供 /rq、/sj、/dt、N0101、N20150101 场景复用）
+  # 支持转义：
+  #   \X       —— 转义单个字符 X，按字面量输出（如 \Y \m \H 等）
+  #   [[...]]  —— 区块整体按字面量输出
+  #
+  # 约定占位符：
+  # 【日期】
+  #   Y  四位年份           0000-9999  例：2025
+  #   y  两位年份           00-99      例：25
+  #   m  月（前导零）        01-12      例：02
+  #   n  月（不带前导零）     1-12       例：2
+  #   d  日（前导零）        01-31      例：09
+  #   j  日（不带前导零）     1-31       例：9
+  #
+  # 【时间】
+  #   H  24小时（前导零）   00-23      例：08
+  #   G  24小时（不带零）   0-23       例：8
+  #   I  12小时（前导零）   01-12      例：08
+  #   l  12小时（不带零）   1-12       例：8   （注意是小写 L）
+  #   M  分钟（前导零）     00-59      例：05
+  #   S  秒（前导零）       00-59      例：09
+  #   p  am/pm（小写）     am / pm
+  #   P  AM/PM（大写）     AM / PM
+  # 【时区】
+  #   O  带冒号格式        +08:00、-04:30、+05:45
+  #   o  不带冒号格式      +0800、-0430、+0545
   date_formats:
     - "Y年m月d日"
     - "Y-m-d"
-    - "Ymd"
-    - "Y.m.d"
     - "Y/m/d"
+    - "Y.m.d"
+    - "Ymd"
     - "Y年n月j日"
     - "y年n月j日"
     - "n月j日"
+  time_formats:
+    - "H:M"
+    - "H点M分"
+    - "H:M:S"
+    - "H时M分S秒"
+    - "下午I:M"
+    - "I:M P"
+  datetime_formats:
+    - "Y-m-d H:M:S"
+    - "Y-m-dTH:M:S O"
+    - "YmdHMS"
+    - "Y年m月d日 H点M分"
+    - "y/m/d I:M p"
   #下面用来改变你的windows小狼毫右下角软件图标
   #schema/+:
   #  icon: "icons/zhong.ico"
   #  ascii_icon: "icons/ying.ico"
   #下面这个可以改变tips上屏的按键
   key_binder/tips_key: "period"   #修改时候去default找，默认是句号
-  punctuator: 
-    __include: wanxiang_symbols_zhj:/symbol_table #修改符号表的名称，默认是wanxiang_symbols
   key_binder/sequence: # Lua 配置：手动排序的快捷键 super_sequence.lua，不要用方向键，各种冲突，一定要避免冲突
     up: "Control+j"    # 上移
     down: "Control+k"  # 下移
@@ -74,7 +110,7 @@ patch:
       n: "《"
       m: "》"
 
-#通过在有候选的情况下，通过末尾检测到形如\a来触发为第一候选进行成对符号包裹例如nihao\c 候选[你好]
+  #通过在有候选的情况下，通过末尾检测到形如\a来触发为第一候选进行成对符号包裹例如nihao\c 候选[你好]
   #trigger只能设置为单符号，因为按下一次锁定第一候选，按下映射开始包裹符号pro用户不能设置为/
   #两个字符可以不用|默认前后分割，需要明确区分前后的使用|分割，可以有一侧为空，不可以使用多个||
   paired_symbols:
@@ -181,9 +217,8 @@ patch:
       qu: "??"
       sb: "sb"
 
-
   #开启自动无词频造词（默认已经开了）
-  add_user_dict/enable_auto_phrase: true
+  #add_user_dict/enable_auto_phrase: true
 
 #下面的数据有需要的可以patch引用
 #特殊优化：部分音节字极少，几乎不参与构词，则提升对应四码字的优先级，仅对小鹤双拼有效，其他双拼方案需作对应修改）
