@@ -29,6 +29,8 @@ sort: by_weight
 特勒	tè;ns lēi;lg,gl	310
 大汗	dà;ad hán;dg	481
 指甲	zhī;fv jia;aa,oa	369
+降了吧	xiáng;ef,ej le;aa,vu ba;kb	175
+降了没	xiáng;ef,ej le;aa,vu méi;du	194
 对不了	duì;cy,yc bu;ad,ax liǎo;aa,vu	223
 玉米糁粥	yù;ad,wd mǐ;dd sá;mc zhōu;gg,mg
 玉米糁汤	yù;ad,wd mǐ;dd sá;mc tāng;dy
@@ -4375,7 +4377,7 @@ sort: by_weight
 与谁共眠	yǔ;aa shéi;yv gòng;bc,cb mián;om	4
 与谁同行	yǔ;aa shéi;yv tóng;kk xíng;xd,xi	45
 与谁同去	yǔ;aa shéi;yv tóng;kk qù;ts	1
-与谁同坐	yǔ;aa shéi;yv tóng;kk zuò;tc,tr,rt	24
+与谁同坐	yǔ;aa shéi;yv tóng;kk zuò;tc	24
 与谁相倚	yǔ;aa shéi;yv xiāng;mo yǐ;rq	1
 怨谁始得	yuàn;xe,xy shéi;yv shǐ;nt dé;xc	1
 在想是谁	zài;ta,ut xiǎng;xx shì;op,ov shéi;yv	8
@@ -4918,7 +4920,7 @@ sort: by_weight
 只得去过河	zhǐ;kb de;xc qù;ts guò;zc hé;dk	1
 只需洗掉泥	zhǐ;kb xū;ye xǐ;dx diào;fv ní;dn	1
 嘴里有舌头	zuǐ;kj,kz lǐ;aa,tt yǒu;ou,uo shé;qk tou;dd	1
-坐下分果果	zuò;tc,tr,rt xià;ab,ad fēn;bd,db guǒ;ad,tm guǒ;ad,tm	1
+坐下分果果	zuò;tc xià;ab,ad fēn;bd,db guǒ;ad,tm guǒ;ad,tm	1
 绊倒了秃丫头	bàn;sb dǎo;rd le;aa,vu tū;hj yā;ba,da tou;dd	1
 板凳比扁担宽	bǎn;mf dèng;jd bǐ;bb biǎn;hc dàn;fd kuān;bj,jb	1
 扁担比板凳长	biǎn;hc dàn;fd bǐ;bb bǎn;mf dèng;jd cháng;pd	1
@@ -5205,7 +5207,7 @@ sort: by_weight
 弟弟叫丽丽出来做游戏	dì;bp di;bp jiào;kj lì;ad lì;ad chū;ck,aa lái;am,wb zuò;rg yóu;dz xì;yg	1
 地上的猫想咬树上的鸟	dì;ty shàng;aa,ba de;bu māo;qm xiǎng;xx yǎo;kj shù;md shàng;aa,ba de;bu niǎo;na,pa	1
 惦着泥里的两对鸟倒吊	diàn;xd zhe;yo ní;dn lǐ;aa,tt de;bu liǎng;ad duì;cy,yc niǎo;na,pa dào;rd diào;kj	1
-鹅过河哥哥弟弟坡前坐	é;nw guò;zc hé;dk gē;kd,kk,dk ge;kd,kk,dk dì;bp di;bp pō;tp qián;bd,qd zuò;tc,tr,rt	1
+鹅过河哥哥弟弟坡前坐	é;nw guò;zc hé;dk gē;kd,kk,dk ge;kd,kk,dk dì;bp di;bp pō;tp qián;bd,qd zuò;tc	1
 飞蛾啄不住岸边去找窝	fēi;yd é;iw zhuó;kd,ki bú;ad,ax zhù;rv àn;ug biān;zl qù;ts zhǎo;fg wō;xn,xg,bn,bg	1
 河要渡鹅不知是鹅过河	hé;dk yào;xn dù;dd é;nw bù;ad,ax zhī;uk,ku shì;op,ov é;nw guò;zc hé;dk	1
 红红送给华华一朵黄花	hóng;sg hóng;sg sòng;zg gěi;sh huá;uh huá;uh yì;aa duǒ;mj,jm huáng;ad,cb huā;ch	1
