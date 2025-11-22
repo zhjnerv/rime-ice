@@ -42,6 +42,42 @@ patch:
     catppuccin_macchiato: {back_color: 0x261918, border_color: 0x30201E, candidate_text_color: 0xF5D3CA, comment_text_color: 0x70B558, hilited_back_color: 0xF6A0C6, hilited_candidate_label_color: 0x4F3A36, hilited_candidate_text_color: 0x3A2724, hilited_comment_text_color: 0x4F3A36, hilited_text_color: 0x70B558, label_color: 0xCBADA5, name: "Catppuccin Macchiato", shadow_color: 0xAA000000, text_color: 0xE0C0B8}
     catppuccin_mocha: {back_color: 0x1B1111, border_color: 0x251818, candidate_text_color: 0xF4D6CD, comment_text_color: 0x705B58, hilited_back_color: 0xF7A6CB, hilited_candidate_label_color: 0x443231, hilited_candidate_text_color: 0x2E1E1E, hilited_comment_text_color: 0x443231, hilited_text_color: 0x705B58, label_color: 0xC8ADA6, name: "Catppuccin Mocha", shadow_color: 0xAA000000, text_color: 0xDEC2BA}
     microsoft_sim: {author: plutotree, back_color: 0xF4F4F4, border_color: 0xDCDCDC, candidate_text_color: 0x000000, comment_text_color: 0x888888, hilited_back_color: 0xFFD8A6, hilited_candidate_back_color: 0xFFD8A6, hilited_candidate_text_color: 0x000000, hilited_text_color: 0xF4F4F4, name: "仿微软输入法", shadow_color: 0xAA000000, text_color: 0x000000}
+    wechat_dark: {
+      name: "WeChat_dark",
+      back_color: 0xE62E2E2E, # 背景色 - 2E2E2E (深灰), E6 Alpha (约90%不透明度) - 透明度降低
+      text_color: 0xFFFFFF, # 输入码颜色 - 白色
+      candidate_text_color: 0xFFFFFF, # 候选字颜色 - 白色
+      comment_text_color: 0xAAAAAA, # 候选注释颜色 - 浅灰
+      label_color: 0x888888, # 候选序号颜色 - 暗灰
+      border_color: 0x00151515, # 边框颜色 - 完全透明
+      hilited_back_color: 0x75B100, # 高亮背景色 (输入码) - 微信绿
+      hilited_text_color: 0x151515, # 高亮文字颜色 (输入码) - 深灰/近黑
+      hilited_candidate_back_color: 0x75B100, # 高亮候选字背景色 - 微信绿
+      hilited_candidate_text_color: 0x151515, # 高亮候选字文字颜色 - 深灰/近黑
+      hilited_label_color: 0xFFFFFF, # 高亮候选字序号颜色 - 白色
+      hilited_comment_text_color: 0xFFFFFF, # 高亮候选字注释颜色 - 白色
+      # hilited_mark_color: 0xBF616A, # (可选) 标签前的标记颜色
+      shadow_color: 0x00000000, # 阴影颜色 - 完全透明 (移除阴影)
+      hilited_candidate_shadow_color: 0x00000000, # 高亮候选阴影颜色 - 完全透明 (移除阴影)
+    }
+    wechat: {
+      name: "WeChat",
+      back_color: 0xE6F0F0F0, # 背景色 - F0F0F0 (浅灰), E6 Alpha (约90%不透明度) - 透明度降低
+      text_color: 0x424242, # 输入码颜色 - 深灰
+      candidate_text_color: 0x3c3c3c, # 候选字颜色 - 较深灰
+      comment_text_color: 0x999999, # 候选注释颜色 (如拼音) - 中灰
+      label_color: 0x999999, # 候选序号颜色 - 中灰
+      border_color: 0x00FFFFFF, # 边框颜色 - 完全透明
+      hilited_back_color: 0x75B100, # 高亮背景色 (输入码) - 微信绿
+      hilited_text_color: 0xFFFFFF, # 高亮文字颜色 (输入码) - 白色
+      hilited_candidate_back_color: 0x75B100, # 高亮候选字背景色 - 微信绿
+      hilited_candidate_text_color: 0xFFFFFF, # 高亮候选字文字颜色 - 白色
+      hilited_label_color: 0xFFFFFF, # 高亮候选字序号颜色 - 白色
+      hilited_comment_text_color: 0xFFFFFF, # 高亮候选字注释颜色 - 白色
+      # hilited_mark_color: 0xBF616A, # (可选) 标签前的标记颜色
+      shadow_color: 0x00000000, # 阴影颜色 - 完全透明 (移除阴影)
+      hilited_candidate_shadow_color: 0x00000000, # 高亮候选阴影颜色 - 完全透明 (移除阴影)
+    }
   style:
     comment_font_face: "霞鹜文楷等宽 GB"
     comment_font_point: 16
@@ -54,6 +90,12 @@ patch:
     label_font_point: 17
     label_format: "%s."
     layout: {align_type: center, border: 1, candidate_spacing: 3, corner_radius: 5, hilite_padding: 2, hilite_padding_x: 3, hilite_padding_y: 2, hilite_spacing: 3, margin_x: 12, margin_y: 6, max_width: 1600, min_width: 60, round_corner: 4, shadow_offset_x: 2, shadow_offset_y: 2, shadow_radius: 4, spacing: 9}
+    translucency: true       # 开启毛玻璃效果
+    blur: true               # 开启背景模糊效果
+    color_space: display_p3  # 色域设置
   # 【修改生效的皮肤】将这里的值从 "win11_light" 改为 "the_matrix"
-  "style/color_scheme": "the_matrix"
+  "style/color_scheme": "WeChat"
   "style/color_scheme_dark": "the_matrix"
+
+
+
