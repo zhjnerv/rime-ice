@@ -46,4 +46,4 @@ patch:
     layout: {align_type: center, border: 1, candidate_spacing: 3, corner_radius: 5, hilite_padding: 2, hilite_padding_x: 3, hilite_padding_y: 2, hilite_spacing: 3, margin_x: 12, margin_y: 6, max_width: 1600, min_width: 60, round_corner: 4, shadow_offset_x: 2, shadow_offset_y: 2, shadow_radius: 4, spacing: 9}
     translucency: true
   "style/color_scheme": WeChat
-  "style/color_scheme_dark": the_matrix
+  "style/color_scheme_dark": WeChat_dark
