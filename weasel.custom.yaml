@@ -2,7 +2,7 @@ customization:
   distribution_code_name: Weasel
   distribution_version: 0.17.4
   generator: "Weasel::UIStyleSettings"
-  modified_time: "Sun Nov 23 01:21:45 2025"
+  modified_time: "Mon Nov 24 15:30:42 2025"
   rime_version: 1.13.1
 patch:
   "app_options/CDRAFT_M.exe":
@@ -28,8 +28,8 @@ patch:
     catppuccin_mocha: {back_color: 0x1B1111, border_color: 0x251818, candidate_text_color: 0xF4D6CD, comment_text_color: 0x705B58, hilited_back_color: 0xF7A6CB, hilited_candidate_label_color: 0x443231, hilited_candidate_text_color: 0x2E1E1E, hilited_comment_text_color: 0x443231, hilited_text_color: 0x705B58, label_color: 0xC8ADA6, name: "Catppuccin Mocha", shadow_color: 0xAA000000, text_color: 0xDEC2BA}
     microsoft_sim: {author: plutotree, back_color: 0xF4F4F4, border_color: 0xDCDCDC, candidate_text_color: 0x000000, comment_text_color: 0x888888, hilited_back_color: 0xFFD8A6, hilited_candidate_back_color: 0xFFD8A6, hilited_candidate_text_color: 0x000000, hilited_text_color: 0xF4F4F4, name: "仿微软输入法", shadow_color: 0xAA000000, text_color: 0x000000}
     the_matrix: {author: Gemini, back_color: 0x000000, border_color: 0x002000, comment_text_color: 0x008000, corner_radius: 0, font_face: Consolas, hilited_candidate_back_color: 0x00E500, hilited_candidate_text_color: 0x000000, hilited_label_color: 0x000000, label_color: 0x00B000, name: "The Matrix / 黑客帝国", text_color: 0x00E500}
-    wechat: {back_color: 0xE6F0F0F0, border_color: 0x00FFFFFF, candidate_text_color: 0x3c3c3c, comment_text_color: 0x999999, hilited_back_color: 0x75B100, hilited_candidate_back_color: 0x75B100, hilited_candidate_shadow_color: 0x00000000, hilited_candidate_text_color: 0xFFFFFF, hilited_comment_text_color: 0xFFFFFF, hilited_label_color: 0xFFFFFF, hilited_text_color: 0xFFFFFF, label_color: 0x999999, name: WeChat, shadow_color: 0x00000000, text_color: 0x424242}
-    wechat_dark: {back_color: 0xE62E2E2E, border_color: 0x00151515, candidate_text_color: 0xFFFFFF, comment_text_color: 0xAAAAAA, hilited_back_color: 0x75B100, hilited_candidate_back_color: 0x75B100, hilited_candidate_shadow_color: 0x00000000, hilited_candidate_text_color: 0x151515, hilited_comment_text_color: 0xFFFFFF, hilited_label_color: 0xFFFFFF, hilited_text_color: 0x151515, label_color: 0x888888, name: WeChat_dark, shadow_color: 0x00000000, text_color: 0xFFFFFF}
+    wechat: {back_color: 0xE6F0F0F0, border_color: 0x00FFFFFF, candidate_text_color: 0x3c3c3c, comment_text_color: 0x999999, hilited_back_color: 0x75B100, hilited_candidate_back_color: 0x75B100, hilited_candidate_label_color: 0xFFFFFF, hilited_candidate_shadow_color: 0x00000000, hilited_candidate_text_color: 0xFFFFFF, hilited_comment_text_color: 0xFFFFFF, hilited_label_color: 0xFFFFFF, hilited_text_color: 0xFFFFFF, label_color: 0x999999, name: WeChat, shadow_color: 0x00000000, text_color: 0x424242}
+    wechat_dark: {back_color: 0xE62E2E2E, border_color: 0x00151515, candidate_text_color: 0xFFFFFF, comment_text_color: 0xAAAAAA, hilited_back_color: 0x75B100, hilited_candidate_back_color: 0x75B100, hilited_candidate_label_color: 0x151515, hilited_candidate_shadow_color: 0x00000000, hilited_candidate_text_color: 0x151515, hilited_comment_text_color: 0xFFFFFF, hilited_label_color: 0xFFFFFF, hilited_text_color: 0x151515, label_color: 0x888888, name: WeChat_dark, shadow_color: 0x00000000, text_color: 0xFFFFFF}
   style:
     blur: true
     color_space: display_p3
@@ -45,5 +45,4 @@ patch:
     label_format: "%s."
     layout: {align_type: center, border: 1, candidate_spacing: 3, corner_radius: 5, hilite_padding: 2, hilite_padding_x: 3, hilite_padding_y: 2, hilite_spacing: 3, margin_x: 12, margin_y: 6, max_width: 1600, min_width: 60, round_corner: 4, shadow_offset_x: 2, shadow_offset_y: 2, shadow_radius: 4, spacing: 9}
     translucency: true
-  "style/color_scheme": WeChat
-  "style/color_scheme_dark": WeChat_dark
+  "style/color_scheme": wechat
