@@ -19,8 +19,10 @@ function Exit-Tip {
     param(
         [string]$exitCode = 0
     )
-    Write-Host '按任意键退出...'
-    $null = $Host.UI.RawUI.ReadKey('NoEcho,IncludeKeyDown')
+    if (-not $auto) {
+        Write-Host '按任意键退出...'
+        $null = $Host.UI.RawUI.ReadKey('NoEcho,IncludeKeyDown')
+    }
     exit $exitCode
 }
 
@@ -163,7 +165,7 @@ if ($PSBoundParameters.ContainsKey('cliTargetFolder') -and $cliTargetFolder) {
     }
 }
 
-$UpdateToolsVersion = "v6.1.9";
+$UpdateToolsVersion = "v6.2.0";
 if ($UpdateToolsVersion.StartsWith("DEFAULT")) {
     Write-Host "您下载的是非发行版脚本，请勿直接使用，请去 releases 页面下载最新版本：https://github.com/rimeinn/rime-wanxiang-update-tools/releases" -ForegroundColor Yellow;
 } else {

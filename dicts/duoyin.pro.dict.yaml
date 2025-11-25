@@ -7,6 +7,11 @@ name: duoyin
 version: "LTS"
 sort: by_weight
 ...
+血条	xiě;pa,pm tiáo;wm	437
+冲卡	chōng;dv qiǎ;bx,ub	311
+干吗	gàn;aa ma;km	545
+干吗	gān;aa ma;km	545
+多少	duō;xx shao;xp	752
 当了	dàng;xx le;aa,vu	555
 星星	xīng;ou xing;ou	747
 盛放	shèng;mi fàng;wf,fw	451
@@ -306,6 +311,7 @@ sort: by_weight
 还回	hái;zb huí;kk	430
 看好他	kān;ou,uo hǎo;nz tā;ry	400
 看好他	kàn;ou,uo hǎo;nz tā;ry	400
+深藏不露	shēn;dm cáng;cg,ci bú;ad,ax lòu;yl	56
 还回去吧	huán;zb huí;kk qù;ts ba;kb	26
 还回去吧	hái;zb huí;kk qù;ts ba;kb	26
 还回去吗	huán;zb huí;kk qù;ts ma;km	25
@@ -4725,7 +4731,8 @@ sort: by_weight
 三个直	sān;aa gè;ra,pa zhí;aa,uq	1
 三个𠙽	sān;aa gè;ra,pa zhì;	1
 三个𦉼	sān;aa gè;ra,pa zhì;	1
-四个曰	sì;aa,ke gè;ra,pa rì;aa,oy,yt	1
+四个曰	sì;aa,ke gè;ra,pa yuē;aa,oy,yt	1
+四个日	sì;aa,ke gè;ra,pa rì;aa,or,ri	1
 三个𣥚	sān;aa gè;ra,pa zhì;	1
 三个至	sān;aa gè;ra,pa zhì;tv,vt	1
 三个丶	sān;aa gè;ra,pa zhǔ;dd,dm	1
