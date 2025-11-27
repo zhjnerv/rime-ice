@@ -39,4 +39,5 @@ vikunja	viku	2
 aistudio	ai	3
 DAS	das	2
 OA	oa	1
+CPC cpc 1
 

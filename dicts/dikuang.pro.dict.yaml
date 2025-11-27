@@ -7,50 +7,1223 @@ name: dikuang
 version: "LTS"
 sort: by_weight
 ...
+红石	hóng;sg shí;kp,aa,ak,pk	490
 矿床	kuàng;ug chuáng;gm,mg	444
 砾岩	lì;ul,uy yán;uu	363
+绿石	lǜ;sl shí;kp,aa,ak,pk	288
+锰钢	měng;jm gāng;jg	274
+锰矿	měng;jm kuàng;ug	366
+锰酶	měng;jm méi;ym	199
+锰片	měng;jm piàn;pa,pv	201
+锰铁	měng;jm tiě;ju	341
+闪石	shǎn;mr,rm shí;kp,aa,ak,pk	298
 岩溶	yán;uu róng;dr	412
+阿布石	ā;ek bù;ju,uj shí;kp,aa,ak,pk	52
+埃洛石	āi;tu,ty luò;dg shí;kp,aa,ak,pk	92
+暗绿石	àn;oy lǜ;sl shí;kp,aa,ak,pk	94
+奥长石	ào;dm,pd cháng;pd shí;kp,aa,ak,pk	98
+八瓣石	bā;pd bàn;gx,xx shí;kp,aa,ak,pk	85
+耙笔石	bà;lb bǐ;vm shí;kp,aa,ak,pk	64
+八面石	bā;pd miàn;aa shí;kp,aa,ak,pk	71
+钯柱石	bǎ;jb zhù;mv shí;kp,aa,ak,pk	64
+白沸石	bái;pa,po fèi;df shí;kp,aa,ak,pk	63
+白硅石	bái;pa,po guī;ug shí;kp,aa,ak,pk	70
+白火石	bái;pa,po huǒ;dd shí;kp,aa,ak,pk	94
+白金石	bái;pa,po jīn;ra,pa shí;kp,aa,ak,pk	79
+白榴石	bái;pa,po liú;ml shí;kp,aa,ak,pk	76
+白窿石	bái;pa,po lóng;xl,bl shí;kp,aa,ak,pk	63
+白锰矾	bái;pa,po měng;jm fán;uf	50
+白米石	bái;pa,po mǐ;dd shí;kp,aa,ak,pk	86
+白面石	bái;pa,po miàn;aa shí;kp,aa,ak,pk	59
+白铍石	bái;pa,po pī;jp shí;kp,aa,ak,pk	92
+白秋石	bái;pa,po qiū;hh shí;kp,aa,ak,pk	86
+白砂石	bái;pa,po shā;uu shí;kp,aa,ak,pk	55
+白砷石	bái;pa,po shēn;uu shí;kp,aa,ak,pk	74
+白松石	bái;pa,po sōng;mg shí;kp,aa,ak,pk	86
+白钛石	bái;pa,po tài;jt shí;kp,aa,ak,pk	97
+白陶石	bái;pa,po táo;ef,et shí;kp,aa,ak,pk	66
+白铁石	bái;pa,po tiě;ju shí;kp,aa,ak,pk	80
+百万石	bǎi;ab wàn;ag,ap shí;kp,aa,ak,pk	152
+白锡石	bái;pa,po xī;jy shí;kp,aa,ak,pk	96
+白霞石	bái;pa,po xiá;yj,yy shí;kp,aa,ak,pk	67
+白雪石	bái;pa,po xuě;yx shí;kp,aa,ak,pk	135
+白羊石	bái;pa,po yáng;da shí;kp,aa,ak,pk	83
+白玉石	bái;pa,po yù;ad,wd shí;kp,aa,ak,pk	94
+白云石	bái;pa,po yún;es,se shí;kp,aa,ak,pk	187
+斑彩石	bān;ww cǎi;pc shí;kp,aa,ak,pk	86
+半化石	bàn;bf huà;rb shí;kp,aa,ak,pk	70
+绊脚石	bàn;sb jiǎo;oq shí;kp,aa,ak,pk	253
+板硼石	bǎn;mf péng;up shí;kp,aa,ak,pk	53
+抱鼓石	bào;fb gǔ;vd,uv shí;kp,aa,ak,pk	153
+保健石	bǎo;rd jiàn;rj shí;kp,aa,ak,pk	56
+抱角石	bào;fb jiǎo;dy shí;kp,aa,ak,pk	97
+宝金石	bǎo;by jīn;ra,pa shí;kp,aa,ak,pk	59
+宝丽石	bǎo;by lì;ad shí;kp,aa,ak,pk	92
+豹魔石	bào;vu mó;gm,mg shí;kp,aa,ak,pk	84
+包润石	bāo;gs rùn;dr shí;kp,aa,ak,pk	89
+宝塔石	bǎo;by tǎ;td,th shí;kp,aa,ak,pk	60
+包吴石	bāo;gs wú;kt shí;kp,aa,ak,pk	91
+宝玉石	bǎo;by yù;ad,wd shí;kp,aa,ak,pk	254
+倍长石	bèi;rk,rp cháng;pd shí;kp,aa,ak,pk	83
+钡长石	bèi;jb cháng;pd shí;kp,aa,ak,pk	65
+贝得石	bèi;ad,kr dé;xc shí;kp,aa,ak,pk	87
+钡沸石	bèi;jb fèi;df shí;kp,aa,ak,pk	85
+被告石	bèi;yp gào;kn,nk shí;kp,aa,ak,pk	1
+贝海石	bèi;ad,kr hǎi;dm shí;kp,aa,ak,pk	86
+钡解石	bèi;jb jiě;jn shí;kp,aa,ak,pk	68
+贝塔石	bèi;ad,kr tǎ;td,th shí;kp,aa,ak,pk	68
+北投石	běi;ap,bj tóu;fu shí;kp,aa,ak,pk	137
+钡硝石	bèi;jb xiāo;ux shí;kp,aa,ak,pk	69
+奔奔石	bēn;dc,dh bēn;dc,dh shí;kp,aa,ak,pk	93
+本本石	běn;aa,ma běn;aa,ma shí;kp,aa,ak,pk	55
+比尔石	bǐ;bb ěr;dx,xd shí;kp,aa,ak,pk	66
+闭箭石	bì;mc jiàn;vq shí;kp,aa,ak,pk	58
+闭角石	bì;mc jiǎo;dy shí;kp,aa,ak,pk	66
 铋矿床	bì;jb kuàng;ug chuáng;gm,mg	92
+鼻涕石	bí;zb,zq tì;dd shí;kp,aa,ak,pk	69
+碧玺石	bì;ub,up xǐ;we,ye shí;kp,aa,ak,pk	128
+变锆石	biàn;wy,yy gào;jg shí;kp,aa,ak,pk	97
+扁砾石	biǎn;hc lì;ul,uy shí;kp,aa,ak,pk	51
 变砾岩	biàn;wy,yy lì;ul,uy yán;uu	81
+变燧石	biàn;wy,yy suì;hs shí;kp,aa,ak,pk	94
+变质石	biàn;wy,yy zhì;bu,pb shí;kp,aa,ak,pk	143
+表碛石	biǎo;fy qì;uz shí;kp,aa,ak,pk	86
+冰爆石	bīng;du bào;hb shí;kp,aa,ak,pk	78
+冰长石	bīng;du cháng;pd shí;kp,aa,ak,pk	85
+冰岛石	bīng;du dǎo;nu,un shí;kp,aa,ak,pk	90
+冰晶石	bīng;du jīng;oo shí;kp,aa,ak,pk	140
+冰酒石	bīng;du jiǔ;dy shí;kp,aa,ak,pk	82
+饼菊石	bǐng;ub jú;cj,cm shí;kp,aa,ak,pk	55
+冰泪石	bīng;du lèi;do shí;kp,aa,ak,pk	66
+冰碛石	bīng;du qì;uz shí;kp,aa,ak,pk	94
+冰洲石	bīng;du zhōu;dv shí;kp,aa,ak,pk	131
+波方石	bō;dp fāng;dg,wd,dp,dw shí;kp,aa,ak,pk	351
+波角石	bō;dp jiǎo;dy shí;kp,aa,ak,pk	60
+玻璃石	bō;wp li;wl shí;kp,aa,ak,pk	98
+勃姆石	bó;lb,lz mǔ;nm shí;kp,aa,ak,pk	79
+玻陨石	bō;wp yǔn;ey shí;kp,aa,ak,pk	52
+彩虹石	cǎi;pc hóng;ig shí;kp,aa,ak,pk	100
+采砂石	cǎi;mv,vm shā;uu shí;kp,aa,ak,pk	78
+才翁石	cái;ap wēng;yg shí;kp,aa,ak,pk	67
+彩霞石	cǎi;pc xiá;yj,yy shí;kp,aa,ak,pk	68
+苍星石	cāng;cc xīng;ou shí;kp,aa,ak,pk	112
+曹铭石	cáo;oc,co míng;jm shí;kp,aa,ak,pk	59
+侧平石	cè;rz píng;aa,gb shí;kp,aa,ak,pk	50
+侧碛石	cè;rz qì;uz shí;kp,aa,ak,pk	66
+岑云石	cén;uj yún;es,se shí;kp,aa,ak,pk	56
+曾长石	céng;ob,bo cháng;pd shí;kp,aa,ak,pk	70
+层叠石	céng;uy dié;qr,qu,yy shí;kp,aa,ak,pk	92
+曾定石	céng;ob,bo dìng;bp shí;kp,aa,ak,pk	86
+曾东石	céng;ob,bo dōng;ad,qx shí;kp,aa,ak,pk	86
+叉笔石	chā;dy,yd bǐ;vm shí;kp,aa,ak,pk	100
+茶化石	chá;cm huà;rb shí;kp,aa,ak,pk	86
+查罗石	chá;md luó;sx shí;kp,aa,ak,pk	80
+蟾蜍石	chán;iv,iy chú;iy shí;kp,aa,ak,pk	82
+嫦娥石	cháng;ni é;nw shí;kp,aa,ak,pk	76
+昌化石	chāng;oo huà;rb shí;kp,aa,ak,pk	158
+常凯石	cháng;jk,xd,dd kǎi;jj,jq shí;kp,aa,ak,pk	53
+长寿石	cháng;pd shòu;cf,fc shí;kp,aa,ak,pk	52
+长条石	cháng;pd tiáo;wm shí;kp,aa,ak,pk	105
+晁君石	cháo;ov jūn;ky shí;kp,aa,ak,pk	51
+尘沙石	chén;tx,xt shā;du shí;kp,aa,ak,pk	75
+陈岩石	chén;ed yán;uu shí;kp,aa,ak,pk	419
+城堡石	chéng;ti bǎo;tb shí;kp,aa,ak,pk	121
+橙汞石	chéng;md gǒng;gu,ug shí;kp,aa,ak,pk	74
+橙红石	chéng;md hóng;sg shí;kp,aa,ak,pk	92
+橙黄石	chéng;md huáng;ad,cb shí;kp,aa,ak,pk	79
+橙玉石	chéng;md yù;ad,wd shí;kp,aa,ak,pk	80
+弛菊石	chí;gy jú;cj,cm shí;kp,aa,ak,pk	85
+驰菊石	chí;my jú;cj,cm shí;kp,aa,ak,pk	62
+齿菊石	chǐ;vk jú;cj,cm shí;kp,aa,ak,pk	49
+船帆石	chuán;vk fān;jf shí;kp,aa,ak,pk	65
+船菊石	chuán;vk jú;cj,cm shí;kp,aa,ak,pk	73
+垂带石	chuí;pa dài;jb shí;kp,aa,ak,pk	94
+春花石	chūn;of,fo huā;ch shí;kp,aa,ak,pk	58
+刺笔石	cì;dc bǐ;vm shí;kp,aa,ak,pk	76
+刺菊石	cì;dc jú;cj,cm shí;kp,aa,ak,pk	55
+磁铁石	cí;uz tiě;ju shí;kp,aa,ak,pk	81
+粗安石	cū;mq ān;bn shí;kp,aa,ak,pk	98
+粗菊石	cū;mq jú;cj,cm shí;kp,aa,ak,pk	70
+粗矿石	cū;mq kuàng;ug shí;kp,aa,ak,pk	52
+催化石	cuī;rc huà;rb shí;kp,aa,ak,pk	105
+翠榴石	cuì;yz liú;ml shí;kp,aa,ak,pk	132
+翠星石	cuì;yz xīng;ou shí;kp,aa,ak,pk	114
+大帆石	dà;ad fān;jf shí;kp,aa,ak,pk	69
+大黑石	dà;ad hēi;ad,ha shí;kp,aa,ak,pk	114
+大化石	dà;ad huà;rb shí;kp,aa,ak,pk	116
+打火石	dǎ;fd huǒ;dd shí;kp,aa,ak,pk	537
+大积石	dà;ad jī;hv shí;kp,aa,ak,pk	60
+大金石	dà;ad jīn;ra,pa shí;kp,aa,ak,pk	79
+打孔石	dǎ;fd kǒng;zg shí;kp,aa,ak,pk	79
+大块石	dà;ad kuài;td,tg shí;kp,aa,ak,pk	90
+大理石	dà;ad lǐ;wl shí;kp,aa,ak,pk	350
+大卵石	dà;ad luǎn;pd,md shí;kp,aa,ak,pk	49
+大麻石	dà;ad má;gl shí;kp,aa,ak,pk	90
+打磨石	dǎ;fd mó;mu,um shí;kp,aa,ak,pk	93
+大漂石	dà;ad piāo;dp shí;kp,aa,ak,pk	60
+大青石	dà;ad qīng;of,fo shí;kp,aa,ak,pk	138
+大山石	dà;ad shān;aa shí;kp,aa,ak,pk	100
+大岩石	dà;ad yán;uu shí;kp,aa,ak,pk	144
+大隅石	dà;ad yú;ey shí;kp,aa,ak,pk	68
+带化石	dài;jb huà;rb shí;kp,aa,ak,pk	67
+代万石	dài;ry wàn;ag,ap dàn;kp,aa,ak,pk	14
+代赭石	dài;ry zhě;iv shí;kp,aa,ak,pk	160
+蛋白石	dàn;ip,pi bái;pa,po shí;kp,aa,ak,pk	234
+单笔石	dān;ba,bd bǐ;vm shí;kp,aa,ak,pk	99
+蛋粪石	dàn;ip,pi fèn;mg shí;kp,aa,ak,pk	58
+蛋化石	dàn;ip,pi huà;rb shí;kp,aa,ak,pk	140
+但化石	dàn;rd huà;rb shí;kp,aa,ak,pk	137
+胆结石	dǎn;od jié;sj shí;kp,aa,ak,pk	265
+单棱石	dān;ba,bd léng;ml,mw shí;kp,aa,ak,pk	89
+癚榴石	dàn;bv,by liú;ml shí;kp,aa,ak,pk	76
+丹泉石	dān;pd quán;bu,ub shí;kp,aa,ak,pk	81
+单热石	dān;ba,bd rè;hv shí;kp,aa,ak,pk	99
+诞生石	dàn;yy shēng;na shí;kp,aa,ak,pk	182
+但王石	dàn;rd wáng;aa shí;kp,aa,ak,pk	116
+单柱石	dān;ba,bd zhù;mv shí;kp,aa,ak,pk	98
+弹子石	dàn;gd zǐ;aa,vh shí;kp,aa,ak,pk	252
+到黄石	dào;dv huáng;ad,cb shí;kp,aa,ak,pk	239
+到磐石	dào;dv pán;ub shí;kp,aa,ak,pk	168
+道牙石	dào;zu yá;ap shí;kp,aa,ak,pk	82
+得结石	dé;xc jié;sj shí;kp,aa,ak,pk	100
+灯盏石	dēng;hd zhǎn;mj shí;kp,aa,ak,pk	74
+迪尔石	dí;zy ěr;dx,xd shí;kp,aa,ak,pk	97
+地开石	dì;ty kāi;ac shí;kp,aa,ak,pk	122
+迪凯石	dí;zy kǎi;jj,jq shí;kp,aa,ak,pk	91
+迪开石	dí;zy kāi;ac shí;kp,aa,ak,pk	73
 碲矿床	dì;ud kuàng;ug chuáng;gm,mg	52
 底砾岩	dǐ;gd lì;ul,uy yán;uu	65
+地煞石	dì;ty shà;hw shí;kp,aa,ak,pk	84
+滴水石	dī;dd,dg shuǐ;ad,uv shí;kp,aa,ak,pk	70
+碘钙石	diǎn;ud gài;jg shí;kp,aa,ak,pk	52
+碘化锰	diǎn;ud huà;rb měng;jm	61
+奠基石	diàn;dq,qd jī;tq,qt shí;kp,aa,ak,pk	384
+垫脚石	diàn;tv jiǎo;oq shí;kp,aa,ak,pk	224
+电解锰	diàn;ag,og jiě;jn měng;jm	148
+点金石	diǎn;hv jīn;ra,pa shí;kp,aa,ak,pk	151
 碘矿床	diǎn;ud kuàng;ug chuáng;gm,mg	93
+电气石	diàn;ag,og qì;py,ry shí;kp,aa,ak,pk	272
+碘酸锰	diǎn;ud suān;yj,yw měng;jm	61
+雕笔石	diāo;vv bǐ;vm shí;kp,aa,ak,pk	74
+叠层石	dié;qr,qu,yy céng;uy shí;kp,aa,ak,pk	167
+迭层石	dié;zu céng;uy shí;kp,aa,ak,pk	72
+顶东石	dǐng;dy,yd dōng;ad,qx shí;kp,aa,ak,pk	97
+定魂石	dìng;bp hún;gy,yg shí;kp,aa,ak,pk	212
+顶箭石	dǐng;dy,yd jiàn;vq shí;kp,aa,ak,pk	89
+丁瓯石	dīng;aa ōu;wq shí;kp,aa,ak,pk	84
+丁三石	dīng;aa sān;aa shí;kp,aa,ak,pk	64
+丁铁石	dīng;aa tiě;ju shí;kp,aa,ak,pk	90
+董阆石	dǒng;cv láng;ml shí;kp,aa,ak,pk	84
+东陵石	dōng;ad,qx líng;el,ew shí;kp,aa,ak,pk	132
+东菱石	dōng;ad,qx líng;cl,cw shí;kp,aa,ak,pk	82
+董青石	dǒng;cv qīng;of,fo shí;kp,aa,ak,pk	69
+董润石	dǒng;cv rùn;dr shí;kp,aa,ak,pk	96
+东硖石	dōng;ad,qx xiá;uj shí;kp,aa,ak,pk	88
+斗板石	dòu;du bǎn;mf shí;kp,aa,ak,pk	89
+豆腐石	dòu;aa,aq fu;gr,rf shí;kp,aa,ak,pk	73
+斗鸡石	dòu;du jī;ny,yn shí;kp,aa,ak,pk	88
+窦燕石	dòu;xm,bm yàn;ch,hb shí;kp,aa,ak,pk	71
+豆状石	dòu;aa,aq zhuàng;jq,pq,qp shí;kp,aa,ak,pk	74
+独居石	dú;qi jū;ug shí;kp,aa,ak,pk	140
+独立石	dú;qi lì;da shí;kp,aa,ak,pk	92
+毒重石	dú;fm zhòng;pa,ql shí;kp,aa,ak,pk	88
+断笔石	duàn;ja,jm,jv bǐ;vm shí;kp,aa,ak,pk	78
+段可石	duàn;ud,du,pu kě;dk shí;kp,aa,ak,pk	96
+断龙石	duàn;ja,jm,jv lóng;ad shí;kp,aa,ak,pk	81
+短柱石	duǎn;ud zhù;mv shí;kp,aa,ak,pk	100
+对笔石	duì;cy,yc bǐ;vm shí;kp,aa,ak,pk	96
+对菊石	duì;cy,yc jú;cj,cm shí;kp,aa,ak,pk	68
+墩台石	dūn;td tái;sk shí;kp,aa,ak,pk	80
+多棱石	duō;xx léng;ml,mw shí;kp,aa,ak,pk	77
+峨公石	é;uw gōng;sb,bs dàn;kp,aa,ak,pk	82
+萼菊石	è;ce,ck jú;cj,cm shí;kp,aa,ak,pk	56
+鹅卵石	é;nw luǎn;pd,md shí;kp,aa,ak,pk	255
+鹅软石	é;nw ruǎn;iq shí;kp,aa,ak,pk	128
+二连石	èr;aa lián;zi shí;kp,aa,ak,pk	79
+发沸石	fā;ay,fd,vy,yd fèi;df shí;kp,aa,ak,pk	56
+发光石	fā;ay,fd,vy,yd guāng;ea,xw shí;kp,aa,ak,pk	100
+法黄石	fǎ;dq huáng;ad,cb shí;kp,aa,ak,pk	65
+法律石	fǎ;dq lǜ;xy shí;kp,aa,ak,pk	90
+法术石	fǎ;dq shù;md shí;kp,aa,ak,pk	298
+樊春石	fán;dm chūn;of,fo shí;kp,aa,ak,pk	94
+钒辉石	fán;jf huī;gj shí;kp,aa,ak,pk	97
+反经石	fǎn;py jīng;sg shí;kp,aa,ak,pk	60
 钒矿床	fán;jf kuàng;ug chuáng;gm,mg	62
+藩万石	fān;cf,cp wàn;ag,ap dàn;kp,aa,ak,pk	152
+方沸石	fāng;dg,wd,dp,dw fèi;df shí;kp,aa,ak,pk	72
+方镉石	fāng;dg,wd,dp,dw gé;jg shí;kp,aa,ak,pk	83
+方徽石	fāng;dg,wd,dp,dw huī;xw shí;kp,aa,ak,pk	62
+房角石	fáng;hf jiǎo;dy shí;kp,aa,ak,pk	132
+方解石	fāng;dg,wd,dp,dw jiě;jn shí;kp,aa,ak,pk	214
+方镁石	fāng;dg,wd,dp,dw měi;jm shí;kp,aa,ak,pk	75
+方锰矿	fāng;dg,wd,dp,dw měng;jm kuàng;ug	79
+方钠石	fāng;dg,wd,dp,dw nà;jn shí;kp,aa,ak,pk	128
+方纳石	fāng;dg,wd,dp,dw nà;sn shí;kp,aa,ak,pk	100
+方硼石	fāng;dg,wd,dp,dw péng;up shí;kp,aa,ak,pk	89
+房山石	fáng;hf shān;aa shí;kp,aa,ak,pk	49
+方钍石	fāng;dg,wd,dp,dw tǔ;jt shí;kp,aa,ak,pk	83
+方英石	fāng;dg,wd,dp,dw yīng;cy shí;kp,aa,ak,pk	81
+仿玉石	fǎng;rf yù;ad,wd shí;kp,aa,ak,pk	98
+防御石	fáng;ef yù;xx shí;kp,aa,ak,pk	68
+仿云石	fǎng;rf yún;es,se shí;kp,aa,ak,pk	97
+方柱石	fāng;dg,wd,dp,dw zhù;mv shí;kp,aa,ak,pk	85
+方篆石	fāng;dg,wd,dp,dw zhuàn;vt,vu shí;kp,aa,ak,pk	54
+翡翠石	fěi;yf cuì;yz shí;kp,aa,ak,pk	130
+非化石	fēi;aa huà;rb shí;kp,aa,ak,pk	40
+飞蝗石	fēi;yd huáng;ih shí;kp,aa,ak,pk	81
+飞来石	fēi;yd lái;am,wb shí;kp,aa,ak,pk	228
+斐冷石	fěi;wf lěng;dl shí;kp,aa,ak,pk	82
+啡窿石	fēi;kf lóng;xl,bl shí;kp,aa,ak,pk	76
+非木石	fēi;aa mù;ad shí;kp,aa,ak,pk	56
+飞行石	fēi;yd xíng;xd,xi shí;kp,aa,ak,pk	132
+费钟石	fèi;bf,fb zhōng;jv shí;kp,aa,ak,pk	99
+费锺石	fèi;bf,fb zhōng;jv shí;kp,aa,ak,pk	78
+芬达石	fēn;cf dá;zd shí;kp,aa,ak,pk	52
+粪化石	fèn;mg huà;rb shí;kp,aa,ak,pk	132
+风动石	fēng;ji dòng;ly,yl shí;kp,aa,ak,pk	152
+风化石	fēng;ji huà;rb shí;kp,aa,ak,pk	112
+凤凰石	fèng;jy huáng;jh shí;kp,aa,ak,pk	94
+风刻石	fēng;ji kè;dh shí;kp,aa,ak,pk	71
+风棱石	fēng;ji léng;ml,mw shí;kp,aa,ak,pk	71
+风路石	fēng;ji lù;zg shí;kp,aa,ak,pk	91
+佛足石	fó;rf zú;kv shí;kp,aa,ak,pk	66
+傅抱石	fù;rc,rf bào;fb shí;kp,aa,ak,pk	212
+附壁石	fù;ef bì;tb,tx shí;kp,aa,ak,pk	88
+副长石	fù;df,dt cháng;pd shí;kp,aa,ak,pk	100
+夫妇石	fū;ad,er fù;nx shí;kp,aa,ak,pk	65
+复活石	fù;pw,rw,wo huó;du shí;kp,aa,ak,pk	207
+腹菊石	fù;of jú;cj,cm shí;kp,aa,ak,pk	100
+富矿石	fù;bf,bt kuàng;ug shí;kp,aa,ak,pk	78
+复理石	fù;pw,rw,wo lǐ;wl shí;kp,aa,ak,pk	63
 副砾岩	fù;df,dt lì;ul,uy yán;uu	62
+斧劈石	fǔ;fj,jf pī;db,dx shí;kp,aa,ak,pk	71
+复片石	fù;pw,rw,wo piàn;pa,pv shí;kp,aa,ak,pk	68
+浮丘石	fú;df qiū;pa,ja shí;kp,aa,ak,pk	87
+芙蓉石	fú;cf róng;cr shí;kp,aa,ak,pk	215
+符山石	fú;vf shān;aa shí;kp,aa,ak,pk	155
+符文石	fú;vf wén;wi,dd shí;kp,aa,ak,pk	128
+钙长石	gài;jg cháng;pd shí;kp,aa,ak,pk	136
+钙矾石	gài;jg fán;uf shí;kp,aa,ak,pk	83
+钙沸石	gài;jg fèi;df shí;kp,aa,ak,pk	55
+该化石	gāi;yh huà;rb shí;kp,aa,ak,pk	61
+钙结石	gài;jg jié;sj shí;kp,aa,ak,pk	136
+钙蓝石	gài;jg lán;cj shí;kp,aa,ak,pk	63
+钙磷石	gài;jg lín;ul shí;kp,aa,ak,pk	71
+钙榴石	gài;jg liú;ml shí;kp,aa,ak,pk	72
+钙霞石	gài;jg xiá;yj,yy shí;kp,aa,ak,pk	98
+钙硝石	gài;jg xiāo;ux shí;kp,aa,ak,pk	95
+该岩石	gāi;yh yán;uu shí;kp,aa,ak,pk	466
+该陨石	gāi;yh yǔn;ey shí;kp,aa,ak,pk	448
+钙柱石	gài;jg zhù;mv shí;kp,aa,ak,pk	76
+杆沸石	gān;mg fèi;df shí;kp,aa,ak,pk	96
+赣礁石	gàn;dd,vb jiāo;uj shí;kp,aa,ak,pk	82
+肝结石	gān;og jié;sj shí;kp,aa,ak,pk	63
+杆菊石	gān;mg jú;cj,cm shí;kp,aa,ak,pk	98
+橄榄石	gǎn;mg lǎn;ml shí;kp,aa,ak,pk	268
+杆棱石	gān;mg léng;ml,mw shí;kp,aa,ak,pk	75
+干砌石	gàn;aa qì;uq shí;kp,aa,ak,pk	86
+罡气石	gāng;sv qì;py,ry shí;kp,aa,ak,pk	110
+岗岩石	gǎng;ug yán;uu shí;kp,aa,ak,pk	307
+刚玉石	gāng;dg yù;ad,wd shí;kp,aa,ak,pk	76
+高尖石	gāo;wk jiān;xd shí;kp,aa,ak,pk	82
 锆矿床	gào;jg kuàng;ug chuáng;gm,mg	73
+高岭石	gāo;wk lǐng;ul shí;kp,aa,ak,pk	307
+高锰钢	gāo;wk měng;jm gāng;jg	140
+高锰酸	gāo;wk měng;jm suān;yj,yw	146
+高山石	gāo;wk shān;aa shí;kp,aa,ak,pk	112
+高塘石	gāo;wk táng;tt shí;kp,aa,ak,pk	110
+高万石	gāo;wk wàn;ag,ap dàn;kp,aa,ak,pk	73
+锆英石	gào;jg yīng;cy shí;kp,aa,ak,pk	114
+戈壁石	gē;ad bì;tb,tx shí;kp,aa,ak,pk	266
+铬钾石	gè;jg jiǎ;jj shí;kp,aa,ak,pk	96
 铬矿床	gè;jg kuàng;ug chuáng;gm,mg	75
 镉矿床	gé;jg kuàng;ug chuáng;gm,mg	73
+铬岭石	gè;jg lǐng;ul shí;kp,aa,ak,pk	93
+歌颂石	gē;qg sòng;yg shí;kp,aa,ak,pk	65
+更长石	gèng;ad,ag cháng;pd shí;kp,aa,ak,pk	87
+耿介石	gěng;eh jiè;ra,rd shí;kp,aa,ak,pk	72
+更楼石	gēng;ad,ag lóu;ml shí;kp,aa,ak,pk	89
+弓笔石	gōng;ag,vg bǐ;vm shí;kp,aa,ak,pk	98
+工程石	gōng;aa chéng;hi shí;kp,aa,ak,pk	61
+弓翠石	gōng;ag,vg cuì;yz shí;kp,aa,ak,pk	60
+拱顶石	gǒng;fg dǐng;dy,yd shí;kp,aa,ak,pk	111
+公会石	gōng;sb,bs huì;ry shí;kp,aa,ak,pk	722
+攻击石	gōng;gw,wg jī;aa,eu,fk shí;kp,aa,ak,pk	92
+弓角石	gōng;ag,vg jiǎo;dy shí;kp,aa,ak,pk	97
 汞矿床	gǒng;gu,ug kuàng;ug chuáng;gm,mg	100
+共鸣石	gòng;bc,cb míng;kn shí;kp,aa,ak,pk	141
+龚潜石	gōng;lg qián;dt shí;kp,aa,ak,pk	92
+龚天石	gōng;lg tiān;ad shí;kp,aa,ak,pk	90
+拱心石	gǒng;fg xīn;dd shí;kp,aa,ak,pk	94
+钩角石	gōu;jg jiǎo;dy shí;kp,aa,ak,pk	60
+勾菊石	gōu;gs jú;cj,cm shí;kp,aa,ak,pk	63
+钩菊石	gōu;jg jú;cj,cm shí;kp,aa,ak,pk	62
+顾耕石	gù;ye gēng;lj shí;kp,aa,ak,pk	73
+顾汉石	gù;ye hàn;dy shí;kp,aa,ak,pk	52
+顾家石	gù;ye jiā;bu shí;kp,aa,ak,pk	79
+顾缄石	gù;ye jiān;sx shí;kp,aa,ak,pk	70
+顾介石	gù;ye jiè;ra,rd shí;kp,aa,ak,pk	50
+咕咾石	gū;kg lǎo;kl shí;kp,aa,ak,pk	75
+古绿石	gǔ;uk lǜ;sl shí;kp,aa,ak,pk	100
+孤赏石	gū;zg shǎng;bk,dk,xy shí;kp,aa,ak,pk	96
+顾醒石	gù;ye xǐng;yx shí;kp,aa,ak,pk	50
+古月石	gǔ;uk yuè;oy,pa,yt shí;kp,aa,ak,pk	63
+观赏石	guān;jy,yj shǎng;bk,dk,xy shí;kp,aa,ak,pk	242
+观音石	guān;jy,yj yīn;lo shí;kp,aa,ak,pk	104
+贯云石	guàn;bm,mb yún;es,se shí;kp,aa,ak,pk	92
+光彩石	guāng;ea,xw cǎi;pc shí;kp,aa,ak,pk	71
+光卤石	guāng;ea,xw lǔ;ba,bi,sh shí;kp,aa,ak,pk	117
+广绿石	guǎng;dp lǜ;sl shí;kp,aa,ak,pk	58
+光芒石	guāng;ea,xw máng;cw shí;kp,aa,ak,pk	106
+广磐石	guǎng;dp pán;ub shí;kp,aa,ak,pk	77
+光线石	guāng;ea,xw xiàn;sj shí;kp,aa,ak,pk	62
+龟背石	guī;dd bèi;ob shí;kp,aa,ak,pk	76
+硅钡石	guī;ug bèi;jb shí;kp,aa,ak,pk	71
+硅铋石	guī;ug bì;jb shí;kp,aa,ak,pk	59
+硅钙石	guī;ug gài;jg shí;kp,aa,ak,pk	82
+硅灰石	guī;ug huī;hu,uh shí;kp,aa,ak,pk	130
+龟甲石	guī;dd jiǎ;aa,oa shí;kp,aa,ak,pk	57
+贵榴石	guì;ba,vb liú;ml shí;kp,aa,ak,pk	50
+硅镁石	guī;ug měi;jm shí;kp,aa,ak,pk	69
+硅锰矿	guī;ug měng;jm kuàng;ug	62
+硅铍石	guī;ug pī;jp shí;kp,aa,ak,pk	94
+硅乳石	guī;ug rǔ;gf,fg shí;kp,aa,ak,pk	67
+硅铈石	guī;ug shì;ju shí;kp,aa,ak,pk	77
+硅铁石	guī;ug tiě;ju shí;kp,aa,ak,pk	70
+硅钍石	guī;ug tǔ;jt shí;kp,aa,ak,pk	55
+硅线石	guī;ug xiàn;sj shí;kp,aa,ak,pk	84
+鬼笑石	guǐ;pd,ps xiào;vy shí;kp,aa,ak,pk	229
+归元石	guī;ax,dx yuán;aw,ee shí;kp,aa,ak,pk	174
+硅藻石	guī;ug zǎo;cz shí;kp,aa,ak,pk	89
+果阿石	guǒ;ad,tm ā;ek shí;kp,aa,ak,pk	61
+过门石	guò;zc mén;dg shí;kp,aa,ak,pk	177
+过锰酸	guò;zc měng;jm suān;yj,yw	76
+哈八石	hā;kh bā;pd shí;kp,aa,ak,pk	59
+铪锆石	hā;jh gào;jg shí;kp,aa,ak,pk	51
 铪矿床	hā;jh kuàng;ug chuáng;gm,mg	72
+蛤蟆石	há;ih má;im shí;kp,aa,ak,pk	108
+海浮石	hǎi;dm fú;df shí;kp,aa,ak,pk	102
+海角石	hǎi;dm jiǎo;dy shí;kp,aa,ak,pk	90
+海晶石	hǎi;dm jīng;oo shí;kp,aa,ak,pk	69
+海楼石	hǎi;dm lóu;ml shí;kp,aa,ak,pk	144
+海绿石	hǎi;dm lǜ;sl shí;kp,aa,ak,pk	100
+海泡石	hǎi;dm pào;db shí;kp,aa,ak,pk	125
+海青石	hǎi;dm qīng;of,fo shí;kp,aa,ak,pk	98
+海神石	hǎi;dm shén;uu shí;kp,aa,ak,pk	58
+海王石	hǎi;dm wáng;aa shí;kp,aa,ak,pk	87
+海纹石	hǎi;dm wén;sw shí;kp,aa,ak,pk	150
+海峡石	hǎi;dm xiá;uj shí;kp,aa,ak,pk	70
+海印石	hǎi;dm yìn;ey,pe shí;kp,aa,ak,pk	56
+海中石	hǎi;dm zhōng;aa,ka shí;kp,aa,ak,pk	99
+海珠石	hǎi;dm zhū;wv shí;kp,aa,ak,pk	92
+含锰量	hán;kj,rk měng;jm liàng;ol	110
+寒山石	hán;bd shān;aa shí;kp,aa,ak,pk	166
+寒水石	hán;bd shuǐ;ad,uv shí;kp,aa,ak,pk	125
+含碎石	hán;kj,rk suì;uz shí;kp,aa,ak,pk	57
+寒玉石	hán;bd yù;ad,wd shí;kp,aa,ak,pk	89
+浩英石	hào;dg yīng;cy shí;kp,aa,ak,pk	82
+号陨石	hào;kk yǔn;ey shí;kp,aa,ak,pk	93
+贺安石	hè;bj ān;bn shí;kp,aa,ak,pk	94
+合成石	hé;rk chéng;gg,wg shí;kp,aa,ak,pk	274
+和合石	hé;hk hé;rk shí;kp,aa,ak,pk	68
+贺兰石	hè;bj lán;bs,qe shí;kp,aa,ak,pk	96
+河砾石	hé;dk lì;ul,uy shí;kp,aa,ak,pk	78
+褐帘石	hè;yh lián;bj,jb,jx,xj shí;kp,aa,ak,pk	91
+河卵石	hé;dk luǎn;pd,md shí;kp,aa,ak,pk	124
+河马石	hé;dk mǎ;aa,vh shí;kp,aa,ak,pk	76
+褐锰矿	hè;yh měng;jm kuàng;ug	90
+合纹石	hé;rk wén;sw shí;kp,aa,ak,pk	90
+河西石	hé;dk xī;aa shí;kp,aa,ak,pk	85
+核形石	hé;mh xíng;pk shí;kp,aa,ak,pk	60
+合掌石	hé;rk zhǎng;uk,xu,du shí;kp,aa,ak,pk	81
+黑洞石	hēi;ad,ha dòng;dt shí;kp,aa,ak,pk	96
+黑礁石	hēi;ad,ha jiāo;uj shí;kp,aa,ak,pk	71
+黑晶石	hēi;ad,ha jīng;oo shí;kp,aa,ak,pk	76
+黑帘石	hēi;ad,ha lián;bj,jb,jx,xj shí;kp,aa,ak,pk	91
+黑榴石	hēi;ad,ha liú;ml shí;kp,aa,ak,pk	85
+黑锰矿	hēi;ad,ha měng;jm kuàng;ug	55
+黑锰石	hēi;ad,ha měng;jm shí;kp,aa,ak,pk	61
+黑魔石	hēi;ad,ha mó;gm,mg shí;kp,aa,ak,pk	90
+黑片石	hēi;ad,ha piàn;pa,pv shí;kp,aa,ak,pk	93
+黑星石	hēi;ad,ha xīng;ou shí;kp,aa,ak,pk	84
+黑曜石	hēi;ad,ha yào;od,ov shí;kp,aa,ak,pk	310
+黑耀石	hēi;ad,ha yào;gd,gv shí;kp,aa,ak,pk	308
+黑月石	hēi;ad,ha yuè;oy,pa,yt shí;kp,aa,ak,pk	51
+黑陨石	hēi;ad,ha yǔn;ey shí;kp,aa,ak,pk	68
+黑柱石	hēi;ad,ha zhù;mv shí;kp,aa,ak,pk	68
+黑钻石	hēi;ad,ha zuàn;jv shí;kp,aa,ak,pk	178
+恒安石	héng;xg ān;bn shí;kp,aa,ak,pk	80
+洪半石	hóng;dg bàn;bf shí;kp,aa,ak,pk	63
+红石谷	hóng;sg dàn;kp,aa,ak,pk gǔ;bk,kr	98
+红锆石	hóng;sg gào;jg shí;kp,aa,ak,pk	96
+红蜡石	hóng;sg là;ix shí;kp,aa,ak,pk	88
+红帘石	hóng;sg lián;bj,jb,jx,xj shí;kp,aa,ak,pk	67
+红榴石	hóng;sg liú;ml shí;kp,aa,ak,pk	89
+红窿石	hóng;sg lóng;xl,bl shí;kp,aa,ak,pk	100
+红砂石	hóng;sg shā;uu shí;kp,aa,ak,pk	134
+红沙石	hóng;sg shā;du shí;kp,aa,ak,pk	66
+红闪石	hóng;sg shǎn;mr,rm shí;kp,aa,ak,pk	57
+红石灯	hóng;sg shí;kp,aa,ak,pk dēng;hd	120
+红石沟	hóng;sg shí;kp,aa,ak,pk gōu;dg	89
+红石斛	hóng;sg shí;kp,aa,ak,pk hú;jd	51
+红石郡	hóng;sg shí;kp,aa,ak,pk jùn;ej	67
+红石块	hóng;sg shí;kp,aa,ak,pk kuài;td,tg	86
+红石矿	hóng;sg shí;kp,aa,ak,pk kuàng;ug	56
+红石砬	hóng;sg shí;kp,aa,ak,pk lá;ul	76
+红石梁	hóng;sg shí;kp,aa,ak,pk liáng;mb	98
+红石林	hóng;sg shí;kp,aa,ak,pk lín;mm	168
+红石榴	hóng;sg shí;kp,aa,ak,pk liú;ml	214
+红石路	hóng;sg shí;kp,aa,ak,pk lù;zg	108
+红石门	hóng;sg shí;kp,aa,ak,pk mén;dg	104
+红石山	hóng;sg shí;kp,aa,ak,pk shān;aa	81
+红石滩	hóng;sg shí;kp,aa,ak,pk tān;dn	162
+红石头	hóng;sg shí;kp,aa,ak,pk tou;dd	135
+红石峡	hóng;sg shí;kp,aa,ak,pk xiá;uj	154
+红石蟹	hóng;sg shí;kp,aa,ak,pk xiè;ij	55
+红石崖	hóng;sg shí;kp,aa,ak,pk yá;uy	140
+红石岩	hóng;sg shí;kp,aa,ak,pk yán;uu	60
+红石寨	hóng;sg shí;kp,aa,ak,pk zhài;mb,bm	149
+红石站	hóng;sg shí;kp,aa,ak,pk zhàn;lv	70
+红纹石	hóng;sg wén;sw shí;kp,aa,ak,pk	154
+红榍石	hóng;sg xiè;mx shí;kp,aa,ak,pk	62
+红信石	hóng;sg xìn;ry shí;kp,aa,ak,pk	92
+红曜石	hóng;sg yào;od,ov shí;kp,aa,ak,pk	78
+红药石	hóng;sg yào;cy shí;kp,aa,ak,pk	65
+红云石	hóng;sg yún;es,se shí;kp,aa,ak,pk	70
+红藻石	hóng;sg zǎo;cz shí;kp,aa,ak,pk	77
+红赭石	hóng;sg zhě;iv shí;kp,aa,ak,pk	98
+红柱石	hóng;sg zhù;mv shí;kp,aa,ak,pk	126
+红竹石	hóng;sg zhú;gg shí;kp,aa,ak,pk	100
+红钻石	hóng;sg zuàn;jv shí;kp,aa,ak,pk	98
+厚箭石	hòu;iz jiàn;vq shí;kp,aa,ak,pk	100
+猴面石	hóu;qh miàn;aa shí;kp,aa,ak,pk	53
+猴子石	hóu;qh zi;aa,vh shí;kp,aa,ak,pk	159
+虎抱石	hǔ;hj bào;fb shí;kp,aa,ak,pk	111
+虎睛石	hǔ;hj jīng;oq shí;kp,aa,ak,pk	116
+琥珀石	hǔ;wh pò;wb shí;kp,aa,ak,pk	16
+虎跳石	hǔ;hj tiào;zv shí;kp,aa,ak,pk	108
+胡小石	hú;og xiǎo;ad shí;kp,aa,ak,pk	149
+虎眼石	hǔ;hj yǎn;og shí;kp,aa,ak,pk	226
+花岗石	huā;ch gǎng;ug shí;kp,aa,ak,pk	220
+花冈石	huā;ch gāng;ki shí;kp,aa,ak,pk	96
+滑块石	huá;dg kuài;td,tg shí;kp,aa,ak,pk	84
+画面石	huà;ak miàn;aa shí;kp,aa,ak,pk	98
+花乳石	huā;ch rǔ;gf,fg shí;kp,aa,ak,pk	66
+花蕊石	huā;ch ruǐ;cr,cx shí;kp,aa,ak,pk	96
+花纹石	huā;ch wén;sw shí;kp,aa,ak,pk	78
+画像石	huà;ak xiàng;rx shí;kp,aa,ak,pk	314
+坏晶石	huài;tb jīng;oo shí;kp,aa,ak,pk	85
+环角石	huán;wb jiǎo;dy shí;kp,aa,ak,pk	51
+环晶石	huán;wb jīng;oo shí;kp,aa,ak,pk	55
+黄长石	huáng;ad,cb cháng;pd shí;kp,aa,ak,pk	86
+黄肠石	huáng;ad,cb cháng;oy shí;kp,aa,ak,pk	59
+皇帝石	huáng;bw dì;jb,wj,lj shí;kp,aa,ak,pk	96
+黄砥石	huáng;ad,cb dǐ;ud shí;kp,aa,ak,pk	72
+黄锆石	huáng;ad,cb gào;jg shí;kp,aa,ak,pk	98
+黄工石	huáng;ad,cb gōng;aa shí;kp,aa,ak,pk	50
+黄河石	huáng;ad,cb hé;dk shí;kp,aa,ak,pk	103
+黄济石	huáng;ad,cb jì;dq shí;kp,aa,ak,pk	64
+黄金石	huáng;ad,cb jīn;ra,pa shí;kp,aa,ak,pk	86
+黄晶石	huáng;ad,cb jīng;oo shí;kp,aa,ak,pk	51
+黄九石	huáng;ad,cb jiǔ;py shí;kp,aa,ak,pk	80
+黄绢石	huáng;ad,cb juàn;so,sy shí;kp,aa,ak,pk	79
+黄蜡石	huáng;ad,cb là;ix shí;kp,aa,ak,pk	226
+黄腊石	huáng;ad,cb là;ox shí;kp,aa,ak,pk	92
+黄榴石	huáng;ad,cb liú;ml shí;kp,aa,ak,pk	79
+黄窿石	huáng;ad,cb lóng;xl,bl shí;kp,aa,ak,pk	81
+黄隆石	huáng;ad,cb lóng;eu shí;kp,aa,ak,pk	53
+黄绿石	huáng;ad,cb lǜ;sl shí;kp,aa,ak,pk	89
+黄绮石	huáng;ad,cb qǐ;sq shí;kp,aa,ak,pk	63
+黄少石	huáng;ad,cb shǎo;xp shí;kp,aa,ak,pk	54
+黄香石	huáng;ad,cb xiāng;ho shí;kp,aa,ak,pk	55
+黄孝石	huáng;ad,cb xiào;zl,lz shí;kp,aa,ak,pk	68
+黄锈石	huáng;ad,cb xiù;jx shí;kp,aa,ak,pk	118
+黄玉石	huáng;ad,cb yù;ad,wd shí;kp,aa,ak,pk	66
+黄雨石	huáng;ad,cb yǔ;ad shí;kp,aa,ak,pk	54
+黄脂石	huáng;ad,cb zhī;ov shí;kp,aa,ak,pk	88
+辉长石	huī;gj cháng;pd shí;kp,aa,ak,pk	96
+回城石	huí;kk chéng;ti shí;kp,aa,ak,pk	102
+辉沸石	huī;gj fèi;df shí;kp,aa,ak,pk	100
+回黄石	huí;kk huáng;ad,cb shí;kp,aa,ak,pk	239
+悔梦石	huǐ;xm mèng;mx,xl shí;kp,aa,ak,pk	109
+灰锰氧	huī;hu,uh měng;jm yǎng;qy	150
+回磐石	huí;kk pán;ub shí;kp,aa,ak,pk	168
+辉闪石	huī;gj shǎn;mr,rm shí;kp,aa,ak,pk	91
+辉叶石	huī;gj yè;ku shí;kp,aa,ak,pk	55
+混沌石	hùn;dk dùn;dt shí;kp,aa,ak,pk	49
+魂魄石	hún;gy,yg pò;bg,gb shí;kp,aa,ak,pk	146
+活化石	huó;du huà;rb shí;kp,aa,ak,pk	488
+火晶石	huǒ;dd jīng;oo shí;kp,aa,ak,pk	424
+火山石	huǒ;dd shān;aa shí;kp,aa,ak,pk	200
+火烧石	huǒ;dd shāo;hy shí;kp,aa,ak,pk	90
+火星石	huǒ;dd xīng;ou shí;kp,aa,ak,pk	71
+火焰石	huǒ;dd yàn;hj,hx shí;kp,aa,ak,pk	60
+火云石	huǒ;dd yún;es,se shí;kp,aa,ak,pk	92
+几丁石	jǐ;py dīng;aa shí;kp,aa,ak,pk	95
+鸡肝石	jī;ny,yn gān;og shí;kp,aa,ak,pk	113
+鸡冠石	jī;ny,yn guān;bc shí;kp,aa,ak,pk	184
+集合石	jí;mv,vm hé;rk shí;kp,aa,ak,pk	398
+棘角石	jí;cc jiǎo;dy shí;kp,aa,ak,pk	84
+棘菊石	jí;cc jú;cj,cm shí;kp,aa,ak,pk	85
+鸡血石	jī;ny,yn xiě;pa,pm shí;kp,aa,ak,pk	340
+鸡心石	jī;ny,yn xīn;dd shí;kp,aa,ak,pk	78
+季允石	jì;hz yǔn;se shí;kp,aa,ak,pk	173
+钾长石	jiǎ;jj cháng;pd shí;kp,aa,ak,pk	144
+钾沸石	jiǎ;jj fèi;df shí;kp,aa,ak,pk	92
+钾锆石	jiǎ;jj gào;jg shí;kp,aa,ak,pk	87
 镓矿床	jiā;jj kuàng;ug chuáng;gm,mg	89
 假砾岩	jiǎ;rj,ry lì;ul,uy yán;uu	67
+钾锰盐	jiǎ;jj měng;jm yán;mb	53
+加冕石	jiā;lk,kl miǎn;om shí;kp,aa,ak,pk	79
+加纳石	jiā;lk,kl nà;sn shí;kp,aa,ak,pk	99
+假山石	jiǎ;rj,ry shān;aa shí;kp,aa,ak,pk	206
+加苏石	jiā;lk,kl sū;cb shí;kp,aa,ak,pk	60
+甲酸锰	jiǎ;aa,oa suān;yj,yw měng;jm	88
+贾泰石	jiǎ;bx,xb tài;fu,uf shí;kp,aa,ak,pk	92
+钾霞石	jiǎ;jj xiá;yj,yy shí;kp,aa,ak,pk	79
+钾硝石	jiǎ;jj xiāo;ux shí;kp,aa,ak,pk	92
 假岩溶	jiǎ;rj,ry yán;uu róng;dr	80
+坚白石	jiān;ty bái;pa,po shí;kp,aa,ak,pk	86
+碱长石	jiǎn;ux cháng;pd shí;kp,aa,ak,pk	65
+尖晶石	jiān;xd jīng;oo shí;kp,aa,ak,pk	200
+剑菊石	jiàn;da,dq jú;cj,cm shí;kp,aa,ak,pk	52
+尖棱石	jiān;xd léng;ml,mw shí;kp,aa,ak,pk	95
+简琴石	jiǎn;vj qín;wj shí;kp,aa,ak,pk	97
+姜白石	jiāng;ny,yn bái;pa,po shí;kp,aa,ak,pk	152
+浆砌石	jiāng;ux qì;uq shí;kp,aa,ak,pk	356
+姜润石	jiāng;ny,yn rùn;dr shí;kp,aa,ak,pk	80
+将岩石	jiāng;dc,jc,pc yán;uu shí;kp,aa,ak,pk	314
+将玉石	jiāng;dc,jc,pc yù;ad,wd shí;kp,aa,ak,pk	268
+江中石	jiāng;dg zhōng;aa,ka shí;kp,aa,ak,pk	78
+将钻石	jiāng;dc,jc,pc zuàn;jv shí;kp,aa,ak,pk	116
+珓杯石	jiào;wj bēi;mb shí;kp,aa,ak,pk	99
+交沸石	jiāo;li,wf,df fèi;df shí;kp,aa,ak,pk	69
 角砾岩	jiǎo;dy lì;ul,uy yán;uu	171
 胶砾岩	jiāo;oj lì;ul,uy yán;uu	86
+胶岭石	jiāo;oj lǐng;ul shí;kp,aa,ak,pk	88
+角闪石	jiǎo;dy shǎn;mr,rm shí;kp,aa,ak,pk	178
+焦炭石	jiāo;hv,vh tàn;uh shí;kp,aa,ak,pk	83
+焦矽石	jiāo;hv,vh xī;ux shí;kp,aa,ak,pk	92
+角柱石	jiǎo;dy zhù;mv shí;kp,aa,ak,pk	211
+结灰石	jié;sj huī;hu,uh shí;kp,aa,ak,pk	61
+阶条石	jiē;ej tiáo;wm shí;kp,aa,ak,pk	91
+界鱼石	jiè;tj yú;da shí;kp,aa,ak,pk	82
+解字石	jiě;jn zì;bz shí;kp,aa,ak,pk	60
+金寳石	jīn;ra,pa bǎo;bb shí;kp,aa,ak,pk	80
+金刚石	jīn;ra,pa gāng;dg shí;kp,aa,ak,pk	302
+金钢石	jīn;ra,pa gāng;jg shí;kp,aa,ak,pk	60
+金瓜石	jīn;ra,pa guā;pd shí;kp,aa,ak,pk	204
+金光石	jīn;ra,pa guāng;ea,xw shí;kp,aa,ak,pk	59
+金海石	jīn;ra,pa hǎi;dm shí;kp,aa,ak,pk	79
+金亨石	jīn;ra,pa hēng;wl,lk shí;kp,aa,ak,pk	93
+金红石	jīn;ra,pa hóng;sg shí;kp,aa,ak,pk	258
+进化石	jìn;zj huà;rb shí;kp,aa,ak,pk	304
+金基石	jīn;ra,pa jī;tq,qt shí;kp,aa,ak,pk	82
+进阶石	jìn;zj jiē;ej shí;kp,aa,ak,pk	117
 金矿床	jīn;ra,pa kuàng;ug chuáng;gm,mg	130
+金矿石	jīn;ra,pa kuàng;ug shí;kp,aa,ak,pk	342
+金梦石	jīn;ra,pa mèng;mx,xl shí;kp,aa,ak,pk	78
+堇青石	jǐn;ca qīng;of,fo shí;kp,aa,ak,pk	126
+金沙石	jīn;ra,pa shā;du shí;kp,aa,ak,pk	70
+金山石	jīn;ra,pa shān;aa shí;kp,aa,ak,pk	96
+金属锰	jīn;ra,pa shǔ;uy měng;jm	138
+金台石	jīn;ra,pa tái;sk shí;kp,aa,ak,pk	144
+金星石	jīn;ra,pa xīng;ou shí;kp,aa,ak,pk	111
+金岩石	jīn;ra,pa yán;uu shí;kp,aa,ak,pk	118
+金曜石	jīn;ra,pa yào;od,ov shí;kp,aa,ak,pk	294
+金原石	jīn;ra,pa yuán;ix shí;kp,aa,ak,pk	16
+金允石	jīn;ra,pa yǔn;se shí;kp,aa,ak,pk	132
+金钻石	jīn;ra,pa zuàn;jv shí;kp,aa,ak,pk	148
+鲸背石	jīng;yj bèi;ob shí;kp,aa,ak,pk	96
+景观石	jǐng;oj guān;jy,yj shí;kp,aa,ak,pk	194
+静海石	jìng;qv hǎi;dm shí;kp,aa,ak,pk	64
+净化石	jìng;dv huà;rb shí;kp,aa,ak,pk	118
+京怀石	jīng;wx huái;xb shí;kp,aa,ak,pk	89
+晶蜡石	jīng;oo là;ix shí;kp,aa,ak,pk	69
+精炼石	jīng;mq liàn;hd,hj shí;kp,aa,ak,pk	156
+静脉石	jìng;qv mài;oy shí;kp,aa,ak,pk	68
+晶魔石	jīng;oo mó;gm,mg shí;kp,aa,ak,pk	68
+镜心石	jìng;jj xīn;dd shí;kp,aa,ak,pk	74
+九龙石	jiǔ;py lóng;ad shí;kp,aa,ak,pk	90
+韭闪石	jiǔ;fa shǎn;mr,rm shí;kp,aa,ak,pk	90
+救星石	jiù;wq xīng;ou shí;kp,aa,ak,pk	84
+九眼石	jiǔ;py yǎn;og shí;kp,aa,ak,pk	126
+锯笔石	jù;jj bǐ;vm shí;kp,aa,ak,pk	59
+菊花石	jú;cj,cm huā;ch shí;kp,aa,ak,pk	190
+巨箭石	jù;kk,aa jiàn;vq shí;kp,aa,ak,pk	65
+绝缘石	jué;ss yuán;st,su shí;kp,aa,ak,pk	52
+卡迭石	kǎ;bx,ub dié;zu shí;kp,aa,ak,pk	130
+凯乐石	kǎi;jj,jq lè;pd,px shí;kp,aa,ak,pk	198
+钪辉石	kàng;jk huī;gj shí;kp,aa,ak,pk	96
 钪矿床	kàng;jk kuàng;ug chuáng;gm,mg	95
+康盘石	kāng;gl pán;mv,vm shí;kp,aa,ak,pk	74
+康石石	kāng;gl shí;kp,aa,ak,pk shí;kp,aa,ak,pk	188
+钪钇石	kàng;jk yǐ;jy shí;kp,aa,ak,pk	65
+柯丞石	kē;mk chéng;au,la,zh shí;kp,aa,ak,pk	81
+科德石	kē;hd dé;xx shí;kp,aa,ak,pk	54
+钶铁石	kē;jk tiě;ju shí;kp,aa,ak,pk	83
+氪星石	kè;qk xīng;ou shí;kp,aa,ak,pk	58
+空角石	kōng;xg,bg jiǎo;dy shí;kp,aa,ak,pk	67
+空晶石	kōng;xg,bg jīng;oo shí;kp,aa,ak,pk	68
+孔雀石	kǒng;zg què;vx,xv shí;kp,aa,ak,pk	434
+酷圣石	kù;yg shèng;ty,yt shí;kp,aa,ak,pk	232
+块矸石	kuài;td,tg gān;ug shí;kp,aa,ak,pk	84
+块滑石	kuài;td,tg huá;dg shí;kp,aa,ak,pk	97
 矿床学	kuàng;ug chuáng;gm,mg xué;dz,zb	117
+邝衡石	kuàng;eg héng;xd,xi shí;kp,aa,ak,pk	57
+盔菊石	kuī;mh jú;cj,cm shí;kp,aa,ak,pk	79
+昆仑石	kūn;ob lún;rb shí;kp,aa,ak,pk	66
+昆山石	kūn;ob shān;aa shí;kp,aa,ak,pk	66
+昆吾石	kūn;ob wú;wk,kw shí;kp,aa,ak,pk	77
+扩香石	kuò;fg xiāng;ho shí;kp,aa,ak,pk	106
+拉长石	lā;fl cháng;pd shí;kp,aa,ak,pk	134
+来黄石	lái;am,wb huáng;ad,cb shí;kp,aa,ak,pk	239
 铼矿床	lái;jl kuàng;ug chuáng;gm,mg	67
+来磐石	lái;am,wb pán;ub shí;kp,aa,ak,pk	168
+赖杉石	lài;uf shān;mp shí;kp,aa,ak,pk	71
+蓝方石	lán;cj fāng;dg,wd,dp,dw shí;kp,aa,ak,pk	97
+蓝晶石	lán;cj jīng;oo shí;kp,aa,ak,pk	136
+拦路石	lán;fl lù;zg shí;kp,aa,ak,pk	150
+蓝莓石	lán;cj méi;cm shí;kp,aa,ak,pk	69
+蓝闪石	lán;cj shǎn;mr,rm shí;kp,aa,ak,pk	108
+蓝石莲	lán;cj shí;kp,aa,ak,pk lián;cl	79
+蓝石棉	lán;cj shí;kp,aa,ak,pk mián;mb,mj	81
+蓝铁石	lán;cj tiě;ju shí;kp,aa,ak,pk	51
+蓝纹石	lán;cj wén;sw shí;kp,aa,ak,pk	90
+蓝线石	lán;cj xiàn;sj shí;kp,aa,ak,pk	86
+蓝羽石	lán;cj yǔ;xx shí;kp,aa,ak,pk	64
+蓝柱石	lán;cj zhù;mv shí;kp,aa,ak,pk	81
+蓝钻石	lán;cj zuàn;jv shí;kp,aa,ak,pk	130
+劳厄石	láo;cl,lb è;ie shí;kp,aa,ak,pk	95
+咾咕石	lǎo;kl gū;kg shí;kp,aa,ak,pk	91
+老虎石	lǎo;bl,lb hǔ;hj shí;kp,aa,ak,pk	152
+老挝石	lǎo;bl,lb wō;fg shí;kp,aa,ak,pk	81
+勒子石	lè;lg,gl zǐ;aa,vh shí;kp,aa,ak,pk	65
+雷打石	léi;yt dǎ;fd shí;kp,aa,ak,pk	123
+擂鼓石	léi;fl gǔ;vd,uv shí;kp,aa,ak,pk	92
+雷击石	léi;yt jī;aa,eu,fk shí;kp,aa,ak,pk	93
+垒磊石	lěi;st,tl lěi;uu shí;kp,aa,ak,pk	50
+累托石	lèi;st,ts tuō;fq,ft shí;kp,aa,ak,pk	77
+冷的石	lěng;dl de;bu shí;kp,aa,ak,pk	50
+棱角石	léng;ml,mw jiǎo;dy shí;kp,aa,ak,pk	69
+棱菊石	léng;ml,mw jú;cj,cm shí;kp,aa,ak,pk	73
+锂辉石	lǐ;jl huī;gj shí;kp,aa,ak,pk	207
+粒辉石	lì;ml huī;gj shí;kp,aa,ak,pk	82
 锂矿床	lǐ;jl kuàng;ug chuáng;gm,mg	99
+锂矿石	lǐ;jl kuàng;ug shí;kp,aa,ak,pk	104
+黎磊石	lí;hu,ur lěi;uu shí;kp,aa,ak,pk	61
+粒榴石	lì;ml liú;ml shí;kp,aa,ak,pk	85
+锂铍石	lǐ;jl pī;jp shí;kp,aa,ak,pk	81
+李世石	lǐ;mz shì;ca,cv,aa shí;kp,aa,ak,pk	272
+犂头石	lí;nd tóu;dd shí;kp,aa,ak,pk	97
+锂霞石	lǐ;jl xiá;yj,yy shí;kp,aa,ak,pk	83
+粒子石	lì;ml zǐ;aa,vh shí;kp,aa,ak,pk	84
+镰菊石	lián;jl jú;cj,cm shí;kp,aa,ak,pk	54
+炼魔石	liàn;hd,hj mó;gm,mg shí;kp,aa,ak,pk	24
+莲水石	lián;cl shuǐ;ad,uv shí;kp,aa,ak,pk	92
+炼妖石	liàn;hd,hj yāo;ny shí;kp,aa,ak,pk	188
+练妖石	liàn;sd,sj yāo;ny shí;kp,aa,ak,pk	95
+梁葵石	liáng;mb kuí;cg,ct shí;kp,aa,ak,pk	50
+梁澜石	liáng;mb lán;dl shí;kp,aa,ak,pk	67
+梁山石	liáng;mb shān;aa shí;kp,aa,ak,pk	98
+梁瑶石	liáng;mb yáo;wf shí;kp,aa,ak,pk	73
+两仪石	liǎng;ad yí;ry shí;kp,aa,ak,pk	82
+磷灰石	lín;ul huī;hu,uh shí;kp,aa,ak,pk	182
 磷矿床	lín;ul kuàng;ug chuáng;gm,mg	52
+磷矿石	lín;ul kuàng;ug shí;kp,aa,ak,pk	154
+磷铝石	lín;ul lǚ;jl shí;kp,aa,ak,pk	93
+磷镁石	lín;ul měi;jm shí;kp,aa,ak,pk	99
+磷锰矿	lín;ul měng;jm kuàng;ug	65
+磷锰石	lín;ul měng;jm shí;kp,aa,ak,pk	46
+林西石	lín;mm xī;aa shí;kp,aa,ak,pk	80
+磷叶石	lín;ul yè;ku shí;kp,aa,ak,pk	48
+磷页石	lín;ul yè;ab shí;kp,aa,ak,pk	42
+鳞蛭石	lín;yl zhì;iv shí;kp,aa,ak,pk	84
+灵璧石	líng;hx,xh bì;wb,wx,yb,yx shí;kp,aa,ak,pk	152
+灵壁石	líng;hx,xh bì;tb,tx shí;kp,aa,ak,pk	102
+菱沸石	líng;cl,cw fèi;df shí;kp,aa,ak,pk	52
+绫裹石	líng;sl,sw guǒ;wy,yg shí;kp,aa,ak,pk	98
+灵魂石	líng;hx,xh hún;gy,yg shí;kp,aa,ak,pk	237
+玲珑石	líng;wl lóng;wl shí;kp,aa,ak,pk	136
+菱锰矿	líng;cl,cw měng;jm kuàng;ug	140
+菱锰岩	líng;cl,cw měng;jm yán;uu	52
+领万石	lǐng;yl wàn;ag,ap dàn;kp,aa,ak,pk	92
+硫铵石	liú;ui ǎn;ja shí;kp,aa,ak,pk	64
+硫硅石	liú;ui guī;ug shí;kp,aa,ak,pk	67
+硫化锰	liú;ui huà;rb měng;jm	78
+硫磺石	liú;ui huáng;uh shí;kp,aa,ak,pk	68
 硫矿床	liú;ui kuàng;ug chuáng;gm,mg	83
+硫矿石	liú;ui kuàng;ug shí;kp,aa,ak,pk	54
+硫锰矿	liú;ui měng;jm kuàng;ug	66
+龙脊石	lóng;ad jǐ;od,or shí;kp,aa,ak,pk	49
+龙精石	lóng;ad jīng;mq shí;kp,aa,ak,pk	118
+隆隆石	lóng;eu lóng;eu shí;kp,aa,ak,pk	100
+龙梅石	lóng;ad méi;mm shí;kp,aa,ak,pk	60
+龙门石	lóng;ad mén;dg shí;kp,aa,ak,pk	84
+龙黔石	lóng;ad qián;hj shí;kp,aa,ak,pk	96
+龙头石	lóng;ad tóu;dd shí;kp,aa,ak,pk	71
+龙骧石	lóng;ad xiāng;mx,my shí;kp,aa,ak,pk	79
+露白石	lòu;yl bái;pa,po shí;kp,aa,ak,pk	50
+路边石	lù;zg biān;zl shí;kp,aa,ak,pk	198
+炉甘石	lú;hh gān;aa,ca shí;kp,aa,ak,pk	211
+路牙石	lù;zg yá;ap shí;kp,aa,ak,pk	130
+路沿石	lù;zg yán;dk shí;kp,aa,ak,pk	129
+路缘石	lù;zg yuán;st,su shí;kp,aa,ak,pk	158
+罗丁石	luó;sx dīng;aa shí;kp,aa,ak,pk	79
+螺鼓石	luó;il gǔ;vd,uv shí;kp,aa,ak,pk	72
+裸菊石	luǒ;yg jú;cj,cm shí;kp,aa,ak,pk	66
+骆驼石	luò;mg tuó;mt shí;kp,aa,ak,pk	92
+落星石	luò;cl xīng;ou shí;kp,aa,ak,pk	88
+氯化锰	lǜ;ql huà;rb měng;jm	112
+绿辉石	lǜ;sl huī;gj shí;kp,aa,ak,pk	120
+绿晶石	lǜ;sl jīng;oo shí;kp,aa,ak,pk	278
 铝矿床	lǚ;jl kuàng;ug chuáng;gm,mg	95
+铝矿石	lǚ;jl kuàng;ug shí;kp,aa,ak,pk	92
+绿帘石	lǜ;sl lián;bj,jb,jx,xj shí;kp,aa,ak,pk	140
+绿鳞石	lǜ;sl lín;yl shí;kp,aa,ak,pk	86
+铝榴石	lǚ;jl liú;ml shí;kp,aa,ak,pk	32
+氯锰矿	lǜ;ql měng;jm kuàng;ug	69
+绿泥石	lǜ;sl ní;dn shí;kp,aa,ak,pk	154
+氯闪石	lǜ;ql shǎn;mr,rm shí;kp,aa,ak,pk	81
+绿闪石	lǜ;sl shǎn;mr,rm shí;kp,aa,ak,pk	67
+绿石谷	lǜ;sl shí;kp,aa,ak,pk gǔ;bk,kr	82
+绿石棉	lǜ;sl shí;kp,aa,ak,pk mián;mb,mj	78
+绿石髓	lǜ;sl shí;kp,aa,ak,pk suǐ;gs,gz	83
+绿石英	lǜ;sl shí;kp,aa,ak,pk yīng;cy	93
+绿松石	lǜ;sl sōng;mg shí;kp,aa,ak,pk	276
+氯酸锰	lǜ;ql suān;yj,yw měng;jm	62
+绿脱石	lǜ;sl tuō;od shí;kp,aa,ak,pk	80
+绿纤石	lǜ;sl xiān;sq shí;kp,aa,ak,pk	67
+铝英石	lǚ;jl yīng;cy shí;kp,aa,ak,pk	68
+绿萤石	lǜ;sl yíng;ci,ib shí;kp,aa,ak,pk	52
+绿玉石	lǜ;sl yù;ad,wd shí;kp,aa,ak,pk	68
+绿柱石	lǜ;sl zhù;mv shí;kp,aa,ak,pk	172
+马鞍石	mǎ;aa,vh ān;ga shí;kp,aa,ak,pk	77
+玛瑙石	mǎ;wm nǎo;wi shí;kp,aa,ak,pk	166
+嘛呢石	ma;km ne;kn shí;kp,aa,ak,pk	60
+玛尼石	mǎ;wm ní;ub shí;kp,aa,ak,pk	172
+麻杏石	má;gl xìng;km,mk shí;kp,aa,ak,pk	122
+麦饭石	mài;fw fàn;uf shí;kp,aa,ak,pk	192
 脉矿床	mài;oy kuàng;ug chuáng;gm,mg	83
+脉矿石	mài;oy kuàng;ug shí;kp,aa,ak,pk	72
 盲矿床	máng;ow kuàng;ug chuáng;gm,mg	63
+毛矾石	máo;pg fán;uf shí;kp,aa,ak,pk	64
+毛沸石	máo;pg fèi;df shí;kp,aa,ak,pk	89
+毛粪石	máo;pg fèn;mg shí;kp,aa,ak,pk	72
+猫睛石	māo;qm jīng;oq shí;kp,aa,ak,pk	50
+毛梦石	máo;pg mèng;mx,xl shí;kp,aa,ak,pk	91
+猫眼石	māo;qm yǎn;og shí;kp,aa,ak,pk	485
+镁毒石	měi;jm dú;fm shí;kp,aa,ak,pk	372
+煤矸石	méi;hm gān;ug shí;kp,aa,ak,pk	270
+楣杆石	méi;mm gān;mg shí;kp,aa,ak,pk	89
+玫瑰石	méi;ww guī;wg shí;kp,aa,ak,pk	188
+梅花石	méi;mm huā;ch shí;kp,aa,ak,pk	73
 镁矿床	měi;jm kuàng;ug chuáng;gm,mg	85
 煤矿床	méi;hm kuàng;ug chuáng;gm,mg	69
+煤矿石	méi;hm kuàng;ug shí;kp,aa,ak,pk	88
+镁磷石	měi;jm lín;ul shí;kp,aa,ak,pk	82
+镁硝石	měi;jm xiāo;ux shí;kp,aa,ak,pk	95
+镁柱石	měi;jm zhù;mv shí;kp,aa,ak,pk	89
+锰钡矿	měng;jm bèi;jb kuàng;ug	95
+锰钴土	měng;jm gǔ;jg tǔ;aa	68
+锰含量	měng;jm hán;kj,rk liàng;ol	146
+锰合金	měng;jm hé;rk jīn;ra,pa	203
+锰钾矿	měng;jm jiǎ;jj kuàng;ug	89
+锰结核	měng;jm jié;sj hé;mh	124
+猛坑石	měng;qm kēng;tk shí;kp,aa,ak,pk	76
 锰矿床	měng;jm kuàng;ug chuáng;gm,mg	63
+锰矿床	měng;jm kuàng;ug chuáng;gm,mg	63
+锰矿石	měng;jm kuàng;ug shí;kp,aa,ak,pk	121
+锰矿岩	měng;jm kuàng;ug yán;uu	68
+锰离子	měng;jm lí;ws,wl zǐ;aa,vh	138
+锰帘石	měng;jm lián;bj,jb,jx,xj shí;kp,aa,ak,pk	73
+锰磷矿	měng;jm lín;ul kuàng;ug	82
+锰铅矿	měng;jm qiān;jk kuàng;ug	54
+锰闪石	měng;jm shǎn;mr,rm shí;kp,aa,ak,pk	55
+锰酸钡	měng;jm suān;yj,yw bèi;jb	73
+锰酸钾	měng;jm suān;yj,yw jiǎ;jj	125
+锰酸锂	měng;jm suān;yj,yw lǐ;jl	166
+锰酸钠	měng;jm suān;yj,yw nà;jn	61
+锰酸盐	měng;jm suān;yj,yw yán;mb	106
+锰铁比	měng;jm tiě;ju bǐ;bb	83
+锰铁矿	měng;jm tiě;ju kuàng;ug	78
+锰铜矿	měng;jm tóng;jt kuàng;ug	74
+锰团块	měng;jm tuán;kc kuài;td,tg	76
+蒙脱石	méng;cm,cu tuō;od shí;kp,aa,ak,pk	168
+锰污染	měng;jm wū;dk rǎn;mg,mj	77
+锰细菌	měng;jm xì;st jūn;ch,cq	54
+梦溪石	mèng;mx,xl xī;dx shí;kp,aa,ak,pk	81
+锰榍石	měng;jm xiè;mx shí;kp,aa,ak,pk	98
+孟醒石	mèng;mz,zm xǐng;yx shí;kp,aa,ak,pk	86
+锰元素	měng;jm yuán;aw,ee sù;sf,fs	150
+锰云母	měng;jm yún;es,se mǔ;ad,vd	98
+蒙皂石	méng;cm,cu zào;bq shí;kp,aa,ak,pk	56
+锰质岩	měng;jm zhì;bu,pb yán;uu	53
+锰中毒	měng;jm zhòng;aa,ka dú;fm	111
+锰柱石	měng;jm zhù;mv shí;kp,aa,ak,pk	61
+迷彩石	mí;zm cǎi;pc shí;kp,aa,ak,pk	93
+米黄石	mǐ;dd huáng;ad,cb shí;kp,aa,ak,pk	80
+蜜蜡石	mì;ib,bi là;ix shí;kp,aa,ak,pk	106
+密蜡石	mì;ub,bu là;ix shí;kp,aa,ak,pk	80
+秘文石	mì;hb wén;wi,dd shí;kp,aa,ak,pk	122
+秘纹石	mì;hb wén;sw shí;kp,aa,ak,pk	81
+米友石	mǐ;dd yǒu;yu,uy shí;kp,aa,ak,pk	97
+迷踪石	mí;zm zōng;zz shí;kp,aa,ak,pk	86
+苗木石	miáo;ct mù;ad shí;kp,aa,ak,pk	55
+明矾石	míng;oo fán;uf shí;kp,aa,ak,pk	124
+命运石	mìng;re yùn;zy shí;kp,aa,ak,pk	284
+摩艾石	mó;mu,um ài;ci shí;kp,aa,ak,pk	14
+魔法石	mó;gm,mg fǎ;dq shí;kp,aa,ak,pk	344
+摩根石	mó;mu,um gēn;mg shí;kp,aa,ak,pk	132
+蘑菇石	mó;cm gū;cg shí;kp,aa,ak,pk	215
+魔鬼石	mó;gm,mg guǐ;pd,ps shí;kp,aa,ak,pk	76
+磨脚石	mó;mu,um jiǎo;oq shí;kp,aa,ak,pk	114
+魔晶石	mó;gm,mg jīng;oo shí;kp,aa,ak,pk	220
+魔精石	mó;gm,mg jīng;mq shí;kp,aa,ak,pk	94
+磨拉石	mó;mu,um lā;fl shí;kp,aa,ak,pk	54
+莫来石	mò;cd,ct lái;am,wb shí;kp,aa,ak,pk	144
+魔力石	mó;gm,mg lì;gp shí;kp,aa,ak,pk	265
+磨盘石	mò;mu,um pán;mv,vm shí;kp,aa,ak,pk	60
+莫桑石	mò;cd,ct sāng;mr,mu,ym shí;kp,aa,ak,pk	157
+魔星石	mó;gm,mg xīng;ou shí;kp,aa,ak,pk	75
+磨牙石	mó;mu,um yá;ap shí;kp,aa,ak,pk	92
+摩押石	mó;mu,um yā;fj shí;kp,aa,ak,pk	63
+魔眼石	mó;gm,mg yǎn;og shí;kp,aa,ak,pk	81
+墨柱石	mò;th,ht zhù;mv shí;kp,aa,ak,pk	53
+墓碑石	mù;tm,ct bēi;ub shí;kp,aa,ak,pk	71
+木变石	mù;ad biàn;wy,yy shí;kp,aa,ak,pk	144
+木化石	mù;ad huà;rb shí;kp,aa,ak,pk	153
 钼矿床	mù;jo kuàng;ug chuáng;gm,mg	54
+钼矿石	mù;jo kuàng;ug shí;kp,aa,ak,pk	78
+穆磐石	mù;hp pán;ub shí;kp,aa,ak,pk	64
+母亲石	mǔ;ad,vd qīn;lm shí;kp,aa,ak,pk	82
+钼酸锰	mù;jo suān;yj,yw měng;jm	79
+木纹石	mù;ad wén;sw shí;kp,aa,ak,pk	73
+木鱼石	mù;ad yú;da shí;kp,aa,ak,pk	202
+木竹石	mù;ad zhú;gg shí;kp,aa,ak,pk	63
+钠板石	nà;jn bǎn;mf shí;kp,aa,ak,pk	96
+钠长石	nà;jn cháng;pd shí;kp,aa,ak,pk	170
+钠沸石	nà;jn fèi;df shí;kp,aa,ak,pk	84
+钠锆石	nà;jn gào;jg shí;kp,aa,ak,pk	70
+钠滑石	nà;jn huá;dg shí;kp,aa,ak,pk	100
+钠榴石	nà;jn liú;ml shí;kp,aa,ak,pk	94
+钠闪石	nà;jn shǎn;mr,rm shí;kp,aa,ak,pk	54
+钠硝石	nà;jn xiāo;ux shí;kp,aa,ak,pk	81
+钠柱石	nà;jn zhù;mv shí;kp,aa,ak,pk	100
+南极石	nán;ua,uy jí;mj shí;kp,aa,ak,pk	99
+南疆石	nán;ua,uy jiāng;gj shí;kp,aa,ak,pk	92
+南平石	nán;ua,uy píng;aa,gb shí;kp,aa,ak,pk	84
+南山石	nán;ua,uy shān;aa shí;kp,aa,ak,pk	49
+南田石	nán;ua,uy tián;aa shí;kp,aa,ak,pk	60
+囊脱石	náng;ay tuō;od shí;kp,aa,ak,pk	80
+脑钻石	nǎo;ox zuàn;jv shí;kp,aa,ak,pk	77
+内角石	nèi;ad,kr jiǎo;dy shí;kp,aa,ak,pk	73
+能量石	néng;sb liàng;ol shí;kp,aa,ak,pk	240
+霓辉石	ní;ye huī;gj shí;kp,aa,ak,pk	91
+拟箭石	nǐ;fy jiàn;vq shí;kp,aa,ak,pk	90
 泥砾岩	ní;dn lì;ul,uy yán;uu	83
+倪满石	ní;re mǎn;dl shí;kp,aa,ak,pk	96
+拟锥石	nǐ;fy zhuī;jv shí;kp,aa,ak,pk	91
+你钻石	nǐ;re zuàn;jv shí;kp,aa,ak,pk	161
+鸟粪石	niǎo;na,pa fèn;mg shí;kp,aa,ak,pk	100
+鸟化石	niǎo;na,pa huà;rb shí;kp,aa,ak,pk	128
+尿结石	niào;uu jié;sj shí;kp,aa,ak,pk	193
+镍钴锰	niè;jm,jn gǔ;jg měng;jm	162
 镍矿床	niè;jm,jn kuàng;ug chuáng;gm,mg	98
+镍矿石	niè;jm,jn kuàng;ug shí;kp,aa,ak,pk	122
+镍纹石	niè;jm,jn wén;sw shí;kp,aa,ak,pk	118
+凝灰石	níng;dy huī;hu,uh shí;kp,aa,ak,pk	83
+凝块石	níng;dy kuài;td,tg shí;kp,aa,ak,pk	52
+凝水石	níng;dy shuǐ;ad,uv shí;kp,aa,ak,pk	79
+钮匪石	niǔ;ji fěi;kf shí;kp,aa,ak,pk	96
+欧清石	ōu;qq qīng;dq shí;kp,aa,ak,pk	79
+呕吐石	ǒu;kq tù;kt shí;kp,aa,ak,pk	56
+排衙石	pái;ff yá;xi,xw shí;kp,aa,ak,pk	90
+潘鼎石	pān;df dǐng;oa,od shí;kp,aa,ak,pk	87
+盘古石	pán;mv,vm gǔ;uk shí;kp,aa,ak,pk	66
+盘角石	pán;mv,vm jiǎo;dy shí;kp,aa,ak,pk	98
+潘文石	pān;df wén;wi,dd shí;kp,aa,ak,pk	96
+盘星石	pán;mv,vm xīng;ou shí;kp,aa,ak,pk	78
+培长石	péi;tk,tp cháng;pd shí;kp,aa,ak,pk	62
+硼铵石	péng;up ǎn;ja shí;kp,aa,ak,pk	92
+硼钙石	péng;up gài;jg shí;kp,aa,ak,pk	97
 硼矿床	péng;up kuàng;ug chuáng;gm,mg	86
+硼铝石	péng;up lǚ;jl shí;kp,aa,ak,pk	96
+硼镁石	péng;up měi;jm shí;kp,aa,ak,pk	92
+硼铍石	péng;up pī;jp shí;kp,aa,ak,pk	59
+膨润石	péng;op rùn;dr shí;kp,aa,ak,pk	73
 铍矿床	pī;jp kuàng;ug chuáng;gm,mg	58
+铍榴石	pī;jp liú;ml shí;kp,aa,ak,pk	74
+霹破石	pī;yb,yx pò;up shí;kp,aa,ak,pk	94
+皮漱石	pí;ad,ay,vd,vy,ya shù;dq,du shí;kp,aa,ak,pk	110
+皮宗石	pí;ad,ay,vd,vy,ya zōng;bu shí;kp,aa,ak,pk	55
+片沸石	piàn;pa,pv fèi;df shí;kp,aa,ak,pk	56
+片榍石	piàn;pa,pv xiè;mx shí;kp,aa,ak,pk	98
+平衡石	píng;aa,gb héng;xd,xi shí;kp,aa,ak,pk	120
+平康石	píng;aa,gb kāng;gl shí;kp,aa,ak,pk	100
+平缘石	píng;aa,gb yuán;st,su shí;kp,aa,ak,pk	92
+坡缕石	pō;tp lǚ;sl shí;kp,aa,ak,pk	78
+曝黑石	pù;ob hēi;ad,ha shí;kp,aa,ak,pk	92
+铺路石	pū;jf lù;zg shí;kp,aa,ak,pk	176
+铺面石	pū;jf miàn;aa shí;kp,aa,ak,pk	94
+菩萨石	pú;ck,cp sà;ci shí;kp,aa,ak,pk	73
+葡萄石	pú;cp táo;cf,ct shí;kp,aa,ak,pk	221
+齐白石	qí;wa,wp bái;pa,po shí;kp,aa,ak,pk	270
+奇笔石	qí;dk bǐ;vm shí;kp,aa,ak,pk	56
+七彩石	qī;ag cǎi;pc shí;kp,aa,ak,pk	292
+祈祷石	qí;uj dǎo;uu shí;kp,aa,ak,pk	98
+旗杆石	qí;fq gān;mg shí;kp,aa,ak,pk	128
+奇迹石	qí;dk jì;zy shí;kp,aa,ak,pk	123
+奇梦石	qí;dk mèng;mx,xl shí;kp,aa,ak,pk	95
+棋盘石	qí;mq pán;mv,vm shí;kp,aa,ak,pk	124
+七星石	qī;ag xīng;ou shí;kp,aa,ak,pk	86
+契爷石	qì;dd yé;fe shí;kp,aa,ak,pk	95
+奇异石	qí;dk yì;cs,sc shí;kp,aa,ak,pk	53
+起源石	qǐ;zj yuán;dy shí;kp,aa,ak,pk	80
+齐越石	qí;wa,wp yuè;zy shí;kp,aa,ak,pk	81
+千层石	qiān;pa céng;uy shí;kp,aa,ak,pk	73
+纤夫石	qiàn;sq fū;ad,er shí;kp,aa,ak,pk	84
+钱海石	qián;jj hǎi;dm shí;kp,aa,ak,pk	76
+前海石	qián;bd,qd hǎi;dm shí;kp,aa,ak,pk	65
+铅辉石	qiān;jk huī;gj shí;kp,aa,ak,pk	94
+铅灰石	qiān;jk huī;hu,uh shí;kp,aa,ak,pk	74
+前箭石	qián;bd,qd jiàn;vq shí;kp,aa,ak,pk	91
+钱警石	qián;jj jǐng;yj shí;kp,aa,ak,pk	83
+钱衎石	qián;jj kàn;xg,xi shí;kp,aa,ak,pk	68
+铅矿石	qiān;jk kuàng;ug shí;kp,aa,ak,pk	110
+铅锰矿	qiān;jk měng;jm kuàng;ug	83
+浅闪石	qiǎn;dj shǎn;mr,rm shí;kp,aa,ak,pk	51
+钱萚石	qián;jj tuò;cz shí;kp,aa,ak,pk	95
+铅霰石	qiān;jk xiàn;ys shí;kp,aa,ak,pk	74
+千叶石	qiān;pa yè;ku shí;kp,aa,ak,pk	72
+钱亦石	qián;jj yì;wb,wy,dd shí;kp,aa,ak,pk	97
+迁移石	qiān;zq yí;hd shí;kp,aa,ak,pk	87
+钱衷石	qián;jj zhōng;wy,yv shí;kp,aa,ak,pk	67
+枪晶石	qiāng;mc jīng;oo shí;kp,aa,ak,pk	50
+蔷薇石	qiáng;ch wēi;cw shí;kp,aa,ak,pk	96
+鞘角石	qiào;gx jiǎo;dy shí;kp,aa,ak,pk	55
+桥锰矿	qiáo;mq měng;jm kuàng;ug	93
+巧言石	qiǎo;gk yán;da,dk,wk shí;kp,aa,ak,pk	68
+秦灿石	qín;hf,fh càn;hu shí;kp,aa,ak,pk	82
+秦汉石	qín;hf,fh hàn;dy shí;kp,aa,ak,pk	52
+青白石	qīng;of,fo bái;pa,po shí;kp,aa,ak,pk	144
+青河石	qīng;of,fo hé;dk shí;kp,aa,ak,pk	78
+青辉石	qīng;of,fo huī;gj shí;kp,aa,ak,pk	100
+青金石	qīng;of,fo jīn;ra,pa shí;kp,aa,ak,pk	282
+青龙石	qīng;of,fo lóng;ad shí;kp,aa,ak,pk	154
+青绿石	qīng;of,fo lǜ;sl shí;kp,aa,ak,pk	290
+青青石	qīng;of,fo qīng;of,fo shí;kp,aa,ak,pk	83
+清泉石	qīng;dq quán;bu,ub shí;kp,aa,ak,pk	180
+情人石	qíng;xq rén;pd shí;kp,aa,ak,pk	102
+青苔石	qīng;of,fo tái;ct shí;kp,aa,ak,pk	53
+青田石	qīng;of,fo tián;aa shí;kp,aa,ak,pk	226
+青铜石	qīng;of,fo tóng;jt shí;kp,aa,ak,pk	79
+青蛙石	qīng;of,fo wā;ig shí;kp,aa,ak,pk	131
+磬云石	qìng;uq,uu yún;es,se shí;kp,aa,ak,pk	57
+丘间石	qiū;pa,ja jiān;mo,om shí;kp,aa,ak,pk	83
+球霰石	qiú;wq xiàn;ys shí;kp,aa,ak,pk	72
+秋叶石	qiū;hh yè;ku shí;kp,aa,ak,pk	95
+酋长石	qiú;by,qa zhǎng;pd shí;kp,aa,ak,pk	58
+去黄石	qù;ts huáng;ad,cb shí;kp,aa,ak,pk	239
+曲晶石	qǔ;aa,oa jīng;oo shí;kp,aa,ak,pk	73
+去磐石	qù;ts pán;ub shí;kp,aa,ak,pk	168
+泉对石	quán;bu,ub duì;cy,yc shí;kp,aa,ak,pk	100
+圈角石	quān;kj jiǎo;dy shí;kp,aa,ak,pk	80
+全能石	quán;rw néng;sb shí;kp,aa,ak,pk	50
+全山石	quán;rw shān;aa shí;kp,aa,ak,pk	131
+犬牙石	quǎn;dd,ad yá;ap shí;kp,aa,ak,pk	64
+饶漱石	ráo;uy shù;dq,du shí;kp,aa,ak,pk	190
+热臭石	rè;hv chòu;zq shí;kp,aa,ak,pk	82
+热血石	rè;hv xuè;pa,pm shí;kp,aa,ak,pk	118
+人工石	rén;pd gōng;aa shí;kp,aa,ak,pk	90
+人形石	rén;pd xíng;pk shí;kp,aa,ak,pk	76
+人造石	rén;pd zào;zg shí;kp,aa,ak,pk	210
+日长石	rì;aa,or,ri cháng;pd shí;kp,aa,ak,pk	57
+日光石	rì;aa,or,ri guāng;ea,xw shí;kp,aa,ak,pk	98
+日向石	rì;aa,or,ri xiàng;pk shí;kp,aa,ak,pk	71
+日叶石	rì;aa,or,ri yè;ku shí;kp,aa,ak,pk	64
+日月石	rì;aa,or,ri yuè;oy,pa,yt shí;kp,aa,ak,pk	74
+熔长石	róng;hr cháng;pd shí;kp,aa,ak,pk	53
+熔岩被	róng;hr yán;uu bèi;yp	99
+熔岩饼	róng;hr yán;uu bǐng;ub	78
+熔岩层	róng;hr yán;uu céng;uy	106
+熔岩橙	róng;hr yán;uu chéng;md	56
+熔岩虫	róng;hr yán;uu chóng;ad,vd	81
+熔岩的	róng;hr yán;uu de;bu	164
+熔岩洞	róng;hr yán;uu dòng;dt	120
+熔岩泛	róng;hr yán;uu fàn;df	91
+熔岩怪	róng;hr yán;uu guài;xu	78
+熔岩管	róng;hr yán;uu guǎn;vg	166
+熔岩海	róng;hr yán;uu hǎi;dm	71
+熔岩湖	róng;hr yán;uu hú;dh	158
+熔岩灰	róng;hr yán;uu huī;hu,uh	73
+熔岩棘	róng;hr yán;uu jí;cc	76
+溶岩井	róng;dr yán;uu jǐng;aa,ep	74
+熔岩颈	róng;hr yán;uu jǐng;yg	54
+溶岩泪	róng;dr yán;uu lèi;do	81
+熔岩流	róng;hr yán;uu liú;di	223
+熔岩瘤	róng;hr yán;uu liú;bl	88
+熔岩龙	róng;hr yán;uu lóng;ad	92
+熔岩沫	róng;hr yán;uu mò;dm	63
+熔岩丘	róng;hr yán;uu qiū;pa,ja	85
+熔岩球	róng;hr yán;uu qiú;wq	82
+熔岩泉	róng;hr yán;uu quán;bu,ub	90
+熔岩犬	róng;hr yán;uu quǎn;dd,ad	76
+熔岩石	róng;hr yán;uu shí;kp,aa,ak,pk	102
+熔岩释	róng;hr yán;uu shì;pf,bf	59
+熔岩塔	róng;hr yán;uu tǎ;td,th	68
+熔岩席	róng;hr yán;uu xí;jc,gj	83
+熔岩楔	róng;hr yán;uu xiē;mq	84
+熔岩柱	róng;hr yán;uu zhù;mv	79
+熔岩锥	róng;hr yán;uu zhuī;jv	81
+肉桂石	ròu;ad,kr guì;mg shí;kp,aa,ak,pk	57
+肉形石	ròu;ad,kr xíng;pk shí;kp,aa,ak,pk	97
+肉与石	ròu;ad,kr yǔ;aa shí;kp,aa,ak,pk	75
+乳白石	rǔ;gf,fg bái;pa,po shí;kp,aa,ak,pk	86
 铷矿床	rú;jr kuàng;ug chuáng;gm,mg	66
+如磐石	rú;nk pán;ub shí;kp,aa,ak,pk	155
+乳酸锰	rǔ;gf,fg suān;yj,yw měng;jm	95
+蠕状石	rú;ix zhuàng;jq,pq,qp shí;kp,aa,ak,pk	74
+阮机石	ruǎn;ey jī;mj shí;kp,aa,ak,pk	77
+软锰矿	ruǎn;iq měng;jm kuàng;ug	116
+软岩石	ruǎn;iq yán;uu shí;kp,aa,ak,pk	100
+弱波石	ruò;gd bō;dp shí;kp,aa,ak,pk	97
+散点石	sàn;wo diǎn;hv shí;kp,aa,ak,pk	81
+三花石	sān;aa huā;ch shí;kp,aa,ak,pk	98
+三块石	sān;aa kuài;td,tg shí;kp,aa,ak,pk	131
+三棱石	sān;aa léng;ml,mw shí;kp,aa,ak,pk	81
+三生石	sān;aa shēng;na shí;kp,aa,ak,pk	175
+三圣石	sān;aa shèng;ty,yt shí;kp,aa,ak,pk	90
+三台石	sān;aa tái;sk shí;kp,aa,ak,pk	81
+三条石	sān;aa tiáo;wm shí;kp,aa,ak,pk	124
+三万石	sān;aa wàn;ag,ap dàn;kp,aa,ak,pk	99
+三紊石	sān;aa wěn;sw,ws shí;kp,aa,ak,pk	95
+三峡石	sān;aa xiá;uj shí;kp,aa,ak,pk	53
+三斜石	sān;aa xié;dy shí;kp,aa,ak,pk	99
+三一石	sān;aa yì;aa shí;kp,aa,ak,pk	80
+铯沸石	sè;js fèi;df shí;kp,aa,ak,pk	80
 铯矿床	sè;js kuàng;ug chuáng;gm,mg	80
+色理石	sè;db lǐ;wl shí;kp,aa,ak,pk	49
+铯榴石	sè;js liú;ml shí;kp,aa,ak,pk	92
+铯柱石	sè;js zhù;mv shí;kp,aa,ak,pk	65
+砂金石	shā;uu jīn;ra,pa shí;kp,aa,ak,pk	127
 砂矿床	shā;uu kuàng;ug chuáng;gm,mg	84
+砂砾石	shā;uu lì;ul,uy shí;kp,aa,ak,pk	62
 砂砾岩	shā;uu lì;ul,uy yán;uu	74
+砂卵石	shā;uu luǎn;pd,md shí;kp,aa,ak,pk	108
+纱帽石	shā;su mào;jm shí;kp,aa,ak,pk	86
+杀生石	shā;mi,im shēng;na shí;kp,aa,ak,pk	51
+沙滩石	shā;du tān;dn shí;kp,aa,ak,pk	54
+砂岩石	shā;uu yán;uu shí;kp,aa,ak,pk	89
+扇白石	shàn;hy,yh bái;pa,po shí;kp,aa,ak,pk	63
+闪电石	shǎn;mr,rm diàn;ag,og shí;kp,aa,ak,pk	69
+珊瑚石	shān;wc hú;wh shí;kp,aa,ak,pk	157
 扇砾岩	shàn;hy,yh lì;ul,uy yán;uu	96
+山皮石	shān;aa pí;ad,ay,vd,vy,ya shí;kp,aa,ak,pk	88
+山坡石	shān;aa pō;tp shí;kp,aa,ak,pk	92
+山墙石	shān;aa qiáng;th shí;kp,aa,ak,pk	71
+闪山石	shǎn;mr,rm shān;aa shí;kp,aa,ak,pk	523
+山神石	shān;aa shén;uu shí;kp,aa,ak,pk	49
+闪石峰	shǎn;mr,rm shí;kp,aa,ak,pk fēng;uf	65
+闪石类	shǎn;mr,rm shí;kp,aa,ak,pk lèi;md	61
+闪石玉	shǎn;mr,rm shí;kp,aa,ak,pk yù;ad,wd	79
+山无石	shān;aa wú;ag,ay,ee shí;kp,aa,ak,pk	193
+闪叶石	shǎn;mr,rm yè;ku shí;kp,aa,ak,pk	93
+山子石	shān;aa zǐ;aa,vh shí;kp,aa,ak,pk	39
+上白石	shàng;aa,ba bái;pa,po shí;kp,aa,ak,pk	134
+上国石	shàng;aa,ba guó;ky shí;kp,aa,ak,pk	78
+上马石	shàng;aa,ba mǎ;aa,vh shí;kp,aa,ak,pk	130
+上水石	shàng;aa,ba shuǐ;ad,uv shí;kp,aa,ak,pk	81
+上岩石	shàng;aa,ba yán;uu shí;kp,aa,ak,pk	107
+上钻石	shàng;aa,ba zuàn;jv shí;kp,aa,ak,pk	153
+烧绿石	shāo;hy lǜ;sl shí;kp,aa,ak,pk	84
+舌笔石	shé;qk bǐ;vm shí;kp,aa,ak,pk	82
+蛇菊石	shé;it jú;cj,cm shí;kp,aa,ak,pk	81
+蛇纹石	shé;it wén;sw shí;kp,aa,ak,pk	172
+神恩石	shén;uu ēn;xy shí;kp,aa,ak,pk	108
+砷钙石	shēn;uu gài;jg shí;kp,aa,ak,pk	76
+神龟石	shén;uu guī;dd shí;kp,aa,ak,pk	89
+砷灰石	shēn;uu huī;hu,uh shí;kp,aa,ak,pk	67
+伸角石	shēn;ru jiǎo;dy shí;kp,aa,ak,pk	72
+肾结石	shèn;oy jié;sj shí;kp,aa,ak,pk	276
 砷矿床	shēn;uu kuàng;ug chuáng;gm,mg	64
+砷镁石	shēn;uu měi;jm shí;kp,aa,ak,pk	78
+神锰矿	shén;uu měng;jm kuàng;ug	69
+砷锰矿	shēn;uu měng;jm kuàng;ug	51
+神秘石	shén;uu mì;hb shí;kp,aa,ak,pk	104
+砷铅石	shēn;uu qiān;jk shí;kp,aa,ak,pk	64
+砷霞石	shēn;uu xiá;yj,yy shí;kp,aa,ak,pk	89
+砷锌石	shēn;uu xīn;jx shí;kp,aa,ak,pk	61
+砷钇石	shēn;uu yǐ;jy shí;kp,aa,ak,pk	54
+神乐石	shén;uu yuè;pd,px shí;kp,aa,ak,pk	94
+生辰石	shēng;na chén;iy shí;kp,aa,ak,pk	263
+圣光石	shèng;ty,yt guāng;ea,xw shí;kp,aa,ak,pk	118
+圣结石	shèng;ty,yt jié;sj shí;kp,aa,ak,pk	92
+圣晶石	shèng;ty,yt jīng;oo shí;kp,aa,ak,pk	108
+绳菊石	shéng;sd,sm jú;cj,cm shí;kp,aa,ak,pk	75
+生命石	shēng;na mìng;re shí;kp,aa,ak,pk	102
+圣魔石	shèng;ty,yt mó;gm,mg shí;kp,aa,ak,pk	79
+生肖石	shēng;na xiào;ox,xo shí;kp,aa,ak,pk	63
+升星石	shēng;pc xīng;ou shí;kp,aa,ak,pk	408
+生赭石	shēng;na zhě;iv shí;kp,aa,ak,pk	84
+师安石	shī;ab,aj,db,dj ān;bn shí;kp,aa,ak,pk	91
+十二石	shí;aa èr;aa shí;kp,aa,ak,pk	114
+石高石	shí;kp,aa,ak,pk gāo;wk shí;kp,aa,ak,pk	63
+铈硅石	shì;ju guī;ug shí;kp,aa,ak,pk	66
+石灰石	shí;kp,aa,ak,pk huī;hu,uh shí;kp,aa,ak,pk	286
+试剑石	shì;yu jiàn;da,dq shí;kp,aa,ak,pk	378
+施见石	shī;fy jiàn;ag,ek,ke shí;kp,aa,ak,pk	97
+时间石	shí;oc jiān;mo,om shí;kp,aa,ak,pk	78
+试金石	shì;yu jīn;ra,pa shí;kp,aa,ak,pk	243
+饰菊石	shì;uj jú;cj,cm shí;kp,aa,ak,pk	58
+时空石	shí;oc kōng;xg,bg shí;kp,aa,ak,pk	84
+石榴石	shí;kp,aa,ak,pk liú;ml shí;kp,aa,ak,pk	280
+石人石	shí;kp,aa,ak,pk rén;pd shí;kp,aa,ak,pk	53
+释如石	shì;pf,bf rú;nk shí;kp,aa,ak,pk	80
+石山石	shí;kp,aa,ak,pk shān;aa shí;kp,aa,ak,pk	44
+十胜石	shí;aa shèng;ou shí;kp,aa,ak,pk	74
+石燧石	shí;kp,aa,ak,pk suì;hs shí;kp,aa,ak,pk	57
+石笋石	shí;kp,aa,ak,pk sǔn;vy shí;kp,aa,ak,pk	142
+诗条石	shī;ys tiáo;wm shí;kp,aa,ak,pk	93
+施嵓石	shī;fy yán;up shí;kp,aa,ak,pk	50
+石英石	shí;kp,aa,ak,pk yīng;cy shí;kp,aa,ak,pk	249
+石陨石	shí;kp,aa,ak,pk yǔn;ey shí;kp,aa,ak,pk	185
+十字石	shí;aa zì;bz shí;kp,aa,ak,pk	104
+狮子石	shī;qu zi;aa,vh shí;kp,aa,ak,pk	68
+守护石	shǒu;bc hù;fh shí;kp,aa,ak,pk	155
+寿山石	shòu;cf,fc shān;aa shí;kp,aa,ak,pk	276
+瘦山石	shòu;bs,by shān;aa shí;kp,aa,ak,pk	64
+树笔石	shù;md bǐ;vm shí;kp,aa,ak,pk	85
+束沸石	shù;ad,mk fèi;df shí;kp,aa,ak,pk	90
+书画石	shū;ad,vd huà;ak shí;kp,aa,ak,pk	77
+树化石	shù;md huà;rb shí;kp,aa,ak,pk	50
+舒碣石	shū;yu,uy jié;uh shí;kp,aa,ak,pk	74
+书堂石	shū;ad,vd táng;tk,dt,xt shí;kp,aa,ak,pk	95
+属性石	shǔ;uy xìng;xu shí;kp,aa,ak,pk	248
+树枝石	shù;md zhī;mv shí;kp,aa,ak,pk	93
+刷钻石	shuā;dj zuàn;jv shí;kp,aa,ak,pk	60
+双笔石	shuāng;yy bǐ;vm shí;kp,aa,ak,pk	70
+双帆石	shuāng;yy fān;jf shí;kp,aa,ak,pk	54
+双晶石	shuāng;yy jīng;oo shí;kp,aa,ak,pk	52
+霜晶石	shuāng;yx jīng;oo shí;kp,aa,ak,pk	52
+双牌石	shuāng;yy pái;pb shí;kp,aa,ak,pk	89
+水冲石	shuǐ;ad,uv chōng;dv shí;kp,aa,ak,pk	82
+水滴石	shuǐ;ad,uv dī;dd,dg shí;kp,aa,ak,pk	66
+水锆石	shuǐ;ad,uv gào;jg shí;kp,aa,ak,pk	80
+水滑石	shuǐ;ad,uv huá;dg shí;kp,aa,ak,pk	82
+水辉石	shuǐ;ad,uv huī;gj shí;kp,aa,ak,pk	100
+水碱石	shuǐ;ad,uv jiǎn;ux shí;kp,aa,ak,pk	60
+水角石	shuǐ;ad,uv jiǎo;dy shí;kp,aa,ak,pk	73
+水晶石	shuǐ;ad,uv jīng;oo shí;kp,aa,ak,pk	248
+水榴石	shuǐ;ad,uv liú;ml shí;kp,aa,ak,pk	69
+水铝石	shuǐ;ad,uv lǚ;jl shí;kp,aa,ak,pk	160
+水镁石	shuǐ;ad,uv měi;jm shí;kp,aa,ak,pk	104
+水锰矿	shuǐ;ad,uv měng;jm kuàng;ug	87
+水沐石	shuǐ;ad,uv mù;dm shí;kp,aa,ak,pk	97
+水泥石	shuǐ;ad,uv ní;dn shí;kp,aa,ak,pk	295
+水牛石	shuǐ;ad,uv niú;pa shí;kp,aa,ak,pk	128
+水闪石	shuǐ;ad,uv shǎn;mr,rm shí;kp,aa,ak,pk	97
+水刷石	shuǐ;ad,uv shuā;dj shí;kp,aa,ak,pk	117
 水文队	shuǐ;ad,uv wén;wi,dd duì;er	66
 水文化	shuǐ;ad,uv wén;wi,dd huà;rb	188
 水文局	shuǐ;ad,uv wén;wi,dd jú;uk	184
@@ -60,19 +1233,265 @@ sort: by_weight
 水文图	shuǐ;ad,uv wén;wi,dd tú;kd	63
 水文学	shuǐ;ad,uv wén;wi,dd xué;dz,zb	176
 水文站	shuǐ;ad,uv wén;wi,dd zhàn;lv	194
+水洗石	shuǐ;ad,uv xǐ;dx shí;kp,aa,ak,pk	79
+水蛭石	shuǐ;ad,uv zhì;iv shí;kp,aa,ak,pk	80
+水脂石	shuǐ;ad,uv zhī;ov shí;kp,aa,ak,pk	77
+四笔石	sì;aa,ke bǐ;vm shí;kp,aa,ak,pk	99
+丝笔石	sī;aa bǐ;vm shí;kp,aa,ak,pk	53
+泗滨石	sì;ds bīn;db shí;kp,aa,ak,pk	4
+似长石	sì;ry cháng;pd shí;kp,aa,ak,pk	87
+锶沸石	sī;js fèi;df shí;kp,aa,ak,pk	91
+似辉石	sì;ry huī;gj shí;kp,aa,ak,pk	80
+似箭石	sì;ry jiàn;vq shí;kp,aa,ak,pk	62
+似晶石	sì;ry jīng;oo shí;kp,aa,ak,pk	62
 锶矿床	sī;js kuàng;ug chuáng;gm,mg	66
+斯昆石	sī;jq,qj kūn;ob shí;kp,aa,ak,pk	86
+锶帘石	sī;js lián;bj,jb,jx,xj shí;kp,aa,ak,pk	59
+斯天石	sī;jq,qj tiān;ad shí;kp,aa,ak,pk	82
+松花石	sōng;mg huā;ch shí;kp,aa,ak,pk	121
+松山石	sōng;mg shān;aa shí;kp,aa,ak,pk	55
+松脂石	sōng;mg zhī;ov shí;kp,aa,ak,pk	79
+送钻石	sòng;zg zuàn;jv shí;kp,aa,ak,pk	130
+苏打石	sū;cb dá;fd shí;kp,aa,ak,pk	85
+碎大石	suì;uz dà;ad shí;kp,aa,ak,pk	176
+碎块石	suì;uz kuài;td,tg shí;kp,aa,ak,pk	77
 碎砾岩	suì;uz lì;ul,uy yán;uu	90
+索伦石	suǒ;sb,us lún;rl shí;kp,aa,ak,pk	68
+塔菲石	tǎ;td,th fēi;cf shí;kp,aa,ak,pk	90
+踏脚石	tà;zt jiǎo;oq shí;kp,aa,ak,pk	222
+塔节石	tǎ;td,th jié;ce shí;kp,aa,ak,pk	98
+塔菊石	tǎ;td,th jú;cj,cm shí;kp,aa,ak,pk	60
 铊矿床	tā;jt kuàng;ug chuáng;gm,mg	50
+他山石	tā;ry shān;aa shí;kp,aa,ak,pk	130
+它山石	tā;bb shān;aa shí;kp,aa,ak,pk	75
+太湖石	tài;dd hú;dh shí;kp,aa,ak,pk	183
+钛辉石	tài;jt huī;gj shí;kp,aa,ak,pk	58
+台阶石	tái;sk jiē;ej shí;kp,aa,ak,pk	66
 钛矿床	tài;jt kuàng;ug chuáng;gm,mg	54
+钛矿石	tài;jt kuàng;ug shí;kp,aa,ak,pk	63
+钛榴石	tài;jt liú;ml shí;kp,aa,ak,pk	95
+泰山石	tài;fu,uf shān;aa shí;kp,aa,ak,pk	148
+钛闪石	tài;jt shǎn;mr,rm shí;kp,aa,ak,pk	55
+台湾石	tái;sk wān;dw shí;kp,aa,ak,pk	92
+太阳石	tài;dd yáng;eo shí;kp,aa,ak,pk	190
+太子石	tài;dd zǐ;aa,vh shí;kp,aa,ak,pk	102
+碳铵石	tàn;ut ǎn;ja shí;kp,aa,ak,pk	59
+碳硅石	tàn;ut guī;ug shí;kp,aa,ak,pk	319
+探海石	tàn;fm,fu hǎi;dm shí;kp,aa,ak,pk	87
+贪矿石	tān;bj,rb kuàng;ug shí;kp,aa,ak,pk	94
+坦桑石	tǎn;td sāng;mr,mu,ym shí;kp,aa,ak,pk	188
+坦尚石	tǎn;td shàng;xk shí;kp,aa,ak,pk	79
+碳酸锰	tàn;ut suān;yj,yw měng;jm	90
+碳矽石	tàn;ut xī;ux shí;kp,aa,ak,pk	59
+探真石	tàn;fm,fu zhēn;uj shí;kp,aa,ak,pk	75
+唐根石	táng;gk gēn;mg shí;kp,aa,ak,pk	62
+唐金石	táng;gk jīn;ra,pa shí;kp,aa,ak,pk	54
+唐渔石	táng;gk yú;dy shí;kp,aa,ak,pk	56
+桃花石	táo;mv huā;ch shí;kp,aa,ak,pk	146
+淘松石	táo;df,dt sōng;mg shí;kp,aa,ak,pk	66
+特寨石	tè;ns zhài;mb,bm shí;kp,aa,ak,pk	55
+锑钙石	tī;jd gài;jg shí;kp,aa,ak,pk	70
 锑矿床	tī;jd kuàng;ug chuáng;gm,mg	93
+提炼石	tí;fu liàn;hd,hj shí;kp,aa,ak,pk	526
+锑赭石	tī;jd zhě;iv shí;kp,aa,ak,pk	94
+天罡石	tiān;ad gāng;sv shí;kp,aa,ak,pk	422
+天河石	tiān;ad hé;dk shí;kp,aa,ak,pk	178
+田华石	tián;aa huá;uh shí;kp,aa,ak,pk	97
+天换石	tiān;ad huàn;fh shí;kp,aa,ak,pk	138
+田黄石	tián;aa huáng;ad,cb shí;kp,aa,ak,pk	298
+天机石	tiān;ad jī;mj shí;kp,aa,ak,pk	98
+田介石	tián;aa jiè;ra,rd shí;kp,aa,ak,pk	88
+天井石	tiān;ad jǐng;aa,ep shí;kp,aa,ak,pk	73
+天蓝石	tiān;ad lán;cj shí;kp,aa,ak,pk	83
+填卵石	tián;tv luǎn;pd,md shí;kp,aa,ak,pk	92
+天魔石	tiān;ad mó;gm,mg shí;kp,aa,ak,pk	108
+天青石	tiān;ad qīng;of,fo shí;kp,aa,ak,pk	210
+天然石	tiān;ad rán;hq shí;kp,aa,ak,pk	269
+天涯石	tiān;ad yá;dy shí;kp,aa,ak,pk	66
+天鹰石	tiān;ad yīng;gn,nv shí;kp,aa,ak,pk	50
+天灾石	tiān;ad zāi;bh,hb shí;kp,aa,ak,pk	108
+天诛石	tiān;ad zhū;yv shí;kp,aa,ak,pk	110
+挑檐石	tiāo;fv yán;mv,my shí;kp,aa,ak,pk	98
+铁鼎石	tiě;ju dǐng;oa,od shí;kp,aa,ak,pk	87
+铁辉石	tiě;ju huī;gj shí;kp,aa,ak,pk	97
+铁灰石	tiě;ju huī;hu,uh shí;kp,aa,ak,pk	69
 铁矿床	tiě;ju kuàng;ug chuáng;gm,mg	100
+铁矿石	tiě;ju kuàng;ug shí;kp,aa,ak,pk	300
+铁闪石	tiě;ju shǎn;mr,rm shí;kp,aa,ak,pk	95
+铁燧石	tiě;ju suì;hs shí;kp,aa,ak,pk	98
+铁钍石	tiě;ju tǔ;jt shí;kp,aa,ak,pk	87
+铁纹石	tiě;ju wén;sw shí;kp,aa,ak,pk	95
+铁榍石	tiě;ju xiè;mx shí;kp,aa,ak,pk	50
+铁陨石	tiě;ju yǔn;ey shí;kp,aa,ak,pk	209
+听松石	tīng;kj sōng;mg shí;kp,aa,ak,pk	74
+铜矾石	tóng;jt fán;uf shí;kp,aa,ak,pk	74
+痛风石	tòng;by fēng;ji shí;kp,aa,ak,pk	256
 铜矿床	tóng;jt kuàng;ug chuáng;gm,mg	94
+铜矿石	tóng;jt kuàng;ug shí;kp,aa,ak,pk	212
+铜泡石	tóng;jt pào;db shí;kp,aa,ak,pk	60
+铜硝石	tóng;jt xiāo;ux shí;kp,aa,ak,pk	51
+透长石	tòu;zx cháng;pd shí;kp,aa,ak,pk	86
+透光石	tòu;zx guāng;ea,xw shí;kp,aa,ak,pk	94
+透辉石	tòu;zx huī;gj shí;kp,aa,ak,pk	138
+透明石	tòu;zx míng;oo shí;kp,aa,ak,pk	193
+透闪石	tòu;zx shǎn;mr,rm shí;kp,aa,ak,pk	190
+透视石	tòu;zx shì;ju,uj shí;kp,aa,ak,pk	67
+吐酒石	tǔ;kt jiǔ;dy shí;kp,aa,ak,pk	53
 钍矿床	tǔ;jt kuàng;ug chuáng;gm,mg	58
+屠枰石	tú;uv píng;mp shí;kp,aa,ak,pk	60
+突破石	tū;xq,bq pò;up shí;kp,aa,ak,pk	66
+图章石	tú;kd zhāng;lz shí;kp,aa,ak,pk	65
+拓跋石	tuò;fu bá;zb,zy shí;kp,aa,ak,pk	62
+托帕石	tuō;fq,ft pà;jb shí;kp,aa,ak,pk	183
+挖钻石	wā;fw,fy zuàn;jv shí;kp,aa,ak,pk	105
+歪长石	wāi;bv cháng;pd shí;kp,aa,ak,pk	93
+湾泊石	wān;dw bó;db shí;kp,aa,ak,pk	59
+顽辉石	wán;yy huī;gj shí;kp,aa,ak,pk	88
+万金石	wàn;ag,ap jīn;ra,pa shí;kp,aa,ak,pk	80
+万里石	wàn;ag,ap lǐ;aa,tt shí;kp,aa,ak,pk	112
+完美石	wán;by měi;dy,yd shí;kp,aa,ak,pk	76
+王安石	wáng;aa ān;bn shí;kp,aa,ak,pk	287
+望夫石	wàng;wo fū;ad,er shí;kp,aa,ak,pk	149
+望后石	wàng;wo hòu;pk shí;kp,aa,ak,pk	94
+忘忧石	wàng;xw yōu;xy shí;kp,aa,ak,pk	51
+韦安石	wéi;aa ān;bn shí;kp,aa,ak,pk	4
+微化石	wēi;xw huà;rb shí;kp,aa,ak,pk	92
+薇角石	wēi;cw jiǎo;dy shí;kp,aa,ak,pk	90
+胃结石	wèi;ot,to jié;sj shí;kp,aa,ak,pk	231
+微晶石	wēi;xw jīng;oo shí;kp,aa,ak,pk	219
+微澜石	wēi;xw lán;dl shí;kp,aa,ak,pk	71
+微劈石	wēi;xw pī;db,dx shí;kp,aa,ak,pk	73
+胃柿石	wèi;ot,to shì;mu shí;kp,aa,ak,pk	180
+韦万石	wéi;aa wàn;ag,ap dàn;kp,aa,ak,pk	76
+卫闻石	wèi;ea,ga wén;em,me shí;kp,aa,ak,pk	94
+微陨石	wēi;xw yǔn;ey shí;kp,aa,ak,pk	136
+韦中石	wéi;aa zhōng;aa,ka shí;kp,aa,ak,pk	62
+韦柱石	wéi;aa zhù;mv shí;kp,aa,ak,pk	85
+纹长石	wén;sw cháng;pd shí;kp,aa,ak,pk	94
+文房石	wén;wi,dd fáng;hf shí;kp,aa,ak,pk	60
+文化石	wén;wi,dd huà;rb shí;kp,aa,ak,pk	297
+文人石	wén;wi,dd rén;pd shí;kp,aa,ak,pk	61
+温于石	wēn;dm,dw yú;aa shí;kp,aa,ak,pk	66
+翁公石	wēng;yg gōng;sb,bs dàn;kp,aa,ak,pk	92
+卧虎石	wò;bi,ib hǔ;hj shí;kp,aa,ak,pk	71
+卧牛石	wò;bi,ib niú;pa shí;kp,aa,ak,pk	78
+沃森石	wò;dy sēn;ml shí;kp,aa,ak,pk	73
+卧云石	wò;bi,ib yún;es,se shí;kp,aa,ak,pk	67
+我钻石	wǒ;pd,pp zuàn;jv shí;kp,aa,ak,pk	153
+五彩石	wǔ;aa cǎi;pc shí;kp,aa,ak,pk	154
+乌钢石	wū;pa gāng;jg shí;kp,aa,ak,pk	317
+五光石	wǔ;aa guāng;ea,xw shí;kp,aa,ak,pk	92
+乌龟石	wū;pa guī;dd shí;kp,aa,ak,pk	71
+五花石	wǔ;aa huā;ch shí;kp,aa,ak,pk	95
+屋基石	wū;uv jī;tq,qt shí;kp,aa,ak,pk	84
+乌金石	wū;pa jīn;ra,pa shí;kp,aa,ak,pk	270
 钨矿床	wū;jw kuàng;ug chuáng;gm,mg	70
+钨矿石	wū;jw kuàng;ug shí;kp,aa,ak,pk	79
+钨锰矿	wū;jw měng;jm kuàng;ug	75
+钨酸锰	wū;jw suān;yj,yw měng;jm	61
+钨铁石	wū;jw tiě;ju shí;kp,aa,ak,pk	75
+乌心石	wū;pa xīn;dd shí;kp,aa,ak,pk	78
+五行石	wǔ;aa xíng;xd,xi shí;kp,aa,ak,pk	295
+五指石	wǔ;aa zhǐ;fv shí;kp,aa,ak,pk	89
+吸附石	xī;kj fù;ef shí;kp,aa,ak,pk	116
+西黄石	xī;aa huáng;ad,cb shí;kp,aa,ak,pk	94
+细晶石	xì;st jīng;oo shí;kp,aa,ak,pk	81
 硒矿床	xī;ux kuàng;ug chuáng;gm,mg	82
 锡矿床	xī;jy kuàng;ug chuáng;gm,mg	54
+锡矿石	xī;jy kuàng;ug shí;kp,aa,ak,pk	108
+系缆石	xì;ps lǎn;sl shí;kp,aa,ak,pk	96
 细砾岩	xì;st lì;ul,uy yán;uu	94
+细料石	xì;st liào;md shí;kp,aa,ak,pk	82
+矽镁石	xī;ux měi;jm shí;kp,aa,ak,pk	93
+西盟石	xī;aa méng;mm shí;kp,aa,ak,pk	99
+犀牛石	xī;nu,un niú;pa shí;kp,aa,ak,pk	62
+矽铍石	xī;ux pī;jp shí;kp,aa,ak,pk	68
+吸水石	xī;kj shuǐ;ad,uv shí;kp,aa,ak,pk	520
+矽线石	xī;ux xiàn;sj shí;kp,aa,ak,pk	94
+夕线石	xī;pd xiàn;sj shí;kp,aa,ak,pk	70
+下白石	xià;ab,ad bái;pa,po shí;kp,aa,ak,pk	114
+霞沸石	xiá;yj,yy fèi;df shí;kp,aa,ak,pk	74
+下赣石	xià;ab,ad gàn;dd,vb shí;kp,aa,ak,pk	4
+下炉石	xià;ab,ad lú;hh shí;kp,aa,ak,pk	76
+下马石	xià;ab,ad mǎ;aa,vh shí;kp,aa,ak,pk	80
+下岩石	xià;ab,ad yán;uu shí;kp,aa,ak,pk	107
+纤笔石	xiān;sq bǐ;vm shí;kp,aa,ak,pk	99
+纤沸石	xiān;sq fèi;df shí;kp,aa,ak,pk	100
+纤硅石	xiān;sq guī;ug shí;kp,aa,ak,pk	85
+纤滑石	xiān;sq huá;dg shí;kp,aa,ak,pk	62
+鲜黄石	xiān;yy huáng;ad,cb shí;kp,aa,ak,pk	98
+显晶石	xiǎn;oy jīng;oo shí;kp,aa,ak,pk	71
+仙女石	xiān;ru nǚ;aa,vh shí;kp,aa,ak,pk	64
+纤硼石	xiān;sq péng;up shí;kp,aa,ak,pk	87
+纤闪石	xiān;sq shǎn;mr,rm shí;kp,aa,ak,pk	97
+纤维石	xiān;sq wéi;sv shí;kp,aa,ak,pk	66
+香花石	xiāng;ho huā;ch shí;kp,aa,ak,pk	62
+香炉石	xiāng;ho lú;hh shí;kp,aa,ak,pk	102
+象形石	xiàng;du,pd,ua xíng;pk shí;kp,aa,ak,pk	118
+镶钻石	xiāng;jx,jy zuàn;jv shí;kp,aa,ak,pk	206
+像钻石	xiàng;rx zuàn;jv shí;kp,aa,ak,pk	156
+小结石	xiǎo;ad jié;sj shí;kp,aa,ak,pk	153
+萧介石	xiāo;cs jiè;ra,rd shí;kp,aa,ak,pk	91
+小卵石	xiǎo;ad luǎn;pd,md shí;kp,aa,ak,pk	112
+小拳石	xiǎo;ad quán;uf,ju shí;kp,aa,ak,pk	100
+小碎石	xiǎo;ad suì;uz shí;kp,aa,ak,pk	113
+小藤石	xiǎo;ad téng;ct shí;kp,aa,ak,pk	58
+萧象石	xiāo;cs xiàng;du,pd,ua shí;kp,aa,ak,pk	84
+小岩石	xiǎo;ad yán;uu shí;kp,aa,ak,pk	96
+小钻石	xiǎo;ad zuàn;jv shí;kp,aa,ak,pk	158
+谢安石	xiè;yu ān;bn shí;kp,aa,ak,pk	98
+斜长石	xié;dy cháng;pd shí;kp,aa,ak,pk	190
+斜锆石	xié;dy gào;jg shí;kp,aa,ak,pk	65
+斜辉石	xié;dy huī;gj shí;kp,aa,ak,pk	53
+斜晶石	xié;dy jīng;oo shí;kp,aa,ak,pk	82
+斜帘石	xié;dy lián;bj,jb,jx,xj shí;kp,aa,ak,pk	91
+斜铝石	xié;dy lǚ;jl shí;kp,aa,ak,pk	58
+斜楔石	xié;dy xiē;mq shí;kp,aa,ak,pk	57
+新布石	xīn;jq bù;ju,uj shí;kp,aa,ak,pk	63
+心机石	xīn;dd jī;mj shí;kp,aa,ak,pk	56
+新箭石	xīn;jq jiàn;vq shí;kp,aa,ak,pk	59
+新角石	xīn;jq jiǎo;dy shí;kp,aa,ak,pk	53
 锌矿床	xīn;jx kuàng;ug chuáng;gm,mg	61
+锌矿石	xīn;jx kuàng;ug shí;kp,aa,ak,pk	95
+锌榴石	xīn;jx liú;ml shí;kp,aa,ak,pk	65
+锌锰矿	xīn;jx měng;jm kuàng;ug	61
+新日石	xīn;jq rì;aa,or,ri shí;kp,aa,ak,pk	85
+锌乳石	xīn;jx rǔ;gf,fg shí;kp,aa,ak,pk	76
+欣赏石	xīn;qj,jq shǎng;bk,dk,xy shí;kp,aa,ak,pk	91
+心形石	xīn;dd xíng;pk shí;kp,aa,ak,pk	88
+新岩石	xīn;jq yán;uu shí;kp,aa,ak,pk	68
+兴安石	xīng;ba,db ān;bn shí;kp,aa,ak,pk	75
+星角石	xīng;ou jiǎo;dy shí;kp,aa,ak,pk	88
+星菊石	xīng;ou jú;cj,cm shí;kp,aa,ak,pk	67
+邢瑞石	xíng;ek ruì;we shí;kp,aa,ak,pk	56
+星星石	xīng;ou xīng;ou shí;kp,aa,ak,pk	58
+星叶石	xīng;ou yè;ku shí;kp,aa,ak,pk	92
+幸运石	xìng;tu,ty yùn;zy shí;kp,aa,ak,pk	219
+溴化锰	xiù;di huà;rb měng;jm	56
+叙永石	xù;yy yǒng;dd shí;kp,aa,ak,pk	74
+宣惊石	xuān;bg jīng;xj shí;kp,aa,ak,pk	94
+玄闪石	xuán;wy shǎn;mr,rm shí;kp,aa,ak,pk	89
+玄武石	xuán;wy wǔ;vy,yv shí;kp,aa,ak,pk	102
+血滴石	xuè;pa,pm dī;dd,dg shí;kp,aa,ak,pk	441
+雪花石	xuě;yx huā;ch shí;kp,aa,ak,pk	76
+血精石	xuè;pa,pm jīng;mq shí;kp,aa,ak,pk	161
+血晶石	xuè;pa,pm jīng;oo shí;kp,aa,ak,pk	56
+雪山石	xuě;yx shān;aa shí;kp,aa,ak,pk	84
+血印石	xuè;pa,pm yìn;ey,pe shí;kp,aa,ak,pk	67
+血与石	xuè;pa,pm yǔ;aa shí;kp,aa,ak,pk	59
+血钻石	xuè;pa,pm zuàn;jv shí;kp,aa,ak,pk	92
+蕈状石	xùn;ct zhuàng;jq,pq,qp shí;kp,aa,ak,pk	50
+压舱石	yā;id,it cāng;vc shí;kp,aa,ak,pk	191
+压顶石	yā;id,it dǐng;dy,yd shí;kp,aa,ak,pk	87
+亚化石	yà;ay huà;rb shí;kp,aa,ak,pk	144
+牙结石	yá;ap jié;sj shí;kp,aa,ak,pk	248
+牙克石	yá;ap kè;eg,ux shí;kp,aa,ak,pk	220
+压阑石	yā;id,it lán;mj shí;kp,aa,ak,pk	81
+压盘石	yā;id,it pán;mv,vm shí;kp,aa,ak,pk	109
+亚婆石	yà;ay pó;nb shí;kp,aa,ak,pk	95
+压碎石	yā;id,it suì;uz shí;kp,aa,ak,pk	83
+牙形石	yá;ap xíng;pk shí;kp,aa,ak,pk	134
+眼结石	yǎn;og jié;sj shí;kp,aa,ak,pk	153
 岩溶地	yán;uu róng;dr dì;ty	81
 岩溶洞	yán;uu róng;dr dòng;dt	92
 岩溶湖	yán;uu róng;dr hú;dh	79
@@ -84,64 +1503,822 @@ sort: by_weight
 岩溶相	yán;uu róng;dr xiāng;mo	99
 岩溶柱	yán;uu róng;dr zhù;mv	97
 岩溶酌	yán;uu róng;dr zhuó;yu	78
+岩石吧	yán;uu shí;kp,aa,ak,pk ba;kb	170
+岩石边	yán;uu shí;kp,aa,ak,pk biān;zl	118
+岩石层	yán;uu shí;kp,aa,ak,pk céng;uy	181
+岩石洞	yán;uu shí;kp,aa,ak,pk dòng;dt	78
+岩石缝	yán;uu shí;kp,aa,ak,pk fèng;sf	118
+岩石后	yán;uu shí;kp,aa,ak,pk hòu;pk	118
+岩石画	yán;uu shí;kp,aa,ak,pk huà;ak	81
+岩石间	yán;uu shí;kp,aa,ak,pk jiān;mo,om	146
+岩石块	yán;uu shí;kp,aa,ak,pk kuài;td,tg	96
+岩石林	yán;uu shí;kp,aa,ak,pk lín;mm	63
+岩石路	yán;uu shí;kp,aa,ak,pk lù;zg	108
+岩石坡	yán;uu shí;kp,aa,ak,pk pō;tp	81
+岩石漆	yán;uu shí;kp,aa,ak,pk qī;dq,du	51
+岩石球	yán;uu shí;kp,aa,ak,pk qiú;wq	66
+岩石丘	yán;uu shí;kp,aa,ak,pk qiū;pa,ja	57
+岩石区	yán;uu shí;kp,aa,ak,pk qū;ki	161
+岩石圈	yán;uu shí;kp,aa,ak,pk quān;kj	207
+岩石鲨	yán;uu shí;kp,aa,ak,pk shā;yu	78
+岩石山	yán;uu shí;kp,aa,ak,pk shān;aa	108
+岩石上	yán;uu shí;kp,aa,ak,pk shàng;aa,ba	243
+岩石水	yán;uu shí;kp,aa,ak,pk shuǐ;ad,uv	82
+岩石滩	yán;uu shí;kp,aa,ak,pk tān;dn	61
+岩石系	yán;uu shí;kp,aa,ak,pk xì;ps	89
+岩石下	yán;uu shí;kp,aa,ak,pk xià;ab,ad	136
+岩石学	yán;uu shí;kp,aa,ak,pk xué;dz,zb	180
+岩石园	yán;uu shí;kp,aa,ak,pk yuán;ky	92
+岩石云	yán;uu shí;kp,aa,ak,pk yún;es,se	100
+岩石中	yán;uu shí;kp,aa,ak,pk zhōng;aa,ka	214
+烟雨石	yān;hy yǔ;ad shí;kp,aa,ak,pk	99
+羊背石	yáng;da bèi;ob shí;kp,aa,ak,pk	78
+羊额石	yáng;da é;yk shí;kp,aa,ak,pk	73
+氧化锰	yǎng;qy huà;rb měng;jm	141
+阳起石	yáng;eo qǐ;zj shí;kp,aa,ak,pk	280
+杨天石	yáng;my tiān;ad shí;kp,aa,ak,pk	184
+阳元石	yáng;eo yuán;aw,ee shí;kp,aa,ak,pk	125
+羊陨石	yáng;da yǔn;ey shí;kp,aa,ak,pk	89
+妖精石	yāo;ny jīng;mq shí;kp,aa,ak,pk	130
+姚瞿石	yáo;nv qú;vo,ov,vm shí;kp,aa,ak,pk	84
+曜日石	yào;od,ov rì;aa,or,ri shí;kp,aa,ak,pk	98
+叶笔石	yè;ku bǐ;vm shí;kp,aa,ak,pk	75
+叶沸石	yè;ku fèi;df shí;kp,aa,ak,pk	78
+夜光石	yè;wd,ww guāng;ea,xw shí;kp,aa,ak,pk	96
+叶蜡石	yè;ku là;ix shí;kp,aa,ak,pk	179
+叶腊石	yè;ku là;ox shí;kp,aa,ak,pk	125
+夜目石	yè;wd,ww mù;aa,om,mu shí;kp,aa,ak,pk	80
+翼笔石	yì;yg,yy bǐ;vm shí;kp,aa,ak,pk	93
+异剥石	yì;cs,sc bō;dl shí;kp,aa,ak,pk	80
+易潮石	yì;ow cháo;di shí;kp,aa,ak,pk	77
+易解石	yì;ow jiě;jn shí;kp,aa,ak,pk	56
+溢晶石	yì;dy jīng;oo shí;kp,aa,ak,pk	87
+伊利石	yī;ry lì;hd,dh shí;kp,aa,ak,pk	108
+乙酸锰	yǐ;aa,vv,yy suān;yj,yw měng;jm	91
+钇榍石	yǐ;jy xiè;mx shí;kp,aa,ak,pk	92
+乙辛石	yǐ;aa,vv,yy xīn;lu shí;kp,aa,ak,pk	62
+异性石	yì;cs,sc xìng;xu shí;kp,aa,ak,pk	82
+钇萤石	yǐ;jy yíng;ci,ib shí;kp,aa,ak,pk	72
+一元石	yì;aa yuán;aw,ee shí;kp,aa,ak,pk	122
+引导石	yǐn;ga dǎo;cs,sc shí;kp,aa,ak,pk	76
+印度石	yìn;ey,pe dù;gy shí;kp,aa,ak,pk	68
+尹官石	yǐn;ap,vp guān;bg,bk shí;kp,aa,ak,pk	57
+尹介石	yǐn;ap,vp jiè;ra,rd shí;kp,aa,ak,pk	72
 铟矿床	yīn;jy kuàng;ug chuáng;gm,mg	79
 银矿床	yín;jg kuàng;ug chuáng;gm,mg	68
+银矿石	yín;jg kuàng;ug shí;kp,aa,ak,pk	125
+阴山石	yīn;eo shān;aa shí;kp,aa,ak,pk	72
+尹瘦石	yǐn;ap,vp shòu;bs,by shí;kp,aa,ak,pk	210
+殷铁石	yīn;pu,uu tiě;ju shí;kp,aa,ak,pk	82
+尹熙石	yǐn;ap,vp xī;hs shí;kp,aa,ak,pk	90
+银星石	yín;jg xīng;ou shí;kp,aa,ak,pk	66
+尹燕石	yǐn;ap,vp yàn;ch,hb shí;kp,aa,ak,pk	58
+阴阳石	yīn;eo yáng;eo shí;kp,aa,ak,pk	96
+姻缘石	yīn;ny yuán;st,su shí;kp,aa,ak,pk	98
+印章石	yìn;ey,pe zhāng;lz shí;kp,aa,ak,pk	120
+英安石	yīng;cy ān;bn shí;kp,aa,ak,pk	66
+英德石	yīng;cy dé;xx shí;kp,aa,ak,pk	99
+婴儿石	yīng;bn,nb ér;pg shí;kp,aa,ak,pk	56
+硬沸石	yìng;ug fèi;df shí;kp,aa,ak,pk	54
+英歌石	yīng;cy gē;qg shí;kp,aa,ak,pk	111
+鹦哥石	yīng;ny gē;kd,kk,dk shí;kp,aa,ak,pk	95
+莺歌石	yīng;cn,nb gē;qg shí;kp,aa,ak,pk	59
+荧光石	yíng;ch,hb guāng;ea,xw shí;kp,aa,ak,pk	79
+硬锰矿	yìng;ug měng;jm kuàng;ug	94
+硬岩石	yìng;ug yán;uu shí;kp,aa,ak,pk	336
+鹰眼石	yīng;gn,nv yǎn;og shí;kp,aa,ak,pk	89
+硬柱石	yìng;ug zhù;mv shí;kp,aa,ak,pk	89
+鹰嘴石	yīng;gn,nv zuǐ;kj,kz shí;kp,aa,ak,pk	73
+咏孤石	yǒng;ky gū;zg shí;kp,aa,ak,pk	64
+用巨石	yòng;kf jù;kk,aa shí;kp,aa,ak,pk	114
+黝方石	yǒu;hy fāng;dg,wd,dp,dw shí;kp,aa,ak,pk	81
+铀钙石	yóu;jy gài;jg shí;kp,aa,ak,pk	80
+铀硅石	yóu;jy guī;ug shí;kp,aa,ak,pk	82
 铀矿床	yóu;jy kuàng;ug chuáng;gm,mg	100
+铀矿石	yóu;jy kuàng;ug shí;kp,aa,ak,pk	162
+黝帘石	yǒu;hy lián;bj,jb,jx,xj shí;kp,aa,ak,pk	117
+油麻石	yóu;dy má;gl shí;kp,aa,ak,pk	100
+油酸锰	yóu;dy suān;yj,yw měng;jm	60
+铀霞石	yóu;jy xiá;yj,yy shí;kp,aa,ak,pk	73
+游钻石	yóu;dz zuàn;jv shí;kp,aa,ak,pk	79
+喻川石	yù;ky chuān;pa shí;kp,aa,ak,pk	50
+玉滴石	yù;ad,wd dī;dd,dg shí;kp,aa,ak,pk	80
+雨花石	yǔ;ad huā;ch shí;kp,aa,ak,pk	219
+鱼化石	yú;da huà;rb shí;kp,aa,ak,pk	147
+雨化石	yǔ;ad huà;rb shí;kp,aa,ak,pk	60
+瑜伽石	yú;wy jiā;rj shí;kp,aa,ak,pk	73
+玉矿石	yù;ad,wd kuàng;ug shí;kp,aa,ak,pk	76
+俞南石	yú;rd,ry nán;ua,uy shí;kp,aa,ak,pk	61
+鱼脑石	yú;da nǎo;ox shí;kp,aa,ak,pk	121
+俞蒲石	yú;rd,ry pú;cp shí;kp,aa,ak,pk	58
+鱼首石	yú;da shǒu;qz shí;kp,aa,ak,pk	86
+郁漱石	yù;ey shù;dq,du shí;kp,aa,ak,pk	72
+鱼眼石	yú;da yǎn;og shí;kp,aa,ak,pk	81
+御影石	yù;xx yǐng;pj shí;kp,aa,ak,pk	65
+鱼珠石	yú;da zhū;wv shí;kp,aa,ak,pk	77
+原矿石	yuán;ix kuàng;ug shí;kp,aa,ak,pk	132
 圆砾岩	yuán;ky lì;ul,uy yán;uu	93
+园林石	yuán;ky lín;mm shí;kp,aa,ak,pk	62
+元素石	yuán;aw,ee sù;sf,fs shí;kp,aa,ak,pk	110
+猿岩石	yuán;qy yán;uu shí;kp,aa,ak,pk	85
+月长石	yuè;oy,pa,yt cháng;pd shí;kp,aa,ak,pk	141
+月光石	yuè;oy,pa,yt guāng;ea,xw shí;kp,aa,ak,pk	226
+月亮石	yuè;oy,pa,yt liàng;wj,jb shí;kp,aa,ak,pk	234
+月球石	yuè;oy,pa,yt qiú;wq shí;kp,aa,ak,pk	97
+月乳石	yuè;oy,pa,yt rǔ;gf,fg shí;kp,aa,ak,pk	58
+晕长石	yūn;oj cháng;pd shí;kp,aa,ak,pk	72
+云母石	yún;es,se mǔ;ad,vd shí;kp,aa,ak,pk	82
+陨铁石	yǔn;ey tiě;ju shí;kp,aa,ak,pk	74
+杂齿石	zá;jm,mj chǐ;vk shí;kp,aa,ak,pk	52
+杂磷石	zá;jm,mj lín;ul shí;kp,aa,ak,pk	83
+杂卤石	zá;jm,mj lǔ;ba,bi,sh shí;kp,aa,ak,pk	62
+杂锰矿	zá;jm,mj měng;jm kuàng;ug	81
+杂萤石	zá;jm,mj yíng;ci,ib shí;kp,aa,ak,pk	59
+杂陨石	zá;jm,mj yǔn;ey shí;kp,aa,ak,pk	53
+在白石	zài;ta,ut bái;pa,po shí;kp,aa,ak,pk	128
+在大石	zài;ta,ut dà;ad shí;kp,aa,ak,pk	116
+在黄石	zài;ta,ut huáng;ad,cb shí;kp,aa,ak,pk	239
+在磐石	zài;ta,ut pán;ub shí;kp,aa,ak,pk	168
+藻化石	zǎo;cz huà;rb shí;kp,aa,ak,pk	97
+糟化石	zāo;mc huà;rb shí;kp,aa,ak,pk	65
+栅笔石	zhà;mc bǐ;vm shí;kp,aa,ak,pk	72
+长结石	zhǎng;pd jié;sj shí;kp,aa,ak,pk	133
+召唤石	zhào;dk,kd huàn;kh shí;kp,aa,ak,pk	310
 锗矿床	zhě;jv kuàng;ug chuáng;gm,mg	69
+哲人石	zhé;kv rén;pd shí;kp,aa,ak,pk	110
+针沸石	zhēn;ju fèi;df shí;kp,aa,ak,pk	98
+镇魂石	zhèn;jv hún;gy,yg shí;kp,aa,ak,pk	112
+甄锦石	zhēn;wt,wy jǐn;jb,jj shí;kp,aa,ak,pk	51
+针镁石	zhēn;ju měi;jm shí;kp,aa,ak,pk	96
+针铁石	zhēn;ju tiě;ju shí;kp,aa,ak,pk	71
+针脂石	zhēn;ju zhī;ov shí;kp,aa,ak,pk	50
+珍珠石	zhēn;wp zhū;wv shí;kp,aa,ak,pk	95
+针柱石	zhēn;ju zhù;mv shí;kp,aa,ak,pk	64
+正辉石	zhèng;av huī;gj shí;kp,aa,ak,pk	51
+正金石	zhèng;av jīn;ra,pa shí;kp,aa,ak,pk	56
 正砾岩	zhèng;av lì;ul,uy yán;uu	98
+正长石	zhèng;av zhǎng;pd shí;kp,aa,ak,pk	140
+整柱石	zhěng;vi,vw zhù;mv shí;kp,aa,ak,pk	61
+直笔石	zhí;aa,uq bǐ;vm shí;kp,aa,ak,pk	72
+脂光石	zhī;ov guāng;ea,xw shí;kp,aa,ak,pk	100
+植硅石	zhí;mv guī;ug shí;kp,aa,ak,pk	87
+智慧石	zhì;ov huì;xh,fx shí;kp,aa,ak,pk	296
+支机石	zhī;uy jī;mj shí;kp,aa,ak,pk	53
+直角石	zhí;aa,uq jiǎo;dy shí;kp,aa,ak,pk	98
+植结石	zhí;mv jié;sj shí;kp,aa,ak,pk	93
+指菊石	zhǐ;fv jú;cj,cm shí;kp,aa,ak,pk	84
+智利石	zhì;ov lì;hd,dh shí;kp,aa,ak,pk	92
+制炼石	zhì;dg,dv liàn;hd,hj shí;kp,aa,ak,pk	106
+治疗石	zhì;dt liáo;bl shí;kp,aa,ak,pk	347
+纸皮石	zhǐ;su pí;ad,ay,vd,vy,ya shí;kp,aa,ak,pk	92
+直闪石	zhí;aa,uq shǎn;mr,rm shí;kp,aa,ak,pk	110
+炙焰石	zhì;ho,hy,oh,yh yàn;hj,hx shí;kp,aa,ak,pk	96
+中长石	zhōng;aa,ka cháng;pd shí;kp,aa,ak,pk	95
+中沸石	zhōng;aa,ka fèi;df shí;kp,aa,ak,pk	96
+中国石	zhōng;aa,ka guó;ky shí;kp,aa,ak,pk	121
+重解石	zhòng;pa,ql jiě;jn shí;kp,aa,ak,pk	80
+中金石	zhōng;aa,ka jīn;ra,pa shí;kp,aa,ak,pk	0
+重晶石	zhòng;pa,ql jīng;oo shí;kp,aa,ak,pk	172
+中砾石	zhōng;aa,ka lì;ul,uy shí;kp,aa,ak,pk	63
+钟乳石	zhōng;jv rǔ;gf,fg shí;kp,aa,ak,pk	220
+中心石	zhōng;aa,ka xīn;dd shí;kp,aa,ak,pk	95
+中性石	zhōng;aa,ka xìng;xu shí;kp,aa,ak,pk	87
+中岩石	zhōng;aa,ka yán;uu shí;kp,aa,ak,pk	95
+中柱石	zhōng;aa,ka zhù;mv shí;kp,aa,ak,pk	88
+逐安石	zhú;zu ān;bn shí;kp,aa,ak,pk	53
+朱碧石	zhū;pw bì;ub,up shí;kp,aa,ak,pk	229
+柱顶石	zhù;mv dǐng;dy,yd shí;kp,aa,ak,pk	76
+柱沸石	zhù;mv fèi;df shí;kp,aa,ak,pk	89
+祝福石	zhù;ux fú;uf,ut shí;kp,aa,ak,pk	238
+柱红石	zhù;mv hóng;sg shí;kp,aa,ak,pk	51
+珠角石	zhū;wv jiǎo;dy shí;kp,aa,ak,pk	83
+竹节石	zhú;gg jié;ce shí;kp,aa,ak,pk	66
+柱晶石	zhù;mv jīng;oo shí;kp,aa,ak,pk	67
+猪肉石	zhū;qv ròu;ad,kr shí;kp,aa,ak,pk	89
+诸西石	zhū;yv xī;aa shí;kp,aa,ak,pk	82
+柱形石	zhù;mv xíng;pk shí;kp,aa,ak,pk	68
+转炉石	zhuàn;iv lú;hh shí;kp,aa,ak,pk	72
+撞击石	zhuàng;ft jī;aa,eu,fk shí;kp,aa,ak,pk	76
+装饰石	zhuāng;yv shì;uj shí;kp,aa,ak,pk	53
+锥辉石	zhuī;jv huī;gj shí;kp,aa,ak,pk	58
+锥晶石	zhuī;jv jīng;oo shí;kp,aa,ak,pk	89
+锥纹石	zhuī;jv wén;sw shí;kp,aa,ak,pk	127
+准矿石	zhǔn;dv kuàng;ug shí;kp,aa,ak,pk	80
+浊沸石	zhuó;di fèi;df shí;kp,aa,ak,pk	60
+紫脆石	zǐ;sc cuì;ow shí;kp,aa,ak,pk	95
+紫金石	zǐ;sc jīn;ra,pa shí;kp,aa,ak,pk	87
+紫晶石	zǐ;sc jīng;oo shí;kp,aa,ak,pk	89
+姊妹石	zǐ;nz mèi;nw shí;kp,aa,ak,pk	69
+自然石	zì;pa,po rán;hq shí;kp,aa,ak,pk	122
+紫石街	zǐ;sc shí;kp,aa,ak,pk jiē;xg,xi	126
+紫石林	zǐ;sc shí;kp,aa,ak,pk lín;mm	90
+紫石乳	zǐ;sc shí;kp,aa,ak,pk rǔ;gf,fg	84
+紫石县	zǐ;sc shí;kp,aa,ak,pk xiàn;sq,qs	81
+紫石英	zǐ;sc shí;kp,aa,ak,pk yīng;cy	137
+紫星石	zǐ;sc xīng;ou shí;kp,aa,ak,pk	133
+棕榈石	zōng;mz lǘ;ml shí;kp,aa,ak,pk	91
+棕闪石	zōng;mz shǎn;mr,rm shí;kp,aa,ak,pk	54
+祖安石	zǔ;uq ān;bn shí;kp,aa,ak,pk	53
+祖马石	zǔ;uq mǎ;aa,vh shí;kp,aa,ak,pk	66
+祖正石	zǔ;uq zhèng;av shí;kp,aa,ak,pk	99
 钻矿床	zuān;jv kuàng;ug chuáng;gm,mg	52
+左萝石	zuǒ;gu,ug luó;cl shí;kp,aa,ak,pk	94
+阿钙霞石	ā;ek gài;jg xiá;yj,yy shí;kp,aa,ak,pk	10
+阿门角石	ā;ek mēn;dg jiǎo;dy shí;kp,aa,ak,pk	9
+艾达矿石	ài;ci dá;zd kuàng;ug shí;kp,aa,ak,pk	5
+爱灵松石	ài;vy líng;hx,xh sōng;mg shí;kp,aa,ak,pk	7
+爱石藏石	ài;vy shí;kp,aa,ak,pk cáng;cg,ci shí;kp,aa,ak,pk	1
+安克锰锌	ān;bn kè;eg,ux měng;jm xīn;jx	5
+安如磐石	ān;bn rú;nk pán;ub shí;kp,aa,ak,pk	30
+安若磐石	ān;bn ruò;cy pán;ub shí;kp,aa,ak,pk	32
+安于磐石	ān;bn yú;aa pán;ub shí;kp,aa,ak,pk	5
+奥贝尔石	ào;dm,pd bèi;ad,kr ěr;dx,xd shí;kp,aa,ak,pk	9
+凹凸棒石	āo;aa tū;aa bàng;mf shí;kp,aa,ak,pk	26
+八颗钻石	bā;pd kē;yg zuàn;jv shí;kp,aa,ak,pk	1
+八面沸石	bā;pd miàn;aa fèi;df shí;kp,aa,ak,pk	7
+白斑霞石	bái;pa,po bān;ww xiá;yj,yy shí;kp,aa,ak,pk	9
+柏比氏石	bǎi;mb bǐ;bb shì;pg shí;kp,aa,ak,pk	6
 白垩矿床	bái;pa,po è;ty kuàng;ug chuáng;gm,mg	8
+白硅钙石	bái;pa,po guī;ug gài;jg shí;kp,aa,ak,pk	5
+白虎魂石	bái;pa,po hǔ;hj hún;gy,yg shí;kp,aa,ak,pk	5
+白虎秘石	bái;pa,po hǔ;hj mì;hb shí;kp,aa,ak,pk	1
+白假霞石	bái;pa,po jiǎ;rj,ry xiá;yj,yy shí;kp,aa,ak,pk	8
+白磷钙石	bái;pa,po lín;ul gài;jg shí;kp,aa,ak,pk	3
+百慕三石	bǎi;ab mù;cx,xm sān;aa shí;kp,aa,ak,pk	13
+百年基石	bǎi;ab nián;ra,pa jī;tq,qt shí;kp,aa,ak,pk	6
+白硼钙石	bái;pa,po péng;up gài;jg shí;kp,aa,ak,pk	9
+白蛇纹石	bái;pa,po shé;it wén;sw shí;kp,aa,ak,pk	1
+白兽魂石	bái;pa,po shòu;ka,bk hún;gy,yg shí;kp,aa,ak,pk	1
+白透辉石	bái;pa,po tòu;zx huī;gj shí;kp,aa,ak,pk	5
+白针柱石	bái;pa,po zhēn;ju zhù;mv shí;kp,aa,ak,pk	7
+白脂晶石	bái;pa,po zhī;ov jīng;oo shí;kp,aa,ak,pk	8
+坂本萤石	bǎn;tf běn;aa,ma yíng;ci,ib shí;kp,aa,ak,pk	6
+板磷钙石	bǎn;mf lín;ul gài;jg shí;kp,aa,ak,pk	9
+半木半石	bàn;bf mù;ad bàn;bf shí;kp,aa,ak,pk	6
+板硼钙石	bǎn;mf péng;up gài;jg shí;kp,aa,ak,pk	7
+板状矿石	bǎn;mf zhuàng;jq,pq,qp kuàng;ug shí;kp,aa,ak,pk	7
+板状岩石	bǎn;mf zhuàng;jq,pq,qp yán;uu shí;kp,aa,ak,pk	10
+保胆取石	bǎo;rd dǎn;od qǔ;ey,ye shí;kp,aa,ak,pk	39
+包林皂石	bāo;gs lín;mm zào;bq shí;kp,aa,ak,pk	7
+包皮结石	bāo;gs pí;ad,ay,vd,vy,ya jié;sj shí;kp,aa,ak,pk	16
+抱石抱石	bào;fb shí;kp,aa,ak,pk bào;fb shí;kp,aa,ak,pk	6
+包水岩石	bāo;gs shuǐ;ad,uv yán;uu shí;kp,aa,ak,pk	9
+钡冰长石	bèi;jb bīng;du cháng;pd shí;kp,aa,ak,pk	7
+北窗竹石	běi;ap,bj chuāng;xx,bx zhú;gg shí;kp,aa,ak,pk	1
+杯迭层石	bēi;mb dié;zu céng;uy shí;kp,aa,ak,pk	7
+钡磷铝石	bèi;jb lín;ul lǚ;jl shí;kp,aa,ak,pk	8
+钡镁锰矿	bèi;jb měi;jm měng;jm kuàng;ug	6
+钡闪叶石	bèi;jb shǎn;mr,rm yè;ku shí;kp,aa,ak,pk	7
+焙烧矿石	bèi;hk,hp shāo;hy kuàng;ug shí;kp,aa,ak,pk	9
+钡十字石	bèi;jb shí;aa zì;bz shí;kp,aa,ak,pk	7
+钡天青石	bèi;jb tiān;ad qīng;of,fo shí;kp,aa,ak,pk	10
+钡铁钛石	bèi;jb tiě;ju tài;jt shí;kp,aa,ak,pk	1
+钡硬锰矿	bèi;jb yìng;ug měng;jm kuàng;ug	14
+铋磷灰石	bì;jb lín;ul huī;hu,uh shí;kp,aa,ak,pk	9
+碧水神石	bì;ub,up shuǐ;ad,uv shén;uu shí;kp,aa,ak,pk	3
+碧玺原石	bì;ub,up xǐ;we,ye yuán;ix shí;kp,aa,ak,pk	23
+变成化石	biàn;wy,yy chéng;gg,wg huà;rb shí;kp,aa,ak,pk	9
+变杆沸石	biàn;wy,yy gān;mg fèi;df shí;kp,aa,ak,pk	9
+变蓝方石	biàn;wy,yy lán;cj fāng;dg,wd,dp,dw shí;kp,aa,ak,pk	10
+变菱沸石	biàn;wy,yy líng;cl,cw fèi;df shí;kp,aa,ak,pk	8
+变色络石	biàn;wy,yy sè;db luò;sg shí;kp,aa,ak,pk	9
+变色柱石	biàn;wy,yy sè;db zhù;mv shí;kp,aa,ak,pk	7
+鞭山移石	biān;gb shān;aa yí;hd shí;kp,aa,ak,pk	15
+变水锆石	biàn;wy,yy shuǐ;ad,uv gào;jg shí;kp,aa,ak,pk	6
+变形砾石	biàn;wy,yy xíng;pk lì;ul,uy shí;kp,aa,ak,pk	10
+变铀钍石	biàn;wy,yy yóu;jy tǔ;jt shí;kp,aa,ak,pk	10
 变质矿床	biàn;wy,yy zhì;bu,pb kuàng;ug chuáng;gm,mg	7
 变质砾岩	biàn;wy,yy zhì;bu,pb lì;ul,uy yán;uu	6
+标志化石	biāo;mu zhì;ux,xu huà;rb shí;kp,aa,ak,pk	9
+标准化石	biāo;mu zhǔn;dv huà;rb shí;kp,aa,ak,pk	8
+别离磐石	bié;dl lí;ws,wl pán;ub shí;kp,aa,ak,pk	8
+冰上溜石	bīng;du shàng;aa,ba liū;dl shí;kp,aa,ak,pk	22
+玻璃陨石	bō;wp li;wl yǔn;ey shí;kp,aa,ak,pk	42
+搏泽君石	bó;fc,ff zé;df jūn;ky shí;kp,aa,ak,pk	8
+不分玉石	bù;ad,ax fēn;bd,db yù;ad,wd shí;kp,aa,ak,pk	1
+补天炼石	bǔ;yb tiān;ad liàn;hd,hj shí;kp,aa,ak,pk	5
+补天神石	bǔ;yb tiān;ad shén;uu shí;kp,aa,ak,pk	23
+补天顽石	bǔ;yb tiān;ad wán;yy shí;kp,aa,ak,pk	9
+补天遗石	bǔ;yb tiān;ad yí;zg shí;kp,aa,ak,pk	9
+不在黄石	bú;ad,ax zài;ta,ut huáng;ad,cb shí;kp,aa,ak,pk	1
+擦痕卵石	cā;fi hén;bg luǎn;pd,md shí;kp,aa,ak,pk	6
+采出矿石	cǎi;mv,vm chū;ck,aa kuàng;ug shí;kp,aa,ak,pk	13
+财富基石	cái;bc fù;bf,bt jī;tq,qt shí;kp,aa,ak,pk	23
+彩虹沙石	cǎi;pc hóng;ig shā;du shí;kp,aa,ak,pk	8
 残积矿床	cán;dj jī;hv kuàng;ug chuáng;gm,mg	9
+残留结石	cán;dj liú;td,tl,lt jié;sj shí;kp,aa,ak,pk	14
 残留矿床	cán;dj liú;td,tl,lt kuàng;ug chuáng;gm,mg	8
+餐云卧石	cān;uy yún;es,se wò;bi,ib shí;kp,aa,ak,pk	11
+沧海顽石	cāng;dc hǎi;dm wán;yy shí;kp,aa,ak,pk	6
+草木竹石	cǎo;cz mù;ad zhú;gg shí;kp,aa,ak,pk	31
 层间砾岩	céng;uy jiān;mo,om lì;ul,uy yán;uu	9
 层间岩溶	céng;uy jiān;mo,om yán;uu róng;dr	5
 层控矿床	céng;uy kòng;fk kuàng;ug chuáng;gm,mg	10
 层内砾岩	céng;uy nèi;ad,kr lì;ul,uy yán;uu	9
 层状矿床	céng;uy zhuàng;jq,pq,qp kuàng;ug chuáng;gm,mg	7
+层状岩石	céng;uy zhuàng;jq,pq,qp yán;uu shí;kp,aa,ak,pk	22
+柴达木石	chái;mc dá;zd mù;ad shí;kp,aa,ak,pk	9
+柴苏辉石	chái;mc sū;cb huī;gj shí;kp,aa,ak,pk	10
 长江水文	cháng;pd jiāng;dg shuǐ;ad,uv wén;wi,dd	20
+常林钻石	cháng;jk,xd,dd lín;mm zuàn;jv shí;kp,aa,ak,pk	13
+昌润钻石	chāng;oo rùn;dr zuàn;jv shí;kp,aa,ak,pk	3
 长石矿床	cháng;pd shí;kp,aa,ak,pk kuàng;ug chuáng;gm,mg	5
+肠胃结石	cháng;oy wèi;ot,to jié;sj shí;kp,aa,ak,pk	3
+超白窿石	chāo;zv bái;pa,po lóng;xl,bl shí;kp,aa,ak,pk	7
+超级晶石	chāo;zv jí;sj jīng;oo shí;kp,aa,ak,pk	21
+超微化石	chāo;zv wēi;xw huà;rb shí;kp,aa,ak,pk	5
+朝鲜辉石	cháo;ou,uo xiǎn;yy huī;gj shí;kp,aa,ak,pk	8
+尘寰遗石	chén;tx,xt huán;bh,by yí;zg shí;kp,aa,ak,pk	7
 沉积矿床	chén;dj,dr jī;hv kuàng;ug chuáng;gm,mg	18
 成层矿床	chéng;gg,wg céng;uy kuàng;ug chuáng;gm,mg	6
+橙钒钙石	chéng;md fán;jf gài;jg shí;kp,aa,ak,pk	8
+橙尖晶石	chéng;md jiān;xd jīng;oo shí;kp,aa,ak,pk	8
+成矿岩石	chéng;gg,wg kuàng;ug yán;uu shí;kp,aa,ak,pk	7
+城市化石	chéng;ti shì;wj huà;rb shí;kp,aa,ak,pk	7
+城中化石	chéng;ti zhōng;aa,ka huà;rb shí;kp,aa,ak,pk	7
+赤城明石	chì;tb,ty chéng;ti míng;oo shí;kp,aa,ak,pk	7
+吃鸡滚石	chī;kq jī;ny,yn gǔn;dg shí;kp,aa,ak,pk	6
+持久化石	chí;fs jiǔ;pd,dd huà;rb shí;kp,aa,ak,pk	6
+齿绿松石	chǐ;vk lǜ;sl sōng;mg shí;kp,aa,ak,pk	9
+赤铁矿石	chì;tb,ty tiě;ju kuàng;ug shí;kp,aa,ak,pk	14
+持续化石	chí;fs xù;sm huà;rb shí;kp,aa,ak,pk	6
+赤银矿石	chì;tb,ty yín;jg kuàng;ug shí;kp,aa,ak,pk	10
+虫管化石	chóng;ad,vd guǎn;vg huà;rb shí;kp,aa,ak,pk	9
 冲积矿床	chōng;dv jī;hv kuàng;ug chuáng;gm,mg	9
+冲积砾石	chōng;dv jī;hv lì;ul,uy shí;kp,aa,ak,pk	8
 充填矿床	chōng;dy,es,wy tián;tv kuàng;ug chuáng;gm,mg	1
+除铁除锰	chú;ey tiě;ju chú;ey měng;jm	4
+储油岩石	chǔ;rv yóu;dy yán;uu shí;kp,aa,ak,pk	10
+穿云裂石	chuān;xy,by yún;es,se liè;yl shí;kp,aa,ak,pk	23
+纯绿柱石	chún;st lǜ;sl zhù;mv shí;kp,aa,ak,pk	5
+纯镁闪石	chún;st měi;jm shǎn;mr,rm shí;kp,aa,ak,pk	7
+纯钠辉石	chún;st nà;jn huī;gj shí;kp,aa,ak,pk	6
+次绿泥石	cì;dq lǜ;sl ní;dn shí;kp,aa,ak,pk	8
+次软岩石	cì;dq ruǎn;iq yán;uu shí;kp,aa,ak,pk	8
+次生化石	cì;dq shēng;na huà;rb shí;kp,aa,ak,pk	9
 次生矿床	cì;dq shēng;na kuàng;ug chuáng;gm,mg	16
+次透辉石	cì;dq tòu;zx huī;gj shí;kp,aa,ak,pk	8
+磁性化石	cí;uz xìng;xu huà;rb shí;kp,aa,ak,pk	8
+磁性矿石	cí;uz xìng;xu kuàng;ug shí;kp,aa,ak,pk	1
+催化神石	cuī;rc huà;rb shén;uu shí;kp,aa,ak,pk	5
+脆绿泥石	cuì;ow lǜ;sl ní;dn shí;kp,aa,ak,pk	10
+脆性岩石	cuì;ow xìng;xu yán;uu shí;kp,aa,ak,pk	7
+大红袍石	dà;ad hóng;sg páo;yb shí;kp,aa,ak,pk	5
+大块矿石	dà;ad kuài;td,tg kuàng;ug shí;kp,aa,ak,pk	10
+大猫眼石	dà;ad māo;qm yǎn;og shí;kp,aa,ak,pk	19
+大漠陨石	dà;ad mò;dm yǔn;ey shí;kp,aa,ak,pk	5
+大型化石	dà;ad xíng;tx huà;rb shí;kp,aa,ak,pk	5
+大禹褐石	dà;ad yǔ;pd hè;yh shí;kp,aa,ak,pk	32
+带了一石	dài;jb le;aa,vu yì;aa shí;kp,aa,ak,pk	13
+代森锰锌	dài;ry sēn;ml měng;jm xīn;jx	27
+带状矿石	dài;jb zhuàng;jq,pq,qp kuàng;ug shí;kp,aa,ak,pk	8
+淡钡钛石	dàn;dy bèi;jb tài;jt shí;kp,aa,ak,pk	6
 单成砾岩	dān;ba,bd chéng;gg,wg lì;ul,uy yán;uu	7
+胆道结石	dǎn;od dào;zu jié;sj shí;kp,aa,ak,pk	29
+胆管结石	dǎn;od guǎn;vg jié;sj shí;kp,aa,ak,pk	39
+单硅钙石	dān;ba,bd guī;ug gài;jg shí;kp,aa,ak,pk	6
+淡硅锰石	dàn;dy guī;ug měng;jm shí;kp,aa,ak,pk	11
+淡红沸石	dàn;dy hóng;sg fèi;df shí;kp,aa,ak,pk	15
+淡蓝顽石	dàn;dy lán;cj wán;yy shí;kp,aa,ak,pk	7
+胆囊结石	dǎn;od náng;ay jié;sj shí;kp,aa,ak,pk	50
+单斜锆石	dān;ba,bd xié;dy gào;jg shí;kp,aa,ak,pk	9
+单斜辉石	dān;ba,bd xié;dy huī;gj shí;kp,aa,ak,pk	21
+单斜闪石	dān;ba,bd xié;dy shǎn;mr,rm shí;kp,aa,ak,pk	9
+单一矿石	dān;ba,bd yī;aa kuàng;ug shí;kp,aa,ak,pk	8
+单栅笔石	dān;ba,bd zhà;mc bǐ;vm shí;kp,aa,ak,pk	9
+当垫脚石	dāng;xx diàn;tv jiǎo;oq shí;kp,aa,ak,pk	32
+盗采砂石	dào;mc cǎi;mv,vm shā;uu shí;kp,aa,ak,pk	22
+到五块石	dào;dv wǔ;aa kuài;td,tg shí;kp,aa,ak,pk	10
+到牙克石	dào;dv yá;ap kè;eg,ux shí;kp,aa,ak,pk	12
+底板岩石	dǐ;gd bǎn;mf yán;uu shí;kp,aa,ak,pk	6
+滴水穿石	dī;dd,dg shuǐ;ad,uv chuān;xy,by shí;kp,aa,ak,pk	43
 地下岩溶	dì;ty xià;ab,ad yán;uu róng;dr	10
+碲锌锰矿	dì;ud xīn;jx měng;jm kuàng;ug	8
+地狱火石	dì;ty yù;qq huǒ;dd shí;kp,aa,ak,pk	7
+地之原石	dì;ty zhī;dd yuán;ix shí;kp,aa,ak,pk	1
+地中基石	dì;ty zhōng;aa,ka jī;tq,qt shí;kp,aa,ak,pk	4
+碘铬钙石	diǎn;ud gè;jg gài;jg shí;kp,aa,ak,pk	3
+电光火石	diàn;ag,og guāng;ea,xw huǒ;dd shí;kp,aa,ak,pk	42
+碘光卤石	diǎn;ud guāng;ea,xw lǔ;ba,bi,sh shí;kp,aa,ak,pk	8
+点金成石	diǎn;hv jīn;ra,pa chéng;gg,wg shí;kp,aa,ak,pk	10
+钓鱼岛石	diào;ju yú;da dǎo;nu,un shí;kp,aa,ak,pk	6
 叠生矿床	dié;qr,qu,yy shēng;na kuàng;ug chuáng;gm,mg	1
 叠套矿床	dié;qr,qu,yy tào;di kuàng;ug chuáng;gm,mg	6
+顶板岩石	dǐng;dy,yd bǎn;mf yán;uu shí;kp,aa,ak,pk	8
+鼎铛玉石	dǐng;oa,od chēng;jd yù;ad,wd shí;kp,aa,ak,pk	16
 顶盘砾岩	dǐng;dy,yd pán;mv,vm lì;ul,uy yán;uu	9
+顶天三石	dǐng;dy,yd tiān;ad sān;aa shí;kp,aa,ak,pk	3
+东北角石	dōng;ad,qx běi;ap,bj jiǎo;dy shí;kp,aa,ak,pk	3
+冻蓝闪石	dòng;dd lán;cj shǎn;mr,rm shí;kp,aa,ak,pk	6
+东临碣石	dōng;ad,qx lín;ao,do jié;uh shí;kp,aa,ak,pk	32
+动物化石	dòng;ly,yl wù;nw huà;rb shí;kp,aa,ak,pk	9
+毒钙镁石	dú;fm gài;jg měi;jm shí;kp,aa,ak,pk	8
+度量钻石	dù;gy liàng;ol zuàn;jv shí;kp,aa,ak,pk	1
+短棒角石	duǎn;ud bàng;mf jiǎo;dy shí;kp,aa,ak,pk	23
+短空晶石	duǎn;ud kōng;xg,bg jīng;oo shí;kp,aa,ak,pk	5
+煅阳起石	duàn;hd yáng;eo qǐ;zj shí;kp,aa,ak,pk	4
+钝钠辉石	dùn;jt nà;jn huī;gj shí;kp,aa,ak,pk	5
+多彩燧石	duō;xx cǎi;pc suì;hs shí;kp,aa,ak,pk	3
+多孔霞石	duō;xx kǒng;zg xiá;yj,yy shí;kp,aa,ak,pk	9
+多孔岩石	duō;xx kǒng;zg yán;uu shí;kp,aa,ak,pk	7
+多蒙药石	duō;xx méng;cm,cu yào;cy shí;kp,aa,ak,pk	32
+鄂信钻石	è;ee,ek xìn;ry zuàn;jv shí;kp,aa,ak,pk	18
+恶运钻石	è;xy yùn;zy zuàn;jv shí;kp,aa,ak,pk	12
+二灰碎石	èr;aa huī;hu,uh suì;uz shí;kp,aa,ak,pk	19
+二氯化锰	èr;aa lǜ;ql huà;rb měng;jm	3
+鲕绿泥石	ér;ye lǜ;sl ní;dn shí;kp,aa,ak,pk	21
+二十四石	èr;aa shí;aa sì;aa,ke shí;kp,aa,ak,pk	12
+二氧化锰	èr;aa yǎng;qy huà;rb měng;jm	43
+发光沸石	fā;ay,fd,vy,yd guāng;ea,xw fèi;df shí;kp,aa,ak,pk	9
+发硼钙石	fā;ay,fd,vy,yd péng;up gài;jg shí;kp,aa,ak,pk	9
+发展基石	fā;ay,fd,vy,yd zhǎn;uy jī;tq,qt shí;kp,aa,ak,pk	32
+反称笔石	fǎn;py chēng;he bǐ;vm shí;kp,aa,ak,pk	10
+反击磁石	fǎn;py jī;aa,eu,fk cí;uz shí;kp,aa,ak,pk	12
+钒锰铅矿	fán;jf měng;jm qiān;jk kuàng;ug	7
+反纹长石	fǎn;py wén;sw cháng;pd shí;kp,aa,ak,pk	8
+仿大理石	fǎng;rf dà;ad lǐ;wl shí;kp,aa,ak,pk	24
+放电锰矿	fàng;wf,fw diàn;ag,og měng;jm kuàng;ug	10
+方锰铅矿	fāng;dg,wd,dp,dw měng;jm qiān;jk kuàng;ug	9
+方锰铁矿	fāng;dg,wd,dp,dw měng;jm tiě;ju kuàng;ug	9
+方霜晶石	fāng;dg,wd,dp,dw shuāng;yx jīng;oo shí;kp,aa,ak,pk	10
+翡翠赌石	fěi;yf cuì;yz dǔ;bv shí;kp,aa,ak,pk	40
+翡翠玉石	fěi;yf cuì;yz yù;ad,wd shí;kp,aa,ak,pk	46
+翡翠原石	fěi;yf cuì;yz yuán;ix shí;kp,aa,ak,pk	51
+非法砂石	fēi;aa fǎ;dq shā;uu shí;kp,aa,ak,pk	14
+飞来神石	fēi;yd lái;am,wb shén;uu shí;kp,aa,ak,pk	27
+飞沙走石	fēi;yd shā;du zǒu;tv shí;kp,aa,ak,pk	43
+飞砂走石	fēi;yd shā;uu zǒu;tv shí;kp,aa,ak,pk	27
 沸石矿床	fèi;df shí;kp,aa,ak,pk kuàng;ug chuáng;gm,mg	1
+分带化石	fēn;bd,db dài;jb huà;rb shí;kp,aa,ak,pk	9
+粉硅镁石	fěn;mf guī;ug měi;jm shí;kp,aa,ak,pk	7
+粉红钻石	fěn;mf hóng;sg zuàn;jv shí;kp,aa,ak,pk	21
 分凝矿床	fēn;bd,db níng;dy kuàng;ug chuáng;gm,mg	8
+粉碎矿石	fěn;mf suì;uz kuàng;ug shí;kp,aa,ak,pk	6
+粉状矿石	fěn;mf zhuàng;jq,pq,qp kuàng;ug shí;kp,aa,ak,pk	1
+分子化石	fēn;bd,db zǐ;aa,vh huà;rb shí;kp,aa,ak,pk	10
+峰大斑石	fēng;uf dà;ad bān;ww shí;kp,aa,ak,pk	4
 风化矿床	fēng;ji huà;rb kuàng;ug chuáng;gm,mg	1
+风化矿石	fēng;ji huà;rb kuàng;ug shí;kp,aa,ak,pk	1
+风化岩石	fēng;ji huà;rb yán;uu shí;kp,aa,ak,pk	21
+风鸟千石	fēng;ji niǎo;na,pa qiān;pa dàn;kp,aa,ak,pk	7
+风信子石	fēng;ji xìn;ry zi;aa,vh shí;kp,aa,ak,pk	11
+风之精石	fēng;ji zhī;dd jīng;mq shí;kp,aa,ak,pk	7
+副钡长石	fù;df,dt bèi;jb cháng;pd shí;kp,aa,ak,pk	8
+拂彼白石	fú;ff bǐ;xp bái;pa,po shí;kp,aa,ak,pk	1
 复成砾岩	fù;pw,rw,wo chéng;gg,wg lì;ul,uy yán;uu	7
+复盖岩石	fù;pw,rw,wo gài;my,ym yán;uu shí;kp,aa,ak,pk	10
 复合矿床	fù;pw,rw,wo hé;rk kuàng;ug chuáng;gm,mg	8
+复合矿石	fù;pw,rw,wo hé;rk kuàng;ug shí;kp,aa,ak,pk	6
+阜康陨石	fù;pu,uk,vu kāng;gl yǔn;ey shí;kp,aa,ak,pk	19
+浮雷炬石	fú;df léi;yt jù;hj shí;kp,aa,ak,pk	4
+富锰闪石	fù;bf,bt měng;jm shǎn;mr,rm shí;kp,aa,ak,pk	7
+复水锰矿	fù;pw,rw,wo shuǐ;ad,uv měng;jm kuàng;ug	8
+富铁矿石	fù;bf,bt tiě;ju kuàng;ug shí;kp,aa,ak,pk	1
+富铁泥石	fù;bf,bt tiě;ju ní;dn shí;kp,aa,ak,pk	5
+符文血石	fú;vf wén;wi,dd xuè;pa,pm shí;kp,aa,ak,pk	3
+负异性石	fù;db yì;cs,sc xìng;xu shí;kp,aa,ak,pk	7
+钆镓榴石	gá;jg jiā;jj liú;ml shí;kp,aa,ak,pk	10
+钙橄榄石	gài;jg gǎn;mg lǎn;ml shí;kp,aa,ak,pk	1
+钙铬榴石	gài;jg gè;jg liú;ml shí;kp,aa,ak,pk	24
+钙硅铈石	gài;jg guī;ug shì;ju shí;kp,aa,ak,pk	7
+钙黄长石	gài;jg huáng;ad,cb cháng;pd shí;kp,aa,ak,pk	1
+钙交沸石	gài;jg jiāo;li,wf,df fèi;df shí;kp,aa,ak,pk	10
+钙孔雀石	gài;jg kǒng;zg què;vx,xv shí;kp,aa,ak,pk	5
+钙磷钙石	gài;jg lín;ul gài;jg shí;kp,aa,ak,pk	1
+钙菱锰矿	gài;jg líng;cl,cw měng;jm kuàng;ug	1
+钙铝榴石	gài;jg lǚ;jl liú;ml shí;kp,aa,ak,pk	31
+钙钠长石	gài;jg nà;jn cháng;pd shí;kp,aa,ak,pk	1
+钙铌水石	gài;jg ní;jn shuǐ;ad,uv shí;kp,aa,ak,pk	8
+钙锘榴石	gài;jg nuò;jr liú;ml shí;kp,aa,ak,pk	6
+钙铍柱石	gài;jg pī;jp zhù;mv shí;kp,aa,ak,pk	7
+钙十字石	gài;jg shí;aa zì;bz shí;kp,aa,ak,pk	6
+钙铁辉石	gài;jg tiě;ju huī;gj shí;kp,aa,ak,pk	15
+钙铁榴石	gài;jg tiě;ju liú;ml shí;kp,aa,ak,pk	28
+钙斜长石	gài;jg xié;dy cháng;pd shí;kp,aa,ak,pk	7
+钙硬锰矿	gài;jg yìng;ug měng;jm kuàng;ug	10
+钙藻化石	gài;jg zǎo;cz huà;rb shí;kp,aa,ak,pk	5
+肝胆结石	gān;og dǎn;od jié;sj shí;kp,aa,ak,pk	32
+肝管结石	gān;og guǎn;vg jié;sj shí;kp,aa,ak,pk	12
+橄榄雨石	gǎn;mg lǎn;ml yǔ;ad shí;kp,aa,ak,pk	5
+肝内结石	gān;og nèi;ad,kr jié;sj shí;kp,aa,ak,pk	15
+钢玉矿石	gāng;jg yù;ad,wd kuàng;ug shí;kp,aa,ak,pk	1
+高峰坠石	gāo;wk fēng;uf zhuì;td shí;kp,aa,ak,pk	10
+锆硅钾石	gào;jg guī;ug jiǎ;jj shí;kp,aa,ak,pk	5
+膏肓泉石	gāo;og,ok,wo huāng;ow quán;bu,ub shí;kp,aa,ak,pk	32
+锆钪钇石	gào;jg kàng;jk yǐ;jy shí;kp,aa,ak,pk	6
+高氯酸锰	gāo;wk lǜ;ql suān;yj,yw měng;jm	18
+高锰酸铵	gāo;wk měng;jm suān;yj,yw ǎn;ja	21
+高锰酸钡	gāo;wk měng;jm suān;yj,yw bèi;jb	16
+高锰酸钙	gāo;wk měng;jm suān;yj,yw gài;jg	18
+高锰酸钾	gāo;wk měng;jm suān;yj,yw jiǎ;jj	56
+高锰酸锂	gāo;wk měng;jm suān;yj,yw lǐ;jl	17
+高锰酸钠	gāo;wk měng;jm suān;yj,yw nà;jn	21
+高锰酸锌	gāo;wk měng;jm suān;yj,yw xīn;jx	9
+高锰酸盐	gāo;wk měng;jm suān;yj,yw yán;mb	33
+高锰酸银	gāo;wk měng;jm suān;yj,yw yín;jg	16
+高能焚石	gāo;wk néng;sb fén;hl shí;kp,aa,ak,pk	3
+睾丸结石	gāo;ps,px wán;jd,pd jié;sj shí;kp,aa,ak,pk	5
+各国化石	gè;wk guó;ky huà;rb shí;kp,aa,ak,pk	4
+铬尖晶石	gè;jg jiān;xd jīng;oo shí;kp,aa,ak,pk	16
+铬磷铝石	gè;jg lín;ul lǚ;jl shí;kp,aa,ak,pk	9
+铬绿帘石	gè;jg lǜ;sl lián;bj,jb,jx,xj shí;kp,aa,ak,pk	7
+铬绿泥石	gè;jg lǜ;sl ní;dn shí;kp,aa,ak,pk	9
+铬铝英石	gè;jg lǚ;jl yīng;cy shí;kp,aa,ak,pk	8
+铬镁榴石	gè;jg měi;jm liú;ml shí;kp,aa,ak,pk	8
 铬铁矿床	gè;jg tiě;ju kuàng;ug chuáng;gm,mg	8
+铬透辉石	gè;jg tòu;zx huī;gj shí;kp,aa,ak,pk	19
+各种结石	gè;wk zhǒng;hv jié;sj shí;kp,aa,ak,pk	29
+功垂金石	gōng;gl,lg chuí;pa jīn;ra,pa shí;kp,aa,ak,pk	32
+躬蹈矢石	gōng;ug dǎo;zj,zy shǐ;pd,pt,rd shí;kp,aa,ak,pk	3
+躬冒矢石	gōng;ug mào;oo shǐ;pd,pt,rd shí;kp,aa,ak,pk	7
+工业矿石	gōng;aa yè;aa kuàng;ug shí;kp,aa,ak,pk	8
+故爱雅石	gù;wg ài;vy yǎ;vy,yv shí;kp,aa,ak,pk	4
+钴方解石	gǔ;jg fāng;dg,wd,dp,dw jiě;jn shí;kp,aa,ak,pk	8
+钴十字石	gǔ;jg shí;aa zì;bz shí;kp,aa,ak,pk	6
+古铜辉石	gǔ;uk tóng;jt huī;gj shí;kp,aa,ak,pk	25
+光大安石	guāng;ea,xw dà;ad ān;bn shí;kp,aa,ak,pk	27
+光壳节石	guāng;ea,xw ké;uj jié;ce shí;kp,aa,ak,pk	8
+硅矾钙石	guī;ug fán;uf gài;jg shí;kp,aa,ak,pk	30
+硅钙镁石	guī;ug gài;jg měi;jm shí;kp,aa,ak,pk	9
+硅钙锡石	guī;ug gài;jg xī;jy shí;kp,aa,ak,pk	7
+贵橄榄石	guì;ba,vb gǎn;mg lǎn;ml shí;kp,aa,ak,pk	21
+硅锆钠石	guī;ug gào;jg nà;jn shí;kp,aa,ak,pk	7
+桂硅钙石	guì;mg guī;ug gài;jg shí;kp,aa,ak,pk	8
+硅黄长石	guī;ug huáng;ad,cb cháng;pd shí;kp,aa,ak,pk	8
+硅孔雀石	guī;ug kǒng;zg què;vx,xv shí;kp,aa,ak,pk	24
+硅磷灰石	guī;ug lín;ul huī;hu,uh shí;kp,aa,ak,pk	9
+硅磷铈石	guī;ug lín;ul shì;ju shí;kp,aa,ak,pk	8
+硅铝钙石	guī;ug lǚ;jl gài;jg shí;kp,aa,ak,pk	5
+硅锰合金	guī;ug měng;jm hé;rk jīn;ra,pa	17
+硅锰铅矿	guī;ug měng;jm qiān;jk kuàng;ug	8
+硅钠锆石	guī;ug nà;jn gào;jg shí;kp,aa,ak,pk	5
+硅钠铌石	guī;ug nà;jn ní;jn shí;kp,aa,ak,pk	8
+硅硼钙石	guī;ug péng;up gài;jg shí;kp,aa,ak,pk	16
+硅硼镁石	guī;ug péng;up měi;jm shí;kp,aa,ak,pk	8
+硅硼钠石	guī;ug péng;up nà;jn shí;kp,aa,ak,pk	5
+硅铅锰矿	guī;ug qiān;jk měng;jm kuàng;ug	10
 硅石矿床	guī;ug shí;kp,aa,ak,pk kuàng;ug chuáng;gm,mg	9
+硅钛钠石	guī;ug tài;jt nà;jn shí;kp,aa,ak,pk	6
+硅锑锰矿	guī;ug tī;jd měng;jm kuàng;ug	9
+硅铁灰石	guī;ug tiě;ju huī;hu,uh shí;kp,aa,ak,pk	12
+硅钍锆石	guī;ug tǔ;jt gào;jg shí;kp,aa,ak,pk	8
+硅稀土石	guī;ug xī;hx tǔ;aa shí;kp,aa,ak,pk	8
+硅锌铝石	guī;ug xīn;jx lǚ;jl shí;kp,aa,ak,pk	6
+硅质岩石	guī;ug zhì;bu,pb yán;uu shí;kp,aa,ak,pk	10
+贵州络石	guì;ba,vb zhōu;id,da luò;sg shí;kp,aa,ak,pk	11
+国家柱石	guó;ky jiā;bu zhù;mv shí;kp,aa,ak,pk	25
+过锰酸铵	guò;zc měng;jm suān;yj,yw ǎn;ja	7
+过锰酸钡	guò;zc měng;jm suān;yj,yw bèi;jb	9
+过锰酸钙	guò;zc měng;jm suān;yj,yw gài;jg	10
+过锰酸钾	guò;zc měng;jm suān;yj,yw jiǎ;jj	23
+过锰酸钠	guò;zc měng;jm suān;yj,yw nà;jn	5
+过锰酸锌	guò;zc měng;jm suān;yj,yw xīn;jx	7
+海岸砾石	hǎi;dm àn;ug lì;ul,uy shí;kp,aa,ak,pk	6
+海边的石	hǎi;dm biān;zl de;bu shí;kp,aa,ak,pk	4
 海底矿床	hǎi;dm dǐ;gd kuàng;ug chuáng;gm,mg	6
+海蓝石的	hǎi;dm lán;cj shí;kp,aa,ak,pk de;bu	32
+海蓝柱石	hǎi;dm lán;cj zhù;mv shí;kp,aa,ak,pk	5
+海绿石化	hǎi;dm lǜ;sl shí;kp,aa,ak,pk huà;rb	8
+海绿石砂	hǎi;dm lǜ;sl shí;kp,aa,ak,pk shā;uu	17
+海之化石	hǎi;dm zhī;dd huà;rb shí;kp,aa,ak,pk	1
+汉白玉石	hàn;dy bái;pa,po yù;ad,wd shí;kp,aa,ak,pk	25
+汉画像石	hàn;dy huà;ak xiàng;rx shí;kp,aa,ak,pk	33
 含金砾岩	hán;kj,rk jīn;ra,pa lì;ul,uy yán;uu	6
+含矿岩石	hán;kj,rk kuàng;ug yán;uu shí;kp,aa,ak,pk	9
+韩陵片石	hán;uw,wu líng;el,ew piàn;pa,pv shí;kp,aa,ak,pk	3
+含锰矿物	hán;kj,rk měng;jm kuàng;ug wù;nw	16
+含锰砂岩	hán;kj,rk měng;jm shā;uu yán;uu	8
+含锰铁矿	hán;kj,rk měng;jm tiě;ju kuàng;ug	1
+寒山片石	hán;bd shān;aa piàn;pa,pv shí;kp,aa,ak,pk	3
+韩山片石	hán;uw,wu shān;aa piàn;pa,pv shí;kp,aa,ak,pk	1
+寒铁矿石	hán;bd tiě;ju kuàng;ug shí;kp,aa,ak,pk	5
+含铁矿石	hán;kj,rk tiě;ju kuàng;ug shí;kp,aa,ak,pk	2
+含盐岩石	hán;kj,rk yán;mb yán;uu shí;kp,aa,ak,pk	5
+含油岩石	hán;kj,rk yóu;dy yán;uu shí;kp,aa,ak,pk	8
+号炼金石	hào;kk liàn;hd,hj jīn;ra,pa shí;kp,aa,ak,pk	8
+合成变石	hé;rk chéng;gg,wg biàn;wy,yy shí;kp,aa,ak,pk	3
+合成沸石	hé;rk chéng;gg,wg fèi;df shí;kp,aa,ak,pk	9
+合成魔石	hé;rk chéng;gg,wg mó;gm,mg shí;kp,aa,ak,pk	3
+合成岩石	hé;rk chéng;gg,wg yán;uu shí;kp,aa,ak,pk	3
+合成钻石	hé;rk chéng;gg,wg zuàn;jv shí;kp,aa,ak,pk	8
+河道砂石	hé;dk dào;zu shā;uu shí;kp,aa,ak,pk	36
+荷福炬石	hé;ch fú;uf,ut jù;hj shí;kp,aa,ak,pk	4
+褐符山石	hè;yh fú;vf shān;aa shí;kp,aa,ak,pk	5
+褐硅锰矿	hè;yh guī;ug měng;jm kuàng;ug	7
+褐堇青石	hè;yh jǐn;ca qīng;of,fo shí;kp,aa,ak,pk	6
+核磷铝石	hé;mh lín;ul lǚ;jl shí;kp,aa,ak,pk	1
+褐硫钙石	hè;yh liú;ui gài;jg shí;kp,aa,ak,pk	1
+褐硫锰矿	hè;yh liú;ui měng;jm kuàng;ug	6
+褐闪石岩	hè;yh shǎn;mr,rm shí;kp,aa,ak,pk yán;uu	8
+褐斜闪石	hè;yh xié;dy shǎn;mr,rm shí;kp,aa,ak,pk	7
+褐锌锰矿	hè;yh xīn;jx měng;jm kuàng;ug	9
+黑电气石	hēi;ad,ha diàn;ag,og qì;py,ry shí;kp,aa,ak,pk	7
+黑贵榴石	hēi;ad,ha guì;ba,vb liú;ml shí;kp,aa,ak,pk	4
+黑金刚石	hēi;ad,ha jīn;ra,pa gāng;dg shí;kp,aa,ak,pk	17
+黑金红石	hēi;ad,ha jīn;ra,pa hóng;sg shí;kp,aa,ak,pk	10
+黑晶脂石	hēi;ad,ha jīng;oo zhī;ov shí;kp,aa,ak,pk	6
+黑色磁石	hēi;ad,ha sè;db cí;uz shí;kp,aa,ak,pk	18
+黑色陨石	hēi;ad,ha sè;db yǔn;ey shí;kp,aa,ak,pk	12
+黑锌锰矿	hēi;ad,ha xīn;jx měng;jm kuàng;ug	1
+痕迹化石	hén;bg jì;zy huà;rb shí;kp,aa,ak,pk	9
 衡水文化	héng;xd,xi shuǐ;ad,uv wén;wi,dd huà;rb	7
+红电气石	hóng;sg diàn;ag,og qì;py,ry shí;kp,aa,ak,pk	6
+红钙长石	hóng;sg gài;jg cháng;pd shí;kp,aa,ak,pk	8
+红硅镁石	hóng;sg guī;ug měi;jm shí;kp,aa,ak,pk	6
+红硅锰矿	hóng;sg guī;ug měng;jm kuàng;ug	8
+红花石蒜	hóng;sg huā;ch shí;kp,aa,ak,pk suàn;cs,cu	28
+红辉沸石	hóng;sg huī;gj fèi;df shí;kp,aa,ak,pk	6
+红坚岭石	hóng;sg jiān;ty lǐng;ul shí;kp,aa,ak,pk	9
+红茎石杉	hóng;sg jīng;cg shí;kp,aa,ak,pk shān;mp	7
+红磷锰矿	hóng;sg lín;ul měng;jm kuàng;ug	6
+红菱沸石	hóng;sg líng;cl,cw fèi;df shí;kp,aa,ak,pk	8
+红绿柱石	hóng;sg lǜ;sl zhù;mv shí;kp,aa,ak,pk	22
+红锰铁矿	hóng;sg měng;jm tiě;ju kuàng;ug	8
+红钠闪石	hóng;sg nà;jn shǎn;mr,rm shí;kp,aa,ak,pk	5
+红色石英	hóng;sg sè;db shí;kp,aa,ak,pk yīng;cy	3
+红色岩石	hóng;sg sè;db yán;uu shí;kp,aa,ak,pk	26
+红砷锰矿	hóng;sg shēn;uu měng;jm kuàng;ug	10
+红石砬子	hóng;sg shí;kp,aa,ak,pk lá;ul zǐ;aa,vh	31
+红石榴水	hóng;sg shí;kp,aa,ak,pk liú;ml shuǐ;ad,uv	23
+红石榴镇	hóng;sg shí;kp,aa,ak,pk liú;ml zhèn;jv	6
+红石守护	hóng;sg shí;kp,aa,ak,pk shǒu;bc hù;fh	7
+红石支路	hóng;sg shí;kp,aa,ak,pk zhī;uy lù;zg	5
+红钛锰矿	hóng;sg tài;jt měng;jm kuàng;ug	6
+红锑锰矿	hóng;sg tī;jd měng;jm kuàng;ug	5
+红纹长石	hóng;sg wén;sw cháng;pd shí;kp,aa,ak,pk	6
+红纤维石	hóng;sg xiān;sq wéi;sv shí;kp,aa,ak,pk	7
+红叶石楠	hóng;sg yè;ku shí;kp,aa,ak,pk nán;mn	33
 后成矿床	hòu;pk chéng;gg,wg kuàng;ug chuáng;gm,mg	5
 后生矿床	hòu;pk shēng;na kuàng;ug chuáng;gm,mg	9
+湖北黄石	hú;dh běi;ap,bj huáng;ad,cb shí;kp,aa,ak,pk	37
+湖北络石	hú;dh běi;ap,bj luò;sg shí;kp,aa,ak,pk	9
+护国柱石	hù;fh guó;ky zhù;mv shí;kp,aa,ak,pk	10
+湖南角石	hú;dh nán;ua,uy jiǎo;dy shí;kp,aa,ak,pk	8
+琥珀彩石	hǔ;wh pò;wb cǎi;pc shí;kp,aa,ak,pk	7
+琥珀化石	hǔ;wh pò;wb huà;rb shí;kp,aa,ak,pk	22
+琥珀原石	hǔ;wh pò;wb yuán;ix shí;kp,aa,ak,pk	36
+花斑彩石	huā;ch bān;ww cǎi;pc shí;kp,aa,ak,pk	15
+花岗岩石	huā;ch gǎng;ug yán;uu shí;kp,aa,ak,pk	35
+华晶钻石	huá;uh jīng;oo zuàn;jv shí;kp,aa,ak,pk	13
+滑蛇纹石	huá;dg shé;it wén;sw shí;kp,aa,ak,pk	5
 滑石矿床	huá;dg shí;kp,aa,ak,pk kuàng;ug chuáng;gm,mg	1
+化为滚石	huà;rb wéi;dd gǔn;dg shí;kp,aa,ak,pk	1
+华夏基石	huá;uh xià;wz,aw jī;tq,qt shí;kp,aa,ak,pk	47
+化学化石	huà;rb xué;dz,zb huà;rb shí;kp,aa,ak,pk	10
+花叶络石	huā;ch yè;ku luò;sg shí;kp,aa,ak,pk	7
+患胆结石	huàn;xi dǎn;od jié;sj shí;kp,aa,ak,pk	36
+缓慢叠石	huǎn;sy màn;xm dié;qr,qu,yy shí;kp,aa,ak,pk	4
+环氧磨石	huán;wb yǎng;qy mó;mu,um shí;kp,aa,ak,pk	22
+环状矿石	huán;wb zhuàng;jq,pq,qp kuàng;ug shí;kp,aa,ak,pk	9
+环状列石	huán;wb zhuàng;jq,pq,qp liè;dd shí;kp,aa,ak,pk	32
+黄电气石	huáng;ad,cb diàn;ag,og qì;py,ry shí;kp,aa,ak,pk	6
+黄高岭石	huáng;ad,cb gāo;wk lǐng;ul shí;kp,aa,ak,pk	7
+黄铬钾石	huáng;ad,cb gè;jg jiǎ;jj shí;kp,aa,ak,pk	6
+黄钾铁石	huáng;ad,cb jiǎ;jj tiě;ju shí;kp,aa,ak,pk	6
+黄绿帘石	huáng;ad,cb lǜ;sl lián;bj,jb,jx,xj shí;kp,aa,ak,pk	5
+黄绿蛭石	huáng;ad,cb lǜ;sl zhì;iv shí;kp,aa,ak,pk	8
+黄山松石	huáng;ad,cb shān;aa sōng;mg shí;kp,aa,ak,pk	16
+黄砷榴石	huáng;ad,cb shēn;uu liú;ml shí;kp,aa,ak,pk	8
 黄铁矿床	huáng;ad,cb tiě;ju kuàng;ug chuáng;gm,mg	10
+黄铁矿石	huáng;ad,cb tiě;ju kuàng;ug shí;kp,aa,ak,pk	7
 黄土岩溶	huáng;ad,cb tǔ;aa yán;uu róng;dr	9
+回城神石	huí;kk chéng;ti shén;uu shí;kp,aa,ak,pk	10
+灰方柱石	huī;hu,uh fāng;dg,wd,dp,dw zhù;mv shí;kp,aa,ak,pk	6
+灰硅钙石	huī;hu,uh guī;ug gài;jg shí;kp,aa,ak,pk	1
+灰贵榴石	huī;hu,uh guì;ba,vb liú;ml shí;kp,aa,ak,pk	9
+辉绿泥石	huī;gj lǜ;sl ní;dn shí;kp,aa,ak,pk	5
+辉闪石类	huī;gj shǎn;mr,rm shí;kp,aa,ak,pk lèi;md	8
 灰岩溶坑	huī;hu,uh yán;uu róng;dr kēng;tk	6
+混合矿石	hùn;dk hé;rk kuàng;ug shí;kp,aa,ak,pk	6
 火山矿床	huǒ;dd shān;aa kuàng;ug chuáng;gm,mg	10
 火山砾岩	huǒ;dd shān;aa lì;ul,uy yán;uu	12
+火山岩石	huǒ;dd shān;aa yán;uu shí;kp,aa,ak,pk	28
+火星陨石	huǒ;dd xīng;ou yǔn;ey shí;kp,aa,ak,pk	41
+火之精石	huǒ;dd zhī;dd jīng;mq shí;kp,aa,ak,pk	3
+火之原石	huǒ;dd zhī;dd yuán;ix shí;kp,aa,ak,pk	11
+吉丙陨石	jí;ku,uk bǐng;an yǔn;ey shí;kp,aa,ak,pk	13
+激光碎石	jī;dj,dw guāng;ea,xw suì;uz shí;kp,aa,ak,pk	23
+吉林磐石	jí;ku,uk lín;mm pán;ub shí;kp,aa,ak,pk	25
+吉林陨石	jí;ku,uk lín;mm yǔn;ey shí;kp,aa,ak,pk	23
+级魔晶石	jí;sj mó;gm,mg jīng;oo shí;kp,aa,ak,pk	10
+级配砂石	jí;sj pèi;yj shā;uu shí;kp,aa,ak,pk	9
+级配碎石	jí;sj pèi;yj suì;uz shí;kp,aa,ak,pk	22
+击石拊石	jī;aa,eu,fk shí;kp,aa,ak,pk fǔ;ff shí;kp,aa,ak,pk	15
+激水漂石	jī;dj,dw shuǐ;ad,uv piāo;dp shí;kp,aa,ak,pk	7
+机弦甩石	jī;mj xián;gx shuǎi;pg shí;kp,aa,ak,pk	7
+基性岩石	jī;tq,qt xìng;xu yán;uu shí;kp,aa,ak,pk	11
+机制砂石	jī;mj zhì;dg,dv shā;uu shí;kp,aa,ak,pk	13
+假白榴石	jiǎ;rj,ry bái;pa,po liú;ml shí;kp,aa,ak,pk	6
+甲贝化石	jiǎ;aa,oa bèi;ad,kr huà;rb shí;kp,aa,ak,pk	1
+钾冰晶石	jiǎ;jj bīng;du jīng;oo shí;kp,aa,ak,pk	9
+钾钙霞石	jiǎ;jj gài;jg xiá;yj,yy shí;kp,aa,ak,pk	1
+假硅灰石	jiǎ;rj,ry guī;ug huī;hu,uh shí;kp,aa,ak,pk	8
 钾碱矿床	jiǎ;jj jiǎn;ux kuàng;ug chuáng;gm,mg	8
 假角砾岩	jiǎ;rj,ry jiǎo;dy lì;ul,uy yán;uu	7
+假晶滑石	jiǎ;rj,ry jīng;oo huá;dg shí;kp,aa,ak,pk	6
+假孔雀石	jiǎ;rj,ry kǒng;zg què;vx,xv shí;kp,aa,ak,pk	8
+假磷灰石	jiǎ;rj,ry lín;ul huī;hu,uh shí;kp,aa,ak,pk	8
+假绿泥石	jiǎ;rj,ry lǜ;sl ní;dn shí;kp,aa,ak,pk	7
+镓钠长石	jiā;jj nà;jn cháng;pd shí;kp,aa,ak,pk	9
+假钠沸石	jiǎ;rj,ry nà;jn fèi;df shí;kp,aa,ak,pk	7
+甲霜锰锌	jiǎ;aa,oa shuāng;yx měng;jm xīn;jx	1
+家无担石	jiā;bu wú;ag,ay,ee dàn;fd shí;kp,aa,ak,pk	17
+家无儋石	jiā;bu wú;ag,ay,ee dàn;rv,ry shí;kp,aa,ak,pk	1
 钾盐矿床	jiǎ;jj yán;mb kuàng;ug chuáng;gm,mg	14
+假胄菊石	jiǎ;rj,ry zhòu;oy jú;cj,cm shí;kp,aa,ak,pk	5
+家族磐石	jiā;bu zú;fu pán;ub shí;kp,aa,ak,pk	1
+建队基石	jiàn;zy duì;er jī;tq,qt shí;kp,aa,ak,pk	31
+坚固磐石	jiān;ty gù;kg pán;ub shí;kp,aa,ak,pk	6
+尖棱菊石	jiān;xd léng;ml,mw jú;cj,cm shí;kp,aa,ak,pk	10
+碱菱沸石	jiǎn;ux líng;cl,cw fèi;df shí;kp,aa,ak,pk	7
+碱锰闪石	jiǎn;ux měng;jm shǎn;mr,rm shí;kp,aa,ak,pk	10
+碱锰闪岩	jiǎn;ux měng;jm shǎn;mr,rm yán;uu	8
+睑内结石	jiǎn;oa,oq nèi;ad,kr jié;sj shí;kp,aa,ak,pk	5
+坚如磐石	jiān;ty rú;nk pán;ub shí;kp,aa,ak,pk	45
+坚若磐石	jiān;ty ruò;cy pán;ub shí;kp,aa,ak,pk	34
+碱性长石	jiǎn;ux xìng;xu cháng;pd shí;kp,aa,ak,pk	22
+碱性辉石	jiǎn;ux xìng;xu huī;gj shí;kp,aa,ak,pk	7
+碱性矿石	jiǎn;ux xìng;xu kuàng;ug shí;kp,aa,ak,pk	6
+坚硬如石	jiān;ty yìng;ug rú;nk shí;kp,aa,ak,pk	30
+坚硬岩石	jiān;ty yìng;ug yán;uu shí;kp,aa,ak,pk	30
+姜范方石	jiāng;ny,yn fàn;ce,cf fāng;dg,wd,dp,dw shí;kp,aa,ak,pk	30
+浆砌块石	jiāng;ux qì;uq kuài;td,tg shí;kp,aa,ak,pk	20
+浆砌片石	jiāng;ux qì;uq piàn;pa,pv shí;kp,aa,ak,pk	19
+江山顽石	jiāng;dg shān;aa wán;yy shí;kp,aa,ak,pk	7
+焦熬投石	jiāo;hv,vh áo;ha,hw tóu;fu shí;kp,aa,ak,pk	5
 交代矿床	jiāo;li,wf,df dài;ry kuàng;ug chuáng;gm,mg	8
+胶硅锰矿	jiāo;oj guī;ug měng;jm kuàng;ug	10
+焦金流石	jiāo;hv,vh jīn;ra,pa liú;di shí;kp,aa,ak,pk	5
+角闪石岩	jiǎo;dy shǎn;mr,rm shí;kp,aa,ak,pk yán;uu	15
+角闪石族	jiǎo;dy shǎn;mr,rm shí;kp,aa,ak,pk zú;fu	7
+胶蛇纹石	jiāo;oj shé;it wén;sw shí;kp,aa,ak,pk	1
 接触矿床	jiē;fq chù;ij,ji kuàng;ug chuáng;gm,mg	7
+结构基石	jié;sj gòu;mg jī;tq,qt shí;kp,aa,ak,pk	3
+结晶岩石	jié;sj jīng;oo yán;uu shí;kp,aa,ak,pk	5
+捷克陨石	jié;fj kè;eg,ux yǔn;ey shí;kp,aa,ak,pk	23
+结膜结石	jié;sj mó;om jié;sj shí;kp,aa,ak,pk	24
+金刚贝石	jīn;ra,pa gāng;dg bèi;ad,kr shí;kp,aa,ak,pk	12
+金红石型	jīn;ra,pa hóng;sg shí;kp,aa,ak,pk xíng;tx	24
+金红石族	jīn;ra,pa hóng;sg shí;kp,aa,ak,pk zú;fu	7
+金黄洞石	jīn;ra,pa huáng;ad,cb dòng;dt shí;kp,aa,ak,pk	6
+金绿柱石	jīn;ra,pa lǜ;sl zhù;mv shí;kp,aa,ak,pk	16
 浸染矿床	jìn;dy rǎn;mg,mj kuàng;ug chuáng;gm,mg	8
+金色玄石	jīn;ra,pa sè;db xuán;wy shí;kp,aa,ak,pk	16
+金色炎石	jīn;ra,pa sè;db yán;hh shí;kp,aa,ak,pk	11
+金色岩石	jīn;ra,pa sè;db yán;uu shí;kp,aa,ak,pk	8
+金沙江石	jīn;ra,pa shā;du jiāng;dg shí;kp,aa,ak,pk	12
+金山松石	jīn;ra,pa shān;aa sōng;mg shí;kp,aa,ak,pk	3
 金属矿床	jīn;ra,pa shǔ;uy kuàng;ug chuáng;gm,mg	9
+金属矿石	jīn;ra,pa shǔ;uy kuàng;ug shí;kp,aa,ak,pk	10
+金司堡石	jīn;ra,pa sī;gk,ka bǎo;tb shí;kp,aa,ak,pk	10
+金髓矿石	jīn;ra,pa suǐ;gs,gz kuàng;ug shí;kp,aa,ak,pk	7
+近卫清石	jìn;zj wèi;ea,ga qīng;dq shí;kp,aa,ak,pk	6
+晶灿钻石	jīng;oo càn;hu zuàn;jv shí;kp,aa,ak,pk	26
 经济矿床	jīng;sg jì;dq kuàng;ug chuáng;gm,mg	7
+精金矿石	jīng;mq jīn;ra,pa kuàng;ug shí;kp,aa,ak,pk	10
+精囊结石	jīng;mq náng;ay jié;sj shí;kp,aa,ak,pk	9
+景赛赌石	jǐng;oj sài;bb dǔ;bv shí;kp,aa,ak,pk	4
+精卫衔石	jīng;mq wèi;ea,ga xián;xi,xj shí;kp,aa,ak,pk	3
+镜下碎石	jìng;jj xià;ab,ad suì;uz shí;kp,aa,ak,pk	16
+韭角闪石	jiǔ;fa jiǎo;dy shǎn;mr,rm shí;kp,aa,ak,pk	8
+九望白石	jiǔ;py wàng;wo bái;pa,po shí;kp,aa,ak,pk	8
+巨大岩石	jù;kk,aa dà;ad yán;uu shí;kp,aa,ak,pk	28
 巨角砾岩	jù;kk,aa jiǎo;dy lì;ul,uy yán;uu	10
+聚马凉石	jù;ed,ey,qd,yq mǎ;aa,vh liáng;dj shí;kp,aa,ak,pk	6
+居锰酸钾	jū;ug měng;jm suān;yj,yw jiǎ;jj	6
+菊丸大石	jú;cj,cm wán;jd,pd dà;ad shí;kp,aa,ak,pk	19
+巨型陨石	jù;kk,aa xíng;tx yǔn;ey shí;kp,aa,ak,pk	20
+绢蛇纹石	juàn;so,sy shé;it wén;sw shí;kp,aa,ak,pk	9
+均匀岩石	jūn;ty yún;gd yán;uu shí;kp,aa,ak,pk	10
+开碑裂石	kāi;ac bēi;ub liè;yl shí;kp,aa,ak,pk	10
+开山采石	kāi;ac shān;aa cǎi;mv,vm shí;kp,aa,ak,pk	45
+开山裂石	kāi;ac shān;aa liè;yl shí;kp,aa,ak,pk	12
+开山劈石	kāi;ac shān;aa pī;db,dx shí;kp,aa,ak,pk	22
+开山碎石	kāi;ac shān;aa suì;uz shí;kp,aa,ak,pk	5
+抗缠绕石	kàng;fk chán;sl rào;sy shí;kp,aa,ak,pk	1
+抗沉默石	kàng;fk chén;dj,dr mò;hq shí;kp,aa,ak,pk	1
+抗缓慢石	kàng;fk huǎn;sy màn;xm shí;kp,aa,ak,pk	1
+抗蚀岩石	kàng;fk shí;ui yán;uu shí;kp,aa,ak,pk	3
+抗虚弱石	kàng;fk xū;hy ruò;gd shí;kp,aa,ak,pk	1
+抗眩晕石	kàng;fk xuàn;ox yùn;oj shí;kp,aa,ak,pk	1
 可采矿床	kě;dk cǎi;mv,vm kuàng;ug chuáng;gm,mg	5
+可采矿石	kě;dk cǎi;mv,vm kuàng;ug shí;kp,aa,ak,pk	9
+珂兰钻石	kē;wk lán;bs,qe zuàn;jv shí;kp,aa,ak,pk	31
+可售矿石	kě;dk shòu;kv,vk kuàng;ug shí;kp,aa,ak,pk	6
+可疑化石	kě;dk yí;bp huà;rb shí;kp,aa,ak,pk	8
+科兹窝石	kē;hd zī;by,qy wō;xn,xg,bn,bg shí;kp,aa,ak,pk	1
+龈上结石	kěn;ig shàng;aa,ba jié;sj shí;kp,aa,ak,pk	11
+龈上牙石	kěn;ig shàng;aa,ba yá;ap shí;kp,aa,ak,pk	22
+龈下牙石	kěn;ig xià;ab,ad yá;ap shí;kp,aa,ak,pk	25
+恐龙化石	kǒng;xg lóng;ad huà;rb shí;kp,aa,ak,pk	64
+孔状岩石	kǒng;zg zhuàng;jq,pq,qp yán;uu shí;kp,aa,ak,pk	10
+块硅镁石	kuài;td,tg guī;ug měi;jm shí;kp,aa,ak,pk	1
+会稽刻石	kuài;ry jī;hv kè;dh shí;kp,aa,ak,pk	13
+块堇青石	kuài;td,tg jǐn;ca qīng;of,fo shí;kp,aa,ak,pk	8
+快乐三石	kuài;xd,xg lè;pd,px sān;aa shí;kp,aa,ak,pk	3
+快用炉石	kuài;xd,xg yòng;kf lú;hh shí;kp,aa,ak,pk	6
 块状矿床	kuài;td,tg zhuàng;jq,pq,qp kuàng;ug chuáng;gm,mg	10
+块状矿石	kuài;td,tg zhuàng;jq,pq,qp kuàng;ug shí;kp,aa,ak,pk	7
 矿床地质	kuàng;ug chuáng;gm,mg dì;ty zhì;bu,pb	9
 矿床分带	kuàng;ug chuáng;gm,mg fēn;bd,db dài;jb	10
 矿床几何	kuàng;ug chuáng;gm,mg jǐ;py hé;rk	10
@@ -155,50 +2332,528 @@ sort: by_weight
 矿床疏干	kuàng;ug chuáng;gm,mg shū;pi,ag,vg,vi gàn;aa	1
 矿床系列	kuàng;ug chuáng;gm,mg xì;ps liè;dd	7
 矿床组合	kuàng;ug chuáng;gm,mg zǔ;sq hé;rk	9
+矿山废石	kuàng;ug shān;aa fèi;gf shí;kp,aa,ak,pk	8
+矿物岩石	kuàng;ug wù;nw yán;uu shí;kp,aa,ak,pk	36
+昆池碣石	kūn;ob chí;dy jié;uh shí;kp,aa,ak,pk	17
+昆仑流石	kūn;ob lún;rb liú;di shí;kp,aa,ak,pk	7
+蜡硅锰矿	là;ix guī;ug měng;jm kuàng;ug	7
+拉沙运石	lā;fl shā;du yùn;zy shí;kp,aa,ak,pk	9
+蜡蛇纹石	là;ix shé;it wén;sw shí;kp,aa,ak,pk	9
+来牙克石	lái;am,wb yá;ap kè;eg,ux shí;kp,aa,ak,pk	5
+蓝彩石灯	lán;cj cǎi;pc shí;kp,aa,ak,pk dēng;hd	7
+蓝电气石	lán;cj diàn;ag,og qì;py,ry shí;kp,aa,ak,pk	8
+蓝方石岩	lán;cj fāng;dg,wd,dp,dw shí;kp,aa,ak,pk yán;uu	10
+蓝缟松石	lán;cj gǎo;sg sōng;mg shí;kp,aa,ak,pk	5
+蓝色陨石	lán;cj sè;db yǔn;ey shí;kp,aa,ak,pk	7
+蓝石蝴蝶	lán;cj shí;kp,aa,ak,pk hú;ih dié;im,iy	7
+蓝石甜点	lán;cj shí;kp,aa,ak,pk tián;ug diǎn;hv	4
+蓝天石油	lán;cj tiān;ad shí;kp,aa,ak,pk yóu;dy	3
+蓝铜矿石	lán;cj tóng;jt kuàng;ug shí;kp,aa,ak,pk	7
+蓝透辉石	lán;cj tòu;zx huī;gj shí;kp,aa,ak,pk	10
+阑尾粪石	lán;mj wěi;um fèn;mg shí;kp,aa,ak,pk	3
+蓝锌锰矿	lán;cj xīn;jx měng;jm kuàng;ug	9
+蓝柘榴石	lán;cj zhè;mu liú;ml shí;kp,aa,ak,pk	16
+劳氏笔石	láo;cl,lb shì;pg bǐ;vm shí;kp,aa,ak,pk	9
+类人造石	lèi;md rén;pd zào;zg shí;kp,aa,ak,pk	9
+镭重晶石	léi;jl zhòng;pa,ql jīng;oo shí;kp,aa,ak,pk	6
+锂冰晶石	lǐ;jl bīng;du jīng;oo shí;kp,aa,ak,pk	7
+利胆排石	lì;hd,dh dǎn;od pái;ff shí;kp,aa,ak,pk	19
+锂电气石	lǐ;jl diàn;ag,og qì;py,ry shí;kp,aa,ak,pk	17
+粒钙长石	lì;ml gài;jg cháng;pd shí;kp,aa,ak,pk	6
+粒硅钙石	lì;ml guī;ug gài;jg shí;kp,aa,ak,pk	6
+粒硅镁石	lì;ml guī;ug měi;jm shí;kp,aa,ak,pk	14
+粒硅锰矿	lì;ml guī;ug měng;jm kuàng;ug	7
+力量晶石	lì;gp liàng;ol jīng;oo shí;kp,aa,ak,pk	7
+力量原石	lì;gp liàng;ol yuán;ix shí;kp,aa,ak,pk	13
+锂磷铝石	lǐ;jl lín;ul lǚ;jl shí;kp,aa,ak,pk	1
+理论基石	lǐ;wl lùn;yl jī;tq,qt shí;kp,aa,ak,pk	27
+锂绿泥石	lǐ;jl lǜ;sl ní;dn shí;kp,aa,ak,pk	3
+锂锰电池	lǐ;jl měng;jm diàn;ag,og chí;dy	21
+锂蒙脱石	lǐ;jl méng;cm,cu tuō;od shí;kp,aa,ak,pk	11
+沥青碎石	lì;dl qīng;of,fo suì;uz shí;kp,aa,ak,pk	16
+利蛇纹石	lì;hd,dh shé;it wén;sw shí;kp,aa,ak,pk	3
+砾石碎石	lì;ul,uy shí;kp,aa,ak,pk suì;uz shí;kp,aa,ak,pk	5
+梨形钻石	lí;ml xíng;pk zuàn;jv shí;kp,aa,ak,pk	22
 砾岩状的	lì;ul,uy yán;uu zhuàng;jq,pq,qp de;bu	5
+荔枝洞石	lì;cl zhī;mv dòng;dt shí;kp,aa,ak,pk	17
+粒状岩石	lì;ml zhuàng;jq,pq,qp yán;uu shí;kp,aa,ak,pk	3
+两大基石	liǎng;ad dà;ad jī;tq,qt shí;kp,aa,ak,pk	27
+寮国化石	liáo;bl,bx guó;ky huà;rb shí;kp,aa,ak,pk	8
+烈火磐石	liè;hl huǒ;dd pán;ub shí;kp,aa,ak,pk	6
+磷铵镁石	lín;ul ǎn;ja měi;jm shí;kp,aa,ak,pk	1
+磷钡铝石	lín;ul bèi;jb lǚ;jl shí;kp,aa,ak,pk	1
+磷钙铝石	lín;ul gài;jg lǚ;jl shí;kp,aa,ak,pk	1
+磷钙镁石	lín;ul gài;jg měi;jm shí;kp,aa,ak,pk	1
+磷钙锰石	lín;ul gài;jg měng;jm shí;kp,aa,ak,pk	9
+鳞高岭石	lín;yl gāo;wk lǐng;ul shí;kp,aa,ak,pk	9
+磷硅钙石	lín;ul guī;ug gài;jg shí;kp,aa,ak,pk	7
+磷褐帘石	lín;ul hè;yh lián;bj,jb,jx,xj shí;kp,aa,ak,pk	6
 淋积矿床	lín;dl jī;hv kuàng;ug chuáng;gm,mg	7
+磷钾铝石	lín;ul jiǎ;jj lǚ;jl shí;kp,aa,ak,pk	1
+磷锂铝石	lín;ul lǐ;jl lǚ;jl shí;kp,aa,ak,pk	5
+磷锂锰矿	lín;ul lǐ;jl měng;jm kuàng;ug	10
+磷铝钙石	lín;ul lǚ;jl gài;jg shí;kp,aa,ak,pk	1
+磷铝锂石	lín;ul lǚ;jl lǐ;jl shí;kp,aa,ak,pk	3
+磷铝锰矿	lín;ul lǚ;jl měng;jm kuàng;ug	5
+磷铝锰石	lín;ul lǚ;jl měng;jm shí;kp,aa,ak,pk	1
+鳞绿泥石	lín;yl lǜ;sl ní;dn shí;kp,aa,ak,pk	9
+磷铝铈石	lín;ul lǚ;jl shì;ju shí;kp,aa,ak,pk	7
+磷铝铁石	lín;ul lǚ;jl tiě;ju shí;kp,aa,ak,pk	1
+磷镁钙石	lín;ul měi;jm gài;jg shí;kp,aa,ak,pk	3
+磷镁铝石	lín;ul měi;jm lǚ;jl shí;kp,aa,ak,pk	1
+磷锰铁矿	lín;ul měng;jm tiě;ju kuàng;ug	6
+磷锰铀矿	lín;ul měng;jm yóu;jy kuàng;ug	6
+磷钠铵石	lín;ul nà;jn ǎn;ja shí;kp,aa,ak,pk	5
+磷钠锰矿	lín;ul nà;jn měng;jm kuàng;ug	8
+磷钠铍石	lín;ul nà;jn pī;jp shí;kp,aa,ak,pk	9
+磷铍钙石	lín;ul pī;jp gài;jg shí;kp,aa,ak,pk	1
+磷铍锰矿	lín;ul pī;jp měng;jm kuàng;ug	9
+磷铁锰矿	lín;ul tiě;ju měng;jm kuàng;ug	7
+临危下石	lín;ao,do wēi;de xià;ab,ad shí;kp,aa,ak,pk	32
+嶙峋怪石	lín;ul xún;ux guài;xu shí;kp,aa,ak,pk	26
+菱钡镁石	líng;cl,cw bèi;jb měi;jm shí;kp,aa,ak,pk	1
+菱独居石	líng;cl,cw dú;qi jū;ug shí;kp,aa,ak,pk	9
+羚硅钡石	líng;yl guī;ug bèi;jb shí;kp,aa,ak,pk	8
+灵魂晶石	líng;hx,xh hún;gy,yg jīng;oo shí;kp,aa,ak,pk	16
+灵魂原石	líng;hx,xh hún;gy,yg yuán;ix shí;kp,aa,ak,pk	5
+菱磷铝石	líng;cl,cw lín;ul lǚ;jl shí;kp,aa,ak,pk	8
+菱锰铁矿	líng;cl,cw měng;jm tiě;ju kuàng;ug	5
+羚砷锌石	líng;yl shēn;uu xīn;jx shí;kp,aa,ak,pk	7
+硫铵钾石	liú;ui ǎn;ja jiǎ;jj shí;kp,aa,ak,pk	8
+硫钙霞石	liú;ui gài;jg xiá;yj,yy shí;kp,aa,ak,pk	9
+硫化矿石	liú;ui huà;rb kuàng;ug shí;kp,aa,ak,pk	7
+流金铄石	liú;di jīn;ra,pa shuò;jl,jy shí;kp,aa,ak,pk	18
+六面神石	liù;wb,dd,db miàn;aa shén;uu shí;kp,aa,ak,pk	7
+流明晶石	liú;di míng;oo jīng;oo shí;kp,aa,ak,pk	3
+硫钠霞石	liú;ui nà;jn xiá;yj,yy shí;kp,aa,ak,pk	8
+硫钠硝石	liú;ui nà;jn xiāo;ux shí;kp,aa,ak,pk	8
+硫硼镁石	liú;ui péng;up měi;jm shí;kp,aa,ak,pk	6
+硫砷铅石	liú;ui shēn;uu qiān;jk shí;kp,aa,ak,pk	9
+硫属化锰	liú;ui shǔ;uy huà;rb měng;jm	7
+柳下漱石	liǔ;mm xià;ab,ad shù;dq,du shí;kp,aa,ak,pk	7
+流星殒石	liú;di xīng;ou yǔn;dy shí;kp,aa,ak,pk	5
 陆地水文	lù;ej dì;ty shuǐ;ad,uv wén;wi,dd	9
+庐山三石	lú;gh shān;aa sān;aa shí;kp,aa,ak,pk	13
+露天采石	lù;yl tiān;ad cǎi;mv,vm shí;kp,aa,ak,pk	10
+卵不敌石	luǎn;pd,md bù;ad,ax dí;wu,uw shí;kp,aa,ak,pk	32
+轮藻化石	lún;il zǎo;cz huà;rb shí;kp,aa,ak,pk	5
+落井投石	luò;cl jǐng;aa,ep tóu;fu shí;kp,aa,ak,pk	7
+落井下石	luò;cl jǐng;aa,ep xià;ab,ad shí;kp,aa,ak,pk	55
+珞珞如石	luò;wg luò;wg rú;nk shí;kp,aa,ak,pk	17
+罗马洞石	luó;sx mǎ;aa,vh dòng;dt shí;kp,aa,ak,pk	19
+螺旋笔石	luó;il xuán;fp bǐ;vm shí;kp,aa,ak,pk	9
+绿电气石	lǜ;sl diàn;ag,og qì;py,ry shí;kp,aa,ak,pk	6
+绿都褐石	lǜ;sl dōu;ev hè;yh shí;kp,aa,ak,pk	6
+绿钙闪石	lǜ;sl gài;jg shǎn;mr,rm shí;kp,aa,ak,pk	8
+绿橄榄石	lǜ;sl gǎn;mg lǎn;ml shí;kp,aa,ak,pk	7
+绿高岭石	lǜ;sl gāo;wk lǐng;ul shí;kp,aa,ak,pk	9
+绿辉石玉	lǜ;sl huī;gj shí;kp,aa,ak,pk yù;ad,wd	3
+绿假霞石	lǜ;sl jiǎ;rj,ry xiá;yj,yy shí;kp,aa,ak,pk	9
+绿尖晶石	lǜ;sl jiān;xd jīng;oo shí;kp,aa,ak,pk	6
+铝蓝闪石	lǚ;jl lán;cj shǎn;mr,rm shí;kp,aa,ak,pk	7
+绿帘石化	lǜ;sl lián;bj,jb,jx,xj shí;kp,aa,ak,pk huà;rb	1
+绿帘石岩	lǜ;sl lián;bj,jb,jx,xj shí;kp,aa,ak,pk yán;uu	6
+绿帘石族	lǜ;sl lián;bj,jb,jx,xj shí;kp,aa,ak,pk zú;fu	4
+绿磷锰矿	lǜ;sl lín;ul měng;jm kuàng;ug	5
+绿硫钒石	lǜ;sl liú;ui fán;jf shí;kp,aa,ak,pk	9
+铝绿泥石	lǚ;jl lǜ;sl ní;dn shí;kp,aa,ak,pk	3
+铝镁锰板	lǚ;jl měi;jm měng;jm bǎn;mf	7
+铝锰合金	lǚ;jl měng;jm hé;rk jīn;ra,pa	18
+绿锰铁矿	lǜ;sl měng;jm tiě;ju kuàng;ug	9
+绿蒙脱石	lǜ;sl méng;cm,cu tuō;od shí;kp,aa,ak,pk	5
+绿钠闪石	lǜ;sl nà;jn shǎn;mr,rm shí;kp,aa,ak,pk	7
+绿泥石化	lǜ;sl ní;dn shí;kp,aa,ak,pk huà;rb	8
+氯羟锰矿	lǜ;ql qiǎng;yg měng;jm kuàng;ug	9
+绿色石门	lǜ;sl sè;db shí;kp,aa,ak,pk mén;dg	6
+铝蛇纹石	lǚ;jl shé;it wén;sw shí;kp,aa,ak,pk	12
+绿石指环	lǜ;sl shí;kp,aa,ak,pk zhǐ;fv huán;wb	3
+铝水钙石	lǚ;jl shuǐ;ad,uv gài;jg shí;kp,aa,ak,pk	9
+绿松石矿	lǜ;sl sōng;mg shí;kp,aa,ak,pk kuàng;ug	24
+绿松石蓝	lǜ;sl sōng;mg shí;kp,aa,ak,pk lán;cj	19
+绿松石色	lǜ;sl sōng;mg shí;kp,aa,ak,pk sè;db	33
+绿松原石	lǜ;sl sōng;mg yuán;ix shí;kp,aa,ak,pk	3
+绿铁榴石	lǜ;sl tiě;ju liú;ml shí;kp,aa,ak,pk	8
+铝铁闪石	lǚ;jl tiě;ju shǎn;mr,rm shí;kp,aa,ak,pk	9
+绿铁闪石	lǜ;sl tiě;ju shǎn;mr,rm shí;kp,aa,ak,pk	7
 铝土矿床	lǚ;jl tǔ;aa kuàng;ug chuáng;gm,mg	3
+铝土矿石	lǚ;jl tǔ;aa kuàng;ug shí;kp,aa,ak,pk	9
+绿纤石相	lǜ;sl xiān;sq shí;kp,aa,ak,pk xiāng;mo	4
+绿雪松石	lǜ;sl xuě;yx sōng;mg shí;kp,aa,ak,pk	7
+绿荧石色	lǜ;sl yíng;ch,hb shí;kp,aa,ak,pk sè;db	10
+铝柘榴石	lǚ;jl zhè;mu liú;ml shí;kp,aa,ak,pk	13
+铝直闪石	lǚ;jl zhí;aa,uq shǎn;mr,rm shí;kp,aa,ak,pk	3
+绿柱石化	lǜ;sl zhù;mv shí;kp,aa,ak,pk huà;rb	8
+玛瑙原石	mǎ;wm nǎo;wi yuán;ix shí;kp,aa,ak,pk	31
+麻杏甘石	má;gl xìng;km,mk gān;aa,ca shí;kp,aa,ak,pk	13
+满洲角石	mǎn;dl zhōu;dv jiǎo;dy shí;kp,aa,ak,pk	9
+芒果小石	máng;cw guǒ;ad,tm xiǎo;ad shí;kp,aa,ak,pk	5
 芒硝矿床	máng;cw xiāo;ux kuàng;ug chuáng;gm,mg	7
+茅坑顽石	máo;cm kēng;tk wán;yy shí;kp,aa,ak,pk	5
+茅坑无石	máo;cm kēng;tk wú;ag,ay,ee shí;kp,aa,ak,pk	6
+毛坯钻石	máo;pg pī;tp zuàn;jv shí;kp,aa,ak,pk	28
+镁白云石	měi;jm bái;pa,po yún;es,se shí;kp,aa,ak,pk	9
+镁冰晶石	měi;jm bīng;du jīng;oo shí;kp,aa,ak,pk	7
+镁电气石	měi;jm diàn;ag,og qì;py,ry shí;kp,aa,ak,pk	17
+镁符山石	měi;jm fú;vf shān;aa shí;kp,aa,ak,pk	8
+镁钙闪石	měi;jm gài;jg shǎn;mr,rm shí;kp,aa,ak,pk	1
+镁橄榄石	měi;jm gǎn;mg lǎn;ml shí;kp,aa,ak,pk	31
+镁硅钙石	měi;jm guī;ug gài;jg shí;kp,aa,ak,pk	8
+镁褐帘石	měi;jm hè;yh lián;bj,jb,jx,xj shí;kp,aa,ak,pk	6
+镁黄长石	měi;jm huáng;ad,cb cháng;pd shí;kp,aa,ak,pk	3
+镁碱沸石	měi;jm jiǎn;ux fèi;df shí;kp,aa,ak,pk	1
+镁尖晶石	měi;jm jiān;xd jīng;oo shí;kp,aa,ak,pk	12
+镁铝榴石	měi;jm lǚ;jl liú;ml shí;kp,aa,ak,pk	27
+镁绿泥石	měi;jm lǜ;sl ní;dn shí;kp,aa,ak,pk	9
+镁锰闪石	měi;jm měng;jm shǎn;mr,rm shí;kp,aa,ak,pk	5
+镁钠闪石	měi;jm nà;jn shǎn;mr,rm shí;kp,aa,ak,pk	1
+镁硼锰石	měi;jm péng;up měng;jm shí;kp,aa,ak,pk	9
+镁蛇纹石	měi;jm shé;it wén;sw shí;kp,aa,ak,pk	3
 煤炭矿床	méi;hm tàn;uh kuàng;ug chuáng;gm,mg	9
+镁铁辉石	měi;jm tiě;ju huī;gj shí;kp,aa,ak,pk	6
+镁铁榴石	měi;jm tiě;ju liú;ml shí;kp,aa,ak,pk	10
+镁铁闪石	měi;jm tiě;ju shǎn;mr,rm shí;kp,aa,ak,pk	18
+镁星叶石	měi;jm xīng;ou yè;ku shí;kp,aa,ak,pk	8
+没有砖石	méi;du yǒu;ou,uo zhuān;uv shí;kp,aa,ak,pk	1
+镁直闪石	měi;jm zhí;aa,uq shǎn;mr,rm shí;kp,aa,ak,pk	6
+锰白云石	měng;jm bái;pa,po yún;es,se shí;kp,aa,ak,pk	7
+梦窗疏石	mèng;mx,xl chuāng;xx,bx shū;pi,ag,vg,vi shí;kp,aa,ak,pk	20
+锰磁铁矿	měng;jm cí;uz tiě;ju kuàng;ug	1
+锰方解石	měng;jm fāng;dg,wd,dp,dw jiě;jn shí;kp,aa,ak,pk	6
+锰方硼石	měng;jm fāng;dg,wd,dp,dw péng;up shí;kp,aa,ak,pk	6
+锰钙辉石	měng;jm gài;jg huī;gj shí;kp,aa,ak,pk	1
+锰橄榄石	měng;jm gǎn;mg lǎn;ml shí;kp,aa,ak,pk	23
+锰钢辙叉	měng;jm gāng;jg zhé;iw chā;dy,yd	1
+锰硅铝矿	měng;jm guī;ug lǚ;jl kuàng;ug	7
+锰硅锌矿	měng;jm guī;ug xīn;jx kuàng;ug	8
+锰黑云母	měng;jm hēi;ad,ha yún;es,se mǔ;ad,vd	7
+锰红帘石	měng;jm hóng;sg lián;bj,jb,jx,xj shí;kp,aa,ak,pk	9
+锰红柱石	měng;jm hóng;sg zhù;mv shí;kp,aa,ak,pk	6
+锰化合物	měng;jm huà;rb hé;rk wù;nw	36
+锰尖晶石	měng;jm jiān;xd jīng;oo shí;kp,aa,ak,pk	19
+锰磷灰石	měng;jm lín;ul huī;hu,uh shí;kp,aa,ak,pk	1
+锰磷锂矿	měng;jm lín;ul lǐ;jl kuàng;ug	6
+锰菱铁矿	měng;jm líng;cl,cw tiě;ju kuàng;ug	9
+锰铝榴石	měng;jm lǚ;jl liú;ml shí;kp,aa,ak,pk	28
+锰铝榴岩	měng;jm lǚ;jl liú;ml yán;uu	7
+锰绿泥石	měng;jm lǜ;sl ní;dn shí;kp,aa,ak,pk	8
+锰绿铁矿	měng;jm lǜ;sl tiě;ju kuàng;ug	10
+锰镁闪石	měng;jm měi;jm shǎn;mr,rm shí;kp,aa,ak,pk	1
+锰镁锌矾	měng;jm měi;jm xīn;jx fán;uf	10
+锰砂滤料	měng;jm shā;uu lǜ;dl liào;md	5
+锰砷锑矿	měng;jm shēn;uu tī;jd kuàng;ug	8
+锰石榴石	měng;jm shí;kp,aa,ak,pk liú;ml shí;kp,aa,ak,pk	7
+锰水镁石	měng;jm shuǐ;ad,uv měi;jm shí;kp,aa,ak,pk	6
+锰水磨石	měng;jm shuǐ;ad,uv mó;mu,um shí;kp,aa,ak,pk	7
+锰酸镧锶	měng;jm suān;yj,yw lán;jl sī;js	5
+锰酸锶镧	měng;jm suān;yj,yw sī;js lán;jl	7
+锰钽铁矿	měng;jm tǎn;jd tiě;ju kuàng;ug	1
+锰铁菱石	měng;jm tiě;ju líng;cl,cw shí;kp,aa,ak,pk	6
+锰铁榴石	měng;jm tiě;ju liú;ml shí;kp,aa,ak,pk	1
+锰铁闪石	měng;jm tiě;ju shǎn;mr,rm shí;kp,aa,ak,pk	1
+锰铁锌矾	měng;jm tiě;ju xīn;jx fán;uf	9
+锰铜合金	měng;jm tóng;jt hé;rk jīn;ra,pa	5
+锰纤锌矿	měng;jm xiān;sq xīn;jx kuàng;ug	6
+锰锌辉石	měng;jm xīn;jx huī;gj shí;kp,aa,ak,pk	1
+锰氧化物	měng;jm yǎng;qy huà;rb wù;nw	32
+锰叶泥石	měng;jm yè;ku ní;dn shí;kp,aa,ak,pk	7
+米白窿石	mǐ;dd bái;pa,po lóng;xl,bl shí;kp,aa,ak,pk	9
+蜜黄长石	mì;ib,bi huáng;ad,cb cháng;pd shí;kp,aa,ak,pk	7
+米黄洞石	mǐ;dd huáng;ad,cb dòng;dt shí;kp,aa,ak,pk	3
+米克菊石	mǐ;dd kè;eg,ux jú;cj,cm shí;kp,aa,ak,pk	5
+蜜蜡原石	mì;ib,bi là;ix yuán;ix shí;kp,aa,ak,pk	39
+泌尿结石	mì;db niào;uu jié;sj shí;kp,aa,ak,pk	38
+米卅五石	mǐ;dd sà;aa,ia wǔ;aa shí;kp,aa,ak,pk	1
+秘银矿石	mì;hb yín;jg kuàng;ug shí;kp,aa,ak,pk	7
+缅甸玉石	miǎn;sm diàn;gt,tg yù;ad,wd shí;kp,aa,ak,pk	23
+眠云卧石	mián;om yún;es,se wò;bi,ib shí;kp,aa,ak,pk	3
+命运云石	mìng;re yùn;zy yún;es,se shí;kp,aa,ak,pk	9
+蘑菇岩石	mó;cm gū;cg yán;uu shí;kp,aa,ak,pk	9
 磨砾岩相	mó;mu,um lì;ul,uy yán;uu xiāng;mo	10
+墨染白石	mò;th,ht rǎn;mg,mj bái;pa,po shí;kp,aa,ak,pk	5
+磨石燧石	mó;mu,um shí;kp,aa,ak,pk suì;hs shí;kp,aa,ak,pk	10
+魔仙彩石	mó;gm,mg xiān;ru cǎi;pc shí;kp,aa,ak,pk	5
+莫依桑石	mò;cd,ct yī;ry sāng;mr,mu,ym shí;kp,aa,ak,pk	4
+模铸化石	mó;mm zhù;ju huà;rb shí;kp,aa,ak,pk	22
+慕白蓝石	mù;cx,xm bái;pa,po lán;cj shí;kp,aa,ak,pk	5
+钼方钠石	mù;jo fāng;dg,wd,dp,dw nà;jn shí;kp,aa,ak,pk	7
+钠矾硝石	nà;jn fán;uf xiāo;ux shí;kp,aa,ak,pk	5
+钠钙长石	nà;jn gài;jg cháng;pd shí;kp,aa,ak,pk	5
+钠钙闪石	nà;jn gài;jg shǎn;mr,rm shí;kp,aa,ak,pk	14
+钠铬辉石	nà;jn gè;jg huī;gj shí;kp,aa,ak,pk	24
+钠菱沸石	nà;jn líng;cl,cw fèi;df shí;kp,aa,ak,pk	8
+钠明矾石	nà;jn míng;oo fán;uf shí;kp,aa,ak,pk	5
+钠硼钙石	nà;jn péng;up gài;jg shí;kp,aa,ak,pk	10
+钠硼解石	nà;jn péng;up jiě;jn shí;kp,aa,ak,pk	10
+钠烧绿石	nà;jn shāo;hy lǜ;sl shí;kp,aa,ak,pk	9
+钠铁闪石	nà;jn tiě;ju shǎn;mr,rm shí;kp,aa,ak,pk	5
+钠透长石	nà;jn tòu;zx cháng;pd shí;kp,aa,ak,pk	5
+钠透闪石	nà;jn tòu;zx shǎn;mr,rm shí;kp,aa,ak,pk	7
+钠正长石	nà;jn zhèng;av zhǎng;pd shí;kp,aa,ak,pk	6
+奶油砂石	nǎi;nn yóu;dy shā;uu shí;kp,aa,ak,pk	8
+南丹陨石	nán;ua,uy dān;pd yǔn;ey shí;kp,aa,ak,pk	15
+南极陨石	nán;ua,uy jí;mj yǔn;ey shí;kp,aa,ak,pk	23
 内成矿床	nèi;ad,kr chéng;gg,wg kuàng;ug chuáng;gm,mg	9
 内生矿床	nèi;ad,kr shēng;na kuàng;ug chuáng;gm,mg	6
+能量晶石	néng;sb liàng;ol jīng;oo shí;kp,aa,ak,pk	19
+泥结碎石	ní;dn jié;sj suì;uz shí;kp,aa,ak,pk	18
 铌钽矿床	ní;jn tǎn;jd kuàng;ug chuáng;gm,mg	16
+铌铁锰矿	ní;jn tiě;ju měng;jm kuàng;ug	6
+霓透辉石	ní;ye tòu;zx huī;gj shí;kp,aa,ak,pk	7
+铌易解石	ní;jn yì;ow jiě;jn shí;kp,aa,ak,pk	8
 粘土矿床	nián;mv tǔ;aa kuàng;ug chuáng;gm,mg	8
+年夜理石	nián;ra,pa yè;wd,ww lǐ;wl shí;kp,aa,ak,pk	32
+尿道结石	niào;uu dào;zu jié;sj shí;kp,aa,ak,pk	42
+尿路结石	niào;uu lù;zg jié;sj shí;kp,aa,ak,pk	47
+尿酸结石	niào;uu suān;yj,yw jié;sj shí;kp,aa,ak,pk	33
+镍尖晶石	niè;jm,jn jiān;xd jīng;oo shí;kp,aa,ak,pk	8
+镍绿泥石	niè;jm,jn lǜ;sl ní;dn shí;kp,aa,ak,pk	5
+镍锰电池	niè;jm,jn měng;jm diàn;ag,og chí;dy	3
+镍碳铁石	niè;jm,jn tàn;ut tiě;ju shí;kp,aa,ak,pk	6
+镍铁陨石	niè;jm,jn tiě;ju yǔn;ey shí;kp,aa,ak,pk	14
+怒猊抉石	nù;xn ní;qe jué;fd,fg shí;kp,aa,ak,pk	3
+女娲彩石	nǚ;aa,vh wā;ng,nn cǎi;pc shí;kp,aa,ak,pk	5
+女娲炼石	nǚ;aa,vh wā;ng,nn liàn;hd,hj shí;kp,aa,ak,pk	24
+女医仓石	nǚ;aa,vh yī;ku cāng;re shí;kp,aa,ak,pk	9
+欧阳中石	ōu;qq yáng;eo zhōng;aa,ka shí;kp,aa,ak,pk	40
+番禺大石	pān;tb,pt,tm yú;ad,od dà;ad shí;kp,aa,ak,pk	25
+膀胱结石	páng;op guāng;og jié;sj shí;kp,aa,ak,pk	42
+佩戴玉石	pèi;rb,rj dài;gg,gy yù;ad,wd shí;kp,aa,ak,pk	30
 喷流矿床	pēn;kb liú;di kuàng;ug chuáng;gm,mg	6
 喷气矿床	pēn;kb qì;py,ry kuàng;ug chuáng;gm,mg	10
+硼符山石	péng;up fú;vf shān;aa shí;kp,aa,ak,pk	7
+澎湖文石	pēng;dp hú;dh wén;wi,dd shí;kp,aa,ak,pk	25
+硼钾镁石	péng;up jiǎ;jj měi;jm shí;kp,aa,ak,pk	8
+硼磷镁石	péng;up lín;ul měi;jm shí;kp,aa,ak,pk	8
+硼铝镁石	péng;up lǚ;jl měi;jm shí;kp,aa,ak,pk	3
+硼镁锰矿	péng;up měi;jm měng;jm kuàng;ug	7
+硼钠钙石	péng;up nà;jn gài;jg shí;kp,aa,ak,pk	1
+硼酸钙石	péng;up suān;yj,yw gài;jg shí;kp,aa,ak,pk	7
+膨胀蛭石	péng;op zhàng;oi zhì;iv shí;kp,aa,ak,pk	18
+彭志忠石	péng;pd,up zhì;ux,xu zhōng;xv shí;kp,aa,ak,pk	9
+铍尖晶石	pī;jp jiān;xd jīng;oo shí;kp,aa,ak,pk	9
+铍镁晶石	pī;jp měi;jm jīng;oo shí;kp,aa,ak,pk	3
+片硅铝石	piàn;pa,pv guī;ug lǚ;jl shí;kp,aa,ak,pk	5
+片水锰矿	piàn;pa,pv shuǐ;ad,uv měng;jm kuàng;ug	6
+片言金石	piàn;pa,pv yán;da,dk,wk jīn;ra,pa shí;kp,aa,ak,pk	1
+破碎岩石	pò;up suì;uz yán;uu shí;kp,aa,ak,pk	20
+濮水顽石	pú;df,dp shuǐ;ad,uv wán;yy shí;kp,aa,ak,pk	6
+葡萄硼石	pú;cp táo;cf,ct péng;up shí;kp,aa,ak,pk	7
+普通辉石	pǔ;ob,bo tōng;zy huī;gj shí;kp,aa,ak,pk	24
+七彩晶石	qī;ag cǎi;pc jīng;oo shí;kp,aa,ak,pk	1
+奇峰怪石	qí;dk fēng;uf guài;xu shí;kp,aa,ak,pk	41
+奇峰异石	qí;dk fēng;uf yì;cs,sc shí;kp,aa,ak,pk	36
+栖管化石	qī;mx guǎn;vg huà;rb shí;kp,aa,ak,pk	9
 气化矿床	qì;py,ry huà;rb kuàng;ug chuáng;gm,mg	8
+七煌炉石	qī;ag huáng;hh lú;hh shí;kp,aa,ak,pk	32
+奇山怪石	qí;dk shān;aa guài;xu shí;kp,aa,ak,pk	26
+奇山异石	qí;dk shān;aa yì;cs,sc shí;kp,aa,ak,pk	28
+奇松怪石	qí;dk sōng;mg guài;xu shí;kp,aa,ak,pk	39
+其他玉石	qí;ba,ad,hb tā;ry yù;ad,wd shí;kp,aa,ak,pk	29
 气体矿床	qì;py,ry tǐ;rb kuàng;ug chuáng;gm,mg	5
 气象水文	qì;py,ry xiàng;du,pd,ua shuǐ;ad,uv wén;wi,dd	41
+奇岩怪石	qí;dk yán;uu guài;xu shí;kp,aa,ak,pk	31
 浅层岩溶	qiǎn;dj céng;uy yán;uu róng;dr	9
 浅成矿床	qiǎn;dj chéng;gg,wg kuàng;ug chuáng;gm,mg	1
+浅红晶石	qiǎn;dj hóng;sg jīng;oo shí;kp,aa,ak,pk	5
+千斤巨石	qiān;pa jīn;pa jù;kk,aa shí;kp,aa,ak,pk	13
+铅蓝方石	qiān;jk lán;cj fāng;dg,wd,dp,dw shí;kp,aa,ak,pk	10
+浅蓝暹石	qiǎn;dj lán;cj xiān;zv shí;kp,aa,ak,pk	5
 铅锌矿床	qiān;jk xīn;jx kuàng;ug chuáng;gm,mg	19
+铅锌矿石	qiān;jk xīn;jx kuàng;ug shí;kp,aa,ak,pk	12
+羟硅锰石	qiǎng;yg guī;ug měng;jm shí;kp,aa,ak,pk	6
+羟硅铍石	qiǎng;yg guī;ug pī;jp shí;kp,aa,ak,pk	8
+羟磷灰石	qiǎng;yg lín;ul huī;hu,uh shí;kp,aa,ak,pk	29
+羟磷铝石	qiǎng;yg lín;ul lǚ;jl shí;kp,aa,ak,pk	1
+羟砷锌石	qiǎng;yg shēn;uu xīn;jx shí;kp,aa,ak,pk	17
+蔷薇辉石	qiáng;ch wēi;cw huī;gj shí;kp,aa,ak,pk	31
+蔷薇榴石	qiáng;ch wēi;cw liú;ml shí;kp,aa,ak,pk	7
+敲金击石	qiāo;gy,pg jīn;ra,pa jī;aa,eu,fk shí;kp,aa,ak,pk	15
+秦汴锈石	qín;hf,fh biàn;db xiù;jx shí;kp,aa,ak,pk	6
+亲当矢石	qīn;lm dāng;xx shǐ;pd,pt,rd shí;kp,aa,ak,pk	3
+亲冒矢石	qīn;lm mào;oo shǐ;pd,pt,rd shí;kp,aa,ak,pk	19
+清除矸石	qīng;dq chú;ey gān;ug shí;kp,aa,ak,pk	7
+清除岩石	qīng;dq chú;ey yán;uu shí;kp,aa,ak,pk	10
+青岛金石	qīng;of,fo dǎo;nu,un jīn;ra,pa shí;kp,aa,ak,pk	17
+青符山石	qīng;of,fo fú;vf shān;aa shí;kp,aa,ak,pk	7
+青缸炬石	qīng;of,fo gāng;fg jù;hj shí;kp,aa,ak,pk	4
+清理矸石	qīng;dq lǐ;wl gān;ug shí;kp,aa,ak,pk	8
+清理岩石	qīng;dq lǐ;wl yán;uu shí;kp,aa,ak,pk	5
+青磷灰石	qīng;of,fo lín;ul huī;hu,uh shí;kp,aa,ak,pk	9
+青龙魂石	qīng;of,fo lóng;ad hún;gy,yg shí;kp,aa,ak,pk	5
+青铝闪石	qīng;of,fo lǚ;jl shǎn;mr,rm shí;kp,aa,ak,pk	6
+青钠闪石	qīng;of,fo nà;jn shǎn;mr,rm shí;kp,aa,ak,pk	5
+清水白石	qīng;dq shuǐ;ad,uv bái;pa,po shí;kp,aa,ak,pk	4
+青溪白石	qīng;of,fo xī;dx bái;pa,po shí;kp,aa,ak,pk	6
+氢氧钙石	qīng;qg yǎng;qy gài;jg shí;kp,aa,ak,pk	8
+氢氧化锰	qīng;qg yǎng;qy huà;rb měng;jm	21
+氢氧镁石	qīng;qg yǎng;qy měi;jm shí;kp,aa,ak,pk	6
+球队基石	qiú;wq duì;er jī;tq,qt shí;kp,aa,ak,pk	26
+球粒陨石	qiú;wq lì;ml yǔn;ey shí;kp,aa,ak,pk	46
+球砷锰矿	qiú;wq shēn;uu měng;jm kuàng;ug	5
+瞿人犁石	qú;vo,ov,vm rén;pd lí;nl shí;kp,aa,ak,pk	6
 曲水文华	qǔ;aa,oa shuǐ;ad,uv wén;wi,dd huá;uh	3
+去牙克石	qù;ts yá;ap kè;eg,ux shí;kp,aa,ak,pk	10
+泉胶岩石	quán;bu,ub jiāo;oj yán;uu shí;kp,aa,ak,pk	7
 燃料矿床	rán;hr liào;md kuàng;ug chuáng;gm,mg	7
 热泉矿床	rè;hv quán;bu,ub kuàng;ug chuáng;gm,mg	7
 热液矿床	rè;hv yè;dy kuàng;ug chuáng;gm,mg	9
+人非木石	rén;pd fēi;aa mù;ad shí;kp,aa,ak,pk	23
+人非土石	rén;pd fēi;aa tǔ;aa shí;kp,aa,ak,pk	32
+人工砂石	rén;pd gōng;aa shā;uu shí;kp,aa,ak,pk	32
+韧皮络石	rèn;wr pí;ad,ay,vd,vy,ya luò;sg shí;kp,aa,ak,pk	9
+人造沸石	rén;pd zào;zg fèi;df shí;kp,aa,ak,pk	6
+日光榴石	rì;aa,or,ri guāng;ea,xw liú;ml shí;kp,aa,ak,pk	10
+熔化矿石	róng;hr huà;rb kuàng;ug shí;kp,aa,ak,pk	5
 熔角砾岩	róng;hr jiǎo;dy lì;ul,uy yán;uu	11
 熔离矿床	róng;hr lí;ws,wl kuàng;ug chuáng;gm,mg	10
 熔析矿床	róng;hr xī;mj kuàng;ug chuáng;gm,mg	7
+熔岩巨石	róng;hr yán;uu jù;kk,aa shí;kp,aa,ak,pk	5
+肉红长石	ròu;ad,kr hóng;sg cháng;pd shí;kp,aa,ak,pk	8
+肉色柱石	ròu;ad,kr sè;db zhù;mv shí;kp,aa,ak,pk	6
+乳埃洛石	rǔ;gf,fg āi;tu,ty luò;dg shí;kp,aa,ak,pk	9
+如大理石	rú;nk dà;ad lǐ;wl shí;kp,aa,ak,pk	23
+如何铁石	rú;nk hé;rk tiě;ju shí;kp,aa,ak,pk	1
+蠕绿泥石	rú;ix lǜ;sl ní;dn shí;kp,aa,ak,pk	6
+如水投石	rú;nk shuǐ;ad,uv tóu;fu shí;kp,aa,ak,pk	1
+如意钻石	rú;nk yì;xy,lx zuàn;jv shí;kp,aa,ak,pk	6
+软绿脱石	ruǎn;iq lǜ;sl tuō;od shí;kp,aa,ak,pk	8
+软弱岩石	ruǎn;iq ruò;gd yán;uu shí;kp,aa,ak,pk	10
+软水铝石	ruǎn;iq shuǐ;ad,uv lǚ;jl shí;kp,aa,ak,pk	10
+散布漂石	sàn;wo bù;ju,uj piāo;dp shí;kp,aa,ak,pk	10
+三大基石	sān;aa dà;ad jī;tq,qt shí;kp,aa,ak,pk	32
+三和松石	sān;aa hé;hk sōng;mg shí;kp,aa,ak,pk	3
+三泉中石	sān;aa quán;bu,ub zhōng;aa,ka shí;kp,aa,ak,pk	32
+三三三石	sān;aa sān;aa sān;aa shí;kp,aa,ak,pk	5
+三水铝石	sān;aa shuǐ;ad,uv lǚ;jl shí;kp,aa,ak,pk	14
+三羰基锰	sān;aa tāng;yt jī;tq,qt měng;jm	8
+三斜闪石	sān;aa xié;dy shǎn;mr,rm shí;kp,aa,ak,pk	6
+三斜霞石	sān;aa xié;dy xiá;yj,yy shí;kp,aa,ak,pk	6
+瑟银矿石	sè;wb yín;jg kuàng;ug shí;kp,aa,ak,pk	9
+沙方解石	shā;du fāng;dg,wd,dp,dw jiě;jn shí;kp,aa,ak,pk	7
+沙佛莱石	shā;du fó;rf lái;cl shí;kp,aa,ak,pk	24
+沙弗莱石	shā;du fú;aa,gd,vu lái;cl shí;kp,aa,ak,pk	36
 砂积矿床	shā;uu jī;hv kuàng;ug chuáng;gm,mg	1
+砂夹碎石	shā;uu jiā;fb,ar suì;uz shí;kp,aa,ak,pk	5
 砂金矿床	shā;uu jīn;ra,pa kuàng;ug chuáng;gm,mg	5
 砂锡矿床	shā;uu xī;jy kuàng;ug chuáng;gm,mg	1
+筛选矿石	shāi;vu xuǎn;zx kuàng;ug shí;kp,aa,ak,pk	6
 山地水文	shān;aa dì;ty shuǐ;ad,uv wén;wi,dd	6
+闪电管石	shǎn;mr,rm diàn;ag,og guǎn;vg shí;kp,aa,ak,pk	9
+山顶乱石	shān;aa dǐng;dy,yd luàn;ug shí;kp,aa,ak,pk	32
+珊瑚碎石	shān;wc hú;wh suì;uz shí;kp,aa,ak,pk	16
+山间一石	shān;aa jiān;mo,om yì;aa shí;kp,aa,ak,pk	6
+闪石化酌	shǎn;mr,rm shí;kp,aa,ak,pk huà;rb zhuó;yu	9
+山石山石	shān;aa shí;kp,aa,ak,pk shān;aa shí;kp,aa,ak,pk	6
+闪石石棉	shǎn;mr,rm shí;kp,aa,ak,pk shí;kp,aa,ak,pk mián;mb,mj	5
 山水文化	shān;aa shuǐ;ad,uv wén;wi,dd huà;rb	59
 山水文园	shān;aa shuǐ;ad,uv wén;wi,dd yuán;ky	30
 山水文苑	shān;aa shuǐ;ad,uv wén;wi,dd yuàn;ce,cy	14
+山体岩石	shān;aa tǐ;rb yán;uu shí;kp,aa,ak,pk	27
+山下顽石	shān;aa xià;ab,ad wán;yy shí;kp,aa,ak,pk	7
+山中一石	shān;aa zhōng;aa,ka yì;aa shí;kp,aa,ak,pk	6
+上八洞石	shàng;aa,ba bā;pd dòng;dt shí;kp,aa,ak,pk	9
+商品矿石	shāng;wk,lk,dk pǐn;kk kuàng;ug shí;kp,aa,ak,pk	7
 深成矿床	shēn;dm chéng;gg,wg kuàng;ug chuáng;gm,mg	7
+身当矢石	shēn;pp dāng;xx shǐ;pd,pt,rd shí;kp,aa,ak,pk	9
+身非木石	shēn;pp fēi;aa mù;ad shí;kp,aa,ak,pk	10
+砷钙镁石	shēn;uu gài;jg měi;jm shí;kp,aa,ak,pk	17
+肾硅锰矿	shèn;oy guī;ug měng;jm kuàng;ug	10
+砷硅锰矿	shēn;uu guī;ug měng;jm kuàng;ug	8
+深海沉石	shēn;dm hǎi;dm chén;dj,dr shí;kp,aa,ak,pk	7
+深红榴石	shēn;dm hóng;sg liú;ml shí;kp,aa,ak,pk	10
+深蓝燧石	shēn;dm lán;cj suì;hs shí;kp,aa,ak,pk	6
+深绿辉石	shēn;dm lǜ;sl huī;gj shí;kp,aa,ak,pk	9
+砷锰钙石	shēn;uu měng;jm gài;jg shí;kp,aa,ak,pk	1
+砷锰铅矿	shēn;uu měng;jm qiān;jk kuàng;ug	6
+砷硼钙石	shēn;uu péng;up gài;jg shí;kp,aa,ak,pk	1
+神圣原石	shén;uu shèng;ty,yt yuán;ix shí;kp,aa,ak,pk	3
+砷水锰矿	shēn;uu shuǐ;ad,uv měng;jm kuàng;ug	5
 深岩溶洞	shēn;dm yán;uu róng;dr dòng;dt	9
+肾盂结石	shèn;oy yú;my jié;sj shí;kp,aa,ak,pk	12
+肾脏结石	shèn;oy zàng;ov jié;sj shí;kp,aa,ak,pk	28
+生白云石	shēng;na bái;pa,po yún;es,se shí;kp,aa,ak,pk	3
 升华矿床	shēng;pc huá;uh kuàng;ug chuáng;gm,mg	5
+生命晶石	shēng;na mìng;re jīng;oo shí;kp,aa,ak,pk	3
+圣魔光石	shèng;ty,yt mó;gm,mg guāng;ea,xw shí;kp,aa,ak,pk	10
+声如金石	shēng;um rú;nk jīn;ra,pa shí;kp,aa,ak,pk	9
 省水文局	shěng;ou shuǐ;ad,uv wén;wi,dd jú;uk	32
+石奥加石	shí;kp,aa,ak,pk ào;dm,pd jiā;lk,kl shí;kp,aa,ak,pk	4
+蚀变岩石	shí;ui biàn;wy,yy yán;uu shí;kp,aa,ak,pk	6
+石大斑石	shí;kp,aa,ak,pk dà;ad bān;ww shí;kp,aa,ak,pk	1
 石膏矿床	shí;kp,aa,ak,pk gāo;og,ok,wo kuàng;ug chuáng;gm,mg	7
+铈黑帘石	shì;ju hēi;ad,ha lián;bj,jb,jx,xj shí;kp,aa,ak,pk	10
+世纪钻石	shì;ca,cv,aa jì;sj zuàn;jv shí;kp,aa,ak,pk	12
+石匮书石	shí;kp,aa,ak,pk kuì;kg shū;ad,vd shí;kp,aa,ak,pk	4
+石榴子石	shí;kp,aa,ak,pk liú;ml zǐ;aa,vh shí;kp,aa,ak,pk	29
 石棉矿床	shí;kp,aa,ak,pk mián;mb,mj kuàng;ug chuáng;gm,mg	5
 石墨矿床	shí;kp,aa,ak,pk mò;th,ht kuàng;ug chuáng;gm,mg	9
+铈片榍石	shì;ju piàn;pa,pv xiè;mx shí;kp,aa,ak,pk	8
 市水文局	shì;wj shuǐ;ad,uv wén;wi,dd jú;uk	29
+实体化石	shí;bt tǐ;rb huà;rb shí;kp,aa,ak,pk	9
+石铁陨石	shí;kp,aa,ak,pk tiě;ju yǔn;ey shí;kp,aa,ak,pk	40
 石盐矿床	shí;kp,aa,ak,pk yán;mb kuàng;ug chuáng;gm,mg	3
+石英脉石	shí;kp,aa,ak,pk yīng;cy mài;oy shí;kp,aa,ak,pk	6
+石英萤石	shí;kp,aa,ak,pk yīng;cy yíng;ci,ib shí;kp,aa,ak,pk	5
 石油矿床	shí;kp,aa,ak,pk yóu;dy kuàng;ug chuáng;gm,mg	7
+石质陨石	shí;kp,aa,ak,pk zhì;bu,pb yǔn;ey shí;kp,aa,ak,pk	20
+十字沸石	shí;aa zì;bz fèi;df shí;kp,aa,ak,pk	10
+输尿管石	shū;iy niào;uu guǎn;vg shí;kp,aa,ak,pk	7
+书女爱石	shū;ad,vd nǚ;aa,vh ài;vy shí;kp,aa,ak,pk	5
+疏松岩石	shū;pi,ag,vg,vi sōng;mg yán;uu shí;kp,aa,ak,pk	3
+双房角石	shuāng;yy fáng;hf jiǎo;dy shí;kp,aa,ak,pk	9
+霜脲锰锌	shuāng;yx niào;on měng;jm xīn;jx	1
+双肾结石	shuāng;yy shèn;oy jié;sj shí;kp,aa,ak,pk	30
+双头笔石	shuāng;yy tóu;dd bǐ;vm shí;kp,aa,ak,pk	7
+双纹长石	shuāng;yy wén;sw cháng;pd shí;kp,aa,ak,pk	10
+双鱼陨石	shuāng;yy yú;da yǔn;ey shí;kp,aa,ak,pk	10
+水铵硼石	shuǐ;ad,uv ǎn;ja péng;up shí;kp,aa,ak,pk	10
+水白云石	shuǐ;ad,uv bái;pa,po yún;es,se shí;kp,aa,ak,pk	5
+水城菊石	shuǐ;ad,uv chéng;ti jú;cj,cm shí;kp,aa,ak,pk	6
+水底顽石	shuǐ;ad,uv dǐ;gd wán;yy shí;kp,aa,ak,pk	5
+水钒钡石	shuǐ;ad,uv fán;jf bèi;jb shí;kp,aa,ak,pk	9
+水钒钙石	shuǐ;ad,uv fán;jf gài;jg shí;kp,aa,ak,pk	8
+水钒镁石	shuǐ;ad,uv fán;jf měi;jm shí;kp,aa,ak,pk	7
+水方解石	shuǐ;ad,uv fāng;dg,wd,dp,dw jiě;jn shí;kp,aa,ak,pk	5
+水方锰矿	shuǐ;ad,uv fāng;dg,wd,dp,dw měng;jm kuàng;ug	10
+水方硼石	shuǐ;ad,uv fāng;dg,wd,dp,dw péng;up shí;kp,aa,ak,pk	5
+水钙沸石	shuǐ;ad,uv gài;jg fèi;df shí;kp,aa,ak,pk	1
+水钙硝石	shuǐ;ad,uv gài;jg xiāo;ux shí;kp,aa,ak,pk	6
+水硅钙石	shuǐ;ad,uv guī;ug gài;jg shí;kp,aa,ak,pk	7
+水硅灰石	shuǐ;ad,uv guī;ug huī;hu,uh shí;kp,aa,ak,pk	1
+水硅锰矿	shuǐ;ad,uv guī;ug měng;jm kuàng;ug	7
+水硅铍石	shuǐ;ad,uv guī;ug pī;jp shí;kp,aa,ak,pk	5
+水硅铀石	shuǐ;ad,uv guī;ug yóu;jy shí;kp,aa,ak,pk	7
+水黄长石	shuǐ;ad,uv huáng;ad,cb cháng;pd shí;kp,aa,ak,pk	10
+水晶原石	shuǐ;ad,uv jīng;oo yuán;ix shí;kp,aa,ak,pk	16
+水磷钙石	shuǐ;ad,uv lín;ul gài;jg shí;kp,aa,ak,pk	5
+水磷钾石	shuǐ;ad,uv lín;ul jiǎ;jj shí;kp,aa,ak,pk	6
+水磷铝石	shuǐ;ad,uv lín;ul lǚ;jl shí;kp,aa,ak,pk	1
+水磷锰石	shuǐ;ad,uv lín;ul měng;jm shí;kp,aa,ak,pk	1
+水磷铁石	shuǐ;ad,uv lín;ul tiě;ju shí;kp,aa,ak,pk	10
+水菱镁石	shuǐ;ad,uv líng;cl,cw měi;jm shí;kp,aa,ak,pk	13
+水灵原石	shuǐ;ad,uv líng;hx,xh yuán;ix shí;kp,aa,ak,pk	1
+水铝钙石	shuǐ;ad,uv lǚ;jl gài;jg shí;kp,aa,ak,pk	19
+水绿榴石	shuǐ;ad,uv lǜ;sl liú;ml shí;kp,aa,ak,pk	1
+水铝镍石	shuǐ;ad,uv lǚ;jl niè;jm,jn shí;kp,aa,ak,pk	9
+水铝氧石	shuǐ;ad,uv lǚ;jl yǎng;qy shí;kp,aa,ak,pk	6
+水铝英石	shuǐ;ad,uv lǚ;jl yīng;cy shí;kp,aa,ak,pk	12
+水镁锰矿	shuǐ;ad,uv měi;jm měng;jm kuàng;ug	7
+水镁铁石	shuǐ;ad,uv měi;jm tiě;ju shí;kp,aa,ak,pk	6
+水镁硝石	shuǐ;ad,uv měi;jm xiāo;ux shí;kp,aa,ak,pk	9
+水锰辉石	shuǐ;ad,uv měng;jm huī;gj shí;kp,aa,ak,pk	9
+水钠锰矿	shuǐ;ad,uv nà;jn měng;jm kuàng;ug	3
+水泥碎石	shuǐ;ad,uv ní;dn suì;uz shí;kp,aa,ak,pk	14
+水泥蛭石	shuǐ;ad,uv ní;dn zhì;iv shí;kp,aa,ak,pk	1
+水硼钙石	shuǐ;ad,uv péng;up gài;jg shí;kp,aa,ak,pk	1
+水硼镁石	shuǐ;ad,uv péng;up měi;jm shí;kp,aa,ak,pk	8
+水硼钠石	shuǐ;ad,uv péng;up nà;jn shí;kp,aa,ak,pk	1
+水硼锶石	shuǐ;ad,uv péng;up sī;js shí;kp,aa,ak,pk	1
 水热矿床	shuǐ;ad,uv rè;hv kuàng;ug chuáng;gm,mg	6
+水蛇纹石	shuǐ;ad,uv shé;it wén;sw shí;kp,aa,ak,pk	1
+水砷锰石	shuǐ;ad,uv shēn;uu měng;jm shí;kp,aa,ak,pk	5
+水铈钛石	shuǐ;ad,uv shì;ju tài;jt shí;kp,aa,ak,pk	8
+水碳镁石	shuǐ;ad,uv tàn;ut měi;jm shí;kp,aa,ak,pk	9
+水碳硼石	shuǐ;ad,uv tàn;ut péng;up shí;kp,aa,ak,pk	8
 水文测报	shuǐ;ad,uv wén;wi,dd cè;dz bào;fy	31
 水文测量	shuǐ;ad,uv wén;wi,dd cè;dz liáng;ol	25
 水文测验	shuǐ;ad,uv wén;wi,dd cè;dz yàn;ma,mq	31
@@ -229,6 +2884,7 @@ sort: by_weight
 水文社区	shuǐ;ad,uv wén;wi,dd shè;ut,tu qū;ki	16
 水文数据	shuǐ;ad,uv wén;wi,dd shù;wl jù;fj	25
 水文水文	shuǐ;ad,uv wén;wi,dd shuǐ;ad,uv wén;wi,dd	13
+水稳碎石	shuǐ;ad,uv wěn;hj suì;uz shí;kp,aa,ak,pk	12
 水文特征	shuǐ;ad,uv wén;wi,dd tè;ns zhēng;xv	33
 水文条件	shuǐ;ad,uv wén;wi,dd tiáo;wm jiàn;rn	34
 水文条例	shuǐ;ad,uv wén;wi,dd tiáo;wm lì;rl	7
@@ -243,29 +2899,262 @@ sort: by_weight
 水文资料	shuǐ;ad,uv wén;wi,dd zī;bc liào;md	33
 水文总站	shuǐ;ad,uv wén;wi,dd zǒng;bx,xk zhàn;lv	25
 水文组织	shuǐ;ad,uv wén;wi,dd zǔ;sq zhī;sv	4
+水锌锰矿	shuǐ;ad,uv xīn;jx měng;jm kuàng;ug	8
 水型矿床	shuǐ;ad,uv xíng;tx kuàng;ug chuáng;gm,mg	10
+水星叶石	shuǐ;ad,uv xīng;ou yè;ku shí;kp,aa,ak,pk	5
+水之漂石	shuǐ;ad,uv zhī;dd piāo;dp shí;kp,aa,ak,pk	7
+水之原石	shuǐ;ad,uv zhī;dd yuán;ix shí;kp,aa,ak,pk	7
+泗滨砭石	sì;ds bīn;db biān;uf shí;kp,aa,ak,pk	25
+四大基石	sì;aa,ke dà;ad jī;tq,qt shí;kp,aa,ak,pk	32
+似大理石	sì;ry dà;ad lǐ;wl shí;kp,aa,ak,pk	1
+斯担硅石	sī;jq,qj dān;fd guī;ug shí;kp,aa,ak,pk	7
+似电气石	sì;ry diàn;ag,og qì;py,ry shí;kp,aa,ak,pk	6
+丝光沸石	sī;aa guāng;ea,xw fèi;df shí;kp,aa,ak,pk	6
+锶磷灰石	sī;js lín;ul huī;hu,uh shí;kp,aa,ak,pk	1
+四氯化锰	sì;aa,ke lǜ;ql huà;rb měng;jm	1
+丝钠铝石	sī;aa nà;jn lǚ;jl shí;kp,aa,ak,pk	6
+似钠闪石	sì;ry nà;jn shǎn;mr,rm shí;kp,aa,ak,pk	8
+锶片沸石	sī;js piàn;pa,pv fèi;df shí;kp,aa,ak,pk	1
+似石榴石	sì;ry shí;kp,aa,ak,pk liú;ml shí;kp,aa,ak,pk	6
+四十原石	sì;aa,ke shí;aa yuán;ix shí;kp,aa,ak,pk	32
+丝竹金石	sī;aa zhú;gg jīn;ra,pa shí;kp,aa,ak,pk	32
+松果体石	sōng;mg guǒ;ad,tm tǐ;rb shí;kp,aa,ak,pk	10
+松化为石	sōng;mg huà;rb wéi;dd shí;kp,aa,ak,pk	1
+塑性岩石	sù;to,tu xìng;xu yán;uu shí;kp,aa,ak,pk	7
+肃之嘉石	sù;ad,vd,yd zhī;dd jiā;uj shí;kp,aa,ak,pk	6
+酸性矿石	suān;yj,yw xìng;xu kuàng;ug shí;kp,aa,ak,pk	5
 碎屑沉积	suì;uz xiè;ux chén;dj,dr jī;hv	20
 碎屑废石	suì;uz xiè;ux fèi;gf shí;kp,aa,ak,pk	9
 碎屑结构	suì;uz xiè;ux jié;sj gòu;mg	8
 碎屑矿床	suì;uz xiè;ux kuàng;ug chuáng;gm,mg	10
 碎屑岩脉	suì;uz xiè;ux yán;uu mài;oy	11
 碎屑岩墙	suì;uz xiè;ux yán;uu qiáng;th	8
+岁月磐石	suì;ux yuè;oy,pa,yt pán;ub shí;kp,aa,ak,pk	6
+踏山裂石	tà;zt shān;aa liè;yl shí;kp,aa,ak,pk	12
+塔斯钻石	tǎ;td,th sī;jq,qj zuàn;jv shí;kp,aa,ak,pk	13
+钛橄榄石	tài;jt gǎn;mg lǎn;ml shí;kp,aa,ak,pk	9
+泰国化石	tài;fu,uf guó;ky huà;rb shí;kp,aa,ak,pk	5
+钛角闪石	tài;jt jiǎo;dy shǎn;mr,rm shí;kp,aa,ak,pk	5
+太空岩石	tài;dd kōng;xg,bg yán;uu shí;kp,aa,ak,pk	24
+泰山刻石	tài;fu,uf shān;aa kè;dh shí;kp,aa,ak,pk	27
+泰山磐石	tài;fu,uf shān;aa pán;ub shí;kp,aa,ak,pk	5
+钛铁晶石	tài;jt tiě;ju jīng;oo shí;kp,aa,ak,pk	1
+钛铁矿石	tài;jt tiě;ju kuàng;ug shí;kp,aa,ak,pk	5
+太阴魂石	tài;dd yīn;eo hún;gy,yg shí;kp,aa,ak,pk	10
+碳大理石	tàn;ut dà;ad lǐ;wl shí;kp,aa,ak,pk	7
+碳硅钙石	tàn;ut guī;ug gài;jg shí;kp,aa,ak,pk	1
+钽金红石	tǎn;jd jīn;ra,pa hóng;sg shí;kp,aa,ak,pk	6
+碳磷灰石	tàn;ut lín;ul huī;hu,uh shí;kp,aa,ak,pk	1
+碳酸钠石	tàn;ut suān;yj,yw nà;jn shí;kp,aa,ak,pk	1
+弹性岩石	tán;gd xìng;xu yán;uu shí;kp,aa,ak,pk	6
+棠垭笔石	táng;dd,mk,xd,xm yā;ty bǐ;vm shí;kp,aa,ak,pk	8
+洮河绿石	táo;dv hé;dk lǜ;sl shí;kp,aa,ak,pk	3
+梯级角石	tī;md jí;sj jiǎo;dy shí;kp,aa,ak,pk	14
+锑钠铝石	tī;jd nà;jn lǚ;jl shí;kp,aa,ak,pk	6
+锑砷锰矿	tī;jd shēn;uu měng;jm kuàng;ug	8
+体外碎石	tǐ;rb wài;xb suì;uz shí;kp,aa,ak,pk	34
+天机魂石	tiān;ad jī;mj hún;gy,yg shí;kp,aa,ak,pk	18
+天机巨石	tiān;ad jī;mj jù;kk,aa shí;kp,aa,ak,pk	5
+天机神石	tiān;ad jī;mj shén;uu shí;kp,aa,ak,pk	25
+田间三石	tián;aa jiān;mo,om sān;aa shí;kp,aa,ak,pk	7
+天降陨石	tiān;ad jiàng;ef,ej yǔn;ey shí;kp,aa,ak,pk	20
+天青金石	tiān;ad qīng;of,fo jīn;ra,pa shí;kp,aa,ak,pk	6
+天然磁石	tiān;ad rán;hq cí;uz shí;kp,aa,ak,pk	22
+天然卵石	tiān;ad rán;hq luǎn;pd,md shí;kp,aa,ak,pk	11
+天然砂石	tiān;ad rán;hq shā;uu shí;kp,aa,ak,pk	15
+天然硝石	tiān;ad rán;hq xiāo;ux shí;kp,aa,ak,pk	10
+天然岩石	tiān;ad rán;hq yán;uu shí;kp,aa,ak,pk	28
+天然油石	tiān;ad rán;hq yóu;dy shí;kp,aa,ak,pk	16
+天然玉石	tiān;ad rán;hq yù;ad,wd shí;kp,aa,ak,pk	32
+天然钻石	tiān;ad rán;hq zuàn;jv shí;kp,aa,ak,pk	54
 天水文化	tiān;ad shuǐ;ad,uv wén;wi,dd huà;rb	5
 天水文物	tiān;ad shuǐ;ad,uv wén;wi,dd wù;nw	5
+天外来石	tiān;ad wài;xb lái;am,wb shí;kp,aa,ak,pk	18
+天外异石	tiān;ad wài;xb yì;cs,sc shí;kp,aa,ak,pk	12
+天外陨石	tiān;ad wài;xb yǔn;ey shí;kp,aa,ak,pk	26
+填隙碎石	tián;tv xì;ex suì;uz shí;kp,aa,ak,pk	7
+天元锰业	tiān;ad yuán;aw,ee měng;jm yè;aa	5
+条纹长石	tiáo;wm wén;sw cháng;pd shí;kp,aa,ak,pk	16
+铁白云石	tiě;ju bái;pa,po yún;es,se shí;kp,aa,ak,pk	10
+铁电气石	tiě;ju diàn;ag,og qì;py,ry shí;kp,aa,ak,pk	6
+铁方解石	tiě;ju fāng;dg,wd,dp,dw jiě;jn shí;kp,aa,ak,pk	9
+铁橄榄石	tiě;ju gǎn;mg lǎn;ml shí;kp,aa,ak,pk	25
+铁高岭石	tiě;ju gāo;wk lǐng;ul shí;kp,aa,ak,pk	6
+铁尖晶石	tiě;ju jiān;xd jīng;oo shí;kp,aa,ak,pk	16
+铁角闪石	tiě;ju jiǎo;dy shǎn;mr,rm shí;kp,aa,ak,pk	1
 铁结砾岩	tiě;ju jié;sj lì;ul,uy yán;uu	1
+铁金红石	tiě;ju jīn;ra,pa hóng;sg shí;kp,aa,ak,pk	10
+铁堇青石	tiě;ju jǐn;ca qīng;of,fo shí;kp,aa,ak,pk	1
 铁矿矿床	tiě;ju kuàng;ug kuàng;ug chuáng;gm,mg	9
+铁矿原石	tiě;ju kuàng;ug yuán;ix shí;kp,aa,ak,pk	1
+铁磷钙石	tiě;ju lín;ul gài;jg shí;kp,aa,ak,pk	10
+铁磷灰石	tiě;ju lín;ul huī;hu,uh shí;kp,aa,ak,pk	1
+铁铝榴石	tiě;ju lǚ;jl liú;ml shí;kp,aa,ak,pk	27
+铁绿泥石	tiě;ju lǜ;sl ní;dn shí;kp,aa,ak,pk	1
+铁铝氧石	tiě;ju lǚ;jl yǎng;qy shí;kp,aa,ak,pk	5
+铁锰合金	tiě;ju měng;jm hé;rk jīn;ra,pa	2
+铁锰辉石	tiě;ju měng;jm huī;gj shí;kp,aa,ak,pk	6
+铁锰结核	tiě;ju měng;jm jié;sj hé;mh	3
+铁锰铜金	tiě;ju měng;jm tóng;jt jīn;ra,pa	1
+铁蛇纹石	tiě;ju shé;it wén;sw shí;kp,aa,ak,pk	1
+铁石陨石	tiě;ju shí;kp,aa,ak,pk yǔn;ey shí;kp,aa,ak,pk	1
+铁锑钙石	tiě;ju tī;jd gài;jg shí;kp,aa,ak,pk	6
+铁纤硼石	tiě;ju xiān;sq péng;up shí;kp,aa,ak,pk	9
+铁锌晶石	tiě;ju xīn;jx jīng;oo shí;kp,aa,ak,pk	7
+铁铀钍石	tiě;ju yóu;jy tǔ;jt shí;kp,aa,ak,pk	9
+铁柘榴石	tiě;ju zhè;mu liú;ml shí;kp,aa,ak,pk	1
+铜钴锰土	tóng;jt gǔ;jg měng;jm tǔ;aa	9
+铜锰合金	tóng;jt měng;jm hé;rk jīn;ra,pa	5
+铜蒙脱石	tóng;jt méng;cm,cu tuō;od shí;kp,aa,ak,pk	8
+铜铅霰石	tóng;jt qiān;jk xiàn;ys shí;kp,aa,ak,pk	6
 同生矿床	tóng;kk shēng;na kuàng;ug chuáng;gm,mg	9
 同生砾岩	tóng;kk shēng;na lì;ul,uy yán;uu	10
+同纹长石	tóng;kk wén;sw cháng;pd shí;kp,aa,ak,pk	8
+同源岩石	tóng;kk yuán;dy yán;uu shí;kp,aa,ak,pk	7
+头带角石	tóu;dd dài;jb jiǎo;dy shí;kp,aa,ak,pk	7
+头骨化石	tóu;dd gǔ;go,ob,og huà;rb shí;kp,aa,ak,pk	38
+钭硅镁石	tǒu;jd guī;ug měi;jm shí;kp,aa,ak,pk	10
+投井下石	tóu;fu jǐng;aa,ep xià;ab,ad shí;kp,aa,ak,pk	20
+透锂长石	tòu;zx lǐ;jl cháng;pd shí;kp,aa,ak,pk	18
+投卵击石	tóu;fu luǎn;pd,md jī;aa,eu,fk shí;kp,aa,ak,pk	5
+透绿柱石	tòu;zx lǜ;sl zhù;mv shí;kp,aa,ak,pk	19
+透明胃石	tòu;zx míng;oo wèi;ot,to shí;kp,aa,ak,pk	7
+透蛇纹石	tòu;zx shé;it wén;sw shí;kp,aa,ak,pk	7
+透斜长石	tòu;zx xié;dy cháng;pd shí;kp,aa,ak,pk	10
+投掷岩石	tóu;fu zhì;fv yán;uu shí;kp,aa,ak,pk	5
+土状萤石	tǔ;aa zhuàng;jq,pq,qp yíng;ci,ib shí;kp,aa,ak,pk	10
+瓦兹利石	wǎ;ad zī;by,qy lì;hd,dh shí;kp,aa,ak,pk	18
+外模化石	wài;xb mó;mm huà;rb shí;kp,aa,ak,pk	10
 外生矿床	wài;xb shēng;na kuàng;ug chuáng;gm,mg	12
+外星岩石	wài;xb xīng;ou yán;uu shí;kp,aa,ak,pk	5
+万古磐石	wàn;ag,ap gǔ;uk pán;ub shí;kp,aa,ak,pk	6
+顽火辉石	wán;yy huǒ;dd huī;gj shí;kp,aa,ak,pk	33
+网格笔石	wǎng;ki gé;mg bǐ;vm shí;kp,aa,ak,pk	8
+网金红石	wǎng;ki jīn;ra,pa hóng;sg shí;kp,aa,ak,pk	8
+网络化石	wǎng;ki luò;sg huà;rb shí;kp,aa,ak,pk	7
+王谢安石	wáng;aa xiè;yu ān;bn shí;kp,aa,ak,pk	7
+微玻陨石	wēi;xw bō;wp yǔn;ey shí;kp,aa,ak,pk	9
+伪顶岩石	wěi;rw dǐng;dy,yd yán;uu shí;kp,aa,ak,pk	8
+伟晶蜡石	wěi;rw jīng;oo là;ix shí;kp,aa,ak,pk	9
+伟晶腊石	wěi;rw jīng;oo là;ox shí;kp,aa,ak,pk	7
+维克托石	wéi;sv kè;eg,ux tuō;fq,ft shí;kp,aa,ak,pk	5
+微体化石	wēi;xw tǐ;rb huà;rb shí;kp,aa,ak,pk	27
+微纹长石	wēi;xw wén;sw cháng;pd shí;kp,aa,ak,pk	5
+微斜长石	wēi;xw xié;dy cháng;pd shí;kp,aa,ak,pk	29
+稳固岩石	wěn;hj gù;kg yán;uu shí;kp,aa,ak,pk	10
+纹绿泥石	wén;sw lǜ;sl ní;dn shí;kp,aa,ak,pk	7
+稳如磐石	wěn;hj rú;nk pán;ub shí;kp,aa,ak,pk	35
+稳若磐石	wěn;hj ruò;cy pán;ub shí;kp,aa,ak,pk	24
+汶上锈石	wèn;dw shàng;aa,ba xiù;jx shí;kp,aa,ak,pk	32
+文物碑石	wén;wi,dd wù;nw bēi;ub shí;kp,aa,ak,pk	7
+我心匪石	wǒ;pd,pp xīn;dd fěi;kf shí;kp,aa,ak,pk	26
+我在黄石	wǒ;pd,pp zài;ta,ut huáng;ad,cb shí;kp,aa,ak,pk	1
+五彩神石	wǔ;aa cǎi;pc shén;uu shí;kp,aa,ak,pk	7
 武汉岩溶	wǔ;vy,yv hàn;dy yán;uu róng;dr	6
+乌金矿石	wū;pa jīn;ra,pa kuàng;ug shí;kp,aa,ak,pk	9
+钨锰铁矿	wū;jw měng;jm tiě;ju kuàng;ug	17
+无名燧石	wú;ag,ay,ee míng;xk suì;hs shí;kp,aa,ak,pk	7
 五泉砾岩	wǔ;aa quán;bu,ub lì;ul,uy yán;uu	5
+五日一石	wǔ;aa rì;aa,or,ri yì;aa shí;kp,aa,ak,pk	3
+五色晶石	wǔ;aa sè;db jīng;oo shí;kp,aa,ak,pk	24
+无色榴石	wú;ag,ay,ee sè;db liú;ml shí;kp,aa,ak,pk	7
+五色神石	wǔ;aa sè;db shén;uu shí;kp,aa,ak,pk	1
+无水矾石	wú;ag,ay,ee shuǐ;ad,uv fán;uf shí;kp,aa,ak,pk	10
+无限原石	wú;ag,ay,ee xiàn;eg yuán;ix shí;kp,aa,ak,pk	20
+无限钻石	wú;ag,ay,ee xiàn;eg zuàn;jv shí;kp,aa,ak,pk	12
+五行晶石	wǔ;aa xíng;xd,xi jīng;oo shí;kp,aa,ak,pk	3
+五行神石	wǔ;aa xíng;xd,xi shén;uu shí;kp,aa,ak,pk	17
+钨硬锰矿	wū;jw yìng;ug měng;jm kuàng;ug	9
+无羽笔石	wú;ag,ay,ee yǔ;xx bǐ;vm shí;kp,aa,ak,pk	6
+希波箭石	xī;ju,ib,ij bō;dp jiàn;vq shí;kp,aa,ak,pk	24
+矽钒钙石	xī;ux fán;jf gài;jg shí;kp,aa,ak,pk	1
+细梗络石	xì;st gěng;mg luò;sg shí;kp,aa,ak,pk	12
+西湖村石	xī;aa hú;dh cūn;mc shí;kp,aa,ak,pk	1
 细角砾岩	xì;st jiǎo;dy lì;ul,uy yán;uu	10
+细菌化石	xì;st jūn;ch,cq huà;rb shí;kp,aa,ak,pk	8
+硒磷灰石	xī;ux lín;ul huī;hu,uh shí;kp,aa,ak,pk	8
+锡铁山石	xī;jy tiě;ju shān;aa shí;kp,aa,ak,pk	7
+稀土锆石	xī;hx tǔ;aa gào;jg shí;kp,aa,ak,pk	8
+细网笔石	xì;st wǎng;ki bǐ;vm shí;kp,aa,ak,pk	15
+烯酰锰锌	xī;hx xiān;yx měng;jm xīn;jx	5
+稀有矿石	xī;hx yǒu;ou,uo kuàng;ug shí;kp,aa,ak,pk	12
 席状矿床	xí;jc,gj zhuàng;jq,pq,qp kuàng;ug chuáng;gm,mg	5
+夏不睡石	xià;wz,aw bú;ad,ax shuì;oi shí;kp,aa,ak,pk	25
+下井投石	xià;ab,ad jǐng;aa,ep tóu;fu shí;kp,aa,ak,pk	12
+夏目漱石	xià;wz,aw mù;aa,om,mu shù;dq,du shí;kp,aa,ak,pk	53
+下铺白石	xià;ab,ad pù;jf bái;pa,po shí;kp,aa,ak,pk	1
+夏日漱石	xià;wz,aw rì;aa,or,ri shù;dq,du shí;kp,aa,ak,pk	16
+纤钡锂石	xiān;sq bèi;jb lǐ;jl shí;kp,aa,ak,pk	9
+纤钒钙石	xiān;sq fán;jf gài;jg shí;kp,aa,ak,pk	1
+纤方解石	xiān;sq fāng;dg,wd,dp,dw jiě;jn shí;kp,aa,ak,pk	7
+纤磷铝石	xiān;sq lín;ul lǚ;jl shí;kp,aa,ak,pk	7
+纤绿闪石	xiān;sq lǜ;sl shǎn;mr,rm shí;kp,aa,ak,pk	6
+纤锰柱石	xiān;sq měng;jm zhù;mv shí;kp,aa,ak,pk	10
+纤硼钙石	xiān;sq péng;up gài;jg shí;kp,aa,ak,pk	1
+先期砾石	xiān;ne,en qī;oq,qo lì;ul,uy shí;kp,aa,ak,pk	21
+纤闪石化	xiān;sq shǎn;mr,rm shí;kp,aa,ak,pk huà;rb	1
+纤蛇纹石	xiān;sq shé;it wén;sw shí;kp,aa,ak,pk	12
 县水文站	xiàn;sq,qs shuǐ;ad,uv wén;wi,dd zhàn;lv	9
+香港菊石	xiāng;ho gǎng;dx jú;cj,cm shí;kp,aa,ak,pk	9
+巷九曜石	xiàng;sg,gs jiǔ;py yào;od,ov shí;kp,aa,ak,pk	1
+相心雨石	xiāng;mo xīn;dd yǔ;ad shí;kp,aa,ak,pk	8
+小壳化石	xiǎo;ad ké;uj huà;rb shí;kp,aa,ak,pk	3
+小溪顽石	xiǎo;ad xī;dx wán;yy shí;kp,aa,ak,pk	6
+小雨花石	xiǎo;ad yǔ;ad huā;ch shí;kp,aa,ak,pk	7
+斜板晶石	xié;dy bǎn;mf jīng;oo shí;kp,aa,ak,pk	7
+斜发沸石	xié;dy fā;ay,fd,vy,yd fèi;df shí;kp,aa,ak,pk	7
+斜方矾石	xié;dy fāng;dg,wd,dp,dw fán;uf shí;kp,aa,ak,pk	9
+斜方辉石	xié;dy fāng;dg,wd,dp,dw huī;gj shí;kp,aa,ak,pk	12
+斜方锰矿	xié;dy fāng;dg,wd,dp,dw měng;jm kuàng;ug	7
+斜方闪石	xié;dy fāng;dg,wd,dp,dw shǎn;mr,rm shí;kp,aa,ak,pk	8
+斜钙沸石	xié;dy gài;jg fèi;df shí;kp,aa,ak,pk	8
+斜钙榴石	xié;dy gài;jg liú;ml shí;kp,aa,ak,pk	9
+斜硅钙石	xié;dy guī;ug gài;jg shí;kp,aa,ak,pk	3
+斜硅镁石	xié;dy guī;ug měi;jm shí;kp,aa,ak,pk	19
+斜磷锰矿	xié;dy lín;ul měng;jm kuàng;ug	6
+斜绿泥石	xié;dy lǜ;sl ní;dn shí;kp,aa,ak,pk	16
+斜钠钙石	xié;dy nà;jn gài;jg shí;kp,aa,ak,pk	10
+斜钠锆石	xié;dy nà;jn gào;jg shí;kp,aa,ak,pk	7
+斜铁辉石	xié;dy tiě;ju huī;gj shí;kp,aa,ak,pk	5
+斜顽辉石	xié;dy wán;yy huī;gj shí;kp,aa,ak,pk	3
+斜黝帘石	xié;dy yǒu;hy lián;bj,jb,jx,xj shí;kp,aa,ak,pk	14
+新单笔石	xīn;jq dān;ba,bd bǐ;vm shí;kp,aa,ak,pk	6
+锌方解石	xīn;jx fāng;dg,wd,dp,dw jiě;jn shí;kp,aa,ak,pk	9
+心非木石	xīn;dd fēi;aa mù;ad shí;kp,aa,ak,pk	16
+锌黑锰矿	xīn;jx hēi;ad,ha měng;jm kuàng;ug	10
+锌黄长石	xīn;jx huáng;ad,cb cháng;pd shí;kp,aa,ak,pk	1
+锌尖晶石	xīn;jx jiān;xd jīng;oo shí;kp,aa,ak,pk	9
+新井白石	xīn;jq jǐng;aa,ep bái;pa,po shí;kp,aa,ak,pk	17
+锌菱锰矿	xīn;jx líng;cl,cw měng;jm kuàng;ug	7
+锌锰电池	xīn;jx měng;jm diàn;ag,og chí;dy	27
+锌锰辉石	xīn;jx měng;jm huī;gj shí;kp,aa,ak,pk	10
+锌蒙脱石	xīn;jx méng;cm,cu tuō;od shí;kp,aa,ak,pk	9
 新生矿床	xīn;jq shēng;na kuàng;ug chuáng;gm,mg	5
+信运汉石	xìn;ry yùn;zy hàn;dy shí;kp,aa,ak,pk	27
+新振锰业	xīn;jq zhèn;fi měng;jm yè;aa	9
+心中大石	xīn;dd zhōng;aa,ka dà;ad shí;kp,aa,ak,pk	16
+星状耳石	xīng;ou zhuàng;jq,pq,qp ěr;aa shí;kp,aa,ak,pk	10
+锈毛络石	xiù;jx máo;pg luò;sg shí;kp,aa,ak,pk	10
+修整钻石	xiū;rp zhěng;vi,vw zuàn;jv shí;kp,aa,ak,pk	5
+需选矿石	xū;ye xuǎn;zx kuàng;ug shí;kp,aa,ak,pk	6
+玄女血石	xuán;wy nǚ;aa,vh xuè;pa,pm shí;kp,aa,ak,pk	30
+玄武辉石	xuán;wy wǔ;vy,yv huī;gj shí;kp,aa,ak,pk	6
+玄武魂石	xuán;wy wǔ;vy,yv hún;gy,yg shí;kp,aa,ak,pk	5
+玄武闪石	xuán;wy wǔ;vy,yv shǎn;mr,rm shí;kp,aa,ak,pk	10
+玄武岩石	xuán;wy wǔ;vy,yv yán;uu shí;kp,aa,ak,pk	18
+炫玉贾石	xuàn;hx yù;ad,wd gǔ;bx,xb shí;kp,aa,ak,pk	32
+旋转磨石	xuán;fp zhuǎn;iv mó;mu,um shí;kp,aa,ak,pk	3
+雪白云石	xuě;yx bái;pa,po yún;es,se shí;kp,aa,ak,pk	9
+雪硅钙石	xuě;yx guī;ug gài;jg shí;kp,aa,ak,pk	10
+血红石蒜	xuè;pa,pm hóng;sg shí;kp,aa,ak,pk suàn;cs,cu	4
+寻获陨石	xún;cx,xc huò;cq yǔn;ey shí;kp,aa,ak,pk	9
+亚锰酸盐	yà;ay měng;jm suān;yj,yw yán;mb	9
+压碎砾石	yā;id,it suì;uz lì;ul,uy shí;kp,aa,ak,pk	7
+牙形化石	yá;ap xíng;pk huà;rb shí;kp,aa,ak,pk	3
 盐湖矿床	yán;mb hú;dh kuàng;ug chuáng;gm,mg	5
 盐湖岩溶	yán;mb hú;dh yán;uu róng;dr	9
 岩浆矿床	yán;uu jiāng;ux kuàng;ug chuáng;gm,mg	5
+岩浆矿石	yán;uu jiāng;ux kuàng;ug shí;kp,aa,ak,pk	10
 盐类矿床	yán;mb lèi;md kuàng;ug chuáng;gm,mg	16
 岩溶槽谷	yán;uu róng;dr cáo;mc gǔ;bk,kr	5
 岩溶地层	yán;uu róng;dr dì;ty céng;uy	8
@@ -295,19 +3184,263 @@ sort: by_weight
 岩溶嶂谷	yán;uu róng;dr zhàng;uv gǔ;bk,kr	8
 岩溶作用	yán;uu róng;dr zuò;rv yòng;kf	6
 岩塞爆破	yán;uu sāi;tb,bt bào;hb pò;up	3
+衍生化石	yǎn;xi,xd shēng;na huà;rb shí;kp,aa,ak,pk	8
+岩石搬送	yán;uu shí;kp,aa,ak,pk bān;fb sòng;zg	9
+岩石爆破	yán;uu shí;kp,aa,ak,pk bào;hb pò;up	16
+岩石爆炸	yán;uu shí;kp,aa,ak,pk bào;hb zhà;hv	3
+岩石崩落	yán;uu shí;kp,aa,ak,pk bēng;up luò;cl	12
+岩石崩塌	yán;uu shí;kp,aa,ak,pk bēng;up tā;ty	31
+岩石变形	yán;uu shí;kp,aa,ak,pk biàn;wy,yy xíng;pk	17
+岩石尘土	yán;uu shí;kp,aa,ak,pk chén;tx,xt tǔ;aa	5
+岩石成因	yán;uu shí;kp,aa,ak,pk chéng;gg,wg yīn;kd	7
+岩石充填	yán;uu shí;kp,aa,ak,pk chōng;dy,es,wy tián;tv	8
+岩石磁化	yán;uu shí;kp,aa,ak,pk cí;uz huà;rb	6
+岩石磁性	yán;uu shí;kp,aa,ak,pk cí;uz xìng;xu	12
+岩石磁学	yán;uu shí;kp,aa,ak,pk cí;uz xué;dz,zb	3
+岩石大厅	yán;uu shí;kp,aa,ak,pk dà;ad tīng;id	7
+岩石地球	yán;uu shí;kp,aa,ak,pk dì;ty qiú;wq	24
+岩石地质	yán;uu shí;kp,aa,ak,pk dì;ty zhì;bu,pb	23
+岩石电钻	yán;uu shí;kp,aa,ak,pk diàn;ag,og zuàn;jv	9
+岩石吊桶	yán;uu shí;kp,aa,ak,pk diào;kj tǒng;my	8
+岩石分级	yán;uu shí;kp,aa,ak,pk fēn;bd,db jí;sj	3
+岩石粉碎	yán;uu shí;kp,aa,ak,pk fěn;mf suì;uz	16
+岩石风暴	yán;uu shí;kp,aa,ak,pk fēng;ji bào;ou	8
+岩石封闭	yán;uu shí;kp,aa,ak,pk fēng;cg bì;mc	12
+岩石风化	yán;uu shí;kp,aa,ak,pk fēng;ji huà;rb	33
+岩石缝隙	yán;uu shí;kp,aa,ak,pk fèng;sf xì;ex	34
+岩石缝中	yán;uu shí;kp,aa,ak,pk fèng;sf zhōng;aa,ka	32
+岩石浮雕	yán;uu shí;kp,aa,ak,pk fú;df diāo;vv	19
+岩石高仑	yán;uu shí;kp,aa,ak,pk gāo;wk lún;rb	9
+岩石工程	yán;uu shí;kp,aa,ak,pk gōng;aa chéng;hi	23
+岩石公园	yán;uu shí;kp,aa,ak,pk gōng;sb,bs yuán;ky	4
+岩石工作	yán;uu shí;kp,aa,ak,pk gōng;aa zuò;rv	5
+岩石构造	yán;uu shí;kp,aa,ak,pk gòu;mg zào;zg	24
+岩石海岸	yán;uu shí;kp,aa,ak,pk hǎi;dm àn;ug	31
+岩石护甲	yán;uu shí;kp,aa,ak,pk hù;fh jiǎ;aa,oa	1
+岩石化学	yán;uu shí;kp,aa,ak,pk huà;rb xué;dz,zb	16
+岩石环境	yán;uu shí;kp,aa,ak,pk huán;wb jìng;tj	16
+岩石级别	yán;uu shí;kp,aa,ak,pk jí;sj bié;dl	9
+岩石夹层	yán;uu shí;kp,aa,ak,pk jiā;fb,ar céng;uy	9
+岩石甲虫	yán;uu shí;kp,aa,ak,pk jiǎ;aa,oa chóng;ad,vd	5
+岩石鉴定	yán;uu shí;kp,aa,ak,pk jiàn;jv dìng;bp	8
+岩石阶地	yán;uu shí;kp,aa,ak,pk jiē;ej dì;ty	8
+岩石结构	yán;uu shí;kp,aa,ak,pk jié;sj gòu;mg	30
+岩石巨人	yán;uu shí;kp,aa,ak,pk jù;kk,aa rén;pd	21
+岩石开挖	yán;uu shí;kp,aa,ak,pk kāi;ac wā;fw,fy	5
+岩石抗力	yán;uu shí;kp,aa,ak,pk kàng;fk lì;gp	6
+岩石傀儡	yán;uu shí;kp,aa,ak,pk kuǐ;rg lěi;rl,rt	3
+岩石类型	yán;uu shí;kp,aa,ak,pk lèi;md xíng;tx	29
+岩石里奇	yán;uu shí;kp,aa,ak,pk lǐ;aa,tt qí;dk	4
+岩石沥青	yán;uu shí;kp,aa,ak,pk lì;dl qīng;of,fo	6
+岩石力学	yán;uu shí;kp,aa,ak,pk lì;gp xué;dz,zb	37
+岩石林立	yán;uu shí;kp,aa,ak,pk lín;mm lì;da	10
+岩石露头	yán;uu shí;kp,aa,ak,pk lòu;yl tóu;dd	33
+岩石裸露	yán;uu shí;kp,aa,ak,pk luǒ;yg lòu;yl	30
+岩石密度	yán;uu shí;kp,aa,ak,pk mì;ub,bu dù;gy	22
+岩石皮肤	yán;uu shí;kp,aa,ak,pk pí;ad,ay,vd,vy,ya fū;of	7
+岩石平巷	yán;uu shí;kp,aa,ak,pk píng;aa,gb hàng;sg,gs	10
+岩石破坏	yán;uu shí;kp,aa,ak,pk pò;up huài;tb	13
+岩石破碎	yán;uu shí;kp,aa,ak,pk pò;up suì;uz	26
+岩石钎子	yán;uu shí;kp,aa,ak,pk qiān;jq zi;aa,vh	6
+岩石强度	yán;uu shí;kp,aa,ak,pk qiáng;gs dù;gy	22
+岩石强森	yán;uu shí;kp,aa,ak,pk qiáng;gs sēn;ml	5
+岩石缺陷	yán;uu shí;kp,aa,ak,pk quē;fd,fg xiàn;ej,ex	7
+岩石容重	yán;uu shí;kp,aa,ak,pk róng;bg zhòng;pa,ql	9
+岩石蠕动	yán;uu shí;kp,aa,ak,pk rú;ix dòng;ly,yl	10
+岩石三轴	yán;uu shí;kp,aa,ak,pk sān;aa zhóu;iy	23
+岩石试验	yán;uu shí;kp,aa,ak,pk shì;yu yàn;ma,mq	8
+岩石碎片	yán;uu shí;kp,aa,ak,pk suì;uz piàn;pa,pv	28
+岩石突出	yán;uu shí;kp,aa,ak,pk tū;xq,bq chū;ck,aa	14
+岩石物理	yán;uu shí;kp,aa,ak,pk wù;nw lǐ;wl	22
+岩石系统	yán;uu shí;kp,aa,ak,pk xì;ps tǒng;si	8
+岩石行星	yán;uu shí;kp,aa,ak,pk xíng;xd,xi xīng;ou	37
+岩石性质	yán;uu shí;kp,aa,ak,pk xìng;xu zhì;bu,pb	18
+岩石学报	yán;uu shí;kp,aa,ak,pk xué;dz,zb bào;fy	19
+岩石学者	yán;uu shí;kp,aa,ak,pk xué;dz,zb zhě;lo,ol	8
+岩石循环	yán;uu shí;kp,aa,ak,pk xún;xd huán;wb	16
+岩石压力	yán;uu shí;kp,aa,ak,pk yā;id,it lì;gp	14
+岩石样本	yán;uu shí;kp,aa,ak,pk yàng;my běn;aa,ma	29
+岩石异常	yán;uu shí;kp,aa,ak,pk yì;cs,sc cháng;jk,xd,dd	7
+岩石硬度	yán;uu shí;kp,aa,ak,pk yìng;ug dù;gy	16
+岩石之地	yán;uu shí;kp,aa,ak,pk zhī;dd dì;ty	1
+岩石之间	yán;uu shí;kp,aa,ak,pk zhī;dd jiān;mo,om	22
+岩石植物	yán;uu shí;kp,aa,ak,pk zhí;mv wù;nw	18
+岩石组构	yán;uu shí;kp,aa,ak,pk zǔ;sq gòu;mg	9
+洋底岩石	yáng;dy dǐ;gd yán;uu shí;kp,aa,ak,pk	5
+氧化矿石	yǎng;qy huà;rb kuàng;ug shí;kp,aa,ak,pk	5
+氧角闪石	yǎng;qy jiǎo;dy shǎn;mr,rm shí;kp,aa,ak,pk	7
+氧磷灰石	yǎng;qy lín;ul huī;hu,uh shí;kp,aa,ak,pk	9
+腰弩八石	yāo;oy nǔ;gn bā;pd shí;kp,aa,ak,pk	6
 乐水文化	yào;pd,px shuǐ;ad,uv wén;wi,dd huà;rb	8
+野复理石	yě;ly,yl fù;pw,rw,wo lǐ;wl shí;kp,aa,ak,pk	7
+耶律大石	yē;ee lǜ;xy dà;ad shí;kp,aa,ak,pk	32
+叶绿泥石	yè;ku lǜ;sl ní;dn shí;kp,aa,ak,pk	8
+叶钠长石	yè;ku nà;jn cháng;pd shí;kp,aa,ak,pk	9
+叶蛇纹石	yè;ku shé;it wén;sw shí;kp,aa,ak,pk	17
+叶双晶石	yè;ku shuāng;yy jīng;oo shí;kp,aa,ak,pk	10
+易变辉石	yì;ow biàn;wy,yy huī;gj shí;kp,aa,ak,pk	23
+异剥辉石	yì;cs,sc bō;dl huī;gj shí;kp,aa,ak,pk	7
+钇方解石	yǐ;jy fāng;dg,wd,dp,dw jiě;jn shí;kp,aa,ak,pk	5
+钇褐帘石	yǐ;jy hè;yh lián;bj,jb,jx,xj shí;kp,aa,ak,pk	9
+钇褐榴石	yǐ;jy hè;yh liú;ml shí;kp,aa,ak,pk	9
+遗迹化石	yí;zg jì;zy huà;rb shí;kp,aa,ak,pk	34
+钇磷灰石	yǐ;jy lín;ul huī;hu,uh shí;kp,aa,ak,pk	9
+钇铝榴石	yǐ;jy lǚ;jl liú;ml shí;kp,aa,ak,pk	15
+乙铝锰锌	yǐ;aa,vv,yy lǚ;jl měng;jm xīn;jx	1
+以七耀石	yǐ;rd,ry qī;ag yào;gd,gv shí;kp,aa,ak,pk	6
+以升量石	yǐ;rd,ry shēng;pc liáng;ol dàn;kp,aa,ak,pk	32
+钇铈锆石	yǐ;jy shì;ju gào;jg shí;kp,aa,ak,pk	8
+易碎岩石	yì;ow suì;uz yán;uu shí;kp,aa,ak,pk	7
+一土山石	yī;aa tǔ;aa shān;aa shí;kp,aa,ak,pk	7
+异辛酸锰	yì;cs,sc xīn;lu suān;yj,yw měng;jm	9
+一氧化锰	yī;aa yǎng;qy huà;rb měng;jm	3
+钇易解石	yǐ;jy yì;ow jiě;jn shí;kp,aa,ak,pk	12
+一锗化锰	yī;aa zhě;jv huà;rb měng;jm	7
+隐藏岩石	yǐn;ej cáng;cg,ci yán;uu shí;kp,aa,ak,pk	5
 隐伏矿床	yǐn;ej fú;rq kuàng;ug chuáng;gm,mg	1
 隐伏岩溶	yǐn;ej fú;rq yán;uu róng;dr	10
+银色钻石	yín;jg sè;db zuàn;jv shí;kp,aa,ak,pk	23
+隐纹长石	yǐn;ej wén;sw cháng;pd shí;kp,aa,ak,pk	8
+印象化石	yìn;ey,pe xiàng;du,pd,ua huà;rb shí;kp,aa,ak,pk	8
+硬硅钙石	yìng;ug guī;ug gài;jg shí;kp,aa,ak,pk	1
+英国化石	yīng;cy guó;ky huà;rb shí;kp,aa,ak,pk	5
+硬绿泥石	yìng;ug lǜ;sl ní;dn shí;kp,aa,ak,pk	9
+硬锰矿族	yìng;ug měng;jm kuàng;ug zú;fu	6
+硬硼钙石	yìng;ug péng;up gài;jg shí;kp,aa,ak,pk	11
+硬蛇纹石	yìng;ug shé;it wén;sw shí;kp,aa,ak,pk	6
 萤石矿床	yíng;ci,ib shí;kp,aa,ak,pk kuàng;ug chuáng;gm,mg	9
+硬铈钍石	yìng;ug shì;ju tǔ;jt shí;kp,aa,ak,pk	10
+硬水铝石	yìng;ug shuǐ;ad,uv lǚ;jl shí;kp,aa,ak,pk	20
+硬脂酸锰	yìng;ug zhī;ov suān;yj,yw měng;jm	7
+硬质岩石	yìng;ug zhì;bu,pb yán;uu shí;kp,aa,ak,pk	10
+永久冰石	yǒng;dd jiǔ;pd,dd bīng;du shí;kp,aa,ak,pk	7
+永久磁石	yǒng;dd jiǔ;pd,dd cí;uz shí;kp,aa,ak,pk	6
+铀铵磷石	yóu;jy ǎn;ja lín;ul shí;kp,aa,ak,pk	7
+右岸玉石	yòu;ku,uk àn;ug yù;ad,wd shí;kp,aa,ak,pk	6
+尤莱辉石	yóu;ad,yd lái;cl huī;gj shí;kp,aa,ak,pk	7
+柚木沙石	yóu;my mù;ad shā;du shí;kp,aa,ak,pk	7
+悠然磐石	yōu;xw,xy rán;hq pán;ub shí;kp,aa,ak,pk	6
+铀烧绿石	yóu;jy shāo;hy lǜ;sl shí;kp,aa,ak,pk	8
+铀细晶石	yóu;jy xì;st jīng;oo shí;kp,aa,ak,pk	10
+鱼火日石	yú;da huǒ;dd rì;aa,or,ri shí;kp,aa,ak,pk	5
+瑜伽小石	yú;wy jiā;rj xiǎo;ad shí;kp,aa,ak,pk	4
+豫金刚石	yù;yx jīn;ra,pa gāng;dg shí;kp,aa,ak,pk	32
+玉矿原石	yù;ad,wd kuàng;ug yuán;ix shí;kp,aa,ak,pk	19
+与魔法石	yǔ;aa mó;gm,mg fǎ;dq shí;kp,aa,ak,pk	14
+御魔晶石	yù;xx mó;gm,mg jīng;oo shí;kp,aa,ak,pk	3
+与木而石	yǔ;aa mù;ad ér;aa shí;kp,aa,ak,pk	5
+鱼鳍化石	yú;da qí;yo,yq,yr huà;rb shí;kp,aa,ak,pk	10
+于是怀石	yú;aa shì;op,ov huái;xb shí;kp,aa,ak,pk	9
 玉石矿床	yù;ad,wd shí;kp,aa,ak,pk kuàng;ug chuáng;gm,mg	10
+玉石原石	yù;ad,wd shí;kp,aa,ak,pk yuán;ix shí;kp,aa,ak,pk	25
+玉髓燧石	yù;ad,wd suǐ;gs,gz suì;hs shí;kp,aa,ak,pk	12
+鱼牙化石	yú;da yá;ap huà;rb shí;kp,aa,ak,pk	10
+玉藻静石	yù;ad,wd zǎo;cz jìng;qv shí;kp,aa,ak,pk	5
+原白云石	yuán;ix bái;pa,po yún;es,se shí;kp,aa,ak,pk	8
+原成岩石	yuán;ix chéng;gg,wg yán;uu shí;kp,aa,ak,pk	8
+原地岩石	yuán;ix dì;ty yán;uu shí;kp,aa,ak,pk	5
+原方解石	yuán;ix fāng;dg,wd,dp,dw jiě;jn shí;kp,aa,ak,pk	8
+原钾霞石	yuán;ix jiǎ;jj xiá;yj,yy shí;kp,aa,ak,pk	5
+元灵晶石	yuán;aw,ee líng;hx,xh jīng;oo shí;kp,aa,ak,pk	3
+原生化石	yuán;ix shēng;na huà;rb shí;kp,aa,ak,pk	6
 原生矿床	yuán;ix shēng;na kuàng;ug chuáng;gm,mg	7
+原生矿石	yuán;ix shēng;na kuàng;ug shí;kp,aa,ak,pk	16
+远生矿石	yuǎn;zy shēng;na kuàng;ug shí;kp,aa,ak,pk	8
+原生岩石	yuán;ix shēng;na yán;uu shí;kp,aa,ak,pk	7
+圆树脂石	yuán;ky shù;md zhī;ov shí;kp,aa,ak,pk	8
+原水磨石	yuán;ix shuǐ;ad,uv mó;mu,um shí;kp,aa,ak,pk	1
+圆形钻石	yuán;ky xíng;pk zuàn;jv shí;kp,aa,ak,pk	24
+源之洪石	yuán;dy zhī;dd hóng;dg shí;kp,aa,ak,pk	6
+源质矿石	yuán;dy zhì;bu,pb kuàng;ug shí;kp,aa,ak,pk	5
+越南化石	yuè;zy nán;ua,uy huà;rb shí;kp,aa,ak,pk	7
+月球岩石	yuè;oy,pa,yt qiú;wq yán;uu shí;kp,aa,ak,pk	35
+月球陨石	yuè;oy,pa,yt qiú;wq yǔn;ey shí;kp,aa,ak,pk	37
 陨磺砾岩	yǔn;ey huáng;uh lì;ul,uy yán;uu	12
+陨硫钙石	yǔn;ey liú;ui gài;jg shí;kp,aa,ak,pk	1
+陨硫钙石	yǔn;ey liú;ui gài;jg shí;kp,aa,ak,pk	1
+陨落陨石	yǔn;ey luò;cl yǔn;ey shí;kp,aa,ak,pk	5
+云梦钝石	yún;es,se mèng;mx,xl dùn;jt shí;kp,aa,ak,pk	5
+云母长石	yún;es,se mǔ;ad,vd cháng;pd shí;kp,aa,ak,pk	16
+云母滑石	yún;es,se mǔ;ad,vd huá;dg shí;kp,aa,ak,pk	10
 云母矿床	yún;es,se mǔ;ad,vd kuàng;ug chuáng;gm,mg	1
+云南络石	yún;es,se nán;ua,uy luò;sg shí;kp,aa,ak,pk	5
+杂臭葱石	zá;jm,mj chòu;zq cōng;cc,cx shí;kp,aa,ak,pk	9
+杂褐锰矿	zá;jm,mj hè;yh měng;jm kuàng;ug	9
+杂菱锰矿	zá;jm,mj líng;cl,cw měng;jm kuàng;ug	9
+杂云英石	zá;jm,mj yún;es,se yīng;cy shí;kp,aa,ak,pk	6
+再沉化石	zài;aa,at chén;dj,dr huà;rb shí;kp,aa,ak,pk	10
 再生矿床	zài;aa,at shēng;na kuàng;ug chuáng;gm,mg	7
+在五块石	zài;ta,ut wǔ;aa kuài;td,tg shí;kp,aa,ak,pk	13
+在牙克石	zài;ta,ut yá;ap kè;eg,ux shí;kp,aa,ak,pk	17
+震旦角石	zhèn;yi dàn;oa jué;dy shí;kp,aa,ak,pk	14
+针电气石	zhēn;ju diàn;ag,og qì;py,ry shí;kp,aa,ak,pk	9
+针钒钙石	zhēn;ju fán;jf gài;jg shí;kp,aa,ak,pk	1
+针碱钙石	zhēn;ju jiǎn;ux gài;jg shí;kp,aa,ak,pk	5
+针碱铌石	zhēn;ju jiǎn;ux ní;jn shí;kp,aa,ak,pk	9
+针六方石	zhēn;ju liù;wb,dd,db fāng;dg,wd,dp,dw shí;kp,aa,ak,pk	7
+枕流漱石	zhěn;mg,my liú;di shù;dq,du shí;kp,aa,ak,pk	18
+针钠钙石	zhēn;ju nà;jn gài;jg shí;kp,aa,ak,pk	17
+真蹄菊石	zhēn;uj tí;zd jú;cj,cm shí;kp,aa,ak,pk	3
+真银矿石	zhēn;uj yín;jg kuàng;ug shí;kp,aa,ak,pk	3
+针状矿石	zhēn;ju zhuàng;jq,pq,qp kuàng;ug shí;kp,aa,ak,pk	8
+正白云石	zhèng;av bái;pa,po yún;es,se shí;kp,aa,ak,pk	6
+正钾长石	zhèng;av jiǎ;jj cháng;pd shí;kp,aa,ak,pk	10
+正石灰石	zhèng;av shí;kp,aa,ak,pk huī;hu,uh shí;kp,aa,ak,pk	8
+政治基石	zhèng;wv zhì;dt jī;tq,qt shí;kp,aa,ak,pk	18
+支承垫石	zhī;uy chéng;ad,vd diàn;tv shí;kp,aa,ak,pk	18
+芝罘刻石	zhī;cv fú;sb kè;dh shí;kp,aa,ak,pk	5
+智利化石	zhì;ov lì;hd,dh huà;rb shí;kp,aa,ak,pk	8
+智利硝石	zhì;ov lì;hd,dh xiāo;ux shí;kp,aa,ak,pk	22
+脂磷钙石	zhī;ov lín;ul gài;jg shí;kp,aa,ak,pk	10
+致密矿石	zhì;wv mì;ub,bu kuàng;ug shí;kp,aa,ak,pk	8
+指示化石	zhǐ;fv shì;ex,ad huà;rb shí;kp,aa,ak,pk	9
 蛭石矿床	zhì;iv shí;kp,aa,ak,pk kuàng;ug chuáng;gm,mg	8
+植物化石	zhí;mv wù;nw huà;rb shí;kp,aa,ak,pk	10
+指相化石	zhǐ;fv xiāng;mo huà;rb shí;kp,aa,ak,pk	12
+之柘榴石	zhī;dd zhè;mu liú;ml shí;kp,aa,ak,pk	6
+支座垫石	zhī;uy zuò;gz diàn;tv shí;kp,aa,ak,pk	32
+忠贯金石	zhōng;xv guàn;bm,mb jīn;ra,pa shí;kp,aa,ak,pk	32
+重硅线石	zhòng;pa,ql guī;ug xiàn;sj shí;kp,aa,ak,pk	7
+中华角石	zhōng;aa,ka huá;uh jiǎo;dy shí;kp,aa,ak,pk	8
 重砂矿床	zhòng;pa,ql shā;uu kuàng;ug chuáng;gm,mg	1
+重烧绿石	zhòng;pa,ql shāo;hy lǜ;sl shí;kp,aa,ak,pk	10
+中铁陨石	zhōng;aa,ka tiě;ju yǔn;ey shí;kp,aa,ak,pk	21
+中信大锰	zhōng;aa,ka xìn;ry dà;ad měng;jm	14
+中雨花石	zhōng;aa,ka yǔ;ad huā;ch shí;kp,aa,ak,pk	6
+柱磷铝石	zhù;mv lín;ul lǚ;jl shí;kp,aa,ak,pk	7
+柱绿泥石	zhù;mv lǜ;sl ní;dn shí;kp,aa,ak,pk	8
+柱硼镁石	zhù;mv péng;up měi;jm shí;kp,aa,ak,pk	1
+朱雀魂石	zhū;pw què;vx,xv hún;gy,yg shí;kp,aa,ak,pk	5
+朱砂矿石	zhū;pw shā;uu kuàng;ug shí;kp,aa,ak,pk	10
+铸型结石	zhù;ju xíng;tx jié;sj shí;kp,aa,ak,pk	12
+柱星叶石	zhù;mv xīng;ou yè;ku shí;kp,aa,ak,pk	19
+株洲钻石	zhū;mv zhōu;dv zuàn;jv shí;kp,aa,ak,pk	7
+转沈宏石	zhuǎn;iv shěn;dg,dy hóng;bh,bs shí;kp,aa,ak,pk	4
+装运废石	zhuāng;yv yùn;zy fèi;gf shí;kp,aa,ak,pk	8
+锥叠层石	zhuī;jv dié;qr,qu,yy céng;uy shí;kp,aa,ak,pk	10
+锥迭层石	zhuī;jv dié;zu céng;uy shí;kp,aa,ak,pk	9
+锥形块石	zhuī;jv xíng;pk kuài;td,tg shí;kp,aa,ak,pk	9
+准埃洛石	zhǔn;dv āi;tu,ty luò;dg shí;kp,aa,ak,pk	5
+紫瓣石斛	zǐ;sc bàn;gx,xx shí;kp,aa,ak,pk hú;jd	10
+紫苞石柑	zǐ;sc bāo;cb shí;kp,aa,ak,pk gān;mg	9
+紫电气石	zǐ;sc diàn;ag,og qì;py,ry shí;kp,aa,ak,pk	7
+紫方钠石	zǐ;sc fāng;dg,wd,dp,dw nà;jn shí;kp,aa,ak,pk	5
+紫花络石	zǐ;sc huā;ch luò;sg shí;kp,aa,ak,pk	10
+紫锂辉石	zǐ;sc lǐ;jl huī;gj shí;kp,aa,ak,pk	20
+籽料原石	zǐ;mz liào;md yuán;ix shí;kp,aa,ak,pk	30
+紫钠闪石	zǐ;sc nà;jn shǎn;mr,rm shí;kp,aa,ak,pk	10
+自然原石	zì;pa,po rán;hq yuán;ix shí;kp,aa,ak,pk	1
+紫石英号	zǐ;sc shí;kp,aa,ak,pk yīng;cy hào;kk	42
+紫苏辉石	zǐ;sc sū;cb huī;gj shí;kp,aa,ak,pk	25
+紫心石大	zǐ;sc xīn;dd shí;kp,aa,ak,pk dà;ad	1
+紫心石小	zǐ;sc xīn;dd shí;kp,aa,ak,pk xiǎo;ad	5
+子夜丑石	zǐ;aa,vh yè;wd,ww chǒu;aa,at,vt shí;kp,aa,ak,pk	5
+足迹化石	zú;kv jì;zy huà;rb shí;kp,aa,ak,pk	6
+钻石原石	zuàn;jv shí;kp,aa,ak,pk yuán;ix shí;kp,aa,ak,pk	29
+做金刚石	zuò;rg jīn;ra,pa gāng;dg shí;kp,aa,ak,pk	1
 白垩纪地质	bái;pa,po è;ty jì;sj dì;ty zhì;bu,pb	1
 白榴凝灰岩	bái;pa,po liú;ml níng;dy huī;hu,uh yán;uu	1
+百寿岩石刻	bǎi;ab shòu;cf,fc yán;uu shí;kp,aa,ak,pk kè;dh	1
 白云泥灰岩	bái;pa,po yún;es,se ní;dn huī;hu,uh yán;uu	1
 白云质灰岩	bái;pa,po yún;es,se zhì;bu,pb huī;hu,uh yán;uu	1
 斑状变质岩	bān;ww zhuàng;jq,pq,qp biàn;wy,yy zhì;bu,pb yán;uu	1
@@ -317,10 +3450,13 @@ sort: by_weight
 宝塔石灰岩	bǎo;by tǎ;td,th shí;kp,aa,ak,pk huī;hu,uh yán;uu	1
 崩塌角砾岩	bēng;up tā;ty jiǎo;dy lì;ul,uy yán;uu	1
 碧玉铁质岩	bì;ub,up yù;ad,wd tiě;ju zhì;bu,pb yán;uu	1
+碧云岩石刻	bì;ub,up yún;es,se yán;uu shí;kp,aa,ak,pk kè;dh	1
 变质岩石学	biàn;wy,yy zhì;bu,pb yán;uu shí;kp,aa,ak,pk xué;dz,zb	1
 表生成岩酌	biǎo;fy shēng;na chéng;gg,wg yán;uu zhuó;yu	1
 冰川地质学	bīng;du chuān;pa dì;ty zhì;bu,pb xué;dz,zb	1
 剥蚀角砾岩	bō;dl shí;ui jiǎo;dy lì;ul,uy yán;uu	1
+不蚀变岩石	bù;ad,ax shí;ui biàn;wy,yy yán;uu shí;kp,aa,ak,pk	1
+不透水岩石	bú;ad,ax tòu;zx shuǐ;ad,uv yán;uu shí;kp,aa,ak,pk	1
 擦碎角砾岩	cā;fi suì;uz jiǎo;dy lì;ul,uy yán;uu	1
 测井地质学	cè;dz jǐng;aa,ep dì;ty zhì;bu,pb xué;dz,zb	1
 层间角砾岩	céng;uy jiān;mo,om jiǎo;dy lì;ul,uy yán;uu	1
@@ -328,13 +3464,16 @@ sort: by_weight
 长春地质宫	cháng;pd chūn;of,fo dì;ty zhì;bu,pb gōng;bl	1
 长兴石灰岩	cháng;pd xīng;ba,db shí;kp,aa,ak,pk huī;hu,uh yán;uu	1
 超镁铁质岩	chāo;zv měi;jm tiě;ju zhì;bu,pb yán;uu	1
+沉积岩石学	chén;dj,dr jī;hv yán;uu shí;kp,aa,ak,pk xué;dz,zb	1
 成岩白云岩	chéng;gg,wg yán;uu bái;pa,po yún;es,se yán;uu	1
 成岩分异酌	chéng;gg,wg yán;uu fēn;bd,db yì;cs,sc zhuó;yu	1
 成岩角砾岩	chéng;gg,wg yán;uu jiǎo;dy lì;ul,uy yán;uu	1
+成因岩石学	chéng;gg,wg yīn;kd yán;uu shí;kp,aa,ak,pk xué;dz,zb	1
 储层地质学	chǔ;rv céng;uy dì;ty zhì;bu,pb xué;dz,zb	1
 船山石灰岩	chuán;vk shān;aa shí;kp,aa,ak,pk huī;hu,uh yán;uu	1
 粗粒凝灰岩	cū;mq lì;ml níng;dy huī;hu,uh yán;uu	1
 粗面凝灰岩	cū;mq miàn;aa níng;dy huī;hu,uh yán;uu	1
+翠绿锂辉石	cuì;yz lǜ;sl lǐ;jl huī;gj shí;kp,aa,ak,pk	1
 大气碎屑岩	dà;ad qì;py,ry suì;uz xiè;ux yán;uu	1
 大屯火山群	dà;ad tún;ag huǒ;dd shān;aa qún;yj	1
 淡色花岗岩	dàn;dy sè;db huā;ch gǎng;ug yán;uu	1
@@ -381,6 +3520,7 @@ sort: by_weight
 叠锥状火山	dié;qr,qu,yy zhuī;jv zhuàng;jq,pq,qp huǒ;dd shān;aa	1
 动力变质岩	dòng;ly,yl lì;gp biàn;wy,yy zhì;bu,pb yán;uu	1
 动力地质学	dòng;ly,yl lì;gp dì;ty zhì;bu,pb xué;dz,zb	1
+读书岩石刻	dú;ym shū;ad,vd yán;uu shí;kp,aa,ak,pk kè;dh	1
 断层角砾岩	duàn;ja,jm,jv céng;uy jiǎo;dy lì;ul,uy yán;uu	1
 多杂质砾岩	duō;xx zá;jm,mj zhì;bu,pb lì;ul,uy yán;uu	1
 二长花岗岩	èr;aa cháng;pd huā;ch gǎng;ug yán;uu	1
@@ -391,6 +3531,7 @@ sort: by_weight
 非洲火山岛	fēi;aa zhōu;dv huǒ;dd shān;aa dǎo;nu,un	1
 粉砂屑灰岩	fěn;mf shā;uu xiè;ux huī;hu,uh yán;uu	1
 风成碎屑岩	fēng;ji chéng;gg,wg suì;uz xiè;ux yán;uu	1
+风化的岩石	fēng;ji huà;rb de;bu yán;uu shí;kp,aa,ak,pk	1
 风火山隧道	fēng;ji huǒ;dd shān;aa suì;es dào;zu	1
 风林火山篇	fēng;ji lín;mm huǒ;dd shān;aa piān;vb	1
 副长深成岩	fù;df,dt cháng;pd shēn;dm chéng;gg,wg yán;uu	1
@@ -401,6 +3542,7 @@ sort: by_weight
 浮石火山锥	fú;df shí;kp,aa,ak,pk huǒ;dd shān;aa zhuī;jv	1
 浮石凝灰岩	fú;df shí;kp,aa,ak,pk níng;dy huī;hu,uh yán;uu	1
 钙碱花岗岩	gài;jg jiǎn;ux huā;ch gǎng;ug yán;uu	1
+该岩类岩石	gāi;yh yán;uu lèi;md yán;uu shí;kp,aa,ak,pk	1
 钙质角砾岩	gài;jg zhì;bu,pb jiǎo;dy lì;ul,uy yán;uu	1
 高于庄灰岩	gāo;wk yú;aa zhuāng;gt huī;hu,uh yán;uu	1
 革老河灰岩	gé;aa,ca lǎo;bl,lb hé;dk huī;hu,uh yán;uu	1
@@ -411,23 +3553,47 @@ sort: by_weight
 工程地质图	gōng;aa chéng;hi dì;ty zhì;bu,pb tú;kd	1
 工程地质学	gōng;aa chéng;hi dì;ty zhì;bu,pb xué;dz,zb	1
 公馆凝灰岩	gōng;sb,bs guǎn;ug níng;dy huī;hu,uh yán;uu	1
+工艺岩石学	gōng;aa yì;cy yán;uu shí;kp,aa,ak,pk xué;dz,zb	1
 构造地质学	gòu;mg zào;zg dì;ty zhì;bu,pb xué;dz,zb	1
-古代火山兽	gǔ;uk dài;ry huǒ;dd shān;aa shòu;ka,bk	1
+构造岩石学	gòu;mg zào;zg yán;uu shí;kp,aa,ak,pk xué;dz,zb	1
+古丈红石林	gǔ;uk zhàng;ad hóng;sg shí;kp,aa,ak,pk lín;mm	1
+观音岩石窟	guān;jy,yj yīn;lo yán;uu shí;kp,aa,ak,pk kū;xq,bq	1
 硅酸盐矿物	guī;ug suān;yj,yw yán;mb kuàng;ug wù;nw	1
 硅质石灰岩	guī;ug zhì;bu,pb shí;kp,aa,ak,pk huī;hu,uh yán;uu	1
+滚动的岩石	gǔn;dg dòng;ly,yl de;bu yán;uu shí;kp,aa,ak,pk	1
 国家地质部	guó;ky jiā;bu dì;ty zhì;bu,pb bù;ek,ep	1
+过碱性岩石	guò;zc jiǎn;ux xìng;xu yán;uu shí;kp,aa,ak,pk	1
 海岸岩溶型	hǎi;dm àn;ug yán;uu róng;dr xíng;tx	1
 海底地质学	hǎi;dm dǐ;gd dì;ty zhì;bu,pb xué;dz,zb	1
 海底断裂带	hǎi;dm dǐ;gd duàn;ja,jm,jv liè;yl dài;jb	1
 海洋地质所	hǎi;dm yáng;dy dì;ty zhì;bu,pb suǒ;hj,jh	1
 海洋地质学	hǎi;dm yáng;dy dì;ty zhì;bu,pb xué;dz,zb	1
 含金砾岩层	hán;kj,rk jīn;ra,pa lì;ul,uy yán;uu céng;uy	1
+含沥青岩石	hán;kj,rk lì;dl qīng;of,fo yán;uu shí;kp,aa,ak,pk	1
 含镁石灰岩	hán;kj,rk měi;jm shí;kp,aa,ak,pk huī;hu,uh yán;uu	1
+合成金红石	hé;rk chéng;gg,wg jīn;ra,pa hóng;sg shí;kp,aa,ak,pk	1
+合成绿松石	hé;rk chéng;gg,wg lǜ;sl sōng;mg shí;kp,aa,ak,pk	1
 河成碎屑岩	hé;dk chéng;gg,wg suì;uz xiè;ux yán;uu	1
 黑色花岗岩	hēi;ad,ha sè;db huā;ch gǎng;ug yán;uu	1
 黑色火山土	hēi;ad,ha sè;db huǒ;dd shān;aa tǔ;aa	1
 黑云花岗岩	hēi;ad,ha yún;es,se huā;ch gǎng;ug yán;uu	1
+红帘石片岩	hóng;sg lián;bj,jb,jx,xj shí;kp,aa,ak,pk piàn;pa,pv yán;uu	1
+红色的石头	hóng;sg sè;db de;bu shí;kp,aa,ak,pk tou;dd	1
+红色绿柱石	hóng;sg sè;db lǜ;sl zhù;mv shí;kp,aa,ak,pk	1
+红色石灰土	hóng;sg sè;db shí;kp,aa,ak,pk huī;hu,uh tǔ;aa	1
+红色搜魂石	hóng;sg sè;db sōu;fs,fy hún;gy,yg shí;kp,aa,ak,pk	1
+红石比较器	hóng;sg shí;kp,aa,ak,pk bǐ;bb jiào;ij qì;kk,qk	1
+红石兵工厂	hóng;sg shí;kp,aa,ak,pk bīng;qb gōng;aa chǎng;ap	1
+红石砬子镇	hóng;sg shí;kp,aa,ak,pk lá;ul zǐ;aa,vh zhèn;jv	1
+红石林业局	hóng;sg shí;kp,aa,ak,pk lín;mm yè;aa jú;uk	1
+红石榴糖浆	hóng;sg shí;kp,aa,ak,pk liú;ml táng;mt jiāng;ux	1
+红石水电站	hóng;sg shí;kp,aa,ak,pk shuǐ;ad,uv diàn;ag,og zhàn;lv	1
+红石峡水库	hóng;sg shí;kp,aa,ak,pk xiá;uj shuǐ;ad,uv kù;gi	1
+红石崖街道	hóng;sg shí;kp,aa,ak,pk yá;uy jiē;xg,xi dào;zu	1
+红石中继器	hóng;sg shí;kp,aa,ak,pk zhōng;aa,ka jì;sa,sv qì;kk,qk	1
+红心番石榴	hóng;sg xīn;dd fān;tb,pt,tm shí;kp,aa,ak,pk liú;ml	1
 后生角砾岩	hòu;pk shēng;na jué;dy lì;ul,uy yán;uu	1
+湖北绿松石	hú;dh běi;ap,bj lǜ;sl sōng;mg shí;kp,aa,ak,pk	1
 花岗岩地貌	huā;ch gǎng;ug yán;uu dì;ty mào;ve,vm	1
 花岗岩瀑布	huā;ch gǎng;ug yán;uu pù;db bù;ju,uj	1
 花岗岩铺砌	huā;ch gǎng;ug yán;uu pū;jf qì;uq	1
@@ -439,6 +3605,7 @@ sort: by_weight
 花岗岩质层	huā;ch gǎng;ug yán;uu zhì;bu,pb céng;uy	1
 花岗岩状的	huā;ch gǎng;ug yán;uu zhuàng;jq,pq,qp de;bu	1
 华南花岗岩	huá;uh nán;ua,uy huā;ch gǎng;ug yán;uu	1
+化石岩石学	huà;rb shí;kp,aa,ak,pk yán;uu shí;kp,aa,ak,pk xué;dz,zb	1
 化学石灰岩	huà;rb xué;dz,zb shí;kp,aa,ak,pk huī;hu,uh yán;uu	1
 环斑花岗岩	huán;wb bān;ww huā;ch gǎng;ug yán;uu	1
 环境地质学	huán;wb jìng;tj dì;ty zhì;bu,pb xué;dz,zb	1
@@ -503,15 +3670,18 @@ sort: by_weight
 假深成岩体	jiǎ;rj,ry shēn;dm chéng;gg,wg yán;uu tǐ;rb	1
 钾玄岩系列	jiǎ;jj xuán;wy yán;uu xì;ps liè;dd	1
 钾质花岗岩	jiǎ;jj zhì;bu,pb huā;ch gǎng;ug yán;uu	1
+坚固的岩石	jiān;ty gù;kg de;bu yán;uu shí;kp,aa,ak,pk	1
 碱性花岗岩	jiǎn;ux xìng;xu huā;ch gǎng;ug yán;uu	1
 碱性火成岩	jiǎn;ux xìng;xu huǒ;dd chéng;gg,wg yán;uu	1
 碱性火山岩	jiǎn;ux xìng;xu huǒ;dd shān;aa yán;uu	1
+坚硬的岩石	jiān;ty yìng;ug de;bu yán;uu shí;kp,aa,ak,pk	1
 建造内砾岩	jiàn;zy zào;zg nèi;ad,kr lì;ul,uy yán;uu	1
 礁岛岩溶型	jiāo;uj dǎo;nu,un yán;uu róng;dr xíng;tx	1
 角闪质岩石	jiǎo;dy shǎn;mr,rm zhì;bu,pb yán;uu shí;kp,aa,ak,pk	1
 接触变质岩	jiē;fq chù;ij,ji biàn;wy,yy zhì;bu,pb yán;uu	1
 结构地质学	jié;sj gòu;mg dì;ty zhì;bu,pb xué;dz,zb	1
 结晶凝灰岩	jié;sj jīng;oo níng;dy huī;hu,uh yán;uu	1
+金红石结构	jīn;ra,pa hóng;sg shí;kp,aa,ak,pk jié;sj gòu;mg	1
 晶洞花岗岩	jīng;oo dòng;dt huā;ch gǎng;ug yán;uu	1
 景儿峪灰岩	jǐng;oj ér;pg yù;ug huī;hu,uh yán;uu	1
 晶后碎屑岩	jīng;oo hòu;pk suì;uz xiè;ux yán;uu	1
@@ -521,6 +3691,14 @@ sort: by_weight
 颗粒石灰岩	kē;yg lì;ml shí;kp,aa,ak,pk huī;hu,uh yán;uu	1
 矿床地质学	kuàng;ug chuáng;gm,mg dì;ty zhì;bu,pb xué;dz,zb	1
 矿山地质学	kuàng;ug shān;aa dì;ty zhì;bu,pb xué;dz,zb	1
+蓝晶石片岩	lán;cj jīng;oo shí;kp,aa,ak,pk piàn;pa,pv yán;uu	1
+蓝色搜魂石	lán;cj sè;db sōu;fs,fy hún;gy,yg shí;kp,aa,ak,pk	1
+蓝色托帕石	lán;cj sè;db tuō;fq,ft pà;jb shí;kp,aa,ak,pk	1
+蓝色月光石	lán;cj sè;db yuè;oy,pa,yt guāng;ea,xw shí;kp,aa,ak,pk	1
+蓝闪石片岩	lán;cj shǎn;mr,rm shí;kp,aa,ak,pk piàn;pa,pv yán;uu	1
+蓝石大溪地	lán;cj shí;kp,aa,ak,pk dà;ad xī;dx dì;ty	1
+蓝丝黛尔石	lán;cj sī;aa dài;hd ěr;dx,xd shí;kp,aa,ak,pk	1
+蓝尾石龙子	lán;cj wěi;um shí;kp,aa,ak,pk lóng;ad zǐ;aa,vh	1
 狼溪陨石坑	láng;ql xī;dx yǔn;ey shí;kp,aa,ak,pk kēng;tk	1
 雷琼火山群	léi;yt qióng;wj huǒ;dd shān;aa qún;yj	1
 类型花岗岩	lèi;md xíng;tx huā;ch gǎng;ug yán;uu	1
@@ -532,23 +3710,31 @@ sort: by_weight
 龙岗火山群	lóng;ad gǎng;ug huǒ;dd shān;aa qún;yj	1
 隆基迈火山	lóng;eu jī;tq,qt mài;zw huǒ;dd shān;aa	1
 乱层火成岩	luàn;ug céng;uy huǒ;dd chéng;gg,wg yán;uu	1
+裸露的岩石	luǒ;yg lòu;yl de;bu yán;uu shí;kp,aa,ak,pk	1
 裸露型岩溶	luǒ;yg lòu;yl xíng;tx yán;uu róng;dr	1
 绿帘花岗岩	lǜ;sl lián;bj,jb,jx,xj huā;ch gǎng;ug yán;uu	1
 绿泥花岗岩	lǜ;sl ní;dn huā;ch gǎng;ug yán;uu	1
 绿色凝灰岩	lǜ;sl sè;db níng;dy huī;hu,uh yán;uu	1
+绿色搜魂石	lǜ;sl sè;db sōu;fs,fy hún;gy,yg shí;kp,aa,ak,pk	1
+绿松石耳坠	lǜ;sl sōng;mg shí;kp,aa,ak,pk ěr;aa zhuì;td	1
+绿松石项链	lǜ;sl sōng;mg shí;kp,aa,ak,pk xiàng;gy,yg liàn;jl	1
+绿松石原石	lǜ;sl sōng;mg shí;kp,aa,ak,pk yuán;ix shí;kp,aa,ak,pk	1
 埋藏型岩溶	mái;tl cáng;cg,ci xíng;tx yán;uu róng;dr	1
 茅口石灰岩	máo;cm kǒu;aa shí;kp,aa,ak,pk huī;hu,uh yán;uu	1
 茅口组灰岩	máo;cm kǒu;aa zǔ;sq huī;hu,uh yán;uu	1
 毛纳基火山	máo;pg nà;sn jī;tq,qt huǒ;dd shān;aa	1
 冒纳基火山	mào;oo nà;sn jī;tq,qt huǒ;dd shān;aa	1
 煤成岩作用	méi;hm chéng;gg,wg yán;uu zuò;rv yòng;kf	1
+玫红尖晶石	méi;ww hóng;sg jiān;xd jīng;oo shí;kp,aa,ak,pk	1
 煤炭地质学	méi;hm tàn;uh dì;ty zhì;bu,pb xué;dz,zb	1
 煤田地质局	méi;hm tián;aa dì;ty zhì;bu,pb jú;uk	1
 煤田地质学	méi;hm tián;aa dì;ty zhì;bu,pb xué;dz,zb	1
 镁铁质岩石	měi;jm tiě;ju zhì;bu,pb yán;uu shí;kp,aa,ak,pk	1
 描述地质学	miáo;fm shù;zu dì;ty zhì;bu,pb xué;dz,zb	1
+描述岩石学	miáo;fm shù;zu yán;uu shí;kp,aa,ak,pk xué;dz,zb	1
 冥王星地质	míng;bl,bz wáng;aa xīng;ou dì;ty zhì;bu,pb	1
 默奇森陨石	mò;hq qí;dk sēn;ml yǔn;ey shí;kp,aa,ak,pk	1
+磨蚀性岩石	mó;mu,um shí;ui xìng;xu yán;uu shí;kp,aa,ak,pk	1
 钼酸盐矿物	mù;jo suān;yj,yw yán;mb kuàng;ug wù;nw	1
 木卫一火山	mù;ad wèi;ea,ga yī;aa huǒ;dd shān;aa	1
 钠辉细岗岩	nà;jn huī;gj xì;st gǎng;ug yán;uu	1
@@ -563,7 +3749,9 @@ sort: by_weight
 喷发的火山	pēn;kb fā;ay,fd,vy,yd de;bu huǒ;dd shān;aa	1
 硼酸盐矿物	péng;up suān;yj,yw yán;mb kuàng;ug wù;nw	1
 婆罗摩火山	pó;nb luó;sx mó;mu,um huǒ;dd shān;aa	1
+破碎的岩石	pò;up suì;uz de;bu yán;uu shí;kp,aa,ak,pk	1
 普通地质学	pǔ;ob,bo tōng;zy dì;ty zhì;bu,pb xué;dz,zb	1
+起傅岩石刻	qǐ;zj fù;rc,rf yán;uu shí;kp,aa,ak,pk kè;dh	1
 栖霞石灰岩	qī;mx xiá;yj,yy shí;kp,aa,ak,pk huī;hu,uh yán;uu	1
 浅带变质岩	qiǎn;dj dài;jb biàn;wy,yy zhì;bu,pb yán;uu	1
 前地质时期	qián;bd,qd dì;ty zhì;bu,pb shí;oc qī;oq,qo	1
@@ -577,6 +3765,7 @@ sort: by_weight
 区域变质岩	qū;ki yù;th biàn;wy,yy zhì;bu,pb yán;uu	1
 区域地质图	qū;ki yù;th dì;ty zhì;bu,pb tú;kd	1
 区域地质学	qū;ki yù;th dì;ty zhì;bu,pb xué;dz,zb	1
+区域岩石学	qū;ki yù;th yán;uu shí;kp,aa,ak,pk xué;dz,zb	1
 全新世火山	quán;rw xīn;jq shì;ca,cv,aa huǒ;dd shān;aa	1
 缺裂火山锥	quē;fd,fg liè;yl huǒ;dd shān;aa zhuī;jv	1
 热力类岩溶	rè;hv lì;gp lèi;md yán;uu róng;dr	1
@@ -586,10 +3775,12 @@ sort: by_weight
 熔结凝灰岩	róng;hr jié;sj níng;dy huī;hu,uh yán;uu	1
 熔壳火山锥	róng;hr ké;uj huǒ;dd shān;aa zhuī;jv	1
 熔岩溪火山	róng;hr yán;uu xī;dx huǒ;dd shān;aa	1
+软弱的岩石	ruǎn;iq ruò;gd de;bu yán;uu shí;kp,aa,ak,pk	1
 砂质泥灰岩	shā;uu zhì;bu,pb ní;dn huī;hu,uh yán;uu	1
 山顶火山口	shān;aa dǐng;dy,yd huǒ;dd shān;aa kǒu;aa	1
 深地质处置	shēn;dm dì;ty zhì;bu,pb chǔ;wb zhì;sv	1
 砷酸盐矿物	shēn;uu suān;yj,yw yán;mb kuàng;ug wù;nw	1
+渗透性岩石	shèn;dc tòu;zx xìng;xu yán;uu shí;kp,aa,ak,pk	1
 生物层灰岩	shēng;na wù;nw céng;uy huī;hu,uh yán;uu	1
 生物地质学	shēng;na wù;nw dì;ty zhì;bu,pb xué;dz,zb	1
 生物礁灰岩	shēng;na wù;nw jiāo;uj huī;hu,uh yán;uu	1
@@ -602,6 +3793,7 @@ sort: by_weight
 石灰岩矿床	shí;kp,aa,ak,pk huī;hu,uh yán;uu kuàng;ug chuáng;gm,mg	1
 石灰岩溶洞	shí;kp,aa,ak,pk huī;hu,uh yán;uu róng;dr dòng;dt	1
 实验地质学	shí;bt yàn;ma,mq dì;ty zhì;bu,pb xué;dz,zb	1
+实验岩石学	shí;bt yàn;ma,mq yán;uu shí;kp,aa,ak,pk xué;dz,zb	1
 石英质岩石	shí;kp,aa,ak,pk yīng;cy zhì;bu,pb yán;uu shí;kp,aa,ak,pk	1
 石油地质学	shí;kp,aa,ak,pk yóu;dy dì;ty zhì;bu,pb xué;dz,zb	1
 石质凝灰岩	shí;kp,aa,ak,pk zhì;bu,pb níng;dy huī;hu,uh yán;uu	1
@@ -621,36 +3813,49 @@ sort: by_weight
 太平洋岩群	tài;dd píng;aa,gb yáng;dy yán;uu qún;yj	1
 钛铁磷灰岩	tài;jt tiě;ju lín;ul huī;hu,uh yán;uu	1
 郯庐断裂带	tán;ey lú;gh duàn;ja,jm,jv liè;yl dài;jb	1
+弹塑性岩石	tán;gd sù;to,tu xìng;xu yán;uu shí;kp,aa,ak,pk	1
 碳酸盐矿物	tàn;ut suān;yj,yw yán;mb kuàng;ug wù;nw	1
 碳质石灰岩	tàn;ut zhì;bu,pb shí;kp,aa,ak,pk huī;hu,uh yán;uu	1
+天桂岩石刻	tiān;ad guì;mg yán;uu shí;kp,aa,ak,pk kè;dh	1
 天然花岗岩	tiān;ad rán;hq huā;ch gǎng;ug yán;uu	1
 天体地质学	tiān;ad tǐ;rb dì;ty zhì;bu,pb xué;dz,zb	1
 天文地质学	tiān;ad wén;wi,dd dì;ty zhì;bu,pb xué;dz,zb	1
 跳火山的人	tiào;zv huǒ;dd shān;aa de;bu rén;pd	1
+廷蒂纳岩石	tíng;zr dì;cd nà;sn yán;uu shí;kp,aa,ak,pk	1
+统计岩石学	tǒng;si jì;yu yán;uu shí;kp,aa,ak,pk xué;dz,zb	1
 通科科火山	tōng;zy kē;hd kē;hd huǒ;dd shān;aa	1
 同生角砾岩	tóng;kk shēng;na jiǎo;dy lì;ul,uy yán;uu	1
+通天岩石窟	tōng;zy tiān;ad yán;uu shí;kp,aa,ak,pk kū;xq,bq	1
 同源花岗岩	tóng;kk yuán;dy huā;ch gǎng;ug yán;uu	1
 透长凝灰岩	tòu;zx cháng;pd níng;dy huī;hu,uh yán;uu	1
+突出的岩石	tū;xq,bq chū;ck,aa de;bu yán;uu shí;kp,aa,ak,pk	1
 外成岩作用	wài;xb chéng;gg,wg yán;uu zuò;rv yòng;kf	1
 外碎屑灰岩	wài;xb suì;uz xiè;ux huī;hu,uh yán;uu	1
 微贝壳灰岩	wēi;xw bèi;ad,kr ké;uj huī;hu,uh yán;uu	1
 我是地质人	wǒ;pd,pp shì;op,ov dì;ty zhì;bu,pb rén;pd	1
 无根火山锥	wú;ag,ay,ee gēn;mg huǒ;dd shān;aa zhuī;jv	1
+五莲红石材	wǔ;aa lián;cl hóng;sg shí;kp,aa,ak,pk cái;mc	1
 雾迷山灰岩	wù;yw mí;zm shān;aa huī;hu,uh yán;uu	1
 无球粒陨石	wú;ag,ay,ee qiú;wq lì;ml yǔn;ey shí;kp,aa,ak,pk	1
 钨酸盐矿物	wū;jw suān;yj,yw yán;mb kuàng;ug wù;nw	1
+五塔岩石塔	wǔ;aa tǎ;td,th yán;uu shí;kp,aa,ak,pk tǎ;td,th	1
 细晶磷灰岩	xì;st jīng;oo lín;ul huī;hu,uh yán;uu	1
 锡纳朋火山	xī;jy nà;sn péng;oo huǒ;dd shān;aa	1
+悉尼岩石区	xī;xm,xb ní;ub yán;uu shí;kp,aa,ak,pk qū;ki	1
 稀土火成岩	xī;hx tǔ;aa huǒ;dd chéng;gg,wg yán;uu	1
 陷落火山口	xiàn;ej,ex luò;cl huǒ;dd shān;aa kǒu;aa	1
+显微岩石学	xiǎn;oy wēi;xw yán;uu shí;kp,aa,ak,pk xué;dz,zb	1
+纤维状岩石	xiān;sq wéi;sv zhuàng;jq,pq,qp yán;uu shí;kp,aa,ak,pk	1
 小江断裂带	xiǎo;ad jiāng;dg duàn;ja,jm,jv liè;yl dài;jb	1
 硝酸盐矿物	xiāo;ux suān;yj,yw yán;mb kuàng;ug wù;nw	1
 小行星陨石	xiǎo;ad xíng;xd,xi xīng;ou yǔn;ey shí;kp,aa,ak,pk	1
+逍遥岩石刻	xiāo;zx yáo;zf yán;uu shí;kp,aa,ak,pk kè;dh	1
 斜长花岗岩	xié;dy cháng;pd huā;ch gǎng;ug yán;uu	1
 新生代火山	xīn;jq shēng;na dài;ry huǒ;dd shān;aa	1
 行星地质学	xíng;xd,xi xīng;ou dì;ty zhì;bu,pb xué;dz,zb	1
 休格地陨石	xiū;rm gé;mg dì;ty yǔn;ey shí;kp,aa,ak,pk	1
 岫岩陨石坑	xiù;uy yán;uu yǔn;ey shí;kp,aa,ak,pk kēng;tk	1
+玄武岩石辊	xuán;wy wǔ;vy,yv yán;uu shí;kp,aa,ak,pk gǔn;ik	1
 压碎角砾岩	yā;id,it suì;uz jiǎo;dy lì;ul,uy yán;uu	1
 岩崩角砾岩	yán;uu bēng;up jiǎo;dy lì;ul,uy yán;uu	1
 岩浆花岗岩	yán;uu jiāng;ux huā;ch gǎng;ug yán;uu	1
@@ -669,11 +3874,64 @@ sort: by_weight
 岩溶夷平面	yán;uu róng;dr yí;ad,dg píng;aa,gb miàn;aa	1
 岩溶油气藏	yán;uu róng;dr yóu;dy qì;py,ry cáng;cg,ci	1
 岩溶准平原	yán;uu róng;dr zhǔn;dv píng;aa,gb yuán;ix	1
+岩石泊松比	yán;uu shí;kp,aa,ak,pk bó;db sōng;mg bǐ;bb	1
+岩石层岩块	yán;uu shí;kp,aa,ak,pk céng;uy yán;uu kuài;td,tg	1
+岩石成因论	yán;uu shí;kp,aa,ak,pk chéng;gg,wg yīn;kd lùn;yl	1
+岩石成因学	yán;uu shí;kp,aa,ak,pk chéng;gg,wg yīn;kd xué;dz,zb	1
+岩石的海洋	yán;uu shí;kp,aa,ak,pk de;bu hǎi;dm yáng;dy	1
+岩石的粘性	yán;uu shí;kp,aa,ak,pk de;bu nián;mv xìng;xu	1
+岩石地层法	yán;uu shí;kp,aa,ak,pk dì;ty céng;uy fǎ;dq	1
+岩石地层时	yán;uu shí;kp,aa,ak,pk dì;ty céng;uy shí;oc	1
+岩石地层学	yán;uu shí;kp,aa,ak,pk dì;ty céng;uy xué;dz,zb	1
+岩石地貌学	yán;uu shí;kp,aa,ak,pk dì;ty mào;ve,vm xué;dz,zb	1
+岩石发电机	yán;uu shí;kp,aa,ak,pk fā;ay,fd,vy,yd diàn;ag,og jī;mj	1
+岩石粉磨机	yán;uu shí;kp,aa,ak,pk fěn;mf mó;mu,um jī;mj	1
+岩石构造学	yán;uu shí;kp,aa,ak,pk gòu;mg zào;zg xué;dz,zb	1
+岩石和土壤	yán;uu shí;kp,aa,ak,pk hé;hk tǔ;aa rǎng;tx,ty	1
+岩石堠题刻	yán;uu shí;kp,aa,ak,pk hòu;th tí;uy,yu kè;dh	1
+岩石几何学	yán;uu shí;kp,aa,ak,pk jǐ;py hé;rk xué;dz,zb	1
+岩石坚固性	yán;uu shí;kp,aa,ak,pk jiān;ty gù;kg xìng;xu	1
+岩石胶结酌	yán;uu shí;kp,aa,ak,pk jiāo;oj jié;sj zhuó;yu	1
+岩石静压力	yán;uu shí;kp,aa,ak,pk jìng;qv yā;id,it lì;gp	1
+岩石掘进机	yán;uu shí;kp,aa,ak,pk jué;fq jìn;zj jī;mj	1
+岩石抗冻性	yán;uu shí;kp,aa,ak,pk kàng;fk dòng;dd xìng;xu	1
+岩石可爆性	yán;uu shí;kp,aa,ak,pk kě;dk bào;hb xìng;xu	1
+岩石可采性	yán;uu shí;kp,aa,ak,pk kě;dk cǎi;mv,vm xìng;xu	1
+岩石可钻性	yán;uu shí;kp,aa,ak,pk kě;dk zuān;jv xìng;xu	1
+岩石矿物学	yán;uu shí;kp,aa,ak,pk kuàng;ug wù;nw xué;dz,zb	1
+岩石裂隙带	yán;uu shí;kp,aa,ak,pk liè;yl xì;ex dài;jb	1
+岩石岭水库	yán;uu shí;kp,aa,ak,pk lǐng;ul shuǐ;ad,uv kù;gi	1
+岩石流变性	yán;uu shí;kp,aa,ak,pk liú;di biàn;wy,yy xìng;xu	1
+岩石磨蚀性	yán;uu shí;kp,aa,ak,pk mó;mu,um shí;ui xìng;xu	1
+岩石圈板块	yán;uu shí;kp,aa,ak,pk quān;kj bǎn;mf kuài;td,tg	1
+岩石圈滴落	yán;uu shí;kp,aa,ak,pk quān;kj dī;dd,dg luò;cl	1
+岩石圈地幔	yán;uu shí;kp,aa,ak,pk quān;kj dì;ty màn;jm	1
+岩石圈地震	yán;uu shí;kp,aa,ak,pk quān;kj dì;ty zhèn;yi	1
+岩石圈断块	yán;uu shí;kp,aa,ak,pk quān;kj duàn;ja,jm,jv kuài;td,tg	1
+岩石圈断裂	yán;uu shí;kp,aa,ak,pk quān;kj duàn;ja,jm,jv liè;yl	1
+岩石圈弯曲	yán;uu shí;kp,aa,ak,pk quān;kj wān;gy,yg qū;aa,oa	1
+岩石热导率	yán;uu shí;kp,aa,ak,pk rè;hv dǎo;cs,sc lǜ;wu	1
+岩石热胀性	yán;uu shí;kp,aa,ak,pk rè;hv zhàng;oi xìng;xu	1
+岩石热阻率	yán;uu shí;kp,aa,ak,pk rè;hv zǔ;eq lǜ;wu	1
+岩石软化性	yán;uu shí;kp,aa,ak,pk ruǎn;iq huà;rb xìng;xu	1
+岩石渗透性	yán;uu shí;kp,aa,ak,pk shèn;dc tòu;zx xìng;xu	1
+岩石声发射	yán;uu shí;kp,aa,ak,pk shēng;um fā;ay,fd,vy,yd shè;cu,uc	1
+岩石弹塑性	yán;uu shí;kp,aa,ak,pk tán;gd sù;to,tu xìng;xu	1
+岩石透气性	yán;uu shí;kp,aa,ak,pk tòu;zx qì;py,ry xìng;xu	1
+岩石挖掘机	yán;uu shí;kp,aa,ak,pk wā;fw,fy jué;fq jī;mj	1
+岩石物理学	yán;uu shí;kp,aa,ak,pk wù;nw lǐ;wl xué;dz,zb	1
+岩石吸水率	yán;uu shí;kp,aa,ak,pk xī;kj shuǐ;ad,uv lǜ;wu	1
+岩石吸水性	yán;uu shí;kp,aa,ak,pk xī;kj shuǐ;ad,uv xìng;xu	1
+岩石显微镜	yán;uu shí;kp,aa,ak,pk xiǎn;oy wēi;xw jìng;jj	1
+岩石小作品	yán;uu shí;kp,aa,ak,pk xiǎo;ad zuò;rv pǐn;kk	1
+岩石艺术区	yán;uu shí;kp,aa,ak,pk yì;cy shù;md qū;ki	1
+岩石硬度比	yán;uu shí;kp,aa,ak,pk yìng;ug dù;gy bǐ;bb	1
 岩尾火山群	yán;uu wěi;um huǒ;dd shān;aa qún;yj	1
 岩屑砂屑岩	yán;uu xiè;ux shā;uu xiè;ux yán;uu	1
 冶里石灰岩	yě;dt lǐ;aa,tt shí;kp,aa,ak,pk huī;hu,uh yán;uu	1
 野外地质学	yě;ly,yl wài;xb dì;ty zhì;bu,pb xué;dz,zb	1
 异化粒灰岩	yì;cs,sc huà;rb lì;ml huī;hu,uh yán;uu	1
+易溶性岩石	yì;ow róng;dr xìng;xu yán;uu shí;kp,aa,ak,pk	1
 伊通火山群	yī;ry tōng;zy huǒ;dd shān;aa qún;yj	1
 隐爆角砾岩	yǐn;ej bào;hb jiǎo;dy lì;ul,uy yán;uu	1
 应用地质学	yìng;ga yòng;kf dì;ty zhì;bu,pb xué;dz,zb	1
@@ -684,11 +3942,13 @@ sort: by_weight
 原始火山岩	yuán;ix shǐ;nt huǒ;dd shān;aa yán;uu	1
 月球地质学	yuè;oy,pa,yt qiú;wq dì;ty zhì;bu,pb xué;dz,zb	1
 月球火成岩	yuè;oy,pa,yt qiú;wq huǒ;dd chéng;gg,wg yán;uu	1
+月球岩石圈	yuè;oy,pa,yt qiú;wq yán;uu shí;kp,aa,ak,pk quān;kj	1
 陨击角砾岩	yǔn;ey jī;aa,eu,fk jiǎo;dy lì;ul,uy yán;uu	1
 杂块花岗岩	zá;jm,mj kuài;td,tg huā;ch gǎng;ug yán;uu	1
 再生花岗岩	zài;aa,at shēng;na huā;ch gǎng;ug yán;uu	1
 张夏石灰岩	zhāng;gi xià;wz,aw shí;kp,aa,ak,pk huī;hu,uh yán;uu	1
 张性角砾岩	zhāng;gi xìng;xu jiǎo;dy lì;ul,uy yán;uu	1
+赵巧岩石窟	zhào;zi qiǎo;gk yán;uu shí;kp,aa,ak,pk kū;xq,bq	1
 正长花岗岩	zhèng;av zhǎng;pd huā;ch gǎng;ug yán;uu	1
 中生代地质	zhōng;aa,ka shēng;na dài;ry dì;ty zhì;bu,pb	1
 中心式火山	zhōng;aa,ka xīn;dd shì;gy,yg huǒ;dd shān;aa	1
@@ -696,6 +3956,7 @@ sort: by_weight
 竹叶状砾岩	zhú;gg yè;ku zhuàng;jq,pq,qp lì;ul,uy yán;uu	1
 撞击角砾岩	zhuàng;ft jī;aa,eu,fk jiǎo;dy lì;ul,uy yán;uu	1
 紫苏花岗岩	zǐ;sc sū;cb huā;ch gǎng;ug yán;uu	1
+紫苏闪石岩	zǐ;sc sū;cb shǎn;mr,rm shí;kp,aa,ak,pk yán;uu	1
 棕灰岩鹪鹛	zōng;mz huī;hu,uh yán;uu jiāo;nj méi;nm	1
 半原地花岗岩	bàn;bf yuán;ix dì;ty huā;ch gǎng;ug yán;uu	1
 保护地质环境	bǎo;rd hù;fh dì;ty zhì;bu,pb huán;wb jìng;tj	1
@@ -707,6 +3968,7 @@ sort: by_weight
 长春地质学院	cháng;pd chūn;of,fo dì;ty zhì;bu,pb xué;dz,zb yuàn;ew	1
 场地地质效应	chǎng;ty dì;ty dì;ty zhì;bu,pb xiào;wj yìng;ga	1
 超强陨石魔法	chāo;zv qiáng;gs yǔn;ey shí;kp,aa,ak,pk mó;gm,mg fǎ;dq	1
+超岩石圈断裂	chāo;zv yán;uu shí;kp,aa,ak,pk quān;kj duàn;ja,jm,jv liè;yl	1
 沉火山角砾岩	chén;dj,dr huǒ;dd shān;aa jiǎo;dy lì;ul,uy yán;uu	1
 沉火山碎屑岩	chén;dj,dr huǒ;dd shān;aa suì;uz xiè;ux yán;uu	1
 沉积成岩作用	chén;dj,dr jī;hv chéng;gg,wg yán;uu zuò;rv yòng;kf	1
@@ -719,6 +3981,7 @@ sort: by_weight
 岛硅酸盐矿物	dǎo;nu,un guī;ug suān;yj,yw yán;mb kuàng;ug wù;nw	1
 倒石锥角砾岩	dào;rd shí;kp,aa,ak,pk zhuī;jv jiǎo;dy lì;ul,uy yán;uu	1
 地球地质历史	dì;ty qiú;wq dì;ty zhì;bu,pb lì;il shǐ;ad,ki	1
+地下岩石孔缝	dì;ty xià;ab,ad yán;uu shí;kp,aa,ak,pk kǒng;zg fèng;sf	1
 地震地质效应	dì;ty zhèn;yi dì;ty zhì;bu,pb xiào;wj yìng;ga	1
 地震地质灾害	dì;ty zhèn;yi dì;ty zhì;bu,pb zāi;bh,hb hài;bk	1
 地震工程地质	dì;ty zhèn;yi gōng;aa chéng;hi dì;ty zhì;bu,pb	1
@@ -747,14 +4010,18 @@ sort: by_weight
 地质灾害巡查	dì;ty zhì;bu,pb zāi;bh,hb hài;bk xún;zi chá;md	1
 地质灾害治理	dì;ty zhì;bu,pb zāi;bh,hb hài;bk zhì;dt lǐ;wl	1
 地中海型岩溶	dì;ty zhōng;aa,ka hǎi;dm xíng;tx yán;uu róng;dr	1
+电动破碎岩石	diàn;ag,og dòng;ly,yl pò;up suì;uz yán;uu shí;kp,aa,ak,pk	1
 动力地质作用	dòng;ly,yl lì;gp dì;ty zhì;bu,pb zuò;rv yòng;kf	1
+二次岩石压力	èr;aa cì;dq yán;uu shí;kp,aa,ak,pk yā;id,it lì;gp	1
 鲕粒亮晶灰岩	ér;ye lì;ml liàng;wj,jb jīng;oo huī;hu,uh yán;uu	1
 鲕粒泥质灰岩	ér;ye lì;ml ní;dn zhì;bu,pb huī;hu,uh yán;uu	1
 尔塔阿雷火山	ěr;dx,xd tǎ;td,th ā;ek léi;yt huǒ;dd shān;aa	1
+非渗透性岩石	fēi;aa shèn;dc tòu;zx xìng;xu yán;uu shí;kp,aa,ak,pk	1
 粪粒泥晶灰岩	fèn;mg lì;ml ní;dn jīng;oo huī;hu,uh yán;uu	1
 风成细粒灰岩	fēng;ji chéng;gg,wg xì;st lì;ml huī;hu,uh yán;uu	1
 风的地质作用	fēng;ji de;bu dì;ty zhì;bu,pb zuò;rv yòng;kf	1
 副沉积角砾岩	fù;df,dt chén;dj,dr jī;hv jiǎo;dy lì;ul,uy yán;uu	1
+附法岩石高仑	fù;ef fǎ;dq yán;uu shí;kp,aa,ak,pk gāo;wk lún;rb	1
 富铝质火成岩	fù;bf,bt lǚ;jl zhì;bu,pb huǒ;dd chéng;gg,wg yán;uu	1
 负异钠花岗岩	fù;db yì;cs,sc nà;jn huā;ch gǎng;ug yán;uu	1
 抚州地质学院	fǔ;fw zhōu;id,da dì;ty zhì;bu,pb xué;dz,zb yuàn;ew	1
@@ -762,6 +4029,8 @@ sort: by_weight
 钙质微晶灰岩	gài;jg zhì;bu,pb wēi;xw jīng;oo huī;hu,uh yán;uu	1
 甘科诺拉火山	gān;aa,ca kē;hd nuò;yr lā;fl huǒ;dd shān;aa	1
 甘斯基陨石坑	gān;aa,ca sī;jq,qj jī;tq,qt yǔn;ey shí;kp,aa,ak,pk kēng;tk	1
+高等岩石力学	gāo;wk děng;vs yán;uu shí;kp,aa,ak,pk lì;gp xué;dz,zb	1
+高原边沿岩石	gāo;wk yuán;ix biān;zl yán;dk yán;uu shí;kp,aa,ak,pk	1
 各国火成岩学	gè;wk guó;ky huǒ;dd chéng;gg,wg yán;uu xué;dz,zb	1
 耕地质量建设	gēng;lj dì;ty zhì;bu,pb liàng;ol jiàn;zy shè;yu	1
 工程地质测绘	gōng;aa chéng;hi dì;ty zhì;bu,pb cè;dz huì;sh	1
@@ -780,14 +4049,20 @@ sort: by_weight
 固结成岩作用	gù;kg jié;sj chéng;gg,wg yán;uu zuò;rv yòng;kf	1
 牯牛潭石灰岩	gǔ;ng niú;pa tán;dt shí;kp,aa,ak,pk huī;hu,uh yán;uu	1
 古铜无球陨石	gǔ;uk tóng;jt wú;ag,ay,ee qiú;wq yǔn;ey shí;kp,aa,ak,pk	1
+滚刀破碎岩石	gǔn;dg dāo;gp,pg pò;up suì;uz yán;uu shí;kp,aa,ak,pk	1
 国际地质大会	guó;ky jì;eu dì;ty zhì;bu,pb dà;ad huì;ry	1
 国家地质公园	guó;ky jiā;bu dì;ty zhì;bu,pb gōng;sb,bs yuán;ky	1
 海洋地质调查	hǎi;dm yáng;dy dì;ty zhì;bu,pb diào;yv chá;md	1
 海洋地质学家	hǎi;dm yáng;dy dì;ty zhì;bu,pb xué;dz,zb jiā;bu	1
 海洋工程地质	hǎi;dm yáng;dy gōng;aa chéng;hi dì;ty zhì;bu,pb	1
+含瓦斯的岩石	hán;kj,rk wǎ;ad sī;jq,qj de;bu yán;uu shí;kp,aa,ak,pk	1
 航空地质方法	háng;vk kōng;xg,bg dì;ty zhì;bu,pb fāng;dg,wd,dp,dw fǎ;dq	1
 河北地质大学	hé;dk běi;ap,bj dì;ty zhì;bu,pb dà;ad xué;dz,zb	1
 河北地质学院	hé;dk běi;ap,bj dì;ty zhì;bu,pb xué;dz,zb yuàn;ew	1
+红硅硼铝钙石	hóng;sg guī;ug péng;up lǚ;jl gài;jg shí;kp,aa,ak,pk	1
+红帘石英片岩	hóng;sg lián;bj,jb,jx,xj shí;kp,aa,ak,pk yīng;cy piàn;pa,pv yán;uu	1
+红色石蕊试纸	hóng;sg sè;db shí;kp,aa,ak,pk ruǐ;cr,cx shì;yu zhǐ;su	1
+红条毛肤石鳖	hóng;sg tiáo;wm máo;pg fū;of shí;kp,aa,ak,pk biē;yb,yw	1
 后生成岩作用	hòu;pk shēng;na chéng;gg,wg yán;uu zuò;rv yòng;kf	1
 湖北地质学院	hú;dh běi;ap,bj dì;ty zhì;bu,pb xué;dz,zb yuàn;ew	1
 华东地质学院	huá;uh dōng;ad,qx dì;ty zhì;bu,pb xué;dz,zb yuàn;ew	1
@@ -809,13 +4084,20 @@ sort: by_weight
 火山碎屑岩筒	huǒ;dd shān;aa suì;uz xiè;ux yán;uu tǒng;vt	1
 火山岩型铀矿	huǒ;dd shān;aa yán;uu xíng;tx yóu;jy kuàng;ug	1
 火山柱状节理	huǒ;dd shān;aa zhù;mv zhuàng;jq,pq,qp jié;ce lǐ;wl	1
+火星岩石列表	huǒ;dd xīng;ou yán;uu shí;kp,aa,ak,pk liè;dd biǎo;fy	1
+坚固稳定岩石	jiān;ty gù;kg wěn;hj dìng;bp yán;uu shí;kp,aa,ak,pk	1
 捷边科夫火山	jié;fj biān;zl kē;hd fū;ad,er huǒ;dd shān;aa	1
 进行水文地质	jìn;zj xíng;xd,xi shuǐ;ad,uv wén;wi,dd dì;ty zhì;bu,pb	1
 居间灰岩黄芩	jū;ug jiān;mo,om huī;hu,uh yán;uu huáng;ad,cb qín;cj	1
 矿区地质环境	kuàng;ug qū;ki dì;ty zhì;bu,pb huán;wb jìng;tj	1
 矿山地质工作	kuàng;ug shān;aa dì;ty zhì;bu,pb gōng;aa zuò;rv	1
 矿山基建地质	kuàng;ug shān;aa jī;tq,qt jiàn;zy dì;ty zhì;bu,pb	1
+矿山岩石力学	kuàng;ug shān;aa yán;uu shí;kp,aa,ak,pk lì;gp xué;dz,zb	1
+蓝色石蕊试纸	lán;cj sè;db shí;kp,aa,ak,pk ruǐ;cr,cx shì;yu zhǐ;su	1
+蓝闪石片岩相	lán;cj shǎn;mr,rm shí;kp,aa,ak,pk piàn;pa,pv yán;uu xiāng;mo	1
+粒状岩石风化	lì;ml zhuàng;jq,pq,qp yán;uu shí;kp,aa,ak,pk fēng;ji huà;rb	1
 链硅酸盐矿物	liàn;jl guī;ug suān;yj,yw yán;mb kuàng;ug wù;nw	1
+灵应岩石桅子	líng;hx,xh yīng;ga yán;uu shí;kp,aa,ak,pk wéi;mw zǐ;aa,vh	1
 硫代酸盐矿物	liú;ui dài;ry suān;yj,yw yán;mb kuàng;ug wù;nw	1
 鹿寨香桥岩溶	lù;gb,lb zhài;mb,bm xiāng;ho qiáo;mq yán;uu róng;dr	1
 铝硅酸盐矿物	lǚ;jl guī;ug suān;yj,yw yán;mb kuàng;ug wù;nw	1
@@ -835,13 +4117,16 @@ sort: by_weight
 片麻状花岗岩	piàn;pa,pv má;gl zhuàng;jq,pq,qp huā;ch gǎng;ug yán;uu	1
 普通球粒陨石	pǔ;ob,bo tōng;zy qiú;wq lì;ml yǔn;ey shí;kp,aa,ak,pk	1
 强力陨石魔法	qiáng;gs lì;gp yǔn;ey shí;kp,aa,ak,pk mó;gm,mg fǎ;dq	1
+切削破碎岩石	qiē;dq,qd xiāo;dx pò;up suì;uz yán;uu shí;kp,aa,ak,pk	1
 亲花岗岩矿床	qīn;lm huā;ch gǎng;ug yán;uu kuàng;ug chuáng;gm,mg	1
+倾斜岩石巷道	qīng;rq xié;dy yán;uu shí;kp,aa,ak,pk hàng;sg,gs dào;zu	1
 球粒亮晶灰岩	qiú;wq lì;ml liàng;wj,jb jīng;oo huī;hu,uh yán;uu	1
 球粒泥晶灰岩	qiú;wq lì;ml ní;dn jīng;oo huī;hu,uh yán;uu	1
 球粒微晶灰岩	qiú;wq lì;ml wēi;xw jīng;oo huī;hu,uh yán;uu	1
 区域地质测量	qū;ki yù;th dì;ty zhì;bu,pb cè;dz liáng;ol	1
 区域地质调查	qū;ki yù;th dì;ty zhì;bu,pb diào;yv chá;md	1
 区域地质构造	qū;ki yù;th dì;ty zhì;bu,pb gòu;mg zào;zg	1
+热力破碎岩石	rè;hv lì;gp pò;up suì;uz yán;uu shí;kp,aa,ak,pk	1
 人为地质灾害	rén;pd wéi;dd de;ty zhì;bu,pb zāi;bh,hb hài;bk	1
 熔火山碎屑岩	róng;hr huǒ;dd shān;aa suì;uz xiè;ux yán;uu	1
 山洪地质灾害	shān;aa hóng;dg dì;ty zhì;bu,pb zāi;bh,hb hài;bk	1
@@ -877,9 +4162,11 @@ sort: by_weight
 水文地质资料	shuǐ;ad,uv wén;wi,dd dì;ty zhì;bu,pb zī;bc liào;md	1
 水文地质钻探	shuǐ;ad,uv wén;wi,dd dì;ty zhì;bu,pb zuān;jv tàn;fm,fu	1
 水文工程地质	shuǐ;ad,uv wén;wi,dd gōng;aa chéng;hi dì;ty zhì;bu,pb	1
+松散易垮岩石	sōng;mg sǎn;wo yì;ow kuǎ;tk yán;uu shí;kp,aa,ak,pk	1
 覃家庙石灰岩	tán;xz jiā;bu miào;gy shí;kp,aa,ak,pk huī;hu,uh yán;uu	1
 探明地质储量	tàn;fm,fu míng;oo dì;ty zhì;bu,pb chǔ;rv liàng;ol	1
 碳质球粒陨石	tàn;ut zhì;bu,pb qiú;wq lì;ml yǔn;ey shí;kp,aa,ak,pk	1
+藤壶比尔岩石	téng;ct hú;uy bǐ;bb ěr;dx,xd yán;uu shí;kp,aa,ak,pk	1
 天河板石灰岩	tiān;ad hé;dk bǎn;mf shí;kp,aa,ak,pk huī;hu,uh yán;uu	1
 同生成岩作用	tóng;kk shēng;na chéng;gg,wg yán;uu zuò;rv yòng;kf	1
 外力地质作用	wài;xb lì;gp dì;ty zhì;bu,pb zuò;rv yòng;kf	1
@@ -900,11 +4187,63 @@ sort: by_weight
 岩溶含水地块	yán;uu róng;dr hán;kj,rk shuǐ;ad,uv dì;ty kuài;td,tg	1
 岩溶水之间无	yán;uu róng;dr shuǐ;ad,uv zhī;dd jiān;mo,om wú;ag,ay,ee	1
 岩溶型风化壳	yán;uu róng;dr xíng;tx fēng;ji huà;rb ké;uj	1
+岩石饱和系数	yán;uu shí;kp,aa,ak,pk bǎo;ub hé;hk xì;ps shù;wl	1
+岩石爆破机理	yán;uu shí;kp,aa,ak,pk bào;hb pò;up jī;mj lǐ;wl	1
+岩石本构方程	yán;uu shí;kp,aa,ak,pk běn;aa,ma gòu;mg fāng;dg,wd,dp,dw chéng;hi	1
+岩石边的尘土	yán;uu shí;kp,aa,ak,pk biān;zl de;bu chén;tx,xt tǔ;aa	1
+岩石变形机制	yán;uu shí;kp,aa,ak,pk biàn;wy,yy xíng;pk jī;mj zhì;dg,dv	1
+岩石变形模量	yán;uu shí;kp,aa,ak,pk biàn;wy,yy xíng;pk mó;mm liàng;ol	1
+岩石表面破碎	yán;uu shí;kp,aa,ak,pk biǎo;fy miàn;aa pò;up suì;uz	1
+岩石残余强度	yán;uu shí;kp,aa,ak,pk cán;dj yú;rb,rd,rh qiáng;gs dù;gy	1
+岩石残余应力	yán;uu shí;kp,aa,ak,pk cán;dj yú;rb,rd,rh yīng;ga lì;gp	1
+岩石成因模型	yán;uu shí;kp,aa,ak,pk chéng;gg,wg yīn;kd mó;mm xíng;tx	1
+岩石的波阻抗	yán;uu shí;kp,aa,ak,pk de;bu bō;dp zǔ;eq kàng;fk	1
+岩石的成层性	yán;uu shí;kp,aa,ak,pk de;bu chéng;gg,wg céng;uy xìng;xu	1
+岩石的可采性	yán;uu shí;kp,aa,ak,pk de;bu kě;dk cǎi;mv,vm xìng;xu	1
+岩石的可钻性	yán;uu shí;kp,aa,ak,pk de;bu kě;dk zuān;jv xìng;xu	1
+岩石的研磨性	yán;uu shí;kp,aa,ak,pk de;bu yán;uk mó;mu,um xìng;xu	1
+岩石地层单位	yán;uu shí;kp,aa,ak,pk dì;ty céng;uy dān;ba,bd wèi;rl	1
+岩石地层单元	yán;uu shí;kp,aa,ak,pk dì;ty céng;uy dān;ba,bd yuán;aw,ee	1
+岩石地球化学	yán;uu shí;kp,aa,ak,pk dì;ty qiú;wq huà;rb xué;dz,zb	1
+岩石殿石棚墓	yán;uu shí;kp,aa,ak,pk diàn;ug shí;kp,aa,ak,pk péng;mp mù;tm,ct	1
+岩石动态强度	yán;uu shí;kp,aa,ak,pk dòng;ly,yl tài;xt qiáng;gs dù;gy	1
+岩石断裂力学	yán;uu shí;kp,aa,ak,pk duàn;ja,jm,jv liè;yl lì;gp xué;dz,zb	1
+岩石断裂韧性	yán;uu shí;kp,aa,ak,pk duàn;ja,jm,jv liè;yl rèn;wr xìng;xu	1
+岩石非均匀性	yán;uu shí;kp,aa,ak,pk fēi;aa jūn;ty yún;gd xìng;xu	1
+岩石非连续性	yán;uu shí;kp,aa,ak,pk fēi;aa lián;zi xù;sm xìng;xu	1
+岩石风化程度	yán;uu shí;kp,aa,ak,pk fēng;ji huà;rb chéng;hi dù;gy	1
+岩石各向异性	yán;uu shí;kp,aa,ak,pk gè;wk xiàng;pk yì;cs,sc xìng;xu	1
+岩石花纹符号	yán;uu shí;kp,aa,ak,pk huā;ch wén;sw fú;vf hào;kk	1
+岩石化学的球	yán;uu shí;kp,aa,ak,pk huà;rb xué;dz,zb de;bu qiú;wq	1
+岩石剪切试验	yán;uu shí;kp,aa,ak,pk jiǎn;dq qiē;dq,qd shì;yu yàn;ma,mq	1
+岩石交互作用	yán;uu shí;kp,aa,ak,pk jiāo;li,wf,df hù;aa,ea,ev zuò;rv yòng;kf	1
+岩石抗拉强度	yán;uu shí;kp,aa,ak,pk kàng;fk lā;fl qiáng;gs dù;gy	1
+岩石抗力系数	yán;uu shí;kp,aa,ak,pk kàng;fk lì;gp xì;ps shù;wl	1
+岩石抗压强度	yán;uu shí;kp,aa,ak,pk kàng;fk yā;id,it qiáng;gs dù;gy	1
+岩石孔隙结构	yán;uu shí;kp,aa,ak,pk kǒng;zg xì;ex jié;sj gòu;mg	1
+岩石力学性质	yán;uu shí;kp,aa,ak,pk lì;gp xué;dz,zb xìng;xu zhì;bu,pb	1
+岩石流变强度	yán;uu shí;kp,aa,ak,pk liú;di biàn;wy,yy qiáng;gs dù;gy	1
+岩石粘滞效应	yán;uu shí;kp,aa,ak,pk nián;mv zhì;dd xiào;wj yìng;ga	1
+岩石破碎机理	yán;uu shí;kp,aa,ak,pk pò;up suì;uz jī;mj lǐ;wl	1
+岩石强度系数	yán;uu shí;kp,aa,ak,pk qiáng;gs dù;gy xì;ps shù;wl	1
+岩石热扩散率	yán;uu shí;kp,aa,ak,pk rè;hv kuò;fg sàn;wo lǜ;wu	1
+岩石声学性质	yán;uu shí;kp,aa,ak,pk shēng;um xué;dz,zb xìng;xu zhì;bu,pb	1
+岩石水理性质	yán;uu shí;kp,aa,ak,pk shuǐ;ad,uv lǐ;wl xìng;xu zhì;bu,pb	1
+岩石塑性表象	yán;uu shí;kp,aa,ak,pk sù;to,tu xìng;xu biǎo;fy xiàng;du,pd,ua	1
+岩石弹性表象	yán;uu shí;kp,aa,ak,pk tán;gd xìng;xu biǎo;fy xiàng;du,pd,ua	1
+岩石弹性模量	yán;uu shí;kp,aa,ak,pk tán;gd xìng;xu mó;mm liàng;ol	1
+岩石压缩应力	yán;uu shí;kp,aa,ak,pk yā;id,it suō;ss yīng;ga lì;gp	1
+岩石质量指标	yán;uu shí;kp,aa,ak,pk zhì;bu,pb liàng;ol zhǐ;fv biāo;mu	1
+岩石州立公园	yán;uu shí;kp,aa,ak,pk zhōu;id,da lì;da gōng;sb,bs yuán;ky	1
+岩石自养生物	yán;uu shí;kp,aa,ak,pk zì;pa,po yǎng;ya,yd shēng;na wù;nw	1
+岩石组构解析	yán;uu shí;kp,aa,ak,pk zǔ;sq gòu;mg jiě;jn xī;mj	1
+岩石钻磨工具	yán;uu shí;kp,aa,ak,pk zuān;jv mó;mu,um gōng;aa jù;ba,bq,qb	1
 砚瓦山石灰岩	yàn;uj wǎ;ad shān;aa shí;kp,aa,ak,pk huī;hu,uh yán;uu	1
 杨柳岗石灰岩	yáng;my liǔ;mm gǎng;ug shí;kp,aa,ak,pk huī;hu,uh yán;uu	1
 页硅酸盐矿物	yè;ab guī;ug suān;yj,yw yán;mb kuàng;ug wù;nw	1
 冶金地质学院	yě;dt jīn;ra,pa dì;ty zhì;bu,pb xué;dz,zb yuàn;ew	1
 野柳地质公园	yě;ly,yl liǔ;mm dì;ty zhì;bu,pb gōng;sb,bs yuán;ky	1
+易落上层岩石	yì;ow luò;cl shàng;aa,ba céng;uy yán;uu shí;kp,aa,ak,pk	1
 油气地质勘探	yóu;dy qì;py,ry dì;ty zhì;bu,pb kān;lu tàn;fm,fu	1
 原地生物灰岩	yuán;ix dì;ty shēng;na wù;nw huī;hu,uh yán;uu	1
 原始地质编录	yuán;ix shǐ;nt dì;ty zhì;bu,pb biān;sb lù;au,ua,vu	1
@@ -915,13 +4254,17 @@ sort: by_weight
 竹叶状石灰岩	zhú;gg yè;ku zhuàng;jq,pq,qp shí;kp,aa,ak,pk huī;hu,uh yán;uu	1
 梓门桥石灰岩	zǐ;mx mén;dg qiáo;mq shí;kp,aa,ak,pk huī;hu,uh yán;uu	1
 自然地质灾害	zì;pa,po rán;hq de;ty zhì;bu,pb zāi;bh,hb hài;bk	1
+紫色石蕊试液	zǐ;sc sè;db shí;kp,aa,ak,pk ruǐ;cr,cx shì;yu yè;dy	1
+紫石英号事件	zǐ;sc shí;kp,aa,ak,pk yīng;cy hào;kk shì;aa jiàn;rn	1
 层状硅酸盐矿物	céng;uy zhuàng;jq,pq,qp guī;ug suān;yj,yw yán;mb kuàng;ug wù;nw	1
 超镁铁质岩分类	chāo;zv měi;jm tiě;ju zhì;bu,pb yán;uu fēn;bd,db lèi;md	1
+冲回压岩石突出	chōng;dv huí;kk yā;id,it yán;uu shí;kp,aa,ak,pk tū;xq,bq chū;ck,aa	1
 纯橄无球粒陨石	chún;st gǎn;mg wú;ag,ay,ee qiú;wq lì;ml yǔn;ey shí;kp,aa,ak,pk	1
 粗球粒玄武岩的	cū;mq qiú;wq lì;ml xuán;wy wǔ;vy,yv yán;uu de;bu	1
 岛状硅酸盐矿物	dǎo;nu,un zhuàng;jq,pq,qp guī;ug suān;yj,yw yán;mb kuàng;ug wù;nw	1
 低山沟谷型岩溶	dī;rd shān;aa gōu;dg gǔ;bk,kr xíng;tx yán;uu róng;dr	1
 地质学的类比法	dì;ty zhì;bu,pb xué;dz,zb de;bu lèi;md bǐ;bb fǎ;dq	1
+电气绿泥石英岩	diàn;ag,og qì;py,ry lǜ;sl ní;dn shí;kp,aa,ak,pk yīng;cy yán;uu	1
 断块山地型岩溶	duàn;ja,jm,jv kuài;td,tg shān;aa dì;ty xíng;tx yán;uu róng;dr	1
 断陷盆地型岩溶	duàn;ja,jm,jv xiàn;ej,ex pén;mf dì;ty xíng;tx yán;uu róng;dr	1
 峰丛谷地型岩溶	fēng;uf cóng;ac,ra gǔ;bk,kr dì;ty xíng;tx yán;uu róng;dr	1
@@ -931,6 +4274,7 @@ sort: by_weight
 富钙无球粒陨石	fù;bf,bt gài;jg wú;ag,ay,ee qiú;wq lì;ml yǔn;ey shí;kp,aa,ak,pk	1
 橄辉无球粒陨石	gǎn;mg huī;gj wú;ag,ay,ee qiú;wq lì;ml yǔn;ey shí;kp,aa,ak,pk	1
 更长环斑花岗岩	gèng;ad,ag cháng;pd huán;wb bān;ww huā;ch gǎng;ug yán;uu	1
+工业矿物和岩石	gōng;aa yè;aa kuàng;ug wù;nw hé;hk yán;uu shí;kp,aa,ak,pk	1
 孤峰波地型岩溶	gū;zg fēng;uf bō;dp dì;ty xíng;tx yán;uu róng;dr	1
 古铜钙无粒陨石	gǔ;uk tóng;jt gài;jg wú;ag,ay,ee lì;ml yǔn;ey shí;kp,aa,ak,pk	1
 航空地质甸方法	háng;vk kōng;xg,bg dì;ty zhì;bu,pb diān;gt,tg fāng;dg,wd,dp,dw fǎ;dq	1
@@ -948,6 +4292,7 @@ sort: by_weight
 正长球粒霞霓岩	zhèng;av zhǎng;pd qiú;wq lì;ml xiá;yj,yy ní;ye yán;uu	1
 紫苏斜长花岗岩	zǐ;sc sū;cb xié;dy cháng;pd huā;ch gǎng;ug yán;uu	1
 自碎火成角砾岩	zì;pa,po suì;uz huǒ;dd chéng;gg,wg jiǎo;dy lì;ul,uy yán;uu	1
+爆破地面大块岩石	bào;hb pò;up dì;ty miàn;aa dà;ad kuài;td,tg yán;uu shí;kp,aa,ak,pk	1
 爆破角砾岩型铀矿	bào;hb pò;up jiǎo;dy lì;ul,uy yán;uu xíng;tx yóu;jy kuàng;ug	1
 北极地质研究所岩	běi;ap,bj jí;mj dì;ty zhì;bu,pb yán;uk jiū;xj,bj suǒ;hj,jh yán;uu	1
 含煤岩系成因类型	hán;kj,rk méi;hm yán;uu xì;ps chéng;gg,wg yīn;kd lèi;md xíng;tx	1
@@ -957,7 +4302,11 @@ sort: by_weight
 火山深成联合岩群	huǒ;dd shān;aa shēn;dm chéng;gg,wg lián;eg hé;rk yán;uu qún;yj	1
 近海煤型含煤岩系	jìn;zj hǎi;dm méi;hm xíng;tx hán;kj,rk méi;hm yán;uu xì;ps	1
 矿区水文地质条件	kuàng;ug qū;ki shuǐ;ad,uv wén;wi,dd dì;ty zhì;bu,pb tiáo;wm jiàn;rn	1
+普氏岩石强度指数	pǔ;ob,bo shì;pg yán;uu shí;kp,aa,ak,pk qiáng;gs dù;gy zhǐ;fv shù;wl	1
 强斯型圆锥洗煤机	qiáng;gs sī;jq,qj xíng;tx yuán;ky zhuī;jv xǐ;dx méi;hm jī;mj	1
 生物球粒亮晶灰岩	shēng;na wù;nw qiú;wq lì;ml liàng;wj,jb jīng;oo huī;hu,uh yán;uu	1
 生物球粒泥晶灰岩	shēng;na wù;nw qiú;wq lì;ml ní;dn jīng;oo huī;hu,uh yán;uu	1
+岩石动态弹性模量	yán;uu shí;kp,aa,ak,pk dòng;ly,yl tài;xt tán;gd xìng;xu mó;mm liàng;ol	1
+岩石孔隙压缩系数	yán;uu shí;kp,aa,ak,pk kǒng;zg xì;ex yā;id,it suō;ss xì;ps shù;wl	1
+岩石破碎比能学说	yán;uu shí;kp,aa,ak,pk pò;up suì;uz bǐ;bb néng;sb xué;dz,zb shuō;yd	1
 地质资源与地质工程	dì;ty zhì;bu,pb zī;bc yuán;dy yǔ;aa dì;ty zhì;bu,pb gōng;aa chéng;hi	1
