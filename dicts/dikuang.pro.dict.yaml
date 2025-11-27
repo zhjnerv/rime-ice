@@ -1,0 +1,963 @@
+# rime dictionary
+# encoding	utf-8
+#https://github.com/amzxyz/RIME-LMDG
+# ------地质矿物词库-------
+---
+name: dikuang
+version: "LTS"
+sort: by_weight
+...
+矿床	kuàng;ug chuáng;gm,mg	444
+砾岩	lì;ul,uy yán;uu	363
+岩溶	yán;uu róng;dr	412
+铋矿床	bì;jb kuàng;ug chuáng;gm,mg	92
+变砾岩	biàn;wy,yy lì;ul,uy yán;uu	81
+碲矿床	dì;ud kuàng;ug chuáng;gm,mg	52
+底砾岩	dǐ;gd lì;ul,uy yán;uu	65
+碘矿床	diǎn;ud kuàng;ug chuáng;gm,mg	93
+钒矿床	fán;jf kuàng;ug chuáng;gm,mg	62
+副砾岩	fù;df,dt lì;ul,uy yán;uu	62
+锆矿床	gào;jg kuàng;ug chuáng;gm,mg	73
+铬矿床	gè;jg kuàng;ug chuáng;gm,mg	75
+镉矿床	gé;jg kuàng;ug chuáng;gm,mg	73
+汞矿床	gǒng;gu,ug kuàng;ug chuáng;gm,mg	100
+铪矿床	hā;jh kuàng;ug chuáng;gm,mg	72
+镓矿床	jiā;jj kuàng;ug chuáng;gm,mg	89
+假砾岩	jiǎ;rj,ry lì;ul,uy yán;uu	67
+假岩溶	jiǎ;rj,ry yán;uu róng;dr	80
+角砾岩	jiǎo;dy lì;ul,uy yán;uu	171
+胶砾岩	jiāo;oj lì;ul,uy yán;uu	86
+金矿床	jīn;ra,pa kuàng;ug chuáng;gm,mg	130
+钪矿床	kàng;jk kuàng;ug chuáng;gm,mg	95
+矿床学	kuàng;ug chuáng;gm,mg xué;dz,zb	117
+铼矿床	lái;jl kuàng;ug chuáng;gm,mg	67
+锂矿床	lǐ;jl kuàng;ug chuáng;gm,mg	99
+磷矿床	lín;ul kuàng;ug chuáng;gm,mg	52
+硫矿床	liú;ui kuàng;ug chuáng;gm,mg	83
+铝矿床	lǚ;jl kuàng;ug chuáng;gm,mg	95
+脉矿床	mài;oy kuàng;ug chuáng;gm,mg	83
+盲矿床	máng;ow kuàng;ug chuáng;gm,mg	63
+镁矿床	měi;jm kuàng;ug chuáng;gm,mg	85
+煤矿床	méi;hm kuàng;ug chuáng;gm,mg	69
+锰矿床	měng;jm kuàng;ug chuáng;gm,mg	63
+钼矿床	mù;jo kuàng;ug chuáng;gm,mg	54
+泥砾岩	ní;dn lì;ul,uy yán;uu	83
+镍矿床	niè;jm,jn kuàng;ug chuáng;gm,mg	98
+硼矿床	péng;up kuàng;ug chuáng;gm,mg	86
+铍矿床	pī;jp kuàng;ug chuáng;gm,mg	58
+铷矿床	rú;jr kuàng;ug chuáng;gm,mg	66
+铯矿床	sè;js kuàng;ug chuáng;gm,mg	80
+砂矿床	shā;uu kuàng;ug chuáng;gm,mg	84
+砂砾岩	shā;uu lì;ul,uy yán;uu	74
+扇砾岩	shàn;hy,yh lì;ul,uy yán;uu	96
+砷矿床	shēn;uu kuàng;ug chuáng;gm,mg	64
+水文队	shuǐ;ad,uv wén;wi,dd duì;er	66
+水文化	shuǐ;ad,uv wén;wi,dd huà;rb	188
+水文局	shuǐ;ad,uv wén;wi,dd jú;uk	184
+水文孔	shuǐ;ad,uv wén;wi,dd kǒng;zg	54
+水文年	shuǐ;ad,uv wén;wi,dd nián;ra,pa	50
+水文人	shuǐ;ad,uv wén;wi,dd rén;pd	76
+水文图	shuǐ;ad,uv wén;wi,dd tú;kd	63
+水文学	shuǐ;ad,uv wén;wi,dd xué;dz,zb	176
+水文站	shuǐ;ad,uv wén;wi,dd zhàn;lv	194
+锶矿床	sī;js kuàng;ug chuáng;gm,mg	66
+碎砾岩	suì;uz lì;ul,uy yán;uu	90
+铊矿床	tā;jt kuàng;ug chuáng;gm,mg	50
+钛矿床	tài;jt kuàng;ug chuáng;gm,mg	54
+锑矿床	tī;jd kuàng;ug chuáng;gm,mg	93
+铁矿床	tiě;ju kuàng;ug chuáng;gm,mg	100
+铜矿床	tóng;jt kuàng;ug chuáng;gm,mg	94
+钍矿床	tǔ;jt kuàng;ug chuáng;gm,mg	58
+钨矿床	wū;jw kuàng;ug chuáng;gm,mg	70
+硒矿床	xī;ux kuàng;ug chuáng;gm,mg	82
+锡矿床	xī;jy kuàng;ug chuáng;gm,mg	54
+细砾岩	xì;st lì;ul,uy yán;uu	94
+锌矿床	xīn;jx kuàng;ug chuáng;gm,mg	61
+岩溶地	yán;uu róng;dr dì;ty	81
+岩溶洞	yán;uu róng;dr dòng;dt	92
+岩溶湖	yán;uu róng;dr hú;dh	79
+岩溶化	yán;uu róng;dr huà;rb	95
+岩溶率	yán;uu róng;dr lǜ;wu	52
+岩溶期	yán;uu róng;dr qī;oq,qo	58
+岩溶泉	yán;uu róng;dr quán;bu,ub	73
+岩溶水	yán;uu róng;dr shuǐ;ad,uv	81
+岩溶相	yán;uu róng;dr xiāng;mo	99
+岩溶柱	yán;uu róng;dr zhù;mv	97
+岩溶酌	yán;uu róng;dr zhuó;yu	78
+铟矿床	yīn;jy kuàng;ug chuáng;gm,mg	79
+银矿床	yín;jg kuàng;ug chuáng;gm,mg	68
+铀矿床	yóu;jy kuàng;ug chuáng;gm,mg	100
+圆砾岩	yuán;ky lì;ul,uy yán;uu	93
+锗矿床	zhě;jv kuàng;ug chuáng;gm,mg	69
+正砾岩	zhèng;av lì;ul,uy yán;uu	98
+钻矿床	zuān;jv kuàng;ug chuáng;gm,mg	52
+白垩矿床	bái;pa,po è;ty kuàng;ug chuáng;gm,mg	8
+变质矿床	biàn;wy,yy zhì;bu,pb kuàng;ug chuáng;gm,mg	7
+变质砾岩	biàn;wy,yy zhì;bu,pb lì;ul,uy yán;uu	6
+残积矿床	cán;dj jī;hv kuàng;ug chuáng;gm,mg	9
+残留矿床	cán;dj liú;td,tl,lt kuàng;ug chuáng;gm,mg	8
+层间砾岩	céng;uy jiān;mo,om lì;ul,uy yán;uu	9
+层间岩溶	céng;uy jiān;mo,om yán;uu róng;dr	5
+层控矿床	céng;uy kòng;fk kuàng;ug chuáng;gm,mg	10
+层内砾岩	céng;uy nèi;ad,kr lì;ul,uy yán;uu	9
+层状矿床	céng;uy zhuàng;jq,pq,qp kuàng;ug chuáng;gm,mg	7
+长江水文	cháng;pd jiāng;dg shuǐ;ad,uv wén;wi,dd	20
+长石矿床	cháng;pd shí;kp,aa,ak,pk kuàng;ug chuáng;gm,mg	5
+沉积矿床	chén;dj,dr jī;hv kuàng;ug chuáng;gm,mg	18
+成层矿床	chéng;gg,wg céng;uy kuàng;ug chuáng;gm,mg	6
+冲积矿床	chōng;dv jī;hv kuàng;ug chuáng;gm,mg	9
+充填矿床	chōng;dy,es,wy tián;tv kuàng;ug chuáng;gm,mg	1
+次生矿床	cì;dq shēng;na kuàng;ug chuáng;gm,mg	16
+单成砾岩	dān;ba,bd chéng;gg,wg lì;ul,uy yán;uu	7
+地下岩溶	dì;ty xià;ab,ad yán;uu róng;dr	10
+叠生矿床	dié;qr,qu,yy shēng;na kuàng;ug chuáng;gm,mg	1
+叠套矿床	dié;qr,qu,yy tào;di kuàng;ug chuáng;gm,mg	6
+顶盘砾岩	dǐng;dy,yd pán;mv,vm lì;ul,uy yán;uu	9
+沸石矿床	fèi;df shí;kp,aa,ak,pk kuàng;ug chuáng;gm,mg	1
+分凝矿床	fēn;bd,db níng;dy kuàng;ug chuáng;gm,mg	8
+风化矿床	fēng;ji huà;rb kuàng;ug chuáng;gm,mg	1
+复成砾岩	fù;pw,rw,wo chéng;gg,wg lì;ul,uy yán;uu	7
+复合矿床	fù;pw,rw,wo hé;rk kuàng;ug chuáng;gm,mg	8
+铬铁矿床	gè;jg tiě;ju kuàng;ug chuáng;gm,mg	8
+硅石矿床	guī;ug shí;kp,aa,ak,pk kuàng;ug chuáng;gm,mg	9
+海底矿床	hǎi;dm dǐ;gd kuàng;ug chuáng;gm,mg	6
+含金砾岩	hán;kj,rk jīn;ra,pa lì;ul,uy yán;uu	6
+衡水文化	héng;xd,xi shuǐ;ad,uv wén;wi,dd huà;rb	7
+后成矿床	hòu;pk chéng;gg,wg kuàng;ug chuáng;gm,mg	5
+后生矿床	hòu;pk shēng;na kuàng;ug chuáng;gm,mg	9
+滑石矿床	huá;dg shí;kp,aa,ak,pk kuàng;ug chuáng;gm,mg	1
+黄铁矿床	huáng;ad,cb tiě;ju kuàng;ug chuáng;gm,mg	10
+黄土岩溶	huáng;ad,cb tǔ;aa yán;uu róng;dr	9
+灰岩溶坑	huī;hu,uh yán;uu róng;dr kēng;tk	6
+火山矿床	huǒ;dd shān;aa kuàng;ug chuáng;gm,mg	10
+火山砾岩	huǒ;dd shān;aa lì;ul,uy yán;uu	12
+钾碱矿床	jiǎ;jj jiǎn;ux kuàng;ug chuáng;gm,mg	8
+假角砾岩	jiǎ;rj,ry jiǎo;dy lì;ul,uy yán;uu	7
+钾盐矿床	jiǎ;jj yán;mb kuàng;ug chuáng;gm,mg	14
+交代矿床	jiāo;li,wf,df dài;ry kuàng;ug chuáng;gm,mg	8
+接触矿床	jiē;fq chù;ij,ji kuàng;ug chuáng;gm,mg	7
+浸染矿床	jìn;dy rǎn;mg,mj kuàng;ug chuáng;gm,mg	8
+金属矿床	jīn;ra,pa shǔ;uy kuàng;ug chuáng;gm,mg	9
+经济矿床	jīng;sg jì;dq kuàng;ug chuáng;gm,mg	7
+巨角砾岩	jù;kk,aa jiǎo;dy lì;ul,uy yán;uu	10
+可采矿床	kě;dk cǎi;mv,vm kuàng;ug chuáng;gm,mg	5
+块状矿床	kuài;td,tg zhuàng;jq,pq,qp kuàng;ug chuáng;gm,mg	10
+矿床地质	kuàng;ug chuáng;gm,mg dì;ty zhì;bu,pb	9
+矿床分带	kuàng;ug chuáng;gm,mg fēn;bd,db dài;jb	10
+矿床几何	kuàng;ug chuáng;gm,mg jǐ;py hé;rk	10
+矿床开拓	kuàng;ug chuáng;gm,mg kāi;ac tuò;fu	7
+矿床勘探	kuàng;ug chuáng;gm,mg kān;lu tàn;fm,fu	9
+矿床类型	kuàng;ug chuáng;gm,mg lèi;md xíng;tx	9
+矿床模式	kuàng;ug chuáng;gm,mg mó;mm shì;gy,yg	9
+矿床模型	kuàng;ug chuáng;gm,mg mó;mm xíng;tx	5
+矿床品位	kuàng;ug chuáng;gm,mg pǐn;kk wèi;rl	1
+矿床评价	kuàng;ug chuáng;gm,mg píng;yp jià;rj	6
+矿床疏干	kuàng;ug chuáng;gm,mg shū;pi,ag,vg,vi gàn;aa	1
+矿床系列	kuàng;ug chuáng;gm,mg xì;ps liè;dd	7
+矿床组合	kuàng;ug chuáng;gm,mg zǔ;sq hé;rk	9
+砾岩状的	lì;ul,uy yán;uu zhuàng;jq,pq,qp de;bu	5
+淋积矿床	lín;dl jī;hv kuàng;ug chuáng;gm,mg	7
+陆地水文	lù;ej dì;ty shuǐ;ad,uv wén;wi,dd	9
+铝土矿床	lǚ;jl tǔ;aa kuàng;ug chuáng;gm,mg	3
+芒硝矿床	máng;cw xiāo;ux kuàng;ug chuáng;gm,mg	7
+煤炭矿床	méi;hm tàn;uh kuàng;ug chuáng;gm,mg	9
+磨砾岩相	mó;mu,um lì;ul,uy yán;uu xiāng;mo	10
+内成矿床	nèi;ad,kr chéng;gg,wg kuàng;ug chuáng;gm,mg	9
+内生矿床	nèi;ad,kr shēng;na kuàng;ug chuáng;gm,mg	6
+铌钽矿床	ní;jn tǎn;jd kuàng;ug chuáng;gm,mg	16
+粘土矿床	nián;mv tǔ;aa kuàng;ug chuáng;gm,mg	8
+喷流矿床	pēn;kb liú;di kuàng;ug chuáng;gm,mg	6
+喷气矿床	pēn;kb qì;py,ry kuàng;ug chuáng;gm,mg	10
+气化矿床	qì;py,ry huà;rb kuàng;ug chuáng;gm,mg	8
+气体矿床	qì;py,ry tǐ;rb kuàng;ug chuáng;gm,mg	5
+气象水文	qì;py,ry xiàng;du,pd,ua shuǐ;ad,uv wén;wi,dd	41
+浅层岩溶	qiǎn;dj céng;uy yán;uu róng;dr	9
+浅成矿床	qiǎn;dj chéng;gg,wg kuàng;ug chuáng;gm,mg	1
+铅锌矿床	qiān;jk xīn;jx kuàng;ug chuáng;gm,mg	19
+曲水文华	qǔ;aa,oa shuǐ;ad,uv wén;wi,dd huá;uh	3
+燃料矿床	rán;hr liào;md kuàng;ug chuáng;gm,mg	7
+热泉矿床	rè;hv quán;bu,ub kuàng;ug chuáng;gm,mg	7
+热液矿床	rè;hv yè;dy kuàng;ug chuáng;gm,mg	9
+熔角砾岩	róng;hr jiǎo;dy lì;ul,uy yán;uu	11
+熔离矿床	róng;hr lí;ws,wl kuàng;ug chuáng;gm,mg	10
+熔析矿床	róng;hr xī;mj kuàng;ug chuáng;gm,mg	7
+砂积矿床	shā;uu jī;hv kuàng;ug chuáng;gm,mg	1
+砂金矿床	shā;uu jīn;ra,pa kuàng;ug chuáng;gm,mg	5
+砂锡矿床	shā;uu xī;jy kuàng;ug chuáng;gm,mg	1
+山地水文	shān;aa dì;ty shuǐ;ad,uv wén;wi,dd	6
+山水文化	shān;aa shuǐ;ad,uv wén;wi,dd huà;rb	59
+山水文园	shān;aa shuǐ;ad,uv wén;wi,dd yuán;ky	30
+山水文苑	shān;aa shuǐ;ad,uv wén;wi,dd yuàn;ce,cy	14
+深成矿床	shēn;dm chéng;gg,wg kuàng;ug chuáng;gm,mg	7
+深岩溶洞	shēn;dm yán;uu róng;dr dòng;dt	9
+升华矿床	shēng;pc huá;uh kuàng;ug chuáng;gm,mg	5
+省水文局	shěng;ou shuǐ;ad,uv wén;wi,dd jú;uk	32
+石膏矿床	shí;kp,aa,ak,pk gāo;og,ok,wo kuàng;ug chuáng;gm,mg	7
+石棉矿床	shí;kp,aa,ak,pk mián;mb,mj kuàng;ug chuáng;gm,mg	5
+石墨矿床	shí;kp,aa,ak,pk mò;th,ht kuàng;ug chuáng;gm,mg	9
+市水文局	shì;wj shuǐ;ad,uv wén;wi,dd jú;uk	29
+石盐矿床	shí;kp,aa,ak,pk yán;mb kuàng;ug chuáng;gm,mg	3
+石油矿床	shí;kp,aa,ak,pk yóu;dy kuàng;ug chuáng;gm,mg	7
+水热矿床	shuǐ;ad,uv rè;hv kuàng;ug chuáng;gm,mg	6
+水文测报	shuǐ;ad,uv wén;wi,dd cè;dz bào;fy	31
+水文测量	shuǐ;ad,uv wén;wi,dd cè;dz liáng;ol	25
+水文测验	shuǐ;ad,uv wén;wi,dd cè;dz yàn;ma,mq	31
+水文测站	shuǐ;ad,uv wén;wi,dd cè;dz zhàn;lv	43
+水文地质	shuǐ;ad,uv wén;wi,dd dì;ty zhì;bu,pb	41
+水文调查	shuǐ;ad,uv wén;wi,dd diào;yv chá;md	24
+水文干旱	shuǐ;ad,uv wén;wi,dd gān;aa hàn;og	15
+水文工程	shuǐ;ad,uv wén;wi,dd gōng;aa chéng;hi	20
+水文工作	shuǐ;ad,uv wén;wi,dd gōng;aa zuò;rv	31
+水文观测	shuǐ;ad,uv wén;wi,dd guān;jy,yj cè;dz	30
+水文过程	shuǐ;ad,uv wén;wi,dd guò;zc chéng;hi	9
+水文化学	shuǐ;ad,uv wén;wi,dd huà;rb xué;dz,zb	10
+水文环境	shuǐ;ad,uv wén;wi,dd huán;wb jìng;tj	30
+水文计算	shuǐ;ad,uv wén;wi,dd jì;yu suàn;vc	13
+水文监测	shuǐ;ad,uv wén;wi,dd jiān;mv cè;dz	50
+水文勘测	shuǐ;ad,uv wén;wi,dd kān;lu cè;dz	20
+水文勘察	shuǐ;ad,uv wén;wi,dd kān;lu chá;bj	10
+水文勘查	shuǐ;ad,uv wén;wi,dd kān;lu chá;md	1
+水文科学	shuǐ;ad,uv wén;wi,dd kē;hd xué;dz,zb	27
+水文流量	shuǐ;ad,uv wén;wi,dd liú;di liàng;ol	8
+水文模型	shuǐ;ad,uv wén;wi,dd mó;mm xíng;tx	26
+水文年鉴	shuǐ;ad,uv wén;wi,dd nián;ra,pa jiàn;jv	5
+水文气象	shuǐ;ad,uv wén;wi,dd qì;py,ry xiàng;du,pd,ua	42
+水文情报	shuǐ;ad,uv wén;wi,dd qíng;xq bào;fy	37
+水文情况	shuǐ;ad,uv wén;wi,dd qíng;xq kuàng;dx	27
+水文情势	shuǐ;ad,uv wén;wi,dd qíng;xq shì;lv	20
+水文曲线	shuǐ;ad,uv wén;wi,dd qǔ;aa,oa xiàn;sj	1
+水文社区	shuǐ;ad,uv wén;wi,dd shè;ut,tu qū;ki	16
+水文数据	shuǐ;ad,uv wén;wi,dd shù;wl jù;fj	25
+水文水文	shuǐ;ad,uv wén;wi,dd shuǐ;ad,uv wén;wi,dd	13
+水文特征	shuǐ;ad,uv wén;wi,dd tè;ns zhēng;xv	33
+水文条件	shuǐ;ad,uv wén;wi,dd tiáo;wm jiàn;rn	34
+水文条例	shuǐ;ad,uv wén;wi,dd tiáo;wm lì;rl	7
+水文信息	shuǐ;ad,uv wén;wi,dd xìn;ry xī;xz,zx	28
+水文学家	shuǐ;ad,uv wén;wi,dd xué;dz,zb jiā;bu	31
+水文循环	shuǐ;ad,uv wén;wi,dd xún;xd huán;wb	25
+水文要素	shuǐ;ad,uv wén;wi,dd yào;xn sù;sf,fs	17
+水文仪器	shuǐ;ad,uv wén;wi,dd yí;ry qì;kk,qk	1
+水文预报	shuǐ;ad,uv wén;wi,dd yù;yy bào;fy	28
+水文中心	shuǐ;ad,uv wén;wi,dd zhōng;aa,ka xīn;dd	22
+水文状况	shuǐ;ad,uv wén;wi,dd zhuàng;jq,pq,qp kuàng;dx	26
+水文资料	shuǐ;ad,uv wén;wi,dd zī;bc liào;md	33
+水文总站	shuǐ;ad,uv wén;wi,dd zǒng;bx,xk zhàn;lv	25
+水文组织	shuǐ;ad,uv wén;wi,dd zǔ;sq zhī;sv	4
+水型矿床	shuǐ;ad,uv xíng;tx kuàng;ug chuáng;gm,mg	10
+碎屑沉积	suì;uz xiè;ux chén;dj,dr jī;hv	20
+碎屑废石	suì;uz xiè;ux fèi;gf shí;kp,aa,ak,pk	9
+碎屑结构	suì;uz xiè;ux jié;sj gòu;mg	8
+碎屑矿床	suì;uz xiè;ux kuàng;ug chuáng;gm,mg	10
+碎屑岩脉	suì;uz xiè;ux yán;uu mài;oy	11
+碎屑岩墙	suì;uz xiè;ux yán;uu qiáng;th	8
+天水文化	tiān;ad shuǐ;ad,uv wén;wi,dd huà;rb	5
+天水文物	tiān;ad shuǐ;ad,uv wén;wi,dd wù;nw	5
+铁结砾岩	tiě;ju jié;sj lì;ul,uy yán;uu	1
+铁矿矿床	tiě;ju kuàng;ug kuàng;ug chuáng;gm,mg	9
+同生矿床	tóng;kk shēng;na kuàng;ug chuáng;gm,mg	9
+同生砾岩	tóng;kk shēng;na lì;ul,uy yán;uu	10
+外生矿床	wài;xb shēng;na kuàng;ug chuáng;gm,mg	12
+武汉岩溶	wǔ;vy,yv hàn;dy yán;uu róng;dr	6
+五泉砾岩	wǔ;aa quán;bu,ub lì;ul,uy yán;uu	5
+细角砾岩	xì;st jiǎo;dy lì;ul,uy yán;uu	10
+席状矿床	xí;jc,gj zhuàng;jq,pq,qp kuàng;ug chuáng;gm,mg	5
+县水文站	xiàn;sq,qs shuǐ;ad,uv wén;wi,dd zhàn;lv	9
+新生矿床	xīn;jq shēng;na kuàng;ug chuáng;gm,mg	5
+盐湖矿床	yán;mb hú;dh kuàng;ug chuáng;gm,mg	5
+盐湖岩溶	yán;mb hú;dh yán;uu róng;dr	9
+岩浆矿床	yán;uu jiāng;ux kuàng;ug chuáng;gm,mg	5
+盐类矿床	yán;mb lèi;md kuàng;ug chuáng;gm,mg	16
+岩溶槽谷	yán;uu róng;dr cáo;mc gǔ;bk,kr	5
+岩溶地层	yán;uu róng;dr dì;ty céng;uy	8
+岩溶地貌	yán;uu róng;dr dì;ty mào;ve,vm	7
+岩溶地面	yán;uu róng;dr dì;ty miàn;aa	8
+岩溶地势	yán;uu róng;dr dì;ty shì;lv	6
+岩溶地质	yán;uu róng;dr dì;ty zhì;bu,pb	32
+岩溶嗲面	yán;uu róng;dr diǎ;kd miàn;aa	8
+岩溶洞穴	yán;uu róng;dr dòng;dt xué;bb	7
+岩溶发育	yán;uu róng;dr fā;ay,fd,vy,yd yù;os,wo	8
+岩溶高原	yán;uu róng;dr gāo;wk yuán;ix	7
+岩溶工程	yán;uu róng;dr gōng;aa chéng;hi	23
+岩溶管道	yán;uu róng;dr guǎn;vg dào;zu	5
+岩溶河流	yán;uu róng;dr hé;dk liú;di	9
+岩溶景观	yán;uu róng;dr jǐng;oj guān;jy,yj	7
+岩溶勘察	yán;uu róng;dr kān;lu chá;bj	7
+岩溶类型	yán;uu róng;dr lèi;md xíng;tx	6
+岩溶漏斗	yán;uu róng;dr lòu;dl,dy dǒu;du	8
+岩溶盆地	yán;uu róng;dr pén;mf dì;ty	9
+岩溶平原	yán;uu róng;dr píng;aa,gb yuán;ix	6
+岩溶丘陵	yán;uu róng;dr qiū;pa,ja líng;el,ew	9
+岩溶申报	yán;uu róng;dr shēn;aa,oa bào;fy	10
+岩溶石柱	yán;uu róng;dr shí;kp,aa,ak,pk zhù;mv	10
+岩溶洼地	yán;uu róng;dr wā;dg dì;ty	7
+岩溶悬谷	yán;uu róng;dr xuán;xx gǔ;bk,kr	7
+岩溶旋回	yán;uu róng;dr xuán;fp huí;kk	9
+岩溶嶂谷	yán;uu róng;dr zhàng;uv gǔ;bk,kr	8
+岩溶作用	yán;uu róng;dr zuò;rv yòng;kf	6
+岩塞爆破	yán;uu sāi;tb,bt bào;hb pò;up	3
+乐水文化	yào;pd,px shuǐ;ad,uv wén;wi,dd huà;rb	8
+隐伏矿床	yǐn;ej fú;rq kuàng;ug chuáng;gm,mg	1
+隐伏岩溶	yǐn;ej fú;rq yán;uu róng;dr	10
+萤石矿床	yíng;ci,ib shí;kp,aa,ak,pk kuàng;ug chuáng;gm,mg	9
+玉石矿床	yù;ad,wd shí;kp,aa,ak,pk kuàng;ug chuáng;gm,mg	10
+原生矿床	yuán;ix shēng;na kuàng;ug chuáng;gm,mg	7
+陨磺砾岩	yǔn;ey huáng;uh lì;ul,uy yán;uu	12
+云母矿床	yún;es,se mǔ;ad,vd kuàng;ug chuáng;gm,mg	1
+再生矿床	zài;aa,at shēng;na kuàng;ug chuáng;gm,mg	7
+蛭石矿床	zhì;iv shí;kp,aa,ak,pk kuàng;ug chuáng;gm,mg	8
+重砂矿床	zhòng;pa,ql shā;uu kuàng;ug chuáng;gm,mg	1
+白垩纪地质	bái;pa,po è;ty jì;sj dì;ty zhì;bu,pb	1
+白榴凝灰岩	bái;pa,po liú;ml níng;dy huī;hu,uh yán;uu	1
+白云泥灰岩	bái;pa,po yún;es,se ní;dn huī;hu,uh yán;uu	1
+白云质灰岩	bái;pa,po yún;es,se zhì;bu,pb huī;hu,uh yán;uu	1
+斑状变质岩	bān;ww zhuàng;jq,pq,qp biàn;wy,yy zhì;bu,pb yán;uu	1
+斑状花岗岩	bān;ww zhuàng;jq,pq,qp huā;ch gǎng;ug yán;uu	1
+板状石灰岩	bǎn;mf zhuàng;jq,pq,qp shí;kp,aa,ak,pk huī;hu,uh yán;uu	1
+爆发角砾岩	bào;hb fā;ay,fd,vy,yd jiǎo;dy lì;ul,uy yán;uu	1
+宝塔石灰岩	bǎo;by tǎ;td,th shí;kp,aa,ak,pk huī;hu,uh yán;uu	1
+崩塌角砾岩	bēng;up tā;ty jiǎo;dy lì;ul,uy yán;uu	1
+碧玉铁质岩	bì;ub,up yù;ad,wd tiě;ju zhì;bu,pb yán;uu	1
+变质岩石学	biàn;wy,yy zhì;bu,pb yán;uu shí;kp,aa,ak,pk xué;dz,zb	1
+表生成岩酌	biǎo;fy shēng;na chéng;gg,wg yán;uu zhuó;yu	1
+冰川地质学	bīng;du chuān;pa dì;ty zhì;bu,pb xué;dz,zb	1
+剥蚀角砾岩	bō;dl shí;ui jiǎo;dy lì;ul,uy yán;uu	1
+擦碎角砾岩	cā;fi suì;uz jiǎo;dy lì;ul,uy yán;uu	1
+测井地质学	cè;dz jǐng;aa,ep dì;ty zhì;bu,pb xué;dz,zb	1
+层间角砾岩	céng;uy jiān;mo,om jiǎo;dy lì;ul,uy yán;uu	1
+层内角砾岩	céng;uy nèi;ad,kr jiǎo;dy lì;ul,uy yán;uu	1
+长春地质宫	cháng;pd chūn;of,fo dì;ty zhì;bu,pb gōng;bl	1
+长兴石灰岩	cháng;pd xīng;ba,db shí;kp,aa,ak,pk huī;hu,uh yán;uu	1
+超镁铁质岩	chāo;zv měi;jm tiě;ju zhì;bu,pb yán;uu	1
+成岩白云岩	chéng;gg,wg yán;uu bái;pa,po yún;es,se yán;uu	1
+成岩分异酌	chéng;gg,wg yán;uu fēn;bd,db yì;cs,sc zhuó;yu	1
+成岩角砾岩	chéng;gg,wg yán;uu jiǎo;dy lì;ul,uy yán;uu	1
+储层地质学	chǔ;rv céng;uy dì;ty zhì;bu,pb xué;dz,zb	1
+船山石灰岩	chuán;vk shān;aa shí;kp,aa,ak,pk huī;hu,uh yán;uu	1
+粗粒凝灰岩	cū;mq lì;ml níng;dy huī;hu,uh yán;uu	1
+粗面凝灰岩	cū;mq miàn;aa níng;dy huī;hu,uh yán;uu	1
+大气碎屑岩	dà;ad qì;py,ry suì;uz xiè;ux yán;uu	1
+大屯火山群	dà;ad tún;ag huǒ;dd shān;aa qún;yj	1
+淡色花岗岩	dàn;dy sè;db huā;ch gǎng;ug yán;uu	1
+低平火山口	dī;rd píng;aa,gb huǒ;dd shān;aa kǒu;aa	1
+第三纪火山	dì;vp sān;aa jì;sj huǒ;dd shān;aa	1
+第四纪地质	dì;vp sì;aa,ke jì;sj dì;ty zhì;bu,pb	1
+第四纪火山	dì;vp sì;aa,ke jì;sj huǒ;dd shān;aa	1
+地震地质学	dì;ty zhèn;yi dì;ty zhì;bu,pb xué;dz,zb	1
+地震断裂带	dì;ty zhèn;yi duàn;ja,jm,jv liè;yl dài;jb	1
+地质博物馆	dì;ty zhì;bu,pb bó;uc,uf wù;nw guǎn;ug	1
+地质出版社	dì;ty zhì;bu,pb chū;ck,aa bǎn;pf shè;ut,tu	1
+地质地貌学	dì;ty zhì;bu,pb dì;ty mào;ve,vm xué;dz,zb	1
+地质地形图	dì;ty zhì;bu,pb dì;ty xíng;pk tú;kd	1
+地质调查局	dì;ty zhì;bu,pb diào;yv chá;md jú;uk	1
+地质调查院	dì;ty zhì;bu,pb diào;yv chá;md yuàn;ew	1
+地质工程师	dì;ty zhì;bu,pb gōng;aa chéng;hi shī;ab,aj,db,dj	1
+地质工作者	dì;ty zhì;bu,pb gōng;aa zuò;rv zhě;lo,ol	1
+地质构造的	dì;ty zhì;bu,pb gòu;mg zào;zg de;bu	1
+地质构造图	dì;ty zhì;bu,pb gòu;mg zào;zg tú;kd	1
+地质构造学	dì;ty zhì;bu,pb gòu;mg zào;zg xué;dz,zb	1
+地质聚合物	dì;ty zhì;bu,pb jù;ed,ey,qd,yq hé;rk wù;nw	1
+地质考古学	dì;ty zhì;bu,pb kǎo;lk gǔ;uk xué;dz,zb	1
+地质科学院	dì;ty zhì;bu,pb kē;hd xué;dz,zb yuàn;ew	1
+地质块段法	dì;ty zhì;bu,pb kuài;td,tg duàn;ud,du,pu fǎ;dq	1
+地质矿产部	dì;ty zhì;bu,pb kuàng;ug chǎn;dp,li,wp bù;ek,ep	1
+地质矿产厅	dì;ty zhì;bu,pb kuàng;ug chǎn;dp,li,wp tīng;id	1
+地质类比法	dì;ty zhì;bu,pb lèi;md bǐ;bb fǎ;dq	1
+地质年代表	dì;ty zhì;bu,pb nián;ra,pa dài;ry biǎo;fy	1
+地质年代学	dì;ty zhì;bu,pb nián;ra,pa dài;ry xué;dz,zb	1
+地质平面图	dì;ty zhì;bu,pb píng;aa,gb miàn;aa tú;kd	1
+地质剖面图	dì;ty zhì;bu,pb pōu;dk,dp miàn;aa tú;kd	1
+地质水文学	dì;ty zhì;bu,pb shuǐ;ad,uv wén;wi,dd xué;dz,zb	1
+地质统计学	dì;ty zhì;bu,pb tǒng;si jì;yu xué;dz,zb	1
+地质学分科	dì;ty zhì;bu,pb xué;dz,zb fēn;bd,db kē;hd	1
+地质学基础	dì;ty zhì;bu,pb xué;dz,zb jī;tq,qt chǔ;ui	1
+地质学术语	dì;ty zhì;bu,pb xué;dz,zb shù;md yǔ;yw	1
+地质学原理	dì;ty zhì;bu,pb xué;dz,zb yuán;ix lǐ;wl	1
+地质学专题	dì;ty zhì;bu,pb xué;dz,zb zhuān;ad,fs tí;uy,yu	1
+地质学专业	dì;ty zhì;bu,pb xué;dz,zb zhuān;ad,fs yè;aa	1
+地质研究所	dì;ty zhì;bu,pb yán;uk jiū;xj,bj suǒ;hj,jh	1
+地质灾害点	dì;ty zhì;bu,pb zāi;bh,hb hài;bk diǎn;hv	1
+电成岩作用	diàn;ag,og chéng;gg,wg yán;uu zuò;rv yòng;kf	1
+电气花岗岩	diàn;ag,og qì;py,ry huā;ch gǎng;ug yán;uu	1
+叠锥状火山	dié;qr,qu,yy zhuī;jv zhuàng;jq,pq,qp huǒ;dd shān;aa	1
+动力变质岩	dòng;ly,yl lì;gp biàn;wy,yy zhì;bu,pb yán;uu	1
+动力地质学	dòng;ly,yl lì;gp dì;ty zhì;bu,pb xué;dz,zb	1
+断层角砾岩	duàn;ja,jm,jv céng;uy jiǎo;dy lì;ul,uy yán;uu	1
+多杂质砾岩	duō;xx zá;jm,mj zhì;bu,pb lì;ul,uy yán;uu	1
+二长花岗岩	èr;aa cháng;pd huā;ch gǎng;ug yán;uu	1
+鲕状石灰岩	ér;ye zhuàng;jq,pq,qp shí;kp,aa,ak,pk huī;hu,uh yán;uu	1
+钒酸盐矿物	fán;jf suān;yj,yw yán;mb kuàng;ug wù;nw	1
+非活跃火山	fēi;aa huó;du yuè;zy huǒ;dd shān;aa	1
+非均质岩石	fēi;aa jūn;ty zhì;bu,pb yán;uu shí;kp,aa,ak,pk	1
+非洲火山岛	fēi;aa zhōu;dv huǒ;dd shān;aa dǎo;nu,un	1
+粉砂屑灰岩	fěn;mf shā;uu xiè;ux huī;hu,uh yán;uu	1
+风成碎屑岩	fēng;ji chéng;gg,wg suì;uz xiè;ux yán;uu	1
+风火山隧道	fēng;ji huǒ;dd shān;aa suì;es dào;zu	1
+风林火山篇	fēng;ji lín;mm huǒ;dd shān;aa piān;vb	1
+副长深成岩	fù;df,dt cháng;pd shēn;dm chéng;gg,wg yán;uu	1
+复合火山锥	fù;pw,rw,wo hé;rk huǒ;dd shān;aa zhuī;jv	1
+傅科陨石坑	fù;rc,rf kē;hd yǔn;ey shí;kp,aa,ak,pk kēng;tk	1
+复矿碎屑岩	fù;pw,rw,wo kuàng;ug suì;uz xiè;ux yán;uu	1
+腐泥砂屑岩	fǔ;gr,rf ní;dn shā;uu xiè;ux yán;uu	1
+浮石火山锥	fú;df shí;kp,aa,ak,pk huǒ;dd shān;aa zhuī;jv	1
+浮石凝灰岩	fú;df shí;kp,aa,ak,pk níng;dy huī;hu,uh yán;uu	1
+钙碱花岗岩	gài;jg jiǎn;ux huā;ch gǎng;ug yán;uu	1
+钙质角砾岩	gài;jg zhì;bu,pb jiǎo;dy lì;ul,uy yán;uu	1
+高于庄灰岩	gāo;wk yú;aa zhuāng;gt huī;hu,uh yán;uu	1
+革老河灰岩	gé;aa,ca lǎo;bl,lb hé;dk huī;hu,uh yán;uu	1
+葛林芝火山	gé;ch lín;mm zhī;cv huǒ;dd shān;aa	1
+铬酸盐矿物	gè;jg suān;yj,yw yán;mb kuàng;ug wù;nw	1
+更长花岗岩	gèng;ad,ag cháng;pd huā;ch gǎng;ug yán;uu	1
+更新世火山	gēng;ad,ag xīn;jq shì;ca,cv,aa huǒ;dd shān;aa	1
+工程地质图	gōng;aa chéng;hi dì;ty zhì;bu,pb tú;kd	1
+工程地质学	gōng;aa chéng;hi dì;ty zhì;bu,pb xué;dz,zb	1
+公馆凝灰岩	gōng;sb,bs guǎn;ug níng;dy huī;hu,uh yán;uu	1
+构造地质学	gòu;mg zào;zg dì;ty zhì;bu,pb xué;dz,zb	1
+古代火山兽	gǔ;uk dài;ry huǒ;dd shān;aa shòu;ka,bk	1
+硅酸盐矿物	guī;ug suān;yj,yw yán;mb kuàng;ug wù;nw	1
+硅质石灰岩	guī;ug zhì;bu,pb shí;kp,aa,ak,pk huī;hu,uh yán;uu	1
+国家地质部	guó;ky jiā;bu dì;ty zhì;bu,pb bù;ek,ep	1
+海岸岩溶型	hǎi;dm àn;ug yán;uu róng;dr xíng;tx	1
+海底地质学	hǎi;dm dǐ;gd dì;ty zhì;bu,pb xué;dz,zb	1
+海底断裂带	hǎi;dm dǐ;gd duàn;ja,jm,jv liè;yl dài;jb	1
+海洋地质所	hǎi;dm yáng;dy dì;ty zhì;bu,pb suǒ;hj,jh	1
+海洋地质学	hǎi;dm yáng;dy dì;ty zhì;bu,pb xué;dz,zb	1
+含金砾岩层	hán;kj,rk jīn;ra,pa lì;ul,uy yán;uu céng;uy	1
+含镁石灰岩	hán;kj,rk měi;jm shí;kp,aa,ak,pk huī;hu,uh yán;uu	1
+河成碎屑岩	hé;dk chéng;gg,wg suì;uz xiè;ux yán;uu	1
+黑色花岗岩	hēi;ad,ha sè;db huā;ch gǎng;ug yán;uu	1
+黑色火山土	hēi;ad,ha sè;db huǒ;dd shān;aa tǔ;aa	1
+黑云花岗岩	hēi;ad,ha yún;es,se huā;ch gǎng;ug yán;uu	1
+后生角砾岩	hòu;pk shēng;na jué;dy lì;ul,uy yán;uu	1
+花岗岩地貌	huā;ch gǎng;ug yán;uu dì;ty mào;ve,vm	1
+花岗岩瀑布	huā;ch gǎng;ug yán;uu pù;db bù;ju,uj	1
+花岗岩铺砌	huā;ch gǎng;ug yán;uu pū;jf qì;uq	1
+花岗岩丘陵	huā;ch gǎng;ug yán;uu qiū;pa,ja líng;el,ew	1
+花岗岩石材	huā;ch gǎng;ug yán;uu shí;kp,aa,ak,pk cái;mc	1
+花岗岩石块	huā;ch gǎng;ug yán;uu shí;kp,aa,ak,pk kuài;td,tg	1
+花岗岩台阶	huā;ch gǎng;ug yán;uu tái;sk jiē;ej	1
+花岗岩台面	huā;ch gǎng;ug yán;uu tái;sk miàn;aa	1
+花岗岩质层	huā;ch gǎng;ug yán;uu zhì;bu,pb céng;uy	1
+花岗岩状的	huā;ch gǎng;ug yán;uu zhuàng;jq,pq,qp de;bu	1
+华南花岗岩	huá;uh nán;ua,uy huā;ch gǎng;ug yán;uu	1
+化学石灰岩	huà;rb xué;dz,zb shí;kp,aa,ak,pk huī;hu,uh yán;uu	1
+环斑花岗岩	huán;wb bān;ww huā;ch gǎng;ug yán;uu	1
+环境地质学	huán;wb jìng;tj dì;ty zhì;bu,pb xué;dz,zb	1
+黄龙石灰岩	huáng;ad,cb lóng;ad shí;kp,aa,ak,pk huī;hu,uh yán;uu	1
+灰岩粗毛藤	huī;hu,uh yán;uu cū;mq máo;pg téng;ct	1
+灰岩香茶菜	huī;hu,uh yán;uu xiāng;ho chá;cm cài;cc	1
+灰岩肖韶子	huī;hu,uh yán;uu xiào;ox,xo sháo;yv zǐ;aa,vh	1
+灰岩紫地榆	huī;hu,uh yán;uu zǐ;sc dì;ty yú;my	1
+灰质结砾岩	huī;hu,uh zhì;bu,pb jié;sj lì;ul,uy yán;uu	1
+灰质泥灰岩	huī;hu,uh zhì;bu,pb ní;dn huī;hu,uh yán;uu	1
+混合花岗岩	hùn;dk hé;rk huā;ch gǎng;ug yán;uu	1
+混合火山锥	hùn;dk hé;rk huǒ;dd shān;aa zhuī;jv	1
+火成变质岩	huǒ;dd chéng;gg,wg biàn;wy,yy zhì;bu,pb yán;uu	1
+火成堆积岩	huǒ;dd chéng;gg,wg duī;tv jī;hv yán;uu	1
+火成角砾岩	huǒ;dd chéng;gg,wg jiǎo;dy lì;ul,uy yán;uu	1
+火成片麻岩	huǒ;dd chéng;gg,wg piàn;pa,pv má;gl yán;uu	1
+火成碎屑物	huǒ;dd chéng;gg,wg suì;uz xiè;ux wù;nw	1
+火成碎屑岩	huǒ;dd chéng;gg,wg suì;uz xiè;ux yán;uu	1
+火成岩产状	huǒ;dd chéng;gg,wg yán;uu chǎn;dp,li,wp zhuàng;jq,pq,qp	1
+火成岩石学	huǒ;dd chéng;gg,wg yán;uu shí;kp,aa,ak,pk xué;dz,zb	1
+火成岩纹理	huǒ;dd chéng;gg,wg yán;uu wén;sw lǐ;wl	1
+火成岩系列	huǒ;dd chéng;gg,wg yán;uu xì;ps liè;dd	1
+火山爆发后	huǒ;dd shān;aa bào;hb fā;ay,fd,vy,yd hòu;pk	1
+火山碧云寺	huǒ;dd shān;aa bì;ub,up yún;es,se sì;ct,tc	1
+火山大爆发	huǒ;dd shān;aa dà;ad bào;hb fā;ay,fd,vy,yd	1
+火山的意志	huǒ;dd shān;aa de;bu yì;xy,lx zhì;ux,xu	1
+火山地震带	huǒ;dd shān;aa dì;ty zhèn;yi dài;jb	1
+火山地质学	huǒ;dd shān;aa dì;ty zhì;bu,pb xué;dz,zb	1
+火山肺矽病	huǒ;dd shān;aa fèi;of,oj xī;ux bìng;bb	1
+火山观测站	huǒ;dd shān;aa guān;jy,yj cè;dz zhàn;lv	1
+火山灰活性	huǒ;dd shān;aa huī;hu,uh huó;du xìng;xu	1
+火山灰水泥	huǒ;dd shān;aa huī;hu,uh shuǐ;ad,uv ní;dn	1
+火山集块岩	huǒ;dd shān;aa jí;mv,vm kuài;td,tg yán;uu	1
+火山角砾岩	huǒ;dd shān;aa jiǎo;dy lì;ul,uy yán;uu	1
+火山喀斯特	huǒ;dd shān;aa kā;kk sī;jq,qj tè;ns	1
+火山口边缘	huǒ;dd shān;aa kǒu;aa biān;zl yuán;st,su	1
+火山口高地	huǒ;dd shān;aa kǒu;aa gāo;wk dì;ty	1
+火山口公园	huǒ;dd shān;aa kǒu;aa gōng;sb,bs yuán;ky	1
+火山泥面膜	huǒ;dd shān;aa ní;dn miàn;aa mó;om	1
+火山泥石流	huǒ;dd shān;aa ní;dn shí;kp,aa,ak,pk liú;di	1
+火山凝灰岩	huǒ;dd shān;aa níng;dy huī;hu,uh yán;uu	1
+火山喷出物	huǒ;dd shān;aa pēn;kb chū;ck,aa wù;nw	1
+火山喷气孔	huǒ;dd shān;aa pēn;kb qì;py,ry kǒng;zg	1
+火山碎屑流	huǒ;dd shān;aa suì;uz xiè;ux liú;di	1
+火山碎屑物	huǒ;dd shān;aa suì;uz xiè;ux wù;nw	1
+火山碎屑岩	huǒ;dd shān;aa suì;uz xiè;ux yán;uu	1
+火山矽肺病	huǒ;dd shān;aa xī;ux fèi;of,oj bìng;bb	1
+火山小视频	huǒ;dd shān;aa xiǎo;ad shì;ju,uj pín;yb	1
+火山性地震	huǒ;dd shān;aa xìng;xu dì;ty zhèn;yi	1
+火山岩建造	huǒ;dd shān;aa yán;uu jiàn;zy zào;zg	1
+火山岩系列	huǒ;dd shān;aa yán;uu xì;ps liè;dd	1
+火山岩屑土	huǒ;dd shān;aa yán;uu xiè;ux tǔ;aa	1
+火山岩组合	huǒ;dd shān;aa yán;uu zǔ;sq hé;rk	1
+火星的火山	huǒ;dd xīng;ou de;bu huǒ;dd shān;aa	1
+集块火山锥	jí;mv,vm kuài;td,tg huǒ;dd shān;aa zhuī;jv	1
+基隆火山群	jī;tq,qt lóng;eu huǒ;dd shān;aa qún;yj	1
+寄生火山口	jì;bq shēng;na huǒ;dd shān;aa kǒu;aa	1
+寄生火山锥	jì;bq shēng;na huǒ;dd shān;aa zhuī;jv	1
+机械碎屑岩	jī;mj xiè;mj suì;uz xiè;ux yán;uu	1
+基岩地质图	jī;tq,qt yán;uu dì;ty zhì;bu,pb tú;kd	1
+嘉陵江灰岩	jiā;uj líng;el,ew jiāng;dg huī;hu,uh yán;uu	1
+假深成岩体	jiǎ;rj,ry shēn;dm chéng;gg,wg yán;uu tǐ;rb	1
+钾玄岩系列	jiǎ;jj xuán;wy yán;uu xì;ps liè;dd	1
+钾质花岗岩	jiǎ;jj zhì;bu,pb huā;ch gǎng;ug yán;uu	1
+碱性花岗岩	jiǎn;ux xìng;xu huā;ch gǎng;ug yán;uu	1
+碱性火成岩	jiǎn;ux xìng;xu huǒ;dd chéng;gg,wg yán;uu	1
+碱性火山岩	jiǎn;ux xìng;xu huǒ;dd shān;aa yán;uu	1
+建造内砾岩	jiàn;zy zào;zg nèi;ad,kr lì;ul,uy yán;uu	1
+礁岛岩溶型	jiāo;uj dǎo;nu,un yán;uu róng;dr xíng;tx	1
+角闪质岩石	jiǎo;dy shǎn;mr,rm zhì;bu,pb yán;uu shí;kp,aa,ak,pk	1
+接触变质岩	jiē;fq chù;ij,ji biàn;wy,yy zhì;bu,pb yán;uu	1
+结构地质学	jié;sj gòu;mg dì;ty zhì;bu,pb xué;dz,zb	1
+结晶凝灰岩	jié;sj jīng;oo níng;dy huī;hu,uh yán;uu	1
+晶洞花岗岩	jīng;oo dòng;dt huā;ch gǎng;ug yán;uu	1
+景儿峪灰岩	jǐng;oj ér;pg yù;ug huī;hu,uh yán;uu	1
+晶后碎屑岩	jīng;oo hòu;pk suì;uz xiè;ux yán;uu	1
+经济地质学	jīng;sg jì;dq dì;ty zhì;bu,pb xué;dz,zb	1
+巨形角砾岩	jù;kk,aa xíng;pk jiǎo;dy lì;ul,uy yán;uu	1
+考古地质学	kǎo;lk gǔ;uk dì;ty zhì;bu,pb xué;dz,zb	1
+颗粒石灰岩	kē;yg lì;ml shí;kp,aa,ak,pk huī;hu,uh yán;uu	1
+矿床地质学	kuàng;ug chuáng;gm,mg dì;ty zhì;bu,pb xué;dz,zb	1
+矿山地质学	kuàng;ug shān;aa dì;ty zhì;bu,pb xué;dz,zb	1
+狼溪陨石坑	láng;ql xī;dx yǔn;ey shí;kp,aa,ak,pk kēng;tk	1
+雷琼火山群	léi;yt qióng;wj huǒ;dd shān;aa qún;yj	1
+类型花岗岩	lèi;md xíng;tx huā;ch gǎng;ug yán;uu	1
+历史地质学	lì;il shǐ;ad,ki dì;ty zhì;bu,pb xué;dz,zb	1
+砾岩型铀矿	lì;ul,uy yán;uu xíng;tx yóu;jy kuàng;ug	1
+磷酸盐矿物	lín;ul suān;yj,yw yán;mb kuàng;ug wù;nw	1
+临湘石灰岩	lín;ao,do xiāng;dx shí;kp,aa,ak,pk huī;hu,uh yán;uu	1
+硫酸盐矿物	liú;ui suān;yj,yw yán;mb kuàng;ug wù;nw	1
+龙岗火山群	lóng;ad gǎng;ug huǒ;dd shān;aa qún;yj	1
+隆基迈火山	lóng;eu jī;tq,qt mài;zw huǒ;dd shān;aa	1
+乱层火成岩	luàn;ug céng;uy huǒ;dd chéng;gg,wg yán;uu	1
+裸露型岩溶	luǒ;yg lòu;yl xíng;tx yán;uu róng;dr	1
+绿帘花岗岩	lǜ;sl lián;bj,jb,jx,xj huā;ch gǎng;ug yán;uu	1
+绿泥花岗岩	lǜ;sl ní;dn huā;ch gǎng;ug yán;uu	1
+绿色凝灰岩	lǜ;sl sè;db níng;dy huī;hu,uh yán;uu	1
+埋藏型岩溶	mái;tl cáng;cg,ci xíng;tx yán;uu róng;dr	1
+茅口石灰岩	máo;cm kǒu;aa shí;kp,aa,ak,pk huī;hu,uh yán;uu	1
+茅口组灰岩	máo;cm kǒu;aa zǔ;sq huī;hu,uh yán;uu	1
+毛纳基火山	máo;pg nà;sn jī;tq,qt huǒ;dd shān;aa	1
+冒纳基火山	mào;oo nà;sn jī;tq,qt huǒ;dd shān;aa	1
+煤成岩作用	méi;hm chéng;gg,wg yán;uu zuò;rv yòng;kf	1
+煤炭地质学	méi;hm tàn;uh dì;ty zhì;bu,pb xué;dz,zb	1
+煤田地质局	méi;hm tián;aa dì;ty zhì;bu,pb jú;uk	1
+煤田地质学	méi;hm tián;aa dì;ty zhì;bu,pb xué;dz,zb	1
+镁铁质岩石	měi;jm tiě;ju zhì;bu,pb yán;uu shí;kp,aa,ak,pk	1
+描述地质学	miáo;fm shù;zu dì;ty zhì;bu,pb xué;dz,zb	1
+冥王星地质	míng;bl,bz wáng;aa xīng;ou dì;ty zhì;bu,pb	1
+默奇森陨石	mò;hq qí;dk sēn;ml yǔn;ey shí;kp,aa,ak,pk	1
+钼酸盐矿物	mù;jo suān;yj,yw yán;mb kuàng;ug wù;nw	1
+木卫一火山	mù;ad wèi;ea,ga yī;aa huǒ;dd shān;aa	1
+钠辉细岗岩	nà;jn huī;gj xì;st gǎng;ug yán;uu	1
+钠闪花岗岩	nà;jn shǎn;mr,rm huā;ch gǎng;ug yán;uu	1
+钠闪微岗岩	nà;jn shǎn;mr,rm wēi;xw gǎng;ug yán;uu	1
+钠质火成岩	nà;jn zhì;bu,pb huǒ;dd chéng;gg,wg yán;uu	1
+泥流角砾岩	ní;dn liú;di jiǎo;dy lì;ul,uy yán;uu	1
+泥质角砾岩	ní;dn zhì;bu,pb jiǎo;dy lì;ul,uy yán;uu	1
+粘土泥灰岩	nián;mv tǔ;aa ní;dn huī;hu,uh yán;uu	1
+凝灰角砾岩	níng;dy huī;hu,uh jiǎo;dy lì;ul,uy yán;uu	1
+凝灰质砾岩	níng;dy huī;hu,uh zhì;bu,pb lì;ul,uy yán;uu	1
+喷发的火山	pēn;kb fā;ay,fd,vy,yd de;bu huǒ;dd shān;aa	1
+硼酸盐矿物	péng;up suān;yj,yw yán;mb kuàng;ug wù;nw	1
+婆罗摩火山	pó;nb luó;sx mó;mu,um huǒ;dd shān;aa	1
+普通地质学	pǔ;ob,bo tōng;zy dì;ty zhì;bu,pb xué;dz,zb	1
+栖霞石灰岩	qī;mx xiá;yj,yy shí;kp,aa,ak,pk huī;hu,uh yán;uu	1
+浅带变质岩	qiǎn;dj dài;jb biàn;wy,yy zhì;bu,pb yán;uu	1
+前地质时期	qián;bd,qd dì;ty zhì;bu,pb shí;oc qī;oq,qo	1
+潜火山地震	qián;dt huǒ;dd shān;aa dì;ty zhèn;yi	1
+前进成岩酌	qián;bd,qd jìn;zj chéng;gg,wg yán;uu zhuó;yu	1
+强风化砾岩	qiáng;gs fēng;ji huà;rb lì;ul,uy yán;uu	1
+侵入火成岩	qīn;ry rù;pd huǒ;dd chéng;gg,wg yán;uu	1
+球颗火成岩	qiú;wq kē;yg huǒ;dd chéng;gg,wg yán;uu	1
+球状花岗岩	qiú;wq zhuàng;jq,pq,qp huā;ch gǎng;ug yán;uu	1
+去花岗岩化	qù;ts huā;ch gǎng;ug yán;uu huà;rb	1
+区域变质岩	qū;ki yù;th biàn;wy,yy zhì;bu,pb yán;uu	1
+区域地质图	qū;ki yù;th dì;ty zhì;bu,pb tú;kd	1
+区域地质学	qū;ki yù;th dì;ty zhì;bu,pb xué;dz,zb	1
+全新世火山	quán;rw xīn;jq shì;ca,cv,aa huǒ;dd shān;aa	1
+缺裂火山锥	quē;fd,fg liè;yl huǒ;dd shān;aa zhuī;jv	1
+热力类岩溶	rè;hv lì;gp lèi;md yán;uu róng;dr	1
+人造花岗岩	rén;pd zào;zg huā;ch gǎng;ug yán;uu	1
+溶解角砾岩	róng;dr jiě;jn jiǎo;dy lì;ul,uy yán;uu	1
+熔结角砾岩	róng;hr jié;sj jiǎo;dy lì;ul,uy yán;uu	1
+熔结凝灰岩	róng;hr jié;sj níng;dy huī;hu,uh yán;uu	1
+熔壳火山锥	róng;hr ké;uj huǒ;dd shān;aa zhuī;jv	1
+熔岩溪火山	róng;hr yán;uu xī;dx huǒ;dd shān;aa	1
+砂质泥灰岩	shā;uu zhì;bu,pb ní;dn huī;hu,uh yán;uu	1
+山顶火山口	shān;aa dǐng;dy,yd huǒ;dd shān;aa kǒu;aa	1
+深地质处置	shēn;dm dì;ty zhì;bu,pb chǔ;wb zhì;sv	1
+砷酸盐矿物	shēn;uu suān;yj,yw yán;mb kuàng;ug wù;nw	1
+生物层灰岩	shēng;na wù;nw céng;uy huī;hu,uh yán;uu	1
+生物地质学	shēng;na wù;nw dì;ty zhì;bu,pb xué;dz,zb	1
+生物礁灰岩	shēng;na wù;nw jiāo;uj huī;hu,uh yán;uu	1
+生物碎屑岩	shēng;na wù;nw suì;uz xiè;ux yán;uu	1
+生物滩灰岩	shēng;na wù;nw tān;dn huī;hu,uh yán;uu	1
+石灰岩道碴	shí;kp,aa,ak,pk huī;hu,uh yán;uu dào;zu chá;ui	1
+石灰岩地形	shí;kp,aa,ak,pk huī;hu,uh yán;uu dì;ty xíng;pk	1
+石灰岩海岸	shí;kp,aa,ak,pk huī;hu,uh yán;uu hǎi;dm àn;ug	1
+石灰岩鹪鹛	shí;kp,aa,ak,pk huī;hu,uh yán;uu jiāo;nj méi;nm	1
+石灰岩矿床	shí;kp,aa,ak,pk huī;hu,uh yán;uu kuàng;ug chuáng;gm,mg	1
+石灰岩溶洞	shí;kp,aa,ak,pk huī;hu,uh yán;uu róng;dr dòng;dt	1
+实验地质学	shí;bt yàn;ma,mq dì;ty zhì;bu,pb xué;dz,zb	1
+石英质岩石	shí;kp,aa,ak,pk yīng;cy zhì;bu,pb yán;uu shí;kp,aa,ak,pk	1
+石油地质学	shí;kp,aa,ak,pk yóu;dy dì;ty zhì;bu,pb xué;dz,zb	1
+石质凝灰岩	shí;kp,aa,ak,pk zhì;bu,pb níng;dy huī;hu,uh yán;uu	1
+水成变质岩	shuǐ;ad,uv chéng;gg,wg biàn;wy,yy zhì;bu,pb yán;uu	1
+水成碎屑岩	shuǐ;ad,uv chéng;gg,wg suì;uz xiè;ux yán;uu	1
+水泥石灰岩	shuǐ;ad,uv ní;dn shí;kp,aa,ak,pk huī;hu,uh yán;uu	1
+水文地质的	shuǐ;ad,uv wén;wi,dd dì;ty zhì;bu,pb de;bu	1
+水文地质图	shuǐ;ad,uv wén;wi,dd dì;ty zhì;bu,pb tú;kd	1
+水文地质学	shuǐ;ad,uv wén;wi,dd dì;ty zhì;bu,pb xué;dz,zb	1
+苏联地质部	sū;cb lián;eg dì;ty zhì;bu,pb bù;ek,ep	1
+碎晶凝灰岩	suì;uz jīng;oo níng;dy huī;hu,uh yán;uu	1
+碎屑角砾岩	suì;uz xiè;ux jiǎo;dy lì;ul,uy yán;uu	1
+碎屑岩岩溶	suì;uz xiè;ux yán;uu yán;uu róng;dr	1
+塌积角砾岩	tā;ty jī;hv jiǎo;dy lì;ul,uy yán;uu	1
+塌陷角砾岩	tā;ty xiàn;ej,ex jiǎo;dy lì;ul,uy yán;uu	1
+太空地质学	tài;dd kōng;xg,bg dì;ty zhì;bu,pb xué;dz,zb	1
+太平洋岩群	tài;dd píng;aa,gb yáng;dy yán;uu qún;yj	1
+钛铁磷灰岩	tài;jt tiě;ju lín;ul huī;hu,uh yán;uu	1
+郯庐断裂带	tán;ey lú;gh duàn;ja,jm,jv liè;yl dài;jb	1
+碳酸盐矿物	tàn;ut suān;yj,yw yán;mb kuàng;ug wù;nw	1
+碳质石灰岩	tàn;ut zhì;bu,pb shí;kp,aa,ak,pk huī;hu,uh yán;uu	1
+天然花岗岩	tiān;ad rán;hq huā;ch gǎng;ug yán;uu	1
+天体地质学	tiān;ad tǐ;rb dì;ty zhì;bu,pb xué;dz,zb	1
+天文地质学	tiān;ad wén;wi,dd dì;ty zhì;bu,pb xué;dz,zb	1
+跳火山的人	tiào;zv huǒ;dd shān;aa de;bu rén;pd	1
+通科科火山	tōng;zy kē;hd kē;hd huǒ;dd shān;aa	1
+同生角砾岩	tóng;kk shēng;na jiǎo;dy lì;ul,uy yán;uu	1
+同源花岗岩	tóng;kk yuán;dy huā;ch gǎng;ug yán;uu	1
+透长凝灰岩	tòu;zx cháng;pd níng;dy huī;hu,uh yán;uu	1
+外成岩作用	wài;xb chéng;gg,wg yán;uu zuò;rv yòng;kf	1
+外碎屑灰岩	wài;xb suì;uz xiè;ux huī;hu,uh yán;uu	1
+微贝壳灰岩	wēi;xw bèi;ad,kr ké;uj huī;hu,uh yán;uu	1
+我是地质人	wǒ;pd,pp shì;op,ov dì;ty zhì;bu,pb rén;pd	1
+无根火山锥	wú;ag,ay,ee gēn;mg huǒ;dd shān;aa zhuī;jv	1
+雾迷山灰岩	wù;yw mí;zm shān;aa huī;hu,uh yán;uu	1
+无球粒陨石	wú;ag,ay,ee qiú;wq lì;ml yǔn;ey shí;kp,aa,ak,pk	1
+钨酸盐矿物	wū;jw suān;yj,yw yán;mb kuàng;ug wù;nw	1
+细晶磷灰岩	xì;st jīng;oo lín;ul huī;hu,uh yán;uu	1
+锡纳朋火山	xī;jy nà;sn péng;oo huǒ;dd shān;aa	1
+稀土火成岩	xī;hx tǔ;aa huǒ;dd chéng;gg,wg yán;uu	1
+陷落火山口	xiàn;ej,ex luò;cl huǒ;dd shān;aa kǒu;aa	1
+小江断裂带	xiǎo;ad jiāng;dg duàn;ja,jm,jv liè;yl dài;jb	1
+硝酸盐矿物	xiāo;ux suān;yj,yw yán;mb kuàng;ug wù;nw	1
+小行星陨石	xiǎo;ad xíng;xd,xi xīng;ou yǔn;ey shí;kp,aa,ak,pk	1
+斜长花岗岩	xié;dy cháng;pd huā;ch gǎng;ug yán;uu	1
+新生代火山	xīn;jq shēng;na dài;ry huǒ;dd shān;aa	1
+行星地质学	xíng;xd,xi xīng;ou dì;ty zhì;bu,pb xué;dz,zb	1
+休格地陨石	xiū;rm gé;mg dì;ty yǔn;ey shí;kp,aa,ak,pk	1
+岫岩陨石坑	xiù;uy yán;uu yǔn;ey shí;kp,aa,ak,pk kēng;tk	1
+压碎角砾岩	yā;id,it suì;uz jiǎo;dy lì;ul,uy yán;uu	1
+岩崩角砾岩	yán;uu bēng;up jiǎo;dy lì;ul,uy yán;uu	1
+岩浆花岗岩	yán;uu jiāng;ux huā;ch gǎng;ug yán;uu	1
+岩溶剥蚀面	yán;uu róng;dr bō;dl shí;ui miàn;aa	1
+岩溶地面的	yán;uu róng;dr dì;ty miàn;aa de;bu	1
+岩溶洞回填	yán;uu róng;dr dòng;dt huí;kk tián;tv	1
+岩溶多潮泉	yán;uu róng;dr duō;xx cháo;di quán;bu,ub	1
+岩溶含水层	yán;uu róng;dr hán;kj,rk shuǐ;ad,uv céng;uy	1
+岩溶红色土	yán;uu róng;dr hóng;sg sè;db tǔ;aa	1
+岩溶基准面	yán;uu róng;dr jī;tq,qt zhǔn;dv miàn;aa	1
+岩溶较发育	yán;uu róng;dr jiào;ij fā;ay,fd,vy,yd yù;os,wo	1
+岩溶角砾岩	yán;uu róng;dr jiǎo;dy lì;ul,uy yán;uu	1
+盐溶角砾岩	yán;mb róng;dr jiǎo;dy lì;ul,uy yán;uu	1
+岩溶水文学	yán;uu róng;dr shuǐ;ad,uv wén;wi,dd xué;dz,zb	1
+岩溶陷落柱	yán;uu róng;dr xiàn;ej,ex luò;cl zhù;mv	1
+岩溶夷平面	yán;uu róng;dr yí;ad,dg píng;aa,gb miàn;aa	1
+岩溶油气藏	yán;uu róng;dr yóu;dy qì;py,ry cáng;cg,ci	1
+岩溶准平原	yán;uu róng;dr zhǔn;dv píng;aa,gb yuán;ix	1
+岩尾火山群	yán;uu wěi;um huǒ;dd shān;aa qún;yj	1
+岩屑砂屑岩	yán;uu xiè;ux shā;uu xiè;ux yán;uu	1
+冶里石灰岩	yě;dt lǐ;aa,tt shí;kp,aa,ak,pk huī;hu,uh yán;uu	1
+野外地质学	yě;ly,yl wài;xb dì;ty zhì;bu,pb xué;dz,zb	1
+异化粒灰岩	yì;cs,sc huà;rb lì;ml huī;hu,uh yán;uu	1
+伊通火山群	yī;ry tōng;zy huǒ;dd shān;aa qún;yj	1
+隐爆角砾岩	yǐn;ej bào;hb jiǎo;dy lì;ul,uy yán;uu	1
+应用地质学	yìng;ga yòng;kf dì;ty zhì;bu,pb xué;dz,zb	1
+铀矿地质学	yóu;jy kuàng;ug dì;ty zhì;bu,pb xué;dz,zb	1
+铀砾岩矿床	yóu;jy lì;ul,uy yán;uu kuàng;ug chuáng;gm,mg	1
+宇宙地质学	yǔ;by zhòu;by dì;ty zhì;bu,pb xué;dz,zb	1
+原地花岗岩	yuán;ix dì;ty huā;ch gǎng;ug yán;uu	1
+原始火山岩	yuán;ix shǐ;nt huǒ;dd shān;aa yán;uu	1
+月球地质学	yuè;oy,pa,yt qiú;wq dì;ty zhì;bu,pb xué;dz,zb	1
+月球火成岩	yuè;oy,pa,yt qiú;wq huǒ;dd chéng;gg,wg yán;uu	1
+陨击角砾岩	yǔn;ey jī;aa,eu,fk jiǎo;dy lì;ul,uy yán;uu	1
+杂块花岗岩	zá;jm,mj kuài;td,tg huā;ch gǎng;ug yán;uu	1
+再生花岗岩	zài;aa,at shēng;na huā;ch gǎng;ug yán;uu	1
+张夏石灰岩	zhāng;gi xià;wz,aw shí;kp,aa,ak,pk huī;hu,uh yán;uu	1
+张性角砾岩	zhāng;gi xìng;xu jiǎo;dy lì;ul,uy yán;uu	1
+正长花岗岩	zhèng;av zhǎng;pd huā;ch gǎng;ug yán;uu	1
+中生代地质	zhōng;aa,ka shēng;na dài;ry dì;ty zhì;bu,pb	1
+中心式火山	zhōng;aa,ka xīn;dd shì;gy,yg huǒ;dd shān;aa	1
+竹叶状灰岩	zhú;gg yè;ku zhuàng;jq,pq,qp huī;hu,uh yán;uu	1
+竹叶状砾岩	zhú;gg yè;ku zhuàng;jq,pq,qp lì;ul,uy yán;uu	1
+撞击角砾岩	zhuàng;ft jī;aa,eu,fk jiǎo;dy lì;ul,uy yán;uu	1
+紫苏花岗岩	zǐ;sc sū;cb huā;ch gǎng;ug yán;uu	1
+棕灰岩鹪鹛	zōng;mz huī;hu,uh yán;uu jiāo;nj méi;nm	1
+半原地花岗岩	bàn;bf yuán;ix dì;ty huā;ch gǎng;ug yán;uu	1
+保护地质环境	bǎo;rd hù;fh dì;ty zhì;bu,pb huán;wb jìng;tj	1
+北京地质学院	běi;ap,bj jīng;wx dì;ty zhì;bu,pb xué;dz,zb yuàn;ew	1
+北石灰岩山脉	běi;ap,bj shí;kp,aa,ak,pk huī;hu,uh yán;uu shān;aa mài;oy	1
+表生成岩作用	biǎo;fy shēng;na chéng;gg,wg yán;uu zuò;rv yòng;kf	1
+不良地质作用	bù;ad,ax liáng;dg dì;ty zhì;bu,pb zuò;rv yòng;kf	1
+层硅酸盐矿物	céng;uy guī;ug suān;yj,yw yán;mb kuàng;ug wù;nw	1
+长春地质学院	cháng;pd chūn;of,fo dì;ty zhì;bu,pb xué;dz,zb yuàn;ew	1
+场地地质效应	chǎng;ty dì;ty dì;ty zhì;bu,pb xiào;wj yìng;ga	1
+超强陨石魔法	chāo;zv qiáng;gs yǔn;ey shí;kp,aa,ak,pk mó;gm,mg fǎ;dq	1
+沉火山角砾岩	chén;dj,dr huǒ;dd shān;aa jiǎo;dy lì;ul,uy yán;uu	1
+沉火山碎屑岩	chén;dj,dr huǒ;dd shān;aa suì;uz xiè;ux yán;uu	1
+沉积成岩作用	chén;dj,dr jī;hv chéng;gg,wg yán;uu zuò;rv yòng;kf	1
+成都地质学院	chéng;gg,wg dū;ev dì;ty zhì;bu,pb xué;dz,zb yuàn;ew	1
+成矿地质背景	chéng;gg,wg kuàng;ug dì;ty zhì;bu,pb bèi;ob jǐng;oj	1
+城市工程地质	chéng;ti shì;wj gōng;aa chéng;hi dì;ty zhì;bu,pb	1
+初步地质勘察	chū;yd bù;vx dì;ty zhì;bu,pb kān;lu chá;bj	1
+次生地质灾害	cì;dq shēng;na dì;ty zhì;bu,pb zāi;bh,hb hài;bk	1
+大型火成岩区	dà;ad xíng;tx huǒ;dd chéng;gg,wg yán;uu qū;ki	1
+岛硅酸盐矿物	dǎo;nu,un guī;ug suān;yj,yw yán;mb kuàng;ug wù;nw	1
+倒石锥角砾岩	dào;rd shí;kp,aa,ak,pk zhuī;jv jiǎo;dy lì;ul,uy yán;uu	1
+地球地质历史	dì;ty qiú;wq dì;ty zhì;bu,pb lì;il shǐ;ad,ki	1
+地震地质效应	dì;ty zhèn;yi dì;ty zhì;bu,pb xiào;wj yìng;ga	1
+地震地质灾害	dì;ty zhèn;yi dì;ty zhì;bu,pb zāi;bh,hb hài;bk	1
+地震工程地质	dì;ty zhèn;yi gōng;aa chéng;hi dì;ty zhì;bu,pb	1
+地质复杂程度	dì;ty zhì;bu,pb fù;pw,rw,wo zá;jm,mj chéng;hi dù;gy	1
+地质工程专业	dì;ty zhì;bu,pb gōng;aa chéng;hi zhuān;ad,fs yè;aa	1
+地质构造体系	dì;ty zhì;bu,pb gòu;mg zào;zg tǐ;rb xì;ps	1
+地质国家公园	dì;ty zhì;bu,pb guó;ky jiā;bu gōng;sb,bs yuán;ky	1
+地质环境保护	dì;ty zhì;bu,pb huán;wb jìng;tj bǎo;rd hù;fh	1
+地质环境破坏	dì;ty zhì;bu,pb huán;wb jìng;tj pò;up huài;tb	1
+地质环境条件	dì;ty zhì;bu,pb huán;wb jìng;tj tiáo;wm jiàn;rn	1
+地质环境总站	dì;ty zhì;bu,pb huán;wb jìng;tj zǒng;bx,xk zhàn;lv	1
+地质勘查报告	dì;ty zhì;bu,pb kān;lu chá;md bào;fy gào;kn,nk	1
+地质勘察报告	dì;ty zhì;bu,pb kān;lu chá;bj bào;fy gào;kn,nk	1
+地质勘查资料	dì;ty zhì;bu,pb kān;lu chá;md zī;bc liào;md	1
+地质勘探单位	dì;ty zhì;bu,pb kān;lu tàn;fm,fu dān;ba,bd wèi;rl	1
+地质矿产勘查	dì;ty zhì;bu,pb kuàng;ug chǎn;dp,li,wp kān;lu chá;md	1
+地质雷达探测	dì;ty zhì;bu,pb léi;yt dá;zd tàn;fm,fu cè;dz	1
+地质历史时期	dì;ty zhì;bu,pb lì;il shǐ;ad,ki shí;oc qī;oq,qo	1
+地质力学概论	dì;ty zhì;bu,pb lì;gp xué;dz,zb gài;mj lùn;yl	1
+地质年代单位	dì;ty zhì;bu,pb nián;ra,pa dài;ry dān;ba,bd wèi;rl	1
+地质年代学的	dì;ty zhì;bu,pb nián;ra,pa dài;ry xué;dz,zb de;bu	1
+地质透视效应	dì;ty zhì;bu,pb tòu;zx shì;ju,uj xiào;wj yìng;ga	1
+地质研究程度	dì;ty zhì;bu,pb yán;uk jiū;xj,bj chéng;hi dù;gy	1
+地质灾害防治	dì;ty zhì;bu,pb zāi;bh,hb hài;bk fáng;ef zhì;dt	1
+地质灾害气象	dì;ty zhì;bu,pb zāi;bh,hb hài;bk qì;py,ry xiàng;du,pd,ua	1
+地质灾害巡查	dì;ty zhì;bu,pb zāi;bh,hb hài;bk xún;zi chá;md	1
+地质灾害治理	dì;ty zhì;bu,pb zāi;bh,hb hài;bk zhì;dt lǐ;wl	1
+地中海型岩溶	dì;ty zhōng;aa,ka hǎi;dm xíng;tx yán;uu róng;dr	1
+动力地质作用	dòng;ly,yl lì;gp dì;ty zhì;bu,pb zuò;rv yòng;kf	1
+鲕粒亮晶灰岩	ér;ye lì;ml liàng;wj,jb jīng;oo huī;hu,uh yán;uu	1
+鲕粒泥质灰岩	ér;ye lì;ml ní;dn zhì;bu,pb huī;hu,uh yán;uu	1
+尔塔阿雷火山	ěr;dx,xd tǎ;td,th ā;ek léi;yt huǒ;dd shān;aa	1
+粪粒泥晶灰岩	fèn;mg lì;ml ní;dn jīng;oo huī;hu,uh yán;uu	1
+风成细粒灰岩	fēng;ji chéng;gg,wg xì;st lì;ml huī;hu,uh yán;uu	1
+风的地质作用	fēng;ji de;bu dì;ty zhì;bu,pb zuò;rv yòng;kf	1
+副沉积角砾岩	fù;df,dt chén;dj,dr jī;hv jiǎo;dy lì;ul,uy yán;uu	1
+富铝质火成岩	fù;bf,bt lǚ;jl zhì;bu,pb huǒ;dd chéng;gg,wg yán;uu	1
+负异钠花岗岩	fù;db yì;cs,sc nà;jn huā;ch gǎng;ug yán;uu	1
+抚州地质学院	fǔ;fw zhōu;id,da dì;ty zhì;bu,pb xué;dz,zb yuàn;ew	1
+钙碱性火山岩	gài;jg jiǎn;ux xìng;xu huǒ;dd shān;aa yán;uu	1
+钙质微晶灰岩	gài;jg zhì;bu,pb wēi;xw jīng;oo huī;hu,uh yán;uu	1
+甘科诺拉火山	gān;aa,ca kē;hd nuò;yr lā;fl huǒ;dd shān;aa	1
+甘斯基陨石坑	gān;aa,ca sī;jq,qj jī;tq,qt yǔn;ey shí;kp,aa,ak,pk kēng;tk	1
+各国火成岩学	gè;wk guó;ky huǒ;dd chéng;gg,wg yán;uu xué;dz,zb	1
+耕地质量建设	gēng;lj dì;ty zhì;bu,pb liàng;ol jiàn;zy shè;yu	1
+工程地质测绘	gōng;aa chéng;hi dì;ty zhì;bu,pb cè;dz huì;sh	1
+工程地质单元	gōng;aa chéng;hi dì;ty zhì;bu,pb dān;ba,bd yuán;aw,ee	1
+工程地质调查	gōng;aa chéng;hi dì;ty zhì;bu,pb diào;yv chá;md	1
+工程地质环境	gōng;aa chéng;hi dì;ty zhì;bu,pb huán;wb jìng;tj	1
+工程地质勘察	gōng;aa chéng;hi dì;ty zhì;bu,pb kān;lu chá;bj	1
+工程地质力学	gōng;aa chéng;hi dì;ty zhì;bu,pb lì;gp xué;dz,zb	1
+工程地质评价	gōng;aa chéng;hi dì;ty zhì;bu,pb píng;yp jià;rj	1
+工程地质特征	gōng;aa chéng;hi dì;ty zhì;bu,pb tè;ns zhēng;xv	1
+工程地质条件	gōng;aa chéng;hi dì;ty zhì;bu,pb tiáo;wm jiàn;rn	1
+工程地质问题	gōng;aa chéng;hi dì;ty zhì;bu,pb wèn;km,mk tí;uy,yu	1
+工程地质岩组	gōng;aa chéng;hi dì;ty zhì;bu,pb yán;uu zǔ;sq	1
+工程地质钻探	gōng;aa chéng;hi dì;ty zhì;bu,pb zuān;jv tàn;fm,fu	1
+构造后花岗岩	gòu;mg zào;zg hòu;pk huā;ch gǎng;ug yán;uu	1
+固结成岩作用	gù;kg jié;sj chéng;gg,wg yán;uu zuò;rv yòng;kf	1
+牯牛潭石灰岩	gǔ;ng niú;pa tán;dt shí;kp,aa,ak,pk huī;hu,uh yán;uu	1
+古铜无球陨石	gǔ;uk tóng;jt wú;ag,ay,ee qiú;wq yǔn;ey shí;kp,aa,ak,pk	1
+国际地质大会	guó;ky jì;eu dì;ty zhì;bu,pb dà;ad huì;ry	1
+国家地质公园	guó;ky jiā;bu dì;ty zhì;bu,pb gōng;sb,bs yuán;ky	1
+海洋地质调查	hǎi;dm yáng;dy dì;ty zhì;bu,pb diào;yv chá;md	1
+海洋地质学家	hǎi;dm yáng;dy dì;ty zhì;bu,pb xué;dz,zb jiā;bu	1
+海洋工程地质	hǎi;dm yáng;dy gōng;aa chéng;hi dì;ty zhì;bu,pb	1
+航空地质方法	háng;vk kōng;xg,bg dì;ty zhì;bu,pb fāng;dg,wd,dp,dw fǎ;dq	1
+河北地质大学	hé;dk běi;ap,bj dì;ty zhì;bu,pb dà;ad xué;dz,zb	1
+河北地质学院	hé;dk běi;ap,bj dì;ty zhì;bu,pb xué;dz,zb yuàn;ew	1
+后生成岩作用	hòu;pk shēng;na chéng;gg,wg yán;uu zuò;rv yòng;kf	1
+湖北地质学院	hú;dh běi;ap,bj dì;ty zhì;bu,pb xué;dz,zb yuàn;ew	1
+华东地质学院	huá;uh dōng;ad,qx dì;ty zhì;bu,pb xué;dz,zb yuàn;ew	1
+花岗岩层下的	huā;ch gǎng;ug yán;uu céng;uy xià;ab,ad de;bu	1
+花岗岩化变质	huā;ch gǎng;ug yán;uu huà;rb biàn;wy,yy zhì;bu,pb	1
+花岗岩类岩石	huā;ch gǎng;ug yán;uu lèi;md yán;uu shí;kp,aa,ak,pk	1
+花岗岩型铀矿	huā;ch gǎng;ug yán;uu xíng;tx yóu;jy kuàng;ug	1
+花岗状火成岩	huā;ch gǎng;ug zhuàng;jq,pq,qp huǒ;dd chéng;gg,wg yán;uu	1
+环硅酸盐矿物	huán;wb guī;ug suān;yj,yw yán;mb kuàng;ug wù;nw	1
+环境地质调查	huán;wb jìng;tj dì;ty zhì;bu,pb diào;yv chá;md	1
+环境地质问题	huán;wb jìng;tj dì;ty zhì;bu,pb wèn;km,mk tí;uy,yu	1
+环境水文地质	huán;wb jìng;tj shuǐ;ad,uv wén;wi,dd dì;ty zhì;bu,pb	1
+灰岩喜鹊苣苔	huī;hu,uh yán;uu xǐ;uk què;nx jù;cj tái;ct	1
+灰岩皱叶报春	huī;hu,uh yán;uu zhòu;ip,pi,px yè;ku bào;fy chūn;of,fo	1
+火山沉积矿床	huǒ;dd shān;aa chén;dj,dr jī;hv kuàng;ug chuáng;gm,mg	1
+火山地质公园	huǒ;dd shān;aa dì;ty zhì;bu,pb gōng;sb,bs yuán;ky	1
+火山角砾岩筒	huǒ;dd shān;aa jiǎo;dy lì;ul,uy yán;uu tǒng;vt	1
+火山碎屑熔岩	huǒ;dd shān;aa suì;uz xiè;ux róng;hr yán;uu	1
+火山碎屑岩筒	huǒ;dd shān;aa suì;uz xiè;ux yán;uu tǒng;vt	1
+火山岩型铀矿	huǒ;dd shān;aa yán;uu xíng;tx yóu;jy kuàng;ug	1
+火山柱状节理	huǒ;dd shān;aa zhù;mv zhuàng;jq,pq,qp jié;ce lǐ;wl	1
+捷边科夫火山	jié;fj biān;zl kē;hd fū;ad,er huǒ;dd shān;aa	1
+进行水文地质	jìn;zj xíng;xd,xi shuǐ;ad,uv wén;wi,dd dì;ty zhì;bu,pb	1
+居间灰岩黄芩	jū;ug jiān;mo,om huī;hu,uh yán;uu huáng;ad,cb qín;cj	1
+矿区地质环境	kuàng;ug qū;ki dì;ty zhì;bu,pb huán;wb jìng;tj	1
+矿山地质工作	kuàng;ug shān;aa dì;ty zhì;bu,pb gōng;aa zuò;rv	1
+矿山基建地质	kuàng;ug shān;aa jī;tq,qt jiàn;zy dì;ty zhì;bu,pb	1
+链硅酸盐矿物	liàn;jl guī;ug suān;yj,yw yán;mb kuàng;ug wù;nw	1
+硫代酸盐矿物	liú;ui dài;ry suān;yj,yw yán;mb kuàng;ug wù;nw	1
+鹿寨香桥岩溶	lù;gb,lb zhài;mb,bm xiāng;ho qiáo;mq yán;uu róng;dr	1
+铝硅酸盐矿物	lǚ;jl guī;ug suān;yj,yw yán;mb kuàng;ug wù;nw	1
+绿色凝灰岩组	lǜ;sl sè;db níng;dy huī;hu,uh yán;uu zǔ;sq	1
+冒纳凯阿火山	mào;oo nà;sn kǎi;jj,jq ā;ek huǒ;dd shān;aa	1
+冒纳凯亚火山	mào;oo nà;sn kǎi;jj,jq yà;ay huǒ;dd shān;aa	1
+茂纳凯亚火山	mào;cw nà;sn kǎi;jj,jq yà;ay huǒ;dd shān;aa	1
+冒纳罗亚火山	mào;oo nà;sn luó;sx yà;ay huǒ;dd shān;aa	1
+茂纳洛亚火山	mào;cw nà;sn luò;dg yà;ay huǒ;dd shān;aa	1
+煤层地质基础	méi;hm céng;uy dì;ty zhì;bu,pb jī;tq,qt chǔ;ui	1
+煤田地质勘探	méi;hm tián;aa dì;ty zhì;bu,pb kān;lu tàn;fm,fu	1
+木里灰岩黄芩	mù;ad lǐ;aa,tt huī;hu,uh yán;uu huáng;ad,cb qín;cj	1
+南石灰岩山脉	nán;ua,uy shí;kp,aa,ak,pk huī;hu,uh yán;uu shān;aa mài;oy	1
+内力地质作用	nèi;ad,kr lì;gp dì;ty zhì;bu,pb zuò;rv yòng;kf	1
+凝灰火山渣锥	níng;dy huī;hu,uh huǒ;dd shān;aa zhā;di zhuī;jv	1
+凝灰质巨砾岩	níng;dy huī;hu,uh zhì;bu,pb jù;kk,aa lì;ul,uy yán;uu	1
+片麻状花岗岩	piàn;pa,pv má;gl zhuàng;jq,pq,qp huā;ch gǎng;ug yán;uu	1
+普通球粒陨石	pǔ;ob,bo tōng;zy qiú;wq lì;ml yǔn;ey shí;kp,aa,ak,pk	1
+强力陨石魔法	qiáng;gs lì;gp yǔn;ey shí;kp,aa,ak,pk mó;gm,mg fǎ;dq	1
+亲花岗岩矿床	qīn;lm huā;ch gǎng;ug yán;uu kuàng;ug chuáng;gm,mg	1
+球粒亮晶灰岩	qiú;wq lì;ml liàng;wj,jb jīng;oo huī;hu,uh yán;uu	1
+球粒泥晶灰岩	qiú;wq lì;ml ní;dn jīng;oo huī;hu,uh yán;uu	1
+球粒微晶灰岩	qiú;wq lì;ml wēi;xw jīng;oo huī;hu,uh yán;uu	1
+区域地质测量	qū;ki yù;th dì;ty zhì;bu,pb cè;dz liáng;ol	1
+区域地质调查	qū;ki yù;th dì;ty zhì;bu,pb diào;yv chá;md	1
+区域地质构造	qū;ki yù;th dì;ty zhì;bu,pb gòu;mg zào;zg	1
+人为地质灾害	rén;pd wéi;dd de;ty zhì;bu,pb zāi;bh,hb hài;bk	1
+熔火山碎屑岩	róng;hr huǒ;dd shān;aa suì;uz xiè;ux yán;uu	1
+山洪地质灾害	shān;aa hóng;dg dì;ty zhì;bu,pb zāi;bh,hb hài;bk	1
+舍维留奇火山	shě;ru wéi;sv liú;td,tl,lt qí;dk huǒ;dd shān;aa	1
+省地质测绘院	shěng;ou dì;ty zhì;bu,pb cè;dz huì;sh yuàn;ew	1
+省煤田地质局	shěng;ou méi;hm tián;aa dì;ty zhì;bu,pb jú;uk	1
+生物地质化学	shēng;na wù;nw dì;ty zhì;bu,pb huà;rb xué;dz,zb	1
+生物堆积灰岩	shēng;na wù;nw duī;tv jī;hv huī;hu,uh yán;uu	1
+生物构架灰岩	shēng;na wù;nw gòu;mg jià;mj huī;hu,uh yán;uu	1
+生物骨架灰岩	shēng;na wù;nw gǔ;go,ob,og jià;mj huī;hu,uh yán;uu	1
+生物架构灰岩	shēng;na wù;nw jià;mj gòu;mg huī;hu,uh yán;uu	1
+生物建造灰岩	shēng;na wù;nw jiàn;zy zào;zg huī;hu,uh yán;uu	1
+生物泥晶灰岩	shēng;na wù;nw ní;dn jīng;oo huī;hu,uh yán;uu	1
+生物粘结灰岩	shēng;na wù;nw nián;mv jié;sj huī;hu,uh yán;uu	1
+生物碎屑灰岩	shēng;na wù;nw suì;uz xiè;ux huī;hu,uh yán;uu	1
+生物滞积灰岩	shēng;na wù;nw zhì;dd jī;hv huī;hu,uh yán;uu	1
+石磴子石灰岩	shí;kp,aa,ak,pk dèng;ud zǐ;aa,vh shí;kp,aa,ak,pk huī;hu,uh yán;uu	1
+石灰岩参差面	shí;kp,aa,ak,pk huī;hu,uh yán;uu cēn;sp cī;yg miàn;aa	1
+世界地质公园	shì;ca,cv,aa jiè;tj dì;ty zhì;bu,pb gōng;sb,bs yuán;ky	1
+世界地质奇观	shì;ca,cv,aa jiè;tj dì;ty zhì;bu,pb qí;dk guān;jy,yj	1
+石龙洞石灰岩	shí;kp,aa,ak,pk lóng;ad dòng;dt shí;kp,aa,ak,pk huī;hu,uh yán;uu	1
+石油地质储量	shí;kp,aa,ak,pk yóu;dy dì;ty zhì;bu,pb chǔ;rv liàng;ol	1
+双硅酸盐矿物	shuāng;yy guī;ug suān;yj,yw yán;mb kuàng;ug wù;nw	1
+水滑结晶灰岩	shuǐ;ad,uv huá;dg jié;sj jīng;oo huī;hu,uh yán;uu	1
+水文地质参数	shuǐ;ad,uv wén;wi,dd dì;ty zhì;bu,pb cān;sp shù;wl	1
+水文地质勘察	shuǐ;ad,uv wén;wi,dd dì;ty zhì;bu,pb kān;lu chá;bj	1
+水文地质勘查	shuǐ;ad,uv wén;wi,dd dì;ty zhì;bu,pb kān;lu chá;md	1
+水文地质手册	shuǐ;ad,uv wén;wi,dd dì;ty zhì;bu,pb shǒu;pa,ub cè;ka,pa	1
+水文地质特征	shuǐ;ad,uv wén;wi,dd dì;ty zhì;bu,pb tè;ns zhēng;xv	1
+水文地质条件	shuǐ;ad,uv wén;wi,dd dì;ty zhì;bu,pb tiáo;wm jiàn;rn	1
+水文地质问题	shuǐ;ad,uv wén;wi,dd dì;ty zhì;bu,pb wèn;km,mk tí;uy,yu	1
+水文地质学家	shuǐ;ad,uv wén;wi,dd dì;ty zhì;bu,pb xué;dz,zb jiā;bu	1
+水文地质资料	shuǐ;ad,uv wén;wi,dd dì;ty zhì;bu,pb zī;bc liào;md	1
+水文地质钻探	shuǐ;ad,uv wén;wi,dd dì;ty zhì;bu,pb zuān;jv tàn;fm,fu	1
+水文工程地质	shuǐ;ad,uv wén;wi,dd gōng;aa chéng;hi dì;ty zhì;bu,pb	1
+覃家庙石灰岩	tán;xz jiā;bu miào;gy shí;kp,aa,ak,pk huī;hu,uh yán;uu	1
+探明地质储量	tàn;fm,fu míng;oo dì;ty zhì;bu,pb chǔ;rv liàng;ol	1
+碳质球粒陨石	tàn;ut zhì;bu,pb qiú;wq lì;ml yǔn;ey shí;kp,aa,ak,pk	1
+天河板石灰岩	tiān;ad hé;dk bǎn;mf shí;kp,aa,ak,pk huī;hu,uh yán;uu	1
+同生成岩作用	tóng;kk shēng;na chéng;gg,wg yán;uu zuò;rv yòng;kf	1
+外力地质作用	wài;xb lì;gp dì;ty zhì;bu,pb zuò;rv yòng;kf	1
+外力碎屑砾岩	wài;xb lì;gp suì;uz xiè;ux lì;ul,uy yán;uu	1
+网硅酸盐矿物	wǎng;ki guī;ug suān;yj,yw yán;mb kuàng;ug wù;nw	1
+微亮晶石灰岩	wēi;xw liàng;wj,jb jīng;oo shí;kp,aa,ak,pk huī;hu,uh yán;uu	1
+五大连池火山	wǔ;aa dà;ad lián;zi chí;dy huǒ;dd shān;aa	1
+武汉地质学院	wǔ;vy,yv hàn;dy dì;ty zhì;bu,pb xué;dz,zb yuàn;ew	1
+无化石石灰岩	wú;ag,ay,ee huà;rb shí;kp,aa,ak,pk shí;kp,aa,ak,pk huī;hu,uh yán;uu	1
+吴家坪石灰岩	wú;kt jiā;bu píng;tp shí;kp,aa,ak,pk huī;hu,uh yán;uu	1
+西安地质学院	xī;aa ān;bn dì;ty zhì;bu,pb xué;dz,zb yuàn;ew	1
+夕拉科加陨石	xī;pd lā;fl kē;hd jiā;lk,kl yǔn;ey shí;kp,aa,ak,pk	1
+腺灰岩紫地榆	xiàn;oq huī;hu,uh yán;uu zǐ;sc dì;ty yú;my	1
+玄武质凝灰岩	xuán;wy wǔ;vy,yv zhì;bu,pb níng;dy huī;hu,uh yán;uu	1
+岩溶倒虹吸管	yán;uu róng;dr dào;rd hóng;ig xī;kj guǎn;vg	1
+岩溶断块山地	yán;uu róng;dr duàn;ja,jm,jv kuài;td,tg shān;aa dì;ty	1
+岩溶断陷盆地	yán;uu róng;dr duàn;ja,jm,jv xiàn;ej,ex pén;mf dì;ty	1
+岩溶含水地块	yán;uu róng;dr hán;kj,rk shuǐ;ad,uv dì;ty kuài;td,tg	1
+岩溶水之间无	yán;uu róng;dr shuǐ;ad,uv zhī;dd jiān;mo,om wú;ag,ay,ee	1
+岩溶型风化壳	yán;uu róng;dr xíng;tx fēng;ji huà;rb ké;uj	1
+砚瓦山石灰岩	yàn;uj wǎ;ad shān;aa shí;kp,aa,ak,pk huī;hu,uh yán;uu	1
+杨柳岗石灰岩	yáng;my liǔ;mm gǎng;ug shí;kp,aa,ak,pk huī;hu,uh yán;uu	1
+页硅酸盐矿物	yè;ab guī;ug suān;yj,yw yán;mb kuàng;ug wù;nw	1
+冶金地质学院	yě;dt jīn;ra,pa dì;ty zhì;bu,pb xué;dz,zb yuàn;ew	1
+野柳地质公园	yě;ly,yl liǔ;mm dì;ty zhì;bu,pb gōng;sb,bs yuán;ky	1
+油气地质勘探	yóu;dy qì;py,ry dì;ty zhì;bu,pb kān;lu tàn;fm,fu	1
+原地生物灰岩	yuán;ix dì;ty shēng;na wù;nw huī;hu,uh yán;uu	1
+原始地质编录	yuán;ix shǐ;nt dì;ty zhì;bu,pb biān;sb lù;au,ua,vu	1
+原油地质储量	yuán;ix yóu;dy dì;ty zhì;bu,pb chǔ;rv liàng;ol	1
+杂色灰岩鹪鹛	zá;jm,mj sè;db huī;hu,uh yán;uu jiāo;nj méi;nm	1
+正斑花岗质岩	zhèng;av bān;ww huā;ch gǎng;ug zhì;bu,pb yán;uu	1
+滞后弧火山岩	zhì;dd hòu;pk hú;gg huǒ;dd shān;aa yán;uu	1
+竹叶状石灰岩	zhú;gg yè;ku zhuàng;jq,pq,qp shí;kp,aa,ak,pk huī;hu,uh yán;uu	1
+梓门桥石灰岩	zǐ;mx mén;dg qiáo;mq shí;kp,aa,ak,pk huī;hu,uh yán;uu	1
+自然地质灾害	zì;pa,po rán;hq de;ty zhì;bu,pb zāi;bh,hb hài;bk	1
+层状硅酸盐矿物	céng;uy zhuàng;jq,pq,qp guī;ug suān;yj,yw yán;mb kuàng;ug wù;nw	1
+超镁铁质岩分类	chāo;zv měi;jm tiě;ju zhì;bu,pb yán;uu fēn;bd,db lèi;md	1
+纯橄无球粒陨石	chún;st gǎn;mg wú;ag,ay,ee qiú;wq lì;ml yǔn;ey shí;kp,aa,ak,pk	1
+粗球粒玄武岩的	cū;mq qiú;wq lì;ml xuán;wy wǔ;vy,yv yán;uu de;bu	1
+岛状硅酸盐矿物	dǎo;nu,un zhuàng;jq,pq,qp guī;ug suān;yj,yw yán;mb kuàng;ug wù;nw	1
+低山沟谷型岩溶	dī;rd shān;aa gōu;dg gǔ;bk,kr xíng;tx yán;uu róng;dr	1
+地质学的类比法	dì;ty zhì;bu,pb xué;dz,zb de;bu lèi;md bǐ;bb fǎ;dq	1
+断块山地型岩溶	duàn;ja,jm,jv kuài;td,tg shān;aa dì;ty xíng;tx yán;uu róng;dr	1
+断陷盆地型岩溶	duàn;ja,jm,jv xiàn;ej,ex pén;mf dì;ty xíng;tx yán;uu róng;dr	1
+峰丛谷地型岩溶	fēng;uf cóng;ac,ra gǔ;bk,kr dì;ty xíng;tx yán;uu róng;dr	1
+峰丛洼地型岩溶	fēng;uf cóng;ac,ra wā;dg dì;ty xíng;tx yán;uu róng;dr	1
+峰林谷地型岩溶	fēng;uf lín;mm gǔ;bk,kr dì;ty xíng;tx yán;uu róng;dr	1
+峰林平原型岩溶	fēng;uf lín;mm píng;aa,gb yuán;ix xíng;tx yán;uu róng;dr	1
+富钙无球粒陨石	fù;bf,bt gài;jg wú;ag,ay,ee qiú;wq lì;ml yǔn;ey shí;kp,aa,ak,pk	1
+橄辉无球粒陨石	gǎn;mg huī;gj wú;ag,ay,ee qiú;wq lì;ml yǔn;ey shí;kp,aa,ak,pk	1
+更长环斑花岗岩	gèng;ad,ag cháng;pd huán;wb bān;ww huā;ch gǎng;ug yán;uu	1
+孤峰波地型岩溶	gū;zg fēng;uf bō;dp dì;ty xíng;tx yán;uu róng;dr	1
+古铜钙无粒陨石	gǔ;uk tóng;jt gài;jg wú;ag,ay,ee lì;ml yǔn;ey shí;kp,aa,ak,pk	1
+航空地质甸方法	háng;vk kōng;xg,bg dì;ty zhì;bu,pb diān;gt,tg fāng;dg,wd,dp,dw fǎ;dq	1
+花岗岩化成矿说	huā;ch gǎng;ug yán;uu huà;rb chéng;gg,wg kuàng;ug shuō;yd	1
+环状硅酸盐矿物	huán;wb zhuàng;jq,pq,qp guī;ug suān;yj,yw yán;mb kuàng;ug wù;nw	1
+架状硅酸盐矿物	jià;mj zhuàng;jq,pq,qp guī;ug suān;yj,yw yán;mb kuàng;ug wù;nw	1
+链状硅酸盐矿物	liàn;jl zhuàng;jq,pq,qp guī;ug suān;yj,yw yán;mb kuàng;ug wù;nw	1
+贫钙无球粒陨石	pín;bf gài;jg wú;ag,ay,ee qiú;wq lì;ml yǔn;ey shí;kp,aa,ak,pk	1
+群状硅酸盐矿物	qún;yj zhuàng;jq,pq,qp guī;ug suān;yj,yw yán;mb kuàng;ug wù;nw	1
+热带季风型岩溶	rè;hv dài;jb jì;hz fēng;ji xíng;tx yán;uu róng;dr	1
+钛辉无球粒陨石	tài;jt huī;gj wú;ag,ay,ee qiú;wq lì;ml yǔn;ey shí;kp,aa,ak,pk	1
+顽火无球粒陨石	wán;yy huǒ;dd wú;ag,ay,ee qiú;wq lì;ml yǔn;ey shí;kp,aa,ak,pk	1
+新疆煤田地质局	xīn;jq jiāng;gj méi;hm tián;aa dì;ty zhì;bu,pb jú;uk	1
+原始无球粒陨石	yuán;ix shǐ;nt wú;ag,ay,ee qiú;wq lì;ml yǔn;ey shí;kp,aa,ak,pk	1
+正长球粒霞霓岩	zhèng;av zhǎng;pd qiú;wq lì;ml xiá;yj,yy ní;ye yán;uu	1
+紫苏斜长花岗岩	zǐ;sc sū;cb xié;dy cháng;pd huā;ch gǎng;ug yán;uu	1
+自碎火成角砾岩	zì;pa,po suì;uz huǒ;dd chéng;gg,wg jiǎo;dy lì;ul,uy yán;uu	1
+爆破角砾岩型铀矿	bào;hb pò;up jiǎo;dy lì;ul,uy yán;uu xíng;tx yóu;jy kuàng;ug	1
+北极地质研究所岩	běi;ap,bj jí;mj dì;ty zhì;bu,pb yán;uk jiū;xj,bj suǒ;hj,jh yán;uu	1
+含煤岩系成因类型	hán;kj,rk méi;hm yán;uu xì;ps chéng;gg,wg yīn;kd lèi;md xíng;tx	1
+含煤岩系旋回结构	hán;kj,rk méi;hm yán;uu xì;ps xuán;fp huí;kk jié;sj gòu;mg	1
+航空地质调查方法	háng;vk kōng;xg,bg dì;ty zhì;bu,pb diào;yv chá;md fāng;dg,wd,dp,dw fǎ;dq	1
+环境水文地质调查	huán;wb jìng;tj shuǐ;ad,uv wén;wi,dd dì;ty zhì;bu,pb diào;yv chá;md	1
+火山深成联合岩群	huǒ;dd shān;aa shēn;dm chéng;gg,wg lián;eg hé;rk yán;uu qún;yj	1
+近海煤型含煤岩系	jìn;zj hǎi;dm méi;hm xíng;tx hán;kj,rk méi;hm yán;uu xì;ps	1
+矿区水文地质条件	kuàng;ug qū;ki shuǐ;ad,uv wén;wi,dd dì;ty zhì;bu,pb tiáo;wm jiàn;rn	1
+强斯型圆锥洗煤机	qiáng;gs sī;jq,qj xíng;tx yuán;ky zhuī;jv xǐ;dx méi;hm jī;mj	1
+生物球粒亮晶灰岩	shēng;na wù;nw qiú;wq lì;ml liàng;wj,jb jīng;oo huī;hu,uh yán;uu	1
+生物球粒泥晶灰岩	shēng;na wù;nw qiú;wq lì;ml ní;dn jīng;oo huī;hu,uh yán;uu	1
+地质资源与地质工程	dì;ty zhì;bu,pb zī;bc yuán;dy yǔ;aa dì;ty zhì;bu,pb gōng;aa chéng;hi	1
