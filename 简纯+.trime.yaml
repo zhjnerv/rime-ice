@@ -14,9 +14,9 @@ conf:
     key_back_color: off_key_back_color
     hilited_key_back_color: hilited_main_back_color
   main:
-    height: 52 #按键高度
-    horizontal_gap: 16 #按键水平间距
-    vertical_gap: 8 #按键行距
+    height: 42 #按键高度
+    horizontal_gap: 5 #按键水平间距
+    vertical_gap: 6 #按键行距
     key_symbol_offset_x: 9
     key_hint_offset_x: 0
     key_hint_offset_y: -0.5
@@ -26,15 +26,15 @@ conf:
       - width: 0 #底部留白开关，0为关，1~100开
         height: 1 #底部留白
   key_height_zm: # 字母行 按键高
-    height: 18
+    height: 16
   key_height_last: # 第4行 按键高度
-    height: 50
+    height: 45
 
   # letter键盘
   main_en:
-    height: 52 #按键高度
-    horizontal_gap: 16 #按键水平间距
-    vertical_gap: 7 #按键行距
+    height: 45 #按键高度
+    horizontal_gap: 5 #按键水平间距
+    vertical_gap: 6 #按键行距
     key_symbol_offset_x: 9
     key_hint_offset_x: 0
     key_hint_offset_y: -0.5
@@ -166,7 +166,7 @@ style:
   # 候选区
   ## 候选
   candidate_use_cursor: true #高亮候选项
-  candidate_view_height: 21 #候选区高度
+  candidate_view_height: 18 #候选区高度（即数字键上方的一栏）
   candidate_padding: 5 #候选项内边距
   candidate_spacing: 0.5 #候选间距
   candidate_font: han.ttf #候选字型
@@ -185,7 +185,7 @@ style:
   ## 主按键
   key_height: { __include: conf/sym_height } #键高
   key_width: 12 #键宽，占屏幕宽的百分比
-  round_corner: 6 #按键圆角半径
+  round_corner: 18 #按键圆角半径
   shadow_radius: 0.9 #按键阴影半径
   key_font: symbol.ttf #键盘字型
   latin_font: latin.ttf #西文字型
@@ -578,6 +578,45 @@ preset_color_schemes:
     # menu_text_color: off_sym_text_color #菜单文字 ※
     # hilited_menu_back_color: key_back_color #高亮菜单背景 ※
     # hilited_menu_text_color: enter_sym_back_color #高亮菜单文字 ※
+  business_gray:
+    name: 商务灰 #方案名称
+    author: 'amzxyz' #作者
+    light_scheme: default
+    # 悬浮窗
+    text_color: 0x9E8D58 #编码 青灰色(反转#588D9E)
+    hilited_text_color: 0x52D7DE #高亮编码 青色亮调
+
+    # 候选栏
+    back_color: 0x091E03 #候选栏背景 深墨绿(接近#030E09)
+    comment_text_color: 0x9E8D58 #提示 青灰
+    hilited_candidate_text_color: 0x52D7DE #高亮候选文字 亮青色
+
+    # 键盘通用
+    hilited_key_text_color: 0xDDDDDD #高亮按键文字
+
+    # 主键盘
+    main_back_color: 0x2E3B39 #按键背景 深青灰
+    hilited_main_back_color: 0x5A6B68 #高亮按键背景 中青灰
+    off_key_back_color: 0x1F1E39 #功能键背景 深紫灰(接近#391E1F)
+    hilited_off_key_back_color: 0x4A5553 #高亮功能键背景
+    hilited_off_key_text_color: 0xDDDDDD #高亮功能键文字
+    on_key_back_color: 0x9E8D58 #shift锁定时背景 青灰主色
+    on_key_text_color: 0x030E09 #shift锁定时文字 深色
+    hilited_on_key_back_color: 0x52D7DE #高亮shift锁定时背景 亮青
+    hilited_on_key_text_color: 0x030E09 #高亮shift锁定时文字
+    enter_back_color: 0x52D775 #enter背景 橙红主色(#DE7552)
+    enter_text_color: 0x030E09 #enter文字 深色
+    enter_symbol_color: 0x030E09 #enter符号
+    hilited_enter_back_color: 0x2E3B95 #高亮enter背景 深橙红(#953B2E)
+
+    # 附键盘
+    key_back_color: 0x2E3B39 #按键背景
+    hilited_key_back_color: 0x5A6B68 #高亮按键背景
+    off_sym_back_color: 0x1F1E39 #功能键背景
+    hilited_off_sym_back_color: 0x4A5553 #高亮功能键背景
+    enter_sym_back_color: 0x52D775 #enter背景
+    hilited_enter_sym_back_color: 0x2E3B95 #高亮enter背景
+
 
 
 
