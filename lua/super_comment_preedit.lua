@@ -210,140 +210,7 @@ local function get_fz_comment(cand, env, initial_comment)
         return ""
     end
 end
--- ----------------------
--- # 自动无词频造词模块
--- ----------------------
-local AP = {}
-local comment_cache = {}
 
-function AP.init(env)
-    local config = env.engine.schema.config
-    local enable_auto_phrase = config:get_bool("add_user_dict/enable_auto_phrase") or false
-    local enable_user_dict = config:get_bool("add_user_dict/enable_user_dict") or false
-
-        -- 依据配置选择是否开始缓存comment
-    if enable_auto_phrase and enable_user_dict then 
-        env.memory = Memory(env.engine, env.engine.schema, "add_user_dict")
-        env._commit_conn = env.engine.context.commit_notifier:connect(
-            function(ctx)
-                AP.commit_handler(ctx, env)
-            end
-        )
-        env._delete_conn = env.engine.context.delete_notifier:connect(
-            function(ctx)
-                comment_cache = {}
-            end
-        )
-    end
-end
-
-function AP.fini(env)
-    if env._commit_conn then
-        env._commit_conn:disconnect()
-        env._commit_conn = nil
-    end
-
-    if env._delete_conn then
-        env._delete_conn:disconnect()
-        env._delete_conn = nil
-    end
-
-    if env.memory then
-        env.memory:disconnect()
-        env.memory = nil
-    end
-end
-
-function AP.save_comment_cache(cand)
-    local comment = cand.comment
-    local comment_text = cand.text
-
-    if comment_text and comment_text ~= "" and comment and comment ~= "" then
-        comment_cache[comment_text] = comment
-    end
-end
-
-function AP.commit_handler(ctx, env)
-    if not ctx or not ctx.composition then
-        comment_cache = {}
-        return
-    end
-
-    local segments = ctx.composition:toSegmentation():get_segments()
-    local segments_count = #segments
-    local commit_text = ctx:get_commit_text()
-
-    -- 检查是否符合最小造词单元要求
-    if segments_count <= 1 or utf8.len(commit_text) <= 1 then
-        comment_cache = {}
-        return
-    end
-
-    -- 检查是否符合造词内容要求
-    if not AP.is_chinese_only(commit_text) or comment_cache[commit_text] then
-        comment_cache = {}
-        return
-    end
-
-    local preedits_table = {}
-    local config = env.engine.schema.config
-    local delimiter = config:get_string("speller/delimiter") or " '"
-    local escaped_delimiter = utf8.char(utf8.codepoint(delimiter)):gsub("(%W)", "%%%1")
-
-    for i = 1, segments_count do
-        local seg = segments[i]
-        local cand = seg:get_selected_candidate()
-
-        if cand then
-            local cand_text = cand.text
-            local preedit = comment_cache[cand_text]
-
-            if preedit and preedit ~= "" then
-                for part in preedit:gmatch("[^" .. escaped_delimiter .. "]+") do
-                    table.insert(preedits_table, part)
-                end
-            end
-        end
-    end
-
-    local dictEntry = DictEntry()
-
-    dictEntry.text = commit_text
-    dictEntry.weight = 1
-    dictEntry.custom_code = table.concat(preedits_table, " ") .. " "
-
-    env.memory:update_userdict(dictEntry, 1, "")
-
-    --log.info(string.format("[auto_phrase] 自动造词：[%s]，编码：[%s]", dictEntry.text, dictEntry.custom_code))
-
-    comment_cache = {}
-end
-
--- 判断字符是否为汉字
-function AP.is_chinese_only(text)
-    local non_chinese_pattern = "[%w%p]"
-
-    if not text or text == "" then
-        return false
-    end
-
-    if text:match(non_chinese_pattern) then
-        return false
-    end
-
-    for _, cp in utf8.codes(text) do
-        -- 常用汉字区 + 扩展 A/B/C/D/E/F/G
-        if
-            not ((cp >= 0x4E00 and cp <= 0x9FFF) or -- CJK Unified Ideographs
-                (cp >= 0x3400 and cp <= 0x4DBF) or -- CJK Ext-A
-                (cp >= 0x20000 and cp <= 0x2EBEF) or -- CJK Ext-B~G（需 5.3+ 支持大码点）
-                false)
-         then
-            return false
-        end
-    end
-    return true
-end
 
 local SV = {}
 
@@ -417,6 +284,37 @@ function SV.update_preedit(env, preedit)
         env._sv_last_pre         = preedit
     end
 end
+-- 对 cand.preedit 应用 tone_preedit/0..9 的映射（数字 -> 上标等）
+local function apply_tone_preedit(env, cand)
+    if not cand or not cand.preedit or cand.preedit == "" then
+        return
+    end
+
+    if not env.tone_map then
+        env.tone_map = {}
+        local cfg = env.engine.schema.config
+        for d = 0, 9 do
+            local k = tostring(d)
+            local v = cfg:get_string("tone_preedit/" .. k)
+            if v and v ~= "" then
+                env.tone_map[k] = v
+            end
+        end
+    end
+
+    local preedit = cand.preedit
+    local converted = preedit:gsub("([^%d%s]+)(%d+)", function(body, digits)
+        local mapped = digits:gsub("%d", function(d)
+            return env.tone_map[d] or d
+        end)
+        return body .. mapped
+    end)
+
+    if converted ~= preedit then
+        cand.preedit = converted
+    end
+end
+
 -- ----------------------
 -- 主函数：根据优先级处理候选词的注释和preedit
 -- ----------------------
@@ -436,13 +334,11 @@ function ZH.init(env)
         candidate_length = tonumber(config:get_string("super_comment/candidate_length")) or 1,
     }
     CR.init(env)
-    AP.init(env)
     SV.init(env)
 end
 function ZH.fini(env)
     -- 清理
     CF.fini(env)
-    AP.fini(env)
     SV.fini(env)
 end
 function ZH.func(input, env)
@@ -475,39 +371,9 @@ function ZH.func(input, env)
         local initial_comment = genuine_cand.comment
         local final_comment = initial_comment
         index = index + 1
-        -- auto_phrase 相关处理,只保存comment
-        if enable_auto_phrase and enable_user_dict then 
-            AP.save_comment_cache(cand)
-        end
+
         SV.update_preedit(env, preedit) --储存到环境变量
-        -- 这里开始：始终进行常规状态下的“数字→声调符号”的 preedit 转换（schema: tone_preedit/0..9）
-        -- 为啥不用系统带的转换：避免转写影响 Lua 拿到的原始 preedit
-        if not env.tone_map then
-            env.tone_map = {}
-            local cfg = env.engine.schema.config
-            for d = 0, 9 do
-                local k = tostring(d)
-                local v = cfg:get_string("tone_preedit/" .. k)
-                if v and v ~= "" then
-                    env.tone_map[k] = v
-                end
-            end
-        end
 
-        if preedit ~= "" then
-            -- 全局：把每个「字母+尾随数字」中的数字逐位映射（不会动分隔符/空格）
-            -- 例： "ni9 zl0 na li" -> "ni³ zl⁴ na li"
-            local converted = preedit:gsub("([%a]+)(%d+)", function(body, digits)
-                local mapped = digits:gsub("%d", function(d)
-                    return env.tone_map[d] or d
-                end)
-                return body .. mapped
-            end)
-
-            if converted ~= preedit then
-                genuine_cand.preedit = converted
-            end
-        end
         -- preedit相关处理只跳过 preedit，不影响注释
         if is_radical_mode then
             goto after_preedit
@@ -543,6 +409,7 @@ function ZH.func(input, env)
             for segment in string.gmatch(initial_comment, "[^" .. auto_delimiter .. manual_delimiter .. "]+") do
                 local pinyin = segment:match("^[^;]+")
                 if pinyin then
+                    pinyin = pinyin:gsub("[%[%]]", "")  --去掉英文词库编码中的[]
                     table.insert(pinyin_segments, pinyin)
                 end
             end
@@ -593,7 +460,7 @@ function ZH.func(input, env)
             genuine_cand.preedit = table.concat(input_parts)
         end
         ::after_preedit::
-
+        apply_tone_preedit(env, genuine_cand)
         if should_skip_candidate_comment then
             yield(genuine_cand)
             goto continue
@@ -637,11 +504,11 @@ function ZH.func(input, env)
                 final_comment = az_comment
             end
         end
-
         -- 应用注释
         if final_comment ~= initial_comment then
             genuine_cand.comment = final_comment
         end
+
         yield(genuine_cand)
         ::continue::
     end

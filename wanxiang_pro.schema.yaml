@@ -13,7 +13,7 @@ schema:
     - wanxiang_mixedcode  #中英文混合词汇
     - wanxiang_reverse    # 部件拆字，反查及辅码
     - wanxiang_chaifen    #辅助码拆分注释、翻译注释、行政区划匹配、车牌、等等注释类显示滤镜，Lua专用：super_comment
-    - wanxiang_charset    #字符集过滤器
+
 
 # 开关
 # reset: 默认状态。注释掉后，切换窗口时不会重置到默认状态。
@@ -46,7 +46,8 @@ switches:
     states: [ 简体, 通繁, 港繁, 臺繁 ]
   - name: char_priority                #多体现在编码重合但候选有单字或者多字的情况`引导的辅码查词时是否单字优先，全拼常见，类似于特定编码情况下、反查状态下的调序能力。归属：super_lookup.lua
     states: [词组先, 单字先]
-
+  - options: [ mixed, zh_only, en_only ]
+    states: [ 混合输入, 仅中文, 仅英文 ]
 
 # 输入引擎
 engine:
@@ -95,17 +96,16 @@ engine:
     - script_translator@user_dict_set      #自造词之使用词汇入口
     - script_translator@add_user_dict      #自造词之制造词汇入口
   filters:
-    - lua_filter@*chars_filter                      #字符集过滤
     - reverse_lookup_filter@radical_reverse_lookup  #部件拆字滤镜，放在super_comment前面，进一步被超级注释处理以获得拼音编码的提示
+    - lua_filter@*auto_phrase                       #无感造词，关闭调频的时候将汉字写入次翻译器，当没有英文候选的时候追加\上屏可完成英文造词
     - lua_filter@*super_comment_preedit             #超级注释模块、超级preedit，支持错词提示、辅助码显示，部件组字读音注释，有声调、无声调全拼编码的转换，支持个性化配置和关闭相应的功能，详情搜索super_comment_preedit进行详细配置
     - simplifier@emoji                              #Emoji滤镜
     - simplifier@s2t                                #简繁切换通繁
     - simplifier@s2tw                               #简繁切换台繁
     - simplifier@s2hk                               #简繁切换港繁
     - simplifier@chinese_english                    #中英翻译滤镜
-    - lua_filter@*super_lookup                      #字词输入中反查辅助筛选
-    - lua_filter@*super_sequence*F                  #手动排序放在assist_sort 后面，高亮候选 ctrl+j左移动 ctrl+k 右移动 ctrl+0 移除位移
-    - lua_filter@*text_formatting_promote           #给自定义用户词扩展一个换行:\n, 制表符：\t, 回车符：\r, 空格：\s ，并对简码位置提升到第二位，同时保证英文前置避免无效派生干扰
+    - lua_filter@*super_sequence*F                  #手动排序，对高亮候选 ctrl+j左移动 ctrl+k 右移动 ctrl+0 移除位移
+    - lua_filter@*super_filter                      #功能太多详见Lua文件
     - uniquifier                                    #去重
 
 grammar:
@@ -128,6 +128,9 @@ tips:
   # 可选项为：偏旁，符号，化学式，时间，符号，组字，翻译，表情，货币，车牌
   disabled_types: []
 
+#在8105基础上你可以通过黑白名单微调你自己的字符集过滤清单，主数据库位于lua/charset.bin不可编辑
+charsetlist: []
+charsetblacklist: []
 #shijian:仅仅作为提示使用，编码已经写死，引导键可以在key_binder下修改前缀
 #时间：osj 或者 /sj
 #日期：orq 或者 /rq
@@ -382,7 +385,7 @@ chengyu:
 # 中文、英文、数字、符号等混合词汇
 wanxiang_mixedcode:
   dictionary: wanxiang_mixedcode
-  db_class: stabledb
+  user_dict: en
   enable_completion: true
   enable_sentence: false
   initial_quality: 2
@@ -514,6 +517,8 @@ key_binder:
     - { when: has_menu, accept: "Control+t", toggle: super_tips }
 # 通过快捷键Control+g开启字符集过滤
     - { when: has_menu, accept: "Control+g", toggle: charset_filter }
+#通过快捷键Control+q切换中文、英文、混合模式
+    - { when: has_menu, accept: "Control+q", toggle: zh_only }
 # 使用 tab 在不同音节之间跳转
     - { when: has_menu, accept: "Tab", send: "Control+Right" }
     - { when: composing, accept: "Tab", send: "Control+Right" }
@@ -546,6 +551,7 @@ speller:
   # initials 定义仅作为始码的按键，排除 ` 让单个的 ` 可以直接上屏
   initials: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA/
   delimiter: " '"  # 第一位<空格>是拼音之间的分隔符；第二位<'>表示可以手动输入单引号来分割拼音。
+  visual_delimiter: " "  # super_preedit.lua配置：是否让分隔符号跟着一起转换，例如nǐ'hǎo 在实际使用中表现出视觉拥挤，我们可以让delimiter平时是'转换为拼音的时候使用空格nǐ hǎo，更符合实际。
   algebra:
     __patch:
       #- 模糊音             #模糊音选择性开启
