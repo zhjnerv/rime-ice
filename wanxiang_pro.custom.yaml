@@ -218,7 +218,7 @@ patch:
       sb: "sb"
 
   #开启自动无词频造词（默认已经开了）
-  #add_user_dict/enable_auto_phrase: true
+  add_user_dict/enable_auto_phrase: true
 
   # 符号表自定义配置
   punctuator/full_shape:
