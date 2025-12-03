@@ -484,7 +484,17 @@ end
 -- 从 schema 里读取 charsetlist / charsetblacklist
 local function init_charset_filter(env, cfg)
     -- 主字符集（表滤镜）
-    local charsetFile = wanxiang.get_filename_with_fallback("lua/charset.bin") or "lua/charset.bin"
+    local dist = (rime_api.get_distribution_code_name() or ""):lower()
+
+    local charsetFile
+    if dist == "weasel" then
+        -- 小狼毫：直接用相对路径，避免 Win 上绝对路径 + ReverseDb 的兼容问题
+        charsetFile = "lua/charset.bin"
+    else
+        -- 其他前端：正常用 fallback 找到 user/shared 目录里的绝对路径
+        charsetFile = wanxiang.get_filename_with_fallback("lua/charset.bin") or "lua/charset.bin"
+    end
+
     env.charset       = ReverseDb(charsetFile)
     env.charset_memo  = {}
     env.charset_extra = {}  -- 白名单
@@ -653,7 +663,8 @@ function M.func(input, env)
 
     local symbol = env.symbol
     local code_has_symbol = symbol and #symbol == 1 and (find(code, symbol, 1, true) ~= nil)
-
+    -- 强制英文触发文本（末尾 \\）
+    local force_english_text = nil
     -- segmentation：用于判断最后一段是否"完全消耗"
     local last_seg, last_text, fully_consumed = nil, nil, false
     if code_has_symbol then
@@ -684,6 +695,29 @@ function M.func(input, env)
                 keep_tail_len = 1 + #right
                 local k = (right or ""):lower()
                 if k ~= "" and env.wrap_map[k] then wrap_key = k end
+            end
+        end
+
+        -- ★ 新增检测末尾是否为 "\\"
+        -- 只在最后一段完全消耗时生效，且至少要有 1 个字母在前面
+        if fully_consumed then
+            local len = #last_text
+            if len >= 3 and sub(last_text, len - 1, len) == symbol .. symbol then
+                local base = sub(last_text, 1, len - 2)  -- 去掉最后两个 '\'
+                if base and #base > 0 then
+                    -- 只接受纯 ASCII（防止误伤中文）
+                    local ascii_only = true
+                    for i = 1, #base do
+                        local b = byte(base, i)
+                        if b > 127 then
+                            ascii_only = false
+                            break
+                        end
+                    end
+                    if ascii_only then
+                        force_english_text = base
+                    end
+                end
             end
         end
     end
@@ -815,6 +849,16 @@ function M.func(input, env)
             end
 
             if idx == 1 then
+                -- 若有末尾 "\\", 先生成一个英文候选作为首选
+                if force_english_text then
+                    local start_pos = (last_seg and last_seg.start) or cand.start or 0
+                    local end_pos   = (last_seg and last_seg._end)  or (start_pos + #code)
+                    local eng = Candidate("completion", start_pos, end_pos, force_english_text, cand.comment)
+                    eng.preedit = cand.preedit
+                    -- 强制认为后续 sentence 都可以被干掉
+                    emit_ctx.drop_sentence_after_completion = true
+                    emit_with_pipeline(eng, emit_ctx)
+                end
                 -- 判定：第一候选是否为表内英文，长度 >= 4
                 if not emit_ctx.drop_sentence_after_completion then
                     local txt = cand.text or ""
@@ -823,7 +867,7 @@ function M.func(input, env)
                     end
                 end
                 -- 仅锁定：置顶缓存，保留尾长（吞掉 \suffix）
-                if env.locked and (not wrap_key) and env.cache then
+                if (not force_english_text) and env.locked and (not wrap_key) and env.cache then
                     local start_pos = (last_seg and last_seg.start) or 0
                     local end_pos   = (last_seg and last_seg._end) or #code
                     if keep_tail_len and keep_tail_len > 0 then
@@ -881,6 +925,15 @@ function M.func(input, env)
         end
 
         if idx2 == 1 then
+            -- 若有末尾 "\\", 先插入英文候选
+            if force_english_text then
+                local start_pos = (last_seg and last_seg.start) or cand.start or 0
+                local end_pos   = (last_seg and last_seg._end)  or (start_pos + #code)
+                local eng = Candidate("completion", start_pos, end_pos, force_english_text, cand.comment)
+                eng.preedit = cand.preedit
+                emit_ctx.drop_sentence_after_completion = true
+                emit_with_pipeline(eng, emit_ctx)
+            end
             if not emit_ctx.drop_sentence_after_completion then
                 local t = fast_type(cand)
                 local txt = cand.text or ""
@@ -890,8 +943,9 @@ function M.func(input, env)
             end
 
             local emitted = false
-            -- 仅锁定：置顶缓存，保留尾长
-            if env.locked and (not wrap_key) and env.cache then
+            -- 仅锁定：置顶缓存，保留尾长（但 \\ 模式下跳过）
+            if (not force_english_text) and env.locked and (not wrap_key) and env.cache then
+
                 local start_pos = (last_seg and last_seg.start) or 0
                 local end_pos   = (last_seg and last_seg._end) or #code
                 if keep_tail_len and keep_tail_len > 0 then

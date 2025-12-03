@@ -61,6 +61,7 @@ engine:
     - lua_processor@*super_tips            #超级提示模块：表情、简码、翻译、化学式、等等靠你想象
     - lua_processor@*limit_repeated        #用于限制最大候选长度以及最大重复输入声母编码长度，避免性能异常
     - lua_processor@*backspace_limit       #防止连续 Backspace 在编码为空时删除已上屏内容
+    - lua_processor@*kp_number_processor   #管理小键盘的处理逻辑，有输入中数字不上屏和数字一直不上屏设置可选
     - lua_processor@*super_segmentation    #通过双击分词符号触发重新分词，并在持续输入分词符号时，能在预设方式之间循环，用于应对类似自然码：必输 必须是 为相同编码导致的必输前置的问题
     - ascii_composer                       #处理英文模式及中英文切换
     - recognizer                           #与 matcher 搭配，处理符合特定规则的输入码，如网址、反查等 tags
@@ -132,6 +133,7 @@ tips:
 #在8105基础上你可以通过黑白名单微调你自己的字符集过滤清单，主数据库位于lua/charset.bin不可编辑
 charsetlist: []
 charsetblacklist: []
+
 #shijian:仅仅作为提示使用，编码已经写死，引导键可以在key_binder下修改前缀
 #时间：osj 或者 /sj
 #日期：orq 或者 /rq
@@ -454,8 +456,45 @@ recognizer:
     add_user_dict: "^``[A-Za-z/`']*$"      #自造词
     unicode: "^U[a-f0-9]+"              # 脚本将自动获取第 2 个字符 U 作为触发前缀，响应 lua_translator@unicode，输出 Unicode 字符
     number: "^R[0-9]+[.]?[0-9]*"        # 脚本将自动获取第 2 个字符 R 作为触发前缀，响应 lua_translator@number_translator，数字金额大写
-    gregorian_to_lunar: "^N[0-9]{1,8}"  # 脚本将自动获取第 2 个字符 N 作为触发前缀，响应 lua_translator@lunar，公历转农历，输入 N20240115 得到「二〇二三年腊月初五」
-    calculator: "^V.*$"                 #计算器功能引导，，，，
+    yr1: "^N0[1-9]?0?[1-9]?"
+    yr2: "^N1[02]?0?[1-9]?"
+    yr3: "^N0[1-9]?[1-2]?[1-9]?"
+    yr4: "^N1[02]?[1-2]?[1-9]?"
+    yr5: "^N0[1-9]?3?[01]?"
+    yr6: "^N1[02]?3?[01]?"
+    nyr1: "^N19?[0-9]?[0-9]?[0-9]?[0-9]?[0-9]?[0-9]?"
+    nyr2: "^N20?[0-9]?[0-9]?[0-9]?[0-9]?[0-9]?[0-9]?"
+    calculator: "^V.*$"                 #计算器功能引导
+# 给 kp_number_processor 用的“命令模式 Lua 正则集合”
+# 能够细化哪些情况数字是用来当作输入编码的，不在正则范围的将用于上屏
+# 直接加载上面的正则会遇到不符合预期的情况，毕竟Lua正则逻辑与之不同
+kp_number:
+  #小键盘数字处理逻辑
+  #  "compose" : 小键盘数字始终参与编码
+  #  "auto"    : 输入中 push，空闲时 commit（默认）
+  kp_number_mode: auto
+  enable_mobile: false
+  patterns:
+    # /符号引导模式
+    - "^/[0-9]$"
+    - "^/10$"
+    - "^/[A-Za-z]+$"
+    # U模式
+    - "^U[%da-f]+$"
+    # R模式
+    - "^R[0-9]+%.?[0-9]*$"
+    # N模式
+    # Lua 不支持 {1,8}，改成等价写法：N 后 1~8 个数字
+    - "^N0[1-9]?0?[1-9]?$"
+    - "^N1[02]?0?[1-9]?$"
+    - "^N0[1-9]?[1-2]?[1-9]?$"
+    - "^N1[02]?[1-2]?[1-9]?$"
+    - "^N0[1-9]?3?[01]?$"
+    - "^N1[02]?3?[01]?$"
+    - "^N19?[0-9]?[0-9]?[01]?[0-2]?[0-3]?[0-9]?$"
+    - "^N20?[0-9]?[0-9]?[01]?[0-2]?[0-3]?[0-9]?$"
+    # 计算器模式
+    - "^V.*$"
 # 标点符号
 # punctuator 下面有三个子项：
 # 设置为一个映射，就自动上屏；设置为多个映射，如 '/' : [ '/', ÷ ] 则进行复选。
@@ -548,7 +587,7 @@ speller:
 #  auto_select: true
 #  auto_select_pattern: ^[a-z]+/|^[a-df-zA-DF-Z]\w{3}|^e\w{4}
   # 如果不想让什么标点直接上屏，可以加在 alphabet，或者编辑标点符号为两个及以上的映射
-  alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA7890`;/\
+  alphabet: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA1234567890`;/\
   # initials 定义仅作为始码的按键，排除 ` 让单个的 ` 可以直接上屏
   initials: zyxwvutsrqponmlkjihgfedcbaZYXWVUTSRQPONMLKJIHGFEDCBA/
   delimiter: " '"  # 第一位<空格>是拼音之间的分隔符；第二位<'>表示可以手动输入单引号来分割拼音。
@@ -587,7 +626,7 @@ add_user_dict:
   enable_completion: true # 提前显示尚未输入完整码的字〔仅 table_translator 有效〕
   enable_user_dict: true
   spelling_hints: 50
-  enable_auto_phrase: true    # lua造词功能，在custom开启，相关功能位于super_filter.lua，开启后：模型能造的句子不造词，现有的词不造词，只造词库没有的，选词可造词
+  enable_auto_phrase: true    # lua造词功能，在custom开启，相关功能位于auto_phrase.lua，开启后：模型能造的句子不造词，现有的词不造词，只造词库没有的，选词可造词
   comment_format:
   prefix: "``"
   tips: "〔开始造词〕"
