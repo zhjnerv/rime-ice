@@ -2145,7 +2145,7 @@ sort: by_weight
 柄	bǐng;mb	564
 秉	bǐng;ha,pd	562
 炳	bǐng;hb	533
-禀	bǐng;du,uh,wu	480
+禀	bǐng;uh	480
 摒	bìng;fp	476
 並	bìng;qy	472
 槟	bīng;mb	442
@@ -5100,7 +5100,7 @@ sort: by_weight
 剏	chuàng;rb	192
 瘡	chuāng;bc	191
 牎	chuāng;pc	182
-窻	chuāng;xx,xc,bx,bc	162
+窻	chuāng;xx	162
 摐	chuāng;fc,fv	141
 牕	chuāng;pc,px	122
 愴	chuàng;xc	119
@@ -6318,7 +6318,7 @@ sort: by_weight
 躭	dān;ug,uy	141
 瘅	dàn;bd	141
 紞	dǎn;sg,sy	139
-窞	dàn;xx,xj,bx,bj	134
+窞	dàn;xj	134
 鄲	dān;ed	134
 禫	dàn;ut	132
 髧	dàn;ig,iy	132
@@ -17696,7 +17696,7 @@ sort: by_weight
 居	jū;ug	750
 举	jǔ;df,xf	747
 句	jù;kg	737
-聚	jù;ed,ey,qd,yq	713
+聚	jù;ey,yq	713
 距	jù;zj	705
 巨	jù;kk,aa	704
 拒	jù;fj	661
@@ -28496,7 +28496,7 @@ sort: by_weight
 鏷	pú;jd,jf,jp	75
 諩	pǔ;yb	68
 炇	pū;hw	68
-穙	pú;hd,hf,hp	60
+穙	pú;hp	60
 纀	pú;sp	50
 鐠	pǔ;jp	1
 𫚙	pū;	1
@@ -29671,7 +29671,7 @@ sort: by_weight
 翹	qiào;yy	236
 雀	qiǎo;vx,xv	235
 鄡	qiāo;em,ex	203
-竅	qiào;xw,xj,bw,bj	195
+竅	qiào;xw,xj	195
 骹	qiāo;gj	193
 殻	qiào;uj,uk	186
 荍	qiáo;cu	184
@@ -34595,7 +34595,7 @@ sort: by_weight
 宿	sù;bb	671
 俗	sú;rg	671
 酥	sū;yh	630
-肃	sù;ad,vd,yd	623
+肃	sù;ad	623
 溯	sù;do,du,dy	584
 稣	sū;yh	535
 粟	sù;mx,xm	513
@@ -34622,7 +34622,7 @@ sort: by_weight
 蔌	sù;cq,cu	210
 莤	sù;cy	195
 觫	sù;ju	192
-粛	sù;aa,ma,vu,ya,zs	189
+粛	sù;aa	189
 驌	sù;ms	174
 傃	sù;rs	168
 塐	sù;ts	163
@@ -36963,7 +36963,7 @@ sort: by_weight
 俀	tuǐ;rt	179
 頽	tuí;yt	160
 蓷	tuī;ct	150
-穨	tuí;gt,hg,tg	146
+穨	tuí;gt	146
 弚	tuí;bd	122
 蹪	tuí;zg	119
 蹆	tuǐ;zt	116
@@ -37321,7 +37321,7 @@ sort: by_weight
 嗗	wā;kg	231
 漥	wā;dg	228
 嗢	wà;kw	217
-窪	wā;xw,xg,bw,bg	205
+窪	wā;xw	205
 搲	wā;fg	188
 瓦	wà;ad	186
 窊	wā;xg,bg	169
@@ -38387,7 +38387,7 @@ sort: by_weight
 握	wò;fw	691
 沃	wò;dy	652
 卧	wò;bi,ib	641
-窝	wō;xn,xg,bn,bg	619
+窝	wō;xn,xg	619
 涡	wō;dg,dn	575
 蜗	wō;ig,in	540
 挝	wō;fg	501
@@ -38400,7 +38400,7 @@ sort: by_weight
 喔	wō;kw	369
 肟	wò;ok	343
 硪	wò;uw	328
-窩	wō;xk,xg,bk,bg	304
+窩	wō;xk	304
 臥	wò;ir,ri	297
 偓	wò;rw	281
 蝸	wō;ig,ik	257
@@ -45707,7 +45707,7 @@ sort: by_weight
 薁	yù;ca	241
 敔	yǔ;ww	235
 舁	yú;cj,jc	227
-肀	yù;aa,vu,yv	225
+肀	yù;vu	225
 兪	yú;rd	223
 窬	yú;xy,by	223
 鄅	yǔ;ey	222
@@ -50163,7 +50163,7 @@ sort: by_weight
 撯	zhuó;fv	87
 槕	zhuō;mv	82
 穱	zhuō;hj	75
-窡	zhuó;xv,xu,bv,bu	68
+窡	zhuó;xv	68
 烵	zhuó;hu	60
 穛	zhuō;hj	60
 娺	zhuó;nu,nv	50
@@ -50282,8 +50282,8 @@ sort: by_weight
 𩲃	zhuó;gu	1
 𩷹	zhuó;yv	1
 𪟣	zhuó;	1
-自	zì;pa,po	868
-字	zì;bz	833
+字	zì;bz	863
+自	zì;pa,po	838
 子	zǐ;aa,vh	780
 资	zī;bc	778
 咨	zī;kc	676

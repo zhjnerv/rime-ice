@@ -392,6 +392,8 @@ sort: by_weight
 落下的课程	là;cl xià;ab,ad de;bu kè;yg chéng;hi	1
 已经落下了	yǐ;vg,ag jīng;sg là;cl xià;ab,ad le;aa,vu	1
 再长	zài;aa,at cháng;pd	550
+重读	zhòng;pa,ql dú;ym	552
+一专	yī;aa zhuān;ad,fs	388
 磨豆腐	mò;mu,um dòu;aa,aq fu;gr,rf	182
 颜色差	yán;yy sè;db chā;yg	18
 冷战	lěng;dl zhan;gv	580
@@ -401,6 +403,7 @@ sort: by_weight
 重活	chóng;pa,ql huó;du	120
 重天	chóng;pa,ql tiān;ad	500
 穿着	chuān;xy,by zhuó;yo	640
+穿着清凉	chuān;xy,by zhe;yo qīng;dq liáng;dj	23
 调配	diào;yv pèi;yj	690
 更为	gèng;ad,ag wèi;dd	970
 更为	gēng;ad,ag wéi;dd	920
@@ -742,7 +745,7 @@ sort: by_weight
 这位	zhèi;zw wèi;rl	750
 这为	zhèi;zw wéi;dd	580
 这味	zhèi;zw wèi;kw	420
-这窝	zhèi;zw wō;xn,xg,bn,bg	250
+这窝	zhèi;zw wō;xn,xg	250
 这屋	zhèi;zw wū;uv	320
 这戏	zhèi;zw xì;yg	400
 这下	zhèi;zw xià;ab,ad	620
@@ -2278,7 +2281,7 @@ sort: by_weight
 这意味	zhèi;zw yì;xy,lx wèi;kw	440
 这一位	zhèi;zw yí;aa wèi;rl	430
 这一吻	zhèi;zw yì;aa wěn;kw	310
-这一窝	zhèi;zw yì;aa wō;xn,xg,bn,bg	220
+这一窝	zhèi;zw yì;aa wō;xn,xg	220
 这一物	zhèi;zw yí;aa wù;nw	260
 这一下	zhèi;zw yí;aa xià;ab,ad	450
 这一项	zhèi;zw yí;aa xiàng;gy,yg	570
@@ -4852,7 +4855,7 @@ sort: by_weight
 不会折喇叭	bú;ad,ax huì;ry zhé;fj lǎ;kd,kl bā;kb	1
 不能再挨饿	bù;ad,ax néng;sb zài;aa,at ái;fu,fy è;uw	1
 不要扔了梨	bú;ad,ax yào;xn rēng;fn le;aa,vu lí;ml	1
-草窝暗又矮	cǎo;cz wō;xn,xg,bn,bg àn;oy yòu;vd,ad ǎi;uw	1
+草窝暗又矮	cǎo;cz wō;xn,xg àn;oy yòu;vd,ad ǎi;uw	1
 唱得渴又饿	chàng;ki dé;xc kě;dh yòu;vd,ad è;uw	1
 锄头怨猪头	chú;jv tou;dd yuàn;xe,xy zhū;qv tóu;dd	1
 锄头撞石头	chú;jv tou;dd zhuàng;ft shí;kp,pk tou;dd	1
@@ -5227,7 +5230,7 @@ sort: by_weight
 地上的猫想咬树上的鸟	dì;ty shàng;aa,ba de;bu māo;qm xiǎng;xx yǎo;kj shù;md shàng;aa,ba de;bu niǎo;na,pa	1
 惦着泥里的两对鸟倒吊	diàn;xd zhe;yo ní;dn lǐ;aa,tt de;bu liǎng;ad duì;cy,yc niǎo;na,pa dào;rd diào;kj	1
 鹅过河哥哥弟弟坡前坐	é;nw guò;zc hé;dk gē;kk ge;kk dì;bp di;bp pō;tp qián;bd,qd zuò;tc	1
-飞蛾啄不住岸边去找窝	fēi;yd é;iw zhuó;kd,ki bú;ad,ax zhù;rv àn;ug biān;zl qù;ts zhǎo;fg wō;xn,xg,bn,bg	1
+飞蛾啄不住岸边去找窝	fēi;yd é;iw zhuó;kd,ki bú;ad,ax zhù;rv àn;ug biān;zl qù;ts zhǎo;fg wō;xn,xg	1
 河要渡鹅不知是鹅过河	hé;dk yào;xn dù;dd é;nw bù;ad,ax zhī;uk,ku shì;op,ov é;nw guò;zc hé;dk	1
 红红送给华华一朵黄花	hóng;sg hóng;sg sòng;zg gěi;sh huá;uh huá;uh yì;aa duǒ;mj,jm huáng;ad,cb huā;ch	1
 猴过桥桥东走来一条狗	hóu;qh guò;zc qiáo;mq qiáo;mq dōng;ad,qx zǒu;tv lái;am,wb yì;aa tiáo;wm gǒu;qj	1
