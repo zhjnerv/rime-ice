@@ -1,0 +1,11 @@
+[
+  { "type": "dict", "release": "patch" },
+  { "type": "docs", "scope": "README", "release": "patch" },
+  { "type": "fix", "release": "patch" },
+  { "type": "perf", "release": "minor" },
+  { "type": "refactor", "release": "major" },
+  { "type": "feat", "release": "minor" },
+  { "type": "ci", "release": false },
+  { "type": "chore", "release": false },
+  { "scope": "no-release", "release": false }
+]
