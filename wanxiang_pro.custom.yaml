@@ -227,7 +227,8 @@ patch:
 
   #开启自动无词频造词（默认已经开了）
   add_user_dict/enable_auto_phrase: true
-
+  #开启用户词典长词组推荐（输入部分音节时显示更长的已输入过的词组）
+  user_dict_set/enable_completion: true
   # 符号表自定义配置
   punctuator/full_shape:
     ' ' : { commit: '　' }
