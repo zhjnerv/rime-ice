@@ -1,0 +1,23 @@
+# rime personal dictionary
+# encoding: utf-8
+#https://github.com/amzxyz/RIME-LMDG
+# ------- 基础词库2-3字词汇-------
+---
+name: userzhj
+comment: "周豪靖的RIME词库"
+version: "LTS"
+sort: by_weight
+...
+
+周豪靖
+王晓雯
+唐迅
+林君勇
+王妈妈
+王爸爸
+周子悦
+周子轶
+杭州斯可睿专利事务所有限公司
+周钢林
+叶民宪
+杭州金汇知识产权代理有限公司
