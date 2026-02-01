@@ -58,7 +58,8 @@
 ---------------------
 
 ### ✨ 效果预览 & 版本对比
-
+![](https://storage.deepin.org/thread/202502200358104987_%E6%95%88%E6%9E%9C.png)
+ 
 万象拼音提供两个主要版本，请根据您的输入习惯选择：
 
 | 版本差异 | 🟢 标准版 (Standard) | 🔵 增强版 (Pro) |
@@ -337,17 +338,35 @@ bash rime-install amzxyz/rime_wanxiang@wanxiang-shouyou-fuzhu:plum/dicts
 </details>
 ---
 
-#### 8. 📂 自定义扩展数据获取
+#### 8. 📂 自定义扩展-线上数据获取
 
 为了保持方案包精简，部分非必须的扩展数据未随压缩包分发，您可根据需求在在线 `custom` 目录中下载。
 
-**数据源清单与用途：**
+**在线数据源清单与用途：**
 
 | 文件名 | 用途 | 安装位置 |
 | --- | --- | --- |
+| `renming.dict.yaml` | **人名词库，按需下载，pro使用万象工具箱刷新编码即可** | 下载后复制内容，追加到根目录的 `wanxiang.dict.yaml` 中。 |
+| `wuzhong.dict.yaml` | **物种词库，含动物植物分类等词条，按需下载，pro使用万象工具箱刷新编码即可** | 下载后复制内容，追加到根目录的 `wanxiang.dict.yaml` 中。 |
 | `jm_flypy.txt` | **小鹤双拼简码** | 下载后复制内容，追加到根目录的 `custom_phrase.txt` 中。 |
 | `jm_zrm.txt` | **自然码双拼简码** | 下载后复制内容，追加到根目录的 `custom_phrase.txt` 中。 |
 | `tips_user.txt` | **Tips 翻译扩展数据** | 下载后放入 `lua/data` 目录中，重新部署即可生效。 |
+
+#### 9. 📂 数据管理
+| 文件名 | 用途 | 注意事项 |
+| --- | --- | --- |
+| `lua/data` | **存放lua加载的txt数据** | 数据的更新需要编辑txt后先删除lua文件夹下面对应的userdb数据库，重新部署才能重建数据库，从而实现更新 |
+| `lua/data/chinese_english.txt` | **中文翻译英文数据库** | 数据库位于lua/replacer.userdb中。 |
+| `lua/data/english_chinese.txt` | **英文翻译中文数据库** | 数据库位于lua/replacer.userdb中。 |
+| `lua/data/emoji.txt` | **emoji数据库** | 数据库位于lua/replacer.userdb中。 |
+| `lua/data/abbrev.txt` | **公共简码数据库** | 数据库位于lua/replacer.userdb中。 |
+| `lua/data/t9_abbrev.txt` | **t9用公共简码数据库** | 数据库位于lua/replacer.userdb中。数字为键 |
+| `lua/data/*Phrases.txt` | **OpenCC简繁转换词组数据库** | 数据库位于lua/replacer.userdb中。HK香港TW台湾 |
+| `lua/data/*Characters.txt` | **OpenCC简繁转换单字数据库** | 数据库位于lua/replacer.userdb中。ST简繁、TS繁简 |
+| `tips_show.txt` | **Tips 自带数据** | 数据库位于tips.userdb |
+| `tips_user.txt` | **Tips 用户数据** | 空文件交给用户自定义，数据库位于lua/tips.userdb  |
+| `input_statistics.lua` | **输入统计lua创建的实时数据** | 数据库位于lua/stats.userdb |
+| `super_sequence.lua` | **手动排序lua创建的实时数据** | 数据库位于lua/sequence.userdb |
 
 ### 答疑
 
@@ -589,6 +608,8 @@ datetime_formats:
 
 **自动上屏：**  例如：三位、四位简码唯一时，自动上屏如`jjkw岌岌可危` `zmhu怎么回事` 。默认未开启，方案文件中`speller:`字段下取消注释这两句开启 `#  auto_select: true  #  auto_select_pattern: ^[a-z]+/|^[a-df-zA-DF-Z]\w{3}|^e\w{4}`
 
+**空码回溯：** 当输入的时候前面编码有候选，但继续输入无候选了，此时会将上一次的候选显示到候选中并在注释中显示了一个`~`作为表示一种不稳固状态，在英文输入句子的时候也会有这个状态的出现。这样的设计省去了回退键，可以直接空格上屏，同时他也能极大的减少三码是为空给用户带来的异常感知。  
+
 **数字后自动半角：** 当中文状态输入数字的时候后面立即输入,。将自动转换为数字分割符，例如科学记数法1000,000 小数点 3.1415,如果你加入冒号:还可以优雅的输入时间12:30，当然你还可以双击输入的符号恢复全角符号的输出。但若你完全没有场景使用该功能，则可以通过patch，将其修改为commit  
 ```punctuator/digit_separators: ",."  >  punctuator/digit_separators: commit```
 
@@ -604,13 +625,13 @@ datetime_formats:
 
 化学式：<img src="https://storage.deepin.org/thread/202509260128462735_tips化学式.jpg" height="80">符号：<img src="https://storage.deepin.org/thread/202509260128454675_tips符号.jpg" height="80">表情：<img src="https://storage.deepin.org/thread/202509260128457494_tips表情.jpg" height="80">
 
-**首选格式化Lua：** 将首页自定义短语中（custom phrase），诸如\n \s \t 等行中标识符转换为实际的换行、空格、制表符等等，支持重复字符声明，使得类似输入jys可以打出一首带格式的《静夜思》，使用{3}大括号+数字的形式表示前面的字符重复N次。
+**短语格式化Lua：** 将首页自定义短语中（custom phrase），诸如\n \s \t 等行中标识符转换为实际的换行、空格、制表符等等，支持重复字符声明，使得类似输入jys可以打出一首带格式的《静夜思》，使用{3}大括号+数字的形式表示前面的字符重复N次。
 
 例：```静夜思\n\s{3}李白\n床前明月光\n疑似地上霜\n举头望明月\n低头思故乡	jys```
 
 <img src="https://storage.deepin.org/thread/202509260129305342_格式化.jpg" height="260"> 
 
-**首选加成对符号Lua：** 将输入中的短语通过输入追加\a 这样的末尾编码，触发相对于a这个字母映射的成对符号，例如：``` sj mk lq lh ji\k=《三毛流浪记》```可以通过custom自定义符号和触发方式。
+**成对符号包裹Lua：** 将输入中的短语通过输入追加\a 这样的末尾编码，触发相对于a这个字母映射的成对符号，例如：``` sj mk lq lh ji\k=《三毛流浪记》```可以通过custom自定义符号和触发方式。
 
 工作逻辑：输入词汇编码 > 按下锁定按钮\  >  按下映射字符\a  >  《候选包裹成对符号》
 
@@ -638,6 +659,8 @@ datetime_formats:
 **用户词删除：** 使用Ctrl+del是rime系统删除用户词,就可以将用户词标记为c<=0，这在rime系统中就表现为不使用，假性删除。
 
 **手动排序（Lua）：** ①词典候选类型：对选中的候选词操作，使用Ctrl+j向左一步，Ctrl+k向右一步，Ctrl+l(零)移除选中排序信息，Ctrl+p 置顶选中候选。其作用于当时编码与候选词；②动态生成的Lua候选，很多时候我们对日期、时间等输出格式首选有着自己的追求，复杂的配置又往往提升了使用难度，于是我们基于排序Lua实现了动态内容的按序号索引的排序，也就是说该序号下原本生成的格式整个发生了位置变化，使用方法一致。信息储存于Lua文件夹下排序数据库中sequence.userdb，支持导出导入数据便于多设备共用。
+
+状态标识：按下ctrl键会显示数据库中已经储存的被移动过的候选，圆点-表示移动过但回到了原位， 其他±各自代表移动的幅度与趋势。  
 
 排序信息同步：
 
@@ -732,7 +755,6 @@ patch:
 ```
 patch:
   translator/dictionary: wanxianguser
-  radical_reverse_lookup/dictionary: wanxianguser
   user_dict_set/dictionary: wanxianguser
   add_user_dict/dictionary: wanxianguser
 ```
