@@ -13,8 +13,10 @@ patch:
   custom_phrase/enable_completion: false #开启自定义短语补全功能，默认关闭
   translator/packs/+:
     - userzhj #导入根目录下名称为userxx.dict.yaml的自定义固定词典，编码要与固定词库一致，编码权重都不要少，形如姓名、专有名词公司名称等等
-  translator/contextual_suggestions:
-    true # 开启上下文预测
+  translator/contextual_suggestions: true # 开启上下文预测
+  # 英文自动加空格设置
+  wanxiang_english/english_spacing: off
+  wanxiang_english/spacing_timeout: 0
 
 
     #下面是候选数量，未来7890分别代表1234声，请候选长度不要大于6避免冲突
