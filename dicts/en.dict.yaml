@@ -156,7 +156,7 @@ abductors	abductors
 abducts	abducts
 abdul	abdul
 abe	abe
-Abe	Abe
+ABE	ABE
 abeam	abeam
 abecedarian	abecedarian
 abed	abed
@@ -562,7 +562,7 @@ accosting	accosting
 accosts	accosts
 accouchement	accouchement
 account	account
-account for	account for
+account for	accountfor
 accountability	accountability
 accountable	accountable
 accountably	accountably
@@ -4913,7 +4913,6 @@ autumn	autumn
 autumnal	autumnal
 autumns	autumns
 aux	aux
-AUX	AUX
 auxiliaries	auxiliaries
 auxiliary	auxiliary
 auxin	auxin
@@ -11608,6 +11607,7 @@ chinaware	chinaware
 chinch	chinch
 chincough	chincough
 chine	chine
+chinese	chinese
 Chinese	Chinese
 Ching	Ching
 chink	chink
@@ -11825,7 +11825,7 @@ ChromeOS	ChromeOS
 chromic	chromic
 chrominance	chrominance
 chromite	chromite
-chromium	chromium
+Chromium	Chromium
 chromo	chromo
 chromophotograph	chromophotograph
 chromosome	chromosome
@@ -21827,12 +21827,13 @@ englanders	englanders
 engle	engle
 englewood	englewood
 english	english
-englishize	englishize
-englishizes	englishizes
-englishman	englishman
-englishmen	englishmen
-englishness	englishness
-englishwoman	englishwoman
+English	English
+Englishize	Englishize
+Englishizes	Englishizes
+Englishman	Englishman
+Englishmen	Englishmen
+Englishness	Englishness
+Englishwoman	Englishwoman
 engorge	engorge
 engraft	engraft
 engrail	engrail
@@ -26923,6 +26924,7 @@ Gross Domestic Product	GDP
 GDP per capita	GDPpercapita
 GDPR	GDPR
 General Data Protection Regulation	GDPR
+GNSS	GNSS
 gear	gear
 geared	geared
 gearing	gearing
@@ -34054,6 +34056,7 @@ Initial Public Offerings	IPO
 iPod	IPod
 IPoE	IPoE
 Internet Protocol over Ethernet	IPoE
+IPS	IPS
 IPSec	IPSec
 ipswich	ipswich
 iptables	iptables
@@ -35420,7 +35423,7 @@ kilt	kilt
 kilter	kilter
 kiltie	kiltie
 kim	kim
-Kim	Kim
+Kimi	Kimi
 Kimball	Kimball
 Kimberly	Kimberly
 kimono	kimono
@@ -43660,7 +43663,6 @@ O'Reilly	O'Reilly
 O'Shea	O'Shea
 O'Sullivan	O'Sullivan
 O2O	O2O
-oa	oa
 OA	OA
 oaf	oaf
 oafish	oafish
@@ -44318,6 +44320,7 @@ OpenBSD	OpenBSD
 opencast	opencast
 OpenCat	OpenCat
 OpenCC	OpenCC
+OpenClaw	OpenClaw
 OpenClash	OpenClash
 OpenCV	OpenCV
 opened	opened
@@ -46088,6 +46091,7 @@ passkey	passkey
 Passover	Passover
 passport	passport
 passports	passports
+passwall	passwall
 password	password
 passwords	passwords
 past	past
@@ -46859,7 +46863,6 @@ permit	permit
 permits	permits
 permitted	permitted
 permitting	permitting
-permium	permium
 permutation	permutation
 permutations	permutations
 Permute	Permute
@@ -48634,7 +48637,7 @@ porket	porket
 porkpie	porkpie
 porky	porky
 porn	porn
-pornhub	pornhub
+Pornhub	Pornhub
 porno	porno
 pornographer	pornographer
 pornographic	pornographic
@@ -50865,6 +50868,7 @@ pyrenean	pyrenean
 pyretic	pyretic
 Pyrex	Pyrex
 pyrheliometer	pyrheliometer
+pyright	pyright
 pyrimidine	pyrimidine
 pyrite	pyrite
 pyrites	pyrites
@@ -64702,6 +64706,7 @@ Transport Layer Security	TLS
 tm	tm
 TM	TM
 tmux	tmux
+TN	TN
 TNT	TNT
 to	to
 toad	toad
@@ -68031,6 +68036,7 @@ v2rayN	v2rayN
 v8 engine	v8engine
 V8 JavaScript engine	V8JavaScriptengine
 V8 JS engine	V8JSengine
+VA	VA
 vac	vac
 vacancies	vacancies
 vacancy	vacancy
@@ -71038,7 +71044,7 @@ xanthochroic	xanthochroic
 xanthous	xanthous
 Xanthus	Xanthus
 Xavier	Xavier
-xbox	xbox
+Xbox	Xbox
 Xbox One	XboxOne
 Xbox One X	XboxOneX
 Xbox Series	XboxSeries
@@ -71123,8 +71129,9 @@ Yalies	Yalies
 Yalta	Yalta
 yam	yam
 Yamaha	Yamaha
-YAML	YAML
-YAML Ain't Markup Language	YAML
+yaml	yaml
+.yaml	yaml
+YAML Ain't Markup Language	yaml
 yammer	yammer
 yan	yan
 yandex	yandex
@@ -71483,7 +71490,8 @@ zucchetto	zucchetto
 zucchini	zucchini
 Zulu	Zulu
 Zulus	Zulus
-Zurich	Zurichzwitterion	zwitterion
+Zurich	Zurich
+zwitterion	zwitterion
 zyban	zyban
 zygisk	zygisk
 zygote	zygote

@@ -71,6 +71,7 @@ super_replacer:
           - lua/data/abbrev.txt # 格式：zm\t怎么|在吗
 ]]
 
+
 local M = {}
 
 -- 性能优化：本地化常用库函数
@@ -86,6 +87,7 @@ local s_upper = string.upper
 local open = io.open
 local type = type
 local tonumber = tonumber
+local replacer_instance = nil
 
 -- 基础依赖
 local function safe_require(name)
@@ -96,31 +98,6 @@ end
 
 local userdb = safe_require("lib/userdb") or safe_require("userdb")
 local wanxiang = safe_require("wanxiang")
-
--- 重建数据库 (仅在 wanxiang 版本变更时运行)
-local function rebuild(tasks, db)
-    if db.empty then db:empty() end
-    for _, task in ipairs(tasks) do
-        local txt_path = task.path
-        local prefix = task.prefix
-        local f = open(txt_path, "r")
-        if f then
-            for line in f:lines() do
-                if line ~= "" and not s_match(line, "^%s*#") then
-                    local k, v = s_match(line, "^(%S+)%s+(.+)")
-                    if k and v then
-                        v = s_match(v, "^%s*(.-)%s*$")
-                        db:update(prefix .. k, v)
-                    end
-                end
-            end
-            f:close()
-        else
-            if log and log.info then log.info("super_replacer: 无法读取文件: " .. txt_path) end
-        end
-    end
-    return true
-end
 
 -- UTF-8 辅助
 local function get_utf8_offsets(text)
@@ -137,6 +114,89 @@ local function get_utf8_offsets(text)
     end
     insert(offsets, len + 1)
     return offsets
+end
+
+-- 重建数据库 (仅在 wanxiang 版本变更时运行)
+local function rebuild(tasks, db)
+    if db.empty then db:empty() end
+    for _, task in ipairs(tasks) do
+        local txt_path = task.path
+        local prefix = task.prefix
+        -- 获取转换表
+        local conversion = task.conversion
+
+        local f = open(txt_path, "r")
+        if f then
+            for line in f:lines() do
+                if line ~= "" and not s_match(line, "^%s*#") then
+                    local k, v = s_match(line, "^(%S+)%s+(.+)")
+                    if k and v then
+                        -- [新增] 逻辑：如果有转换表，先进行按键转换
+                        -- 使用 gsub 配合 table 进行单字符映射，非常高效且不关注顺序
+                        if conversion then
+                            k = s_gsub(k, ".", conversion)
+                        end
+                        
+                        -- 转换完成后，再和 prefix 组合
+                        v = s_match(v, "^%s*(.-)%s*$")
+                        db:update(prefix .. k, v)
+                    end
+                end
+            end
+            f:close()
+        end
+    end
+    return true
+end
+
+-- 连接或重连数据库 (Singleton Logic)
+local function connect_db(db_name, current_version, delimiter, tasks)
+    -- 1. 检查现有实例是否存活
+    if replacer_instance then
+        local status, _ = pcall(function() return replacer_instance:fetch("___test___") end)
+        if status then return replacer_instance end
+        replacer_instance = nil -- 死链接，重置
+    end
+
+    if not userdb then return nil end
+    
+    -- 2. 创建 LevelDB 对象
+    local db = userdb.LevelDb(db_name)
+    if not db then return nil end
+
+    -- 3. 检查是否需要重建 (先尝试只读打开)
+    local needs_rebuild = false
+    if db:open_read_only() then
+        local db_ver = db:meta_fetch("_wanxiang_ver") or ""
+        local db_delim = db:meta_fetch("_delim")
+        if db_ver ~= current_version or db_delim ~= delimiter then
+            needs_rebuild = true
+        end
+        db:close() -- 必须关闭才能切换模式
+    else
+        needs_rebuild = true -- 无法打开，强制重建
+    end
+
+    -- 4. 执行重建 (Write Mode)
+    if needs_rebuild then
+        if db:open() then
+            rebuild(tasks, db)
+            db:meta_update("_wanxiang_ver", current_version)
+            db:meta_update("_delim", delimiter)
+            if log and log.info then
+                log.info("super_replacer: 数据已更新至 " .. current_version)
+            end
+            db:close()
+        end
+    end
+
+    -- 5. 最终挂载 (Read-Only Mode)
+    if db:open_read_only() then
+        replacer_instance = db
+        return db
+    end
+    
+    return nil
 end
 
 -- FMM 分词转换算法
@@ -183,7 +243,6 @@ local function segment_convert(text, db, prefix, split_pat)
     end
     return concat(result_parts)
 end
-
 -- 模块接口
 
 function M.init(env)
@@ -212,9 +271,9 @@ function M.init(env)
     if delim == " " then env.split_pattern = "%S+"
     else local esc = s_gsub(delim, "[%-%.%+%[%]%(%)%$%^%%%?%*]", "%%%1"); env.split_pattern = "([^" .. esc .. "]+)" end
 
-    -- 2. 解析 Types
+    -- 2. 解析 Types (这部分必须保留在 init，因为不同 schema 可能配置不同)
     env.types = {}
-    local tasks = {} -- 仅在需要重建时使用
+    local tasks = {} -- 用于重建数据库的文件列表
 
     local function resolve_path(relative)
         if not relative then return nil end
@@ -246,16 +305,11 @@ function M.init(env)
                         if val then insert(triggers, val) end
                     end
                 else
-                    -- 1. 如果配置写的是 true (bool)，get_bool 返回 true，我们插入布尔值 true。
-                    -- 2. 如果配置写的是 s2t (string)，get_bool 返回 false (或nil)，我们进入 else 读字符串。
                     if config:get_bool(key_path) == true then
                         insert(triggers, true)
                     else
                         local val = config:get_string(key_path)
-                        -- 只有当它不是 "true" 字符串时才插入，防止双重解析（虽然上面的if已经拦截了）
-                        if val and val ~= "true" then
-                            insert(triggers, val)
-                        end
+                        if val and val ~= "true" then insert(triggers, val) end
                     end
                 end
             end
@@ -284,6 +338,24 @@ function M.init(env)
             if #triggers > 0 then
                 local prefix = config:get_string(entry_path .. "/prefix") or ""
                 local mode = config:get_string(entry_path .. "/mode") or "append"
+                
+                -- 解析 编码转换conv
+                local conversion_map = nil
+                local conversion_str = config:get_string(entry_path .. "/conv")
+                if conversion_str then
+                    -- 分割 "from>to"，例如 "abc>123"
+                    local from_str, to_str = s_match(conversion_str, "^(.-)>(.+)$")
+                    if from_str and to_str and #from_str == #to_str then
+                        conversion_map = {}
+                        -- 构建映射表 {a='1', b='2', ...}
+                        for char_idx = 1, #from_str do
+                            local f_char = s_sub(from_str, char_idx, char_idx)
+                            local t_char = s_sub(to_str, char_idx, char_idx)
+                            conversion_map[f_char] = t_char
+                        end
+                    end
+                end
+
                 local comment_mode = config:get_string(entry_path .. "/comment_mode")
                 if not comment_mode then comment_mode = "comment" end
                 local fmm = config:get_bool(entry_path .. "/sentence")
@@ -298,7 +370,7 @@ function M.init(env)
                     fmm = fmm
                 })
 
-                -- 收集文件路径 (用于重建)
+                -- 收集文件路径 (仅用于可能发生的 rebuild)
                 local keys_to_check = {"files", "file"}
                 for _, key in ipairs(keys_to_check) do
                     local d_path = entry_path .. "/" .. key
@@ -306,49 +378,31 @@ function M.init(env)
                     if list then
                         for j = 0, list.size - 1 do
                             local p = resolve_path(config:get_string(d_path .. "/@" .. j))
-                            if p then insert(tasks, { path = p, prefix = prefix }) end
+                            -- 将 conversion_map 传入任务列表
+                            if p then insert(tasks, { path = p, prefix = prefix, conversion = conversion_map }) end
                         end
                     else
                         local p = resolve_path(config:get_string(d_path))
-                        if p then insert(tasks, { path = p, prefix = prefix }) end
+                        -- 将 conversion_map 传入任务列表
+                        if p then insert(tasks, { path = p, prefix = prefix, conversion = conversion_map }) end
                     end
                 end
             end
         end
     end
 
-    -- 3. DB 初始化
-    if not userdb then return end
-    local ok, db = pcall(function() local d = userdb.LevelDb(db_name); d:open(); return d end)
-
-    if ok and db then
-        env.db = db
-        local db_version = db:meta_fetch("_wanxiang_ver") or ""
-        local old_delim = db:meta_fetch("_delim")
-        local need_rebuild = false
-        if current_version ~= db_version then need_rebuild = true end
-        if env.delimiter ~= old_delim then need_rebuild = true end
-      
-        if need_rebuild then
-            if rebuild(tasks, db) then
-                db:meta_update("_wanxiang_ver", current_version)
-                db:meta_update("_delim", env.delimiter)
-                if log and log.info then
-                    log.info("super_replacer: 检测到版本变更 (" .. db_version .. " -> " .. current_version .. ")，数据已重建。")
-                end
-            end
-        end
-    else
-        env.db = nil
-    end
+    -- 3. DB 初始化 (使用单例连接)
+    env.db = connect_db(db_name, current_version, env.delimiter, tasks)
 end
 
 function M.fini(env)
-    if env.db then env.db:close(); env.db = nil end
+    -- 我们只是断开当前 env 对全局 db 的引用
+    env.db = nil
 end
 
--- [Core Function] 核心逻辑
+-- [Core Function] 核心逻辑 (保持原有逻辑不变)
 function M.func(input, env)
+    -- 如果数据库未连接，直接透传
     if not env.types or #env.types == 0 or not env.db then
         for cand in input:iter() do yield(cand) end
         return
@@ -361,7 +415,7 @@ function M.func(input, env)
     local comment_fmt = env.comment_format
     local is_chain = env.chain
     local input_code = ctx.input
-    local HIGH_THRESHOLD = 99  --与根目录txt等价权重阈值
+    local HIGH_THRESHOLD = 99
     local input_type = "unknown"
     if wanxiang and wanxiang.get_input_method_type then
         input_type = wanxiang.get_input_method_type(env)
@@ -369,6 +423,7 @@ function M.func(input, env)
 
     local seg = ctx.composition:back()
     local current_seg_tags = seg and seg.tags or {}
+    
     -- [Helper] 通用处理函数
     local function process_rules(cand)
         local current_text = cand.text
@@ -379,7 +434,7 @@ function M.func(input, env)
         local comments = {}
       
         for _, t in ipairs(types) do
-            if t.mode ~= "abbrev" then -- 跳过 abbrev 模式
+            if t.mode ~= "abbrev" then
                 local is_active = false
                 for _, trigger in ipairs(t.triggers) do
                     if trigger == true then is_active = true; break
@@ -474,6 +529,7 @@ function M.func(input, env)
             end
         end
     end
+
     -- 核心状态变量
     local pending_cands = {}
     local seen_texts = {} -- 去重表
@@ -482,16 +538,16 @@ function M.func(input, env)
     local cand_count = 0
     local abbrev_triggered = false 
 
-    -- [Helper 1] 规则处理封装 (确保记录 seen_texts)
+    -- [Helper 1] 规则处理封装
     local function process_and_record(cand)
         seen_texts[cand.text] = true
         process_rules(cand)
     end
-    -- [Helper 2] 融合后的简码逻辑 (保留所有配置判断)
+
+    -- [Helper 2] 融合后的简码逻辑
     local function try_trigger_abbrev_logic(is_empty_override, target_quality)
         for _, t in ipairs(types) do
             if t.mode == "abbrev" and input_type ~= "pinyin" then
-                -- A. Tags 匹配逻辑
                 local is_tag_match = true
                 if t.tags then
                     is_tag_match = false
@@ -501,7 +557,6 @@ function M.func(input, env)
                 end
 
                 if is_tag_match then
-                    -- B. 开关逻辑 (Always/Lazy)
                     local lazy_switch = t.triggers[1]
                     local always_switch = t.triggers[2]
                     local active_mode = "none"
@@ -522,21 +577,17 @@ function M.func(input, env)
                     elseif active_mode == "lazy" and is_empty_override then should_trigger = true
                     end
 
-                    -- C. 查库与输出 (集成去重和动态权重)
                     if should_trigger then
                         local key = t.prefix .. input_code
                         local val = db:fetch(key)
-                        -- 大写尝试逻辑
                         if not val and not s_match(input_code, "[A-Z]") then
                             val = db:fetch(t.prefix .. s_upper(input_code))
                         end
                         
                         if val then
                             for p in s_gmatch(val, split_pat) do
-                                -- 如果 seen_texts 已经有了就不输出（不干扰直连词）
                                 if not seen_texts[p] then
                                     local abbrev_cand = Candidate("abbrev", 0, #input_code, p, "")
-                                    -- 紧跟传入的基准权重
                                     abbrev_cand.quality = target_quality
                                     process_and_record(abbrev_cand)
                                 end
@@ -554,10 +605,9 @@ function M.func(input, env)
         cand_count = cand_count + 1
         local q = cand.quality or 0
         
-        -- 更新是否有phrase
         if cand.type == "phrase" then has_phrase = true end
         
-        -- 1. [权重跳水/插队检测] 命中高权重词块
+        -- 1. [权重跳水/插队检测]
         if not abbrev_triggered and q < HIGH_THRESHOLD and #pending_cands > 0 then
             local max_q = 0
             local has_high_q = false
@@ -568,13 +618,10 @@ function M.func(input, env)
             end
             
             if has_high_q then
-                -- 有高权重词，输出所有缓存的候选
                 for _, pc in ipairs(pending_cands) do process_and_record(pc) end
                 pending_cands = {}
-                
-                -- 只有没有phrase时才触发简码
                 if not has_phrase then
-                    try_trigger_abbrev_logic(true, max_q - 0.001) -- 紧跟 99+ 词汇
+                    try_trigger_abbrev_logic(true, max_q - 0.001)
                 end
             end
         end
@@ -583,9 +630,7 @@ function M.func(input, env)
         if cand_count <= limit then
             table.insert(pending_cands, cand)
         else
-            -- 到达 limit 还没触发简码，说明前 limit 个词都没达到 99
             if cand_count == limit + 1 then
-                -- 检查是否有高权重词
                 local has_high_q = false
                 for _, pc in ipairs(pending_cands) do 
                     if (pc.quality or 0) > HIGH_THRESHOLD then 
@@ -595,7 +640,6 @@ function M.func(input, env)
                 end
                 
                 if not abbrev_triggered then
-                    -- 只有没有phrase时才触发简码
                     try_trigger_abbrev_logic(not has_phrase, has_high_q and 99 or 9999) 
                 end
                 for _, pc in ipairs(pending_cands) do process_and_record(pc) end
@@ -605,7 +649,7 @@ function M.func(input, env)
         end
     end
 
-    -- 3. [收尾阶段] 只有少量候选且没到 limit
+    -- 3. [收尾阶段]
     if pending_cands then
         if not abbrev_triggered then
             local max_q = 0
@@ -617,14 +661,11 @@ function M.func(input, env)
             end
 
             if has_high_q then
-                -- 有高权重词，先输出所有候选
                 for _, pc in ipairs(pending_cands) do process_and_record(pc) end
-                -- 只有没有phrase时才触发简码
                 if not has_phrase then
                     try_trigger_abbrev_logic(true, max_q - 0.001)
                 end
             else
-                -- 没有高权重词，只有没有phrase时才让简码置顶
                 if not has_phrase then
                     try_trigger_abbrev_logic(true, 9999)
                 end
