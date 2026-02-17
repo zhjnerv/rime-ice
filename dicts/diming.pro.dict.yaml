@@ -21,6 +21,7 @@ sort: by_weight
 长丰	cháng;pd fēng;aa	535
 长阳	cháng;pd yáng;eo	564
 朝阳	cháo;ou,uo yáng;eo	767
+呈坎	chéng;kw kǎn;tq	124
 城南	chéng;ti nán;ua,uy	568
 城区	chéng;ti qū;ki	733
 成县	chéng;gg,wg xiàn;sq,qs	380
@@ -27556,6 +27557,7 @@ sort: by_weight
 城角庄村	chéng;ti jiǎo;dy zhuāng;gt cūn;mc	1
 程界西村	chéng;hi jiè;tj xī;aa cūn;mc	1
 程介西村	chéng;hi jiè;ra,rd xī;aa cūn;mc	1
+呈坎古镇	chéng;kw kǎn;tq gǔ;uk zhèn;jv	19
 城口子村	chéng;ti kǒu;aa zǐ;aa,vh cūn;mc	1
 橙里王村	chéng;md lǐ;aa,tt wáng;aa cūn;mc	1
 城连圩乡	chéng;ti lián;zi wéi;ty xiāng;ap,vp	1
@@ -31397,7 +31399,7 @@ sort: by_weight
 斗门街道	dǒu;du mén;dg jiē;xg,xi dào;zu	1
 陡门头村	dǒu;ez mén;dg tóu;dd cūn;mc	1
 斗门张村	dǒu;du mén;dg zhāng;gi cūn;mc	1
-陡磨子村	dǒu;ez mò;mu,um zǐ;aa,vh cūn;mc	1
+陡磨子村	dǒu;ez mò;mu,um zi;aa,vh cūn;mc	1
 斗姆湖镇	dòu;du mǔ;nm hú;dh zhèn;jv	1
 斗南街道	dòu;du nán;ua,uy jiē;xg,xi dào;zu	1
 斗蓬石村	dòu;du péng;cf shí;kp,pk cūn;mc	1
@@ -33804,7 +33806,7 @@ sort: by_weight
 拐坝桥村	guǎi;fl bà;tb qiáo;mq cūn;mc	1
 拐角铺村	guǎi;fl jiǎo;dy pù;jf cūn;mc	1
 拐磨沟村	guǎi;fl mó;mu,um gōu;dg cūn;mc	1
-拐磨子村	guǎi;fl mò;mu,um zǐ;aa,vh cūn;mc	1
+拐磨子村	guǎi;fl mò;mu,um zi;aa,vh cūn;mc	1
 官坂透堡	guān;bg,bk bǎn;tf tòu;zx bǎo;tb	1
 官北沟村	guān;bg,bk běi;ap,bj gōu;dg cūn;mc	1
 官埠桥镇	guān;bg,bk bù;tf,tu qiáo;mq zhèn;jv	1
@@ -40650,7 +40652,7 @@ sort: by_weight
 李子行村	lǐ;mz zi;aa,vh xíng;xd,xi cūn;mc	1
 李子垭村	lǐ;mz zi;aa,vh yā;ty cūn;mc	1
 李子峪村	lǐ;mz zi;aa,vh yù;ug cūn;mc	1
-李子园村	lǐ;mz zi;aa,vh yuán;ky cūn;mc	1
+李子园村	lǐ;mz zǐ;aa,vh yuán;ky cūn;mc	1
 梨子园村	lí;ml zi;aa,vh yuán;ky cūn;mc	1
 栗子园村	lì;xm zi;aa,vh yuán;ky cūn;mc	1
 俩母山村	liǎ;rl mǔ;ad,vd shān;aa cūn;mc	1
@@ -44123,9 +44125,9 @@ sort: by_weight
 莫扎诺镇	mò;cd,ct zhā;fg nuò;yr zhèn;jv	1
 抹直口村	mǒ;fm zhí;aa,uq kǒu;aa cūn;mc	1
 墨竹工卡	mò;th,ht zhú;gg gōng;aa kǎ;bx,ub	1
-磨子桥村	mò;mu,um zǐ;aa,vh qiáo;mq cūn;mc	1
-磨子桥镇	mò;mu,um zǐ;aa,vh qiáo;mq zhèn;jv	1
-磨子潭镇	mò;mu,um zǐ;aa,vh tán;dt zhèn;jv	1
+磨子桥村	mò;mu,um zi;aa,vh qiáo;mq cūn;mc	1
+磨子桥镇	mò;mu,um zi;aa,vh qiáo;mq zhèn;jv	1
+磨子潭镇	mò;mu,um zi;aa,vh tán;dt zhèn;jv	1
 末佐美村	mò;ad,am zuǒ;rz měi;dy,yd cūn;mc	1
 牟家坝村	móu;sn jiā;bu bà;tb cūn;mc	1
 牟家坝镇	móu;sn jiā;bu bà;tb zhèn;jv	1
@@ -68742,7 +68744,7 @@ sort: by_weight
 明德北街街道	míng;oo dé;xx běi;ap,bj jiē;xg,xi jiē;xg,xi dào;zu	1
 明德南街街道	míng;oo dé;xx nán;ua,uy jiē;xg,xi jiē;xg,xi dào;zu	1
 莫力庙种羊场	mò;cd,ct lì;gp miào;gy zhǒng;hv yáng;da chǎng;ty	1
-磨子土家族乡	mò;mu,um zǐ;aa,vh tǔ;aa jiā;bu zú;fu xiāng;ap,vp	1
+磨子土家族乡	mò;mu,um zi;aa,vh tǔ;aa jiā;bu zú;fu xiāng;ap,vp	1
 牡丹江市乡镇	mǔ;nt dān;pd jiāng;dg shì;wj xiāng;ap,vp zhèn;jv	1
 木里港管理处	mù;ad lǐ;aa,tt gǎng;dx guǎn;vg lǐ;wl chù;wb
 纳达齐牛录乡	nà;sn dá;zd qí;wa,wp niú;pa lù;au,ua xiāng;ap,vp	1

@@ -197,6 +197,7 @@ super_replacer:
       mode: abbrev          # <--- 新增的简码模式
       tags: [abc]
       prefix: "_abbr_"
+      #conv: "abcdefghijklmnopqrstuvwxyz>ABCDEFGHIJKLMNOPQRSTUVWXYZ" #从txt里编码转换为实际打字需要的编码，例如九键维护用字母加载数据库变数字
       files:
         - lua/data/abbrev.txt # 格式：zm\t怎么|在吗
 
@@ -457,8 +458,8 @@ translator:
 #  db_class: tabledb  #开启后就不会产生zrm.userdb这样的文件夹，会直接输出文本zrm.txt同时无法使用同步能力
   enable_user_dict: false # 是否开启自动调频
   contextual_suggestions: false  #模型用来开启词组权重预测，效果一般关闭
-  max_homophones: 5
-  max_homographs: 5
+  max_homophones: 8
+  max_homographs: 8
 #  disable_user_dict_for_patterns:
 #    - "^[a-z]{1,6}"    #基本的6码3字不调频
   enable_correction: false #是否开启自动纠错
@@ -509,12 +510,13 @@ wanxiang_mixedcode:
   enable_sentence: false
   initial_quality: 2
   comment_format:  #这里很重要如果残留带声调字母，剩余编码提示计算出错引发程序崩溃
-    - xform/^~.+$//
+    - xform/.*//
 
 # 部件拆字反查
 wanxiang_reverse:
   tag: wanxiang_reverse
   dictionary: wanxiang_reverse
+  enable_completion: true
   prefix: "`"  # 反查前缀（反查时前缀会消失），与 recognizer/patterns/wanxiang_reverse 匹配
   tips: "〔反查：拆分|笔画〕"
 
@@ -640,6 +642,18 @@ editor:
     Control+Delete: delete_candidate      # Ctrl+Delete键：删除或降权候选项
     Escape: cancel                        # Esc 键：取消输入
 
+# 在边界按音节移动，在音节内部按字符移动  rewind , forward
+# 按字符移动（循环）       left_by_char , right_by_char
+# 按字符移动（不循环）     left_by_char_no_loop , right_by_char_no_loop
+# 按音节跳转（循环）       left_by_syllable , right_by_syllable
+# 按音节跳转（不循环）     left_by_syllable_no_loop , right_by_syllable_no_loop
+navigator:
+  bindings:
+    Left: left_by_char_no_loop
+    Right: right_by_char_no_loop
+    Shift+Left: left_by_syllable
+    Shift+Right: right_by_syllable
+
 # 拼写设定
 speller:
 # table_translator翻译器，支持自动上屏。例如 “zmhu”可以自动上屏“怎么回事”
@@ -668,8 +682,8 @@ user_dict_set:
   core_word_length: 4          # >0 启用，按段学词 + 相邻段拼接
   max_word_length: 7           # >0 启用，过长短语不记整词，只加元素权重
   contextual_suggestions: false
-  max_homophones: 5
-  max_homographs: 5
+  max_homophones: 8
+  max_homographs: 8
   spelling_hints: 50
   comment_format:
   enable_user_dict: true
