@@ -29,3 +29,4 @@ zc.userdb.old/
 
 # 临时文件目录，不与云端同步
 wanxiang_temp/
+.ace-tool/
