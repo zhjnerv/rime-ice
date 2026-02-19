@@ -5753,7 +5753,6 @@ sort: by_weight
 朱治	zhū;pw zhì;dt
 朱竹	zhū;pw zhú;gg
 朱梓	zhū;pw zǐ;mx
-# 警告: 拼音数与字数不匹配（dicts/renming.dict.yaml) => 卢昱晓	1
 白一骢	bái;pa,po yī;aa cōng;mx,mz
 白音华	bái;pa,po yīn;lo huá;uh
 白英杰	bái;pa,po yīng;cy jié;hm,mh
@@ -20587,6 +20586,7 @@ sort: by_weight
 鲁幽公	lǔ;yo yōu;uy gōng;sb,bs
 鲁雨亭	lǔ;yo yǔ;ad tíng;wd,db,dd
 鲁豫问	lǔ;yo yù;yx wèn;km,mk
+卢昱晓	lú;bu yù;ol xiǎo;oy
 鲁豫约	lǔ;yo yù;yx yuē;su
 鲁元公	lǔ;yo yuán;aw,ee gōng;sb,bs
 鲁泽伍	lǔ;yo zé;df wǔ;rw
@@ -61495,6 +61495,14 @@ sort: by_weight
 植田海	zhí;mv tián;aa hǎi;dm	90
 志田数	zhì;ux,xu tián;aa shù;wl	88
 志田未	zhì;ux,xu tián;aa wèi;ex,ad	0
+中村俊	zhōng;aa,ka cūn;mc jùn;rj,rw	204
+中村亮	zhōng;aa,ka cūn;mc liàng;wj,jb	100
+中村隆	zhōng;aa,ka cūn;mc lóng;eu	128
+中村宪	zhōng;aa,ka cūn;mc xiàn;bx	146
+中村悠	zhōng;aa,ka cūn;mc yōu;xw,xy	205
+中村元	zhōng;aa,ka cūn;mc yuán;aw,ee	106
+中村正	zhōng;aa,ka cūn;mc zhèng;av	164
+中村中	zhōng;aa,ka cūn;mc zhōng;aa,ka	110
 周阿根	zhōu;kj,kk ā;ek gēn;mg
 周爱民	zhōu;kj,kk ài;vy mín;ag,vg
 周哀王	zhōu;kj,kk āi;wy,yk wáng;aa
