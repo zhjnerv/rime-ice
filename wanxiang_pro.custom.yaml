@@ -1,6 +1,4 @@
 patch:
-  engine/processors/+:
-    - lua_processor@auto_en_punct
   speller/algebra:
     __patch:
       #- 模糊音                                  # 这里启用后，本文件末尾可配置具体条目
