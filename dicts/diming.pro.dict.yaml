@@ -8342,10 +8342,8 @@ sort: by_weight
 郊区县	jiāo;ej qū;ki xiàn;sq,qs	178
 郊区乡	jiāo;ej qū;ki xiāng;ap,vp	1
 蕉山乡	jiāo;cj shān;aa xiāng;ap,vp	1
-湫山乡	jiǎo;dq shān;aa xiāng;ap,vp	1
 峤山镇	jiào;uq shān;aa zhèn;jv	1
 角山镇	jiǎo;dy shān;aa zhèn;jv	1
-湫山镇	jiǎo;dq shān;aa zhèn;jv	1
 焦石镇	jiāo;hv,vh shí;kp,pk zhèn;jv	1
 焦滩乡	jiāo;hv,vh tān;dn xiāng;ap,vp	1
 蛟潭镇	jiāo;ij tán;dt zhèn;jv	1
@@ -14476,6 +14474,8 @@ sort: by_weight
 秋木乡	qiū;hh mù;ad xiāng;ap,vp	1
 秋浦县	qiū;hh pǔ;df xiàn;sq,qs	111
 秋渠乡	qiū;hh qú;mj xiāng;ap,vp	1
+湫山乡	qiū;dq shān;aa xiāng;ap,vp	1
+湫山镇	qiū;dq shān;aa zhèn;jv	1
 秋田县	qiū;hh tián;aa xiàn;sq,qs	238
 丘头镇	qiū;pa,ja tóu;dd zhèn;jv	1
 秋窝乡	qiū;hh wō;xn,xg xiāng;ap,vp	1
@@ -17389,8 +17389,8 @@ sort: by_weight
 天水县	tiān;ad shuǐ;ad,uv xiàn;sq,qs	69
 甜水镇	tián;ug shuǐ;ad,uv zhèn;jv	1
 天水镇	tiān;ad shuǐ;ad,uv zhèn;jv	1
-天台县	tiān;ad tāi;sk xiàn;sq,qs	202
-天台镇	tiān;ad tāi;sk zhèn;jv	1
+天台县	tiān;ad tái;sk xiàn;sq,qs	202
+天台镇	tiān;ad tái;sk zhèn;jv	1
 天坛镇	tiān;ad tán;ty zhèn;jv	1
 天堂堡	tiān;ad táng;xt bǎo;tb	207
 天堂镇	tiān;ad táng;xt zhèn;jv	1
@@ -35094,10 +35094,10 @@ sort: by_weight
 鹤山街道	hè;nv shān;aa jiē;xg,xi dào;zu	1
 鹤山农场	hè;nv shān;aa nóng;by,ny chǎng;ty	1
 河山子村	hé;dk shān;aa zǐ;aa,vh cūn;mc	1
-和尚房村	hé;hk shàng;xk fáng;hf cūn;mc	1
-和尚铺村	hé;hk shàng;xk pù;jf cūn;mc	1
-和尚桥镇	hé;hk shàng;xk qiáo;mq zhèn;jv	1
-和尚塬村	hé;hk shàng;xk yuán;ty cūn;mc	1
+和尚房村	hé;hk shang;xk fáng;hf cūn;mc	1
+和尚铺村	hé;hk shang;xk pù;jf cūn;mc	1
+和尚桥镇	hé;hk shang;xk qiáo;mq zhèn;jv	1
+和尚塬村	hé;hk shang;xk yuán;ty cūn;mc	1
 河輋农场	hé;dk shē;id,ui nóng;by,ny chǎng;ty	1
 河深沟村	hé;dk shēn;dm gōu;dg cūn;mc	1
 河神庙乡	hé;dk shén;uu miào;gy xiāng;ap,vp	1
@@ -52721,7 +52721,7 @@ sort: by_weight
 田孙庄村	tián;aa sūn;zx zhuāng;gt cūn;mc	1
 天塔街道	tiān;ad tǎ;td,th jiē;xg,xi dào;zu	1
 天台山镇	tiān;ad tāi;sk shān;aa zhèn;jv	1
-天台寺村	tiān;ad tāi;sk sì;ct,tc cūn;mc	1
+天台寺村	tiān;ad tái;sk sì;ct,tc cūn;mc	1
 天太永村	tiān;ad tài;dd yǒng;dd cūn;mc	1
 天坛街道	tiān;ad tán;ty jiē;xg,xi dào;zu	1
 天堂寨镇	tiān;ad táng;xt zhài;mb,bm zhèn;jv	1
@@ -52825,7 +52825,6 @@ sort: by_weight
 铁家沟村	tiě;ju jiā;bu gōu;dg cūn;mc	1
 帖家河村	tiē;jv jiā;bu hé;dk cūn;mc	1
 铁家岭村	tiě;ju jiā;bu lǐng;ul cūn;mc	1
-铁茄坪村	tiě;ju jiā;cj píng;tp cūn;mc	1
 铁家湾村	tiě;ju jiā;bu wān;dw cūn;mc	1
 铁家庄村	tiě;ju jiā;bu zhuāng;gt cūn;mc	1
 铁匠沟村	tiě;ju jiàng;jk,kj gōu;dg cūn;mc	1
@@ -52873,6 +52872,7 @@ sort: by_weight
 铁门关村	tiě;ju mén;dg guān;bt,qd cūn;mc	1
 铁门关市	tiě;ju mén;dg guān;bt,qd shì;wj	1
 铁南街道	tiě;ju nán;ua,uy jiē;xg,xi dào;zu	1
+铁茄坪村	tiě;ju qié;cj píng;tp cūn;mc	1
 铁热克镇	tiě;ju rè;hv kè;eg,ux zhèn;jv	1
 铁热木乡	tiě;ju rè;hv mù;ad xiāng;ap,vp	1
 铁热木镇	tiě;ju rè;hv mù;ad zhèn;jv	1
@@ -65572,7 +65572,7 @@ sort: by_weight
 和平彝族乡	hé;hk píng;aa,gb yí;ac,cs,jc,vc zú;fu xiāng;ap,vp	1
 合浦合浦县	hé;rk pǔ;df hé;rk pǔ;df xiàn;sq,qs	1
 鹤山街街道	hè;nv shān;aa jiē;xg,xi jiē;xg,xi dào;zu	1
-和尚房子乡	hé;hk shàng;xk fáng;hf zi;aa,vh xiāng;ap,vp	1
+和尚房子乡	hé;hk shang;xk fáng;hf zi;aa,vh xiāng;ap,vp	1
 和什力克乡	hé;hk shí;ru lì;gp kè;eg,ux xiāng;ap,vp	1
 和田街街道	hé;hk tián;aa jiē;xg,xi jiē;xg,xi dào;zu	1
 河尾山林场	hé;dk wěi;um shān;aa lín;mm chǎng;ty	1
