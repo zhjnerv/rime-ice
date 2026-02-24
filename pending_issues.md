@@ -2,8 +2,7 @@
 
 ## 问题：英文候选词上屏后自动使用半角标点
 
-**状态**: 待解决
-**日期**: 2026-02-24
+**状态**: 已解决 (2026-02-24)
 **优先级**: P2
 
 ### 问题描述
@@ -138,11 +137,29 @@ wanxiang_english/english_spacing: off
 wanxiang_english/spacing_timeout: 0
 ```
 
+### 最终解决方案（防更新覆盖）
+
+为了彻底解决识别不准以及未来系统更新被覆盖的问题，采用了基于 Rime Context Property 和高优先级注入的方案：
+
+1. **废弃修改原生脚本**：不再修改官方的 `super_english.lua` 和 `super_processor.lua`，而是保持其原样以应对未来的仓库更新。
+2. **新增独立脚本 `lua/custom_en_punct.lua`**：
+   - 将 `super_english.lua` 里的纯英文快速判断逻辑（`is_ascii_phrase_fast`）提取到该独立脚本中。
+   - 监听 `commit_notifier` 实时判断刚刚上屏的词汇是否为纯英文。
+   - 在其 `func` 处理函数中优先拦截随后的键盘敲击：如果是标点则强制半角上屏并重置状态；如果敲击字母/数字则视为新输入，重置状态。
+3. **注入最高优先级补丁 `wanxiang_pro.custom.yaml`**：
+   ```yaml
+   patch:
+     "engine/processors/@before 0": lua_processor@*custom_en_punct
+   ```
+   - 利用 `@before 0` 语法，将该自定义处理器强行置于整个 `engine/processors` 列表的最顶端（第 0 顺位）。
+   - 这不仅确保了拦截逻辑在 `punctuator` 和 `speller` 之前生效，更保证了我们的补丁**独立存续，不会被官方更新文件覆盖**。
+
 ### 参考资料
 - 万象方案 README.md
 - Rime 官方文档
+- Rime Lua 扩展用法及 `@before` 插入语法
 - table_translator 的工作机制
-- commit_notifier 和 select_notifier 的触发时机
+- commit_notifier 的触发时机
 
 ---
 
