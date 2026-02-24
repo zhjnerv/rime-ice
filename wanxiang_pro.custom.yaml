@@ -9,13 +9,14 @@ patch:
   #通过下面的设置可以让你自己的文件引入而与仓库custom_phrase.txt不同，防止更新时被仓库文件覆盖
   custom_phrase/user_dict: custom_phrase_double # 这里改成什么就需要手动创建同名的 custom_phrasexx.txt 文件在用户目录，这个文件主要用于置顶，编码为自定义编码的词汇
   custom_phrase/enable_completion: false #开启自定义短语补全功能，默认关闭
+  "engine/processors/@before 0": lua_processor@*custom_en_punct # 【自定义】独立标点转换，不随更新覆盖
   translator/packs/+:
     - userzhj #导入根目录下名称为userxx.dict.yaml的自定义固定词典，编码要与固定词库一致，编码权重都不要少，形如姓名、专有名词公司名称等等
   translator/contextual_suggestions: true # 开启上下文预测
   # 英文自动加空格设置
   wanxiang_english/english_spacing: off
-  wanxiang_english/spacing_timeout: 0
-
+  wanxiang_english/spacing_timeout:
+    0
 
     #下面是候选数量，未来7890分别代表1234声，请候选长度不要大于6避免冲突
   menu/page_size: 6
@@ -240,23 +241,25 @@ patch:
   # 符号表最小化 patch：先跟随官方，再覆盖个人差异键
   punctuator/full_shape:
     __include: wanxiang_symbols:/symbol_table/full_shape
-    '[': [「, 【, "[", "[]", 〔, ［]
-    ']': [」, 】, "]", 〕, ］]
-    '{': [『, 〖, "{}", ｛]
+    "[": [「, 【, "[", "[]", 〔, ［]
+    "]": [」, 】, "]", 〕, ］]
+    "{": [『, 〖, "{}", ｛]
 
   punctuator/half_shape:
     __include: wanxiang_symbols:/symbol_table/half_shape
-    '<': [<, "<>", 《, "<br>"]
-    '>': [">", "<>", 》, "</br>"]
-    '/': [/, ÷]
+    "<": [<, "<>", 《, "<br>"]
+    ">": [">", "<>", 》, "</br>"]
+    "/": [/, ÷]
     '"': "“”"
-    '`': ["`", "```", "``````", "``"]
-    '(': ["（）", "（", "()"]
-    ')': ["（）", "）", "()"]
-    '[': ["[]", "[", "【"]
-    ']': ["[]", "]", "】"]
-    '{': ["{}", "{", "「"]
-    '}': ["{}", "}", "」"]
+    "`": ["`", "```", "``````", "``"]
+    "(": ["（）", "（", "()"]
+    ")": ["（）", "）", "()"]
+    "[": ["[]", "[", "【"]
+    "]": ["[]", "]", "】"]
+    "{": ["{}", "{", "「"]
+    "}": ["{}", "}", "」"]
+
+    "}": ["{}", "}", "」"]
 
 #下面的数据有需要的可以patch引用
 #特殊优化：部分音节字极少，几乎不参与构词，则提升对应四码字的优先级，仅对小鹤双拼有效，其他双拼方案需作对应修改）
