@@ -8,7 +8,7 @@ version: "LTS"
 sort: by_weight
 ...
 安图	ān;bn tú;kd	474
-坝乡	bà;tb xiāng;ap,vp	1
+坝乡	bà;tb xiāng;ap,vp	19
 巴宜	bā;ag yí;bq	305
 保德	bǎo;rd dé;xx	533
 堡镇	bǎo;tb zhèn;jv	430
@@ -65813,6 +65813,7 @@ sort: by_weight
 加尕斯台镇	jiā;lk,kl gǎ;xn,nx sī;jq,qj tái;sk zhèn;jv	1
 加格达奇区	jiā;lk,kl gé;mg dá;zd qí;dk qū;ki	1
 加汗巴格乡	jiā;lk,kl hàn;dg bā;ag gé;mg xiāng;ap,vp	1
+加拉帕戈斯	jiā;lk,kl lā;fl pà;jb gē;ad sī;jq,qj	1
 嘉陵道街道	jiā;uj líng;el,ew dào;zu jiē;xg,xi dào;zu	1
 佳荣里街道	jiā;rg róng;cm,mb lǐ;aa,tt jiē;xg,xi dào;zu	1
 夹山管理处	jiā;fb,ar shān;aa guǎn;vg lǐ;wl chù;wb
@@ -69501,6 +69502,7 @@ sort: by_weight
 加尔布拉克农场	jiā;lk,kl ěr;dx,xd bù;ju,uj lā;fl kè;eg,ux nóng;by,ny chǎng;ty	1
 嘉尔嘎勒赛汉镇	jiā;uj ěr;dx,xd gā;kg lè;lg,gl sài;bb hàn;dy zhèn;jv	1
 加哈乌拉斯台乡	jiā;lk,kl hā;kh wù;pa la;fl sī;jq,qj tái;sk xiāng;ap,vp	1
+加拉帕戈斯群岛	jiā;lk,kl lā;fl pà;jb gē;ad sī;jq,qj qún;yj dǎo;nu,un	1
 嘉祥经济开发区	jiā;uj xiáng;uy jīng;sg jì;dq kāi;ac fā;ay qū;ki	1
 建昌飞地经济区	jiàn;zy chāng;oo fēi;yd dì;ty jīng;sg jì;dq qū;ki	1
 江汉经济开发区	jiāng;dg hàn;dy jīng;sg jì;dq kāi;ac fā;ay qū;ki	1
