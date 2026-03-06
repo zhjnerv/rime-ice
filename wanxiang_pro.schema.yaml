@@ -46,8 +46,8 @@ switches:
     states: [ 注释关, 辅助开, 读音开 ]
   - options: [ s2s, s2t, s2hk, s2tw ]  # 简繁转换开关组，可以在一个空选项和多个实际“- simplifier@s2hk”引入的项目之前切换，这是一个开关组，你可以将其中任意一个s2s等设置为toggle快捷键，多次按下将轮询
     states: [ 简体, 通繁, 港繁, 臺繁 ]
-  - options: [ abbrev_off, abbrev_lazy, abbrev_always ]
-    states: [ 简码关, 空出简, 总出简 ]
+  - name: abbrev
+    states: [ 简码关, 简码开 ]
     reset: 1
   - name: char_priority                #多体现在编码重合但候选有单字或者多字的情况`引导的辅码查词时是否单字优先，全拼常见，类似于特定编码情况下、反查状态下的调序能力。归属：super_lookup.lua
     states: [词组先, 单字先]
@@ -89,7 +89,6 @@ engine:
     - lua_translator@*wanxiang.super_calculator     #超级计算器，Lua内查看高级用法
     - lua_translator@*wanxiang.input_statistics     #一个输入统计的脚本，以日、周、月、年等维度的统计
     - table_translator@custom_phrase       #自定义短语 custom_phrase.txt，用于置顶自定义编码候选词
-    - table_translator@chengyu             #简码成语词汇表导入
     - table_translator@wanxiang_english    #英文词汇表导入
     - table_translator@wanxiang_mixedcode  #混合编码词汇表导入
     - reverse_lookup_translator@wanxiang_reverse    #挂接部件组字和笔画反查
@@ -152,9 +151,6 @@ kp_number_mode: auto
   #  "compose" : 小键盘数字始终不上屏参与编码
   #  "auto"    : 输入中 push，空闲时 commit（默认）
 
-#成语简码前置位置，只能设置在第一页，大于当前页数量则默认在最后一个，0代表关闭前置
-idiom_preposition: 0
-
 super_replacer:
   db_name: lua/replacer
   delimiter: "|"
@@ -213,19 +209,21 @@ super_replacer:
       files:
         - lua/data/TWVariants.txt
     - option: abbrev_lazy
-      mode: abbrev          # <--- 新增的简码模式
+      mode: abbrev          # 简码模式
+      abbrev_type: lazy     # 空出简码,跟在用户词后面,英文和单字前面
       tags: [abc]
       prefix: "_al_"
       files:
         - lua/data/abbrev_lazy.txt # 格式：zm\t怎么|在吗
-    - option: abbrev_always
-      mode: abbrev          # <--- 新增的简码模式
-      tags: [abc]
-      #conv: "abcdefghijklmnopqrstuvwxyz>ABCDEFGHIJKLMNOPQRSTUVWXYZ" #从txt里编码转换为实际打字需要的编码，例如九键维护用字母加载数据库变数字
-      prefix: "_aa_"
+    - option: abbrev      # 对应上面开关名称
+      mode: abbrev
+      prefix: "_abbr_"
+      abbrev_rule: "1,6"  
+      # 前置数量1，前置位置6,数量说的是你维护得数据库编码后面分割了几个词前几个要前置显示,位置说的是你要前置到第二候选还是第几
+      # 然后空码或只有英文等自定义词组的时候直接全部兜底显示,这个新的设计简化的应用层面,我们只需要维护一个数据库即可.
       files:
-        - lua/data/abbrev_always.txt # 格式：zm\t怎么|在吗
-
+        - lua/data/abbrev.txt
+        - lua/data/chengyu.txt
 # 字符集过滤lua
 # a,通用规范汉字表
 # b,GB2312,
@@ -495,16 +493,6 @@ custom_phrase:
   enable_sentence: false   # 禁止造句
   initial_quality: 99      # custom_phrase 的权重应该比 pinyin 和 wanxiang_en 大
 
-
-# 简码词库导入位于dicts得txt文件词库
-chengyu:
-  dictionary: ""
-  user_dict: dicts/chengyu
-  db_class: stabledb
-  enable_sentence: false
-  enable_completion: false
-  initial_quality: 1.2 #本表词和系统词重码居后
-
 # 中文、英文、数字、符号等混合词汇
 wanxiang_english:
   dictionary: wanxiang_english
@@ -514,6 +502,7 @@ wanxiang_english:
   initial_quality: 2.1
   comment_format:  #这里很重要如果残留带声调字母，剩余编码提示计算出错引发程序崩溃
     - xform/^~.+$//
+  #以下是lua相关配置，与原生处理器无关
   #英文自动加空格，除关闭外共有3种模式可供选择
   #off: 关闭; before: 总是前加; after: 总是后加; 
   #smart: 智能模式连续输入英文时第二个单词前开始加空格，非输入状态的回车与空格都能打断加空格状态
@@ -521,6 +510,7 @@ wanxiang_english:
   english_spacing: smart
   spacing_timeout: 5
   max_candidates: 3  #英文候选输出最大候选数(适用于需要选单字组词的用户)
+  trigger: "\\"  #英文造词符号\，写一个用时双击
 
 wanxiang_mixedcode:
   dictionary: wanxiang_mixedcode
