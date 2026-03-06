@@ -7739,10 +7739,11 @@ sort: by_weight
 餖	dòu;ud	68
 唗	dōu;kz	50
 郖	dòu;ed	50
-鈄	dǒu;jd	50
+钭	dǒu;jd	50
 阧	dǒu;ed	38
 斣	dòu;di,du	38
 毭	dòu;dm,md	23
+鈄	dǒu;jd	1
 㪷	dǒu;dd	1
 㞳	dǒu;ud	1
 䇺	dòu;vd	1
@@ -7755,7 +7756,6 @@ sort: by_weight
 瞗	dōu;on	1
 讀	dòu;ym	1
 鋀	dòu;jd	1
-钭	dǒu;jd	1
 㐙	dòu;	1
 㛒	dòu;nd	1
 㢄	dòu;yd	1
@@ -22572,9 +22572,9 @@ sort: by_weight
 笼	lóng;vl	614
 垄	lǒng;lt,tl	567
 拢	lǒng;fl	545
-笼	lǒng;vl	521
+聋	lóng;el,le	521
 咙	lóng;kl	520
-聋	lóng;el,le	516
+笼	lǒng;vl	516
 陇	lǒng;el	512
 珑	lóng;wl	506
 胧	lóng;ol	496
