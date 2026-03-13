@@ -412,7 +412,7 @@ function F.func(input, env)
             
             -- [前置判断]
             if is_ascii then
-                if c_type == "user_phrase" then
+                if c_type == "user_phrase" or c_type == "user_table" then
                     -- 命中用户自定义词库(纯英文)，直接放行，既不拦截也不消耗限流名额
                 elseif safe_max_cands > 0 and eng_yield_count >= safe_max_cands then
                     skip_cand = true
@@ -520,7 +520,7 @@ function F.func(input, env)
                     local output_preedit = (anchor.preedit or anchor.text) .. diff
                     output_text = apply_segment_formatting(output_text, curr_input)
                     
-                    local cand = Candidate("completion", 0, #curr_input, output_text, "~")
+                    local cand = Candidate("fallback", 0, #curr_input, output_text, "~")
                     cand.preedit = output_preedit
                     cand.quality = 999
                     yield(cand)
@@ -538,31 +538,20 @@ function F.func(input, env)
 
                     if has_spacing or last_len > 3 then
                         output_text = anchor.text .. spacer .. diff
-                        output_preedit = (anchor.preedit or anchor.text) .. spacer .. diff
+                        output_preedit = anchor.text .. spacer .. diff
                     else
                         output_text = curr_input
                         output_preedit = curr_input
                     end
                     
                     output_text = apply_segment_formatting(output_text, curr_input)
-                    local cand = Candidate("completion", 0, #curr_input, output_text, "~")
-                    cand.preedit = output_preedit
+                    local cand = Candidate("fallback", 0, #curr_input, output_text, "~")
+                    cand.preedit = output_text 
                     cand.quality = 999
                     yield(cand)
                     yielded_derived = true
                 end
             end
-        end
-
-        -- [Phase 4] 兜底
-        if not yielded_derived then
-            local text = curr_input
-            if sub(text, -1) == symbol then
-                text = sub(text, 1, -2)
-            end
-            local cand = Candidate("completion", 0, #curr_input, text, "~")
-            cand.preedit = curr_input
-            yield(cand)
         end
     end
 end
