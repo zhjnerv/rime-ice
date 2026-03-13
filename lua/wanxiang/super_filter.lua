@@ -9,7 +9,6 @@
 -- 功能 D：中英混输长句防污染
 --         当首选词为有效的英文单词（≥4字母）时，自动斩断辅助码的无理派生，屏蔽毫无关联的凑数中文长句。
 
-
 local wanxiang = require("wanxiang/wanxiang")
 local M = {}
 
@@ -28,6 +27,12 @@ local upper = string.upper
 local sub = string.sub
 local utf8_codes = utf8.codes
 local utf8_len = utf8.len
+
+local function get_first_utf8_char(s)
+    if not s or s == "" then return "" end
+    local offset = utf8.offset(s, 2)
+    return offset and sub(s, 1, offset - 1) or s
+end
 
 local function fast_type(c)
     local t = c.type
@@ -87,23 +92,30 @@ local ke_names = {"初刻", "二刻", "三刻", "四刻", "五刻", "六刻", "�
 
 local function get_shichen_and_ke(hour, min)
     local total_minutes = hour * 60 + min
-    
     for _, shichen in ipairs(shichen_data) do
         local shichen_name = shichen.name
         local start_hour = shichen.start_hour
         local end_hour = shichen.end_hour
-        
         local start_minutes = start_hour * 60
         local end_minutes = end_hour * 60
-        
+        local is_match = false
         if start_hour > end_hour then
-            end_minutes = end_hour * 60 + 1440
+            if total_minutes >= start_minutes or total_minutes < end_minutes then
+                is_match = true
+            end
+        else
+            if total_minutes >= start_minutes and total_minutes < end_minutes then
+                is_match = true
+            end
         end
-        
-        if total_minutes >= start_minutes and total_minutes < end_minutes then
-            local offset_minutes = total_minutes - start_minutes
-            local ke_index = math.floor(offset_minutes / 15)
+        if is_match then
+            local calc_minutes = total_minutes
+            if start_hour > end_hour and total_minutes < end_minutes then
+                calc_minutes = total_minutes + 1440
+            end
             
+            local offset_minutes = calc_minutes - start_minutes
+            local ke_index = math.floor(offset_minutes / 15)
             if ke_index >= 8 then
                 ke_index = 7
             end
@@ -136,7 +148,13 @@ local function process_datetime_internal(s)
     
     local ampm = (dt.hour < 12) and "am" or "pm"
     local raw_tz = os.date("%z") or "+0800"
-    local tz_colon = raw_tz:sub(1,3) .. ":" .. raw_tz:sub(4,5)
+    local tz_colon = raw_tz:match("^([%+%-])(%d%d)(%d%d)$")
+    if tz_colon then
+        local sign, h_str, m_str = raw_tz:match("^([%+%-])(%d%d)(%d%d)$")
+        tz_colon = sign .. h_str .. ":" .. m_str
+    else
+        tz_colon = raw_tz
+    end
     
     local zh_period
     local h = dt.hour
@@ -177,7 +195,7 @@ local function process_datetime_internal(s)
     }
 
     return s:gsub("\\(%a)", function(char)
-        return time_map[char] or char 
+        return time_map[char] or ("\\" .. char) 
     end)
 end
 
@@ -235,7 +253,6 @@ local function clone_candidate(c)
     
     return nc
 end
-
 --  包裹映射
 local default_wrap_map = {
     -- 单字母：常用成对括号/引号（每项恰好两个字符）
@@ -337,7 +354,6 @@ local default_wrap_map = {
     qu = "??",
     sb = "sb",
 }
-
 local function load_mapping_from_config(config)
     local symbol_map = {}
     
@@ -421,7 +437,7 @@ function M.init(env)
     if cfg then
         local d = cfg:get_string("paired_symbols/delimiter")
         if d and #d > 0 then 
-            env.wrap_delimiter = d:sub(1,1) 
+            env.wrap_delimiter = get_first_utf8_char(d) 
         end
     end
     
@@ -431,7 +447,7 @@ function M.init(env)
     if cfg then
         local sym = cfg:get_string("paired_symbols/symbol") or cfg:get_string("paired_symbols/trigger")
         if sym and #sym > 0 then 
-            env.symbol = sub(sym, 1, 1) 
+            env.symbol = get_first_utf8_char(sym) 
         end
     end
 
@@ -460,6 +476,9 @@ function M.func(input, env)
     if not code or code == "" or (comp and comp:empty()) then
         env.last_2code_char = nil 
         env.page_cache = {}
+        for cand in input:iter() do
+            yield(cand)
+        end
         return
     end
 
@@ -475,7 +494,8 @@ function M.func(input, env)
 
     -- 2. 探查触发符号（斜杠 \）
     local symbol = env.symbol
-    local symbol_pos = symbol and #symbol == 1 and find(code, symbol, 1, true)
+    local sym_len = #symbol
+    local symbol_pos = symbol and sym_len > 0 and find(code, symbol, 1, true)
     local code_has_symbol = symbol_pos and symbol_pos > 1
     
     if not code_has_symbol then
@@ -497,8 +517,7 @@ function M.func(input, env)
                 local pos = find(last_text, symbol, 1, true)
                 
                 if pos and pos > 1 then
-                    -- 提取斜杠后面的字母
-                    local right = sub(last_text, pos + 1)
+                    local right = sub(last_text, pos + sym_len)
                     local k = right:lower()
                     
                     if k ~= "" and env.wrap_map[k] then 
@@ -510,7 +529,7 @@ function M.func(input, env)
     end
 
     -- 检查是否连续打出双斜杠 \\（取消包裹）
-    local is_double = (sub(code, -2) == symbol .. symbol)
+    local is_double = (code_len >= sym_len * 2) and (sub(code, -(sym_len * 2)) == symbol .. symbol)
     if is_double then 
         code_has_symbol = false 
     end
@@ -524,13 +543,14 @@ function M.func(input, env)
         end
     end
 
-    -- 动态获取目标缓存（优先信任外部排序脚本）
-    local ws = _G.WanxiangSharedState
+    -- 保障机制：优先使用存得更多的缓存
     local target_cache = env.page_cache
-    
-    if ws.sorter_active and ws.last_input == raw_code and #ws.page_cache > 0 then
-        target_cache = ws.page_cache
+    if _G.WanxiangSharedState.sorter_active and _G.WanxiangSharedState.last_input == raw_code then
+        if _G.WanxiangSharedState.page_cache and #_G.WanxiangSharedState.page_cache >= #env.page_cache then
+            target_cache = _G.WanxiangSharedState.page_cache
+        end
     end
+
     -- PHASE 1: 缓存快照输出
     if code_has_symbol and target_cache and #target_cache > 0 then
         for _, c in ipairs(target_cache) do
@@ -555,6 +575,7 @@ function M.func(input, env)
             else
                 if fully_consumed and last_seg then
                     final_cand = Candidate(c.type, c.start, last_seg._end, c.text, "")
+                    
                     local typed_tail = sub(code, c._end + 1, last_seg._end)
                     final_cand.preedit = (c.preedit or "") .. typed_tail
                 end
@@ -572,8 +593,7 @@ function M.func(input, env)
     local wrap_limit = env.page_size * 2
     local eager_buffer = {}
 
-    -- 提取出统一的安检与过滤逻辑，彻底消除代码冗余！
-    local function process_cand(cand)
+    for cand in input:iter() do
         idx = idx + 1
         local text = cand.text
         local is_table = is_table_type(cand)
@@ -590,21 +610,28 @@ function M.func(input, env)
             end
         end
 
-        -- 联合过滤
-        if drop_sentence and cand.type == "sentence" then return nil end
-        if enable_taichi and has_eng and cand.comment and find(cand.comment, "\226\152\175") then return nil end
-        if suppress_set[text] then return nil end
+        local should_skip = false
+        
+        if drop_sentence and cand.type == "sentence" then 
+            should_skip = true 
+        end
+        
+        if not should_skip and enable_taichi and has_eng and cand.comment and find(cand.comment, "\226\152\175") then 
+            should_skip = true 
+        end
+        
+        if not should_skip and suppress_set[text] then 
+            should_skip = true 
+        end
 
-        -- 通过安检
-        suppress_set[text] = true
-        return format_and_autocap(cand)
-    end
-    for cand in input:iter() do
-        local formatted_cand = process_cand(cand)
-        if formatted_cand then
+        if not should_skip then
+            suppress_set[text] = true
+            
+            local formatted_cand = format_and_autocap(cand)
             if not code_has_symbol and #env.page_cache < wrap_limit then
                 table.insert(env.page_cache, clone_candidate(formatted_cand))
             end
+            
             table.insert(eager_buffer, formatted_cand)
             if #eager_buffer >= wrap_limit then
                 break
@@ -614,11 +641,28 @@ function M.func(input, env)
     for _, c in ipairs(eager_buffer) do
         yield(c)
     end
-
     for cand in input:iter() do
-        local formatted_cand = process_cand(cand)
-        if formatted_cand then
-            yield(formatted_cand)
+        idx = idx + 1
+        local text = cand.text
+        local has_eng = has_english_token_fast(text)
+        
+        local should_skip = false
+        
+        if drop_sentence and cand.type == "sentence" then 
+            should_skip = true 
+        end
+        
+        if not should_skip and enable_taichi and has_eng and cand.comment and find(cand.comment, "\226\152\175") then 
+            should_skip = true 
+        end
+        
+        if not should_skip and suppress_set[text] then 
+            should_skip = true 
+        end
+
+        if not should_skip then
+            suppress_set[text] = true
+            yield(format_and_autocap(cand))
         end
     end
     -- PHASE 3: 三码空候选兜底
@@ -636,7 +680,12 @@ function M.func(input, env)
             
             local seg_str = sub(code, start_pos + 1, end_pos)
             if #seg_str >= 3 then
-                nc.preedit = sub(seg_str, 1, 2) .. " " .. sub(seg_str, 3)
+                local offset_2 = utf8.offset(seg_str, 3)
+                if offset_2 then
+                    nc.preedit = sub(seg_str, 1, offset_2 - 1) .. " " .. sub(seg_str, offset_2)
+                else
+                    nc.preedit = seg_str
+                end
             else
                 nc.preedit = seg_str
             end
@@ -645,4 +694,5 @@ function M.func(input, env)
         end
     end
 end
+
 return M

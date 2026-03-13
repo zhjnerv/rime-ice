@@ -330,16 +330,17 @@ local function apply_tone_preedit(env, cand)
     local engine = env.engine
     local ctx = engine and engine.context
     local input = ctx and ctx.input or ""
+    local is_t9_key = input:match("^%d") ~= nil
 
-    -- 1. 基础拦截：如果输入包含连续数字（如小键盘），或者首选就是英文，不转换
-    if input:match("%d%d") then return end
-    
+    -- 如果是九键场景，或者包含连续数字（如电脑小键盘），直接跳过不转换
+    if is_t9_key or input:match("%d%d") then return end
+
     -- 判断首选是否为纯英文（通过匹配是否全由英文字符组成且不含中文）
     if cand.text:match("^[%a%p%s]+$") then
         return
     end
 
-    -- 2. 加载配置
+    -- 加载配置
     local cfg = engine and engine.schema and engine.schema.config
     local aux_symbol = cfg and cfg:get_string("force_upper_aux/symbol")
     
@@ -350,7 +351,7 @@ local function apply_tone_preedit(env, cand)
 
     do
         local preedit = cand.preedit
-        -- 3. 核心逻辑：排除前两位是大写的情况，只转换后续出现的双大写
+        -- 排除前两位是大写的情况，只转换后续出现的双大写
         -- ([A-Z][A-Z]+) 匹配后续连续的两个及以上的大写字母。
         local converted = preedit:gsub("^(..?-?)([A-Z][A-Z]+)", function(prefix, upper)
             -- 检查前缀是否包含大写字母。如果前缀里有大写，说明可能是英文输入，不转换。
@@ -370,7 +371,7 @@ local function apply_tone_preedit(env, cand)
         cand.preedit = converted
     end
     ::tone_only::
-    -- 4. 数字映射逻辑 (上标转换)
+    -- 数字映射逻辑 (上标转换)
     if not env.tone_map then
         env.tone_map = {}
         if cfg then
@@ -436,7 +437,8 @@ end
 function ZH.func(input, env)
     local config = env.engine.schema.config
     local context = env.engine.context
-    local input_str = context.input
+    local input_str = context.input or ""
+    local is_t9_key = input_str:match("^%d") ~= nil
     local is_radical_mode = wanxiang.is_in_radical_mode(env)
     local schema_id = env.engine.schema.schema_id or ""
     local is_wanxiang_pro = (schema_id == "wanxiang_pro")
@@ -460,6 +462,10 @@ function ZH.func(input, env)
 
     for cand in input:iter() do
         local genuine_cand = cand:get_genuine()
+        if genuine_cand.type == "shijian" then
+            yield(genuine_cand)
+            goto continue
+        end
         local preedit = genuine_cand.preedit or ""
         local initial_comment = genuine_cand.comment
         local final_comment = initial_comment
@@ -478,11 +484,10 @@ function ZH.func(input, env)
             goto after_preedit
         end
         do
-            -- 拆分 preedit
+            -- 拆分逻辑
             local input_parts = {}
             local current_segment = ""
-            for i = 1, #preedit do
-                local char = preedit:sub(i, i)
+            for char in preedit:gmatch("[%z\1-\127\194-\244][\128-\191]*") do
                 if char == auto_delimiter or char == manual_delimiter then
                     if #current_segment > 0 then
                         table.insert(input_parts, current_segment)
@@ -513,32 +518,63 @@ function ZH.func(input, env)
                 if part == auto_delimiter or part == manual_delimiter then
                     input_parts[i] = visual_delim
                 else
-                    local body, tone = part:match("([%a]+)([^%a]+)") --后面加号很必要
                     local py = pinyin_segments[pinyin_index]
 
                     if py then
-                        if is_wanxiang_pro then
-                            input_parts[i] = py
-                            pinyin_index = pinyin_index + 1
-                        elseif i == #input_parts and #part == 1 then
-                            local prefix = py:sub(1, 2)
-                            local first_char = part:sub(1,1):lower()
-                            if first_char == "s" or first_char == "c" or first_char == "z" then
-                                input_parts[i] = part
-                            else
-                                if prefix == "zh" or prefix == "ch" or prefix == "sh" then
-                                    input_parts[i] = prefix
-                                else
-                                    input_parts[i] = part
-                                end
-                            end
-                        else
-                            if tone_isolate then
-                                input_parts[i] = py .. (tone or "")
-                            else
+                        if is_t9_key then
+                            -- 场景 A：九宫格 (T9) 数字输入逻辑
+                            local py_first_char = py:match("[%z\1-\127\194-\244][\128-\191]*") or ""
+                            local part_offset = utf8.offset(part, 2)
+                            local part_tail = part_offset and part:sub(part_offset) or ""
+                            part = py_first_char .. part_tail
+
+                            if is_wanxiang_pro then
                                 input_parts[i] = py
+                                pinyin_index = pinyin_index + 1
+                            elseif i == #input_parts and #part == 1 then
+                                local prefix = py:sub(1, 2)
+                                local first_char = part:sub(1,1):lower()
+                                if first_char == "s" or first_char == "c" or first_char == "z" then
+                                    input_parts[i] = part
+                                else
+                                    if prefix == "zh" or prefix == "ch" or prefix == "sh" then
+                                        input_parts[i] = prefix
+                                    else
+                                        input_parts[i] = part
+                                    end
+                                end
+                            else
+                                input_parts[i] = py 
+                                pinyin_index = pinyin_index + 1
                             end
-                            pinyin_index = pinyin_index + 1
+
+                        else
+                            -- 场景 B：常规 26键 字母输入逻辑
+                            local body, tone = part:match("([%a]+)([^%a]+)") 
+
+                            if is_wanxiang_pro then
+                                input_parts[i] = py
+                                pinyin_index = pinyin_index + 1
+                            elseif i == #input_parts and #part == 1 then
+                                local prefix = py:sub(1, 2)
+                                local first_char = part:sub(1,1):lower()
+                                if first_char == "s" or first_char == "c" or first_char == "z" then
+                                    input_parts[i] = part
+                                else
+                                    if prefix == "zh" or prefix == "ch" or prefix == "sh" then
+                                        input_parts[i] = prefix
+                                    else
+                                        input_parts[i] = part
+                                    end
+                                end
+                            else
+                                if tone_isolate then
+                                    input_parts[i] = py .. (tone or "")
+                                else
+                                    input_parts[i] = py
+                                end
+                                pinyin_index = pinyin_index + 1
+                            end
                         end
                     end
                 end
@@ -560,28 +596,34 @@ function ZH.func(input, env)
         apply_tone_preedit(env, genuine_cand)
         -- 进入注释处理阶段
         -- ① 辅助码注释或者声调注释
-        if is_comment_hint then
+        if initial_comment and (string.find(initial_comment, "~") or cand.type == "shijian" or cand.type == "cnen") then
+            final_comment = initial_comment
+            
+        -- 2. 常规的辅助码提示模式
+        elseif is_comment_hint then
             local fz_comment = get_fz_comment(cand, env, initial_comment)
             if fz_comment then
                 final_comment = fz_comment
             end
+            
+        -- 3. 常规的带调拼音模式
         elseif is_tone_comment then
             local fz_comment = get_fz_comment(cand, env, initial_comment)
             if fz_comment then
                 final_comment = fz_comment
             end
+            
+        -- 4. 常规的无调拼音模式
         elseif is_toneless_comment then
             local fz_comment = get_fz_comment(cand, env, initial_comment)
             if fz_comment then
                 -- 获取到带调拼音后，调用 remove_pinyin_tone 去掉声调
                 final_comment = remove_pinyin_tone(fz_comment)
             end
+            
+        -- 5. 其他情况一律清空注释
         else
-            if initial_comment and string.find(initial_comment, "~") then --保留尾部临时英文标记
-                final_comment = initial_comment
-            else
-                final_comment = ""
-            end
+            final_comment = ""
         end
 
         -- ② 拆分注释
