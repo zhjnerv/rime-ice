@@ -146,8 +146,9 @@ patch:
       addlist: []
       blacklist: []
 
-  # Tips 配置项
-  tips:
+  super_tips:
+    db_name: "lua/tips"  # 可选字段，不写的话默认使用 "lua/tips"，相对路径
+    tips_key: "comma"    # key英文单词不清楚去default找
     # 禁用的 tips 类型，初始化 tips 数据库的时候会直接忽略相关规则，修改部署后生效
     # 可选项为：偏旁，符号，化学式，时间，符号，组字，翻译，表情，货币，车牌, 单位
     disabled_types: []
@@ -316,13 +317,12 @@ patch:
       qu: "??"
       sb: "sb"
 
-  #下面这个可以改变tips上屏的按键
-  key_binder/tips_key: "comma"
-  key_binder/sequence:
-    up: "Control+j"
-    down: "Control+k"
-    reset: "Control+l"
-    pin: "Control+p"
+  super_sequence:  # Lua 配置：手动排序的快捷键 super_sequence.lua，不要用方向键，各种冲突，一定要避免冲突
+    db_name: "lua/sequence"
+    up: "Control+j"    # 上移
+    down: "Control+k"  # 下移
+    reset: "Control+l" # 重置
+    pin: "Control+p"   # 置顶
 
   #开启自动无词频造词
   add_user_dict/enable_auto_phrase: true
