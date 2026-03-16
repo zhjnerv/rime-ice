@@ -140,6 +140,15 @@ super_processor:
   # select_character: "[,]"                      # [ 上屏首字，] 上屏尾字（推荐）
   # select_character: "bracketleft, bracketright"  # [ 上屏首字，] 上屏尾字（英文全拼）
 
+super_tips:
+  db_name: "lua/tips"  # 可选字段，不写的话默认使用 "lua/tips"，相对路径
+  tips_key: "comma"    # key英文单词不清楚去default找
+  disabled_types:
+    - "禁用类型A"
+    - "禁用类型B"
+    # 禁用的 tips 类型，初始化 tips 数据库的时候会直接忽略相关规则，修改部署后生效
+    # 可选项为：偏旁，符号，化学式，时间，符号，组字，翻译，表情，货币，车牌, 单位
+
 force_upper_aux:
   hotkey: "period"  #用来固定候选的快捷键，原理是用双大写字母定字,能用组合键能用符号Tab等，按一下固定当前可见候选，按两下固定N-1个字状态下记录的字
   symbol: "›" #用来替代双大写字母辅助的preedit视觉拉长的问题
@@ -151,17 +160,12 @@ tone_preedit:
   "9": "³"
   "0": "⁴"
 
-# Tips 配置项
-tips:
-  # 禁用的 tips 类型，初始化 tips 数据库的时候会直接忽略相关规则，修改部署后生效
-  # 可选项为：偏旁，符号，化学式，时间，符号，组字，翻译，表情，货币，车牌, 单位
-  disabled_types: []
-
-# 给 kp_number_processor 用的小键盘模式，能自动读取recognizer下面正则与之功能对齐
-kp_number_mode: auto
-  #小键盘数字处理逻辑
-  #  "compose" : 小键盘数字始终不上屏参与编码
-  #  "auto"    : 输入中 push，空闲时 commit（默认）
+super_sequence:  # Lua 配置：手动排序的快捷键 super_sequence.lua，不要用方向键，各种冲突，一定要避免冲突
+  db_name: "lua/sequence"
+  up: "Control+j"    # 上移
+  down: "Control+k"  # 下移
+  reset: "Control+l" # 重置
+  pin: "Control+p"   # 置顶
 
 super_replacer:
   db_name: lua/replacer
@@ -466,6 +470,27 @@ paired_symbols:
     qu: "??"
     sb: "sb"
 
+input_stats:
+  db_name: "lua/stats" # 自定义统计数据库路径
+  triggers:
+    clear: "/qctj"      # 清除数据（推荐长一点防误触）
+    today: "/rtj"       # 查今日（日统计）
+    week: "/ztj"        # 查本周（周统计）
+    month: "/ytj"       # 查本月（月统计）
+    year: "/ntj"        # 查本年（年统计）
+    total: "/tj"        # 查生涯（总统计）
+    history: "/htj"     # 时光机：查历史。用法示例输入：/htj20231015，从年月日依次递进，以t间隔查区间/htj20231015t20240102
+  
+# 如果你不配 titles，默认会使用内置的“打字流派”段位。
+# 如果你想魔改（比如修真流），就取消下面这段注释：
+#  titles:  #对齐：triggers
+#    - "0:初入道途·炼气期"
+#    - "10000:小有所成·筑基期"
+#    - "50000:凝真化虚·金丹期"
+#    - "100000:破茧成蝶·元婴期"
+#    - "500000:掌控法则·化神期"
+#    - "1000000:破碎虚空·渡劫期"
+
 # Lua 配置：计算器触发关键字
 calculator:
   trigger: "V"
@@ -584,15 +609,8 @@ punctuator:
 # 从 default 继承快捷键
 key_binder:
   import_preset: default  # 从 default.yaml 继承通用的
-  sequence: # Lua 配置：手动排序的快捷键 super_sequence.lua，不要用方向键，各种冲突，一定要避免冲突
-    up: "Control+j"    # 上移
-    down: "Control+k"  # 下移
-    reset: "Control+l" # 重置
-    pin: "Control+p"   # 置顶
   # Lua 配置: shijian.lua 的引导符，涉及：日期、时间、节日、节气、生日、问候模板等功能
   shijian_keys: ["/", "o"]
-  # Lua 配置: 超级tips上屏按键
-  tips_key: "comma"   #修改时候去default找
   bindings:             # 也可以再增加方案专有的
 # 通过按下/发送/+1节约一个按键，不冲突的时候可以开启
     #- { match: "[a-z]{1,4}", accept: "/",  send_sequence: "/1" }
