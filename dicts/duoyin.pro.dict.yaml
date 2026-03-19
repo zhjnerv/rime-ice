@@ -91,14 +91,14 @@ sort: by_weight
 她穿着	tā;ny chuān;xy,by zhuó;yo	394
 他穿着	tā;ry chuān;xy,by zhuó;yo	416
 一定还	yí;aa dìng;bp huán;zb	531
-将进酒	jiāng;pc jìn;zj jiǔ;dy	169
+将进酒	jiāng;pc,jc jìn;zj jiǔ;dy	169
 调了吧	tiáo;yv le;aa,vu ba;kb	170
 他调了	tā;ry tiáo;yv le;aa,vu	190
 我调了	wǒ;pd,pp tiáo;yv le;aa,vu	190
 又调了	yòu;vd,ad tiáo;yv le;aa,vu	280
-将棋手	jiāng;pc qí;mq shǒu;pa,ub	204
-将棋盘	jiāng;pc qí;mq pán;mv,vm	160
-将棋子	jiāng;pc qí;mq zǐ;aa,vh	155
+将棋手	jiāng;pc,jc qí;mq shǒu;pa,ub	204
+将棋盘	jiāng;pc,jc qí;mq pán;mv,vm	160
+将棋子	jiāng;pc,jc qí;mq zǐ;aa,vh	155
 这一	zhè;zw yí;aa	746
 这一	zhè;zw yì;aa	795
 炸焦	zhá;hv jiāo;hv,vh	410
@@ -182,12 +182,12 @@ sort: by_weight
 忒长了	tēi;xy,yx zhǎng;pd le;aa,vu	60
 没落到	méi;du luò;cl dào;dv	220
 没落地	mò;du luò;cl de;ty	310
-血债血还	xiě;pa,pm zhài;rz xiě;pa,pm huán;zb
-血债血偿	xiě;pa,pm zhài;rz xiě;pa,pm cháng;ri
+血债血还	xuè;pa,pm zhài;rz xiě;pa,pm huán;zb
+血债血偿	xuè;pa,pm zhài;rz xiě;pa,pm cháng;ri
 难兄难弟	nán;yv xiōng;ke nàn;yv dì;bp	12
-卡在那里	qiǎ;bx,ub zài;ta,ut nà;el lǐ;aa,tt	39
+卡在那里	qiǎ;bx,ub zài;ta,ut nà;el,ef lǐ;aa,tt	39
 卡在哪里	qiǎ;bx,ub zài;ta,ut nǎ;kn lǐ;aa,tt	32
-就卡在那里了	jiù;yj qiǎ;bx,ub zài;ta,ut nà;el lǐ;aa,tt le;aa,vu	1
+就卡在那里了	jiù;yj qiǎ;bx,ub zài;ta,ut nà;el,ef lǐ;aa,tt le;aa,vu	1
 碍着您了	ài;uc zháo;yo nín;xn le;aa,vu
 忒矮了吧	tēi;xy,yx ǎi;uw le;aa,vu ba;kb	60
 忒白了吧	tēi;xy,yx bái;pa,po le;aa,vu ba;kb	60
@@ -380,7 +380,7 @@ sort: by_weight
 还回去	hái;zb huí;kk qù;ts	290
 还回来	huán;zb huí;kk lái;am,wb	350
 还回来	hái;zb huí;kk lái;am,wb	460
-还给那	hái;zb gěi;sh nà;el	90
+还给那	hái;zb gěi;sh nà;el,ef	90
 还给你	hái;zb gěi;sh nǐ;re	250
 还给谁	hái;zb gěi;sh shuí;yv	50
 还给他	hái;zb gěi;sh tā;ry	250
@@ -414,7 +414,7 @@ sort: by_weight
 委屈	wěi;hn qu;ui	656
 精神	jīng;mq shen;uu	816
 朴树	pò;mb shù;md	400
-干将	gān;aa jiāng;pc
+干将	gān;aa jiāng;pc,jc
 长不长	cháng;pd bù;ad,ax cháng;pd	330
 长头发	cháng;pd tóu;dd fā;ay	500
 长头发	zhǎng;pd tóu;dd fā;ay	500
@@ -524,14 +524,14 @@ sort: by_weight
 搁这	gē;fg zhèi;zw	350
 跟这	gēn;zg zhèi;zw	480
 管这	guǎn;vg zhèi;zw	370
-将这	jiāng;pc zhèi;zw	600
+将这	jiāng;pc,jc zhèi;zw	600
 就这	jiù;yj zhèi;zw	640
 看这	kàn;ou,uo zhèi;zw	650
 靠这	kào;fg,nf zhèi;zw	460
 来这	lái;am,wb zhèi;zw	670
 离这	lí;ws,wl zhèi;zw	450
 没这	méi;du zhèi;zw	470
-那这	nà;el zhèi;zw	560
+那这	nà;el,ef zhèi;zw	560
 你这	nǐ;re zhèi;zw	660
 您这	nín;xn zhèi;zw	510
 瞧这	qiáo;oj zhèi;zw	460
@@ -673,7 +673,7 @@ sort: by_weight
 这价	zhèi;zw jià;rj	470
 这件	zhèi;zw jiàn;rn	680
 这间	zhèi;zw jiān;mo,om	620
-这将	zhèi;zw jiāng;pc	750
+这将	zhèi;zw jiāng;pc,jc	750
 这叫	zhèi;zw jiào;kj	630
 这脚	zhèi;zw jiǎo;oq	340
 这届	zhèi;zw jiè;uy	570
@@ -974,10 +974,10 @@ sort: by_weight
 换这个	huàn;fh zhèi;zw ge;ra,pa	380
 会这样	huì;ry zhèi;zw yàng;my	570
 会这种	huì;ry zhèi;zw zhǒng;hv	280
-将这个	jiāng;pc zhèi;zw ge;ra,pa	600
+将这个	jiāng;pc,jc zhèi;zw ge;ra,pa	600
 讲这个	jiǎng;yj zhèi;zw ge;ra,pa	510
 讲这话	jiǎng;yj zhèi;zw huà;yu	250
-将这些	jiāng;pc zhèi;zw xiē;ec	670
+将这些	jiāng;pc,jc zhèi;zw xiē;ec	670
 讲这些	jiǎng;yj zhèi;zw xiē;ec	610
 讲这种	jiǎng;yj zhèi;zw zhǒng;hv	390
 叫这个	jiào;kj zhèi;zw ge;ra,pa	540
@@ -1037,12 +1037,12 @@ sort: by_weight
 没这样	méi;du zhèi;zw yàng;my	330
 没这种	méi;du zhèi;zw zhǒng;hv	400
 莫这样	mò;cd,ct zhèi;zw yàng;my	110
-那这不	nà;el zhèi;zw bù;ad,ax	150
-那这个	nà;el zhèi;zw ge;ra,pa	580
+那这不	nà;el,ef zhèi;zw bù;ad,ax	150
+那这个	nà;el,ef zhèi;zw ge;ra,pa	580
 拿这个	ná;uh zhèi;zw ge;ra,pa	520
-那这会	nà;el zhèi;zw huì;ry	120
-那这就	nà;el zhèi;zw jiù;yj	380
-那这些	nà;el zhèi;zw xiē;ec	490
+那这会	nà;el,ef zhèi;zw huì;ry	120
+那这就	nà;el,ef zhèi;zw jiù;yj	380
+那这些	nà;el,ef zhèi;zw xiē;ec	490
 拿这些	ná;uh zhèi;zw xiē;ec	430
 闹这个	nào;mu zhèi;zw ge;ra,pa	200
 嫩这个	nèn;ni,nw zhèi;zw ge;ra,pa	240
@@ -1260,7 +1260,7 @@ sort: by_weight
 这本身	zhèi;zw běn;aa,ma shēn;pp	550
 这本书	zhèi;zw běn;aa,ma shū;ad,vd	870
 这壁画	zhèi;zw bì;tb,tx huà;ak	150
-这比那	zhèi;zw bǐ;bb nà;el	150
+这比那	zhèi;zw bǐ;bb nà;el,ef	150
 这笔钱	zhèi;zw bǐ;vm qián;jj	620
 这逼样	zhèi;zw bī;zf,zt yàng;my	250
 这笔债	zhèi;zw bǐ;vm zhài;rz	280
@@ -1443,7 +1443,7 @@ sort: by_weight
 这幅画	zhèi;zw fú;jf,jt huà;ak	630
 这附近	zhèi;zw fù;ef jìn;zj	570
 这幅图	zhèi;zw fú;jf,jt tú;kd	480
-这复杂	zhèi;zw fù;rw zá;jm,mj	250
+这复杂	zhèi;zw fù;rw,wo zá;jm,mj	250
 这嘎达	zhèi;zw gā;kg dá;zd	250
 这感觉	zhèi;zw gǎn;xx jué;dj,jb	510
 这杆枪	zhèi;zw gān;mg qiāng;mc	180
@@ -1704,8 +1704,8 @@ sort: by_weight
 这简单	zhèi;zw jiǎn;vj dān;ba,bd	340
 这件事	zhèi;zw jiàn;rn shì;aa	770
 这简直	zhèi;zw jiǎn;vj zhí;aa,uq	540
-这将是	zhèi;zw jiāng;pc shì;op,ov	590
-这将有	zhèi;zw jiāng;pc yǒu;ou,uo	150
+这将是	zhèi;zw jiāng;pc,jc shì;op,ov	590
+这将有	zhèi;zw jiāng;pc,jc yǒu;ou,uo	150
 这叫爱	zhèi;zw jiào;kj ài;vy	190
 这阶段	zhèi;zw jiē;ej duàn;du	430
 这节课	zhèi;zw jié;ce kè;yg	470
@@ -1782,7 +1782,7 @@ sort: by_weight
 这里好	zhèi;zw lǐ;aa,tt hǎo;nz	420
 这里会	zhèi;zw lǐ;aa,tt huì;ry	460
 这里建	zhèi;zw lǐ;aa,tt jiàn;zy	280
-这里将	zhèi;zw lǐ;aa,tt jiāng;pc	470
+这里将	zhèi;zw lǐ;aa,tt jiāng;pc,jc	470
 这里就	zhèi;zw lǐ;aa,tt jiù;yj	640
 这里来	zhèi;zw lǐ;aa,tt lái;am,wb	510
 这里连	zhèi;zw lǐ;aa,tt lián;zi	350
@@ -1791,7 +1791,7 @@ sort: by_weight
 这里没	zhèi;zw lǐ;aa,tt méi;du	460
 这里面	zhèi;zw lǐ;aa,tt miàn;aa	670
 这里木	zhèi;zw lǐ;aa,tt mù;ad	160
-这里那	zhèi;zw lǐ;aa,tt nà;el	310
+这里那	zhèi;zw lǐ;aa,tt nà;el,ef	310
 这里能	zhèi;zw lǐ;aa,tt néng;sb	430
 这里是	zhèi;zw lǐ;aa,tt shì;op,ov	720
 这里耍	zhèi;zw lǐ;aa,tt shuǎ;ne	150
@@ -1869,7 +1869,7 @@ sort: by_weight
 这明显	zhèi;zw míng;oo xiǎn;oy	460
 这名字	zhèi;zw míng;xk zì;bz	550
 这魔鬼	zhèi;zw mó;gm,mg guǐ;pd,ps	210
-这那的	zhèi;zw nà;el de;bu	310
+这那的	zhèi;zw nà;el,ef de;bu	310
 这哪是	zhèi;zw nǎ;kn shì;op,ov	460
 这哪行	zhèi;zw nǎ;kn xíng;xd,xi	220
 这难道	zhèi;zw nán;yv dào;zu	550
@@ -2545,7 +2545,7 @@ sort: by_weight
 熟女	shóu;hu nǚ;aa,vh	520
 熟皮	shóu;hu pí;ay,vy	220
 熟普	shóu;hu pǔ;ob,bo	370
-熟人	shóu;hu rén;pd	640
+熟人	shóu;hu rén;pd	570
 熟稔	shóu;hu rěn;hn	440
 熟肉	shóu;hu ròu;ad,kr	450
 熟食	shóu;hu shí;rl,pd	590
@@ -2727,10 +2727,10 @@ sort: by_weight
 几成熟	jǐ;py chéng;gg,wg shóu;hu	190
 几分熟	jǐ;py fēn;bd,db shóu;hu	260
 记熟了	jì;yj shóu;hu le;aa,vu	160
-将熟时	jiāng;pc shóu;hu shí;oc	270
-将熟睡	jiāng;pc shóu;hu shuì;oi	240
-将蒸熟	jiāng;pc zhēng;hv,ch shóu;hu	280
-将煮熟	jiāng;pc zhǔ;hv shóu;hu	130
+将熟时	jiāng;pc,jc shóu;hu shí;oc	270
+将熟睡	jiāng;pc,jc shóu;hu shuì;oi	240
+将蒸熟	jiāng;pc,jc zhēng;hv,ch shóu;hu	280
+将煮熟	jiāng;pc,jc zhǔ;hv shóu;hu	130
 较成熟	jiào;ij chéng;gg,wg shóu;hu	180
 九成熟	jiǔ;py chéng;gg,wg shóu;hu	170
 九分熟	jiǔ;py fēn;bd,db shóu;hu	130
@@ -2845,7 +2845,7 @@ sort: by_weight
 熟练后	shóu;hu liàn;sd,sj hòu;pk	210
 熟练活	shóu;hu liàn;sd,sj huó;du	10
 熟练了	shóu;hu liàn;sd,sj le;aa,vu	150
-熟练那	shóu;hu liàn;sd,sj nà;el	60
+熟练那	shóu;hu liàn;sd,sj nà;el,ef	60
 熟练时	shóu;hu liàn;sd,sj shí;oc	170
 熟练性	shóu;hu liàn;sd,sj xìng;xu	110
 熟练于	shóu;hu liàn;sd,sj yú;aa	90
@@ -3061,7 +3061,7 @@ sort: by_weight
 骂谁	mà;km,mk shéi;yv	350
 没谁	méi;du shéi;yv	410
 蒙谁	méng;cm,cu shéi;yv	200
-那谁	nà;el shéi;yv	490
+那谁	nà;el,ef shéi;yv	490
 怕谁	pà;xb shéi;yv	310
 陪谁	péi;ek,ep shéi;yv	260
 娶谁	qǔ;nq shéi;yv	280
@@ -3098,7 +3098,7 @@ sort: by_weight
 谁坏	shéi;yv huài;tb	380
 谁会	shéi;yv huì;ry	630
 谁家	shéi;yv jiā;bu	550
-谁将	shéi;yv jiāng;pc	520
+谁将	shéi;yv jiāng;pc,jc	520
 谁叫	shéi;yv jiào;kj	550
 谁教	shéi;yv jiào;wx	340
 谁接	shéi;yv jiē;fq	290
@@ -3241,7 +3241,7 @@ sort: by_weight
 归谁管	guī;ax,dx shéi;yv guǎn;vg	340
 还是谁	hái;zb shì;op,ov shéi;yv	350
 还有谁	hái;zb yǒu;ou,uo shéi;yv	540
-和那谁	hé;hk nà;el shéi;yv	240
+和那谁	hé;hk nà;el,ef shéi;yv	240
 和谁啊	hé;hk shéi;yv a;ka	190
 和谁家	hé;hk shéi;yv jiā;bu	150
 和谁了	hé;hk shéi;yv le;aa,vu	150
@@ -3284,9 +3284,9 @@ sort: by_weight
 没谁了	méi;du shéi;yv le;aa,vu	480
 没有谁	méi;du yǒu;ou,uo shéi;yv	550
 模仿谁	mó;mm fǎng;rf shéi;yv	290
-那个谁	nà;el gè;ra,pa shéi;yv	430
-那是谁	nà;el shì;op,ov shéi;yv	360
-那谁谁	nà;el shéi;yv shéi;yv	380
+那个谁	nà;el,ef gè;ra,pa shéi;yv	430
+那是谁	nà;el,ef shì;op,ov shéi;yv	360
+那谁谁	nà;el,ef shéi;yv shéi;yv	380
 内小谁	nèi;ad,kr xiǎo;ad shéi;yv	110
 能怪谁	néng;sb guài;xu shéi;yv	360
 能有谁	néng;sb yǒu;ou,uo shéi;yv	250
@@ -3765,7 +3765,7 @@ sort: by_weight
 谁在看	shéi;yv zài;ta,ut kàn;ou,uo	230
 谁在买	shéi;yv zài;ta,ut mǎi;at,vt	330
 谁在卖	shéi;yv zài;ta,ut mài;um	220
-谁在那	shéi;yv zài;ta,ut nà;el	230
+谁在那	shéi;yv zài;ta,ut nà;el,ef	230
 谁在说	shéi;yv zài;ta,ut shuō;yd	280
 谁在玩	shéi;yv zài;ta,ut wán;wy	230
 谁在线	shéi;yv zài;ta,ut xiàn;sj	90
@@ -3973,7 +3973,7 @@ sort: by_weight
 关心过谁	guān;bt,qd xīn;dd guò;zc shéi;yv	1
 归谁管啊	guī;ax,dx shéi;yv guǎn;vg a;ka	6
 哈谁知道	hā;kh shéi;yv zhī;uk,ku dào;zu	16
-还有那谁	hái;zb yǒu;ou,uo nà;el shéi;yv	21
+还有那谁	hái;zb yǒu;ou,uo nà;el,ef shéi;yv	21
 还有谁了	hái;zb yǒu;ou,uo shéi;yv le;aa,vu	14
 还有谁去	hái;zb yǒu;ou,uo shéi;yv qù;ts	25
 还有谁在	hái;zb yǒu;ou,uo shéi;yv zài;ta,ut	1
@@ -4026,12 +4026,12 @@ sort: by_weight
 名之者谁	míng;xk zhī;dd zhě;lo,ol shéi;yv	14
 莫敢谁何	mò;cd,ct gǎn;we shéi;yv hé;rk	13
 莫之谁何	mò;cd,ct zhī;dd shéi;yv hé;rk	1
-那个谁谁	nà;el gè;ra,pa shéi;yv shéi;yv	39
-那是谁的	nà;el shì;op,ov shéi;yv de;bu	1
-那是谁了	nà;el shì;op,ov shéi;yv le;aa,vu	11
-那谁到了	nà;el shéi;yv dào;dv le;aa,vu	1
-那谁谁谁	nà;el shéi;yv shéi;yv shéi;yv	45
-那谁知道	nà;el shéi;yv zhī;uk,ku dào;zu	28
+那个谁谁	nà;el,ef gè;ra,pa shéi;yv shéi;yv	39
+那是谁的	nà;el,ef shì;op,ov shéi;yv de;bu	1
+那是谁了	nà;el,ef shì;op,ov shéi;yv le;aa,vu	11
+那谁到了	nà;el,ef shéi;yv dào;dv le;aa,vu	1
+那谁谁谁	nà;el,ef shéi;yv shéi;yv shéi;yv	45
+那谁知道	nà;el,ef shéi;yv zhī;uk,ku dào;zu	28
 能代表谁	néng;sb dài;ry biǎo;fy shéi;yv	16
 你猜是谁	nǐ;re cāi;qq shì;op,ov shéi;yv	28
 你跟谁过	nǐ;re gēn;zg shéi;yv guò;zc	1
@@ -4065,7 +4065,7 @@ sort: by_weight
 你找谁呀	nǐ;re zhǎo;fg shéi;yv ya;ky	13
 你支持谁	nǐ;re zhī;uy chí;fs shéi;yv	35
 你知道谁	nǐ;re zhī;uk,ku dào;zu shéi;yv	30
-哦那个谁	ó;kw nà;el gè;ra,pa shéi;yv	11
+哦那个谁	ó;kw nà;el,ef gè;ra,pa shéi;yv	11
 凭谁妙笔	píng;jr shéi;yv miào;nu bǐ;vm	1
 其谁从焉	qí;ba shéi;yv cóng;rr yān;vh	9
 其谁知之	qí;ba shéi;yv zhī;uk,ku zhī;dd	4
@@ -4077,7 +4077,7 @@ sort: by_weight
 人在谁边	rén;pd zài;ta,ut shéi;yv biān;zl	12
 舍你其谁	shě;ru nǐ;re qí;ba shéi;yv	1
 舍他其谁	shě;ru tā;ry qí;ba shéi;yv	25
-舍我复谁	shě;ru wǒ;pd,pp fù;rw shéi;yv	1
+舍我复谁	shě;ru wǒ;pd,pp fù;rw,wo shéi;yv	1
 舍我其谁	shě;ru wǒ;pd,pp qí;ba shéi;yv	54
 生父是谁	shēng;na fù;bi,pd shì;op,ov shéi;yv	27
 生母是谁	shēng;na mǔ;ad,vd shì;op,ov shéi;yv	24
@@ -4233,7 +4233,7 @@ sort: by_weight
 谁没有爹	shéi;yv méi;du yǒu;ou,uo diē;fd	1
 谁没有娘	shéi;yv méi;du yǒu;ou,uo niáng;nl	1
 谁没有情	shéi;yv méi;du yǒu;ou,uo qíng;xq	1
-谁那么早	shéi;yv nà;el me;ps zǎo;ou	8
+谁那么早	shéi;yv nà;el,ef me;ps zǎo;ou	8
 谁哪知道	shéi;yv nǎ;kn zhī;uk,ku dào;zu	1
 谁能不听	shéi;yv néng;sb bù;ad,ax tīng;kj	1
 谁能猜到	shéi;yv néng;sb cāi;qq dào;dv	32
@@ -4328,7 +4328,7 @@ sort: by_weight
 谁也不弄	shéi;yv yě;gg bú;ad,ax nòng;cw,wc	1
 谁一会儿	shéi;yv yí;aa huì;ry er;pg	14
 谁又不是	shéi;yv yòu;vd,ad bú;ad,ax shì;op,ov	40
-谁又复活	shéi;yv yòu;vd,ad fù;rw huó;du	1
+谁又复活	shéi;yv yòu;vd,ad fù;rw,wo huó;du	1
 谁又是谁	shéi;yv yòu;vd,ad shì;op,ov shéi;yv	16
 谁优谁劣	shéi;yv yōu;ry shéi;yv liè;lu	41
 谁又在乎	shéi;yv yòu;vd,ad zài;ta,ut hū;pa	29
@@ -4355,7 +4355,7 @@ sort: by_weight
 谁在浪费	shéi;yv zài;ta,ut làng;dl fèi;bf,fb	1
 谁在里面	shéi;yv zài;ta,ut lǐ;aa,tt miàn;aa	21
 谁在裸泳	shéi;yv zài;ta,ut luǒ;yg yǒng;dy	45
-谁在那里	shéi;yv zài;ta,ut nà;el lǐ;aa,tt	25
+谁在那里	shéi;yv zài;ta,ut nà;el,ef lǐ;aa,tt	25
 谁在秋千	shéi;yv zài;ta,ut qiū;hh qiān;pa	11
 谁在撒谎	shéi;yv zài;ta,ut sā;fs huǎng;yh	27
 谁在说话	shéi;yv zài;ta,ut shuō;yd huà;yu	32
@@ -4379,7 +4379,7 @@ sort: by_weight
 谁知道了	shéi;yv zhī;uk,ku dào;zu le;aa,vu	28
 谁知道里	shéi;yv zhī;uk,ku dào;zu lǐ;aa,tt	13
 谁知道呐	shéi;yv zhī;uk,ku dào;zu nà;kn	15
-谁知到那	shéi;yv zhī;uk,ku dào;dv nà;el	14
+谁知到那	shéi;yv zhī;uk,ku dào;dv nà;el,ef	14
 谁知道囊	shéi;yv zhī;uk,ku dào;zu náng;ay	1
 谁知道呢	shéi;yv zhī;uk,ku dào;zu ne;kn	60
 谁知道你	shéi;yv zhī;uk,ku dào;zu nǐ;re	47
@@ -4670,7 +4670,7 @@ sort: by_weight
 两个足	liǎng;ad gè;ra,pa zú;kv	1
 两个左	liǎng;ad gè;ra,pa zuǒ;gu,ug	1
 买了布	mǎi;at,vt le;aa,vu bù;ju,uj	1
-那是蝉	nà;el shì;op,ov chán;id	1
+那是蝉	nà;el,ef shì;op,ov chán;id	1
 跑了兔	pǎo;zb le;aa,vu tù;dd	1
 青葡萄	qīng;of,fo pú;cp táo;cf,ct	1
 认真学	rèn;yr zhēn;uj xué;dz,zb	1
@@ -5164,7 +5164,7 @@ sort: by_weight
 小渠水流进大渠	xiǎo;ad qú;mj shuǐ;ad,uv liú;di jìn;zj dà;ad qú;mj	1
 小猪小猪扛锄头	xiǎo;ad zhū;qv xiǎo;ad zhū;qv káng;fg chú;jv tou;dd	1
 行到桥心碰了头	xíng;xd,xi dào;dv qiáo;mq xīn;dd pèng;ub le;aa,vu tóu;dd	1
-休将十字说成四	xiū;rm jiāng;pc shí;aa zì;bz shuō;yd chéng;gg,wg sì;aa,ke	1
+休将十字说成四	xiū;rm jiāng;pc,jc shí;aa zì;bz shuō;yd chéng;gg,wg sì;aa,ke	1
 压死了杨家的羊	yā;id,it sǐ;db le;aa,vu yáng;my jiā;bu de;bu yáng;da	1
 丫丫只会吹喇叭	yā;ba,da yā;ba,da zhǐ;kb huì;ry chuī;kq lǎ;kd,kl bā;kb	1
 眼看着梨手捏泥	yǎn;og kàn;ou,uo zhe;yo lí;ml shǒu;pa,ub niē;fn,ft ní;dn	1
@@ -5232,14 +5232,14 @@ sort: by_weight
 羊蒋家砌了一垛墙	yáng;da jiǎng;cj jiā;bu qì;uq le;aa,vu yī;aa duǒ;td qiáng;th	1
 捉壁虎李虎捉壁虎	zhuō;fz bì;tb,tx hǔ;hj lǐ;mz hǔ;hj zhuō;fz bì;tb,tx hǔ;hj	1
 白家门前一棵白果树	bái;pa,po jiā;bu mén;dg qián;bd,qd yì;aa kē;mg bái;pa,po guǒ;ad,tm shù;md	1
-扁担绑在那个板凳上	biǎn;hc dàn;fd bǎng;sb zài;ta,ut nà;el gè;ra,pa bǎn;mf dèng;jd shàng;aa,ba	1
+扁担绑在那个板凳上	biǎn;hc dàn;fd bǎng;sb zài;ta,ut nà;el,ef gè;ra,pa bǎn;mf dèng;jd shàng;aa,ba	1
 别喇叭的哑巴吹喇叭	bié;dl lǎ;kd,kl bā;kb de;bu yǎ;ky bā;ag chuī;kq lǎ;kd,kl bā;kb	1
 剥了秕谷壳儿补鼻子	bō;dl le;aa,vu bǐ;hb gǔ;bk,kr ké;uj er;pg bǔ;yb bí;zb,zq zi;aa,vh	1
 不剥秕谷壳儿补鼻子	bù;ad,ax bō;dl bǐ;hb gǔ;bk,kr ké;uj er;pg bǔ;yb bí;zb,zq zi;aa,vh	1
 不吃葡萄倒吐葡萄皮	bù;ad,ax chī;kq pú;cp táo;cf,ct dào;rd tǔ;kt pú;cp táo;cf,ct pí;ay,vy	1
 不管是天上的热日头	bù;ad,ax guǎn;vg shì;op,ov tiān;ad shàng;aa,ba de;bu rè;hv rì;aa,or tou;dd	1
 不知是严圆眼的眼圆	bù;ad,ax zhī;uk,ku shì;op,ov yán;ap,yp yuán;ky yǎn;og de;bu yǎn;og yuán;ky	1
-打那百十百个白斑鸠	dǎ;fd nà;el bǎi;ab shí;aa bǎi;ab gè;ra,pa bái;pa,po bān;ww jiū;nj	1
+打那百十百个白斑鸠	dǎ;fd nà;el,ef bǎi;ab shí;aa bǎi;ab gè;ra,pa bái;pa,po bān;ww jiū;nj	1
 地下是石头不是日头	dì;ty xià;ab,ad shì;op,ov shí;kp,pk tou;dd bú;ad,ax shì;op,ov rì;aa,or tou;dd	1
 董两家的冬瓜比桶大	dǒng;cv liǎng;ad jiā;bu de;bu dōng;wd guā;pd bǐ;bb tǒng;my dà;ad	1
 胳膊上挎着个破笆斗	gē;og bo;oc,of shàng;aa,ba kuà;fk zhe;yo gè;ra,pa pò;up bā;vb dǒu;du	1
@@ -5332,7 +5332,7 @@ sort: by_weight
 也惦着梁上的两对倒吊鸟	yě;gg diàn;xd zhe;yo liáng;mb shàng;aa,ba de;bu liǎng;ad duì;cy,yc dào;rd diào;kj niǎo;na,pa	1
 再吃掉篮子里几个软鸡卵	zài;aa,at chī;kq diào;fv lán;vj zi;aa,vh lǐ;aa,tt jǐ;py gè;ra,pa ruǎn;iq jī;ny,yn luǎn;pd,md	1
 种冬瓜东门童家门东董家	zhǒng;hv dōng;wd guā;pd dōng;ad,qx mén;dg tóng;ll jiā;bu mén;dg dōng;ad,qx dǒng;cv jiā;bu	1
-板凳不让扁担绑在那板凳上	bǎn;mf dèng;jd bú;ad,ax ràng;yu biǎn;hc dàn;fd bǎng;sb zài;ta,ut nà;el bǎn;mf dèng;jd shàng;aa,ba	1
+板凳不让扁担绑在那板凳上	bǎn;mf dèng;jd bú;ad,ax ràng;yu biǎn;hc dàn;fd bǎng;sb zài;ta,ut nà;el,ef bǎn;mf dèng;jd shàng;aa,ba	1
 还是崔腿粗比崔粗腿的腿粗	hái;zb shì;op,ov cuī;uv tuǐ;ot cū;mq bǐ;bb cuī;uv cū;mq tuǐ;ot de;bu tuǐ;ot cū;mq	1
 还是严眼圆比严圆眼的眼圆	hái;zb shì;op,ov yán;ap,yp yǎn;og yuán;ky bǐ;bb yán;ap,yp yuán;ky yǎn;og de;bu yǎn;og yuán;ky	1
 荷花和蛤蟆一朵粉红大荷花	hé;ch huā;ch hé;hk há;ih má;im yì;aa duǒ;mj,jm fěn;mf hóng;sg dà;ad hé;ch huā;ch	1
@@ -5349,7 +5349,7 @@ sort: by_weight
 横竖两次撕了四十四张湿字纸	héng;mh shù;ly liǎng;ad cì;dq sī;fs le;aa,vu sì;aa,ke shí;aa sì;aa,ke zhāng;gi shī;dx zì;bz zhǐ;su	1
 看见伯爹伯妈门前种着白果树	kàn;ou,uo jiàn;ag,ek,ke bó;rb diē;fd bó;rb mā;nm mén;dg qián;bd,qd zhǒng;hv zhe;yo bái;pa,po guǒ;ad,tm shù;md	1
 丽丽和弟弟丽丽家来了小弟弟	lì;ad lì;ad hé;hk dì;bp di;bp lì;ad lì;ad jiā;bu lái;am,wb le;aa,vu xiǎo;ad dì;bp dì;bp	1
-那个扁担偏要绑在那个板凳上	nà;el gè;ra,pa biǎn;hc dàn;fd piān;rb yào;xn bǎng;sb zài;ta,ut nà;el gè;ra,pa bǎn;mf dèng;jd shàng;aa,ba	1
+那个扁担偏要绑在那个板凳上	nà;el,ef gè;ra,pa biǎn;hc dàn;fd piān;rb yào;xn bǎng;sb zài;ta,ut nà;el,ef gè;ra,pa bǎn;mf dèng;jd shàng;aa,ba	1
 年四十的史肖石发现了好诗词	nián;ra,pa sì;aa,ke shí;aa de;bu shǐ;ad,ki xiào;ox,xo shí;kp,pk fā;ay xiàn;wj le;aa,vu hǎo;nz shī;ys cí;ys	1
 三十三的弟子用了四十四小时	sān;aa shí;aa sān;aa de;bu dì;bp zǐ;aa,vh yòng;kf le;aa,vu sì;aa,ke shí;aa sì;aa,ke xiǎo;ad shí;oc	1
 寺前树上结了四十四个涩柿子	sì;ct,tc qián;bd,qd shù;md shàng;aa,ba jié;sj le;aa,vu sì;aa,ke shí;aa sì;aa,ke gè;ra,pa sè;dv shì;mu zi;aa,vh	1
