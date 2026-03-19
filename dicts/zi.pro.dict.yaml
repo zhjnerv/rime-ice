@@ -8000,7 +8000,7 @@ sort: by_weight
 𪍹	dú;mu	1
 𪐞	dù;hv,hq	1
 段	duàn;du	769
-断	duàn;ja	764
+断	duàn;ja,jm,jv	764
 短	duǎn;ud	737
 端	duān;le	727
 锻	duàn;jd	652
@@ -9645,7 +9645,7 @@ sort: by_weight
 𫒘	fǒu;	1
 𠳝	fǒu;	1
 服	fú;oy	811
-复	fù;rw	780
+复	fù;rw,wo	780
 府	fǔ;gf	748
 富	fù;bf,bt	748
 福	fú;uf,ut	747
@@ -14330,7 +14330,7 @@ sort: by_weight
 洃	huī;dh	171
 溃	huì;dg	164
 佪	huí;rh	157
-撝	huī;fw	157
+㧑	huī;fw	157
 僡	huì;rh	150
 楎	huī;mj	150
 詼	huī;yh	150
@@ -14392,6 +14392,7 @@ sort: by_weight
 褘	huī;yw	23
 媈	huī;nj	23
 獩	huì;qs	23
+撝	huī;fw	15
 屷	huì;un	1
 檅	huì;ms	1
 蘳	huī;cg	1
@@ -14578,7 +14579,6 @@ sort: by_weight
 𫖐	huī;	1
 𫝨	huī;	1
 𬭬	huì;jh	1
-㧑	huī;fw	1
 婚	hūn;nh	734
 混	hùn;dk	700
 魂	hún;gy,yg	640
@@ -16262,13 +16262,13 @@ sort: by_weight
 𫞔	jiān;	1
 𫠗	jiǎn;	1
 𰾫	jiàn;	1
-将	jiāng;pc	825
+将	jiāng;pc,jc	825
 江	jiāng;dg	753
 讲	jiǎng;yj	749
 降	jiàng;ef,ej	747
 奖	jiǎng;dx	737
 酱	jiàng;yx	694
-将	jiàng;pc	669
+将	jiàng;pc,jc	669
 姜	jiāng;ny,yn	648
 疆	jiāng;gj	640
 浆	jiāng;ux	621
@@ -23009,7 +23009,6 @@ sort: by_weight
 觻	lù;jl,jy	1
 賁	lù;bh	1
 輅	lù;ig	1
-馿	lú;mh	1
 鴼	lù;ng	1
 㓐	lù;dl	1
 㔪	lǔ;gl	1
@@ -23531,6 +23530,7 @@ sort: by_weight
 穭	lǚ;hl	23
 繂	lǜ;sl,su	23
 膢	lǘ;ol	23
+馿	lǘ;mh	11
 焒	lǚ;hl	1
 䕡	lǘ;cl	1
 僂	lǚ;rl	1
@@ -25623,7 +25623,7 @@ sort: by_weight
 嗯	ň;ke	1
 㕶	ň;	1
 𠮾	ǹ;	1
-那	nà;el	834
+那	nà;el,ef	834
 哪	nǎ;kn	781
 拿	ná;uh	748
 纳	nà;sn	730
@@ -25633,7 +25633,7 @@ sort: by_weight
 内	nà;ad,kr	466
 南	nā;ua,uy	445
 捺	nà;fn	444
-那	nǎ;el	379
+那	nǎ;el,ef	379
 納	nà;sn	371
 雫	nǎ;yx	369
 衲	nà;yn	367
@@ -25664,7 +25664,7 @@ sort: by_weight
 笚	nà;vj	1
 蒘	ná;cu,ur	1
 誽	ná;ye	1
-那	nā;el	1
+那	nā;el,ef	1
 郍	nà;ev,ve	1
 㗙	nà;ki	1
 㙁	nà;tm	1
@@ -26062,7 +26062,7 @@ sort: by_weight
 䲎	něi;yg	1
 氞	nèi;qb	1
 浽	něi;dt	1
-那	nèi;el	1
+那	nèi;el,ef	1
 餧	něi;uw	1
 㐻	nèi;rn	1
 㖏	nèi;kn,kt	1
