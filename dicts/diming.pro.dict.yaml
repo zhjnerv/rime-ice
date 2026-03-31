@@ -2174,6 +2174,7 @@ sort: by_weight
 陈沟村	chén;ed gōu;dg cūn;mc	188
 陈古镇	chén;ed gǔ;uk zhèn;jv	133
 陈固镇	chén;ed gù;kg zhèn;jv	1
+陈官营	chén;ed guān;bg,bk yíng;cl
 陈官镇	chén;ed guān;bg,bk zhèn;jv	1
 陈官庄	chén;ed guān;bg,bk zhuāng;gt	282
 晨光镇	chén;oi guāng;ea,xw zhèn;jv	1
@@ -10312,6 +10313,7 @@ sort: by_weight
 林坊镇	lín;mm fāng;tf zhèn;jv	1
 临汾县	lín;ao,do fén;df xiàn;sq,qs	140
 林峰乡	lín;mm fēng;uf xiāng;ap,vp	1
+林凤营	lín;mm fèng;jy yíng;cl
 林逢镇	lín;mm féng;zf zhèn;jv	1
 邻封镇	lín;el fēng;cg zhèn;jv	1
 林凤镇	lín;mm fèng;jy zhèn;jv	1
@@ -11130,6 +11132,7 @@ sort: by_weight
 庐山市	lú;gh shān;aa shì;wj	157
 芦山县	lú;ch shān;aa xiàn;sq,qs	214
 鲁山县	lǔ;yo shān;aa xiàn;sq,qs	201
+鲁山窑	lǔ;yo shān;aa yáo;xf,bf
 炉山镇	lú;hh shān;aa zhèn;jv	1
 芦山镇	lú;ch shān;aa zhèn;jv	1
 卢氏县	lú;bu shì;pg xiàn;sq,qs	216
@@ -11597,6 +11600,7 @@ sort: by_weight
 马厂村	mǎ;aa,vh chǎng;ap cūn;mc	208
 马厂乡	mǎ;aa,vh chǎng;ap xiāng;ap,vp	171
 马场乡	mǎ;aa,vh chǎng;ty xiāng;ap,vp	120
+马昌营	mǎ;aa,vh chāng;oo yíng;cl
 马厂镇	mǎ;aa,vh chǎng;ap zhèn;jv	258
 马场镇	mǎ;aa,vh chǎng;ty zhèn;jv	239
 马畅镇	mǎ;aa,vh chàng;uy zhèn;jv	1
@@ -11659,6 +11663,7 @@ sort: by_weight
 马关村	mǎ;aa,vh guān;bt,qd cūn;mc	1
 马关县	mǎ;aa,vh guān;bt,qd xiàn;sq,qs	178
 马关乡	mǎ;aa,vh guān;bt,qd xiāng;ap,vp	167
+马官营	mǎ;aa,vh guān;bg,bk yíng;cl
 马灌镇	mǎ;aa,vh guàn;dv zhèn;jv	1
 马官镇	mǎ;aa,vh guān;bg,bk zhèn;jv	1
 马关镇	mǎ;aa,vh guān;bt,qd zhèn;jv	1
@@ -11753,6 +11758,7 @@ sort: by_weight
 马莲村	mǎ;aa,vh lián;cl cūn;mc	82
 麻莲乡	má;gl lián;cl xiāng;ap,vp	1
 马莲乡	mǎ;aa,vh lián;cl xiāng;ap,vp	1
+马练营	mǎ;aa,vh liàn;sd,sj yíng;cl
 马连镇	mǎ;aa,vh lián;zi zhèn;jv	1
 马连庄	mǎ;aa,vh lián;zi zhuāng;gt	236
 马梁村	mǎ;aa,vh liáng;mb cūn;mc	82
@@ -11808,6 +11814,7 @@ sort: by_weight
 马坡镇	mǎ;aa,vh pō;tp zhèn;jv	259
 马铺村	mǎ;aa,vh pù;jf cūn;mc	1
 马铺乡	mǎ;aa,vh pù;jf xiāng;ap,vp	133
+马铺营	mǎ;aa,vh pù;jf yíng;cl
 马铺镇	mǎ;aa,vh pù;jf zhèn;jv	1
 马前村	mǎ;aa,vh qián;bd,qd cūn;mc	52
 马前乡	mǎ;aa,vh qián;bd,qd xiāng;ap,vp	1
@@ -16407,6 +16414,7 @@ sort: by_weight
 松江县	sōng;mg jiāng;dg xiàn;sq,qs	146
 松江乡	sōng;mg jiāng;dg xiāng;ap,vp	1
 松江镇	sōng;mg jiāng;dg zhèn;jv	258
+宋军营	sòng;bm jūn;bi yíng;cl
 松坎镇	sōng;mg kǎn;tq zhèn;jv	1
 嵩口镇	sōng;ug kǒu;aa zhèn;jv	1
 松口镇	sōng;mg kǒu;aa zhèn;jv	1
@@ -17043,6 +17051,7 @@ sort: by_weight
 桃城镇	táo;mv chéng;ti zhèn;jv	1
 陶城镇	táo;ef,et chéng;ti zhèn;jv	1
 桃川镇	táo;mv chuān;pa zhèn;jv	1
+陶瓷窑	táo;ef,et cí;wc yáo;xf,bf
 陶村乡	táo;ef,et cūn;mc xiāng;ap,vp	1
 陶村镇	táo;ef,et cūn;mc zhèn;jv	181
 桃村镇	táo;mv cūn;mc zhèn;jv	1
@@ -18027,6 +18036,7 @@ sort: by_weight
 王桥镇	wáng;aa qiáo;mq zhèn;jv	229
 汪桥镇	wāng;dw qiáo;mq zhèn;jv	1
 汪清县	wāng;dw qīng;dq xiàn;sq,qs	174
+王清营	wáng;aa qīng;dq yíng;cl
 汪清镇	wāng;dw qīng;dq zhèn;jv	1
 王曲村	wáng;aa qǔ;aa,oa cūn;mc	167
 王渠村	wáng;aa qú;mj cūn;mc	69
@@ -18043,6 +18053,7 @@ sort: by_weight
 网市镇	wǎng;ki shì;wj zhèn;jv	1
 望树镇	wàng;wo shù;md zhèn;jv	1
 王寺村	wáng;aa sì;ct,tc cūn;mc	210
+王四营	wáng;aa sì;aa,ke yíng;cl
 王泗镇	wáng;aa sì;ds zhèn;jv	201
 王寺镇	wáng;aa sì;ct,tc zhèn;jv	69
 王宋村	wáng;aa sòng;bm cūn;mc	69
@@ -18126,6 +18137,7 @@ sort: by_weight
 王寨乡	wáng;aa zhài;mb,bm xiāng;ap,vp	215
 王宅镇	wáng;aa zhái;bq,bt zhèn;jv	237
 王寨镇	wáng;aa zhài;mb,bm zhèn;jv	191
+王战营	wáng;aa zhàn;gv yíng;cl
 王赵村	wáng;aa zhào;zi cūn;mc	94
 王召村	wáng;aa zhào;dk,kd cūn;mc	52
 王召乡	wáng;aa zhào;dk,kd xiāng;ap,vp	139
@@ -22022,6 +22034,7 @@ sort: by_weight
 月照乡	yuè;oy,pa zhào;hv xiāng;ap,vp	1
 曰者镇	yuē;aa zhě;lo,ol zhèn;jv	1
 悦中乡	yuè;xd zhōng;aa,ka xiāng;ap,vp	1
+岳州窑	yuè;uq,qu zhōu;id,da yáo;xf,bf
 越州镇	yuè;zy zhōu;id,da zhèn;jv	1
 岳庄村	yuè;uq,qu zhuāng;gt cūn;mc	201
 悦庄镇	yuè;xd zhuāng;gt zhèn;jv	1
