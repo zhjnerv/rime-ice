@@ -89,6 +89,7 @@ sort: by_weight
 伌	ài;re	38
 塧	ài;ty	23
 濭	ǎi;dg,dm	23
+諰	āi;ys	6
 鴱	ài;na	1
 𫘤	ái;	1
 㤅	ài;xj	1
@@ -105,7 +106,6 @@ sort: by_weight
 焥	ài;hw	1
 磑	ái;ud,uq	1
 絠	ǎi;sy	1
-諰	āi;ys	1
 賹	ài;by	1
 隑	ái;ed,eq	1
 㑸	ǎi;rk	1
@@ -14930,6 +14930,7 @@ sort: by_weight
 機	jī;mj	485
 伎	jì;rv	484
 荠	jì;cq	480
+讥	jī;yj	477
 期	jī;oq,qo	476
 畿	jī;tg,yg	474
 蓟	jì;cd,cj	471
@@ -14938,7 +14939,6 @@ sort: by_weight
 計	jì;yu	461
 雞	jī;vx	457
 骥	jì;mg,mj	457
-讥	jī;yj	457
 稷	jì;hw	455
 岌	jí;uj	453
 箕	jī;vq	452
@@ -20843,6 +20843,7 @@ sort: by_weight
 貍	lí;vl	306
 暦	lì;io,ol	305
 詈	lì;sy	304
+蜊	lì;il	295
 疬	lì;bl	287
 呖	lì;kl	286
 黧	lí;hd,hh	285
@@ -20982,6 +20983,7 @@ sort: by_weight
 鯬	lí;yd	23
 孋	lí;nl	23
 爄	lì;hl,hw	23
+蜊	lí;il	17
 廲	lí;gl	1
 糲	lì;ml,mw	1
 𫁡	lì;	1
@@ -21032,7 +21034,6 @@ sort: by_weight
 砬	lì;ul	1
 纅	lì;sl,sy	1
 纚	lǐ;sl	1
-蜊	lì;il	1
 蟸	lí;iu,ui	1
 迣	lì;zu	1
 銐	lì;jl	1
@@ -21383,7 +21384,6 @@ sort: by_weight
 𫟫	lì;	1
 𫵷	lì;ul	1
 𭀖	lí;	1
-蜊	lí;il	1
 蠡	lí;it,iu	1
 𢃇	lǐ;	1
 𥅈	lì;	1
@@ -49898,6 +49898,7 @@ sort: by_weight
 篹	zhuàn;ve	82
 灷	zhuàn;ch,hc	82
 腞	zhuàn;ot,ou	75
+傳	zhuàn;rv	70
 蒃	zhuàn;ct,cu	68
 瑼	zhuān;wv	68
 䏝	zhuān;ov	1
@@ -49906,7 +49907,6 @@ sort: by_weight
 諯	zhuān;ye	1
 鄟	zhuān;ev	1
 𫍱	zhuān;	1
-傳	zhuàn;rv	1
 僝	zhuàn;ri,rz	1
 剸	zhuàn;dv	1
 剸	zhuān;dv	1
