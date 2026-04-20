@@ -4920,7 +4920,7 @@ sort: by_weight
 甘垛镇	gān;aa,ca duǒ;td zhèn;jv	1
 甘坊镇	gān;aa,ca fāng;tf zhèn;jv	1
 甘高县	gān;aa,ca gāo;wk xiàn;sq,qs	60
-干沟乡	gàn;aa gōu;dg xiāng;ap,vp	1
+干沟乡	gān;aa gōu;dg xiāng;ap,vp	1
 甘沟乡	gān;aa,ca gōu;dg xiāng;ap,vp	1
 甘沟镇	gān;aa,ca gōu;dg zhèn;jv	1
 甘谷县	gān;aa,ca gǔ;bk,kr xiàn;sq,qs	174
@@ -25211,7 +25211,7 @@ sort: by_weight
 北富永村	běi;ap,bj fù;bf,bt yǒng;dd cūn;mc	1
 北付庄村	běi;ap,bj fù;rc zhuāng;gt cūn;mc	1
 北甘池村	běi;ap,bj gān;aa,ca chí;dy cūn;mc	1
-北干沟村	běi;ap,bj gàn;aa gōu;dg cūn;mc	1
+北干沟村	běi;ap,bj gān;aa gōu;dg cūn;mc	1
 北干街道	běi;ap,bj gàn;aa jiē;xg,xi dào;zu	1
 北甘井村	běi;ap,bj gān;aa,ca jǐng;aa,ep cūn;mc	1
 北甘泉村	běi;ap,bj gān;aa,ca quán;bu,ub cūn;mc	1
@@ -32563,7 +32563,7 @@ sort: by_weight
 甘草掌村	gān;aa,ca cǎo;cz zhǎng;uk,xu,du cūn;mc	1
 甘草庄村	gān;aa,ca cǎo;cz zhuāng;gt cūn;mc	1
 干汊河镇	gàn;aa chà;di hé;dk zhèn;jv	1
-干岔子乡	gàn;aa chà;uf zi;aa,vh xiāng;ap,vp	1
+干岔子乡	gān;aa chà;uf zi;aa,vh xiāng;ap,vp	1
 柑长秋乡	gān;mg cháng;pd qiū;hh xiāng;ap,vp	1
 甘城子村	gān;aa,ca chéng;ti zǐ;aa,vh cūn;mc	1
 甘城子乡	gān;aa,ca chéng;ti zǐ;aa,vh xiāng;ap,vp	1
@@ -32572,30 +32572,30 @@ sort: by_weight
 甘沟河村	gān;aa,ca gōu;dg hé;dk cūn;mc	1
 甘沟口村	gān;aa,ca gōu;dg kǒu;aa cūn;mc	1
 甘沟门村	gān;aa,ca gōu;dg mén;dg cūn;mc	1
-干沟门村	gàn;aa gōu;dg mén;dg cūn;mc	1
+干沟门村	gān;aa gōu;dg mén;dg cūn;mc	1
 甘沟驿乡	gān;aa,ca gōu;dg yì;mf xiāng;ap,vp	1
 甘沟驿镇	gān;aa,ca gōu;dg yì;mf zhèn;jv	1
-干沟渊村	gàn;aa gōu;dg yuān;da,dm cūn;mc	1
+干沟渊村	gān;aa gōu;dg yuān;da,dm cūn;mc	1
 甘沟子村	gān;aa,ca gōu;dg zi;aa,vh cūn;mc	1
-干沟子村	gàn;aa gōu;dg zi;aa,vh cūn;mc	1
+干沟子村	gān;aa gōu;dg zǐ;aa,vh cūn;mc	1
 甘谷驿镇	gān;aa,ca gǔ;bk,kr yì;mf zhèn;jv	1
 甘官屯村	gān;aa,ca guān;bg,bk tún;ag cūn;mc	1
 甘官屯乡	gān;aa,ca guān;bg,bk tún;ag xiāng;ap,vp	1
 甘官屯镇	gān;aa,ca guān;bg,bk tún;ag zhèn;jv	1
 干海子村	gàn;aa hǎi;dm zǐ;aa,vh cūn;mc	1
 干海子乡	gàn;aa hǎi;dm zǐ;aa,vh xiāng;ap,vp	1
-干河坝村	gàn;aa hé;dk bà;tb cūn;mc	1
-干河草村	gàn;aa hé;dk cǎo;cz cūn;mc	1
-干河陈乡	gàn;aa hé;dk chén;ed xiāng;ap,vp	1
-干河沟村	gàn;aa hé;dk gōu;dg cūn;mc	1
-干河街道	gàn;aa hé;dk jiē;xg,xi dào;zu	1
+干河坝村	gān;aa hé;dk bà;tb cūn;mc	1
+干河草村	gān;aa hé;dk cǎo;cz cūn;mc	1
+干河陈乡	gān;aa hé;dk chén;ed xiāng;ap,vp	1
+干河沟村	gān;aa hé;dk gōu;dg cūn;mc	1
+干河街道	gān;aa hé;dk jiē;xg,xi dào;zu	1
 甘河街道	gān;aa,ca hé;dk jiē;xg,xi dào;zu	1
 甘河净乡	gān;aa,ca hé;dk jìng;dv xiāng;ap,vp	1
-干河铺村	gàn;aa hé;dk pù;jf cūn;mc	1
+干河铺村	gān;aa hé;dk pù;jf cūn;mc	1
 甘河滩乡	gān;aa,ca hé;dk tān;dn xiāng;ap,vp	1
 甘河滩镇	gān;aa,ca hé;dk tān;dn zhèn;jv	1
-干河头村	gàn;aa hé;dk tóu;dd cūn;mc	1
-干河子村	gàn;aa hé;dk zǐ;aa,vh cūn;mc	1
+干河头村	gān;aa hé;dk tóu;dd cūn;mc	1
+干河子村	gān;aa hé;dk zǐ;aa,vh cūn;mc	1
 甘河子村	gān;aa,ca hé;dk zǐ;aa,vh cūn;mc	1
 甘河子镇	gān;aa,ca hé;dk zǐ;aa,vh zhèn;jv	1
 甘家坳村	gān;aa,ca jiā;bu ào;ty cūn;mc	1
@@ -49288,7 +49288,6 @@ sort: by_weight
 深砭墕村	shēn;dm biān;uf yàn;ty cūn;mc	1
 沈采街道	shěn;dg,dy cǎi;mv,vm jiē;xg,xi dào;zu	1
 莘塍街道	shēn;cx chéng;ot jiē;xg,xi dào;zu	1
-身处异乡	shēn;pp chù;wb yì;cs,sc xiāng;ap,vp	1
 沈旦堡镇	shěn;dg,dy dàn;oa bǎo;tb zhèn;jv	1
 神道口村	shén;uu dào;zu kǒu;aa cūn;mc	1
 神鼎山镇	shén;uu dǐng;oa,od shān;aa zhèn;jv	1
@@ -65235,11 +65234,11 @@ sort: by_weight
 尕孜库勒乡	gǎ;xn,nx zī;wz,zw kù;gi lè;lg,gl xiāng;ap,vp	1
 盖孜库木乡	gài;my,ym zī;wz,zw kù;gi mù;ad xiāng;ap,vp	1
 盖孜力克镇	gài;my,ym zī;wz,zw lì;gp kè;eg,ux zhèn;jv	1
-干岔子林场	gàn;aa chà;uf zi;aa,vh lín;mm chǎng;ty	1
+干岔子林场	gān;aa chà;uf zi;aa,vh lín;mm chǎng;ty	1
 甘丹曲果镇	gān;aa,ca dān;pd qǔ;aa,oa guǒ;ad,tm zhèn;jv	1
-干河陈街道	gàn;aa hé;dk chén;ed jiē;xg,xi dào;zu	1
+干河陈街道	gān;aa hé;dk chén;ed jiē;xg,xi dào;zu	1
 甘河工业园	gān;aa,ca hé;dk gōng;aa yè;aa yuán;ky
-干河彝族乡	gàn;aa hé;dk yí;ac,cs,jc,vc zú;fu xiāng;ap,vp	1
+干河彝族乡	gān;aa hé;dk yí;ac,cs,jc,vc zú;fu xiāng;ap,vp	1
 甘家湖牧场	gān;aa,ca jiā;bu hú;dh mù;nw chǎng;ty	1
 甘家口街道	gān;aa,ca jiā;bu kǒu;aa jiē;xg,xi dào;zu	1
 干净的街道	gān;aa jìng;dv de;bu jiē;xg,xi dào;zu	1
