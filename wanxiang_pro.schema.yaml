@@ -9,7 +9,7 @@ schema:
     - amzxyz
   description: |
     请勾选【万象拼音PRO】以启用，万象拼音 支持常见双拼方案和全拼输入，辅助码同时支持 全拼拼音、墨奇码、鹤形、自然码、虎码首末、五笔前2、汉心码、首右，拥有超越大厂的输入体验！带声调的词库，支持语法模型，全拼、简拼、整句、声调辅助筛选
-    【文本框输入：/pinyin全拼，/zrm自然码,/flypy小鹤，/mspy,/sogou,/pyjj等，详见README.md】
+    请在文本框中直接输入对应方案的代码，例如：全拼输入“/pinyin”，自然码输入“/zrm”，小鹤输入“/flypy”（包含“/mspy”、“/sogou”、“/pyjj”等更多代码详见 README.md）。
   dependencies:
     - wanxiang_mixedcode  #中英文混合词汇
     - wanxiang_reverse    #部件拆字，反查及辅码
@@ -113,7 +113,7 @@ grammar:
   collocation_max_length: 8
   collocation_min_length: 2
   collocation_penalty: -5
-  non_collocation_penalty: 0
+  non_collocation_penalty: -5
   weak_collocation_penalty: -35
   rear_penalty: -12
 
@@ -147,6 +147,7 @@ user_predict:
   db_name: lua/predict         # 数据库名称（默认 predict，将生成 predict.userdb 文件夹）
   enable_post_predict: true        # 上屏后预测
   enable_context_reorder: true     # 输入时调频
+  enable_fallback_reorder: true    # 同码回删再输首次交换
   max_candidates: 10           # 屏幕最多显示的联想词数量
   max_predictions: 3           # 连续触发预测的最高次数限制
   expiry_days: 90              # 绝对寿命（天）：不命中则物理销毁
@@ -156,7 +157,7 @@ user_predict:
   enable_predict_space: false   # true: 按空格上屏空格; false:空格提交候选。一般手机开电脑关，空格当上屏则，Tab、Alt按键当作空格
   context_timeout: 5000         # 上文超时时间毫秒
   custom_classifiers:            # 数字后量词调频，如平时chuan传，输入数字后，首选为串，结果如：1串，想关闭清空列表即可
-    - 个只名位口头匹条群批伙         # 人物动物
+    - 个只名位口头匹条群批伙多         # 人物动物
     - 张把件台部块根颗粒滴片朵面扇顶栋座所辆艘架盏支枝杆 # 物品建筑
     - 双对副套打串束排阵堆叠摞扎     # 成组集合
     - 杯瓶盒包份碗锅盆桶袋罐盘       # 包装容器
@@ -672,7 +673,7 @@ punctuator:
 
 # 从 default 继承快捷键
 key_binder:
-  import_preset: default  # 从 default.yaml 继承通用的
+  #import_preset: default  # 从 default.yaml 继承通用的
   # Lua 配置: shijian.lua 的引导符，涉及：日期、时间、节日、节气、生日、问候模板等功能
   shijian_keys: ["/", "o"]
   bindings:             # 也可以再增加方案专有的
