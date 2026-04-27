@@ -520,16 +520,16 @@ function P.init(env)
                     local ts = tonumber(ts_str) or 0
                     local is_p_gram = (s_sub(k, 1, 2) == "P\t")
                     local limit = is_p_gram and CONFIG.P_EXPIRY_SECONDS or CONFIG.EXPIRY_SECONDS
-
+                    
                     if ts == 0 then ts = now - limit - 1 end
-
+                    
                     if (now - ts) > limit then
                         if db.erase then db:erase(k) else db:update(k, "") end
                         deleted_count = deleted_count + 1
                     end
                 end
             end
-
+            
             reset_memory_chain(env, "手动清理结束")
             -- 上屏提示信息，让用户知道清理了多少条垃圾
             env.engine:commit_text("【预测数据库清理完成：共清除 " .. deleted_count .. " 条过期记忆】")
@@ -624,7 +624,7 @@ function P.func(key, env)
             local current_input = ctx.input or ""
             if current_input ~= "" then
                 if shared_reverted_code == current_input then
-                    shared_reverted_code = ""
+                    shared_reverted_code = "" 
                 else
                     shared_reverted_code = current_input
                 end
@@ -894,7 +894,7 @@ function F.func(input, env)
     
     local current_input = ctx.input or ""
     local do_fallback = CONFIG.ENABLE_FALLBACK_REORDER and current_input == shared_reverted_code and shared_reverted_code ~= ""
-
+    
     if (not do_reorder and not do_classifier and not do_fallback) or current_input == "" then
         for cand in input:iter() do yield(cand) end
         return
@@ -922,7 +922,7 @@ function F.func(input, env)
     boosted_pool_idx = 0
     local b_cnt = 0
     local n_cnt = 0
-
+    
     local count = 0
     local max_scan = 20
     local target_len = 0
@@ -931,9 +931,9 @@ function F.func(input, env)
         count = count + 1
         local text = cand.text or ""
         local current_len = utf8_len(text) or 0
-
+        
         if count == 1 then target_len = current_len end
-
+        
         local length_mismatch_stop = false
         if do_classifier then
             if count > 1 and current_len < target_len then length_mismatch_stop = true end
@@ -954,10 +954,10 @@ function F.func(input, env)
         -- 分类与排名逻辑
         local rank = f_reorder_map and f_reorder_map[text]
         local is_classifier = do_classifier and CLASSIFIER_LOOKUP[text]
-
+        
         if (rank or is_classifier) and current_len == target_len then
             local final_rank = rank or 0
-            if is_classifier then final_rank = -1 end
+            if is_classifier then final_rank = -1 end 
             boosted_pool_idx = boosted_pool_idx + 1
             if not boosted_obj_pool[boosted_pool_idx] then
                 boosted_obj_pool[boosted_pool_idx] = {}
