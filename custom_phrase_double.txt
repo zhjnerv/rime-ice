@@ -1,7 +1,5 @@
 # Rime table
 # coding: utf-8
-#@/db_name  custom_phrase_double.txt
-#@/db_type	tabledb
 #
 # =====================================================================
 # 用户自定义固定词库与快捷提示
@@ -67,7 +65,7 @@ vikunja	viku	2
 aistudio	ai	3
 DAS	das	2
 OA	oa	1
-CPC cpc 1
+CPC	cpc	1
 CPC	cpc	1
 PCT	pct	1
 斯可睿	sikerv	3
