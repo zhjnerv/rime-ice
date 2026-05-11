@@ -112,7 +112,7 @@ grammar:
   language: wanxiang-lts-zh-hans
   collocation_max_length: 8
   collocation_min_length: 2
-  collocation_penalty: -10
+  collocation_penalty: -5
   non_collocation_penalty: -5
   weak_collocation_penalty: -100
   rear_penalty: -5
@@ -320,7 +320,7 @@ charset:
   - option: charset_filter
     base: a  #可以填入多个类别如aj
     addlist:
-      - "诶濛硷氽尛躝〇冇吔咗囧屌鲶芶咲畑垅𰻝𰻞龍朙"
+      - "诶濛硷氽尛躝〇冇吔咗囧屌鲶芶咲畑垅𰻝𰻞龍朙頔"
     blacklist: []
   - option: s2t
     base: fa
@@ -673,7 +673,7 @@ punctuator:
 
 # 从 default 继承快捷键
 key_binder:
-  #import_preset: default  # 从 default.yaml 继承通用的
+  import_preset: default  # 从 default.yaml 继承通用的
   # Lua 配置: shijian.lua 的引导符，涉及：日期、时间、节日、节气、生日、问候模板等功能
   shijian_keys: ["/", "o"]
   bindings:             # 也可以再增加方案专有的
