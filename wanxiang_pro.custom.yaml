@@ -17,6 +17,9 @@ patch:
     - userzhj # 导入根目录下名称为userzhj.dict.yaml的自定义固定词典
   translator/contextual_suggestions: false # 开启上下文预测
 
+  # 网址/文件输入优化：支持输入字母加点后不上屏，继续在输入框内输入
+  "recognizer/patterns/url": "^[A-Za-z0-9]+[.].*$"
+
   # 英文自动加空格设置
   wanxiang_english/english_spacing: off
   wanxiang_english/spacing_timeout: 0

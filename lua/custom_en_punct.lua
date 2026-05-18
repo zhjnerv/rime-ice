@@ -1,6 +1,7 @@
 -- lua/custom_en_punct.lua
--- 独立英文半角标点处理器 (不受系统包更新影响)
--- 拦截纯英文单词上屏后的下一个标点符号，防止转换为全角字符。
+-- 独立英文半角标点处理器 (增强版)
+-- 1. 拦截纯英文单词上屏后的下一个标点符号，防止转换为全角字符。
+-- 2. 智能处理网址输入：在输入框内为纯英文且无中文候选时，按点号(.)不上屏，而是作为字符进入输入框。
 
 local P = {}
 
@@ -57,12 +58,29 @@ function P.fini(env)
 end
 
 function P.func(key, env)
+    local context = env.engine.context
+    local kc = key.keycode
+    
+    -- 智能网址输入补丁：在 composing 状态下拦截点号
+    if kc == 46 and not key:release() and context:is_composing() then
+        local input = context.input
+        -- 检查当前输入是否全是字母/数字 (看起来像网址前缀)
+        if input:match("^[A-Za-z0-9]+$") then
+            -- 如果没有候选词，或者是纯英文候选，则将点号推入输入框
+            local cand = context:get_selected_candidate()
+            if not cand or is_ascii_phrase_fast(cand.text) then
+                context:push_input(".")
+                env.en_punct_active = false -- 既然手动处理了，重置状态
+                return 1 -- kAccepted
+            end
+        end
+    end
+
     if not env.en_punct_active or key:release() then
         return 2 -- kNoop
     end
 
-    local kc = key.keycode
-    -- Intercept punctuation
+    -- Intercept punctuation after a commit of English text
     if (kc >= 33 and kc <= 47) or
        (kc >= 58 and kc <= 64) or
        (kc >= 91 and kc <= 96) or
