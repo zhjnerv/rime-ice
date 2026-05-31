@@ -9686,7 +9686,7 @@ sort: by_weight
 礼安镇	lǐ;ug ān;bn zhèn;jv	1
 李岙村	lǐ;mz ào;uy,yu cūn;mc	185
 李坝村	lǐ;mz bà;tb cūn;mc	133
-篱笆镇	lí;vl bā;vb zhèn;jv	1
+篱笆镇	lí;vl ba;vb zhèn;jv	1
 里坝镇	lǐ;aa,tt bà;tb zhèn;jv	1
 黎坝镇	lí;hu,ur bà;tb zhèn;jv	1
 李堡村	lǐ;mz bǎo;tb cūn;mc	145
@@ -13061,7 +13061,7 @@ sort: by_weight
 能仁乡	néng;sb rén;re xiāng;ap,vp	1
 尼傲乡	ní;ub ào;ra,rw xiāng;ap,vp	1
 尼巴村	ní;ub bā;ag cūn;mc	113
-泥巴乡	ní;dn bā;ag xiāng;ap,vp	1
+泥巴乡	ní;dn ba;ag xiāng;ap,vp	1
 坭坝乡	ní;tn bà;tb xiāng;ap,vp	1
 尼巴镇	ní;ub bā;ag zhèn;jv	1
 坭陂镇	ní;tn bēi;ep zhèn;jv	1
@@ -33183,9 +33183,6 @@ sort: by_weight
 阁老峪村	gé;mg lǎo;bl,lb yù;ug cūn;mc	1
 革勒车乡	gé;aa,ca lè;lg,gl chē;aa xiāng;ap,vp	1
 革勒车镇	gé;aa,ca lè;lg,gl chē;aa zhèn;jv	1
-歌乐山村	gē;qg lè;pd,px shān;aa cūn;mc	1
-歌乐山镇	gē;qg lè;pd,px shān;aa zhèn;jv	1
-歌乐沱乡	gē;qg lè;pd,px tuó;dt xiāng;ap,vp	1
 格里坪镇	gé;mg lǐ;aa,tt píng;tp zhèn;jv	1
 葛礼瓦镇	gé;ch lǐ;ug wǎ;ad zhèn;jv	1
 格林街道	gé;mg lín;mm jiē;xg,xi dào;zu	1
@@ -33239,6 +33236,9 @@ sort: by_weight
 隔洋塘村	gé;eg yáng;dy táng;tt cūn;mc	1
 葛崾岘乡	gé;ch yǎo;uy xiàn;uj xiāng;ap,vp	1
 葛渔城镇	gé;ch yú;dy chéng;ti zhèn;jv	1
+歌乐山村	gē;qg yuè;pd,px shān;aa cūn;mc	1
+歌乐山镇	gē;qg yuè;pd,px shān;aa zhèn;jv	1
+歌乐沱乡	gē;qg yuè;pd,px tuó;dt xiāng;ap,vp	1
 革镇堡镇	gé;aa,ca zhèn;jv bǎo;tb zhèn;jv	1
 圪针梁村	gē;tq zhēn;ju liáng;mb cūn;mc	1
 格针庙村	gé;mg zhēn;ju miào;gy cūn;mc	1
@@ -41637,7 +41637,7 @@ sort: by_weight
 龙宝山村	lóng;ad bǎo;by shān;aa cūn;mc	1
 龙宝峪村	lóng;ad bǎo;by yù;ug cūn;mc	1
 龙背街道	lóng;ad bèi;ob jiē;xg,xi dào;zu	1
-龙背头村	lóng;ad bèi;ob tóu;dd cūn;mc	1
+龙背头村	lóng;ad bēi;ob tóu;dd cūn;mc	1
 龙苍沟乡	lóng;ad cāng;cc gōu;dg xiāng;ap,vp	1
 龙苍沟镇	lóng;ad cāng;cc gōu;dg zhèn;jv	1
 龙草坪村	lóng;ad cǎo;cz píng;tp cūn;mc	1
@@ -65262,13 +65262,13 @@ sort: by_weight
 高寨子街道	gāo;wk zhài;mb,bm zi;aa,vh jiē;xg,xi dào;zu	1
 葛店开发区	gé;ch diàn;gv kāi;ac fā;ay qū;ki	1
 葛家满族乡	gé;ch jiā;bu mǎn;dl zú;fu xiāng;ap,vp	1
-歌乐山街道	gē;qg lè;pd,px shān;aa jiē;xg,xi dào;zu	1
 格球山农场	gé;mg qiú;wq shān;aa nóng;by,ny chǎng;ty	1
 格日僧苏木	gé;mg rì;aa,or sēng;rc sū;cb mù;ad
 各苏木乡镇	gè;wk sū;cb mù;ad xiāng;ap,vp zhèn;jv	1
 各塔埠街道	gè;wk tǎ;td,th bù;tf,tu jiē;xg,xi dào;zu	1
 各乡镇街道	gè;wk xiāng;ap,vp zhèn;jv jiē;xg,xi dào;zu	1
 革新街街道	gé;aa,ca xīn;jq jiē;xg,xi jiē;xg,xi dào;zu	1
+歌乐山街道	gē;qg yuè;pd,px shān;aa jiē;xg,xi dào;zu	1
 革镇堡街道	gé;aa,ca zhèn;jv bǎo;tb jiē;xg,xi dào;zu	1
 葛洲坝街道	gé;ch zhōu;dv bà;tb jiē;xg,xi dào;zu	1
 根德营子乡	gēn;mg dé;xx yíng;cl zi;aa,vh xiāng;ap,vp	1
