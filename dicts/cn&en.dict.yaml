@@ -12,6 +12,7 @@ sort: original  #字典初始排序，可選original或by_weight
 3D	3D
 3M	3M
 4B	4B
+4A	4A
 4H	4H
 4X	4X
 7z	7z
@@ -896,6 +897,8 @@ Low帧	Low'zhēn
 M3U8	M3U8
 Mac版	Mac'bǎn
 Mac端	Mac'duān
+AI垃圾	AI'lā'jī
+AI大模型	AI'dà'mó'xíng
 Mi手环	Mi'shǒu'huán
 .NET	Net
 O不OK	O'bù'OK
