@@ -1,0 +1,209 @@
+# rime dictionary
+# encoding: utf-8
+# https://github.com/amzxyz/RIME-LMDG
+# 名人(历史人物、学者、作家、政治家、公众人物等)
+---
+name: mingren
+version: "LTS"
+sort: by_weight
+...
+陈策	chén;ed cè;vc	580
+陈诚	chén;ed chéng;yi	160
+陈到	chén;ed dào;dv	142
+陈登	chén;ed dēng;dd	295
+陈赓	chén;ed gēng;bg,gb	484
+陈宫	chén;ed gōng;bl	534
+陈光	chén;ed guāng;ea,xw	1166
+陈珪	chén;ed guī;wg	58
+陈矫	chén;ed jiǎo;uq	48
+陈亮	chén;ed liàng;wj,jb	837
+陈群	chén;ed qún;yj	761
+陈胜	chén;ed shèng;ou	1207
+陈寿	chén;ed shòu;cf,fc	2097
+陈汤	chén;ed tāng;dy	658
+陈豨	chén;ed xī;ux	156
+陈毅	chén;ed yì;lu	1978
+陈馀	chén;ed yú;uy	420
+陈云	chén;ed yún;es,se	1052
+陈轸	chén;ed zhěn;ip	40
+陈祗	chén;ed zhī;ud	31
+刘安	liú;dw,wd ān;bn	811
+刘巴	liú;dw,wd bā;ag	292
+刘邦	liú;dw,wd bāng;ef,fe	30744
+刘备	liú;dw,wd bèi;wt	32311
+刘濞	liú;dw,wd bì;db	251
+刘表	liú;dw,wd biǎo;fy	1700
+刘彻	liú;dw,wd chè;xq	3350
+刘德	liú;dw,wd dé;xx
+刘肥	liú;dw,wd féi;ob	221
+刘封	liú;dw,wd fēng;cg	830
+刘馥	liú;dw,wd fù;hf,xf	63
+刘贺	liú;dw,wd hè;bj	850
+刘恒	liú;dw,wd héng;xg	879
+刘弘	liú;dw,wd hóng;gs	769
+刘基	liú;dw,wd jī;tq,qt	6641
+刘瑾	liú;dw,wd jǐn;wj	687
+刘据	liú;dw,wd jù;fj	347
+刘骏	liú;dw,wd jùn;mj,mw	317
+刘禅	liú;dw,wd shàn;ud	5385
+刘劭	liú;dw,wd shào;lv	54
+刘胜	liú;dw,wd shèng;ou	850
+刘宋	liú;dw,wd sòng;bm	898
+刘向	liú;dw,wd xiàng;pk	425
+刘勰	liú;dw,wd xié;ls,sx	4081
+刘协	liú;dw,wd xié;ub	3566
+刘歆	liú;dw,wd xīn;qy	268
+刘玄	liú;dw,wd xuán;wy	364
+刘琰	liú;dw,wd yǎn;wy	144
+刘曜	liú;dw,wd yào;od,ov	695
+刘繇	liú;dw,wd yáo;vx,xf	151
+刘晔	liú;dw,wd yè;oh
+刘毅	liú;dw,wd yì;lu	7605
+刘廙	liú;dw,wd yì;gg,gy	22
+刘盈	liú;dw,wd yíng;my	907
+刘裕	liú;dw,wd yù;yg	1266
+刘虞	liú;dw,wd yú;hw	143
+刘渊	liú;dw,wd yuān;da,dm	57
+刘璋	liú;dw,wd zhāng;wv	1090
+刘桢	liú;dw,wd zhēn;mv	103
+刘仲	liú;dw,wd zhòng;rv	696
+罗本	luó;sx běn;aa,ma	2136
+罗丹	luó;sx dān;pd	969
+罗敷	luó;sx fū;wf	968
+罗京	luó;sx jīng;wx	44
+罗兰	luó;sx lán;bs,qe	2025
+罗琳	luó;sx lín;wl	1372
+罗曼	luó;sx màn;oy	1623
+罗素	luó;sx sù;sf,fs	2962
+王弼	wáng;aa bì;bg,gg	308
+王勃	wáng;aa bó;lb,lz	1376
+王粲	wáng;aa càn;my
+王充	wáng;aa chōng;wy	230
+王导	wáng;aa dǎo;cs,sc	5930
+王敦	wáng;aa dūn;wx	89
+王符	wáng;aa fú;vf	178
+王翦	wáng;aa jiǎn;yq	1316
+王建	wáng;aa jiàn;zy	648
+王朗	wáng;aa lǎng;ol	983
+王莽	wáng;aa mǎng;cc	2926
+王肃	wáng;aa sù;ad	136
+王维	wáng;aa wéi;sv	2322
+王献	wáng;aa xiàn;qn	832
+王衍	wáng;aa yǎn;xi,xd	169
+王允	wáng;aa yǔn;se	1022
+陈阿娇	chén;ed ā;ek jiāo;nq
+陈霸先	chén;ed bà;yo xiān;ne,en	198
+陈璧君	chén;ed bì;yb,yx jūn;ky	113
+陈伯达	chén;ed bó;rb dá;zd	44
+陈布雷	chén;ed bù;ju,uj léi;yt	63
+陈昌浩	chén;ed chāng;oo hào;dg	25
+陈独秀	chén;ed dú;qi xiù;hn	3143
+陈公博	chén;ed gōng;sb,bs bó;uc,uf	38
+陈光甫	chén;ed guāng;ea,xw fǔ;ad	3
+陈果夫	chén;ed guǒ;ad,tm fū;ad,er	521
+陈鹤琴	chén;ed hè;nv qín;wj	78
+陈后主	chén;ed hòu;pk zhǔ;dw	97
+陈济棠	chén;ed jì;dq táng;dd,mk,xd,xm	135
+陈嘉庚	chén;ed jiā;uj gēng;gd,gg,gr	166
+陈景润	chén;ed jǐng;oj rùn;dr	182
+陈炯明	chén;ed jiǒng;hk míng;oo	270
+陈立夫	chén;ed lì;da fū;ad,er	91
+陈铭枢	chén;ed míng;jm shū;mq	35
+陈纳德	chén;ed nà;sn dé;xx	53
+陈其美	chén;ed qí;ba měi;dy,yd	104
+陈庆之	chén;ed qìng;gd zhī;dd	392
+陈省身	chén;ed shěng;ou shēn;pp	720
+陈世美	chén;ed shì;ca,cv měi;dy,yd	116
+陈叔宝	chén;ed shū;yx bǎo;by	119
+陈水扁	chén;ed shuǐ;ad,uv biǎn;hc	141
+陈潭秋	chén;ed tán;dt qiū;hh	16
+陈文帝	chén;ed wén;wi,dd dì;jb,wj,lj	35
+陈锡联	chén;ed xī;jy lián;eg	19
+陈宣帝	chén;ed xuān;bg dì;jb,wj,lj	28
+陈寅恪	chén;ed yín;bb kè;xg	1149
+陈永贵	chén;ed yǒng;dd guì;ba,vb	13
+陈友谅	chén;ed yǒu;yu,uy liàng;yj	929
+陈圆圆	chén;ed yuán;ky yuán;ky	160
+陈云林	chén;ed yún;es,se lín;mm	616
+刘病已	liú;dw,wd bìng;bb yǐ;vg,ag	318
+刘伯承	liú;dw,wd bó;rb chéng;ad,vd	226
+刘伯温	liú;dw,wd bó;rb wēn;dm,dw	320
+刘慈欣	liú;dw,wd cí;xz xīn;qj,jq	5539
+刘弗陵	liú;dw,wd fú;aa,gd,vu líng;el,ew	581
+刘黑闼	liú;dw,wd hēi;ad,ha tà;md	223
+刘胡兰	liú;dw,wd hú;og lán;bs,qe	82
+刘华清	liú;dw,wd huá;uh qīng;dq	597
+刘寄奴	liú;dw,wd jì;bq nú;ny	41
+刘坤一	liú;dw,wd kūn;tu yī;aa	141
+刘牢之	liú;dw,wd láo;bn zhī;dd	41
+刘铭传	liú;dw,wd míng;jm chuán;rv	66
+刘青山	liú;dw,wd qīng;of,fo shān;aa	19
+刘少奇	liú;dw,wd shào;xp qí;dk	276
+刘玄德	liú;dw,wd xuán;wy dé;xx	364
+刘亚楼	liú;dw,wd yà;ay lóu;ml	104
+刘义隆	liú;dw,wd yì;di,id lóng;eu	44
+刘禹锡	liú;dw,wd yǔ;pd xī;jy	644
+刘长卿	liú;dw,wd zhǎng;pd qīng;mg,mj	572
+刘志丹	liú;dw,wd zhì;ux,xu dān;pd	273
+刘知远	liú;dw,wd zhī;uk,ku yuǎn;zy	201
+罗保铭	luó;sx bǎo;rd míng;jm	576
+罗炳辉	luó;sx bǐng;hb huī;gj	13
+罗尔纲	luó;sx ěr;dx,xd gāng;sg	22
+罗芳伯	luó;sx fāng;cf bó;rb	428
+罗福助	luó;sx fú;uf,ut zhù;lq,ql	418
+罗工柳	luó;sx gōng;aa liǔ;mm	3
+罗贯中	luó;sx guàn;bm,mb zhōng;aa,ka	1413
+罗豪才	luó;sx háo;ub,wu cái;ap	9
+罗洪先	luó;sx hóng;dg xiān;ne,en	405
+罗弘信	luó;sx hóng;gs xìn;ry	428
+罗泓轸	luó;sx hóng;dh,ds zhěn;ip	428
+罗嘉良	luó;sx jiā;uj liáng;dg	60
+罗家伦	luó;sx jiā;bu lún;rl	44
+罗家英	luó;sx jiā;bu yīng;cy	85
+罗乐林	luó;sx lè;pd,px lín;mm	9
+罗隆基	luó;sx lóng;eu jī;tq,qt	6
+罗美薇	luó;sx měi;dy,yd wēi;cw	9
+罗密欧	luó;sx mì;ub,bu ōu;qq	568
+罗纳德	luó;sx nà;sn dé;xx	367
+罗启锐	luó;sx qǐ;hk,kh ruì;jd	454
+罗青长	luó;sx qīng;of,fo cháng;pd	508
+罗荣桓	luó;sx róng;cm,mb huán;mg	113
+罗汝才	luó;sx rǔ;dn cái;ap	13
+罗瑞卿	luó;sx ruì;we qīng;mg,mj	57
+罗时丰	luó;sx shí;oc fēng;aa	459
+罗士信	luó;sx shì;aa xìn;ry	28
+罗斯福	luó;sx sī;jq,qj fú;uf,ut	2314
+罗永浩	luó;sx yǒng;dd hào;dg	10268
+罗泽南	luó;sx zé;df nán;ua,uy	53
+罗振玉	luó;sx zhèn;fi yù;ad,wd	657
+罗志祥	luó;sx zhì;ux,xu xiáng;uy	1039
+罗仲谦	luó;sx zhòng;rv qiān;yj	9
+罗卓瑶	luó;sx zhuó;bu,uo yáo;wf	356
+罗卓英	luó;sx zhuó;bu,uo yīng;cy	9
+王安石	wáng;aa ān;bn shí;kp,pk	9232
+王保保	wáng;aa bǎo;rd bǎo;rd	948
+王昌龄	wáng;aa chāng;oo líng;il	722
+王宠惠	wáng;aa chǒng;bl huì;xh,hx	97
+王重阳	wáng;aa chóng;pa,ql yáng;eo	1030
+王定国	wáng;aa dìng;bp guó;ky	119
+王凤仪	wáng;aa fèng;jy yí;ry	598
+王夫之	wáng;aa fū;ad,er zhī;dd	506
+王光美	wáng;aa guāng;ea,xw měi;dy,yd	13
+王国维	wáng;aa guó;ky wéi;sv	1086
+王洪文	wáng;aa hóng;dg wén;wi,dd	22
+王稼祥	wáng;aa jià;hj xiáng;uy	35
+王近山	wáng;aa jìn;zj shān;aa	154
+王进喜	wáng;aa jìn;zj xǐ;uk	60
+王洛宾	wáng;aa luò;dg bīn;bb	50
+王僧辩	wáng;aa sēng;rc biàn;xx,yx	82
+王僧孺	wáng;aa sēng;rc rú;zx	284
+王审知	wáng;aa shěn;bu zhī;uk,ku	60
+王世充	wáng;aa shì;ca,cv chōng;wy	556
+王实甫	wáng;aa shí;bt fǔ;ad	590
+王世贞	wáng;aa shì;ca,cv zhēn;bb	207
+王守仁	wáng;aa shǒu;bc rén;re	889
+王树声	wáng;aa shù;md shēng;um	9
+王羲之	wáng;aa xī;yg,yx zhī;dd	1718
+王献之	wáng;aa xiàn;qn zhī;dd	490
+王孝杰	wáng;aa xiào;zl,lz jié;hm,mh	235
+王阳明	wáng;aa yáng;eo míng;oo	2594
