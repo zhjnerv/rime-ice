@@ -7,6 +7,15 @@ name: yixue
 version: "LTS"
 sort: by_weight
 ...
+输卵管癌	shū;iy luǎn;pd,md guǎn;vg ái;bu	486
+输卵管襞	shū;iy luǎn;pd,md guǎn;vg bì;yb,yx	45
+输卵管端	shū;iy luǎn;pd,md guǎn;vg duān;le	117
+输卵管内	shū;iy luǎn;pd,md guǎn;vg nèi;ad,kr	16
+输卵管伞	shū;iy luǎn;pd,md guǎn;vg sǎn;ru	9
+输卵管疝	shū;iy luǎn;pd,md guǎn;vg shàn;bu	45
+输卵管峡	shū;iy luǎn;pd,md guǎn;vg xiá;uj	256
+输卵管炎	shū;iy luǎn;pd,md guǎn;vg yán;hh	19
+输卵管支	shū;iy luǎn;pd,md guǎn;vg zhī;uy	45
 阿巴二氏病	ā;ek bā;ag èr;aa shì;pg bìng;bb	100
 阿比二氏病	ā;ek bǐ;bb èr;aa shì;pg bìng;bb	100
 阿狄森氏病	ā;ek dí;qh sēn;ml shì;pg bìng;bb	100
@@ -5168,6 +5177,10 @@ sort: by_weight
 奥瑟史综合征	ào;dm,pd sè;wb shǐ;ad,ki zōng;sz hé;rk zhēng;xv	100
 奥特髋修复术	ào;dm,pd tè;ns kuān;gk xiū;rp fù;rw,wo shù;md	100
 奥韦郎三氏病	ào;dm,pd wéi;aa láng;el sān;aa shì;pg bìng;bb	100
+巴蒂二氏产钳	bā;ag dì;cd èr;aa shì;pg chǎn;dp,li qián;jg	100
+巴恩二氏小体	bā;ag ēn;xy èr;aa shì;pg xiǎo;ad tǐ;rb	100
+巴尔比亚尼环	bā;ag ěr;dx,xd bǐ;bb yà;ay ní;ub huán;wb	100
+巴尔干肾病变	bā;ag ěr;dx,xd gàn;aa shèn;oy bìng;bb biàn;wy,yy	100
 巴克勒综合征	bā;ag kè;eg,ux lè;lg,gl zōng;sz hé;rk zhēng;xv	100
 巴马尤二氏病	bā;ag mǎ;aa,vh yóu;ad,yd èr;aa shì;pg bìng;bb	100
 巴氏涂片检查	bā;ag shì;pg tú;dy piàn;pa,pv jiǎn;ma,mq chá;md	100
@@ -5207,10 +5220,14 @@ sort: by_weight
 瓣狭窄疏通术	bàn;gx,xx xiá;qj zhǎi;xv,bv shū;pi,ag tōng;zy shù;md	100
 半月扳切除术	bàn;bf yuè;oy,pa bān;ff qiē;dq,qd chú;ey shù;md	100
 半月板切除术	bàn;bf yuè;oy,pa bǎn;mf qiē;dq,qd chú;ey shù;md	100
+斑疹伤寒腹型	bān;ww zhěn;bp shāng;rl hán;bd fù;of xíng;tx	100
+斑疹伤寒鼠型	bān;ww zhěn;bp shāng;rl hán;bd shǔ;ju xíng;tx	100
+斑疹伤寒小结	bān;ww zhěn;bp shāng;rl hán;bd xiǎo;ad jié;sj	100
 瓣直视成形术	bàn;gx,xx zhí;aa,uq shì;ju,uj chéng;gg,wg xíng;pk shù;md	100
 瓣周漏修补术	bàn;gx,xx zhōu;kj,kk lòu;dl,dy xiū;rp bǔ;yb shù;md	100
 斑状类银屑病	bān;ww zhuàng;jq,pq lèi;md yín;jg xiè;ux bìng;bb	100
 半椎体切除术	bàn;bf zhuī;mv tǐ;rb qiē;dq,qd chú;ey shù;md	100
+豹斑状白癜风	bào;vu bān;ww zhuàng;jq,pq bái;pa,po diàn;bd,bu fēng;ji	100
 鲍恩样丘疹病	bào;yb ēn;xy yàng;my qiū;pa,ja zhěn;bp bìng;bb	100
 包裹性胸膜炎	bāo;gs guǒ;wy,yg xìng;xu xiōng;ox mó;om yán;hh	100
 鲍莫尔成本病	bào;yb mò;cd,ct ěr;dx,xd chéng;gg,wg běn;aa,ma bìng;bb	100
@@ -5473,11 +5490,26 @@ sort: by_weight
 齿槽裂修补术	chǐ;vk cáo;mc liè;yl xiū;rp bǔ;yb shù;md	100
 尺侧半肢畸形	chǐ;ad,vd cè;rz bàn;bf zhī;ov jī;tq xíng;pk	100
 尺动脉结扎术	chǐ;ad,vd dòng;ly,yl mài;oy jié;sj zā;fg shù;md	100
+尺肱关节脱位	chǐ;ad,vd gōng;oh,os guān;bt,qd jié;ce tuō;od wèi;rl	100
 尺骨恶性肿瘤	chǐ;ad,vd gǔ;go,ob,og è;xy xìng;xu zhǒng;ov liú;bl	100
 耻骨恶性肿瘤	chǐ;ev gǔ;go,ob,og è;xy xìng;xu zhǒng;ov liú;bl	100
+耻骨弓状韧带	chǐ;ev gǔ;go,ob,og gōng;ag,vg zhuàng;jq,pq rèn;wr dài;jb	100
+尺骨骨干骨折	chǐ;ad,vd gǔ;go,ob,og gǔ;go,ob,og gàn;aa gǔ;go,ob,og zhé;fj	100
+尺骨滑车切迹	chǐ;ad,vd gǔ;go,ob,og huá;dg chē;aa qiē;dq,qd jì;zy	100
+尺骨近端骨折	chǐ;ad,vd gǔ;go,ob,og jìn;zj duān;le gǔ;go,ob,og zhé;fj	100
+尺骨茎突骨折	chǐ;ad,vd gǔ;go,ob,og jīng;cg tū;xq,bq gǔ;go,ob,og zhé;fj	100
+耻骨联合分离	chǐ;ev gǔ;go,ob,og lián;eg hé;rk fēn;bd,db lí;ws,wl	100
+耻骨联合松懈	chǐ;ev gǔ;go,ob,og lián;eg hé;rk sōng;mg xiè;xj	100
 尺骨良性肿瘤	chǐ;ad,vd gǔ;go,ob,og liáng;dg xìng;xu zhǒng;ov liú;bl	100
 耻骨良性肿瘤	chǐ;ev gǔ;go,ob,og liáng;dg xìng;xu zhǒng;ov liú;bl	100
 耻骨膀胱韧带	chǐ;ev gǔ;go,ob,og páng;op guāng;og rèn;wr dài;jb	100
+耻骨前列腺肌	chǐ;ev gǔ;go,ob,og qián;bd,qd liè;dd xiàn;oq jī;oj	100
+耻骨切开助产	chǐ;ev gǔ;go,ob,og qiē;dq,qd kāi;ac zhù;lq,ql chǎn;dp,li	100
+尺骨上端骨折	chǐ;ad,vd gǔ;go,ob,og shàng;aa,ba duān;le gǔ;go,ob,og zhé;fj	100
+尺骨上端截骨	chǐ;ad,vd gǔ;go,ob,og shàng;aa,ba duān;le jié;gv,ug,vg gǔ;go,ob,og	100
+尺骨下端骨折	chǐ;ad,vd gǔ;go,ob,og xià;ab,ad duān;le gǔ;go,ob,og zhé;fj	100
+尺骨鹰嘴骨折	chǐ;ad,vd gǔ;go,ob,og yīng;gn,nv zuǐ;kj,kz gǔ;go,ob,og zhé;fj	100
+尺骨远端脱位	chǐ;ad,vd gǔ;go,ob,og yuǎn;zy duān;le tuō;od wèi;rl	100
 迟期成分检查	chí;zi qī;oq,qo chéng;gg,wg fèn;bd,db jiǎn;ma,mq chá;md	100
 尺桡骨缩短术	chǐ;ad,vd ráo;my gǔ;go,ob,og suō;ss duǎn;ud shù;md	100
 尺神经缝合术	chǐ;ad,vd shén;uu jīng;sg féng;sf hé;rk shù;md	100
@@ -5524,8 +5556,10 @@ sort: by_weight
 穿通性毛囊炎	chuān;xy,by tōng;zy xìng;xu máo;pg náng;ay yán;hh	100
 喘息性气管炎	chuǎn;ke xī;xz,zx xìng;xu qì;py,ry guǎn;vg yán;hh	100
 床旁气管插管	chuáng;gm,mg páng;wf,lf qì;py,ry guǎn;vg chā;fi,fj guǎn;vg	100
+创伤后骨萎缩	chuāng;dc shāng;rl hòu;pk gǔ;go,ob,og wěi;cw suō;ss	100
 创伤后关节病	chuāng;dc shāng;rl hòu;pk guān;bt,qd jié;ce bìng;bb	100
 创伤后压力症	chuāng;dc shāng;rl hòu;pk yā;id,it lì;gp zhèng;bv	100
+创伤破坏强度	chuāng;dc shāng;rl pò;up huài;tb qiáng;gs dù;gy	100
 创伤性肺水肿	chuāng;dc shāng;rl xìng;xu fèi;of,oj shuǐ;ad,uv zhǒng;ov	100
 创伤性脊椎病	chuāng;dc shāng;rl xìng;xu jǐ;od,or zhuī;mv bìng;bb	100
 创伤性精神病	chuāng;dc shāng;rl xìng;xu jīng;mq shén;uu bìng;bb	100
@@ -9079,28 +9113,6 @@ sort: by_weight
 新生儿换血术	xīn;jq shēng;na ér;pg huàn;fh xiě;pa,pm shù;md	100
 新生儿睑缘炎	xīn;jq shēng;na ér;pg jiǎn;oa,oq yuán;st,su yán;hh	100
 新生儿结膜炎	xīn;jq shēng;na ér;pg jié;sj mó;om yán;hh	100
-新生儿进食病	xīn;jq shēng;na ér;pg jìn;zj shí;rl,pd bìng;bb	100
-新生儿泪囊炎	xīn;jq shēng;na ér;pg lèi;do náng;ay yán;hh	100
-新生儿尿毒症	xīn;jq shēng;na ér;pg niào;uu dú;fm zhèng;bv	100
-新生儿脓毒病	xīn;jq shēng;na ér;pg nóng;on dú;fm bìng;bb	100
-新生儿脓疱病	xīn;jq shēng;na ér;pg nóng;on pào;bb bìng;bb	100
-新生儿脓疱疮	xīn;jq shēng;na ér;pg nóng;on pào;bb chuāng;bc	100
-新生儿脓皮病	xīn;jq shēng;na ér;pg nóng;on pí;ay,vy bìng;bb	100
-新生儿破伤风	xīn;jq shēng;na ér;pg pò;up shāng;rl fēng;ji	100
-新生儿气管炎	xīn;jq shēng;na ér;pg qì;py,ry guǎn;vg yán;hh	100
-新生儿脐脓肿	xīn;jq shēng;na ér;pg qí;oq nóng;on zhǒng;ov	100
-新生儿溶血症	xīn;jq shēng;na ér;pg róng;dr xuè;pa,pm zhèng;bv	100
-新生儿乳腺炎	xīn;jq shēng;na ér;pg rǔ;gf,fg xiàn;oq yán;hh	100
-新生儿腮腺炎	xīn;jq shēng;na ér;pg sāi;os xiàn;oq yán;hh	100
-新生儿糖尿病	xīn;jq shēng;na ér;pg táng;mt niào;uu bìng;bb	100
-新生儿天疱疮	xīn;jq shēng;na ér;pg tiān;ad pào;bb chuāng;bc	100
-新生儿荨麻疹	xīn;jq shēng;na ér;pg xún;cx má;gl zhěn;bp	100
-新生儿硬化病	xīn;jq shēng;na ér;pg yìng;ug huà;rb bìng;bb	100
-新生儿硬化症	xīn;jq shēng;na ér;pg yìng;ug huà;rb zhèng;bv	100
-新生儿硬皮病	xīn;jq shēng;na ér;pg yìng;ug pí;ay,vy bìng;bb	100
-新生儿硬肿病	xīn;jq shēng;na ér;pg yìng;ug zhǒng;ov bìng;bb	100
-新生儿中耳炎	xīn;jq shēng;na ér;pg zhōng;aa,ka ěr;aa yán;hh	100
-新生儿足水肿	xīn;jq shēng;na ér;pg zú;kv shuǐ;ad,uv zhǒng;ov	100
 心小静脉血流	xīn;dd xiǎo;ad jìng;qv mài;oy xuè;pa,pm liú;di	100
 新型隐球菌病	xīn;jq xíng;tx yǐn;ej qiú;wq jūn;ch,cq bìng;bb	100
 心因性夜尿症	xīn;dd yīn;kd xìng;xu yè;wd,ww niào;uu zhèng;bv	100
@@ -9219,11 +9231,6 @@ sort: by_weight
 血小板减少症	xuè;pa,pm xiǎo;ad bǎn;mf jiǎn;dx shǎo;xp zhèng;bv	100
 血小板无力症	xuè;pa,pm xiǎo;ad bǎn;mf wú;ag,ay lì;gp zhèng;bv	100
 血小板增多症	xuè;pa,pm xiǎo;ad bǎn;mf zēng;tc duō;xx zhèng;bv	100
-血源性肺脓肿	xuè;pa,pm yuán;dy xìng;xu fèi;of,oj nóng;on zhǒng;ov	100
-寻常型天疱疮	xún;cx,xc cháng;jk,xd,dd xíng;tx tiān;ad pào;bb chuāng;bc	100
-寻常性银屑病	xún;cx,xc cháng;jk,xd,dd xìng;xu yín;jg xiè;ux bìng;bb	100
-寻常型银屑病	xún;cx,xc cháng;jk,xd,dd xíng;tx yín;jg xiè;ux bìng;bb	100
-寻常性鱼鳞病	xún;cx,xc cháng;jk,xd,dd xìng;xu yú;da lín;yl bìng;bb	100
 循环冗余检查	xún;xd huán;wb rǒng;bj yú;rb jiǎn;ma,mq chá;md	100
 循环性情感症	xún;xd huán;wb xìng;xu qíng;xq gǎn;xx zhèng;bv	100
 荨麻疹性痤疮	xún;cx má;gl zhěn;bp xìng;xu cuó;bz chuāng;bc	100
@@ -15146,19 +15153,6 @@ sort: by_weight
 跖内收内翻畸形	zhí;zu nèi;ad,kr shōu;wj,jw nèi;ad,kr fān;yf jī;tq xíng;pk	100
 指皮肤良性肿瘤	zhǐ;fv pí;ay,vy fū;of liáng;dg xìng;xu zhǒng;ov liú;bl	100
 支气管淀粉样变	zhī;uy qì;py,ry guǎn;vg diàn;dd fěn;mf yàng;my biàn;wy,yy	100
-支气管动脉破裂	zhī;uy qì;py,ry guǎn;vg dòng;ly,yl mài;oy pò;up liè;yl	100
-支气管肺泡灌洗	zhī;uy qì;py,ry guǎn;vg fèi;of,oj pào;db guàn;dv xǐ;dx	100
-支气管激发试验	zhī;uy qì;py,ry guǎn;vg jī;dj,dw fā;ay shì;yu yàn;ma,mq	100
-支气管镜检查术	zhī;uy qì;py,ry guǎn;vg jìng;jj jiǎn;ma,mq chá;md shù;md	100
-支气管良性肿瘤	zhī;uy qì;py,ry guǎn;vg liáng;dg xìng;xu zhǒng;ov liú;bl	100
-支气管内膜结核	zhī;uy qì;py,ry guǎn;vg nèi;ad,kr mó;om jié;sj hé;mh	100
-支气管平滑肌瘤	zhī;uy qì;py,ry guǎn;vg píng;aa,gb huá;dg jī;oj liú;bl	100
-支气管热成形术	zhī;uy qì;py,ry guǎn;vg rè;hv chéng;gg,wg xíng;pk shù;md	100
-支气管乳头状瘤	zhī;uy qì;py,ry guǎn;vg rǔ;gf,fg tóu;dd zhuàng;jq,pq liú;bl	100
-支气管舒张试验	zhī;uy qì;py,ry guǎn;vg shū;yu,uy zhāng;gi shì;yu yàn;ma,mq	100
-支气管胃结肠瘘	zhī;uy qì;py,ry guǎn;vg wèi;ot,to jié;sj cháng;oy lòu;bl	100
-支气管炎性肿物	zhī;uy qì;py,ry guǎn;vg yán;hh xìng;xu zhǒng;ov wù;nw	100
-支气管真菌感染	zhī;uy qì;py,ry guǎn;vg zhēn;uj jūn;ch,cq gǎn;xx rǎn;mg,mj	100
 植入晶体去除术	zhí;mv rù;pd jīng;oo tǐ;rb qù;ts chú;ey shù;md	100
 肢体窦道切除术	zhī;ov tǐ;rb dòu;xm,bm dào;zu qiē;dq,qd chú;ey shù;md	100
 肢体恶性淋巴瘤	zhī;ov tǐ;rb è;xy xìng;xu lín;dl bā;ag liú;bl	100
