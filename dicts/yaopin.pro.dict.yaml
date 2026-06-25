@@ -43,11 +43,15 @@ sort: by_weight
 金胆片	jīn;ra,pa dǎn;od piàn;pa,pv	100
 金红片	jīn;ra,pa hóng;sg piàn;pa,pv	100
 颈痛片	jǐng;yg tòng;by piàn;pa,pv	100
+喹硫平	kuí;kk liú;ui píng;aa,gb	273
+奎尼丁	kuí;dg ní;ub dīng;aa	31
+喹诺酮	kuí;kk nuò;yr tóng;yt	22
 利鼻片	lì;hd,dh bí;zb,zq piàn;pa,pv	100
 利肺片	lì;hd,dh fèi;of,oj piàn;pa,pv	100
 利肝片	lì;hd,dh gān;og piàn;pa,pv	100
 理中片	lǐ;wl zhōng;aa,ka piàn;pa,pv	100
 癃清片	lóng;bl qīng;dq piàn;pa,pv	100
+吗啉胍	mǎ;km lín;kl guā;og	30
 脉平片	mài;oy píng;aa,gb piàn;pa,pv	100
 迈之灵	mài;zw zhī;dd líng;hx,xh	100
 脑安片	nǎo;ox ān;bn piàn;pa,pv	100
@@ -122,6 +126,7 @@ sort: by_weight
 奋乃静片	fèn;dt nǎi;pg,gp jìng;qv piàn;pa,pv	100
 复肝宁片	fù;rw,wo gān;og níng;bd piàn;pa,pv	100
 妇康宁片	fù;nx kāng;gl níng;bd piàn;pa,pv	100
+氟康唑片	fú;qf kāng;gl zuò;kz piàn;pa,pv	100
 复肾宁片	fù;rw,wo shèn;oy níng;bd piàn;pa,pv	100
 复胃散片	fù;rw,wo wèi;ot,to sàn;wo piàn;pa,pv	100
 妇炎康片	fù;nx yán;hh kāng;gl piàn;pa,pv	100
@@ -171,6 +176,7 @@ sort: by_weight
 癃闭舒片	lóng;bl bì;mc shū;yu,uy piàn;pa,pv	100
 龙凤宝片	lóng;ad fèng;jy bǎo;by piàn;pa,pv	100
 卵磷脂片	luǎn;pd,md lín;ul zhī;ov piàn;pa,pv	100
+吗啉胍片	mǎ;km lín;kl guā;og piàn;pa,pv	212
 脉络通片	mài;oy luò;sg tōng;zy piàn;pa,pv	100
 米氮平片	mǐ;dd dàn;qy píng;aa,gb piàn;pa,pv	100
 脑得生片	nǎo;ox dé;xc shēng;na piàn;pa,pv	100
@@ -184,6 +190,23 @@ sort: by_weight
 盘龙七片	pán;mv,vm lóng;ad qī;ag piàn;pa,pv	100
 盆炎净片	pén;mf yán;hh jìng;dv piàn;pa,pv	100
 普乐安片	pǔ;ob,bo lè;pd,px ān;bn piàn;pa,pv	100
+普鲁托醇	pǔ;ob,bo lǔ;yo tuō;fq,ft chún;yx	45
+普仑司特	pǔ;ob,bo lún;rb sī;gk,ka tè;ns	4
+普洛必达	pǔ;ob,bo luò;dg bì;dd,xp dá;zd	4
+普罗布考	pǔ;ob,bo luó;sx bù;ju,uj kǎo;lk	202
+普罗布可	pǔ;ob,bo luó;sx bù;ju,uj kě;dk	76
+普罗雌烯	pǔ;ob,bo luó;sx cí;vc xī;hx	153
+普罗碘铵	pǔ;ob,bo luó;sx diǎn;ud ǎn;ja	4
+普罗吩胺	pǔ;ob,bo luó;sx fēn;kf àn;oa	99
+普罗庚嗪	pǔ;ob,bo luó;sx gēng;gd,gg,gr qín;kq	4
+普罗吗酯	pǔ;ob,bo luó;sx ma;km zhǐ;yv	45
+普洛萘尔	pǔ;ob,bo luò;dg nài;cn ěr;dx,xd	45
+普罗帕酮	pǔ;ob,bo luó;sx pà;jb tóng;yt	16
+普罗司泰	pǔ;ob,bo luó;sx sī;gk,ka tài;fu,uf	45
+普罗替林	pǔ;ob,bo luó;sx tì;of,fo lín;mm	153
+普罗托醇	pǔ;ob,bo luó;sx tuō;fq,ft chún;yx	50
+普罗新希	pǔ;ob,bo luó;sx xīn;jq xī;ib	45
+普美拉泰	pǔ;ob,bo měi;dy,yd lā;fl tài;fu,uf	45
 普适泰片	pǔ;ob,bo shì;zu tài;fu,uf piàn;pa,pv	100
 清开灵片	qīng;dq kāi;ac líng;hx,xh piàn;pa,pv	100
 青霉胺片	qīng;of,fo méi;ym àn;oa piàn;pa,pv	100
@@ -197,6 +220,7 @@ sort: by_weight
 肾炎舒片	shèn;oy yán;hh shū;yu,uy piàn;pa,pv	100
 生血宁片	shēng;na xuè;pa,pm níng;bd piàn;pa,pv	100
 双黄连片	shuāng;yy huáng;ad,cb lián;zi piàn;pa,pv	100
+司帕沙星	sī;gk,ka pà;jb shā;du xīng;ou	310
 替硝唑片	tì;of,fo xiāo;ux zuò;kz piàn;pa,pv	100
 托吡酯片	tuō;fq,ft bǐ;kb zhǐ;yv piàn;pa,pv	100
 托卡朋片	tuō;fq,ft kǎ;bx,ub péng;oo piàn;pa,pv	100
@@ -6669,8 +6693,8 @@ sort: by_weight
 麻黄素滴鼻液	má;gl huáng;ad,cb sù;sf,fs dī;dd,dg bí;zb,zq yè;dy	100
 麻黄素注射液	má;gl huáng;ad,cb sù;sf,fs zhù;dv shè;cu,uc yè;dy	100
 马兰感寒胶囊	mǎ;aa,vh lán;bs,qe gǎn;xx hán;bd jiāo;oj náng;ay	100
-吗啉胍滴眼液	ma;km lín;kl guā;og dī;dd,dg yǎn;og yè;dy	100
-吗啉胍注射液	ma;km lín;kl guā;og zhù;dv shè;cu,uc yè;dy	100
+吗啉胍滴眼液	mǎ;km lín;kl guā;og dī;dd,dg yǎn;og yè;dy	100
+吗啉胍注射液	mǎ;km lín;kl guā;og zhù;dv shè;cu,uc yè;dy	100
 马蔺子素胶囊	mǎ;aa,vh lìn;cv zǐ;aa,vh sù;sf,fs jiāo;oj náng;ay	100
 吗氯贝胺胶囊	ma;km lǜ;ql bèi;ad,kr àn;oa jiāo;oj náng;ay	100
 麻芩消咳颗粒	má;gl qín;cj xiāo;dx ké;kh kē;yg lì;ml	100
@@ -8023,7 +8047,7 @@ sort: by_weight
 盐酸氯丙嗪片	yán;mb suān;yj,yw lǜ;ql bǐng;an qín;kq piàn;pa,pv	100
 盐酸氯哌丁片	yán;mb suān;yj,yw lǜ;ql pài;kp dīng;aa piàn;pa,pv	100
 盐酸麻黄碱片	yán;mb suān;yj,yw má;gl huáng;ad,cb jiǎn;ux piàn;pa,pv	100
-盐酸吗啉胍片	yán;mb suān;yj,yw ma;km lín;kl guā;og piàn;pa,pv	100
+盐酸吗啉胍片	yán;mb suān;yj,yw mǎ;km lín;kl guā;og piàn;pa,pv	100
 盐酸美沙酮片	yán;mb suān;yj,yw měi;dy,yd shā;du tóng;yt piàn;pa,pv	100
 盐酸美司坦片	yán;mb suān;yj,yw měi;dy,yd sī;gk,ka tǎn;td piàn;pa,pv	100
 盐酸美西律片	yán;mb suān;yj,yw měi;dy,yd xī;aa lǜ;xy piàn;pa,pv	100
@@ -9304,6 +9328,7 @@ sort: by_weight
 妇科白凤口服液	fù;nx kē;hd bái;pa,po fèng;jy kǒu;aa fú;oy yè;dy	100
 妇科分清丸水丸	fù;nx kē;hd fēn;bd,db qīng;dq wán;jd,pd shuǐ;ad,uv wán;jd,pd	100
 妇科养荣浓缩丸	fù;nx kē;hd yǎng;ya,yd róng;cm,mb nóng;dn suō;ss wán;jd,pd	100
+氟喹诺酮类药物	fú;qf kuí;kk nuò;yr tóng;yt lèi;md yào;cy wù;nw	100
 茯苓杏仁甘草汤	fú;cf líng;cl xìng;km,mk rén;re gān;aa,ca cǎo;cz tāng;dy	100
 氟罗沙星分散片	fú;qf luó;sx shā;du xīng;ou fēn;bd,db sǎn;wo piàn;pa,pv	100
 氟罗沙星注射液	fú;qf luó;sx shā;du xīng;ou zhù;dv shè;cu,uc yè;dy	100
@@ -11039,6 +11064,7 @@ sort: by_weight
 吡嘧司特钾滴眼液	bǐ;kb mì;km sī;gk,ka tè;ns jiǎ;jj dī;dd,dg yǎn;og yè;dy	100
 丹参川芎嗪注射液	dān;pd shēn;sp chuān;pa xiōng;cg qín;kq zhù;dv shè;cu,uc yè;dy	100
 复方氨酚那敏颗粒	fù;rw,wo fāng;dw ān;qa fēn;yf nà;el,ef mǐn;wm kē;yg lì;ml	100
+复方氨酚烷胺颗粒	fù;rw,wo fāng;dw ān;qa fēn;yf wán;hw àn;oa kē;yg lì;ml	100
 复方柴胡安神颗粒	fù;rw,wo fāng;dw chái;mc hú;og ān;bn shén;uu kē;yg lì;ml	100
 复方木尼孜其颗粒	fù;rw,wo fāng;dw mù;ad ní;ub zī;wz,zw qí;ba kē;yg lì;ml	100
 复方妥布霉素眼膏	fù;rw,wo fāng;dw tuǒ;vn bù;ju,uj méi;ym sù;sf,fs yǎn;og gāo;og,ok,wo	100
@@ -11048,6 +11074,7 @@ sort: by_weight
 强酸型离子交换剂	qiáng;gs suān;yj,yw xíng;tx lí;ws,wl zǐ;aa,vh jiāo;li,wf,df huàn;fh jì;dq	100
 双氯芬酸缓释胶囊	shuāng;yy lǜ;ql fēn;cf suān;yj,yw huǎn;sy shì;pf,bf jiāo;oj náng;ay	100
 小儿氨酚那敏颗粒	xiǎo;ad ér;pg ān;qa fēn;yf nà;el,ef mǐn;wm kē;yg lì;ml	100
+小儿氨酚烷胺颗粒	xiǎo;ad ér;pg ān;qa fēn;yf wán;hw àn;oa kē;yg lì;ml	100
 小儿化痰止咳颗粒	xiǎo;ad ér;pg huà;rb tán;by zhǐ;aa ké;kh kē;yg lì;ml	100
 小儿四维葡钙颗粒	xiǎo;ad ér;pg sì;aa,ke wéi;sv pú;cp gài;jg kē;yg lì;ml	100
 元素的集中和分散	yuán;aw,ee sù;sf,fs de;bu jí;mv,vm zhōng;aa,ka hé;hk fēn;bd,db sǎn;wo	100
@@ -11060,6 +11087,7 @@ sort: by_weight
 黄芪芍药桂枝苦酒汤	huáng;ad,cb qí;cu sháo;cu yào;cy guì;mg zhī;mv kǔ;cg jiǔ;dy tāng;dy	100
 盐酸特比萘芬喷雾剂	yán;mb suān;yj,yw tè;ns bǐ;bb nài;cn fēn;cf pēn;kb wù;yw jì;dq	100
 桂枝去桂加茯苓白术汤	guì;mg zhī;mv qù;ts guì;mg jiā;lk,kl fú;cf líng;cl bái;pa,po zhú;md tāng;dy	100
+小儿硫酸庆大霉素颗粒	xiǎo;ad ér;pg liú;ui suān;yj,yw qìng;gd dà;ad méi;ym sù;sf,fs kē;yg lì;ml	100
 小儿双磺甲氧苄啶颗粒	xiǎo;ad ér;pg shuāng;yy huáng;uh jiǎ;aa,oa yǎng;qy biàn;cb,cx dìng;kd kē;yg lì;ml	100
 木防己去石膏加茯苓芒硝汤	mù;ad fáng;ef jǐ;ag,vg qù;ts shí;kp,pk gāo;og,ok,wo jiā;lk,kl fú;cf líng;cl máng;cw xiāo;ux tāng;dy	100
 桂枝去芍药加蜀漆牡蛎龙骨救逆汤	guì;mg zhī;mv qù;ts sháo;cu yào;cy jiā;lk,kl shǔ;si qī;dq,du mǔ;nt lì;il lóng;ad gǔ;go,ob,og jiù;wq nì;zn tāng;dy	100
