@@ -183,7 +183,6 @@ sort: by_weight
 迟嘉	chí;zi jiā;uj	3
 迟帅	chí;zi shuài;aj,dj	567
 池忆	chí;dy yì;xy	1
-蚩尤	chī;iu,ui yóu;ad,yd	119
 池源	chí;dy yuán;dy	38
 褚翰	chǔ;yv hàn;yu,uy	2
 楚河	chǔ;mp,pl hé;dk	53
@@ -577,7 +576,6 @@ sort: by_weight
 火亮	huǒ;dd liàng;wj,jb	390
 霍楠	huò;yv nán;mn	133
 霍青	huò;yv qīng;of,fo	2188
-火树	huǒ;dd shù;md	50
 霍尊	huò;yv zūn;cq,qc	774
 季晨	jì;hz chén;oi	348
 吉杰	jí;ku,uk jié;hm,mh	112
@@ -587,7 +585,6 @@ sort: by_weight
 纪宁	jǐ;sj níng;bd	84
 纪帅	jǐ;sj shuài;aj,dj	18
 姬他	jī;ni tā;ry	139
-吉星	jí;ku,uk xīng;ou	540
 纪雪	jǐ;sj xuě;yx	22
 吉莹	jí;ku,uk yíng;cy,yb	1
 姬玉	jī;ni yù;ad,wd	5
@@ -617,7 +614,6 @@ sort: by_weight
 江珊	jiāng;dg shān;wc	846
 蒋申	jiǎng;cj shēn;aa,oa	8
 姜诗	jiāng;ny,yn shī;ys	401
-江水	jiāng;dg shuǐ;ad,uv	1277
 姜韬	jiāng;ny,yn tāo;wj,wy	32
 姜维	jiāng;ny,yn wéi;sv	1519
 姜文	jiāng;ny,yn wén;wi,dd	5667
@@ -684,13 +680,11 @@ sort: by_weight
 郎峰	láng;el fēng;uf	230
 郎朗	láng;el lǎng;ol	4924
 老臭	lǎo;bl,lb chòu;zq	46
-老子	lǎo;bl,lb zi;aa,vh	26721
 雷汉	léi;yt hàn;dy	1115
 雷佳	léi;yt jiā;rg	1890
 雷雷	léi;yt léi;yt	505
 雷明	léi;yt míng;oo	381
 雷牧	léi;yt mù;nw	26
-冷漠	lěng;dl mò;dm	8610
 李艾	lǐ;mz ài;ci	22
 李北	lǐ;mz běi;ap,bj	260
 李斌	lǐ;mz bīn;ww	270
@@ -705,7 +699,6 @@ sort: by_weight
 李菲	lǐ;mz fēi;cf	2105
 李飞	lǐ;mz fēi;yd	389
 李歌	lǐ;mz gē;qg	20
-李广	lǐ;mz guǎng;dp	1629
 李昊	lǐ;mz hào;ot	160
 李鹤	lǐ;mz hè;nv	721
 李红	lǐ;mz hóng;sg	1023
@@ -1994,7 +1987,6 @@ sort: by_weight
 周铁	zhōu;kj,kk tiě;ju	7716
 周炜	zhōu;kj,kk wěi;hw	80
 周湘	zhōu;kj,kk xiāng;dx	147
-周旋	zhōu;kj,kk xuán;fp	2339
 周宣	zhōu;kj,kk xuān;bg	1148
 周璇	zhōu;kj,kk xuán;wx	716
 周迅	zhōu;kj,kk xùn;zu,zx	1118
@@ -7914,8 +7906,9 @@ sort: by_weight
 张隽溢	zhāng;gi juàn;nv,vn yì;dy	12
 张钧涵	zhāng;gi jūn;jy hán;dh	26
 张峻鸣	zhāng;gi jùn;uj,uw míng;kn	30
+张钧𡩋	zhāng;gi jūn;jy níng;	450
+张钧甯	zhāng;gi jūn;jy níng;by	410
 张峻宁	zhāng;gi jùn;uj,uw níng;bd	191
-张钧甯	zhāng;gi jūn;jy níng;by	50
 张俊一	zhāng;gi jùn;rj,rw yī;aa	10
 张君钰	zhāng;gi jūn;ky yù;jy	15
 张凯淳	zhāng;gi kǎi;jj,jq chún;dx	12
@@ -8578,6 +8571,7 @@ sort: by_weight
 朱丹妮	zhū;pw dān;pd nī;nn	22
 朱芳雨	zhū;pw fāng;cf yǔ;ad	323
 朱逢博	zhū;pw féng;zf bó;uc,uf	226
+猪哥亮	zhū;qv gē;kk liàng;wj,jb	188
 祝公道	zhù;ux gōng;sb,bs dào;zu	116
 朱广权	zhū;pw guǎng;dp quán;my	2512
 朱国武	zhū;pw guó;ky wǔ;vy,yv	22
