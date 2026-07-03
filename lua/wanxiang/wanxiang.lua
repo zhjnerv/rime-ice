@@ -5,7 +5,7 @@ local wanxiang = {}
 
 -- x-release-please-start-version
 
-wanxiang.version = "v15.14.4"
+wanxiang.version = "v16.0.0"
 
 -- x-release-please-end
 
@@ -35,7 +35,9 @@ function wanxiang.is_mobile_device()
         if lower_dist == "trime" or
             lower_dist == "hamster" or
             lower_dist == "hamster3" or
-            lower_dist == "squirrel" then
+            lower_dist == "default" or --超越
+            lower_dist == "xime" or --曦码
+            lower_dist == "squirrel" then --特殊情况
             return true
         end
 
@@ -259,6 +261,7 @@ wanxiang.INPUT_METHOD_MARKERS = {
     ["Ⅻ"] = "hxlong", --汉心龙
     ["Ⅿ"] = "ltsp", --蓝天双拼
     ["Ⅼ"] = "lxsq", --乱序17
+    ["ⅩⅢ"] = "sdpy", --首道双拼
     ["ⅲ"] = "ⅲ", -- 间接辅助标记：命中则额外返回 md="ⅲ"
     ["ⅱ"] = "t9", -- 拼音九键
 }
