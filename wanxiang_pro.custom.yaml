@@ -169,27 +169,3 @@ patch:
     "]": ["[]", "]", "】"]
     "{": ["{}", "{", "「"]
     "}": ["{}", "}", "」"]
-
-
-模糊音:
-  __append:
-    - derive/^l/n
-    - derive/^n/l
-    - derive/^y/r
-    - derive/^r/y
-    - derive/^h/f
-    - derive/^f/h
-    - derive/^r/l
-    - derive/^l/r
-    - derive/^k/g
-    - derive/^g/k
-    - derive/(ē|é|ě|è|e)ng(.*)$/$1n$2
-    - derive/(ē|é|ě|è|e)n(.*)$/$1ng$2
-    - derive/(ī||í|ǐ|ì|i)ng(.*)$/$1n$2
-    - derive/(ī|í|ǐ|ì|i)n(.*)$/$1ng$2
-    - derive/^c([^h]*)/ch$1
-    - derive/^ch/c
-    - derive/^z([^h]*)/zh$1
-    - derive/^zh/z
-    - derive/^s([^h]*)/sh$1
-    - derive/^sh/s
