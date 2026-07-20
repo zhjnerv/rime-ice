@@ -5,7 +5,7 @@ local wanxiang = {}
 
 -- x-release-please-start-version
 
-wanxiang.version = "v16.0.1"
+wanxiang.version = "v16.1.3"
 
 -- x-release-please-end
 
@@ -37,8 +37,7 @@ function wanxiang.is_mobile_device()
             lower_dist == "hamster3" or
             lower_dist == "default" or --超越
             lower_dist == "xime" or --曦码
-            lower_dist == "lyraime" or  --灵韵
-            lower_dist == "squirrel" then --特殊情况
+            lower_dist == "lyraime" then  --灵韵
             return true
         end
 
@@ -47,16 +46,10 @@ function wanxiang.is_mobile_device()
             lower_path:find("/mobile/") or
             lower_path:find("/sdcard/") or
             lower_path:find("/data/storage/") or
-            lower_path:find("/storage/emulated/") or
-            lower_path:find("applications") or
-            lower_path:find("library") then
+            lower_path:find("/storage/emulated/") then
             return true
         end
-        -- 补充判断：路径中包含移动设备特征，很可以mac的运行逻辑和手机一球样
-        if sys_lower_path:find("applications") or
-            sys_lower_path:find("library") then
-            return true
-        end
+
         -- 特定平台判断（Android/Linux）
         if jit and jit.os then
             local os_name = jit.os:lower()
@@ -73,6 +66,28 @@ function wanxiang.is_mobile_device()
         is_mobile_device = _is_mobile_device()
     end
     return is_mobile_device
+end
+
+local is_special_desktop = nil
+
+--- 判断是否为需要特殊处理的桌面环境（squirrel 或 fcitx5-rime+library）
+---@return boolean
+function wanxiang.is_special_desktop()
+    if is_special_desktop == nil then
+        local dist = rime_api.get_distribution_code_name() or ""
+        local sys_dir = rime_api.get_shared_data_dir() or ""
+        local lower_dist = dist:lower()
+        local lower_sys = sys_dir:lower()
+
+        local exclude = false
+        if lower_dist == "squirrel" then
+            exclude = true
+        elseif lower_dist == "fcitx-rime" and lower_sys:find("library") then
+            exclude = true
+        end
+        is_special_desktop = exclude
+    end
+    return is_special_desktop
 end
 
 --- 检测是否为万象专业版

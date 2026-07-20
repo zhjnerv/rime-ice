@@ -162,7 +162,7 @@ sort: by_weight
 樊纲	fán;dm gāng;sg	102
 范公	fàn;ce,cf gōng;sb,bs	192
 樊晃	fán;dm huǎng;og	153
-范进	fàn;ce,cf jìn;zj	131
+范进	fàn;ce,cf jìn;zj	931
 范雎	fàn;ce,cf jū;qv,vq	1559
 范宽	fàn;ce,cf kuān;bj,jb	598
 范蠡	fàn;ce,cf lǐ;it,iu	646
@@ -490,6 +490,7 @@ sort: by_weight
 孟优	mèng;mz,zm yōu;ry	68
 孟子	mèng;mz,zm zǐ;aa,vh	4179
 孟宗	mèng;mz,zm zōng;bu	104
+缪斌	miào;sl,sp bīn;ww	423
 穆旦	mù;hp dàn;oa	270
 穆迪	mù;hp dí;zy	128
 穆公	mù;hp gōng;sb,bs	932
@@ -927,7 +928,7 @@ sort: by_weight
 张松	zhāng;gi sōng;mg	886
 张庭	zhāng;gi tíng;gt	2492
 张炜	zhāng;gi wěi;hw	542
-张绣	zhāng;gi xiù;sx	990
+张绣	zhāng;gi xiù;sx	590
 张旭	zhāng;gi xù;oj,jo	327
 张悬	zhāng;gi xuán;xx	914
 张勋	zhāng;gi xūn;ly	855
@@ -976,6 +977,7 @@ sort: by_weight
 周郎	zhōu;kj,kk láng;el	301
 周密	zhōu;kj,kk mì;ub,bu	1052
 周强	zhōu;kj,kk qiáng;gs	88
+周锐	zhōu;kj,kk ruì;jd	1661
 周泰	zhōu;kj,kk tài;fu,uf	942
 周王	zhōu;kj,kk wáng;aa	954
 朱褒	zhū;pw bāo;wy,yb	380
@@ -1772,6 +1774,7 @@ sort: by_weight
 高仲武	gāo;wk zhòng;rv wǔ;vy,yv	252
 高宗武	gāo;wk zōng;bu wǔ;vy,yv	598
 高遵裕	gāo;wk zūn;zz yù;yg	320
+公冶长	gōng;sb,bs yě;dt cháng;pd	522
 顾拜旦	gù;ye bài;pa,ua dàn;oa	104
 顾雏军	gù;ye chú;iv,vi,vx jūn;bi	25
 顾方舟	gù;ye fāng;dw zhōu;pd	44
@@ -2590,6 +2593,7 @@ sort: by_weight
 刘建国	liú;dw,wd jiàn;zy guó;ky	66
 刘建宏	liú;dw,wd jiàn;zy hóng;bh,bs	82
 刘建明	liú;dw,wd jiàn;zy míng;oo	399
+刘靖康	liú;dw,wd jìng;lq kāng;gl	44
 刘珂矣	liú;dw,wd kē;wk yǐ;su	428
 刘坤一	liú;dw,wd kūn;tu yī;aa	141
 刘兰芝	liú;dw,wd lán;bs,qe zhī;cv	371
@@ -3393,6 +3397,7 @@ sort: by_weight
 阮小七	ruǎn;ey xiǎo;ad qī;ag	60
 阮小五	ruǎn;ey xiǎo;ad wǔ;aa	28
 阮宗泽	ruǎn;ey zōng;bu zé;df	526
+赛尚阿	sài;bb shàng;xk ā;ek	40
 邵大箴	shào;ev dà;ad zhēn;vx	450
 邵华泽	shào;ev huá;uh zé;df	315
 邵晋涵	shào;ev jìn;oy,yo hán;dh	9
@@ -4401,6 +4406,7 @@ sort: by_weight
 杨岳桥	yáng;my yuè;uq,qu qiáo;mq	6
 杨增新	yáng;my zēng;tc xīn;jq	590
 杨之华	yáng;my zhī;dd huá;uh	88
+杨植麟	yáng;my zhí;mv lín;ll	64
 杨致远	yáng;my zhì;wv yuǎn;zy	384
 杨卓舒	yáng;my zhuó;bu,uo shū;yu,uy	35
 杨子荣	yáng;my zǐ;aa,vh róng;cm,mb	69
@@ -4840,8 +4846,8 @@ sort: by_weight
 张泉灵	zhāng;gi quán;bu,ub líng;hx,xh	144
 张瑞敏	zhāng;gi ruì;we mǐn;wm	119
 张若虚	zhāng;gi ruò;cy xū;hy	433
-张三疯	zhāng;gi sān;aa fēng;bf	1089
 张三丰	zhāng;gi sān;aa fēng;aa	559
+张三疯	zhāng;gi sān;aa fēng;bf	108
 张士诚	zhāng;gi shì;aa chéng;yi	631
 张世杰	zhāng;gi shì;ca,cv jié;hm,mh	144
 张士平	zhāng;gi shì;aa píng;aa,gb	151
@@ -5284,6 +5290,7 @@ sort: by_weight
 邹振先	zōu;ei,ex zhèn;fi xiān;ne,en	189
 邹自景	zōu;ei,ex zì;pa,po jǐng;oj	310
 邹作华	zōu;ei,ex zuò;rv huá;uh	328
+格雷厄姆	gé;mg léi;yt è;ie mǔ;nm	66
 穆阿维叶	mù;hp ā;ek wéi;sv yè;ku	508
 穆巴拉克	mù;hp bā;ag lā;fl kè;eg,ux	107
 穆德里克	mù;hp dé;xx lǐ;aa,tt kè;eg,ux	41
@@ -5309,5 +5316,6 @@ sort: by_weight
 中岛一贵	zhōng;aa,ka dǎo;nu,un yí;aa guì;ba,vb	279
 中岛英树	zhōng;aa,ka dǎo;nu,un yīng;cy shù;md	180
 中岛哲也	zhōng;aa,ka dǎo;nu,un zhé;kv yě;gg	500
+梅德韦杰夫	méi;mm dé;xx wéi;aa jié;hm,mh fū;ad,er	10
 斯特里克兰德	sī;jq,qj tè;ns lǐ;aa,tt kè;eg,ux lán;bs,qe dé;xx	10
 香宗我部亲泰	xiāng;ho zōng;bu wǒ;pd,pp bù;ek,ep qīn;lm tài;fu,uf	10

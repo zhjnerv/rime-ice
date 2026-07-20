@@ -2231,6 +2231,14 @@ sort: by_weight
 碘苯甲醚	diǎn;ud běn;cb jiǎ;aa,oa mí;ym	45
 碘苯甲酸	diǎn;ud běn;cb jiǎ;aa,oa suān;yj,yw	270
 碘苯扎酸	diǎn;ud běn;cb zhā;fg suān;yj,yw	76
+碘达酸钠	diǎn;ud dá;zd suān;yj,yw nà;jn	45
+碘代丁烷	diǎn;ud dài;ry dīng;aa wán;hw	45
+碘代芳烃	diǎn;ud dài;ry fāng;cf tīng;hg	76
+碘代酸盐	diǎn;ud dài;ry suān;yj,yw yán;mb	45
+碘代烷烃	diǎn;ud dài;ry wán;hw tīng;hg	50
+碘代戊烷	diǎn;ud dài;ry wù;gp wán;hw	45
+碘胆固醇	diǎn;ud dǎn;od gù;kg chún;yx	45
+碘胆甾醇	diǎn;ud dǎn;od zāi;it,ti chún;yx	4
 碘化汞钡	diǎn;ud huà;rb gǒng;gu,ug bèi;jb	90
 碘化亚铊	diǎn;ud huà;rb yà;ay tā;jt	220
 碘酸铀酰	diǎn;ud suān;yj,yw yóu;jy xiān;yx	45
@@ -7185,6 +7193,7 @@ sort: by_weight
 聚羟基丁酸	jù;ey,yq qiǎng;yg jī;tq,qt dīng;aa suān;yj,yw	10
 聚羟基乙酸	jù;ey,yq qiǎng;yg jī;tq,qt yǐ;vv suān;yj,yw	10
 聚山梨醇酯	jù;ey,yq shān;aa lí;ml chún;yx zhǐ;yv	10
+聚四氟乙烯	jù;ey,yq sì;aa,ke fú;qf yǐ;vv xī;hx	10
 聚四氯乙烯	jù;ey,yq sì;aa,ke lǜ;ql yǐ;vv xī;hx	12
 聚四氢呋喃	jù;ey,yq sì;aa,ke qīng;qg fū;kf nán;kn	10
 聚天冬胺酸	jù;ey,yq tiān;ad dōng;wd àn;oa suān;yj,yw	12
@@ -7406,6 +7415,7 @@ sort: by_weight
 磷酸二氢钡	lín;ul suān;yj,yw èr;aa qīng;qg bèi;jb	10
 磷酸二氢钙	lín;ul suān;yj,yw èr;aa qīng;qg gài;jg	10
 磷酸二氢根	lín;ul suān;yj,yw èr;aa qīng;qg gēn;mg	10
+磷酸二氢钾	lín;ul suān;yj,yw èr;aa qīng;qg jiǎ;jj	10
 磷酸二氢锂	lín;ul suān;yj,yw èr;aa qīng;qg lǐ;jl	10
 磷酸二氢铝	lín;ul suān;yj,yw èr;aa qīng;qg lǚ;jl	10
 磷酸二氢镁	lín;ul suān;yj,yw èr;aa qīng;qg měi;jm	10
@@ -14471,7 +14481,6 @@ sort: by_weight
 亚甲基丁内酯	yà;ay jiǎ;aa,oa jī;tq,qt dīng;aa nèi;ad,kr zhǐ;yv	10
 亚甲基二氧苯	yà;ay jiǎ;aa,oa jī;tq,qt èr;aa yǎng;qy běn;cb	10
 亚甲基双氯酚	yà;ay jiǎ;aa,oa jī;tq,qt shuāng;yy lǜ;ql fēn;yf	10
-牙科用黏合剂	yá;ap kē;hd yòng;kf nián;hv,vu hé;rk jì;dq	10
 亚磷酸二苄酯	yà;ay lín;ul suān;yj,yw èr;aa biàn;cb,cx zhǐ;yv	10
 亚磷酸二丁酯	yà;ay lín;ul suān;yj,yw èr;aa dīng;aa zhǐ;yv	10
 亚磷酸二甲酯	yà;ay lín;ul suān;yj,yw èr;aa jiǎ;aa,oa zhǐ;yv	12

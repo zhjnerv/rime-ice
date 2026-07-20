@@ -221,7 +221,7 @@ local function get_predictions(env, prev_commit)
         local scan_count = 0
         local now = os_time()
         local prefix_cands = {} 
-
+        
         for k, v in da:iter() do
             if scan_count >= scan_limit or not s_find(k, query_key, 1, true) then break end
             if s_sub(k, 1, 1) ~= "\1" then
@@ -765,7 +765,7 @@ function P.func(key, env)
             env.engine:commit_text(digit)
             return 1
         end
-
+        
         -- 任何其他按键都打断联想
         ctx:clear()
         reset_memory_chain(env, "按键打断联想")
@@ -897,14 +897,17 @@ function F.func(input, env)
         
         local is_context_valid = false
         local u1_len = utf8_len(last_commit) or 0
+        local is_reorder = (CONFIG.PREDICT_STYLE == "reorder")
         
         if #history >= 2 then
             local u0_len = utf8_len(history[#history - 1]) or 0
-            if (u0_len + u1_len) >= 3 then
+            if is_reorder or (u0_len + u1_len) >= 3 then
                 is_context_valid = true
             end
         else
-            if u1_len >= 2 then
+            if is_reorder then
+                is_context_valid = true
+            elseif u1_len >= 2 then
                 is_context_valid = true
             end
         end

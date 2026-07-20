@@ -645,7 +645,7 @@ sort: by_weight
 参杞全鹿丸	cān;sp qǐ;mj quán;rw lù;gb,lb wán;jd,pd	10
 参七散结丸	cān;sp qī;ag sàn;wo jié;sj wán;jd,pd	10
 参芪益肺丸	cān;sp qí;cu yì;mb fèi;of,oj wán;jd,pd	10
-参芩白术散	cān;sp qín;cj bái;pa,po zhú;md sàn;wo	10
+参芩白术散	cān;sp qín;cj bái;pa,po zhú;md sǎn;wo	10
 参芎注射液	cān;sp qiōng;cg zhù;dv shè;cu,uc yè;dy	10
 参麝活络丸	cān;sp shè;lu huó;du luò;sg wán;jd,pd	10
 参术健脾丸	cān;sp shù;md jiàn;rj pí;ob wán;jd,pd	10
@@ -1483,7 +1483,7 @@ sort: by_weight
 归红注射液	guī;ax,dx hóng;sg zhù;dv shè;cu,uc yè;dy	10
 龟甲拉颗粒	guī;dd jiǎ;aa,oa lā;fl kē;yg lì;ml	10
 龟甲养阴片	guī;dd jiǎ;aa,oa yǎng;ya,yd yīn;eo piàn;pa,pv	10
-桂苓白术散	guì;mg líng;cl bái;pa,po zhú;md sàn;wo	10
+桂苓白术散	guì;mg líng;cl bái;pa,po zhú;md sǎn;wo	10
 桂苓白术丸	guì;mg líng;cl bái;pa,po zhú;md wán;jd,pd	10
 桂苓甘露散	guì;mg líng;cl gān;aa,ca lù;yl sàn;wo	10
 龟龙中风丸	guī;dd lóng;ad zhòng;aa,ka fēng;ji wán;jd,pd	10
@@ -2694,7 +2694,7 @@ sort: by_weight
 芪桑益肝丸	qí;cu sāng;mr,mu,ym yì;mb gān;og wán;jd,pd	10
 蕲蛇风湿酒	qí;cj shé;it fēng;ji shī;dx jiǔ;dy	10
 杞天口服液	qǐ;mj tiān;ad kǒu;aa fú;oy yè;dy	10
-七味白术散	qī;ag wèi;kw bái;pa,po zhú;md sàn;wo	10
+七味白术散	qī;ag wèi;kw bái;pa,po zhú;md sǎn;wo	10
 七味槟榔散	qī;ag wèi;kw bīng;mb láng;ml sàn;wo	10
 七味都气丸	qī;ag wèi;kw dōu;ev qì;py,ry wán;jd,pd	10
 七味广枣丸	qī;ag wèi;kw guǎng;dp zǎo;cd wán;jd,pd	10
@@ -8075,6 +8075,7 @@ sort: by_weight
 血中宝口服液	xuè;pa,pm zhōng;aa,ka bǎo;by kǒu;aa fú;oy yè;dy	10
 熏火龙的鳞片	xūn;ha,ph huǒ;dd lóng;ad de;bu lín;yl piàn;pa,pv	10
 亚甲蓝注射液	yà;ay jiǎ;aa,oa lán;cj zhù;dv shè;cu,uc yè;dy	10
+牙科用黏合剂	yá;ap kē;hd yòng;kf nián;hv,vu hé;rk jì;dq	10
 亚砷酸注射液	yà;ay shēn;uu suān;yj,yw zhù;dv shè;cu,uc yè;dy	10
 压缩石棉垫片	yā;id,it suō;ss shí;kp,pk mián;mb,mj diàn;tv piàn;pa,pv	10
 亚线粒体颗粒	yà;ay xiàn;sj lì;ml tǐ;rb kē;yg lì;ml	10
@@ -10168,7 +10169,7 @@ sort: by_weight
 前列癃闭通胶囊	qián;bd,qd liè;dd lóng;bl bì;mc tōng;zy jiāo;oj náng;ay	10
 前列舒乐软胶囊	qián;bd,qd liè;dd shū;yu,uy lè;pd,px ruǎn;iq jiāo;oj náng;ay	10
 前列舒丸水蜜丸	qián;bd,qd liè;dd shū;yu,uy wán;jd,pd shuǐ;ad,uv mì;ib,bi wán;jd,pd	10
-钱氏七味白术散	qián;jj shì;pg qī;ag wèi;kw bái;pa,po zhú;md sàn;wo	10
+钱氏七味白术散	qián;jj shì;pg qī;ag wèi;kw bái;pa,po zhú;md sǎn;wo	10
 羟氨苄青霉素钠	qiǎng;yg ān;qa biàn;cb,cx qīng;of,fo méi;ym sù;sf,fs nà;jn	10
 羟苯磺酸钙胶囊	qiǎng;yg běn;cb huáng;uh suān;yj,yw gài;jg jiāo;oj náng;ay	10
 羟丁酸钠注射液	qiǎng;yg dīng;aa suān;yj,yw nà;jn zhù;dv shè;cu,uc yè;dy	10

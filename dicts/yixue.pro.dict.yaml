@@ -710,7 +710,7 @@ sort: by_weight
 肺胚细胞瘤	fèi;of,oj pēi;op xì;st bāo;ob liú;bl	10
 肺脾积热证	fèi;of,oj pí;ob jī;hv rè;hv zhèng;yv	10
 肺脾两虚证	fèi;of,oj pí;ob liǎng;ad xū;hy zhèng;yv	10
-肺脾气虚证	fèi;of,oj pí;ob qì;py,ry xū;hy zhèng;yv	10
+肺脾气虚证	fèi;of,oj pí;ob qi;py,ry xū;hy zhèng;yv	10
 肺脾湿热证	fèi;of,oj pí;ob shī;dx rè;hv zhèng;yv	10
 肺气衰竭证	fèi;of,oj qì;py,ry shuāi;yv,wy jié;lh zhèng;yv	10
 肺气郁痹证	fèi;of,oj qì;py,ry yù;ey bì;bb,bq zhèng;yv	10
@@ -1037,8 +1037,8 @@ sort: by_weight
 肝脾不调证	gān;og pí;ob bù;ad,ax tiáo;yv zhèng;yv	10
 肝脾亏虚证	gān;og pí;ob kuī;ak,eg xū;hy zhèng;yv	10
 肝脾两虚证	gān;og pí;ob liǎng;ad xū;hy zhèng;yv	10
-肝脾气郁证	gān;og pí;ob qì;py,ry yù;ey zhèng;yv	10
-肝脾气滞证	gān;og pí;ob qì;py,ry zhì;dd zhèng;yv	10
+肝脾气郁证	gān;og pí;ob qi;py,ry yù;ey zhèng;yv	10
+肝脾气滞证	gān;og pí;ob qi;py,ry zhì;dd zhèng;yv	10
 肝脾湿火证	gān;og pí;ob shī;dx huǒ;dd zhèng;yv	10
 肝脾湿热证	gān;og pí;ob shī;dx rè;hv zhèng;yv	10
 肝脾血瘀证	gān;og pí;ob xuè;pa,pm yū;by zhèng;yv	10
@@ -2624,7 +2624,6 @@ sort: by_weight
 皮肤橙色病	pí;ay,vy fū;of chéng;md sè;db bìng;bb	10
 皮肤垢着病	pí;ay,vy fū;of gòu;th zhe;yo bìng;bb	10
 皮肤划痕症	pí;ay,vy fū;of huá;dg,gd hén;bg zhèng;bv	10
-皮肤化痕症	pí;ay,vy fū;of huà;rb hén;bg zhèng;bv	10
 皮肤划纹症	pí;ay,vy fū;of huà;dg,gd wén;sw zhèng;bv	10
 皮肤混合瘤	pí;ay,vy fū;of hùn;dk hé;rk liú;bl	10
 皮肤活检术	pí;ay,vy fū;of huó;du jiǎn;ma,mq shù;md	10
@@ -2652,10 +2651,10 @@ sort: by_weight
 脾皮样囊肿	pí;ob pí;ay,vy yàng;my náng;ay zhǒng;ov	10
 皮片移植术	pí;ay,vy piàn;pa,pv yí;hd zhí;mv shù;md	10
 皮片植皮术	pí;ay,vy piàn;pa,pv zhí;mv pí;ay,vy shù;md	10
-脾气不升证	pí;ob qì;py,ry bù;ad,ax shēng;pc zhèng;yv	10
-脾气不足证	pí;ob qì;py,ry bù;ad,ax zú;kv zhèng;yv	10
-脾气亏虚证	pí;ob qì;py,ry kuī;ak,eg xū;hy zhèng;yv	10
-脾气下陷证	pí;ob qì;py,ry xià;ab,ad xiàn;ej,ex zhèng;yv	10
+脾气不升证	pí;ob qi;py,ry bù;ad,ax shēng;pc zhèng;yv	10
+脾气不足证	pí;ob qi;py,ry bù;ad,ax zú;kv zhèng;yv	10
+脾气亏虚证	pí;ob qi;py,ry kuī;ak,eg xū;hy zhèng;yv	10
+脾气下陷证	pí;ob qi;py,ry xià;ab,ad xiàn;ej,ex zhèng;yv	10
 脾腔分流术	pí;ob qiāng;ok fēn;bd,db liú;di shù;md	10
 脾区综合征	pí;ob qū;ki zōng;sz hé;rk zhēng;xv	10
 脾曲综合征	pí;ob qǔ;aa,oa zōng;sz hé;rk zhēng;xv	10
@@ -3243,10 +3242,10 @@ sort: by_weight
 肾精亏虚证	shèn;oy jīng;mq kuī;ak,eg xū;hy zhèng;yv	10
 神经浪游者	shén;uu jīng;sg làng;dl yóu;dz zhě;lo,ol	10
 肾静脉肾素	shèn;oy jìng;qv mài;oy shèn;oy sù;sf,fs	10
-深静脉栓塞	shēn;dm jìng;qv mài;oy shuān;mq sè;tb,bt	10
+深静脉栓塞	shēn;dm jìng;qv mài;oy shuān;mq sè;tb,bt	12
 肾静脉栓塞	shèn;oy jìng;qv mài;oy shuān;mq sè;tb,bt	10
+深静脉血栓	shēn;dm jìng;qv mài;oy xuè;pa,pm shuān;mq	12
 肾静脉血栓	shèn;oy jìng;qv mài;oy xuè;pa,pm shuān;mq	10
-深静脉血栓	shēn;dm jìng;qv mài;oy xuè;pa,pm shuān;mq	10
 肾静脉造影	shèn;oy jìng;qv mài;oy zào;zg yǐng;pj	10
 深静脉置管	shēn;dm jìng;qv mài;oy zhì;sv guǎn;vg	10
 神经牵伸术	shén;uu jīng;sg qiān;nb,dn shēn;ru shù;md	10
@@ -4155,7 +4154,7 @@ sort: by_weight
 心脾积热证	xīn;dd pí;ob jī;hv rè;hv zhèng;yv	10
 心脾亏虚证	xīn;dd pí;ob kuī;ak,eg xū;hy zhèng;yv	10
 心脾两虚证	xīn;dd pí;ob liǎng;ad xū;hy zhèng;yv	10
-心脾气虚证	xīn;dd pí;ob qì;py,ry xū;hy zhèng;yv	10
+心脾气虚证	xīn;dd pí;ob qi;py,ry xū;hy zhèng;yv	10
 心脾湿热证	xīn;dd pí;ob shī;dx rè;hv zhèng;yv	10
 心脾受损证	xīn;dd pí;ob shòu;vy,yb sǔn;fy zhèng;yv	10
 心脾血虚证	xīn;dd pí;ob xuè;pa,pm xū;hy zhèng;yv	10
@@ -4935,9 +4934,18 @@ sort: by_weight
 指蜂窝织炎	zhǐ;fv fēng;if wō;xn,xg zhī;sv yán;hh	10
 趾蜂窝织炎	zhǐ;zv fēng;if wō;xn,xg zhī;sv yán;hh	10
 指骨关节病	zhǐ;fv gǔ;go,ob,og guān;bt,qd jié;ce bìng;bb	10
+指骨间关节	zhǐ;fv gǔ;go,ob,og jiān;mo,om guān;bt,qd jié;ce	10
+趾骨间关节	zhǐ;zv gǔ;go,ob,og jiān;mo,om guān;bt,qd jié;ce	10
+跖骨间关节	zhí;zu gǔ;go,ob,og jiān;mo,om guān;bt,qd jié;ce	10
 跖骨截骨术	zhí;zu gǔ;go,ob,og jié;gv,ug,vg gǔ;go,ob,og shù;md	10
+肢骨外上髁	zhī;ov gǔ;go,ob,og wài;xb shàng;aa,ba kē;gg	10
 指骨植骨术	zhǐ;fv gǔ;go,ob,og zhí;mv gǔ;go,ob,og shù;md	10
+支管胆管瘘	zhī;uy guǎn;vg dǎn;od guǎn;vg lòu;bl	10
 跖管减压术	zhí;zu guǎn;vg jiǎn;dx yā;id,it shù;md	10
+指关节融合	zhǐ;fv guān;bt,qd jié;ce róng;ig hé;rk	10
+趾关节融合	zhǐ;zv guān;bt,qd jié;ce róng;ig hé;rk	10
+指关节脱位	zhǐ;fv guān;bt,qd jié;ce tuō;od wèi;rl	10
+趾关节脱位	zhǐ;zv guān;bt,qd jié;ce tuō;od wèi;rl	10
 指甲沟脓肿	zhǐ;fv jia;aa,oa gōu;dg nóng;on zhǒng;ov	10
 趾甲移植术	zhǐ;zv jiǎ;aa,oa yí;hd zhí;mv shù;md	10
 支架植入术	zhī;uy jià;mj zhí;mv rù;pd shù;md	10
@@ -8704,8 +8712,16 @@ sort: by_weight
 泰必氏综合征	tài;fu,uf bì;dd,xp shì;pg zōng;sz hé;rk zhēng;xv	10
 胎儿发育畸形	tāi;ot ér;pg fā;ay yù;os,wo jī;tq xíng;pk	10
 胎儿横纹肌瘤	tāi;ot ér;pg héng;mh wén;sw jī;oj liú;bl	10
+胎儿戒断症状	tāi;ot ér;pg jiè;gc duàn;ja,jm,jv zhèng;bv zhuàng;jq,pq	10
 胎儿镜捡查术	tāi;ot ér;pg jìng;jj jiǎn;fq,fa chá;md shù;md	10
 胎儿内倒转术	tāi;ot ér;pg nèi;ad,kr dào;rd zhuǎn;iv shù;md	10
+胎儿脐带绕颈	tāi;ot ér;pg qí;oq dài;jb rào;sy jǐng;yg	10
+胎儿亲子鉴定	tāi;ot ér;pg qīn;lm zǐ;aa,vh jiàn;jv dìng;bp	10
+胎儿缺碘效应	tāi;ot ér;pg quē;fd,fg diǎn;ud xiào;wj yìng;ga	10
+胎儿生长受限	tāi;ot ér;pg shēng;na zhǎng;pd shòu;vy,yb xiàn;eg	10
+胎儿心搏徐缓	tāi;ot ér;pg xīn;dd bó;fc,ff xú;xy huǎn;sy	10
+胎儿心律失常	tāi;ot ér;pg xīn;dd lǜ;xy shī;pf cháng;jk,xd,dd	10
+胎儿智力发育	tāi;ot ér;pg zhì;ov lì;gp fā;ay yù;os,wo	10
 胎粪性腹膜炎	tāi;ot fèn;mg xìng;xu fù;of mó;om yán;hh	10
 胎热证胎寒证	tāi;ot rè;hv zhèng;yv tāi;ot hán;bd zhèng;yv	10
 苔藓样角化病	tái;ct xiǎn;cx yàng;my jiǎo;dy huà;rb bìng;bb	10
@@ -13346,7 +13362,7 @@ sort: by_weight
 人工膜肺氧合器	rén;pd gōng;aa mó;om fèi;of,oj yǎng;qy hé;rk qì;kk,qk	10
 人工气管置换术	rén;pd gōng;aa qì;py,ry guǎn;vg zhì;sv huàn;fh shù;md	10
 人工食管重建术	rén;pd gōng;aa shí;rl,pd guǎn;vg chóng;pa,ql jiàn;zy shù;md	10
-人工下巴植入术	rén;pd gōng;aa xià;ab,ad bā;ag zhí;mv rù;pd shù;md	10
+人工下巴植入术	rén;pd gōng;aa xià;ab,ad ba;ag zhí;mv rù;pd shù;md	10
 人工心脏起搏器	rén;pd gōng;aa xīn;dd zàng;ov qǐ;zj bó;fc,ff qì;kk,qk	10
 人工血管置换术	rén;pd gōng;aa xuè;pa,pm guǎn;vg zhì;sv huàn;fh shù;md	10
 人工阴道成形术	rén;pd gōng;aa yīn;eo dào;zu chéng;gg,wg xíng;pk shù;md	10
@@ -14300,7 +14316,7 @@ sort: by_weight
 心内膜恶性肿瘤	xīn;dd nèi;ad,kr mó;om è;xy xìng;xu zhǒng;ov liú;bl	10
 心内膜良性肿瘤	xīn;dd nèi;ad,kr mó;om liáng;dg xìng;xu zhǒng;ov liú;bl	10
 心内异物取出术	xīn;dd nèi;ad,kr yì;cs,sc wù;nw qǔ;ey,ye chū;ck,aa shù;md	10
-心脾气血两虚证	xīn;dd pí;ob qì;py,ry xuè;pa,pm liǎng;ad xū;hy zhèng;yv	10
+心脾气血两虚证	xīn;dd pí;ob qi;py,ry xuè;pa,pm liǎng;ad xū;hy zhèng;yv	10
 心腔外伤修补术	xīn;dd qiāng;ok wài;xb shāng;rl xiū;rp bǔ;yb shù;md	10
 新生儿单纯疱疹	xīn;jq shēng;na ér;pg dān;ba,bd chún;st pào;bb zhěn;bp	10
 心室病损切除术	xīn;dd shì;bv bìng;bb sǔn;fy qiē;dq,qd chú;ey shù;md	10
