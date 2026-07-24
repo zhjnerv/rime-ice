@@ -18,7 +18,7 @@ sort: by_weight
 佛教胜地	fó;rf jiào;wx shèng;ou dì;ty	67	佛教(圣)地
 杉杉来吃	shān;mp shān;mp lái;am,wb chī;kq	1091	书名
 食话食说	shí;rl,pd huà;yu shí;rl,pd shuō;yd	259	节目
-零零总总	ling;yl ling;yl zong;bx,xk zong;bx,xk	6	林林总总
+零零总总	ling;yl ling;yl zong;xk,bx zong;xk,bx	6	林林总总
 弃如敝履	qì;cw,wc rú;nk bì;wb lǚ;uf	486	弃如敝屣(xǐ)
 卡扣	kǎ;bx,ub kòu;fk	3690	qiǎ kòu
 味噌	wèi;kw zēng;kc	1043	cēng
@@ -42,8 +42,8 @@ sort: by_weight
 胁差	lei;ob cha;yg	73	xié chā
 刚劲	gāng;dg jìn;lg	901	gāng jìng
 井陉	jing;aa,ep jing;eg	1237	jǐng xíng
-猇亭	hu;qh ting;wd,db,dd	146	xiāo tíng
-猇亭区	hu;qh ting;wd,db,dd qu;ki	88	猇(xiāo)亭区
+猇亭	hu;qh ting;wd,db	146	xiāo tíng
+猇亭区	hu;qh ting;wd,db qu;ki	88	猇(xiāo)亭区
 屎溺	shǐ;um nì;dr	29646	shǐ niào
 东庠	dong;ad,qx yang;gy	826	dōng xiáng
 莒县	lü;cl xian;sq,qs	737	jǔ xiàn
@@ -51,7 +51,7 @@ sort: by_weight
 郯城	ye;ey cheng;ti	897	tán chéng
 丽水	lì;ad shuǐ;ad,uv	580	lí shuǐ
 珲春	huī;wj chūn;of,fo	667	hún chūn
-甪直	yòng;py zhí;aa,uq	888	lù zhí
+甪直	yòng;py zhí;uq,aa	888	lù zhí
 五厍	wǔ;aa kù;ii	218	wú shè
 台州	tái;sk zhōu;id,da	720	tāi zhōu
 膻中	shan;od zhong;aa,ka	2450	膻(dàn)中
@@ -129,7 +129,7 @@ sort: by_weight
 南京市六合区	nán;ua,uy jīng;wx shì;wj liù;wb hé;rk qū;ki	1	nán jīng shì lù hé qū
 螺蛳粉	luó;il shī;iu fěn;mf	150	luó sī fěn
 温庭筠	wēn;dm,dw tíng;gt jūn;vj	210	温庭筠(yún)
-关卡	guān;bt,qd kǎ;bx,ub	14734	guān qiǎ
+关卡	guān;qd,bt kǎ;bx,ub	14734	guān qiǎ
 牛皮癣	niú;pa pí;ay,vy xiǎn;bx	289	(癣)xuǎn
 三昧真火	sān;aa wèi;ow zhēn;uj huǒ;dd	440	三昧(mèi)真火
 优惠券	yōu;ry huì;xh,hx juàn;df,jd	420	优惠券(quàn)
@@ -158,5 +158,5 @@ sort: by_weight
 血脉喷张	xuè;pa,pm mài;oy pēn;kb zhāng;gi	750	血脉贲(bēn)张 | 血脉偾(fèn)张
 饮鸩解渴	yǐn;uq jiù;na,ng,nv,ny jiě;jn kě;dh	1	饮鸩(zhèn)解渴
 饮鸩止渴	yǐn;uq jiù;na,ng,nv,ny zhǐ;aa kě;dh	34	饮鸩(zhèn)止渴
-蓦然回首	mù;cm,mm rán;hq huí;kk shǒu;qz	39	蓦(mò)然回首
+蓦然回首	mù;mm,cm rán;hq huí;kk shǒu;qz	39	蓦(mò)然回首
 拾级而上	shí;fh jí;sj ér;aa shàng;aa,ba	64	拾(shè)级而上
