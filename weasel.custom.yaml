@@ -39,7 +39,7 @@ patch:
     font_face: "霞鹜文楷等宽 GB, Noto Emoji"
     font_point: 18
     horizontal: false
-    hover_type: hilite
+    hover_type: none
     inline_preedit: false
     label_font_face: "霞鹜文楷等宽 GB"
     label_font_point: 17
