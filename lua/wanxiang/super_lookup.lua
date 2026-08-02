@@ -1617,6 +1617,13 @@ function f.func(input, env)
             end
             return
         end
+        local direct_cache = env.direct_cache
+        local first_cached = direct_cache and direct_cache.candidates and direct_cache.candidates[1]
+        if first_cached and first_cached.start ~= seg.start then
+            env.direct_cache = nil
+            for cand in input:iter() do yield(cand) end
+            return
+        end
         return handle_direct_mode(input, env, ctx_input)
     end
 end

@@ -17,15 +17,16 @@ local s_find = string.find
 local s_lower = string.lower
 local s_upper = string.upper
 local t_sort = table.sort
-local open = io.open
 local type = type
 local tonumber = tonumber
-
 local DB_FORMAT_VERSION = "1"
-local OPTION_KEYS = {"option", "options"}
-local TAG_KEYS = {"tag", "tags"}
+local MERGED_SCHEMA_IDS = {"wanxiang_pro", "wanxiang", "wanxiang_english", "wanxiang_t9", "wanxiang_t9i"}
 local FILE_KEYS = {"files", "file"}
-local db_instances = {}
+-- 模块私有数据库池：同名数据库共享包装器和生命周期。
+local DB_POOL = {}
+local file_signature_cache = {}
+local RECORD_SEPARATOR = " \t"
+local RECORD_TAIL = "c=0 d=0 t=0"
 
 local T9_MAP = {}
 do
@@ -35,40 +36,11 @@ do
 end
 
 -- 基础依赖
-local function safe_require(name)
-    local status, lib = pcall(require, name)
-    if status then return lib end
-    return nil
-end
-
-local userdb = safe_require("wanxiang/userdb")
-local wanxiang = safe_require("wanxiang/wanxiang")
+local userdb = require("wanxiang/userdb")
+local wanxiang = require("wanxiang/wanxiang")
 
 local function clear_array(t)
     for i = #t, 1, -1 do t[i] = nil end
-end
-
-local function each_config_value(map, keys, callback)
-    for _, key in ipairs(keys) do
-        local item = map:get(key)
-        if item then
-            if item.type == "kList" then
-                local list = item:get_list()
-                for i = 0, list.size - 1 do
-                    local value = list:get_value_at(i)
-                    if value then callback(value, false) end
-                end
-            elseif item.type == "kScalar" then
-                local value = item:get_value()
-                if value then callback(value, true) end
-            end
-        end
-    end
-end
-
-local function trim_space(str)
-    if not str then return "" end
-    return s_match(str, "^%s*(.-)%s*$")
 end
 
 -- UTF-8 辅助：复用 offsets 缓冲，避免每次 FMM 都创建新表
@@ -89,184 +61,672 @@ local function get_utf8_offsets(text, offsets)
     return n
 end
 
--- 光速文件特征采样
-local function generate_files_signature(tasks)
-    local sig_parts = {}
-    for _, task in ipairs(tasks) do
-        local f = open(task.path, "rb")
-        if f then
-            local size = f:seek("end")
-            local head = ""
-            local mid = ""
-            local tail = ""
-
-            if size > 0 then
-                f:seek("set", 0)
-                head = f:read(64) or ""
-                local tail_pos = size - 64
-                if tail_pos < 0 then tail_pos = 0 end
-                f:seek("set", tail_pos)
-                tail = f:read(64) or ""
-                local mid_pos = math.floor(size / 2)
-                f:seek("set", mid_pos)
-                mid = f:read(64) or ""
-            end
-            f:close()
-            insert(sig_parts, task.prefix .. size .. head .. mid .. tail)
-        end
+-- 计算字节串摘要，表头只保存稳定的 ASCII 特征。
+local function hash_bytes(hash, value)
+    for i = 1, #value do
+        hash = (hash * 131 + s_byte(value, i)) % 4294967296
     end
-    return concat(sig_parts, "||")
+    return hash
 end
 
--- 重建数据库：相邻同键先在内存合并，再一次写入；保持原文件顺序且不放大全文件内存
-local function rebuild(tasks, db, delimiter)
+local function digest_parts(parts)
+    local hash = 2166136261
+    local bytes = 0
+
+    for i = 1, #parts do
+        local part = parts[i] or ""
+        bytes = bytes + #part
+        hash = hash_bytes(hash, tostring(#part))
+        hash = hash_bytes(hash, ":")
+        hash = hash_bytes(hash, part)
+        hash = hash_bytes(hash, "|")
+    end
+
+    return s_format("%08x:%d:%d", hash, #parts, bytes)
+end
+
+-- 保留原来的头、中、尾 64 字节采样方式，仅把结果压成 ASCII 摘要。
+local function get_file_signature(path)
+    local cached = file_signature_cache[path]
+    if cached then return cached end
+
+    local file, close = wanxiang.load_file_with_fallback(path, "rb")
+    if not file then
+        file_signature_cache[path] = "missing"
+        return "missing"
+    end
+
+    local size = file:seek("end") or 0
+    local parts = {tostring(size)}
+
+    if size > 0 then
+        file:seek("set", 0)
+        parts[#parts + 1] = file:read(64) or ""
+
+        local tail_pos = size - 64
+        if tail_pos < 0 then tail_pos = 0 end
+        file:seek("set", tail_pos)
+        parts[#parts + 1] = file:read(64) or ""
+
+        file:seek("set", math.floor(size / 2))
+        parts[#parts + 1] = file:read(64) or ""
+    end
+
+    close()
+    cached = digest_parts(parts)
+    file_signature_cache[path] = cached
+    return cached
+end
+
+local function generate_files_signature(tasks)
+    local parts = {}
+    local seen = {}
+
     for _, task in ipairs(tasks) do
-        local txt_path = task.path
+        if not seen[task.path] then
+            seen[task.path] = true
+            parts[#parts + 1] = (task.source or task.path) .. "|" .. get_file_signature(task.path)
+        end
+    end
+
+    return digest_parts(parts)
+end
+
+local function each_file_value(rule, callback)
+    for _, key in ipairs(FILE_KEYS) do
+        local item = rule:get(key)
+        if item then
+            if item.type == "kList" then
+                local list = item:get_list()
+                for i = 0, list.size - 1 do
+                    local value = list:get_value_at(i)
+                    if value then callback(value) end
+                end
+            elseif item.type == "kScalar" then
+                local value = item:get_value()
+                if value then callback(value) end
+            end
+        end
+    end
+end
+
+-- 只提取影响数据库内容的字段，运行时规则仍由当前方案原逻辑解析。
+local function collect_build_tasks(config, ns)
+    local tasks = {}
+    local root = config and config:get_map(ns)
+    local rules = root and root:get("rules")
+    local list = rules and rules:get_list()
+    if not list then return tasks end
+
+    for i = 0, list.size - 1 do
+        local item = list:get_at(i)
+        local rule = item and item:get_map()
+        if rule then
+            local value = rule:get_value("prefix")
+            local prefix = value and value:get_string() or ""
+            value = rule:get_value("t9_optimization")
+            local t9 = value and value:get_bool() or false
+
+            each_file_value(rule, function(file_value)
+                local source = file_value:get_string()
+                if source and source ~= "" then
+                    tasks[#tasks + 1] = {
+                        source = source,
+                        path = source,
+                        prefix = prefix,
+                        conversion = t9 and T9_MAP or nil,
+                        preedit_delim = t9 and "==" or nil
+                    }
+                end
+            end)
+        end
+    end
+
+    return tasks
+end
+
+local function tasks_signature(tasks)
+    local parts = {}
+    for i, task in ipairs(tasks) do
+        parts[i] = concat({
+            task.source or "",
+            task.prefix or "",
+            task.conversion and "t9" or "plain",
+            task.preedit_delim or ""
+        }, "|")
+    end
+    return digest_parts(parts)
+end
+
+local function enabled_schema_ids(env, user_dir)
+    local enabled = {}
+    local current = env.engine.schema.schema_id or ""
+
+    local config = Config("default")
+    local list = config and config:get_list("schema_list")
+
+    if list then
+        for i = 0, list.size - 1 do
+            local item = list:get_at(i)
+            local map = item and item:get_map()
+            local value = map and map:get_value("schema")
+            local id = value and value:get_string()
+            if id then enabled[id] = true end
+        end
+
+        if current ~= "" then enabled[current] = true end
+    else
+        -- default.yaml 暂时不可读时按固定列表探测，不能退化为“仅当前方案”。
+        for _, id in ipairs(MERGED_SCHEMA_IDS) do
+            local schema = Schema(id)
+            if schema then enabled[id] = true end
+        end
+    end
+
+    local ids = {}
+    for _, id in ipairs(MERGED_SCHEMA_IDS) do
+        if enabled[id] then ids[#ids + 1] = id end
+    end
+
+    if #ids == 0 and current ~= "" then ids[1] = current end
+    return ids
+end
+
+-- 合并所有启用方案的数据任务，并生成固定的方案级表头特征。
+local function merge_build_tasks(env, ns, current_tasks, user_dir)
+    local current_id = env.engine.schema.schema_id or ""
+    local enabled_ids = enabled_schema_ids(env, user_dir)
+    local groups = {}
+    local signatures = {}
+
+    for order, id in ipairs(enabled_ids) do
+        local tasks = nil
+        local schema = Schema(id)
+        if schema then
+            tasks = collect_build_tasks(schema.config, ns)
+        elseif id == current_id then
+            tasks = current_tasks
+        else
+            tasks = {}
+        end
+
+        groups[#groups + 1] = {id = id, order = order, tasks = tasks}
+        signatures[id] = tasks_signature(tasks)
+    end
+
+    t_sort(groups, function(a, b)
+        if #a.tasks ~= #b.tasks then return #a.tasks > #b.tasks end
+        return a.order < b.order
+    end)
+
+    local merged = {}
+    local seen = {}
+    for _, group in ipairs(groups) do
+        for _, task in ipairs(group.tasks) do
+            local key = tasks_signature({task})
+            if not seen[key] then
+                seen[key] = true
+                merged[#merged + 1] = task
+            end
+        end
+    end
+
+    return merged, signatures, digest_parts(enabled_ids)
+end
+
+-- 编码聚合内容，确保 UserDb raw key 中只保留一个真实 Tab。
+local function encode_record_value(value)
+    value = s_gsub(value, "\\", "\\\\")
+    value = s_gsub(value, "\t", "\\t")
+    value = s_gsub(value, "\n", "\\n")
+    value = s_gsub(value, "\r", "\\r")
+    return value
+end
+
+-- 解码聚合内容；未知转义保留反斜杠和原字符。
+local function decode_record_value(value)
+    local parts = {}
+    local count = 0
+    local i = 1
+
+    while i <= #value do
+        local char = s_sub(value, i, i)
+
+        if char == "\\" and i < #value then
+            local escaped = s_sub(value, i + 1, i + 1)
+            if escaped == "\\" then
+                char = "\\"
+                i = i + 2
+            elseif escaped == "t" then
+                char = "\t"
+                i = i + 2
+            elseif escaped == "n" then
+                char = "\n"
+                i = i + 2
+            elseif escaped == "r" then
+                char = "\r"
+                i = i + 2
+            else
+                count = count + 1
+                parts[count] = "\\"
+                char = escaped
+                i = i + 2
+            end
+        else
+            i = i + 1
+        end
+
+        count = count + 1
+        parts[count] = char
+    end
+
+    return concat(parts, "", 1, count)
+end
+
+-- 源文件格式：业务 key 与内容之间必须使用真实 Tab；内容候选使用字面量 \\t 分隔。
+local function parse_source_line(line)
+    local key, value = s_match(line, "^([^\t]+)\t+(.+)$")
+    if not key or not value or key == "" or value == "" then return nil, nil end
+
+    -- 第一个字段分隔之后不再允许真实 Tab，避免产生多列源格式。
+    if s_find(value, "\t", 1, true) then return nil, nil end
+    return key, decode_record_value(value)
+end
+
+-- 按业务 key 读取整行聚合记录。
+local function fetch_aggregate(db, key)
+    local prefix = key .. RECORD_SEPARATOR
+    local accessor = db:query(prefix)
+    if not accessor then return nil, nil end
+
+    local value = nil
+    local raw_key = nil
+
+    for current_key, _ in accessor:iter() do
+        if s_sub(current_key, 1, #prefix) ~= prefix then break end
+
+        raw_key = current_key
+        value = decode_record_value(s_sub(current_key, #prefix + 1))
+        break
+    end
+
+    -- 最后一个数据库使用者退出时由 release_db 统一强制回收。
+    accessor = nil
+    return value, raw_key
+end
+
+-- 写入整行聚合记录；raw value 固定为 c=0 d=0 t=0。
+local function update_aggregate(db, key, value)
+    if not key or key == "" or not value or value == "" then return false end
+    return db:update(key .. RECORD_SEPARATOR .. encode_record_value(value), RECORD_TAIL)
+end
+
+-- 给一行中的每个候选分别附加原始编码，避免多候选只标记最后一项。
+local function append_preedit(value, delimiter, original_key)
+    if not delimiter or delimiter == "" then return value end
+
+    local parts = {}
+    local count = 0
+
+    for item in s_gmatch(value, "[^\t]+") do
+        count = count + 1
+        local output = item
+        if not s_find(output, delimiter, 1, true) then
+            output = output .. delimiter .. original_key
+        end
+        parts[count] = output
+    end
+
+    return concat(parts, "\t", 1, count)
+end
+
+-- 精确删除底层 raw key，仅供最终键与普通记录冲突时合并。
+local function erase_raw_record(db, raw_key)
+    local raw_db = type(db) == "table" and rawget(db, "_db") or db
+    return raw_db and raw_db.erase and raw_db:erase(raw_key) or false
+end
+
+-- 重建数据库：
+-- 1. 普通任务逐行写入，完全不进入转换逻辑；
+-- 2. 转换任务逐行转换并按最终 key 聚合；
+-- 3. 所有转换任务读取完成后，每个最终 key 只写入一次。
+local function rebuild(tasks, db)
+    local written_db_keys = {}
+    local seen_converted_keys = nil
+    local converted_groups = nil
+    local converted_order = nil
+    local duplicate_count = 0
+    local invalid_count = 0
+
+    for _, task in ipairs(tasks) do
         local prefix = task.prefix
         local conversion = task.conversion
-        local p_delim = task.preedit_delim
+        local seen_source_keys = nil
 
-        local f = open(txt_path, "r")
-        if f then
-            local pending_key = nil
-            local pending_values = {}
-            local pending_count = 0
+        if conversion then
+            seen_converted_keys = seen_converted_keys or {}
+            converted_groups = converted_groups or {}
+            converted_order = converted_order or {}
+            seen_source_keys = seen_converted_keys[prefix]
 
-            local function flush_pending()
-                if not pending_key then return end
-
-                local value = concat(pending_values, delimiter, 1, pending_count)
-                local existing = db:fetch(pending_key)
-                if existing and existing ~= "" then value = existing .. delimiter .. value end
-                db:update(pending_key, value)
-
-                clear_array(pending_values)
-                pending_key = nil
-                pending_count = 0
+            if not seen_source_keys then
+                seen_source_keys = {}
+                seen_converted_keys[prefix] = seen_source_keys
             end
+        end
 
-            for line in f:lines() do
+        local file, close = wanxiang.load_file_with_fallback(task.path, "r")
+
+        if file then
+            for line in file:lines() do
                 if line ~= "" and not s_match(line, "^%s*#") then
-                    local k, v = s_match(line, "^([^\t]+)\t+(.+)")
-                    if k and v then
-                        local orig_k = k
-                        if conversion then k = s_gsub(k, ".", conversion) end
-                        v = s_match(v, "^%s*(.-)%s*$")
+                    local key, value = parse_source_line(line)
 
-                        if p_delim and p_delim ~= "" and not s_find(v, p_delim, 1, true) then
-                            v = v .. p_delim .. orig_k
+                    if key and value then
+                        value = s_match(value, "^%s*(.-)%s*$")
+
+                        if conversion then
+                            local original_key = key
+
+                            if seen_source_keys[original_key] then
+                                duplicate_count = duplicate_count + 1
+                            else
+                                seen_source_keys[original_key] = true
+                                key = s_gsub(key, ".", conversion)
+                                value = append_preedit(
+                                    value,
+                                    task.preedit_delim,
+                                    original_key
+                                )
+
+                                local db_key = prefix .. key
+                                local group = converted_groups[db_key]
+
+                                if not group then
+                                    group = {}
+                                    converted_groups[db_key] = group
+                                    converted_order[#converted_order + 1] = db_key
+                                end
+
+                                group[#group + 1] = value
+                            end
+                        else
+                            local db_key = prefix .. key
+                            local grouped = converted_groups
+                                and converted_groups[db_key]
+
+                            if written_db_keys[db_key] or grouped then
+                                duplicate_count = duplicate_count + 1
+                            elseif not update_aggregate(db, db_key, value) then
+                                close()
+                                return false
+                            else
+                                written_db_keys[db_key] = true
+                            end
                         end
-
-                        local db_key = prefix .. k
-                        if pending_key and pending_key ~= db_key then flush_pending() end
-                        if not pending_key then pending_key = db_key end
-
-                        pending_count = pending_count + 1
-                        pending_values[pending_count] = v
+                    else
+                        invalid_count = invalid_count + 1
                     end
                 end
             end
 
-            flush_pending()
-            f:close()
+            close()
         end
     end
+
+    if converted_order then
+        for _, db_key in ipairs(converted_order) do
+            local value = concat(converted_groups[db_key], "\t")
+
+            if written_db_keys[db_key] then
+                local old_value, old_raw_key =
+                    fetch_aggregate(db, db_key)
+
+                if not old_value or not old_raw_key then return false end
+
+                value = old_value .. "\t" .. value
+                if not erase_raw_record(db, old_raw_key) then return false end
+            end
+
+            if not update_aggregate(db, db_key, value) then return false end
+            written_db_keys[db_key] = true
+        end
+    end
+
+    if log and log.warning then
+        if duplicate_count > 0 then
+            log.warning(s_format(
+                "super_replacer: 已跳过 %d 行重复源 key，仅保留第一次出现",
+                duplicate_count
+            ))
+        end
+
+        if invalid_count > 0 then
+            log.warning(s_format(
+                "super_replacer: 已跳过 %d 行无效数据，格式必须为 key<真实Tab>候选1\\t候选2",
+                invalid_count
+            ))
+        end
+    end
+
     return true
 end
 
--- 连接或重连数据库
-local function connect_db(db_name, delimiter, tasks, config_sig, env_fmm_cache)
-    local cached = db_instances[db_name]
-    if cached then
-        local ok = pcall(function() cached:fetch("___test___") end)
-        if ok then return cached end
-        db_instances[db_name] = nil
+-- 检查数据库表头是否与当前联合数据一致。
+local function database_matches(
+    db, current_version, delimiter,
+    files_sig, union_sig, scheme_sigs
+)
+    if (db:meta_fetch("_wanxiang_ver") or "") ~= current_version
+        or (db:meta_fetch("_delim") or "") ~= delimiter
+        or (db:meta_fetch("_files_sig") or "") ~= files_sig
+        or (db:meta_fetch("_format_ver") or "") ~= DB_FORMAT_VERSION
+        or (db:meta_fetch("_replacer_files") or "") ~= files_sig
+        or (db:meta_fetch("_replacer_union") or "") ~= union_sig
+    then
+        return false
     end
 
-    if not userdb then return nil end
+    for schema_id, signature in pairs(scheme_sigs) do
+        if (db:meta_fetch("_replacer_scheme/" .. schema_id) or "") ~= signature then
+            return false
+        end
+    end
+
+    return true
+end
+
+-- 写入联合数据库表头。
+local function update_metadata(
+    db, current_version, delimiter,
+    files_sig, union_sig, scheme_sigs
+)
+    if not db:meta_update("_wanxiang_ver", current_version)
+        or not db:meta_update("_delim", delimiter)
+        or not db:meta_update("_files_sig", files_sig)
+        or not db:meta_update("_format_ver", DB_FORMAT_VERSION)
+        or not db:meta_update("_replacer_files", files_sig)
+        or not db:meta_update("_replacer_union", union_sig)
+    then
+        return false
+    end
+
+    for schema_id, signature in pairs(scheme_sigs) do
+        if not db:meta_update("_replacer_scheme/" .. schema_id, signature) then
+            return false
+        end
+    end
+
+    return true
+end
+
+-- 连接或重建联合数据库。
+local function connect_db(
+    db_name, current_version, delimiter, tasks,
+    union_sig, scheme_sigs, env_fmm_cache
+)
+    local entry = DB_POOL[db_name]
+    if entry then
+        if entry.db and entry.db:loaded() then
+            entry.refs = entry.refs + 1
+            return entry.db, false
+        end
+
+        DB_POOL[db_name] = nil
+    end
+
     local db = userdb.LevelDb(db_name)
     if not db then return nil end
 
-    local current_signature = generate_files_signature(tasks) .. "||" .. (config_sig or "")
+    local files_sig = generate_files_signature(tasks)
 
     if db:open_read_only() then
-        local same = (db:meta_fetch("_format_ver") or "") == DB_FORMAT_VERSION
-            and db:meta_fetch("_delim") == delimiter
-            and (db:meta_fetch("_files_sig") or "") == current_signature
-
-        if same then
-            db_instances[db_name] = db
-            return db
+        if database_matches(
+            db, current_version, delimiter,
+            files_sig, union_sig, scheme_sigs
+        ) then
+            DB_POOL[db_name] = {db = db, refs = 1}
+            return db, false
         end
+
         db:close()
     end
 
     if not db:open() then return nil end
-    if db.clear then db:clear() elseif db.empty then db:empty() end
 
-    rebuild(tasks, db, delimiter)
-    for key in pairs(env_fmm_cache) do env_fmm_cache[key] = nil end
+    local cleared
+    if db.empty then
+        cleared = db:empty(false)
+    elseif db.clear then
+        cleared = db:clear()
+    end
 
-    db:meta_update("_format_ver", DB_FORMAT_VERSION)
-    db:meta_update("_delim", delimiter)
-    db:meta_update("_files_sig", current_signature)
+    if cleared == false
+        or not rebuild(tasks, db)
+        or not update_metadata(
+            db, current_version, delimiter,
+            files_sig, union_sig, scheme_sigs
+        )
+    then
+        db:close()
+        return nil
+    end
 
-    if log and log.info then log.info("super_replacer: 数据已重载，最新特征已记录") end
+    for key in pairs(env_fmm_cache) do
+        env_fmm_cache[key] = nil
+    end
+
+    if log and log.info then
+        log.info("super_replacer: 联合配置数据已重载，固定表头特征已记录")
+    end
+
     db:close()
 
     if not db:open_read_only() then return nil end
-    db_instances[db_name] = db
-    return db
+
+    DB_POOL[db_name] = {db = db, refs = 1}
+    return db, true
+end
+-- 释放当前组件引用，并在最后一个使用者退出时关闭数据库。
+local function release_db(env)
+    local db = env.db
+    local db_name = env.db_name
+
+    env.db = nil
+    env.db_name = nil
+
+    if not db or not db_name then return end
+
+    local entry = DB_POOL[db_name]
+    if not entry or entry.db ~= db then return end
+
+    entry.refs = entry.refs - 1
+    if entry.refs > 0 then return end
+
+    DB_POOL[db_name] = nil
+    collectgarbage()
+
+    if db:loaded() then db:close() end
+    entry.db = nil
 end
 
--- FMM 分词转换算法：复用 offsets/result_parts，避免热点路径反复分配临时表
+-- 当前输入生命周期内缓存“两字前缀桶”；匹配结论仍按每个新起点重新判断。
+local function fetch_fmm_bucket(db, prefix, stem, fmm_cache)
+    local cache_key = prefix .. "\0" .. stem
+    local bucket = fmm_cache[cache_key]
+    if bucket then return bucket end
+
+    bucket = {}
+    local query_prefix = prefix .. stem
+    local query_len = #query_prefix
+    local prefix_len = #prefix
+    local accessor = db:query(query_prefix)
+
+    if accessor then
+        for raw_key, _ in accessor:iter() do
+            if s_sub(raw_key, 1, query_len) ~= query_prefix then break end
+
+            local sep_pos = s_find(raw_key, RECORD_SEPARATOR, query_len + 1, true)
+            if sep_pos then
+                local source = s_sub(raw_key, prefix_len + 1, sep_pos - 1)
+                bucket[#bucket + 1] = {
+                    source,
+                    decode_record_value(s_sub(raw_key, sep_pos + #RECORD_SEPARATOR)),
+                    utf8.len(source) or 0
+                }
+            end
+        end
+
+        -- 最后一个数据库使用者退出时由 release_db 统一强制回收。
+        accessor = nil
+    end
+
+    t_sort(bucket, function(a, b) return a[3] > b[3] end)
+    fmm_cache[cache_key] = bucket
+    return bucket
+end
+
+-- 每个新起点用当前两字选桶，从长到短验证；命中后直接跳过完整词条。
 local function segment_convert(text, db, prefix, split_pat, fmm_cache, offsets, result_parts)
     local char_count = get_utf8_offsets(text, offsets)
     clear_array(result_parts)
 
     local i, result_count = 1, 0
-    local MAX_LOOKAHEAD = 6
 
     while i <= char_count do
         local start_byte = offsets[i]
-        local matched = false
-        local max_j = i + MAX_LOOKAHEAD
-        if max_j > char_count + 1 then max_j = char_count + 1 end
+        local source = s_sub(text, start_byte, offsets[i + 1] - 1)
+        local output = nil
+        local step = 1
 
-        for j = max_j, i + 2, -1 do
-            local sub_text = s_sub(text, start_byte, offsets[j] - 1)
-            local cache_key = prefix .. sub_text
-            local val = fmm_cache[cache_key]
+        if i < char_count then
+            local stem = s_sub(text, start_byte, offsets[i + 2] - 1)
 
-            if val == nil then
-                val = db:fetch(cache_key) or false
-                fmm_cache[cache_key] = val
-            end
-
-            if val then
-                result_count = result_count + 1
-                result_parts[result_count] = s_match(val, split_pat) or sub_text
-                i = j - 1
-                matched = true
-                break
+            for _, entry in ipairs(fetch_fmm_bucket(db, prefix, stem, fmm_cache)) do
+                if s_find(text, entry[1], start_byte, true) == start_byte then
+                    source = entry[1]
+                    output = s_match(entry[2], split_pat) or source
+                    step = entry[3]
+                    break
+                end
             end
         end
 
-        if not matched then
-            local single_char = s_sub(text, start_byte, offsets[i + 1] - 1)
-            local cache_key = prefix .. single_char
-            local val = fmm_cache[cache_key]
+        if not output then
+            local cache_key = prefix .. "\1" .. source
+            local value = fmm_cache[cache_key]
 
-            if val == nil then
-                val = db:fetch(cache_key) or false
-                fmm_cache[cache_key] = val
+            if value == nil then
+                value = fetch_aggregate(db, prefix .. source) or false
+                fmm_cache[cache_key] = value
             end
 
-            result_count = result_count + 1
-            result_parts[result_count] = val and (s_match(val, split_pat) or single_char) or single_char
+            output = value and (s_match(value, split_pat) or source) or source
         end
 
-        i = i + 1
+        result_count = result_count + 1
+        result_parts[result_count] = output
+        i = i + step
     end
 
     return concat(result_parts, "", 1, result_count)
@@ -274,6 +734,8 @@ end
 
 -- 模块接口
 function M.init(env)
+    if env.db then release_db(env) end
+
     env.fmm_cache = {}
     env.fmm_offsets = {}
     env.fmm_parts = {}
@@ -284,9 +746,8 @@ function M.init(env)
     ns = s_gsub(ns, "^%*", "")
     ns = string.match(ns, "([^%.]+)$") or ns
     local config = env.engine.schema.config
-
+  
     local user_dir = rime_api.get_user_data_dir()
-    local shared_dir = rime_api.get_shared_data_dir()
 
     -- 1. 获取根节点 Map 对象
     local cfg_root = config:get_map(ns)
@@ -297,39 +758,32 @@ function M.init(env)
 
     env.delimiter = "\t"
     env.split_pattern = "([^\t]+)"
-
+    
     local delimiter = config:get_string("speller/delimiter") or " '"
     env.speller_delimiter = delimiter:sub(2, 2)
 
     local comment_fmt_val = cfg_root and cfg_root:get_value("comment_format")
     env.comment_format = comment_fmt_val and comment_fmt_val:get_string() or "〔%s〕"
-
+    
+    local current_version = "v0.0.2"
+    if wanxiang and wanxiang.version then
+        current_version = wanxiang.version
+    end
     env.input_type = "unknown"
     if wanxiang and wanxiang.get_input_method_type then
         env.input_type = wanxiang.get_input_method_type(env)
     end
-
+    
     local chain_val = cfg_root and cfg_root:get_value("chain")
     env.chain = chain_val and chain_val:get_bool() or false
 
     env.rules = {}
-    local tasks = {}
-
-    local function resolve_path(relative)
-        if not relative then return nil end
-        local user_path = user_dir .. "/" .. relative
-        local f = open(user_path, "r")
-        if f then f:close(); return user_path end
-        local shared_path = shared_dir .. "/" .. relative
-        f = open(shared_path, "r")
-        if f then f:close(); return shared_path end
-        return user_path
-    end
+    local tasks = {} 
 
     -- 3. 读取并遍历 rules 列表
     local rules_item = cfg_root and cfg_root:get("rules")
     local rule_list = rules_item and rules_item:get_list()
-
+  
     if rule_list then
         for i = 0, rule_list.size - 1 do
             local rule_item = rule_list:get_at(i)
@@ -356,40 +810,66 @@ function M.init(env)
 
             -- 解析 triggers
             local triggers = {}
-            each_config_value(rule, OPTION_KEYS, function(value, is_scalar)
-                if is_scalar and value:get_bool() == true then
-                    triggers[#triggers + 1] = true
-                    return
+            local opts_keys = {"option", "options"}
+            for _, key in ipairs(opts_keys) do
+                local opt_item = rule:get(key)
+                if opt_item then
+                    if opt_item.type == "kList" then
+                        local list = opt_item:get_list()
+                        for k = 0, list.size - 1 do
+                            local val = list:get_value_at(k)
+                            local str = val and val:get_string()
+                            if str then insert(triggers, str) end
+                        end
+                    elseif opt_item.type == "kScalar" then
+                        local val = opt_item:get_value()
+                        if val:get_bool() == true then
+                            insert(triggers, true)
+                        else
+                            local str = val:get_string()
+                            if str and str ~= "true" then insert(triggers, str) end
+                        end
+                    end
                 end
+            end
 
-                local str = value:get_string()
-                if str and (not is_scalar or str ~= "true") then triggers[#triggers + 1] = str end
-            end)
             if #triggers == 0 then goto continue_rule end
 
             -- 解析 tags
             local target_tags = nil
-            each_config_value(rule, TAG_KEYS, function(value)
-                local str = value:get_string()
-                if str then
-                    target_tags = target_tags or {}
-                    target_tags[str] = true
+            local tag_keys = {"tag", "tags"}
+            for _, key in ipairs(tag_keys) do
+                local tag_item = rule:get(key)
+                if tag_item then
+                    if not target_tags then target_tags = {} end
+                    if tag_item.type == "kList" then
+                        local list = tag_item:get_list()
+                        for k = 0, list.size - 1 do
+                            local val = list:get_value_at(k)
+                            local str = val and val:get_string()
+                            if str then target_tags[str] = true end
+                        end
+                    elseif tag_item.type == "kScalar" then
+                        local val = tag_item:get_value()
+                        local str = val and val:get_string()
+                        if str then target_tags[str] = true end
+                    end
                 end
-            end)
+            end
 
             -- 解析各项参数
             local prefix_val = rule:get_value("prefix")
             local prefix = prefix_val and prefix_val:get_string() or ""
-
+            
             local mode_val = rule:get_value("mode")
             local mode = mode_val and mode_val:get_string() or "append"
-
+            
             -- T9 优化逻辑
             local t9_val = rule:get_value("t9_optimization")
             local t9_opt = t9_val and t9_val:get_bool() or false
             local conversion_map = nil
             local preedit_delim = nil
-
+            
             if t9_opt then
                 conversion_map = T9_MAP
                 preedit_delim = "=="
@@ -397,10 +877,10 @@ function M.init(env)
 
             local comment_mode_val = rule:get_value("comment_mode")
             local comment_mode = comment_mode_val and comment_mode_val:get_string() or "comment"
-
+            
             local fmm_val = rule:get_value("sentence")
             local fmm = fmm_val and fmm_val:get_bool() or false
-
+            
             local custom_cand_type_val = rule:get_value("cand_type")
             local custom_cand_type = custom_cand_type_val and custom_cand_type_val:get_string()
 
@@ -429,46 +909,68 @@ function M.init(env)
             })
 
             -- 解析文件路径列表
-            each_config_value(rule, FILE_KEYS, function(value)
-                local path = resolve_path(value:get_string())
-                if path then
-                    tasks[#tasks + 1] = {
-                        path = path,
-                        prefix = prefix,
-                        conversion = conversion_map,
-                        preedit_delim = preedit_delim
-                    }
+            local keys_to_check = {"files", "file"}
+            for _, key in ipairs(keys_to_check) do
+                local file_item = rule:get(key)
+                if file_item then
+                    if file_item.type == "kList" then
+                        local list = file_item:get_list()
+                        for j = 0, list.size - 1 do
+                            local val = list:get_value_at(j)
+                            local str = val and val:get_string()
+                            if str and str ~= "" then
+                                insert(tasks, { source = str, path = str, prefix = prefix, conversion = conversion_map, preedit_delim = preedit_delim })
+                            end
+                        end
+                    elseif file_item.type == "kScalar" then
+                        local val = file_item:get_value()
+                        local str = val and val:get_string()
+                        if str and str ~= "" then
+                            insert(tasks, { source = str, path = str, prefix = prefix, conversion = conversion_map, preedit_delim = preedit_delim })
+                        end
+                    end
                 end
-            end)
+            end
 
             ::continue_rule::
         end
     end
+    
+    local merged_tasks, scheme_sigs, union_sig =
+        merge_build_tasks(env, ns, tasks, user_dir)
 
-    local config_sig_parts = {}
-    for _, t in ipairs(env.rules) do
-        insert(config_sig_parts, tostring(t.t9_opt or false) .. (t.cand_type or ""))
+    local rebuilt
+    env.db, rebuilt = connect_db(
+        db_name, current_version, env.delimiter,
+        merged_tasks, union_sig, scheme_sigs, env.fmm_cache
+    )
+    if env.db then env.db_name = db_name end
+
+    if rebuilt then
+        tasks, merged_tasks, scheme_sigs, union_sig = nil, nil, nil, nil
+        collectgarbage("collect")
     end
-
-    local config_sig = concat(config_sig_parts, "\t")
-    env.db = connect_db(db_name, env.delimiter, tasks, config_sig, env.fmm_cache)
 end
 
 function M.fini(env)
-    env.db = nil
     env.fmm_cache = nil
     env.fmm_offsets = nil
     env.fmm_parts = nil
     env.shared_pending = nil
     env.shared_pending_comments = nil
     env.shared_comments = nil
+    env.rules = nil
+
+    release_db(env)
 end
 
 --解析连接符工具函数
 local function parse_item(p, delim)
     if delim and delim ~= "" then
-        local pos = s_find(p, delim, 1, true)
-        if pos then return s_sub(p, 1, pos - 1), s_sub(p, pos + #delim) end
+        local pos = string.find(p, delim, 1, true)
+        if pos then
+            return string.sub(p, 1, pos - 1), string.sub(p, pos + #delim)
+        end
     end
     return p, nil
 end
@@ -539,16 +1041,24 @@ function M.func(input, env)
         local cached = fetch_cache[key]
         if cached ~= nil then return cached or nil end
 
-        local value = db:fetch(key)
+        local value = fetch_aggregate(db, key)
         fetch_cache[key] = value or false
         return value
     end
 
-    local fmm_offsets, fmm_parts = env.fmm_offsets, env.fmm_parts
-    local pending_texts = env.shared_pending
-    local pending_comments = env.shared_pending_comments
-    local shared_comments = env.shared_comments
-    local main_results, aux_results = {}, {}
+    local fmm_offsets = env.fmm_offsets or {}
+    local fmm_parts = env.fmm_parts or {}
+    env.fmm_offsets = fmm_offsets
+    env.fmm_parts = fmm_parts
+
+    local pending_texts = env.shared_pending or {}
+    local pending_comments = env.shared_pending_comments or {}
+    local shared_comments = env.shared_comments or {}
+    local main_results = {}
+    local aux_results = {}
+    env.shared_pending = pending_texts
+    env.shared_pending_comments = pending_comments
+    env.shared_comments = shared_comments
 
     local function process_rules(cand, results)
         clear_array(results)
@@ -671,17 +1181,28 @@ function M.func(input, env)
     local always_cands = {}
     local lazy_cands = {}
     local group_fronted = {}
+    local abbrev_start = seg and seg.start or 0
+    local abbrev_end = seg and seg._end or #ctx.input
 
-    local query_code = s_gsub(input_code, env.speller_delimiter, "")
-    if s_match(ctx.input, "^[a-zA-Z]+$") then
-        query_code = s_gsub(ctx.input, env.speller_delimiter, "")
+    local function make_abbrev_candidate(item)
+        local cand = Candidate(item.cand_type, abbrev_start, abbrev_end, item.text, "")
+        cand.quality = item.quality
+        if item.preedit then cand.preedit = item.preedit end
+        return cand
     end
+
+    local query_source = s_match(ctx.input, "^[a-zA-Z]+$") and ctx.input or input_code
+    local query_code = s_gsub(query_source, env.speller_delimiter, "")
+    local query_has_upper = s_find(query_code, "[A-Z]") ~= nil
+    local upper_query = nil
 
     if query_code ~= "" then
         for _, t in ipairs(active_abbrev_rules) do
             local val = fetch_cached(t.prefix .. query_code)
-            if not val and not s_match(query_code, "[A-Z]") then
-                val = fetch_cached(t.prefix .. s_upper(query_code))
+
+            if not val and not query_has_upper then
+                if not upper_query then upper_query = s_upper(query_code) end
+                val = fetch_cached(t.prefix .. upper_query)
             end
 
             if val then
@@ -692,33 +1213,23 @@ function M.func(input, env)
                     local item_text, item_preedit = parse_item(p, t.preedit_delim)
                     if not seen_texts[item_text] then
                         seen_texts[item_text] = true
-
-                        local final_type = t.cand_type or "abbrev"
-                        local abbrev_cand = Candidate(
-                            final_type,
-                            seg and seg.start or 0,
-                            seg and seg._end or #ctx.input,
-                            item_text,
-                            ""
-                        )
-                        if item_preedit and item_preedit ~= "" then abbrev_cand.preedit = item_preedit end
-
                         count = count + 1
+
+                        local item = {
+                            text = item_text,
+                            preedit = item_preedit and item_preedit ~= "" and item_preedit or nil,
+                            cand_type = t.cand_type or "abbrev",
+                            group_key = group_key
+                        }
+
                         if count <= t.always_qty then
-                            abbrev_cand.quality = 999
-                            always_cands[#always_cands + 1] = {
-                                cand = abbrev_cand,
-                                index = t.always_idx + count - 1,
-                                group_key = group_key,
-                                yielded = false
-                            }
+                            item.quality = 999
+                            item.index = t.always_idx + count - 1
+                            item.is_always = true
+                            always_cands[#always_cands + 1] = item
                         else
-                            abbrev_cand.quality = 98
-                            lazy_cands[#lazy_cands + 1] = {
-                                cand = abbrev_cand,
-                                group_key = group_key,
-                                yielded = false
-                            }
+                            item.quality = 98
+                            lazy_cands[#lazy_cands + 1] = item
                         end
                     end
                 end
@@ -726,19 +1237,26 @@ function M.func(input, env)
         end
     end
 
-    local function emit_processed(cand, results, count_yield)
-        for _, pc in ipairs(process_rules(cand, results)) do
-            local key = trim_space(pc.text)
-            if not global_yielded[key] then
-                global_yielded[key] = true
-                yield(pc)
-                if count_yield then yield_count = yield_count + 1 end
-            end
-        end
+    local function trim_space(str)
+        if not str or str == "" then return "" end
+
+        local first = s_byte(str, 1)
+        local last = s_byte(str, #str)
+        if first > 32 and last > 32 then return str end
+        return s_match(str, "^%s*(.-)%s*$")
     end
 
     if #always_cands == 0 and #lazy_cands == 0 then
-        for cand in input:iter() do emit_processed(cand, main_results, false) end
+        for cand in input:iter() do
+            local processed = process_rules(cand, main_results)
+            for _, pc in ipairs(processed) do
+                local dedup_key = trim_space(pc.text)
+                if not global_yielded[dedup_key] then
+                    global_yielded[dedup_key] = true
+                    yield(pc)
+                end
+            end
+        end
         return
     end
 
@@ -746,10 +1264,10 @@ function M.func(input, env)
 
     local abbrev_lookup = {}
     for _, item in ipairs(always_cands) do
-        abbrev_lookup[trim_space(item.cand.text)] = { type = "always", ref = item }
+        abbrev_lookup[trim_space(item.text)] = item
     end
     for _, item in ipairs(lazy_cands) do
-        abbrev_lookup[trim_space(item.cand.text)] = { type = "lazy", ref = item }
+        abbrev_lookup[trim_space(item.text)] = item
     end
 
     local abbrevs_dumped = false
@@ -760,7 +1278,15 @@ function M.func(input, env)
         for _, item in ipairs(always_cands) do
             if not item.yielded then
                 item.yielded = true
-                emit_processed(item.cand, aux_results, true)
+                local processed = process_rules(make_abbrev_candidate(item), aux_results)
+                for _, pc in ipairs(processed) do
+                    local dedup_key = trim_space(pc.text)
+                    if not global_yielded[dedup_key] then
+                        global_yielded[dedup_key] = true
+                        yield(pc)
+                        yield_count = yield_count + 1
+                    end
+                end
             end
         end
 
@@ -768,7 +1294,15 @@ function M.func(input, env)
             if not item.yielded then
                 item.yielded = true
                 if not group_fronted[item.group_key] then
-                    emit_processed(item.cand, aux_results, true)
+                    local processed = process_rules(make_abbrev_candidate(item), aux_results)
+                    for _, pc in ipairs(processed) do
+                        local dedup_key = trim_space(pc.text)
+                        if not global_yielded[dedup_key] then
+                            global_yielded[dedup_key] = true
+                            yield(pc)
+                            yield_count = yield_count + 1
+                        end
+                    end
                 end
             end
         end
@@ -814,23 +1348,23 @@ function M.func(input, env)
     local next_always_ptr = 1
 
     while cand do
+        local c_type = cand.type or ""
+        local is_user = c_type == "user_phrase" or c_type == "user_table"
+        local is_regular = c_type == "phrase" or (c_type == "table" and has_phrase)
         local processed_cands = process_rules(cand, main_results)
 
         for _, pc in ipairs(processed_cands) do
             local dedup_key = trim_space(pc.text)
 
             if not global_yielded[dedup_key] then
-                local c_type = cand.type or ""
-                local is_user = c_type == "user_phrase" or c_type == "user_table"
-                local is_regular = c_type == "phrase" or (c_type == "table" and has_phrase)
-                local match_info = abbrev_lookup[dedup_key]
-                local is_reserved = match_info ~= nil
+                local match_item = abbrev_lookup[dedup_key]
+                local is_reserved = match_item ~= nil
 
                 if is_user then
                     if is_reserved then
-                        match_info.ref.yielded = true
-                        if match_info.type == "always" then
-                            group_fronted[match_info.ref.group_key] = true
+                        match_item.yielded = true
+                        if match_item.is_always then
+                            group_fronted[match_item.group_key] = true
                         end
                     end
 
@@ -847,7 +1381,15 @@ function M.func(input, env)
                             item.yielded = true
                             group_fronted[item.group_key] = true
 
-                            emit_processed(item.cand, aux_results, true)
+                            local ac_processed = process_rules(make_abbrev_candidate(item), aux_results)
+                            for _, apc in ipairs(ac_processed) do
+                                local apc_key = trim_space(apc.text)
+                                if not global_yielded[apc_key] then
+                                    global_yielded[apc_key] = true
+                                    yield(apc)
+                                    yield_count = yield_count + 1
+                                end
+                            end
 
                             next_always_ptr = next_always_ptr + 1
                         else
